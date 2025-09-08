@@ -402,9 +402,9 @@ const JS = () => {
                   <i className="fas fa-bars"></i>
                 </button>  
         
-                <div className={`fixed top-16 left-0 w-56 overflow-y-auto h-[100vh]
+                <div className={`sticky top-16 left-0 w-56 overflow-y-auto h-[100vh]
                                bg-gray-200 px-5 py-6 z-40 transform transition-transform
-                                duration-300 shadow-lg sm:translate-x-0 sm:static sm:block 
+                                duration-300 shadow-lg sm:translate-x-0 sm:block 
                                 `} >
         
                     <h1 className="text-xl font-semibold mt-5 mb-2">JS Basics</h1>
@@ -615,7 +615,7 @@ const JS = () => {
 
                     
                     </div>
-                   <div className='ml-5 p-2 w-full'>
+                   <div className='ml-10 p-4 w-full'>
                                         {showpage &&(
                                           <button onClick={() => setshowpage(null)}
                                            className='flex items-center mb-4 bg-green-300 px-4

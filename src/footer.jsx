@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className='text-center bg-gray-400 px-4 py-10 '>
+    <footer className='text-center bg-gray-400 px-4 py-10 relative z-10 '>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-10'>
             <div className="md:text-center">
             <h3 className='text-2xl font-semibold mb-5 '>Top Tutorials</h3>

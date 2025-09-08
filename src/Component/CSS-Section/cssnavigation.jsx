@@ -424,10 +424,10 @@ const [showpage,setshowpage] = useState(null)
                 </button>
         
                 {/* Sidebar */}
-                <div className={`fixed top-16 left-0 w-56 overflow-y-auto h-auto
+                <div className={`sticky top-16 left-0 w-64 h-[calc(100vh-4rem)] overflow-y-auto
                                bg-gray-200 px-5 py-6 z-40 transform transition-transform
-                                duration-300 shadow-lg sm:translate-x-0 sm:static sm:block 
-                                `} >
+                                duration-300 shadow-lg sm:translate-x-0 sm:block 
+                                ${isOpen ? "translate-x-0" : "-translate-x-full"}`} >
         
                     <h1 className="text-xl font-semibold mt-5 mb-2">CSS Tutorial</h1>
                     <ul className="space-y-1 text-sm">   
@@ -599,7 +599,7 @@ const [showpage,setshowpage] = useState(null)
                       <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSBrowserSupport')}}>CSS Browser Support</li>
                     </ul>
                     </div>
-                    <div className='ml-5 p-2 w-full'>
+                    <div className='ml-10 p-4 w-full'>
                       {showpage &&(
                         <button onClick={() => setshowpage(null)}
                          className='flex items-center mb-4 bg-green-300 px-4
@@ -617,3 +617,7 @@ const [showpage,setshowpage] = useState(null)
         }
         
  export default Css;
+
+
+
+ 

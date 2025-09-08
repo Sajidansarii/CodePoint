@@ -199,13 +199,12 @@ const Html = () => {
         
         
                 {/* Sidebar */}
-                <div className={`fixed top-16 left-0 w-64 overflow-y-auto h-[100vh]
-                               bg-gray-200 px-5 py-6 z-40 transform transition-transform
-                                duration-300 shadow-lg sm:translate-x-0 sm:static sm:block 
-                                 ${isOpen ? "translate-x-0" : "-translate-x-full"}
-                                        sm:translate-x-0 sm:static sm:block `}
-  
-                                        >
+                <div className={`sticky top-16 left-0 w-64 h-[calc(100vh-4rem)] overflow-y-auto 
+                                 bg-gray-200 px-5 py-6 shadow-lg z-40 transform transition-transform
+                                   duration-300 sm:translate-x-0 sm:block 
+                                   ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
+                                 >
+
         
                     <h1 className="text-xl font-semibold mt-5 mb-2">HTML Tutorial</h1>
                     <ul className="space-y-1 text-sm">   
@@ -284,7 +283,8 @@ const Html = () => {
                       <li className='hover:cursor-pointer' onClick={()=> setshowpage('HTTPMethods')}>HTTP Methods</li>
                     </ul>
                     </div>
-                    <div className='ml-5 p-2 w-full'>
+                    <div className="ml-10 p-4 w-full">
+
                       {showpage &&(
                         <button onClick={() => setshowpage(null)}
                          className='flex items-center mb-4 bg-green-300 px-4
