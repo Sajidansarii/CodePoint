@@ -2,7 +2,7 @@ const HTMLComments = () => {
   return (
     <div className="p-4 max-w-3xl">
       {/* Title */}
-      <h1 className="text-3xl font-bold text-blue-600 mb-4">HTML Comments</h1>
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">HTML Comments</h1>
 
       {/* Intro */}
       <p className="text-gray-700 mb-4">

@@ -4,7 +4,7 @@ const ObjectFitTutorial = () => {
   return (
     <div className="p-6 space-y-8">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-blue-600">CSS object-fit</h1>
+      <h1 className="text-3xl font-medium text-blue-500">CSS object-fit</h1>
       <p className="text-gray-700">
         The <code className="bg-gray-200 px-1 rounded">object-fit</code> property defines 
         how an <b>image</b> or <b>video</b> should be resized to fit its container.

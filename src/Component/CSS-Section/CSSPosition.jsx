@@ -1,7 +1,7 @@
 export default function CssPosition() {
   return (
     <div className="p-6 space-y-8">
-      <h1 className="text-3xl font-bold text-indigo-600">CSS Position</h1>
+      <h1 className="text-3xl font-bold text-blue-500">CSS Position</h1>
       <p>
         The <code>position</code> property specifies how an element is placed on
         the page. It works with <code>top</code>, <code>left</code>,{" "}

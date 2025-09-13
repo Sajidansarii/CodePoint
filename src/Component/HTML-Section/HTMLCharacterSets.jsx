@@ -3,14 +3,14 @@ import React from "react";
 const HtmlCharacterSets = () => {
   return (
     <div className="p-4 sm:p-6 bg-white rounded-lg shadow-md max-w-4xl">
-      <h1 className="text-2xl font-bold mb-4">HTML Character Sets</h1>
+      <h1 className="text-3xl font-medium mb-4 text-blue-500">HTML Character Sets</h1>
       <p className="mb-4">
         A <strong>character set</strong> is a collection of characters that your
         computer can understand and display. In HTML, the character set tells
         the browser how to interpret and display the text on a web page.
       </p>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">Common Character Sets</h2>
+      <h2 className="text-xl font-semibold mt-6 mb-2 text-blue-500">Common Character Sets</h2>
       <ul className="list-disc ml-6 mb-4">
         <li>
           <strong>UTF-8</strong> – The most widely used character set; supports
@@ -26,8 +26,8 @@ const HtmlCharacterSets = () => {
         </li>
       </ul>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">Declaring a Character Set in HTML</h2>
-      <pre className="bg-gray-900 text-green-400 p-3 rounded-lg overflow-x-auto mb-4">
+      <h2 className="text-xl font-semibold mt-6 mb-2 text-blue-500">Declaring a Character Set in HTML</h2>
+      <pre className="bg-gray-200  p-3 rounded-lg overflow-x-auto mb-4">
         {`<!DOCTYPE html>
 <html>
 <head>
@@ -53,7 +53,7 @@ const HtmlCharacterSets = () => {
       </div>
 
       <h2 className="text-xl font-semibold mt-6 mb-2">Example of Character Display</h2>
-      <pre className="bg-gray-900 text-green-400 p-3 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-200  p-3 rounded-lg overflow-x-auto">
         {`<p>English: Hello</p>
 <p>Hindi: नमस्ते</p>
 <p>Chinese: 你好</p>

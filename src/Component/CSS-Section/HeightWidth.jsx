@@ -1,14 +1,14 @@
 export default function CssHeightWidth() {
   return (
-    <div className="p-6 max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4 text-green-600">CSS Height and Width</h1>
+    <div className="p-6 max-w-3xl">
+      <h1 className="text-3xl font-medium mb-4 text-blue-500">CSS Height and Width</h1>
       <p className="mb-4">
         The <code>height</code> and <code>width</code> properties define how tall and wide an element is.
         You can use values like <b>px</b>, <b>%</b>, <b>vh</b>, <b>vw</b>, or <b>auto</b>.
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto">
         <code>{`div {
   height: 200px;
   width: 300px;

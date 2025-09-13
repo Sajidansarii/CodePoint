@@ -3,7 +3,7 @@ import React from "react";
 const CssInlineBlock = () => {
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">CSS inline-block</h1>
+      <h1 className="text-3xl font-medium mb-4 text-blue-500">CSS inline-block</h1>
       <p className="mb-4">
         The <code>inline-block</code> value of the <code>display</code> property 
         allows an element to behave like an inline element while still respecting 
@@ -34,7 +34,7 @@ const CssInlineBlock = () => {
       </div>
 
       <h2 className="text-xl font-semibold mt-6 mb-2">Syntax</h2>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-200  p-4 rounded-lg overflow-x-auto">
 {`selector {
   display: inline-block;
 }`}

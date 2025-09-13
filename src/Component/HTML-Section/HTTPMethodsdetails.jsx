@@ -5,7 +5,7 @@ const HttpsMethods = () => {
   return (
     <div className="p-4 md:p-8 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
       {/* Heading */}
-      <h1 className="text-3xl font-bold mb-4">HTTPS Methods</h1>
+      <h1 className="text-3xl font-medium mb-4 text-blue-500">HTTPS Methods</h1>
       <p className="mb-4">
         <strong>HTTPS</strong> (HyperText Transfer Protocol Secure) is the secure
         version of HTTP. It uses encryption (SSL/TLS) to protect data between the

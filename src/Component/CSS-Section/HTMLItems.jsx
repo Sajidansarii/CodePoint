@@ -4,7 +4,7 @@ const HTMLItems = () => {
   return (
     <div className="p-6 space-y-8">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-indigo-600">HTML Elements (Items)</h1>
+      <h1 className="text-3xl font-medium text-blue-500">HTML Elements (Items)</h1>
       <p className="text-gray-700">
         HTML me <b>elements</b> (ya items) ek webpage ke building blocks hote hain. 
         Har element ek specific purpose ko define karta hai — jaise heading, paragraph, 

@@ -68,7 +68,7 @@ const CssColorValues = () => {
 
   return (
     <div className="p-6 max-w-5xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-blue-600">
+      <h1 className="text-3xl font-medium mb-6 text-blue-500">
         🎨 CSS Color Values
       </h1>
       <p className="mb-6 text-gray-700">

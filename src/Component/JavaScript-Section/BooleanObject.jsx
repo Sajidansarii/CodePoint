@@ -29,7 +29,7 @@ const BooleanObjectExample = () => {
 
   return (
     <div className="max-w-3xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
-      <h1 className="text-2xl font-bold text-gray-800 mb-4">
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">
         🔁 Boolean Object in JavaScript
       </h1>
 

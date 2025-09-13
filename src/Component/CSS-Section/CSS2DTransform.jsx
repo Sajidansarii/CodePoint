@@ -4,7 +4,7 @@ const Css2DTransforms = () => {
   return (
     <div className="p-8 bg-gray-50 min-h-screen space-y-8">
       {/* Title */}
-      <h1 className="text-3xl font-bold text-center text-gray-800">
+      <h1 className="text-3xl font-medium text-center text-blue-500">
         CSS 2D Transforms
       </h1>
 
@@ -17,8 +17,8 @@ const Css2DTransforms = () => {
 
       {/* Syntax */}
       <div className="bg-white p-6 rounded shadow">
-        <h2 className="text-xl font-semibold mb-2">🔹 Syntax</h2>
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+        <h2 className="text-xl font-semibold mb-2">Syntax</h2>
+        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto text-left">
 {`transform: translate(x, y);
 transform: rotate(angle);
 transform: scale(x, y);
@@ -34,7 +34,7 @@ transform: skew(x-angle, y-angle);`}
           ho.
         </p>
 
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto text-left">
 {`.box {
   width: 100px;
   height: 100px;
@@ -55,7 +55,7 @@ transform: skew(x-angle, y-angle);`}
           <code>rotate()</code> se element ko X-Y plane par ghuma sakte ho.
         </p>
 
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto text-left">
 {`.box {
   width: 100px;
   height: 100px;
@@ -76,7 +76,7 @@ transform: skew(x-angle, y-angle);`}
           <code>scale()</code> element ka size increase ya decrease karta hai.
         </p>
 
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto text-left">
 {`.box {
   width: 100px;
   height: 100px;
@@ -98,7 +98,7 @@ transform: skew(x-angle, y-angle);`}
           sakte ho.
         </p>
 
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto text-left">
 {`.box {
   width: 100px;
   height: 100px;
@@ -121,7 +121,7 @@ transform: skew(x-angle, y-angle);`}
           <li><strong>scale(x, y)</strong> → size bada ya chhota kar deta hai.</li>
           <li><strong>skew(x, y)</strong> → element ko tilt karta hai.</li>
           <li>Multiple transforms ek sath bhi use ho sakte hain:
-            <pre className="bg-gray-900 text-green-300 p-2 rounded mt-2 text-sm overflow-x-auto">{`transform: translate(50px, 20px) rotate(30deg) scale(1.2);`}
+            <pre className="bg-gray-200  p-2 rounded mt-2 text-sm overflow-x-auto">{`transform: translate(50px, 20px) rotate(30deg) scale(1.2);`}
             </pre>
           </li>
         </ul>

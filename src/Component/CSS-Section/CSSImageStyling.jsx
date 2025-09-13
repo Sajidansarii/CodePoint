@@ -4,7 +4,7 @@ const ImageStylingTutorial = () => {
   return (
     <div className="p-6 space-y-8">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-blue-600">CSS Image Styling</h1>
+      <h1 className="text-3xl font-medium text-blue-500">CSS Image Styling</h1>
       <p className="text-gray-700">
         CSS allows you to style images in many creative ways such as adding borders, 
         shadows, rounded corners, opacity, and hover effects. Let’s see some examples:

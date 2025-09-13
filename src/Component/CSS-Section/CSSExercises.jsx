@@ -4,7 +4,7 @@ const CssExercises = () => {
   return (
     <div className="p-6 max-w-4xl mx-auto">
       {/* Heading */}
-      <h1 className="text-3xl font-bold mb-6 text-blue-600">
+      <h1 className="text-3xl font-medium mb-6 text-blue-500">
         CSS Exercises
       </h1>
       <p className="mb-6 text-gray-700">

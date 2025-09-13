@@ -10,13 +10,13 @@ const CssColorNames = () => {
     { name: "Purple", class: "bg-purple-500 text-white" },
     { name: "Pink", class: "bg-pink-400 text-white" },
     { name: "Black", class: "bg-black text-white" },
-    { name: "White", class: "bg-white text-black border" }, // 👈 text fix for white
+    { name: "White", class: "bg-white text-black border" }, 
     { name: "Gray", class: "bg-gray-500 text-white" },
   ];
 
   return (
     <div className="p-6">
-      <h2 className="text-2xl font-bold mb-4">🎨 CSS Color Names</h2>
+      <h2 className="text-3xl font-medium text-blue-500 mb-4"> CSS Color Names</h2>
       <p className="mb-6 text-gray-700">
         CSS mein <code>color names</code> predefined hote hain jaise <b>red</b>, <b>blue</b>, <b>green</b> etc. 
         Inhe directly CSS mein use karke background, text ya border color set kar sakte ho.

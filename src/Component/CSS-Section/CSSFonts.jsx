@@ -1,14 +1,14 @@
 export default function CssFont() {
   return (
-    <div className="p-6 max-w-5xl mx-auto">
-      <h1 className="text-3xl font-bold text-indigo-600 mb-4">CSS Fonts</h1>
+    <div className="p-6 max-w-5xl">
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS Fonts</h1>
       <p className="mb-4">
         CSS provides a set of <b>font properties</b> to control the size, style, 
         weight, family, and spacing of text.
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto">
         <code>{`p {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;

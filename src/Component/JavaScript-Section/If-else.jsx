@@ -4,7 +4,7 @@ const IfElseInJS = () => {
   return (
     <div className="p-6 max-w-4xl mx-auto">
       {/* Title */}
-      <h1 className="text-3xl font-bold text-blue-600 mb-4">
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">
         JavaScript if-else Statement
       </h1>
 

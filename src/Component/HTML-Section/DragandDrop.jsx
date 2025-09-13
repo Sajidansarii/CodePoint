@@ -21,7 +21,7 @@ const HTMLDragAndDrop = () => {
 
   return (
     <div className="p-4 max-w-3xl">
-      <h1 className="text-3xl font-bold text-blue-600 mb-4">HTML Drag and Drop</h1>
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">HTML Drag and Drop</h1>
 
       <p className="text-gray-700 mb-4">
         The <strong>Drag and Drop API</strong> allows users to drag elements and drop them into other parts of the web page. This feature is commonly used in image uploaders, to-do lists, file explorers, and more.

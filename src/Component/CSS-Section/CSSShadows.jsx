@@ -4,7 +4,7 @@ const CSSShadows = () => {
   return (
     <div className="p-6 space-y-8">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-indigo-600">CSS Shadows</h1>
+      <h1 className="text-3xl font-medium text-blue-500">CSS Shadows</h1>
       <p className="text-gray-700">
         CSS me shadows ka use elements aur text ko depth aur highlight dene ke liye hota hai.
         Hum mostly <code>text-shadow</code> aur <code>box-shadow</code> properties ka use karte hain.

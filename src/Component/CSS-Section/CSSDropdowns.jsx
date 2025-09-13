@@ -4,7 +4,7 @@ const CssDropdowns = () => {
   return (
     <div className="p-6">
       {/* Title */}
-      <h1 className="text-2xl font-bold mb-4">CSS Dropdowns</h1>
+      <h1 className="text-3xl font-medium mb-4 text-blue-500">CSS Dropdowns</h1>
       <p className="mb-4">
         A <strong>dropdown</strong> is a hidden menu that becomes visible when a
         user hovers or clicks on a button or link. Dropdowns are commonly used
@@ -17,7 +17,7 @@ const CssDropdowns = () => {
         This dropdown appears when you hover over the button.
       </p>
 
-      <div className="relative inline-block">
+      <div className="relative inline-block group">
         <button className="bg-blue-600 text-white px-4 py-2 rounded-md">
           Hover Me
         </button>
@@ -34,7 +34,7 @@ const CssDropdowns = () => {
         </div>
       </div>
 
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto mt-4">
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto mt-4">
 {`/* CSS Example */
 .dropdown {
   position: relative;
@@ -75,7 +75,7 @@ const CssDropdowns = () => {
         </div>
       </details>
 
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto mt-4">
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto mt-4">
 {`/* Using HTML <details> and <summary> */
 <details>
   <summary>Click Me</summary>
@@ -107,7 +107,7 @@ const CssDropdowns = () => {
         </ul>
       </nav>
 
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto mt-4">
+      <pre className="bg-gray-200  p-4 rounded-lg overflow-x-auto mt-4">
 {`.navbar ul {
   list-style: none;
   display: flex;

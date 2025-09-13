@@ -1,7 +1,7 @@
 export default function CssBoxModel() {
   return (
-    <div className="p-6 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold text-green-600 mb-4">CSS Box Model</h1>
+    <div className="p-6 max-w-4xl">
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS Box Model</h1>
       <p className="mb-4">
         The <b>Box Model</b> describes how the <b>content</b>, <b>padding</b>, 
         <b>border</b>, and <b>margin</b> work together to define the size and space 
@@ -9,7 +9,7 @@ export default function CssBoxModel() {
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-200  p-4 rounded-lg overflow-x-auto">
         <code>{`.box {
   width: 200px;
   height: 100px;

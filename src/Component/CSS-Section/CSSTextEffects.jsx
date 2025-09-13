@@ -4,7 +4,7 @@ const CSSTextEffects = () => {
   return (
     <div className="p-6 space-y-8">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-purple-600">CSS Text Effects</h1>
+      <h1 className="text-3xl font-medium text-blue-500">CSS Text Effects</h1>
       <p className="text-gray-700">
         CSS provides different properties to make text more attractive, such as{" "}
         <code>text-shadow</code>, <code>-webkit-text-stroke</code>, 

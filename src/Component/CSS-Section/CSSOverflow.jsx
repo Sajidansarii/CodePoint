@@ -3,7 +3,7 @@ import React from "react";
 const CssOverflow = () => {
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">CSS Overflow</h1>
+      <h1 className="text-3xl font-medium mb-4 text-blue-500">CSS Overflow</h1>
       <p className="mb-4">
         The <code>overflow</code> property controls what happens when the content of an element 
         is too large to fit in its box.
@@ -53,7 +53,7 @@ const CssOverflow = () => {
       </div>
 
       <h2 className="text-xl font-semibold mt-6 mb-2">Syntax</h2>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-200  p-4 rounded-lg overflow-x-auto">
 {`selector {
   overflow: visible | hidden | scroll | auto;
 }`}

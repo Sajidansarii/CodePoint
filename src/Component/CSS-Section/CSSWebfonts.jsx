@@ -4,7 +4,7 @@ const WebFontsTutorial = () => {
   return (
     <div className="p-6 space-y-8">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-purple-600">CSS Web Fonts</h1>
+      <h1 className="text-3xl font-medium text-blue-500">CSS Web Fonts</h1>
       <p className="text-gray-700">
         Web fonts allow you to use custom fonts on your website instead of 
         relying only on system fonts like Arial or Times New Roman. 

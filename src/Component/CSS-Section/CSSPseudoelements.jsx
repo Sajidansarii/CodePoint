@@ -2,9 +2,9 @@ import React from "react";
 
 export default function PseudoElements() {
   return (
-    <div className="p-6 max-w-3xl mx-auto">
+    <div className="p-6 max-w-3xl">
       {/* Title */}
-      <h1 className="text-3xl font-bold mb-4 text-blue-600">
+      <h1 className="text-3xl font-medium mb-4 text-blue-500">
         CSS Pseudo-elements
       </h1>
 
@@ -37,7 +37,7 @@ export default function PseudoElements() {
 
       {/* Syntax */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Syntax</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-6 overflow-x-auto">
+      <pre className="bg-gray-200 p-4 rounded-lg mb-6 overflow-x-auto">
         {`selector::pseudo-element {
   property: value;
 }`}
@@ -45,25 +45,25 @@ export default function PseudoElements() {
 
       {/* Example 1 */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Example 1: ::before and ::after</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-4 overflow-x-auto">
+      <pre className="bg-gray-200  p-4 rounded-lg mb-4 overflow-x-auto">
         {`h1::before {
-  content: "🔥 ";
+  content: "Head";
   color: red;
 }
 h1::after {
-  content: " 🚀";
+  content: "Paragraph";
   color: blue;
 }`}
       </pre>
       <div className="border p-4 rounded-lg mb-6">
-        <h1 className="relative before:content-['🔥'] before:text-red-500 after:content-['🚀'] after:text-blue-500">
+        <h1 className="relative before:content-['Head'] before:text-red-500 after:content-['Paragraph'] after:text-blue-500">
           Pseudo Elements
         </h1>
       </div>
 
       {/* Example 2 */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Example 2: ::first-letter</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-4 overflow-x-auto">
+      <pre className="bg-gray-200  p-4 rounded-lg mb-4 overflow-x-auto">
         {`p::first-letter {
   font-size: 40px;
   color: green;
@@ -78,7 +78,7 @@ h1::after {
 
       {/* Example 3 */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Example 3: ::selection</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-4 overflow-x-auto">
+      <pre className="bg-gray-200  p-4 rounded-lg mb-4 overflow-x-auto">
         {`p::selection {
   background: yellow;
   color: black;

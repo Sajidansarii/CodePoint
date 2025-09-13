@@ -4,7 +4,7 @@ const ImageCenteringTutorial = () => {
   return (
     <div className="p-6 space-y-8">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-blue-600">CSS Image Centering</h1>
+      <h1 className="text-3xl font-medium text-blue-500">CSS Image Centering</h1>
       <p className="text-gray-700">
         Centering an image is a common task in web design. CSS provides different 
         ways to align and center images both <b>horizontally</b> and <b>vertically</b>.

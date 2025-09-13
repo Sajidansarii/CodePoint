@@ -3,7 +3,7 @@ import React from "react";
 const ExternalCSS = () => {
   return (
     <div className="p-4 sm:p-6 bg-gray-50 min-h-screen">
-      <h1 className="text-3xl font-bold text-blue-600 mb-4">External CSS</h1>
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">External CSS</h1>
 
       <p className="text-gray-700 mb-4">
         <strong>External CSS</strong> is used to apply styles to multiple HTML
@@ -17,7 +17,7 @@ const ExternalCSS = () => {
         <code className="bg-gray-200 px-1 rounded">&lt;link&gt;</code> tag inside
         the <code>&lt;head&gt;</code> section of your HTML file:
       </p>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm mb-6">
+      <div className="bg-gray-200  p-4 rounded-lg overflow-x-auto text-sm mb-6">
         <pre>
 {`<head>
   <link rel="stylesheet" href="styles.css">
@@ -27,7 +27,7 @@ const ExternalCSS = () => {
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Example</h2>
       <p className="text-gray-700 mb-2">HTML file:</p>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm mb-6">
+      <div className="bg-gray-200  p-4 rounded-lg overflow-x-auto text-sm mb-6">
         <pre>
 {`<!DOCTYPE html>
 <html>
@@ -44,7 +44,7 @@ const ExternalCSS = () => {
       </div>
 
       <p className="text-gray-700 mb-2">CSS file (<code>styles.css</code>):</p>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm mb-6">
+      <div className="bg-gray-200  p-4 rounded-lg overflow-x-auto text-sm mb-6">
         <pre>
 {`h1 {
   color: blue;

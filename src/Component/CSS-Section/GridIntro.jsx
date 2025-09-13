@@ -4,7 +4,7 @@ const CSSGridIntro = () => {
   return (
     <div className="p-6 space-y-8">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-indigo-600">CSS Grid Introduction</h1>
+      <h1 className="text-3xl font-medium text-blue-500">CSS Grid Introduction</h1>
       <p className="text-gray-700">
         CSS Grid ek powerful 2D layout system hai jo rows aur columns dono ke 
         sath kaam karta hai. Ye web page layout banane ke liye Flexbox se zyada 

@@ -3,7 +3,7 @@ import React from "react";
 export default function AnimationShowcase() {
   return (
     <div className="p-10 space-y-10">
-      <h1 className="text-3xl font-bold text-center">✨ CSS Animations with Tailwind</h1>
+      <h1 className="text-3xl font-medium text-center text-blue-500">CSS Animations with Tailwind</h1>
 
       {/* Built-in Tailwind Animations */}
       <section>

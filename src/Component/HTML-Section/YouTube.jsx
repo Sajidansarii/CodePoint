@@ -2,7 +2,7 @@ const YouTubeTopic = () => {
   return (
     <div className="p-4 max-w-3xl">
       {/* Title */}
-      <h1 className="text-3xl sm:text-4xl font-bold text-red-600 mb-4 text-center sm:text-left">
+      <h1 className="text-3xl sm:text-4xl font-medium text-blue-500 mb-4 text-center sm:text-left">
         YouTube Integration on the Web
       </h1>
 
@@ -13,7 +13,7 @@ const YouTubeTopic = () => {
 
       {/* Getting Video ID */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-red-500 mb-2">1. Getting the YouTube Video ID</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-2">1. Getting the YouTube Video ID</h2>
         <p className="text-gray-700 mb-2">
           The video ID is the unique string in the YouTube URL. Examples:
         </p>
@@ -28,7 +28,7 @@ const YouTubeTopic = () => {
 
       {/* Basic Embed */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-red-500 mb-2">2. Basic Embed</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-2">2. Basic Embed</h2>
         <p className="text-gray-700 mb-2">
           Embed a video using an iframe:
         </p>
@@ -50,7 +50,7 @@ const YouTubeTopic = () => {
 
       {/* Privacy Enhanced */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-red-500 mb-2">3. Privacy-Enhanced Mode</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-2">3. Privacy-Enhanced Mode</h2>
         <p className="text-gray-700 mb-2">
           To reduce tracking unless the user interacts, use the “nocookie” domain:
         </p>
@@ -68,7 +68,7 @@ const YouTubeTopic = () => {
 
       {/* Responsive Wrapper */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-red-500 mb-2">4. Responsive Embed</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-2">4. Responsive Embed</h2>
         <p className="text-gray-700 mb-2">
           Wrap the iframe to maintain aspect ratio and make it fluid:
         </p>
@@ -92,7 +92,7 @@ const YouTubeTopic = () => {
 
       {/* Lazy Loading & Placeholder */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-red-500 mb-2">5. Lazy Loading</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-2">5. Lazy Loading</h2>
         <p className="text-gray-700 mb-2">
           To improve page performance, delay loading the full iframe until user interaction. Show a thumbnail placeholder first:
         </p>
@@ -127,7 +127,7 @@ const YouTubeTopic = () => {
 
       {/* Playlist & Channel Embeds */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-red-500 mb-2">6. Playlist Embed</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-2">6. Playlist Embed</h2>
         <p className="text-gray-700 mb-2">
           Embed an entire playlist by using its ID:
         </p>
@@ -145,7 +145,7 @@ const YouTubeTopic = () => {
 
       {/* YouTube IFrame API */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-red-500 mb-2">7. YouTube IFrame API</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-2">7. YouTube IFrame API</h2>
         <p className="text-gray-700 mb-2">
           For interactive control (play, pause, listen to events), use the YouTube IFrame API:
         </p>
@@ -174,7 +174,7 @@ const YouTubeTopic = () => {
 
       {/* Accessibility & SEO */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-red-500 mb-2">8. Accessibility & SEO</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-2">8. Accessibility & SEO</h2>
         <ul className="list-disc pl-5 space-y-1 text-gray-700">
           <li>Always provide a descriptive <code>title</code> on the iframe.</li>
           <li>Include context text before/after the video for users relying on screen readers.</li>
@@ -185,7 +185,7 @@ const YouTubeTopic = () => {
 
       {/* Common Mistakes */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-red-500 mb-2">Common Mistakes</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Common Mistakes</h2>
         <ul className="list-disc pl-5 space-y-1 text-gray-700">
           <li>Embedding with fixed pixel sizes without responsive wrapper.</li>
           <li>Forgetting the <code>title</code> attribute (accessibility issue).</li>
@@ -196,7 +196,7 @@ const YouTubeTopic = () => {
 
       {/* Quick Recap */}
       <div className="mt-6 p-4 bg-red-50 rounded-md border border-red-200">
-        <h3 className="text-lg font-semibold text-red-700 mb-2">Quick Recap:</h3>
+        <h3 className="text-lg font-semibold text-blue-700 mb-2">Quick Recap:</h3>
         <ul className="list-disc pl-5 space-y-1 text-gray-700 text-sm sm:text-base">
           <li>Extract the video ID from the YouTube URL.</li>
           <li>Embed via iframe; use <code>youtube-nocookie.com</code> for privacy.</li>

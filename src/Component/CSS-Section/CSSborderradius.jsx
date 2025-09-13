@@ -4,7 +4,7 @@ const CSSBorderRadius = () => {
   return (
     <div className="p-6 space-y-8">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-indigo-600">CSS Border-Radius</h1>
+      <h1 className="text-3xl font-medium text-blue-500">CSS Border-Radius</h1>
       <p className="text-gray-700">
         CSS <code>border-radius</code> property ka use karke hum elements ke corners ko{" "}
         <strong>round</strong> bana sakte hain. Iski madad se hum circle, oval aur rounded boxes

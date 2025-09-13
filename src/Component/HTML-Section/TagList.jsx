@@ -55,7 +55,7 @@ const htmlTags = [
 const HtmlTagList = () => {
   return (
     <div className="max-w-4xl px-4 py-8">
-      <h2 className="text-2xl font-bold mb-6 text-center">HTML Tag Reference</h2>
+      <h2 className="text-3xl font-medium mb-4  text-blue-500">HTML Tag Reference</h2>
       <div className="overflow-x-auto">
         <table className="min-w-full text-sm border border-gray-200 rounded-md">
           <thead>

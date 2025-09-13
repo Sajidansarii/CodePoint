@@ -4,7 +4,7 @@ const CssMasking = () => {
   return (
     <div className="p-8 bg-gray-50 min-h-screen space-y-8">
       {/* Title */}
-      <h1 className="text-3-2xl font-bold text-center text-gray-800">
+      <h1 className="text-3xl font-medium text-blue-500">
         CSS Masking
       </h1>
 
@@ -25,7 +25,7 @@ const CssMasking = () => {
           transparent parts ko mask ke tarah use kar sakte hain.
         </p>
 
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
 {`div {
   mask-image: url('mask-shape.png');
   -webkit-mask-image: url('mask-shape.png'); /* Safari ke liye */
@@ -51,7 +51,7 @@ const CssMasking = () => {
           hain.
         </p>
 
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
 {`div {
   mask-image: linear-gradient(to right, black, transparent);
   -webkit-mask-image: linear-gradient(to right, black, transparent);
@@ -73,7 +73,7 @@ const CssMasking = () => {
           Hum ek <code>SVG shape</code> ko mask ke tarah use kar sakte hain.
         </p>
 
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
 {`div {
   mask-image: url('shape.svg');
   -webkit-mask-image: url('shape.svg');

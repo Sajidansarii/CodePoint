@@ -3,7 +3,7 @@ import React from "react";
 const JSRandom = () => {
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow mt-10">
-      <h1 className="text-3xl font-bold text-blue-600 mb-4">JavaScript <span className="text-green-600">Random Numbers</span></h1>
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">JavaScript <span className="text-green-600">Random Numbers</span></h1>
       
       <p className="text-gray-700 mb-6">
         In JavaScript, random numbers are generated using the <span className="font-semibold">Math.random()</span> method. 

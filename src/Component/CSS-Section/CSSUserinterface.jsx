@@ -4,7 +4,7 @@ const CssUserInterface = () => {
   return (
     <div className="p-8 bg-gray-50 min-h-screen space-y-10">
       {/* Title */}
-      <h1 className="text-3xl font-bold text-center text-gray-800">
+      <h1 className="text-3xl font-medium text-blue-500">
         CSS User Interface (UI)
       </h1>
 

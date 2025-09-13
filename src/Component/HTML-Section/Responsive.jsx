@@ -2,7 +2,7 @@ const HTMLResponsive = () => {
   return (
     <div className="p-4 max-w-3xl">
       {/* Title */}
-      <h1 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-4 text-center sm:text-left">
+      <h1 className="text-3xl sm:text-4xl font-medium text-blue-500 mb-4 text-center sm:text-left">
         Responsive in HTML
       </h1>
 
@@ -18,7 +18,7 @@ const HTMLResponsive = () => {
           The first step is adding the viewport meta tag in the <code>&lt;head&gt;</code> so browsers scale the page correctly on mobile devices.
         </p>
         <pre className="bg-gray-100 p-3 rounded mb-2 overflow-x-auto text-sm">
-          <code>{<meta name="viewport" content="width=device-width, initial-scale=1.0" />}</code>
+          <code>{`<meta name="viewport" content="width=device-width, initial-scale=1.0" />`}</code>
         </pre>
         <p className="text-gray-700">
           This makes the layout width match the device width and sets initial zoom to 1.

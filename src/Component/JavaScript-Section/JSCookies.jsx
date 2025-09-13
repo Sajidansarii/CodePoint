@@ -5,7 +5,7 @@ const JSCookies = () => {
 
   // ✅ Set a cookie
   const setCookie = () => {
-    document.cookie = "username=Sajid; expires=Fri, 31 Dec 2025 23:59:59 GMT; path=/";
+    document.cookie = "username=CodePoint; expires=Fri, 31 Dec 2025 23:59:59 GMT; path=/";
     setCookieInfo("✅ Cookie 'username' has been set!");
   };
 
@@ -23,7 +23,7 @@ const JSCookies = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white rounded-xl shadow-lg mt-10 space-y-6">
-      <h1 className="text-3xl font-bold text-blue-600">
+      <h1 className="text-3xl font-medium text-blue-500">
         Cookies in <span className="text-green-600">JavaScript</span>
       </h1>
 

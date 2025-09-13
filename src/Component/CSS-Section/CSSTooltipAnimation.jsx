@@ -4,7 +4,7 @@ const CssTooltipsAnimation = () => {
   return (
     <div className="p-8 bg-gray-50 min-h-screen space-y-8">
       {/* Title */}
-      <h1 className="text-3xl font-bold text-center text-gray-800">
+      <h1 className="text-3xl font-medium text-blue-500">
         CSS Tooltips with Animation
       </h1>
 
@@ -19,7 +19,7 @@ const CssTooltipsAnimation = () => {
       {/* Example 1: Fade In Tooltip */}
       <div className="bg-white p-6 rounded shadow space-y-4 text-center">
         <h2 className="text-xl font-semibold">1. Fade-in Tooltip</h2>
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-20 p-4 rounded text-sm overflow-x-auto text-left">
 {`.tooltip {
   position: relative;
   display: inline-block;
@@ -63,7 +63,7 @@ const CssTooltipsAnimation = () => {
       {/* Example 2: Slide-in Tooltip */}
       <div className="bg-white p-6 rounded shadow space-y-4 text-center">
         <h2 className="text-xl font-semibold">2. Slide-in Tooltip</h2>
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto text-left">
 {`.tooltip .tooltip-text {
   visibility: hidden;
   opacity: 0;
@@ -97,7 +97,7 @@ const CssTooltipsAnimation = () => {
       {/* Example 3: Bounce Animation Tooltip */}
       <div className="bg-white p-6 rounded shadow space-y-4 text-center">
         <h2 className="text-xl font-semibold">3. Bounce Tooltip</h2>
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto text-left">
 {`@keyframes bounceIn {
   0%   { transform: translateY(10px); opacity: 0; }
   50%  { transform: translateY(-5px); opacity: 1; }

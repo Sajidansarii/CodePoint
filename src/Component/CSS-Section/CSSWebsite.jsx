@@ -4,7 +4,7 @@ const CssWebsite = () => {
   return (
     <div className="p-6 max-w-5xl mx-auto">
       {/* Heading */}
-      <h1 className="text-3xl font-bold mb-6 text-blue-600">
+      <h1 className="text-3xl font-medium mb-6 text-blue-500">
         Build a Website with CSS
       </h1>
 

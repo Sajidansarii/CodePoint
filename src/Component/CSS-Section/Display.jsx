@@ -1,7 +1,7 @@
 export default function CssDisplay() {
   return (
-    <div className="p-6 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold text-indigo-600 mb-4">CSS Display</h1>
+    <div className="p-6 max-w-4xl">
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS Display</h1>
       <p className="mb-4">
         The <code>display</code> property defines how elements are displayed on
         the page. Common values include <code>block</code>, <code>inline</code>,{" "}

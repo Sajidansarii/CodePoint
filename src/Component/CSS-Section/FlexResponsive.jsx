@@ -4,7 +4,7 @@ const CSSFlexResponsive = () => {
   return (
     <div className="p-6 space-y-8">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-indigo-600">CSS Flex Responsive</h1>
+      <h1 className="text-3xl font-medium text-blue-500">CSS Flex Responsive</h1>
       <p className="text-gray-700">
         Flexbox ek powerful layout system hai jo responsive design banane ke liye 
         bahut useful hai. Ye automatically elements ko resize aur wrap kar deta hai 

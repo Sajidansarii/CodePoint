@@ -77,7 +77,7 @@ const animationProperties = [
 export default function CssAnimationProperties() {
   return (
     <div className="p-6">
-      <h1 className="text-3xl font-bold text-purple-600 mb-6">
+      <h1 className="text-3xl font-medium text-purple-600 mb-6">
         🎬 CSS Animation Properties
       </h1>
       <p className="mb-6 text-gray-700">

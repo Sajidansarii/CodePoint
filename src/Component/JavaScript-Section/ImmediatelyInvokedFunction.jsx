@@ -19,7 +19,7 @@ const IIFEDemo = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded space-y-6">
-      <h1 className="text-3xl font-bold text-purple-600">⚡ Immediately Invoked Function Expression (IIFE)</h1>
+      <h1 className="text-3xl font-medium text-blue-500">Immediately Invoked Function Expression (IIFE)</h1>
 
       {/* Introduction */}
       <section>

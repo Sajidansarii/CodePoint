@@ -1,7 +1,7 @@
 const HowHTMLWorks = () => {
   return (
     <div className="p-4 sm:p-6 md:p-8 max-w-3xl">
-      <h1 className="text-2xl sm:text-3xl font-bold text-blue-600 mb-4">
+      <h1 className="text-3xl sm:text-3xl font-medium text-blue-500 mb-4">
         How HTML Works in a Browser
       </h1>
 

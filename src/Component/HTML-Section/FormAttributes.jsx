@@ -2,7 +2,7 @@ const HTMLInputFormAttribute = () => {
   return (
     <div className="p-4 max-w-3xl">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-blue-600 mb-4">
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">
         HTML <code>form</code> Attribute in Input
       </h1>
 

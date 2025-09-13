@@ -3,7 +3,7 @@ import React from "react";
 const CSSDisplay = () => {
   return (
     <div className="p-4 sm:p-6 bg-gray-50 min-h-screen">
-      <h1 className="text-3xl font-bold text-blue-600 mb-4">CSS Display</h1>
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS Display</h1>
 
       <p className="text-gray-700 mb-4">
         The <strong>CSS <code>display</code></strong> property specifies how an
@@ -12,7 +12,7 @@ const CSSDisplay = () => {
       </p>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Syntax</h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-4">
         <pre>
 {`selector {
   display: value;
@@ -49,7 +49,7 @@ const CSSDisplay = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 1: Block vs Inline
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-200 p-4 rounded-lg text-sm mb-4">
         <pre>
 {`p {
   display: inline;
@@ -71,7 +71,7 @@ span {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 2: Inline-block
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-4">
         <pre>
 {`.box {
   display: inline-block;
@@ -92,7 +92,7 @@ span {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 3: None (Hide Element)
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-4">
         <pre>
 {`.hidden {
   display: none;
@@ -108,7 +108,7 @@ span {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 4: Flex & Grid
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-4">
         <pre>
 {`.flex-container {
   display: flex;

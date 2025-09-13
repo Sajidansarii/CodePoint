@@ -32,7 +32,7 @@ const FunctionParametersDemo = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white shadow rounded space-y-6">
-      <h1 className="text-3xl font-bold text-sky-600">🎯 JavaScript Function Parameters</h1>
+      <h1 className="text-3xl font-medium text-blue-500">JavaScript Function Parameters</h1>
 
       {/* 1. Basic Parameters */}
       <section>

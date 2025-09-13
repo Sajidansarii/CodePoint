@@ -3,7 +3,7 @@ import React from "react";
 const CssOpacity = () => {
   return (
     <div className="p-6">
-      <h1 className="text-22 font-bold mb-4">CSS Opacity</h1>
+      <h1 className="text-3xl font-medium mb-4 text-blue-500">CSS Opacity</h1>
       <p className="mb-4">
         The <code>opacity</code> property in CSS is used to control the
         transparency of an element. It takes values from <code>0</code> (fully
@@ -27,7 +27,7 @@ const CssOpacity = () => {
         </div>
       </div>
 
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto">
 {`div {
   opacity: 0.5; /* 50% visible */
 }`}
@@ -40,7 +40,7 @@ const CssOpacity = () => {
         Hover Me
       </div>
 
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-200  p-4 rounded-lg overflow-x-auto">
 {`.box {
   opacity: 1;
   transition: opacity 0.3s;

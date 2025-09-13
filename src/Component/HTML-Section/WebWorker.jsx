@@ -25,7 +25,7 @@ const HTMLWebWorker = () => {
 
   return (
     <div className="p-4 max-w-3xl">
-      <h1 className="text-3xl font-bold text-blue-600 mb-4">HTML Web Workers</h1>
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">HTML Web Workers</h1>
 
       <p className="text-gray-700 mb-4">
         A <strong>Web Worker</strong> is a JavaScript script that runs in the background, separate from the main browser thread. It helps perform heavy calculations without freezing the UI.

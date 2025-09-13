@@ -3,7 +3,7 @@ import React from "react";
 const CssCombinators = () => {
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">CSS Combinators</h1>
+      <h1 className="text-3xl font-medium mb-4 text-blue-500">CSS Combinators</h1>
       <p className="mb-4">
         CSS Combinators define the relationship between two selectors. 
         They are used to target elements based on their hierarchy or sibling relationships.
@@ -22,7 +22,7 @@ const CssCombinators = () => {
           </section>
         </div>
       </div>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto">
 {`div p {
   color: blue;
 }`}
@@ -41,7 +41,7 @@ const CssCombinators = () => {
           </section>
         </div>
       </div>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto">
 {`div > p {
   color: green;
 }`}
@@ -57,7 +57,7 @@ const CssCombinators = () => {
         <p className="text-red-600">This paragraph comes right after h3 (selected)</p>
         <p>This paragraph is not selected</p>
       </div>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto">
 {`h3 + p {
   color: red;
 }`}
@@ -73,7 +73,7 @@ const CssCombinators = () => {
         <p className="text-purple-600">This is a sibling paragraph (selected)</p>
         <p className="text-purple-600">This one too (selected)</p>
       </div>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto">
 {`h3 ~ p {
   color: purple;
 }`}

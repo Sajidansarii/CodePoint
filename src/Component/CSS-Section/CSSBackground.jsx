@@ -45,7 +45,7 @@ const CSSBackground = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 1: Background Color
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-4">
         <pre>
 {`body {
   background-color: lightblue;
@@ -60,7 +60,7 @@ const CSSBackground = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 2: Background Image
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-4">
         <pre>
 {`div {
   background-image: url("https://picsum.photos/200/300");
@@ -70,7 +70,7 @@ const CSSBackground = () => {
         </pre>
       </div>
       <div
-        className="h-40 rounded-lg mb-6 flex items-center justify-center text-white font-bold"
+        className="h-40 rounded-lg mb-6 flex items-center justify-center  font-bold"
         style={{
           backgroundImage: "url('https://picsum.photos/400/200')",
           backgroundSize: "cover",
@@ -84,7 +84,7 @@ const CSSBackground = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 3: Background Shorthand
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-4">
         <pre>
 {`div {
   background: lightgreen url("bg.jpg") no-repeat right top;

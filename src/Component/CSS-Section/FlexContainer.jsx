@@ -4,7 +4,7 @@ const CSSFlexboxContainer = () => {
   return (
     <div className="p-6 space-y-8">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-indigo-600">CSS Flexbox Container</h1>
+      <h1 className="text-3xl font-medium text-blue-500">CSS Flexbox Container</h1>
       <p className="text-gray-700">
         Flexbox use karne ke liye pehle <strong>container</strong> ko define karna padta hai. 
         Jo element <code>display: flex;</code> leta hai, use <strong>flex container</strong> kehte hain, 

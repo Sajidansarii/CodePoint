@@ -2,7 +2,7 @@ const HTMLAttributes = () => {
   return (
     <div className="p-4 max-w-3xl">
       {/* Title */}
-      <h1 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-4">
+      <h1 className="text-3xl sm:text-4xl font-medium text-blue-500 mb-4">
         HTML Form Attributes
       </h1>
 
@@ -14,7 +14,7 @@ const HTMLAttributes = () => {
       {/* Global Attributes */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-2">Global Attributes</h2>
-        <p className="text-gray-700 mb-2">
+        <p className="text-gray-700 mb-2">  
           These can be used on nearly any HTML element:
         </p>
         <ul className="list-disc pl-5 space-y-1 text-gray-700 mb-2">

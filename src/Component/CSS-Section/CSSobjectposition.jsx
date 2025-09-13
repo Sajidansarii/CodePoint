@@ -4,7 +4,7 @@ const ObjectPositionTutorial = () => {
   return (
     <div className="p-6 space-y-8">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-blue-600">CSS object-position</h1>
+      <h1 className="text-3xl font-medium text-blue-500">CSS object-position</h1>
       <p className="text-gray-700">
         The <code className="bg-gray-200 px-1 rounded">object-position</code> property is used 
         to set the <b>alignment</b> of an image or video inside its container when 

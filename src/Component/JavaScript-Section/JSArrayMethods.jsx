@@ -32,7 +32,7 @@ const ArrayMethodsDemo = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white rounded shadow space-y-6">
-      <h1 className="text-3xl font-bold text-blue-600">JavaScript Array Methods (React + Tailwind)</h1>
+      <h1 className="text-3xl font-medium text-blue-500">JavaScript Array Methods (React + Tailwind)</h1>
 
       {/* MAP */}
       <section>

@@ -4,7 +4,7 @@ const CSSGridColumnsRows = () => {
   return (
     <div className="p-6 space-y-8">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-indigo-600">
+      <h1 className="text-3xl font-medium text-blue-500">
         CSS Grid: Columns and Rows
       </h1>
       <p className="text-gray-700">

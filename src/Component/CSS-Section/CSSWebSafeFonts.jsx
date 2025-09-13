@@ -13,7 +13,7 @@ const CssWebSafeFonts = () => {
 
   return (
     <div className="p-6">
-      <h2 className="text-2xl font-bold mb-4">📝 CSS Web Safe Fonts</h2>
+      <h2 className="text-3xl font-medium mb-4">CSS Web Safe Fonts</h2>
       <p className="mb-6 text-gray-700">
         <b>Web Safe Fonts</b> wo fonts hote hain jo har operating system aur browser me by default available hote hain. 
         Isse ensure hota hai ki website ka text har user ko same dikhe.  

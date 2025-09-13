@@ -2,7 +2,7 @@ const HTMLJavaScript = () => {
   return (
     <div className="p-4 max-w-3xl">
       {/* Main Title */}
-      <h1 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-4 text-center sm:text-left">
+      <h1 className="text-3xl sm:text-4xl font-medium text-blue-500 mb-4 text-center sm:text-left">
         HTML JavaScript
       </h1>
 

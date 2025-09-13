@@ -3,7 +3,7 @@ import React from "react";
 export default function KeyframesDemo() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-50 to-indigo-100 p-4 space-y-8">
-      <h1 className="text-2xl sm:text-3xl font-bold text-indigo-700 text-center">
+      <h1 className="text-3xl sm:text-3xl font-medium text-blue-500">
         CSS @keyframes with Tailwind
       </h1>
 

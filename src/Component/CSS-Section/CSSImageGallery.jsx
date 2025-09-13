@@ -4,7 +4,7 @@ const CssImageGallery = () => {
   return (
     <div className="p-6">
       {/* Title */}
-      <h1 className="text-2xl font-bold mb-4">CSS Image Gallery</h1>
+      <h1 className="text-2xl font-medium mb-4 text-blue-500">CSS Image Gallery</h1>
       <p className="mb-4">
         A <strong>CSS Image Gallery</strong> is a collection of images arranged
         in a grid layout. With CSS, you can style images, add hover effects, and
@@ -51,8 +51,9 @@ const CssImageGallery = () => {
         />
       </div>
 
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto mt-4">
-{`/* CSS Example */
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto mt-4">
+        {/* <code>
+{`
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -68,6 +69,7 @@ const CssImageGallery = () => {
 .gallery img:hover {
   transform: scale(1.05);
 }`}
+</code> */}
       </pre>
 
       {/* Responsive Gallery */}
@@ -89,8 +91,9 @@ const CssImageGallery = () => {
         ))}
       </div>
 
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto mt-4">
-{`/* Responsive CSS */
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto mt-4">
+        {/* <code>
+{`
 @media screen and (max-width: 768px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
@@ -102,6 +105,7 @@ const CssImageGallery = () => {
     grid-template-columns: 1fr;
   }
 }`}
+</code> */}
       </pre>
 
       {/* Hover Effect Gallery */}
@@ -143,8 +147,9 @@ const CssImageGallery = () => {
         </div>
       </div>
 
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto mt-4">
-{`/* Hover Overlay */
+      <pre className="bg-gray-200  p-4 rounded-lg overflow-x-auto mt-4">
+        {/* <code>
+{`
 .gallery-item {
   position: relative;
 }
@@ -170,6 +175,7 @@ const CssImageGallery = () => {
 .gallery-item:hover .overlay {
   opacity: 1;
 }`}
+</code> */}
       </pre>
 
       {/* Notes */}

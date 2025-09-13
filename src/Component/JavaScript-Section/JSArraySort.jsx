@@ -26,7 +26,7 @@ const ArraySortDemo = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white shadow rounded space-y-6">
-      <h1 className="text-3xl font-bold text-green-600">JavaScript Array Sort Methods</h1>
+      <h1 className="text-3xl font-medium text-blue-500">JavaScript Array Sort Methods</h1>
 
       {/* 1. Default sort() */}
       <section>

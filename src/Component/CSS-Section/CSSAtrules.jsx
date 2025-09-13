@@ -46,7 +46,7 @@ export default function CssAtRules() {
 
   return (
     <div className="max-w-6xl mx-auto p-6">
-      <h1 className="text-3xl font-bold text-center text-indigo-600 mb-10">
+      <h1 className="text-3xl font-medium text-center text-indigo-600 mb-10">
          CSS @Rules Reference
       </h1>
 

@@ -5,7 +5,7 @@ const JSCookieAttributes = () => {
 
   // ✅ Set a cookie with attributes
   const setCookieWithAttributes = () => {
-    document.cookie = "username=Sajid; expires=Fri, 31 Dec 2025 23:59:59 GMT; path=/; Secure; SameSite=Strict";
+    document.cookie = "username=CodePoint; expires=Fri, 31 Dec 2025 23:59:59 GMT; path=/; Secure; SameSite=Strict";
     setCookieInfo("✅ Cookie 'username' set with attributes: expires, path, Secure, SameSite");
   };
 
@@ -23,7 +23,7 @@ const JSCookieAttributes = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white rounded-xl shadow-lg mt-10 space-y-6">
-      <h1 className="text-3xl font-bold text-blue-600">
+      <h1 className="text-3xl font-medium text-blue-500">
         Cookies Attributes in <span className="text-green-600">JavaScript</span>
       </h1>
 

@@ -3,7 +3,7 @@ import React from "react";
 const HowToAddCSS = () => {
   return (
     <div className="p-4 sm:p-6 bg-gray-50 min-h-screen">
-      <h1 className="text-3xl font-bold text-blue-600 mb-4">How to Add CSS</h1>
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">How to Add CSS</h1>
 
       <p className="text-gray-700 mb-4">
         CSS can be added to HTML in <strong>three different ways</strong>. Each
@@ -17,7 +17,7 @@ const HowToAddCSS = () => {
         It is written inside the <code>style</code> attribute of an HTML tag.
       </p>
 
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm mb-6">
+      <div className="bg-gray-200 p-4 rounded-lg overflow-x-auto text-sm mb-6">
         <pre>
 {`<h1 style="color:blue; text-align:center;">
   This is an inline styled heading
@@ -32,7 +32,7 @@ const HowToAddCSS = () => {
         the <code>&lt;style&gt;</code> tag within the <code>&lt;head&gt;</code> section.
       </p>
 
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm mb-6">
+      <div className="bg-gray-200 p-4 rounded-lg overflow-x-auto text-sm mb-6">
         <pre>
 {`<!DOCTYPE html>
 <html>
@@ -62,7 +62,7 @@ const HowToAddCSS = () => {
         and recommended method for large projects.
       </p>
 
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm mb-6">
+      <div className="bg-gray-200 p-4 rounded-lg overflow-x-auto text-sm mb-6">
         <pre>
 {`/* style.css */
 body {
@@ -75,7 +75,7 @@ h1 {
 }`}</pre>
       </div>
 
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm mb-6">
+      <div className="bg-gray-200  p-4 rounded-lg overflow-x-auto text-sm mb-6">
         <pre>
 {`<!-- index.html -->
 <!DOCTYPE html>

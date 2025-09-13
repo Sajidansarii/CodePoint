@@ -41,7 +41,7 @@ const CssSelectors = () => {
 
   return (
     <div className="p-6">
-      <h2 className="text-2xl font-bold mb-4">🎯 CSS Selectors</h2>
+      <h2 className="text-3xl text-blue-500 font-medium mb-4">CSS Selectors</h2>
       <p className="mb-6 text-gray-700">
         <b>CSS Selectors</b> ka use HTML elements ko select karne ke liye hota hai. 
         Ye selectors decide karte hain ki kaunse element pe CSS style apply hoga.

@@ -35,7 +35,7 @@ const ObjectDemo = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded space-y-6">
-      <h1 className="text-3xl font-bold text-green-600">🧱 JavaScript Objects</h1>
+      <h1 className="text-3xl font-medium text-blue-500">JavaScript Objects</h1>
 
       {/* Intro */}
       <section>

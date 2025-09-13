@@ -39,7 +39,7 @@ const CssImageSprites = () => {
 
   return (
     <div className="p-6 max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold mb-3">CSS Image Sprites</h1>
+      <h1 className="text-3xl font-medium text-blue-500 mb-3">CSS Image Sprites</h1>
       <p className="mb-4">
         A <strong>CSS image sprite</strong> combines multiple icons into a single image file.
         You then show one icon by shifting the <code>background-position</code>. This reduces

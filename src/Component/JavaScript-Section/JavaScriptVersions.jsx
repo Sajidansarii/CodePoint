@@ -6,11 +6,11 @@ export default function JavaScriptVersions() {
       <div className="max-w-5xl mx-auto space-y-8">
         {/* Page Title */}
         <header className="text-center">
-          <h1 className="text-4xl font-bold text-blue-600 mb-2">
+          <h1 className="text-3xl font-medium text-blue-500 mb-2">
             JavaScript Versions
           </h1>
           <p className="text-lg text-gray-600">
-            From ES1 to ESNext – Understanding how JavaScript has evolved 📈
+            From ES1 to ESNext – Understanding how JavaScript has evolved 
           </p>
         </header>
 

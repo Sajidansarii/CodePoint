@@ -3,7 +3,7 @@ import React from "react";
 const WhatIsCSS = () => {
   return (
     <div className="p-4 sm:p-6 bg-gray-50 min-h-screen">
-      <h1 className="text-3xl font-bold text-blue-600 mb-4">What is CSS?</h1>
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">What is CSS?</h1>
 
       <p className="text-gray-700 mb-4">
         <strong>CSS</strong> stands for{" "}
@@ -37,7 +37,7 @@ const WhatIsCSS = () => {
       </ul>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Example:</h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mb-6 text-sm">
+      <div className="bg-gray-200  p-4 rounded-lg overflow-x-auto mb-6 text-sm">
         <pre>
 {`<!DOCTYPE html>
 <html>

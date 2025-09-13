@@ -4,7 +4,7 @@ const CssNavigationBar = () => {
   return (
     <div className="p-6">
       {/* Title */}
-      <h1 className="text-2xl font-bold mb-4">CSS Navigation Bar</h1>
+      <h1 className="text-3xl font-medium mb-4 text-blue-500">CSS Navigation Bar</h1>
       <p className="mb-4">
         A <strong>navigation bar (navbar)</strong> is a menu that helps users
         navigate between different sections or pages of a website. In CSS, you
@@ -24,7 +24,7 @@ const CssNavigationBar = () => {
         </ul>
       </div>
 
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto mt-4">
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto mt-4">
 {`ul {
   list-style-type: none;
   margin: 0;
@@ -56,7 +56,7 @@ li a:hover {
         </ul>
       </div>
 
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto mt-4">
+      <pre className="bg-gray-200  p-4 rounded-lg overflow-x-auto mt-4">
 {`ul {
   list-style-type: none;
   padding: 0;
@@ -92,7 +92,7 @@ li a:hover {
         </ul>
       </div>
 
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto mt-4">
+      <pre className="bg-gray-200  p-4 rounded-lg overflow-x-auto mt-4">
 {`.navbar {
   position: sticky;
   top: 0;

@@ -64,7 +64,7 @@ const HtmlCanvas = () => {
 
   return (
     <div className="p-4 sm:p-6 bg-white rounded-lg shadow-md max-w-4xl">
-      <h1 className="text-2xl font-bold mb-4">HTML &lt;canvas&gt; — Drawing with JavaScript</h1>
+      <h1 className="text-3xl font-medium mb-4 text-blue-500">HTML &lt;canvas&gt; — Drawing with JavaScript</h1>
 
       <p className="mb-4">
         The HTML <code>&lt;canvas&gt;</code> element provides a drawable region for
@@ -73,7 +73,7 @@ const HtmlCanvas = () => {
       </p>
 
       <h2 className="text-xl font-semibold mt-4 mb-2">Basic Syntax</h2>
-      <pre className="bg-gray-900 text-green-400 p-3 rounded overflow-x-auto mb-4">
+      <pre className="bg-gray-200 p-3 rounded overflow-x-auto mb-4">
 {`<canvas id="myCanvas" width="640" height="360">
   Your browser does not support the HTML canvas tag.
 </canvas>`}
@@ -81,7 +81,7 @@ const HtmlCanvas = () => {
 
       <h2 className="text-xl font-semibold mt-4 mb-2">Get 2D Context</h2>
       <p className="mb-2">Use the rendering context to draw — most common is 2D:</p>
-      <pre className="bg-gray-900 text-green-400 p-3 rounded overflow-x-auto mb-4">
+      <pre className="bg-gray-200 p-3 rounded overflow-x-auto mb-4">
 {`const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');`}
       </pre>
@@ -96,7 +96,7 @@ const ctx = canvas.getContext('2d');`}
       </ul>
 
       <h2 className="text-xl font-semibold mt-4 mb-2">Example: Draw Image</h2>
-      <pre className="bg-gray-900 text-green-400 p-3 rounded overflow-x-auto mb-4">
+      <pre className="bg-gray-200  p-3 rounded overflow-x-auto mb-4">
 {`const img = new Image();
 img.onload = () => ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 img.src = 'photo.jpg';`}

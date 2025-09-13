@@ -3,7 +3,7 @@ import React from "react";
 const JSLet = () => {
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow mt-10">
-      <h1 className="text-3xl font-bold text-blue-600 mb-4">JavaScript <span className="text-green-600">let</span> Keyword</h1>
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">JavaScript <span className="text-green-600">let</span> Keyword</h1>
       
       <p className="text-gray-700 mb-6">
         In JavaScript, <span className="font-semibold">let</span> is used to declare a variable that is *block-scoped*, meaning it is accessible only within the block, statement, or expression where it is defined. 

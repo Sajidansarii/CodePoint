@@ -14,7 +14,7 @@ const DefaultParameterDemo = () => {
 
   return (
     <div className="max-w-3xl mx-auto p-6 bg-white shadow-md rounded space-y-6">
-      <h1 className="text-3xl font-bold text-indigo-600"> JavaScript Default Parameters</h1>
+      <h1 className="text-3xl font-medium text-blue-500"> JavaScript Default Parameters</h1>
 
       {/* What is it */}
       <section>

@@ -10,7 +10,7 @@ const CSSEditor = () => {
 
   return (
     <div className="p-6">
-      <h1 className="text-3xl font-bold text-blue-600 mb-4">CSS Editor</h1>
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS Editor</h1>
       <p className="mb-6 text-gray-700">
         Write your CSS code in the editor below. The result will be shown live in
         the output box.

@@ -4,7 +4,7 @@ const CSSFlexboxIntro = () => {
   return (
     <div className="p-6 space-y-8">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-indigo-600">CSS Flexbox (Introduction)</h1>
+      <h1 className="text-3xl font-medium text-blue-500">CSS Flexbox (Introduction)</h1>
       <p className="text-gray-700">
         <strong>Flexbox</strong> ek CSS layout module hai jo elements ko easily{" "}
         <strong>align aur distribute</strong> karne ke liye use hota hai. Yeh specially responsive 

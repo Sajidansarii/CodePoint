@@ -1,7 +1,7 @@
 const HTMLWebAPIs = () => {
   return (
     <div className="p-4 max-w-3xl">
-      <h1 className="text-3xl font-bold text-blue-600 mb-4">HTML Web APIs</h1>
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">HTML Web APIs</h1>
 
       <p className="text-gray-700 mb-4">
         Web APIs (Application Programming Interfaces) are built-in browser features that allow developers to interact with the browser, user devices, or the web page. They enhance HTML by enabling dynamic content, user interaction, and system-level functionality.

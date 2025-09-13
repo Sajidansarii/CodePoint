@@ -3,7 +3,7 @@ import React from "react";
 const CSSBorderRadius = () => {
   return (
     <div className="p-4 sm:p-6 bg-gray-50 min-h-screen">
-      <h1 className="text-3xl font-bold text-blue-600 mb-4">
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">
         CSS Border Radius
       </h1>
 
@@ -17,7 +17,7 @@ const CSSBorderRadius = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Syntax
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-200 p-4 rounded-lg text-sm mb-4">
         <pre>
 {`selector {
   border-radius: value;
@@ -36,7 +36,7 @@ const CSSBorderRadius = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 1: Rounded Corners
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-4">
         <pre>
 {`div {
   border: 2px solid blue;
@@ -52,7 +52,7 @@ const CSSBorderRadius = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 2: Circle
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-4">
         <pre>
 {`div {
   border: 2px solid red;
@@ -68,7 +68,7 @@ const CSSBorderRadius = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 3: Different Corner Radius
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-4">
         <pre>
 {`div {
   border: 2px solid green;
@@ -84,7 +84,7 @@ const CSSBorderRadius = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 4: Elliptical Radius
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-4">
         <pre>
 {`div {
   border: 2px solid purple;

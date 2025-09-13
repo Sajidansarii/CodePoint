@@ -3,7 +3,7 @@ import React from "react";
 const CssPseudoClassesDemo = () => {
   return (
     <div className="p-8 space-y-8 bg-gray-100 min-h-screen">
-      <h1 className="text-3xl font-bold text-center">CSS Pseudo-Classes Demo</h1>
+      <h1 className="text-3xl font-medium text-blue-500">CSS Pseudo-Classes Demo</h1>
 
       {/* Hover & Focus */}
       <div className="space-x-4">

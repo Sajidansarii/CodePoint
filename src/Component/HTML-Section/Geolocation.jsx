@@ -18,7 +18,7 @@ const HTMLGeolocation = () => {
 
   return (
     <div className="p-4 max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold text-blue-600 mb-4">HTML Geolocation API</h1>
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">HTML Geolocation API</h1>
 
       {/* Introduction */}
       <p className="text-gray-700 mb-4">

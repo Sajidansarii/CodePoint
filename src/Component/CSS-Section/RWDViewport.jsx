@@ -4,7 +4,7 @@ const CssRWDViewport = () => {
   return (
     <div className="p-6 space-y-6">
       {/* Title */}
-      <h1 className="text-3xl font-bold text-blue-600">Responsive Web Design - Viewport</h1>
+      <h1 className="text-3xl font-medium text-blue-500">Responsive Web Design - Viewport</h1>
 
       {/* Introduction */}
       <p className="text-gray-700">

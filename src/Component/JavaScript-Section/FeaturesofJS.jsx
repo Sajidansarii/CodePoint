@@ -6,11 +6,11 @@ export default function FeaturesJavaScript() {
       <div className="max-w-4xl mx-auto space-y-8">
         {/* Page Title */}
         <header className="text-center">
-          <h1 className="text-4xl font-bold text-blue-600 mb-2">
+          <h1 className="text-3xl font-medium text-blue-500 mb-2">
             Features of JavaScript
           </h1>
           <p className="text-lg text-gray-600">
-            Explore why JavaScript is the most popular language for the web 🌍
+            Explore why JavaScript is the most popular language for the web 
           </p>
         </header>
 

@@ -36,7 +36,7 @@ const CssAuralProperties = () => {
 
   return (
     <div className="p-6">
-      <h2 className="text-2xl font-bold mb-4">🔊 CSS Aural Properties</h2>
+      <h2 className="text-3xl font-medium mb-4 text-blue-500">CSS Aural Properties</h2>
       <p className="mb-6 text-gray-700">
         <b>CSS Aural Properties</b> un users ke liye design ki gayi hain jo 
         <b> screen readers</b> use karte hain. Ye properties text ko 

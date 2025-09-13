@@ -3,7 +3,7 @@ import React from "react";
 const CSSTemplates = () => {
   return (
     <div className="p-6">
-      <h1 className="text-3xl font-bold mb-4 text-blue-600">CSS Templates</h1>
+      <h1 className="text-3xl font-medium mb-4 text-blue-500">CSS Templates</h1>
       <p className="mb-4">
         CSS Templates are pre-designed layouts that you can use to quickly build
         web pages. They provide a starting point for your project with a ready

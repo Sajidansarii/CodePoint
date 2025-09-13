@@ -3,7 +3,7 @@ import React from "react";
 const CssZIndex = () => {
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">CSS z-index</h1>
+      <h1 className="text-3xl font-medium mb-4 text-blue-500">CSS z-index</h1>
       <p className="mb-4">
         The <code>z-index</code> property in CSS controls the <strong>stacking order</strong> of
         elements.  
@@ -42,7 +42,7 @@ const CssZIndex = () => {
       </div>
 
       <h2 className="text-xl font-semibold mt-6 mb-2">Syntax</h2>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto">
         {`selector {
   position: relative; /* required */
   z-index: 2; /* stacking order */

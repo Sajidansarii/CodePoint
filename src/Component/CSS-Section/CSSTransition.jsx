@@ -4,7 +4,7 @@ const CssTransition = () => {
   return (
     <div className="p-8 bg-gray-50 min-h-screen space-y-8">
       {/* Title */}
-      <h1 className="text-3xl font-bold text-center text-gray-800">
+      <h1 className="text-3xl font-medium text-blue-500">
         CSS Transitions
       </h1>
 
@@ -18,7 +18,7 @@ const CssTransition = () => {
       {/* Syntax Section */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">Syntax</h2>
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
 {`selector {
   transition: property duration timing-function delay;
 }`}
@@ -47,7 +47,7 @@ const CssTransition = () => {
         <h2 className="text-xl font-semibold">
           1. Background Color Transition
         </h2>
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
 {`div {
   width: 150px;
   height: 150px;
@@ -71,7 +71,7 @@ div:hover {
       {/* Example 2: Width Transition */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">2. Width Transition</h2>
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto">
 {`div {
   width: 100px;
   height: 50px;
@@ -95,7 +95,7 @@ div:hover {
       {/* Example 3: Multiple Properties */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">3. Multiple Properties</h2>
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto">
 {`div {
   width: 100px;
   height: 100px;
@@ -120,7 +120,7 @@ div:hover {
       {/* Example 4: Timing Functions */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">4. Timing Functions</h2>
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-20 p-4 rounded text-sm overflow-x-auto">
 {`div {
   transition: all 2s ease-in;
 }`}

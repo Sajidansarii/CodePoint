@@ -4,7 +4,7 @@ const CssLayout = () => {
   return (
     <div className="p-6 space-y-6">
       {/* Title */}
-      <h1 className="text-3xl font-bold text-blue-600">CSS Layout</h1>
+      <h1 className="text-3xl font-medium text-blue-500">CSS Layout</h1>
 
       {/* Intro */}
       <p className="text-gray-700">

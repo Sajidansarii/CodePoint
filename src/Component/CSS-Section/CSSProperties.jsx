@@ -79,8 +79,8 @@ const cssProperties = [
 export default function CssProperties() {
   return (
     <div className="p-6">
-      <h1 className="text-3xl font-bold text-blue-600 mb-6">
-        📘 CSS Properties
+      <h1 className="text-3xl font-medium text-blue-500 mb-6">
+        CSS Properties
       </h1>
       <p className="mb-6 text-gray-700">
         CSS properties wo keywords hote hain jo HTML elements ke style define

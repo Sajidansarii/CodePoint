@@ -430,7 +430,7 @@ const [showpage,setshowpage] = useState(null)
                                 ${isOpen ? "translate-x-0" : "-translate-x-full"}`} >
         
                     <h1 className="text-xl font-semibold mt-5 mb-2">CSS Tutorial</h1>
-                    <ul className="space-y-1 text-sm">   
+                    <ul className="space-y-1 text-sm">       
                     <li className='hover:cursor-pointer' onClick={()=>{setshowpage('WhatisCSS')}}>What is  CSS ?</li>
                     <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSSyntax')}}>CSS Syntax </li> 
                     <li className='hover:cursor-pointer' onClick={()=>{setshowpage('Selector')}}>CSS Selector</li>

@@ -1,7 +1,7 @@
 export default function CssMaxWidth() {
   return (
-    <div className="p-6 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold text-indigo-600 mb-4">CSS max-width</h1>
+    <div className="p-6 max-w-4xl">
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS max-width</h1>
       <p className="mb-4">
         The <code>max-width</code> property defines the maximum width of an
         element. It is useful for making layouts responsive.

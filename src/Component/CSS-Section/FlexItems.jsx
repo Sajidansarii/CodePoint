@@ -4,7 +4,7 @@ const CSSFlexItems = () => {
   return (
     <div className="p-6 space-y-8">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-indigo-600">CSS Flex Items</h1>
+      <h1 className="text-3xl font-medium text-blue-500">CSS Flex Items</h1>
       <p className="text-gray-700">
         Jab ek container ko <code>display: flex;</code> dete ho, uske andar ke saare 
         elements automatically <strong>flex items</strong> ban jaate hain. In items par 

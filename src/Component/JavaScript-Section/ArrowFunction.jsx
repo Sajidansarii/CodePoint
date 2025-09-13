@@ -18,7 +18,7 @@ const ArrowFunctionDemo = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded space-y-6">
-      <h1 className="text-3xl font-bold text-teal-600"> JavaScript Arrow Functions</h1>
+      <h1 className="text-3xl font-medium text-blue-500"> JavaScript Arrow Functions</h1>
 
       {/* Introduction */}
       <section>

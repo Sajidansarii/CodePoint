@@ -3,7 +3,7 @@ import React from "react";
 const HtmlDoctype = () => {
   return (
     <div className="p-4 sm:p-6 bg-white rounded-lg shadow-md max-w-4xl">
-      <h1 className="text-2xl font-bold mb-4">HTML &lt;!DOCTYPE&gt;</h1>
+      <h1 className="text-3xl font-medium mb-4 text-blue-500">HTML &lt;!DOCTYPE&gt;</h1>
       <p className="mb-4">
         The <strong>&lt;!DOCTYPE&gt;</strong> declaration is used to tell the
         web browser what version of HTML the page is written in, so it can be
@@ -12,19 +12,19 @@ const HtmlDoctype = () => {
         <code> &lt;html&gt; </code> tag.
       </p>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">Purpose of DOCTYPE</h2>
+      <h2 className="text-xl font-semibold mt-6 mb-2 text-blue-500">Purpose of DOCTYPE</h2>
       <ul className="list-disc ml-6 mb-4">
         <li>Instructs the browser about the HTML version and rules to follow.</li>
         <li>Ensures consistent rendering across browsers.</li>
         <li>Prevents the browser from switching to "quirks mode".</li>
       </ul>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">HTML5 DOCTYPE</h2>
+      <h2 className="text-xl font-semibold mt-6 mb-2 text-blue-500">HTML5 DOCTYPE</h2>
       <p className="mb-4">
         The DOCTYPE for HTML5 is very simple and does not require a reference
         to a Document Type Definition (DTD).
       </p>
-      <pre className="bg-gray-900 text-green-400 p-3 rounded-lg overflow-x-auto mb-4">
+      <pre className="bg-gray-200  p-3 rounded-lg overflow-x-auto mb-4">
         {`<!DOCTYPE html>
 <html>
 <head>
@@ -42,7 +42,7 @@ const HtmlDoctype = () => {
         Older versions of HTML used more complex DOCTYPE declarations because
         they referenced a DTD file. Example for HTML 4.01:
       </p>
-      <pre className="bg-gray-900 text-green-400 p-3 rounded-lg overflow-x-auto mb-4">
+      <pre className="bg-gray-200  p-3 rounded-lg overflow-x-auto mb-4">
         {`<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">`}
       </pre>

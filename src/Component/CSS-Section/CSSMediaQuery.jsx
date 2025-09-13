@@ -4,7 +4,7 @@ const CssMediaQueries = () => {
   return (
     <div className="p-8 bg-gray-50 min-h-screen space-y-8">
       {/* Title */}
-      <h1 className="text-3xl font-bold text-center text-gray-800">
+      <h1 className="text-3xl font-medium text-blue-500">
         CSS Media Queries
       </h1>
 
@@ -17,7 +17,7 @@ const CssMediaQueries = () => {
       </p>
 
       {/* Syntax Example */}
-      <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+      <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto text-left">
 {`@media screen and (max-width: 600px) {
   body {
     background-color: lightblue;
@@ -33,7 +33,7 @@ const CssMediaQueries = () => {
           (mobile screen), to background color lightblue ho jayega.
         </p>
 
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto text-left">
 {`body {
   background-color: white;
 }
@@ -58,7 +58,7 @@ const CssMediaQueries = () => {
           Media queries se text ka size bhi change kar sakte ho:
         </p>
 
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto text-left">
 {`h1 {
   font-size: 40px;
 }
@@ -90,7 +90,7 @@ const CssMediaQueries = () => {
           Kai baar chhoti screen par kuch elements ko hide karna padta hai:
         </p>
 
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-20 p-4 rounded text-sm overflow-x-auto text-left">
 {`.sidebar {
   display: block;
 }

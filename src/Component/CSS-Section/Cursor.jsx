@@ -3,7 +3,7 @@ import React from "react";
 const CSSCursor = () => {
   return (
     <div className="p-4 sm:p-6 bg-gray-50 min-h-screen">
-      <h1 className="text-3xl font-bold text-blue-600 mb-4">
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">
         CSS Cursor Property
       </h1>
 
@@ -15,7 +15,7 @@ const CSSCursor = () => {
       </p>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Syntax</h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-200 p-4 rounded-lg text-sm mb-4">
         <pre>
 {`selector {
   cursor: value;
@@ -94,7 +94,7 @@ const CSSCursor = () => {
       </div>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Code Example</h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-6">
+      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-6">
         <pre>
 {`.default { cursor: default; }
 .pointer { cursor: pointer; }

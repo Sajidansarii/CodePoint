@@ -42,7 +42,7 @@ const CssReference = () => {
 
   return (
     <div className="p-6">
-      <h2 className="text-2xl font-bold mb-4">📘 CSS Reference</h2>
+      <h2 className="text-3xl font-medium text-blue-500 mb-4">CSS Reference</h2>
       <p className="mb-6 text-gray-700">
         <b>CSS Reference</b> ek quick guide hai jisme commonly used CSS 
         properties aur unke values ka summary hota hai. Isse developers ko 

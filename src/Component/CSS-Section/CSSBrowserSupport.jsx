@@ -4,7 +4,7 @@ const CssBrowserSupport = () => {
   return (
     <div className="p-6 max-w-3xl mx-auto">
       {/* Title */}
-      <h2 className="text-2xl font-bold mb-4">🌍 CSS Browser Support</h2>
+      <h2 className="text-3xl text-blue-500 font-medium mb-4"> CSS Browser Support</h2>
 
       {/* Intro */}
       <p className="text-gray-700 mb-6">

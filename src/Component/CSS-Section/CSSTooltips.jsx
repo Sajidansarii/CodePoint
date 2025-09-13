@@ -4,7 +4,7 @@ const CssTooltips = () => {
   return (
     <div className="p-8 bg-gray-50 min-h-screen space-y-8">
       {/* Title */}
-      <h1 className="text-3xl font-bold text-center text-gray-800">
+      <h1 className="text-3xl font-medium text-blue-500">
         CSS Tooltips
       </h1>
 
@@ -19,7 +19,7 @@ const CssTooltips = () => {
       {/* Syntax */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">Basic Syntax</h2>
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto">
 {`.tooltip {
   position: relative;
   display: inline-block;
@@ -61,7 +61,7 @@ const CssTooltips = () => {
         <p className="text-gray-600">
           Hover button par karo, tooltip dikhai dega:
         </p>
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-20 p-4 rounded text-sm overflow-x-auto text-left">
 {`<div class="tooltip">
   Hover me
   <span class="tooltip-text">Hello! I'm a tooltip</span>
@@ -86,7 +86,7 @@ const CssTooltips = () => {
       {/* Example 2 */}
       <div className="bg-white p-6 rounded shadow space-y-4 text-center">
         <h2 className="text-xl font-semibold">2. Tooltip on Top</h2>
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-20 p-4 rounded text-sm overflow-x-auto text-left">
 {`<div class="tooltip">
   Hover me
   <span class="tooltip-text">Tooltip on Top</span>
@@ -109,7 +109,7 @@ const CssTooltips = () => {
       {/* Example 3 */}
       <div className="bg-white p-6 rounded shadow space-y-4 text-center">
         <h2 className="text-xl font-semibold">3. Tooltip on Right</h2>
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto text-left">
 {`<div class="tooltip">
   Hover me
   <span class="tooltip-text">Tooltip on Right</span>

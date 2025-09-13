@@ -4,7 +4,7 @@ const CssCombinators = () => {
   return (
     <div className="p-8 bg-gray-50 min-h-screen space-y-8">
       {/* Title */}
-      <h1 className="text-3xl font-bold text-center text-gray-800">
+      <h1 className="text-3xl font-medium text-center text-blue-500">
         CSS Combinators
       </h1>
 
@@ -23,7 +23,7 @@ const CssCombinators = () => {
           karta hai.
         </p>
 
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
 {`div p {
   color: blue;
 }`}
@@ -44,7 +44,7 @@ const CssCombinators = () => {
           Ye sirf direct child element ko select karta hai, nested ko nahi.
         </p>
 
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
 {`div > p {
   color: red;
 }`}
@@ -68,7 +68,7 @@ const CssCombinators = () => {
           karta hai.
         </p>
 
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
 {`h2 + p {
   color: green;
 }`}
@@ -89,7 +89,7 @@ const CssCombinators = () => {
           karta hai.
         </p>
 
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
 {`h2 ~ p {
   color: purple;
 }`}

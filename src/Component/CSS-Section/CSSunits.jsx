@@ -4,7 +4,7 @@ const CssUnitsDemo = () => {
   return (
     <div className="p-8 bg-gray-100 min-h-screen space-y-8">
       {/* Page Header */}
-      <h1 className="text-3xl font-bold text-center text-gray-800">
+      <h1 className="text-3xl font-medium text-blue-500">
         CSS Units
       </h1>
 

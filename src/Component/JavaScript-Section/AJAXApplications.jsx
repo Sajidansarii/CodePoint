@@ -31,7 +31,7 @@ const JSAJAXASPApp = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white rounded-xl shadow-lg mt-10 space-y-6">
-      <h1 className="text-3xl font-bold text-blue-600">
+      <h1 className="text-3xl font-medium text-blue-500">
         AJAX <span className="text-green-600">Applications with ASP</span>
       </h1>
 

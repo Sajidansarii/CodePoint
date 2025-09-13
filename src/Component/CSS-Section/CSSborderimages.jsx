@@ -4,7 +4,7 @@ const CSSBorderImage = () => {
   return (
     <div className="p-6 space-y-8">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-indigo-600">CSS Border-Image</h1>
+      <h1 className="text-3xl font-medium text-blue-500">CSS Border-Image</h1>
       <p className="text-gray-700">
         CSS <code>border-image</code> property ka use karke hum border ko ek normal color ke bajaye
         image se style kar sakte hain. Yeh property mainly <code>border-style</code>,{" "}

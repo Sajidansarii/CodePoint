@@ -32,7 +32,7 @@ const WhatIsHTML = () => {
   return (
     <article className="p-4 sm:p-6 md:p-8 max-w-3xl prose prose-sm sm:prose-base dark:prose-invert bg-white dark:bg-gray-900 rounded-2xl shadow-sm">
       <header>
-        <h1 className="text-2xl sm:text-3xl font-bold text-blue-600 mb-2">
+        <h1 className="text-2xl sm:text-3xl font-medium text-blue-500 mb-2">
           What is HTML?
         </h1>
         <p className="text-gray-700 dark:text-gray-300 mb-4">

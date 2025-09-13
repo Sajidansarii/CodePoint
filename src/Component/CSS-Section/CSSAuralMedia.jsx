@@ -4,7 +4,7 @@ const CssAuralMedia = () => {
   return (
     <div className="p-8 bg-gray-50 min-h-screen space-y-8">
       {/* Title */}
-      <h1 className="text-3xl font-bold text-center text-gray-800">
+      <h1 className="text-3xl font-medium text-center text-blue-500">
         CSS Aural Media
       </h1>
 
@@ -20,8 +20,8 @@ const CssAuralMedia = () => {
 
       {/* Syntax */}
       <div className="bg-white p-6 rounded shadow">
-        <h2 className="text-xl font-semibold mb-2">🔹 Syntax</h2>
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+        <h2 className="text-xl font-semibold mb-2">Syntax</h2>
+        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto text-left">
 {`@media aural {
   h1 {
     voice-family: male;
@@ -42,7 +42,7 @@ const CssAuralMedia = () => {
         </p>
 
         {/* CSS Example */}
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto text-left">
 {`@media speech {
   h1 {
     voice-family: female;

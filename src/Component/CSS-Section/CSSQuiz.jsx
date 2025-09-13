@@ -43,8 +43,8 @@ const CssQuiz = () => {
 
   return (
     <div className="max-w-xl mx-auto p-6 bg-white shadow-md rounded-xl mt-10">
-      <h2 className="text-2xl font-bold mb-4 text-center text-indigo-600">
-        🎯 CSS Quiz
+      <h2 className="text-3xl font-medium mb-4 text-blue-500">
+        CSS Quiz
       </h2>
 
       {showScore ? (
