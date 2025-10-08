@@ -2,88 +2,96 @@ import React from "react";
 
 const CssBoxModel = () => {
   return (
-    <div className="p-6 space-y-6">
+    <div className="p-6">
       {/* Title */}
-      <h1 className="text-3xl font-medium text-blue-500">CSS Box Model</h1>
+      <h1 className="text-3xl font-medium text-blue-500 mb-5">CSS Box Model</h1>
 
       {/* Intro */}
-      <p className="text-gray-700">
-        CSS Box Model web page ke har element ko ek box ki tarah treat karta hai. 
-        Is model me har element 4 parts se bana hota hai:
+      <p className="mb-2">
+       The CSS Box Model treats every element on a web page as a box. In this model, each element is made up of 4 parts:
       </p>
+      <p className="mb-2">The visual representation of elements in CSS is governed by a model commonly referred to as the box model.</p>
+      <p className="mb-2">The CSS box model surrounds each HTML element with a series of boxes.</p>
+      <p>Below is a visual representation of the CSS box model:</p>
 
-      <ul className="list-disc ml-6 text-gray-700">
-        <li><b>Content:</b> Jisme text aur images show hote hain.</li>
-        <li><b>Padding:</b> Content ke aas paas ki space.</li>
-        <li><b>Border:</b> Padding aur content ke around ek line.</li>
-        <li><b>Margin:</b> Border ke bahar ki space jo doosre elements ke beech gap banati hai.</li>
-      </ul>
+     <div className="relative">
+      <div  className="absolute min-w-full bg-blue-500 mt-7 h-96 text-center text-black text-xl pt-1">Margin</div>
+       <div className="absolute top-20 min-w-[800px] left-12 bg-green-500 h-72 text-center text-black text-xl pt-1">Border</div>
+       <div className="absolute top-32 min-w-[700px] left-24 bg-gray-400 h-48 text-center text-black text-xl pt-1">Padding</div>
+       <div className="absolute top-40 min-w-[500px] left-48 bg-white h-32 flex items-center justify-center text-black text-xl pt-1">Padding</div>
+     </div>
 
-      {/* Diagram */}
-      <h2 className="text-2xl font-semibold">1. Box Model Diagram</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto">
-{` -----------------------
-|       Margin          |
-|   -----------------   |
-|   |     Border     |  |
-|   |  -----------   |  |
-|   |  | Padding |   |  |
-|   |  | Content |   |  |
-|   |  -----------   |  |
-|   -----------------   |
- ----------------------- `}
-      </pre>
 
-      {/* Example Code */}
-      <h2 className="text-2xl font-semibold">2. Example Code</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto">
-{`<style>
-  .box {
-    width: 200px;
-    padding: 20px;
-    border: 5px solid blue;
-    margin: 30px;
-    background-color: lightyellow;
-  }
-</style>
 
-<div class="box">Hello, I am a box!</div>`}
-      </pre>
 
+
+
+
+
+
+
+
+      
+
+  
+     
       {/* Explanation of Code */}
-      <p className="text-gray-700">
-        Yahaan <code>.box</code> class ke liye styling ki gayi hai:
-      </p>
-      <ul className="list-disc ml-6 text-gray-700">
-        <li><code>width: 200px;</code> → content ki width fix karta hai.</li>
-        <li><code>padding: 20px;</code> → content ke andar space deta hai.</li>
-        <li><code>border: 5px solid blue;</code> → ek blue border add karta hai.</li>
-        <li><code>margin: 30px;</code> → doosre elements ke beech gap deta hai.</li>
-        <li><code>background-color: lightyellow;</code> → background color set karta hai.</li>
+      <p className="mt-[450px] mb-5">An explanation of each section, beginning at the center and moving outward:</p>
+     
+      <ul className="list-[square] ml-6">
+        <li><strong>Content</strong> → The part of the box dedicated to displaying your actual webpage content.</li>
+        <li><strong>padding</strong> → Padding provides spacing around the content and remains invisible.</li>
+        <li><strong>border</strong> → This layer encases the padding and content, making up the visible edge of the box.</li>
+        <li><strong>margin</strong> → Creates space outside the border; the margin itself is fully transparent.</li>
+        <li><strong>background-color</strong> → It is used to set the background color of the element.</li>
       </ul>
+      <p className="mt-5">Using the box model, we can place borders around elements and define gaps between them.</p>
+      <h1 className="text-2xl mt-4 mb-2">Example</h1>
+      <p>Overview of the box model structure</p>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+        {`div {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}`}
+      </pre>
+
+      <h1 className="text-2xl mt-10 mb-3">Width and Height of an Element</h1>
+      <p>Without understanding the box model, you may face issues when trying to set width and height accurately in different browsers.</p>
+       <h1 className="text-2xl mt-2 mb-2">Example</h1>
+       <p>This {'<div>'} will measure 350px in width and 80px in height overall.</p>
+       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        {`div {
+  width: 320px;
+  height: 50px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}`}
+       </pre>
+
 
       {/* Total Size Formula */}
-      <h2 className="text-2xl font-semibold">3. Total Size Calculation</h2>
-      <p className="text-gray-700">
-        Agar kisi element ki <b>width</b> 200px hai aur:
-      </p>
-      <ul className="list-disc ml-6 text-gray-700">
+      <h2 className="text-2xl mt-10 mb-2">Total Size Calculation</h2>
+      <p>If an element has a width of 200px</p>
+
+      <ul className="list-disc ml-6 mt-2 mb-2">
         <li>Padding = 20px (left + right = 40px)</li>
         <li>Border = 5px (left + right = 10px)</li>
-        <li>Margin = 30px (bahar ki space, size me include nahi hoti)</li>
+        <li>Margin = 30px (The outer space is not counted as part of the element’s size.)</li>
       </ul>
-      <p className="text-gray-700">
+      <p>
         To element ka total width hoga:  
         <b>200 + 40 + 10 = 250px</b> (+ margin bahar se add hoti hai).
       </p>
 
       {/* Conclusion */}
-      <h2 className="text-2xl font-semibold">Conclusion</h2>
-      <p className="text-gray-700">
-        CSS Box Model ko samajhna bahut zaroori hai kyunki iske through aap 
-        samajh paate ho ki kisi element ki actual size aur spacing web page me 
-        kaise calculate hoti hai.
-      </p>
+      <h2 className="text-2xl mt-10 mb-2 ">Conclusion</h2>
+      <p className="mb-2">Here’s how to calculate the total width of an element:</p>
+      <p className="mb-2">Total element width = width + left padding + right padding + left border + right border</p>
+      <p className="mb-2">The total height of an element should be calculated like this:</p>
+      <p className="mb-2">Total element height = height + top padding + bottom padding + top border + bottom border</p>
     </div>
   );
 };

@@ -1,47 +1,52 @@
 import React from "react";
 
 const CssUserInterface = () => {
+  const data = [
+    {Sr:'1', value:'appearance', Description:'Used to allow the user to make elements as user interface elements.'},
+    {Sr:'2', value:'box-sizing', Description:'Allows to users to fix elements on area in clear way.'},
+    {Sr:'3', value:'icon', Description:'Used to provide the icon on area.'},
+    {Sr:'4', value:'resize', Description:'Used to resize elements which are on area.'},
+    {Sr:'5', value:'outline-offset', Description:'Used to draw the behind the outline.'},
+    {Sr:'6', value:'nav-down', Description:'Used to move down when you have pressed on down arrow button in keypad.'},
+    {Sr:'7', value:'nav-left', Description:'Used to move left when you have pressed on left arrow button in keypad.'},
+    {Sr:'8', value:'nav-right', Description:'Used to move right when you have pressed on right arrow button in keypad.'},
+    {Sr:'9', value:'nav-up', Description:'Used to move up when you have pressed on up arrow button in keypad.'},
+  ];
   return (
-    <div className="p-8 bg-gray-50 min-h-screen space-y-10">
-      {/* Title */}
-      <h1 className="text-3xl font-medium text-blue-500">
-        CSS User Interface (UI)
-      </h1>
+    <div className="p-8 min-h-screen space-y-6">
+      <h1 className="text-3xl font-medium text-blue-500">CSS User Interface (UI) </h1>
 
-      {/* Intro */}
-      <p className="text-gray-700 text-center max-w-3xl mx-auto">
-        CSS <strong>User Interface (UI)</strong> properties ka use elements ke 
-        interaction ko improve karne ke liye kiya jata hai. Inse hum cursor, 
-        resize behavior, aur focus outlines ko control kar sakte hain.
+      <p>
+        CSS <strong>User Interface (UI)</strong> Properties are used to improve the interaction of elements. With them, we can control the cursor, resize behavior, and focus outlines.
       </p>
+      <p>Some of the common properties which are using in css3 User interface.</p>
+      <table className="min-w-full border border-gray-300 text-gray-700 rounded-md text-sm text-left">
+        <thead>
+          <tr className="bg-gray-100">
+            <th className="px-4 py-2 font-bold text-gray-700 border-b border-gray-300">Sr.No</th>
+            <th className="px-4 py-2 font-bold text-gray-700 border-b border-gray-300">Value</th>
+            <th className="px-4 py-2 font-bold text-gray-700 border-b border-gray-300">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((row,index)=>(
+            <tr className="cursor-text hover:bg-gray-100">
+              <td className="px-4 py-2 border-b border-gray-200">{row.Sr}</td>
+              <td className="px-4 py-2 border-b border-gray-200">{row.value}</td>
+              <td className="px-4 py-2 border-b border-gray-200">{row.Description}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
 
-      {/* 1. Cursor */}
-      <div className="bg-white p-6 rounded shadow space-y-4">
-        <h2 className="text-xl font-semibold">1️⃣ Cursor Property</h2>
-        <p className="text-gray-700">
-          <code>cursor</code> property set karti hai ki jab mouse element par 
-          hover ho to pointer kaise dikhe.
-        </p>
-        <pre className="bg-gray-900 text-green-300 p-3 rounded text-sm overflow-x-auto text-left">
-{`button {
-  cursor: pointer;
-}`}
-        </pre>
-        <button className="px-4 py-2 bg-blue-500 text-white rounded cursor-pointer">
-          Hover me (Pointer Cursor)
-        </button>
-      </div>
-
-      {/* 2. Resize */}
-      <div className="bg-white p-6 rounded shadow space-y-4">
-        <h2 className="text-xl font-semibold">2️⃣ Resize Property</h2>
-        <p className="text-gray-700">
-          <code>resize</code> property allow karti hai ki user element ko drag karke 
-          resize kar sake. Mostly textarea me use hoti hai.
+      <div className="bg-white p-6 rounded space-y-4">
+        <h2 className="text-xl font-semibold">Resize Property</h2>
+        <p>
+          <code>resize</code> The property allows the user to drag and resize the element. It is mostly used with<span className="text-red-400 bg-gray-100 px-1">{'<textarea>'}</span>.
         </p>
         <pre className="bg-gray-900 text-green-300 p-3 rounded text-sm overflow-x-auto text-left">
 {`textarea {
-  resize: both;   /* vertical | horizontal | none */
+  resize: both;     
   overflow: auto;
 }`}
         </pre>
@@ -52,11 +57,10 @@ const CssUserInterface = () => {
       </div>
 
       {/* 3. Outline-offset */}
-      <div className="bg-white p-6 rounded shadow space-y-4">
-        <h2 className="text-xl font-semibold">3️⃣ Outline-offset Property</h2>
-        <p className="text-gray-700">
-          <code>outline-offset</code> property element ke outline aur uske border 
-          ke beech distance banati hai.
+      <div className="bg-white p-6 rounded space-y-4">
+        <h2 className="text-xl font-semibold">Outline-offset Property</h2>
+        <p>
+          <code>outline-offset</code> The property creates space between the element’s outline and its border.
         </p>
         <pre className="bg-gray-900 text-green-300 p-3 rounded text-sm overflow-x-auto text-left">
 {`input:focus {
@@ -72,19 +76,18 @@ const CssUserInterface = () => {
       </div>
 
       {/* 4. Nav-index */}
-      <div className="bg-white p-6 rounded shadow space-y-4">
-        <h2 className="text-xl font-semibold">4️⃣ Nav-index Property</h2>
-        <p className="text-gray-700">
-          <code>nav-index</code> property navigation order set karti hai (Tab key 
-          se). Ye modern browsers me support nahi hoti lekin samajhna zaruri hai.
+      <div className="bg-white p-6 rounded space-y-4">
+        <h2 className="text-xl font-semibold">Nav-index Property</h2>
+        <p>
+          <code>nav-index</code> The property sets the navigation order (using the Tab key). It is not supported in modern browsers but is still important to understand.
         </p>
         <pre className="bg-gray-900 text-green-300 p-3 rounded text-sm overflow-x-auto text-left">
 {`a {
   nav-index: 1;
 }`}
         </pre>
-        <p className="text-sm text-gray-600">
-          ⚠ Note: Ye property deprecated hai aur modern browsers me kaam nahi karti.
+        <p>
+           Note: This property is deprecated and does not work in modern browsers.
         </p>
       </div>
     </div>

@@ -11,7 +11,7 @@ const CssSnippets = () => {
   align-items: center;
   height: 100vh;
 }`,
-      explanation: "Ye snippet ek element ko screen ke bilkul center me rakh deta hai."
+      explanation: "This snippet places an element exactly at the center of the screen."
     },
     {
       title: "Text Ellipsis (…) when Overflow",
@@ -21,21 +21,21 @@ const CssSnippets = () => {
   text-overflow: ellipsis;
   width: 200px;
 }`,
-      explanation: "Jab text zyada lamba ho jata hai to wo ... ke sath truncate ho jata hai."
+      explanation: "When the text becomes too long, it gets truncated with an ellipsis (…)."
     },
     {
       title: "Smooth Scroll Behavior",
       code: `html {
   scroll-behavior: smooth;
 }`,
-      explanation: "Ye snippet links ko click karne par smooth scrolling enable karta hai."
+      explanation: "This snippet enables smooth scrolling when links are clicked."
     },
     {
       title: "Gradient Background",
       code: `.gradient-bg {
   background: linear-gradient(to right, #4facfe, #00f2fe);
 }`,
-      explanation: "Ek stylish gradient background banata hai."
+      explanation: "Creates a stylish gradient background."
     },
     {
       title: "Image Hover Zoom Effect",
@@ -45,7 +45,7 @@ const CssSnippets = () => {
 .image-zoom:hover {
   transform: scale(1.1);
 }`,
-      explanation: "Hover karne par image thoda zoom ho jati hai."
+      explanation: "The image slightly zooms in on hover."
     },
   ];
 
@@ -86,7 +86,7 @@ const CssSnippets = () => {
               {copied === index ? "Copied!" : "Copy"}
             </button>
 
-            <p className="mt-3 text-gray-600">{snippet.explanation}</p>
+            <p className="mt-3">{snippet.explanation}</p>
           </div>
         ))}
       </div>

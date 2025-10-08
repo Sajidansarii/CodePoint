@@ -3,7 +3,7 @@ import React  from 'react';
 const Introduction = () =>{
     return(
          <div className="p-4 sm:p-6 max-w-3xl">
-      <h1 className="text-2xl sm:text-3xl font-medium text-blue-500 mb-4">Introduction to HTML</h1>
+      <h1 className="text-2xl sm:text-3xl font-medium text-blue-500 mb-4">HTML Introduction</h1>
 
       <p className="text-gray-700 leading-5">
         HTML stands for <strong>HyperText Markup Language</strong>. It is the standard language used to create and structure content on the web. Every website you visit is built with HTML at its core.

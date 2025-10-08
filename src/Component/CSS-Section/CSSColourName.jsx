@@ -18,9 +18,10 @@ const CssColorNames = () => {
     <div className="p-6">
       <h2 className="text-3xl font-medium text-blue-500 mb-4"> CSS Color Names</h2>
       <p className="mb-6 text-gray-700">
-        CSS mein <code>color names</code> predefined hote hain jaise <b>red</b>, <b>blue</b>, <b>green</b> etc. 
-        Inhe directly CSS mein use karke background, text ya border color set kar sakte ho.
-      </p>
+       In CSS, color names are predefined, like red, blue, green, etc. You can use them directly in CSS to set the background, text, or border color.</p>
+       <p className="mb-6">All modern browsers recognize 140 standard color names. You can click on any color name or its hex code to see how it looks as a background color with various text color combinations.</p>
+
+       <p className="mb-6">To explore CSS colors in detail, check out our comprehensive colors tutorial.</p>
 
       {/* Color boxes */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
@@ -50,9 +51,7 @@ p {
 
       {/* Explanation */}
       <p className="mt-4 text-gray-700">
-        👉 Upar wale example mein <code>div</code> ka background <b>red</b> hoga aur 
-        <code>p</code> element ka text <b>blue</b> dikhega. Yeh sab CSS ke predefined 
-        <b>color names</b> ke through kiya gaya hai.
+         In the above example, the background of the div will be red, and the text of the p element will appear blue. This is done using CSS's predefined color names.
       </p>
     </div>
   );

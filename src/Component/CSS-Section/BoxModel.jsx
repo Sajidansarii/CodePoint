@@ -3,9 +3,7 @@ export default function CssBoxModel() {
     <div className="p-6 max-w-4xl">
       <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS Box Model</h1>
       <p className="mb-4">
-        The <b>Box Model</b> describes how the <b>content</b>, <b>padding</b>, 
-        <b>border</b>, and <b>margin</b> work together to define the size and space 
-        of an element.
+        The CSS Box Model treats every element on a web page like a box. In this model, each element is made up of four parts:
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>

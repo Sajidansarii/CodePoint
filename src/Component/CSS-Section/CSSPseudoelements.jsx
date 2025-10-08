@@ -17,21 +17,21 @@ export default function PseudoElements() {
 
       {/* List */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Common Pseudo-elements</h2>
-      <ul className="list-disc list-inside text-gray-700 mb-6">
+      <ul className="list-[square] list-inside text-gray-700 mb-6">
         <li>
-          <code>::before</code> – Content ke pehle insert karta hai
+          <code>before</code> – Content ke pehle insert karta hai
         </li>
         <li>
-          <code>::after</code> – Content ke baad insert karta hai
+          <code>after</code> – Content ke baad insert karta hai
         </li>
         <li>
-          <code>::first-letter</code> – Pehla letter style karta hai
+          <code>first-letter</code> – Pehla letter style karta hai
         </li>
         <li>
-          <code>::first-line</code> – Pehli line style karta hai
+          <code>first-line</code> – Pehli line style karta hai
         </li>
         <li>
-          <code>::selection</code> – Jab user text select karta hai tab style hota hai
+          <code>selection</code> – Jab user text select karta hai tab style hota hai
         </li>
       </ul>
 

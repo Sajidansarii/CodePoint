@@ -10,7 +10,7 @@ const CSSTemplates = () => {
         structure like header, navigation, content, and footer sections.
       </p>
 
-      <h2 className="text-2xl font-semibold mb-2">Example: Simple Page Template</h2>
+      <h2 className="text-2xl mb-2">Simple Page Template</h2>
       <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mb-4">
 {`<!DOCTYPE html>
 <html>
@@ -68,6 +68,7 @@ const CSSTemplates = () => {
 </html>`}
       </pre>
 
+<div className="bg-green-100 p-3">
       <h2 className="text-2xl font-semibold mb-2">Explanation:</h2>
       <ul className="list-disc pl-6 space-y-2">
         <li>
@@ -87,6 +88,7 @@ const CSSTemplates = () => {
           copyright or links.
         </li>
       </ul>
+</div>
     </div>
   );
 };

@@ -11,8 +11,8 @@ const CSSExamples = () => {
 
       {/* Example 1 */}
       <div className="mb-8">
-        <h2 className="text-2xl font-semibold mb-2">1. CSS Colors</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-2 overflow-x-auto">
+        <h2 className="text-2xl mb-2">1. CSS Colors</h2>
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mb-10">
 {`p {
   color: red;
 }
@@ -23,56 +23,56 @@ h1 {
         </pre>
         <p className="mb-2">Output:</p>
         <div className="border p-4 rounded">
-          <h1>This is Blue Heading</h1>
-          <p>This is Red Paragraph</p>
+          <h1 className="text-blue-400">This is Blue Heading</h1>
+          <p className="text-red-500">This is Red Paragraph</p>
         </div>
         <p className="mt-2">
-          👉 Here, <code>h1</code> text is blue and <code>p</code> text is red using
+           Here, <code>h1</code> text is blue and <code>p</code> text is red using
           the <code>color</code> property.
         </p>
       </div>
 
       {/* Example 2 */}
       <div className="mb-8">
-        <h2 className="text-2xl font-semibold mb-2">2. CSS Borders</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-2 overflow-x-auto">
+        <h2 className="text-2xl mb-2">2. CSS Borders</h2>
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-10 overflow-x-auto">
 {`div {
   border: 2px solid green;
   padding: 10px;
 }`}
         </pre>
         <p className="mb-2">Output:</p>
-        <div className="border-2 border-green-600 p-4 rounded">
+        <div className="border-2 border-green-600 p-10 rounded">
           This box has a green border with padding.
         </div>
         <p className="mt-2">
-          👉 <code>border</code> property is used to create borders around an
+          <code>border</code> property is used to create borders around an
           element.
         </p>
       </div>
 
       {/* Example 3 */}
       <div className="mb-8">
-        <h2 className="text-2xl font-semibold mb-2">3. CSS Background</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-2 overflow-x-auto">
+        <h2 className="text-2xl mb-2">3. CSS Background</h2>
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-10 overflow-x-auto">
 {`div {
   background-color: lightblue;
   padding: 20px;
 }`}
         </pre>
         <p className="mb-2">Output:</p>
-        <div className="p-6 rounded" style={{ backgroundColor: "lightblue" }}>
+        <div className="p-20 rounded bg-[#90D5FF]">
           This div has a lightblue background.
         </div>
         <p className="mt-2">
-          👉 <code>background-color</code> sets the background of an element.
+           <code>background-color</code> sets the background of an element.
         </p>
       </div>
 
       {/* Example 4 */}
       <div className="mb-8">
-        <h2 className="text-2xl font-semibold mb-2">4. CSS Text</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-2 overflow-x-auto">
+        <h2 className="text-2xl mb-2">4. CSS Text</h2>
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-10 overflow-x-auto">
 {`h2 {
   text-align: center;
   text-decoration: underline;
@@ -81,7 +81,7 @@ h1 {
         <p className="mb-2">Output:</p>
         <h2 className="text-center underline">This is Underlined Center Text</h2>
         <p className="mt-2">
-          👉 <code>text-align</code> and <code>text-decoration</code> are used for
+           <code>text-align</code> and <code>text-decoration</code> are used for
           text formatting.
         </p>
       </div>

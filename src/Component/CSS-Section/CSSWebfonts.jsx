@@ -2,24 +2,28 @@ import React from "react";
 
 const WebFontsTutorial = () => {
   return (
-    <div className="p-6 space-y-8">
+    <div className="p-6 space-y-6">
       {/* Heading */}
       <h1 className="text-3xl font-medium text-blue-500">CSS Web Fonts</h1>
-      <p className="text-gray-700">
+      <p>
         Web fonts allow you to use custom fonts on your website instead of 
         relying only on system fonts like Arial or Times New Roman. 
         The most popular way to use web fonts is through{" "}
         <span className="font-semibold">Google Fonts</span>.
       </p>
+     <p>Google Fonts gives users access to a large, free collection of over 1,000 font families for use in websites and design projects.</p>
 
       {/* Example 1 */}
       <div>
-        <h2 className="text-xl font-semibold text-gray-800">1. Importing Google Fonts</h2>
-        <p className="text-gray-700">
+     <h1 className="text-2xl mt-10 mb-5">How To Use Google Fonts</h1>
+     <p className="mb-2">To use a Google Font, add its stylesheet link to your HTML {'<head>'}, and apply the font in your CSS.</p>
+        <p>
           First, go to <a href="https://fonts.google.com" className="text-blue-600 underline">Google Fonts</a>, 
           choose a font, and copy the <code>&lt;link&gt;</code> tag into the{" "}
           <code>&lt;head&gt;</code> of your HTML file.
         </p>
+        <h1 className="text-2xl mt-5">Example</h1>
+        <p>In this example, we’ll use the 'Sofia' font from Google Fonts.</p>
         <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
 {`<!-- Add this inside your <head> -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">`}

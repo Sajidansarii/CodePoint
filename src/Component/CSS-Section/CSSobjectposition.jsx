@@ -2,13 +2,13 @@ import React from "react";
 
 const ObjectPositionTutorial = () => {
   return (
-    <div className="p-6 space-y-8">
+    <div className="p-6 space-y-6">
       {/* Heading */}
       <h1 className="text-3xl font-medium text-blue-500">CSS object-position</h1>
-      <p className="text-gray-700">
+      <p>
         The <code className="bg-gray-200 px-1 rounded">object-position</code> property is used 
         to set the <b>alignment</b> of an image or video inside its container when 
-        <code className="bg-gray-200 px-1 rounded">object-fit</code> is applied.  
+        <code className="bg-gray-200 px-1 rounded text-red-400">object-fit</code> is applied.  
         It works like <b>background-position</b> but for images and videos.
       </p>
 
@@ -17,7 +17,7 @@ const ObjectPositionTutorial = () => {
         <h2 className="text-xl font-semibold text-gray-800">1. object-position: center;</h2>
         <div className="w-64 h-40 border-2 border-gray-400 overflow-hidden">
           <img
-            src="https://via.placeholder.com/400x250"
+            src="https://cloudinary-marketing-res.cloudinary.com/image/upload/w_1300/q_auto/f_auto/hiking_dog_mountain"
             alt="Center Example"
             className="w-full h-full"
             style={{ objectFit: "cover", objectPosition: "center" }}
@@ -39,7 +39,7 @@ const ObjectPositionTutorial = () => {
         <h2 className="text-xl font-semibold text-gray-800">2. object-position: top left;</h2>
         <div className="w-64 h-40 border-2 border-gray-400 overflow-hidden">
           <img
-            src="https://via.placeholder.com/400x250"
+            src="https://cloudinary-marketing-res.cloudinary.com/image/upload/w_1300/q_auto/f_auto/hiking_dog_mountain"
             alt="Top Left Example"
             className="w-full h-full"
             style={{ objectFit: "cover", objectPosition: "top left" }}
@@ -61,7 +61,7 @@ const ObjectPositionTutorial = () => {
         <h2 className="text-xl font-semibold text-gray-800">3. object-position: bottom right;</h2>
         <div className="w-64 h-40 border-2 border-gray-400 overflow-hidden">
           <img
-            src="https://via.placeholder.com/400x250"
+            src="https://cloudinary-marketing-res.cloudinary.com/image/upload/w_1300/q_auto/f_auto/hiking_dog_mountain"
             alt="Bottom Right Example"
             className="w-full h-full"
             style={{ objectFit: "cover", objectPosition: "bottom right" }}
@@ -83,7 +83,7 @@ const ObjectPositionTutorial = () => {
         <h2 className="text-xl font-semibold text-gray-800">4. object-position: 20% 80%;</h2>
         <div className="w-64 h-40 border-2 border-gray-400 overflow-hidden">
           <img
-            src="https://via.placeholder.com/400x250"
+            src="https://cloudinary-marketing-res.cloudinary.com/image/upload/w_1300/q_auto/f_auto/hiking_dog_mountain"
             alt="Custom Position Example"
             className="w-full h-full"
             style={{ objectFit: "cover", objectPosition: "20% 80%" }}

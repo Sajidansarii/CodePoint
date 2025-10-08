@@ -2,98 +2,117 @@ import React from "react";
 
 const RadialGradientDemo = () => {
   return (
-    <div className="p-8 bg-gray-100 min-h-screen space-y-8">
+    <div className="p-8 min-h-screen space-y-6">
       <h1 className="text-3xl font-medium text-blue-500">
-        CSS Radial Gradient with Animation
+        CSS Radial Gradient 
       </h1>
+      <p>CSS provides the <span className="text-red-500">radial-gradient( )</span> function to produce radial (center-outward) gradient effects.</p>
+     <p>Radial gradients define color shifts that radiate from a central point to the edges.</p>
+     <p>To create a radial gradient, you must specify at least two color stops—these define the colors that blend smoothly together.</p>
 
-      <p className="text-gray-700">
-        Radial gradients create a *circular or elliptical color transition* that
-        radiates from a central point. Hover to see animated effects!
-      </p>
+     <h1 className="text-2xl">Syntax</h1>
+     <p className="border p-2">background-image: radial-gradient(shape size at position, start-color, ..., last-color);</p>
+      <p>Radial gradients use ellipse as the default shape, place the center in the middle, and extend to the farthest corner by default.</p>
 
-      {/* Example 1: Simple Radial Gradient with hover scale */}
-      <div className="h-40 w-full rounded-lg bg-[radial-gradient(circle,#facc15,#f97316)] flex items-center justify-center text-white font-bold transform transition-transform duration-500 hover:scale-105">
+      <div className="h-40 w-full rounded-lg bg-[radial-gradient(circle,#facc15,#f97316)] flex items-center justify-center text-white font-bold transform transition-transform duration-500">
         Simple Radial Gradient
       </div>
 
-     <h2 className="text-2xl">Example:1</h2>
+     <h2 className="text-2xl">Example</h2>
       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto">
         <code>
           {`.radial-gradient-box {
-  height: 10rem; 
-  width: 100%;   
-  border-radius: 0.5rem; 
-  hover:scale-105
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  color: white; 
-  font-weight: bold;
-  transition: transform 0.5s; 
-  background: radial-gradient(circle, #facc15, #f97316); 
+  background: radial-gradient(circle,yellow, orange); 
   }
-  
-.radial-gradient-box:hover {
-  transform: scale(1.05); 
-}
 `}
         </code>
       </pre>
 
-      {/* Example 2: Multi-color Radial Gradient with hover brightness */}
+      <h1 className="text-2xl">Radial Gradient - Differently Spaced Color Stops</h1>
+      <p>The following illustration showcases a radial gradient with color stops set at different positions.</p>
+
       <div className="h-40 w-full rounded-lg bg-[radial-gradient(circle,#3b82f6,#10b981,_#f43f5e)] flex items-center justify-center text-white font-bold transform transition duration-500 hover:brightness-125">
         Multi-color Radial Gradient
       </div>
-      <h2 className="text-2xl">Example:2</h2>
+      <h2 className="text-2xl">Example:</h2>
       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto">
         <code>
-          {`
-          height:10rem;
-          width:100%;
-          border-radius:0.5rem;
-          display:flex;
-          Align-items:center;
-          justify-content:center;
-          color:white;
-          font-weight:bold;
+          {`.radial-gradient-box{
           hover:scale-(1.25);
-          transition:transform 0.5;
-          background-color:radial-gradient(circle,#3b82f6,#10b981,#f43f5e);
+          background-color:radial-gradient(circle,blue,Teal green,red ,);
+          }
 `}
         </code>
       </pre>
 
-      {/* Example 3: Radial Gradient with transparency + pulse animation */}
-      <div className="h-40 w-full rounded-lg bg-[radial-gradient(circle,_rgba(59,130,246,0.8),_rgba(59,130,246,0))] flex items-center justify-center text-gray-800 font-semibold animate-pulse">
-        Gradient with Transparency
+      <h1 className="text-2xl">Radial Gradient - Set Shape</h1>
+      <p>The shape parameter determines the form of the gradient. It accepts one of the following values:</p>
+      <ul className="list-[square] list-inside">
+        <li> <strong>ellipse</strong> (this is default)</li>
+        <li><strong>circle</strong></li>
+      </ul>
+      <p>The example below demonstrates a radial gradient with a circular shape.</p>
+      <div className="h-80 w-96 rounded-lg bg-[radial-gradient(circle,#10b981,#FFFF00,#FF0000_)] flex items-center justify-center text-white font-bold transform transition duration-500 hover:brightness-125">
+        Circle
       </div>
- <h2 className="text-2xl">Example:3</h2>
-      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-200 p-4 rounded-lg">
         <code>
-          {`
-          height:10rem;
-          width:100%;
-          border-radius:0.5rem;
-          display:flex;
-          Align-items:center;
-          justify-content:center;
-          font-weight:600;
-          color: #1f2937
-          transition:transform 0.5;
-          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-          background: radial-gradient(circle, rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0))
-        @keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-}
-`}
+          {`.radial-gradient-box{
+          hover:scale-(1.25);
+          background-color:radial-gradient(circle,green,yellow,red);
+          }`}
         </code>
       </pre>
+
+      <h1 className="text-2xl">Radial Gradient - The size Parameter</h1>
+      <p>The size parameter specifies the overall scale of the gradient. The valid values include:</p>
+      <ul className="list-[square] list-inside">
+        <li> <strong> closest-side</strong></li>
+        <li> <strong>farthest-side</strong></li>
+        <li> <strong>closest-corner</strong></li>
+        <li> <strong>farthest-corner</strong> (this is default)</li>
+      </ul>
+      <h1 className="text-2xl">Example</h1>
+      <p>A radial gradient with different size keywords:</p>
+      <pre className="bg-gray-200 p-4 rounded-lg">
+        <code>
+          {`.radial-gradient-box{
+  background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black);
+}
+
+.radial-gradient-box{
+  background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
+}`}
+        </code>
+      </pre>
+     
+
+     <h1 className="text-2xl">CSS repeating-radial-gradient() Function</h1>
+     <p>CSS provides the repeating-radial-gradient() function to generate radial gradients that repeat indefinitely.</p>
+
+     <div className="h-80 w-full rounded-lg bg-[repeating-radial-gradient(red,yellow_10%,green_15%)] flex items-center justify-center text-white font-bold transform transition duration-500 hover:brightness-125">
+        Circle
+      </div>
+      <pre className="bg-gray-200 p-4 rounded-lg">
+        <code>
+          {`.radial-gradient-box{
+          background-color: repeating-radial-gradient(red,yellow 10%,green 15%);
+          hover:scale-(1.25);
+          }`}
+        </code>
+      </pre>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       <p className="text-gray-700">

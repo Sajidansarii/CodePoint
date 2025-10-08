@@ -1,82 +1,40 @@
 import React from "react";
 
 const Css3DAnimation = () => {
+  const data = [
+    {Property:'transform', Description:'Applies a 2D or 3D transformation to an element'},
+    {Property:'transform-origin', Description:'Allows you to change the position on transformed elements'},
+    {Property:'transform-style', Description:'Specifies how nested elements are rendered in 3D space',},
+    {Property:'perspective', Description:'Specifies the perspective on how 3D elements are viewed'},
+    {Property:'perspective-origin', Description:'Specifies the bottom position of 3D elements'},
+    {Property:'backface-visibility', Description:'Defines whether or not an element should be visible when not facing the screen'},
+  ];
+
+  const data2 = [
+    {Function:'matrix3d()', Description:'Defines a 3D transformation, using a 4x4 matrix of 16 values'},
+    {Function:'translate3d()', Description:'Defines a 3D translation'},
+    {Function:'translateZ()', Description:'Defines a 3D translation, using only the value for the Z-axis'},
+    {Function:'scale3d()', Description:'Defines a 3D scale transformation'},
+    {Function:'scaleZ()', Description:'Defines a 3D scale transformation by giving a value for the Z-axis'},
+    {Function:'rotate3d()', Description:'Defines a 3D rotation'},
+    {Function:'rotateX()', Description:'Defines a 3D rotation along the X-axis'},
+    {Function:'rotateY()', Description:'Defines a 3D rotation along the Y-axis'},
+    {Function:'rotateZ()', Description:'Defines a 3D rotation along the Z-axis'},
+    {Function:'perspective()', Description:'Defines a perspective view for a 3D transformed element'},
+  ];
   return (
-    <div className="p-8 bg-gray-50 min-h-screen space-y-8">
-      {/* Title */}
-      <h1 className="text-3xl font-medium text-center text-blue-500">
+    <div className="p-8 min-h-screen space-y-6">
+      <h1 className="text-3xl font-medium text-blue-500">
         CSS 3D Animation
       </h1>
 
-      {/* Intro */}
-      <p className="text-gray-700 text-center max-w-3xl mx-auto">
-        <strong>3D Animations</strong> ka use elements ko X, Y aur Z axis me
-        continuously rotate, move ya scale karne ke liye hota hai. Ye animation
-        mostly <code>@keyframes</code> ke sath banayi jaati hai.
+      <p>
+       CSS's transform property enables geometric transformations such as rotation, scaling, translation, and skewing. These can be applied in both two-dimensional and three-dimensional contexts.
       </p>
+      <p>Hover your mouse over each item below to compare how 2D and 3D transformations affect element behavior in CSS.</p>
 
-      {/* Syntax */}
-      <div className="bg-white p-6 rounded shadow">
-        <h2 className="text-xl font-semibold mb-2">Syntax</h2>
-        <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto text-left">
-{`@keyframes myAnimation {
-  0%   { transform: rotateX(0deg) rotateY(0deg); }
-  100% { transform: rotateX(360deg) rotateY(360deg); }
-}
-
-.box {
-  animation: myAnimation 5s infinite linear;
-}`}
-        </pre>
-      </div>
-
-      {/* Example - 3D Rotating Cube */}
-      <div className="bg-white p-6 rounded shadow space-y-4">
-        <h2 className="text-xl font-semibold">🎲 Example: Rotating 3D Cube</h2>
-        <p className="text-gray-700">
-          Yahan hum ek <strong>cube</strong> banayenge jisme 6 sides hongi aur
-          cube continuously 3D me rotate karega.
-        </p>
-
-        {/* CSS Example Code */}
-        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto text-left">
-{`.scene {
-  width: 200px;
-  height: 200px;
-  perspective: 600px; /* depth ka effect ke liye */
-}
-
-.cube {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  animation: spin 6s infinite linear;
-}
-
-.face {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background: rgba(0, 150, 250, 0.7);
-  border: 2px solid #fff;
-}
-
-/* cube ki sides position */
-.front  { transform: rotateY(0deg) translateZ(100px); }
-.back   { transform: rotateY(180deg) translateZ(100px); }
-.right  { transform: rotateY(90deg) translateZ(100px); }
-.left   { transform: rotateY(-90deg) translateZ(100px); }
-.top    { transform: rotateX(90deg) translateZ(100px); }
-.bottom { transform: rotateX(-90deg) translateZ(100px); }
-
-@keyframes spin {
-  from { transform: rotateX(0deg) rotateY(0deg); }
-  to   { transform: rotateX(360deg) rotateY(360deg); }
-}`}
-        </pre>
-
-        {/* Live Demo */}
+      
+      <div className="bg-white p-6 rounded space-y-4">
         <div className="flex justify-center mt-6">
           <div className="scene">
             <div className="cube animate-[spin_6s_linear_infinite]">
@@ -102,25 +60,100 @@ const Css3DAnimation = () => {
           </div>
         </div>
       </div>
+      <h1 className="text-2xl">CSS 3D Transforms Functions</h1>
+      <p>Use the following 3D transformation functions with the CSS transform property to create depth and perspective effects:</p>
+      <ul className="list-[square] list-inside">
+        <li><span className="text-red-400 bg-gray-100 px-1">rotateX()</span></li>
+        <li><span className="text-red-400 bg-gray-100 px-1">rotateY()</span></li>
+        <li><span className="text-red-400 bg-gray-100 px-1">rotateZ()</span></li>
+      </ul>
+
+      <h1 className="text-2xl">The CSS rotateX() Function</h1>
+      <p>The rotateX() function rotates an element around its X-axis at a given degree:</p>
+      <h1 className="text-2xl">Example</h1>
+      <pre className="bg-gray-300 rounded-lg p-4">
+        {`#myDiv {
+  transform: rotateX(150deg);
+}`}
+      </pre>
+      <h1 className="text-2xl">The CSS rotateY() Function</h1>
+      <p>The CSS rotateY() function applies a 3D rotation to an element around the Y-axis, which runs vertically through the element.</p>
+      <h1 className="text-2xl">Example</h1>
+      <pre className="bg-gray-300 rounded-lg p-4">
+        {`#myDiv {
+  transform: rotateY(150deg);
+}`}
+      </pre>
+
+      <h1 className="text-2xl">The CSS rotateZ() Function</h1>
+      <p>The CSS rotateZ() function applies a rotation around the Z-axis, which is perpendicular to the screen, creating a flat, 2D spin.</p>
+      <h1 className="text-2xl">Example</h1>
+      <pre className="bg-gray-300 rounded-lg p-4">
+        {`#myDiv {
+  transform: rotateZ(90deg);
+}
+`}
+      </pre>
+
+      <h1 className="text-2xl">CSS Transform Properties</h1>
+      <p>Here's a table of all available 3D transform properties in CSS:</p>
+      <table className="min-w-full border border-gray-300 rounded-md text-sm text-left">
+        <thead>
+          <tr className="bg-gray-100">
+            <th className="font-bold text-gray-700 border-b border-gray-300 px-4 py-2">Property</th>
+            <th className="font-bold text-gray-700 border-b border-gray-300 px-4 py-2">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((row,index)=>(
+            <tr className="cursor-text hover:bg-gray-100">
+              <td className="px-4 py-2 border-b border-gray-200">{row.Property}</td>
+              <td className="px-4 py-2 border-b border-gray-200">{row.Description}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <h1 className="text-2xl">CSS 3D Transform Functions</h1>
+      <table className="min-w-full  border border-gray-300 rounded-md text-left text-sm">
+        <thead>
+          <tr className="bg-gray-100">
+            <th className="px-4 py-2  border-b border-gray-300 text-gray-700 font-bold">Function</th>
+            <th className="px-4 py-2  border-b border-gray-300 text-gray-700 font-bold">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data2.map((row,index)=>(
+           <tr className="cursor-text hover:bg-gray-100">
+            <td className="px-4 py-2 border-b border-gray-200">{row.Function}</td>
+            <td className="px-4 py-2 border-b border-gray-200">{row.Description}</td>
+          </tr>
+          ))}
+        </tbody>
+      </table>
+
+
+
+
 
       {/* Explanation */}
       <div className="bg-white p-6 rounded shadow">
         <h2 className="text-xl font-semibold">📝 Explanation</h2>
         <ul className="list-disc pl-6 text-gray-700 space-y-2 text-left">
           <li>
-            <strong>perspective</strong> → depth ka illusion create karta hai.
+            <strong>perspective</strong> → It creates an illusion of depth.
           </li>
           <li>
-            <strong>transform-style: preserve-3d</strong> → 3D transformations ko preserve karta hai.
+            <strong>transform-style: preserve-3d</strong> → It pushes the element inward or outward from the center of the cube.
           </li>
           <li>
-            <strong>translateZ()</strong> → element ko andar/bahar push karta hai cube ke center se.
+            <strong>translateZ()</strong> → It displaces the element along the axis, toward or away from the cube's center.
           </li>
           <li>
-            <strong>@keyframes spin</strong> → cube ko continuously rotate karata hai.
+            <strong>@keyframes spin</strong> → It continuously rotates the cube.
           </li>
           <li>
-            <strong>animation: spin 6s infinite linear;</strong> → cube ko infinite smooth rotation deta hai.
+            <strong>animation: spin 6s infinite linear;</strong> → It makes the cube rotate smoothly and infinitely.
           </li>
         </ul>
       </div>

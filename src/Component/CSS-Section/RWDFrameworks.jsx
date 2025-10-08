@@ -9,40 +9,47 @@ const CssRWDFrameworks = () => {
       </h1>
 
       {/* Intro */}
-      <p className="text-gray-700">
-        Responsive Web Design (RWD) frameworks aise pre-built CSS aur JavaScript
-        libraries hote hain jo responsive layouts banane ko simple aur fast bana dete hain.
-        Inke andar ready-made grid systems, responsive classes aur UI components hote hain
-        jo har screen size ke liye automatically adjust ho jaate hain.
+      <p>
+        Responsive Web Design (RWD) frameworks are pre-built CSS and JavaScript libraries that make creating responsive layouts simple and fast. They include ready-made grid systems, responsive classes, and UI components that automatically adjust for every screen size.
       </p>
 
       {/* Why Frameworks */}
       <h2 className="text-2xl font-semibold">Why Use RWD Frameworks?</h2>
-      <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li>Fast aur efficient development.</li>
-        <li>Cross-browser compatibility ensure hoti hai.</li>
-        <li>Responsive layouts easily ban jate hain.</li>
-        <li>Mobile-first design principles follow karte hain.</li>
+      <ul className="list-disc list-inside space-y-2">
+        <li>Fast and efficient development. </li>
+        <li>Cross-browser compatibility is ensured.</li>
+        <li>Responsive layouts are created easily.</li>
+        <li>They follow mobile-first design principles.</li>
       </ul>
 
       {/* Popular Frameworks */}
       <h2 className="text-2xl font-semibold">Popular RWD Frameworks</h2>
       <div className="space-y-4 text-gray-700">
         <p>
-          <strong>1. Bootstrap:</strong> Sabse popular framework hai jo grid system aur
-          responsive components provide karta hai.
+          <strong>1. Bootstrap:</strong> It is the most popular framework that provides a grid system and responsive components.
         </p>
         <p>
-          <strong>2. Foundation:</strong> Mobile-first responsive framework jo accessibility
-          par focus karta hai.
+          <strong>2. Foundation:</strong> A mobile-first responsive framework that focuses on accessibility.
         </p>
         <p>
-          <strong>3. Tailwind CSS:</strong> Utility-first CSS framework jo responsive design
-          banane ke liye breakpoints aur classes provide karta hai.
+          <strong>3. Tailwind CSS:</strong> A utility-first CSS framework that provides breakpoints and classes for creating responsive designs.
         </p>
         <p>
-          <strong>4. Bulma:</strong> Lightweight aur modern CSS framework built on Flexbox.
+          <strong>4. Bulma:</strong> A lightweight and modern CSS framework built on Flexbox.
         </p>
+      </div>
+
+      <p>Using a responsive style sheet is an excellent method for building a responsive design.</p>
+      <p>Makes it simple to create good-looking sites that work well on any display size.</p>
+
+      <div className="flex flex-row border border-1 border-gray-500 p-4 gap-3">
+      
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem id quas sit ex sequi sunt voluptatibus qui quisquam. Sequi, minus?</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia commodi earum, cum amet optio suscipit et itaque? Voluptates, expedita eligendi?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores laborum tempore corrupti assumenda reprehenderit nulla rerum distinctio quibusdam enim nesciunt?</p>
+
       </div>
 
       {/* Example 1: Bootstrap */}
@@ -69,8 +76,7 @@ const CssRWDFrameworks = () => {
 </html>`}
       </pre>
       <p className="text-gray-700">
-        Yahan <code>col-md-6</code> ka matlab hai ki medium screen aur usse upar par 
-        har column screen ke half width lega. Chhoti screen par ye automatically stack ho jaayenge.
+      Here, col-md-6 means that on medium screens and above, each column will take up half the width of the screen. On smaller screens, they will automatically stack.
       </p>
 
       {/* Example 2: Tailwind */}
@@ -82,9 +88,7 @@ const CssRWDFrameworks = () => {
 </div>`}
       </pre>
       <p className="text-gray-700">
-        Tailwind me <code>grid-cols-1</code> chhoti screen par ek column banata hai 
-        aur <code>md:grid-cols-2</code> medium screens par usse 2 columns me tod deta hai.
-      </p>
+       In Tailwind, grid-cols-1 creates a single column on small screens, and md:grid-cols-2 breaks it into two columns on medium screens.</p>
     </div>
   );
 };

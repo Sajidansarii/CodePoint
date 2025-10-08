@@ -1,28 +1,42 @@
 import React from "react";
 
 const CssMasking = () => {
+  const data= [
+    {Value:'mask-image', Description:'It specifies an image for the mask layer for an element. Default value is none.'},
+    {Value:'mask-mode', Description:'It specifies whether the mask layer image should be luminance mask or alpha mask. Default value is match-source.'},
+    {Value:'mask-composite', Description:'It specifies a compositing operation used on the current mask layer with the below mask layers. Default value is add.'},
+    {Value:'mask-clip', Description:'It specifies the area affected by a mask image. Default value is border-box.'},
+    {Value:'mask-origin', Description:'It specifies the origin position of a mask layer image. Default value is border- box.'},
+    {Value:'mask-position', Description:'It sets the starting position of a mask image relative to the mask position area. Default value is 0% 0%.'},
+    {Value:'mask-repeat', Description:'It specifies how a mask image will be repeated. Default value is repeat.'},
+    {Value:'mask-size', Description:'It specifies the size of the mask layer image. Default value is auto.'},
+    {Value:'initial', Description:'It sets the property to its default value.'},
+    {Value:'inherit', Description:'It inherits the property from the parent element.'},
+  ];  
   return (
-    <div className="p-8 bg-gray-50 min-h-screen space-y-8">
+    <div className="p-8 min-h-screen space-y-6">
       {/* Title */}
       <h1 className="text-3xl font-medium text-blue-500">
         CSS Masking
       </h1>
 
-      <p className="text-gray-700 text-center max-w-2xl mx-auto">
-        <strong>CSS Masking</strong> ka use elements par <em>mask images</em> ya{" "}
-        <em>gradients</em> apply karne ke liye hota hai. Ye mask ek tarah ka
-        filter hota hai jo decide karta hai ki element kaunsa part visible hoga
-        aur kaunsa transparent.  
+      <p>
+       In CSS, the mask shorthand property defines how an image mask is applied to an element, encapsulating detailed behavior through associated longhand properties.
       </p>
+      <h1 className="text-2xl">Syntax</h1>
+      <pre className="bg-gray-200 p-4 w-[900px] rounded-lg overflow-auto">
+        <code>
+          {`mask: <mask-image> <mask-mode> <mask-composite> <mask-clip> <mask-origin> <mask-position> <mask-repeat> <mask-size> | initial | inherit;`}
+        </code>
+      </pre>
 
       {/* Example 1: Basic Masking with PNG */}
-      <div className="bg-white p-6 rounded shadow space-y-4">
+      <div className="bg-white p-6 space-y-4">
         <h2 className="font-semibold text-xl">
           1. Mask Image with Transparent PNG
         </h2>
-        <p className="text-gray-600">
-          Hum ek <code>mask-image</code> property ka use karke PNG image ke
-          transparent parts ko mask ke tarah use kar sakte hain.
+        <p>
+          We can use the mask-image property to treat the transparent parts of a PNG image as a mask.
         </p>
 
         <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
@@ -35,21 +49,14 @@ const CssMasking = () => {
 }`}
         </pre>
 
-        <div className="border p-4 text-center">
           <p>
-            👉 Yahan agar tum ek PNG image mask use karoge (jaise star-shape),
-            to content us shape ke andar hi dikhega.
-          </p>
+            Here, if you use a PNG image as a mask (like a star shape), the content will only be visible inside that shape.</p>
         </div>
-      </div>
 
       {/* Example 2: Gradient Masking */}
-      <div className="bg-white p-6 rounded shadow space-y-4">
+      <div className="bg-white p-6  space-y-4">
         <h2 className="font-semibold text-xl">2. Gradient Mask</h2>
-        <p className="text-gray-600">
-          Gradient ko mask banakar hum smooth fade effects create kar sakte
-          hain.
-        </p>
+        <p>By using a gradient as a mask, we can create smooth fade effects.</p>
 
         <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
 {`div {
@@ -58,19 +65,16 @@ const CssMasking = () => {
 }`}
         </pre>
 
-        <div className="border p-4 text-center">
           <p>
-            👉 Is example me element left se solid dikhai dega aur right side me
-            transparent ho jaayega.
+             In this example, the element will appear solid on the left side and become transparent on the right side.
           </p>
-        </div>
-      </div>
+       </div>
 
       {/* Example 3: Mask with SVG */}
-      <div className="bg-white p-6 rounded shadow space-y-4">
+      <div className="bg-white p-6 space-y-4">
         <h2 className="font-semibold text-xl">3. Mask with SVG</h2>
-        <p className="text-gray-600">
-          Hum ek <code>SVG shape</code> ko mask ke tarah use kar sakte hain.
+        <p>
+          We can use an SVG shape as a mask.
         </p>
 
         <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
@@ -82,13 +86,32 @@ const CssMasking = () => {
 }`}
         </pre>
 
-        <div className="border p-4 text-center">
           <p>
-            👉 Agar tum ek circle ya polygon SVG doge, to content wahi shape ke
-            andar visible hoga.
+            If you provide a circle or polygon SVG, the content will be visible only inside that shape.
           </p>
-        </div>
       </div>
+       <h1 className="text-2xl">Property Values</h1>
+       <table className="min-w-full border border-gray-300 text-sm rounded-md text-left mt-10 ">
+        <thead>
+          <tr className="bg-gray-100">
+            <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Value</th>
+            <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+         {data.map((row,index)=>(
+           <tr className="hover:bg-gray-100 cursor-text">
+            <td className="px-4 py-2 border-b">{row.Value}</td>
+            <td className="px-4 py-2 border-b">{row.Description}</td>
+          </tr>
+         ))}
+        </tbody>
+       </table>
+
+
+
+
+
 
       {/* Example 4: Masking vs Clipping */}
       <div className="bg-white p-6 rounded shadow space-y-4">

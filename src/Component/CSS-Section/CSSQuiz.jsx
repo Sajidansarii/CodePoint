@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const CssQuiz = () => {
   const questions = [
     {
-      question: "CSS ka full form kya hai?",
+      question: "What is the full form of CSS?",
       options: [
         "Creative Style Sheets",
         "Cascading Style Sheets",
@@ -13,16 +13,16 @@ const CssQuiz = () => {
       answer: "Cascading Style Sheets",
     },
     {
-      question: "CSS me text color change karne ke liye konsi property use hoti hai?",
+      question: "Which property is used in CSS to change the text color?",
       options: ["background-color", "color", "text-style", "font-color"],
       answer: "color",
     },
     {
-      question: "CSS me element ko center align karne ke liye kaunsi property useful hai?",
+      question: "Which property is useful in CSS to center align an element?",
       options: ["align", "text-align", "justify", "position"],
       answer: "text-align",
     },
-  ];
+  ];  
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);

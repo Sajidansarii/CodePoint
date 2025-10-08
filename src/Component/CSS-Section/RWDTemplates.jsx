@@ -9,25 +9,21 @@ const CssRWDTemplates = () => {
       </h1>
 
       {/* Intro */}
-      <p className="text-gray-700">
-        Responsive Web Design (RWD) templates pre-built website layouts hote
-        hain jo automatically har screen size par adjust ho jaate hain. Ye
-        templates aapko ready-made design dete hain jisse aapko scratch se
-        layout banane ki zarurat nahi padti. Sirf content aur styling customize
-        karni hoti hai.
+      <p>
+       Responsive Web Design (RWD) templates are pre-built website layouts that automatically adjust to any screen size. These templates provide you with a ready-made design, so you don’t need to build the layout from scratch—just customize the content and styling.
       </p>
 
       {/* Why Templates */}
       <h2 className="text-2xl font-semibold">Why Use RWD Templates?</h2>
       <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li>Time-saving: Pre-built layouts already responsive hote hain.</li>
-        <li>Cross-device compatibility ensure hoti hai.</li>
-        <li>Easy customization ke options milte hain.</li>
+        <li>Time-saving: Pre-built layouts are already responsive.</li>
+        <li>Cross-device compatibility is ensured.</li>
+        <li>Easy customization options are available.</li>
         <li>Beginner-friendly development.</li>
       </ul>
 
       {/* Example 1: Basic Responsive Template */}
-      <h2 className="text-2xl font-semibold">Example: Basic Responsive Template</h2>
+      <h2 className="text-2xl font-semibold">Basic Responsive Template</h2>
       <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
 {`<!DOCTYPE html>
 <html lang="en">
@@ -81,11 +77,7 @@ const CssRWDTemplates = () => {
 </body>
 </html>`}
       </pre>
-      <p className="text-gray-700">
-        Is template me <code>flexbox</code> use kiya gaya hai jisme desktop par
-        sidebar aur content side by side aate hain. Lekin <code>@media</code>{" "}
-        query ki wajah se small screens par ye dono stack ho jaate hain.
-      </p>
+      <p>This template uses Flexbox, where the sidebar and content appear side by side on desktop screens. However, due to the <span className="text-red-400 bg-gray-50 px-1">@media-query</span>, they stack on top of each other on small screens.</p>
 
       {/* Example 2: Tailwind Responsive Template */}
       <h2 className="text-2xl font-semibold">Example: Tailwind CSS Template</h2>
@@ -105,19 +97,13 @@ const CssRWDTemplates = () => {
   </footer>
 </div>`}
       </pre>
-      <p className="text-gray-700">
-        Tailwind me responsive classes jaise <code>md:flex-row</code> aur{" "}
-        <code>md:w-1/4</code> use karke ek hi template alag-alag screen sizes
-        par automatically adjust ho jaata hai.
-      </p>
+      <p>In Tailwind, using responsive classes like md:flex-row and md:w-1/4, a single template automatically adjusts across different screen sizes.</p>
 
       {/* Conclusion */}
       <h2 className="text-2xl font-semibold">Conclusion</h2>
-      <p className="text-gray-700">
-        RWD templates beginners aur professionals dono ke liye useful hote hain
-        kyunki ye pre-built structure dete hain. Sirf content replace karke ek
-        complete responsive website banayi jaa sakti hai.
-      </p>
+     <p>
+      RWD templates are useful for both beginners and professionals because they provide a pre-built structure. By simply replacing the content, a complete responsive website can be created.
+     </p>
     </div>
   );
 };

@@ -224,15 +224,6 @@ const MathFunctions = () => {
           ))}
         </tbody>
       </table>
-
-
-
-
-
-
-
-
-
       
 
       <div className="bg-blue-200 p-4 w-[calc(100%-100px)]">

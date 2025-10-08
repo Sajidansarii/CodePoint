@@ -2,14 +2,14 @@ import React from "react";
 
 const CssPagination = () => {
   return (
-    <div className="p-8 bg-gray-50 min-h-screen space-y-10">
+    <div className="p-8min-h-screen space-y-6">
       {/* Title */}
       <h1 className="text-3xl font-medium text-blue-500">
         CSS Pagination
       </h1>
 
       {/* Intro */}
-      <p className="text-gray-700 text-center max-w-3xl mx-auto">
+      <p>
         <strong>Pagination</strong> ka use large content (jaise articles, products, 
         ya search results) ko multiple pages me divide karne ke liye hota hai. 
         CSS ke through hum pagination ko visually attractive aur user-friendly 
@@ -19,7 +19,7 @@ const CssPagination = () => {
       {/* Example with CSS Code */}
       <div className="bg-white p-6 rounded shadow space-y-6">
         <h2 className="text-xl font-semibold">🔹 Basic Pagination Example</h2>
-        <p className="text-gray-700">
+        <p>
           Niche diya gaya example ek simple pagination UI banata hai jisme 
           active page highlight hota hai aur hover effect bhi diya gaya hai.
         </p>

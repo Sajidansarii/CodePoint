@@ -2,60 +2,51 @@ import React from "react";
 
 const CssCombinators = () => {
   return (
-    <div className="p-8 bg-gray-50 min-h-screen space-y-8">
+    <div className="p-8 min-h-screen space-y-6">
       {/* Title */}
-      <h1 className="text-3xl font-medium text-center text-blue-500">
+      <h1 className="text-3xl font-medium text-blue-500">
         CSS Combinators
       </h1>
 
-      <p className="text-gray-700 text-center max-w-2xl mx-auto">
-        CSS <strong>Combinators</strong> ka use karke hum specify karte hain ki
-        ek element dusre element ke relation me kaise select hoga.  
-        4 main types ke combinators hote hain:
-        <strong> Descendant, Child, Adjacent Sibling, General Sibling</strong>.
-      </p>
+      <p>A combinator in CSS is a syntax construct that establishes a relationship between two or more selectors.</p>
+      <p>Combinators allow developers to chain multiple selectors in CSS to define complex relationships and increase specificity.</p>
+      <p>The CSS specification outlines four types of combinators that determine the relationship between elements:</p>
+      <ul className="list-[square] list-inside">
+        <li>Descendant combinator (space)</li>
+        <li>Child combinator {'(>)'}</li>
+        <li>Next sibling combinator (+)</li>
+        <li>Subsequent-sibling combinator (~)</li>
+      </ul>
+
+      <h1 className="text-2xl">Descendant Combinator (space)</h1>
 
       {/* Example 1: Descendant Selector */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="font-semibold text-xl">1. Descendant Selector (space)</h2>
-        <p className="text-gray-600">
-          Ye selector ek element ke andar ke kisi bhi nested element ko target
-          karta hai.
+        <p>
+          This combinator enables the selection of elements that are structurally subordinate to a given element, regardless of nesting depth.
         </p>
 
         <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
 {`div p {
-  color: blue;
+  background-color: blue;
 }`}
         </pre>
-
-        <div className="border p-4">
-          <p>Ye direct paragraph hai (apply hoga ✅)</p>
-          <div>
-            <p>Ye nested div ke andar ka paragraph hai (apply hoga ✅)</p>
-          </div>
-        </div>
       </div>
 
       {/* Example 2: Child Selector */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="font-semibold text-xl">2. Child Selector ({'>'})</h2>
-        <p className="text-gray-600">
-          Ye sirf direct child element ko select karta hai, nested ko nahi.
-        </p>
+        <p>
+          The child combinator matches elements that are immediate descendants of a specified parent in the DOM tree. </p>
+          <p>The following example demonstrates how to select all {'<p>'} elements that are immediate child nodes of {'<div>'} elements.</p>
+
 
         <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
 {`div > p {
-  color: red;
+  background-color: red;
 }`}
         </pre>
-
-        <div className="border p-4">
-          <p>Ye direct child paragraph hai (apply hoga ✅)</p>
-          <div>
-            <p>Ye nested paragraph hai (apply nahi hoga ❌)</p>
-          </div>
-        </div>
       </div>
 
       {/* Example 3: Adjacent Sibling Selector */}
@@ -63,43 +54,32 @@ const CssCombinators = () => {
         <h2 className="font-semibold text-xl">
           3. Adjacent Sibling Selector (+)
         </h2>
-        <p className="text-gray-600">
-          Ye ek element ke turant baad aane wale sibling element ko select
-          karta hai.
+        <p>
+          In CSS, this combinator is used to target elements that are adjacent siblings—directly succeeding the referenced element.
         </p>
+        <p>In the DOM, sibling elements are defined as elements that share a common parent node.</p>
+        <p>In this example, a {'<p>'} element is selected only if it directly succeeds a {'<div>'} within the same parent container.</p>
 
         <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
 {`h2 + p {
-  color: green;
+  background-color: green;
 }`}
         </pre>
-
-        <div className="border p-4">
-          <h2>Heading</h2>
-          <p>Ye h2 ke turant baad wala paragraph hai (apply hoga ✅)</p>
-          <p>Ye dusra paragraph hai (apply nahi hoga ❌)</p>
-        </div>
       </div>
 
       {/* Example 4: General Sibling Selector */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="font-semibold text-xl">4. General Sibling Selector (~)</h2>
-        <p className="text-gray-600">
-          Ye ek element ke baad aane wale sabhi sibling elements ko select
-          karta hai.
+        <p>In CSS, this combinator enables the selection of all sibling elements that follow a given element in the DOM hierarchy.
         </p>
+        <p>In this example, the selector applies styles to each {'<p>'} element that appears after a {'<div>'} as a sibling within the same parent element.</p>
 
         <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
 {`h2 ~ p {
-  color: purple;
+  background-color: purple;
 }`}
         </pre>
 
-        <div className="border p-4">
-          <h2>Heading</h2>
-          <p>Ye paragraph sibling hai (apply hoga ✅)</p>
-          <p>Ye bhi paragraph sibling hai (apply hoga ✅)</p>
-        </div>
       </div>
     </div>
   );

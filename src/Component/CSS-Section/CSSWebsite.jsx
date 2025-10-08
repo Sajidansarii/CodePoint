@@ -9,10 +9,8 @@ const CssWebsite = () => {
       </h1>
 
       {/* Intro */}
-      <p className="mb-6 text-gray-700 leading-relaxed">
-        CSS ka use karke hum apni website ko attractive aur responsive 
-        bana sakte hain. HTML structure provide karta hai aur CSS us structure 
-        ko style karta hai. Yaha ek simple website layout ka example diya gaya hai.
+      <p className="mb-6 leading-relaxed">
+        By using CSS, we can make our website attractive and responsive. HTML provides the structure, and CSS styles that structure. Here is an example of a simple website layout.
       </p>
 
       {/* Example Code */}
@@ -92,28 +90,29 @@ const CssWebsite = () => {
       </div>
 
       {/* Explanation */}
+      <div className="bg-green-100 p-3">
       <h2 className="text-2xl font-semibold mb-3 text-gray-800">
         Explanation:
       </h2>
       <ul className="list-disc pl-6 space-y-2 text-gray-700">
         <li>
-          <code>header</code> → Website ka top section jisme title hota hai.
+          <code>header</code> → The top section of the website that contains the title.
         </li>
         <li>
-          <code>nav</code> → Navigation bar create ki gayi hai with hover effect.
+          <code>nav</code> → A navigation bar has been created with a hover effect.
         </li>
         <li>
-          <code>main</code> → Page ka content section hota hai.
+          <code>main</code> → It is the content section of the page.
         </li>
         <li>
-          <code>footer</code> → Bottom section fixed hai jisme copyright text.
+          <code>footer</code> → The bottom section is fixed and contains the copyright text.
         </li>
         <li>
-          <code>CSS properties</code> jaise <code>background</code>, 
-          <code>color</code>, <code>padding</code>, <code>text-align</code> 
-          ka use styling ke liye kiya gaya hai.
+         CSS properties like background, color, padding, and text-align are used for styling.
         </li>
       </ul>
+      </div>
+
     </div>
   );
 };

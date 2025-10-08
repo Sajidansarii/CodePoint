@@ -2,28 +2,53 @@ import React from "react";
 
 const CSSFlexboxIntro = () => {
   return (
-    <div className="p-6 space-y-8">
+    <div className="p-6 space-y-6">
       {/* Heading */}
       <h1 className="text-3xl font-medium text-blue-500">CSS Flexbox (Introduction)</h1>
-      <p className="text-gray-700">
-        <strong>Flexbox</strong> ek CSS layout module hai jo elements ko easily{" "}
-        <strong>align aur distribute</strong> karne ke liye use hota hai. Yeh specially responsive 
-        design ke liye bahut useful hai.
+      <p>Flexbox is a CSS layout module that is used to easily align and distribute        elements. It is especially useful for responsive design.
       </p>
 
-      {/* Example Code */}
       <div>
-        <h2 className="text-xl font-semibold text-gray-800">Example: Basic Flexbox</h2>
-        <p className="text-gray-700">
-          Flexbox ka use karke hum elements ko horizontally aur vertically align kar sakte hain.
+      <h1 className="text-2xl mt-10 mb-3">What is CSS Flexbox?</h1>
+      <p className="mb-1">The term Flexbox refers to the Flexible Box Layout module.</p>
+      <p className="mb-1">Flexbox helps in positioning items in either rows or columns.</p>
+      <p>Flexbox allows you to build flexible, responsive layout structures without using floats or positioning.</p>
+
+      <h1 className="text-2xl mt-10 mb-3">Diffrence between Flex and Grid</h1>
+      <p>Flexbox in CSS is meant for arranging items in a single direction—rows or columns.<br/>
+         The Grid Layout in CSS is intended for layouts organized in both rows and columns.
+      </p>
+
+      <h1 className="text-2xl mt-10 mb-3">CSS Flexible Box Layout Module</h1>
+      <p>Before Flexbox, layouts were managed using four different modes.</p>
+      <ul className="list-[square] list-inside">
+        <li>Block, for sections in a webpage</li>
+        <li>Inline, for text</li>
+        <li>Table, for two-dimensional table data</li>
+        <li>Positioned, for explicit position of an element</li>
+      </ul>
+      <p className="mt-5">CSS Flexbox works in all the latest browsers.</p>
+
+      <h1 className="text-2xl mt-16">Understanding CSS Flexbox Elements</h1>
+      <p className="mt-2">A flexbox is always made up of:</p>
+      <ul className="list-[square] list-inside">
+        <li>a Flex Container - the parent (container) {'<div>'} element</li>
+        <li>Flex Items - the items inside the container {'<div>'}</li>
+      </ul>
+
+
+      {/* Example Code */}
+        <h2 className="text-2xl mb-3 mt-10 ">Example: Basic Flexbox</h2>
+        <p className="mb-5  ">
+         By using Flexbox, we can align elements both horizontally and vertically.
         </p>
 
         <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2 overflow-x-auto">
-{`/* Container ko flex banate hain */
+{`/*We make the container a flex container. */
 .container {
   display: flex;
-  justify-content: center; /* items ko horizontally center karega */
-  align-items: center;    /* items ko vertically center karega */
+  justify-content: center; /* It will center the items horizontally*/
+  align-items: center;    /* It will center the items vertically*/
   height: 200px;
   border: 2px solid black;
 }
@@ -45,19 +70,19 @@ const CSSFlexboxIntro = () => {
 
       {/* Explanation */}
       <div>
-        <h2 className="text-xl font-semibold text-gray-800">Explanation</h2>
-        <ul className="list-disc list-inside text-gray-700 space-y-2">
+        <h2 className="text-2xl mt-10 mb-5">Explanation</h2>
+        <ul className="list-[square] list-inside bg-green-100 p-3 border space-y-2">
           <li>
-            <code>display: flex;</code> → Container ko flexbox bana deta hai.
+            <code>display: flex;</code> → It turns the container into a flexbox.
           </li>
           <li>
-            <code>justify-content</code> → Items ko horizontally align karta hai (start, center, end, space-between, space-around).
+            <code>justify-content</code> → It aligns the items horizontally (start, center, end, space-between, space-around).
           </li>
           <li>
-            <code>align-items</code> → Items ko vertically align karta hai (start, center, end, stretch).
+            <code>align-items</code> → It aligns the items vertically (start, center, end, stretch).
           </li>
           <li>
-            Flexbox responsive layouts ke liye perfect hai kyunki yeh automatically adjust hota hai.
+            Flexbox is perfect for responsive layouts because it adjusts automatically.
           </li>
         </ul>
       </div>

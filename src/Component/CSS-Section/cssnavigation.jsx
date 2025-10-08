@@ -15,7 +15,7 @@ import CSSBorderradius from './CSSBorder-radius';
 import CSSBordercollapse from './CSSBordercollapse';
 import CSSBorderspacing from './CSSBorderspacing';
 import CSSDisplay from './CSSDisplay';
-import Cursor from './Cursor';
+import Cursor from './Cursor';              
 import CSSButtons from './CSSButtons';
 import CSSFloat from './CSSFloat';
 import CSSFont from './CSSFont';
@@ -35,7 +35,7 @@ import CSSFonts from './CSSFonts';
 import CSSIcon from './CSSIcon';
 import CSSLinks from './CSSLinks';
 import CSSLists from './CSSLists';
-import CSSTables from './CSSTables'
+import CSSTables from './CSSTables';
 import Display from './Display';
 import Maxwidth from './Maxwidth';
 import Position from './CSSPosition';
@@ -47,7 +47,7 @@ import CSSCombinators from './CSSCombinators';
 import CSSOpacity from './CSSOpacity';
 import CSSNavigationBar from './CSSNavigationBar';
 import CSSDropdowns from './CSSDropdowns';
-import CSSImageGallery from './CSSImageGallery'
+import CSSImageGallery from './CSSImageGallery';
 import CSSImageSprites from './CSSImageSprites';
 import CSSAttrSelectors from './CSSAttrSelectors';
 import CSSForms from './CSSForms';
@@ -99,7 +99,10 @@ import FlexResponsive from './FlexResponsive';
 import GridIntro from './GridIntro';
 import GridColumnsRows from './GridColumnsRows';
 import GridContainer from './GridContainer';
+import CSSLayout from './CSSLayout';
 import HTMLItems from './HTMLItems';
+import CSSTable from './CSSTable';
+import CSSBoxModel from './CSSBoxModel';
 import RWDIntro from './CSSRWDIntro';
 import RWDViewport from './RWDViewport';
 import RWDGridView from './RWDGridView';
@@ -108,9 +111,6 @@ import RWDimages from './RWDimages';
 import RWDVideos from './RWDVideos';
 import RWDFrameworks from './RWDFrameworks';
 import RWDTemplates from './RWDTemplates';
-import CSSLayout from './CSSLayout';
-import CSSTable from './CSSTable';
-import CSSBoxModel from './CSSBoxModel';
 import CSSTemplates from './CSSTemplates';
 import CSSExamples from './CSSExamples';
 import CSSEditor from './CSSEditor';
@@ -122,22 +122,20 @@ import CSSSyllabus from './CSSSyllabus';
 import CSSStudyplan from './CSSStudyplan';
 import CSSBootcamp from './CSSBootcamp';
 import CSSAtrules from './CSSAtrules';
-import CSSProperties from './CSSProperties';
 import CSSAnimatableProperties from './CSSAnimatableProperties';
+import CSSAuralProperties from './CSSAuralProperties';
 import CSSColourValues from './CSSColourValues';
 import CSSColourName from './CSSColourName';
 import CSSWebSafeFonts from './CSSWebSafeFonts';
-import CSSAuralProperties from './CSSAuralProperties';
 import CSSReference from './CSSReference';
 import CSSSelectors from './CSSSelectors';
 import CSSPXEMConverter from './CSSPXEMConverter';
 import CSSDefaultvalues from './CSSDefaultvalues';
 import CSSBrowserSupport from './CSSBrowserSupport';
 
-
 const Css = () => {      
 const [isOpen, setIsOpen] = useState(false);
-const [showpage,setshowpage] = useState(null)
+const [showpage,setshowpage] = useState(null);
 
     const renderpage = () => {
         switch (showpage) {
@@ -361,15 +359,15 @@ const [showpage,setshowpage] = useState(null)
                   return <RWDFrameworks/>
                 case 'RWDTemplates':
                   return <RWDTemplates/>
-                case 'CSSTemplates':
+                  case'CSSTemplates':
                   return <CSSTemplates/>
-                case 'CSSExamples':
+                  case'CSSExamples':
                   return <CSSExamples/>
                 case 'CSSEditor':
                   return <CSSEditor/>
                 case 'CSSSnippets':
                   return <CSSSnippets/>
-                case 'CSSAnimatablePropertiesCSSQuiz':
+                case 'CSSQuiz':
                   return <CSSQuiz/>
                 case 'CSSExercises':
                   return <CSSExercises/>
@@ -381,34 +379,31 @@ const [showpage,setshowpage] = useState(null)
                   return <CSSStudyplan/>
                 case 'CSSBootcamp':
                   return <CSSBootcamp/>
+
                 case 'CSSAtrules':
                   return <CSSAtrules/>
-                case 'CSSProperties':
-                  return <CSSProperties/>
-                case 'CSSAnimatableProperties':
-                  return <CSSAnimatableProperties/>
-                case 'CSSColourValues':
-                  return <CSSColourValues/>
-                case 'CSSColourName':
-                  return <CSSColourName/>
-                case 'CSSWebSafeFonts':
-                  return <CSSWebSafeFonts/>
-                case 'CSSAuralProperties':
-                  return <CSSAuralProperties/>
-                case 'CSSReference':
-                  return <CSSReference/>
-                case 'CSSSelectors':
-                  return <CSSSelectors/>
-                case 'CSSPXEMConverter':
-                  return <CSSPXEMConverter/>
-                case 'CSSDefaultvalues':
-                  return <CSSDefaultvalues/>
-                case 'CSSBrowserSupport':
-                  return <CSSBrowserSupport/>
-
-
-              default:
-                return ( <CSSIntroduction/>
+                  case 'CSSAnimatableProperties':
+                    return <CSSAnimatableProperties/>
+                    case 'CSSColourValues':
+                      return <CSSColourValues/>
+                      case 'CSSColourName':
+                        return <CSSColourName/>
+                        case 'CSSWebSafeFonts':
+                          return <CSSWebSafeFonts/>
+                          case 'CSSAuralProperties':
+                            return <CSSAuralProperties/>
+                            case 'CSSReference':
+                              return <CSSReference/>
+                              case 'CSSSelectors':
+                                return <CSSSelectors/>
+                                case 'CSSPXEMConverter':
+                                  return <CSSPXEMConverter/>
+                                  case 'CSSDefaultvalues':
+                                    return <CSSDefaultvalues/>
+                                    case 'CSSBrowserSupport':
+                                      return <CSSBrowserSupport/>
+                                      default:
+                                        return ( <CSSIntroduction/>
 )
         }
     }
@@ -586,12 +581,11 @@ const [showpage,setshowpage] = useState(null)
                      <h1 className="text-xl font-semibold mt-5 mb-2">CSS References </h1>
                     <ul className='space-y-2 text-sm'>
                       <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSAtrules')}}>CSS At-rules</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSProperties')}}>CSS Properties</li>
                       <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSAnimatableProperties')}}>CSS Animatable Properties</li>
+                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSAuralProperties')}}>CSS Aural Properties </li>
                       <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSColourValues')}}>CSS Colour Values </li>
                       <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSColourName')}}>CSS Colour Name</li>
                       <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSWebSafeFonts')}}>CSS Web Safe Fonts </li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSAuralProperties')}}>CSS Aural Properties </li>
                       <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSReference')}}>CSS Reference</li>
                       <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSSelectors')}}>CSS Selectors</li>
                       <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSPXEMConverter')}}>CSS PX-EM Converter</li>

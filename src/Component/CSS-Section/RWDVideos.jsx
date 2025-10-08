@@ -10,94 +10,115 @@ const CssRWDVideos = () => {
 
       {/* Intro */}
       <p className="text-gray-700">
-        Responsive videos ka matlab hai ki videos har device aur screen size par
-        automatically adjust ho jayein. Agar hum fixed width aur height denge to
-        chhoti screens par video cut ho sakta hai. Isiliye responsive design me
-        videos ko bhi flexible banana padta hai.
+       Responsive videos mean that the videos automatically adjust to every device and screen size. If we give them a fixed width and height, the video may get cut off on smaller screens. That’s why, in responsive design, videos also need to be made flexible.
       </p>
 
       {/* Why Important */}
       <h2 className="text-2xl font-semibold">Why Responsive Videos?</h2>
       <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li>Videos har device par properly fit hote hain.</li>
-        <li>Mobile-friendly layout maintain hota hai.</li>
-        <li>User experience aur accessibility improve hoti hai.</li>
+        <li>Videos fit properly on every device.</li>
+        <li>A mobile-friendly layout is maintained.</li>
+        <li>User experience and accessibility improve.</li>
       </ul>
 
-      {/* Example 1 */}
-      <h2 className="text-2xl font-semibold">Example: Responsive YouTube Video</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
-{`<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Responsive Video Example</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
-      height: 0;
-      overflow: hidden;
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  </style>
-</head>
-<body>
-  <h2>Resize the browser to see the video adjust:</h2>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"
-      allowfullscreen>
-    </iframe>
-  </div>
-</body>
-</html>`}
+      <h1 className="text-2xl">Using The width Property</h1>
+      <p>Setting the <span className="text-red-400 bg-gray-50 px-1">width</span> property to 100% makes the video player responsive, allowing it to scale up or down.</p>
+      <h1 className="text-2xl">Example</h1>
+      <pre className="bg-gray-900 p-4 rounded-lg">
+        <span className="text-red-700">video</span>{" "}
+        <span className="text-gray-400">{"{"}</span><br/>{"   "}
+        <span className="text-red-400">width</span>
+        <span className="text-gray-400">:</span>{" "}
+        <span className="text-blue-400">100%</span>
+        <span className="text-gray-400">;</span><br/>{"   "}
+        <span className="text-red-400">height</span>
+        <span className="text-gray-400">:</span>{" "}
+        <span className="text-blue-400">auto</span>
+        <span className="text-gray-400">;</span><br/>
+        <span className="text-gray-400">{"}"}</span>
       </pre>
+
+      <p>The previous example allows the video player to enlarge past its original dimensions. Using <span className="text-red-400 bg-gray-50 px-1">max-width</span> can often provide a better solution.</p>
+
+      <h1 className="text-2xl">Using The max-width Property</h1>
+      <p>With <span className="text-red-400 bg-gray-50 px-1">max-width</span> at 100%, the video player will scale down if necessary, but won’t scale up beyond its original dimensions.</p>
+      <h1 className="text-2xl">Example</h1>
+       <pre className="bg-gray-900 p-4 rounded-lg">
+        <span className="text-red-700">video</span>{" "}
+        <span className="text-gray-400">{"{"}</span><br/>{"   "}
+        <span className="text-red-400">max-width</span>
+        <span className="text-gray-400">:</span>{" "}
+        <span className="text-blue-400">100%</span>
+        <span className="text-gray-400">;</span><br/>{"   "}
+        <span className="text-red-400">height</span>
+        <span className="text-gray-400">:</span>{" "}
+        <span className="text-blue-400">auto</span>
+        <span className="text-gray-400">;</span><br/>
+        <span className="text-gray-400">{"}"}</span>
+      </pre>
+
+      <h1 className="text-2xl">Add a Video to the Example Web Page</h1>
+      <p>The video on our example page will be scaled to always cover the full available space.</p>
+      <h1 className="text-2xl">Exampple</h1>
+      <pre className="bg-gray-900 p-4 rounded-lg">
+        <span className="text-red-700">video</span>{" "}
+        <span className="text-gray-400">{"{"}</span><br/>{"   "}
+        <span className="text-red-400">width</span>
+        <span className="text-gray-400">:</span>{" "}
+        <span className="text-blue-400">100%</span>
+        <span className="text-gray-400">;</span><br/>{"   "}
+        <span className="text-red-400">height</span>
+        <span className="text-gray-400">:</span>{" "}
+        <span className="text-blue-400">auto</span>
+        <span className="text-gray-400">;</span><br/>
+        <span className="text-gray-400">{"}"}</span>
+      </pre>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       {/* Explanation */}
-      <h2 className="text-2xl font-semibold">Explanation:</h2>
+      <div className="bg-green-100 p-3">
+      <h2 className="text-2xl font-semibold mb-2">Explanation:</h2>
       <ul className="list-disc list-inside space-y-2 text-gray-700">
         <li>
-          <code>padding-bottom: 56.25%</code> → ye 16:9 aspect ratio maintain
-          karta hai.
+          <code>padding-bottom: 56.25%</code> → It maintains a 16:9 aspect ratio.
         </li>
         <li>
-          <code>position: absolute</code> aur <code>width: 100%; height: 100%</code>{" "}
-          se iframe poore container ko fill karta hai.
+          Using position: absolute along with width: 100% and height: 100%, the iframe fills the entire container.
         </li>
         <li>
-          Video automatically screen ke size ke hisaab se adjust hoti hai.
+        The video automatically adjusts according to the screen size.
         </li>
       </ul>
+      </div>
 
-      {/* Example 2 */}
-      <h2 className="text-2xl font-semibold">Example: Responsive HTML5 Video</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
-{`<style>
-  video {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #333;
-  }
-</style>
-
-<video controls>
-  <source src="movie.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>`}
-      </pre>
-
-      <p className="text-gray-700">
-        Yahan pe <code>max-width: 100%</code> use kiya gaya hai taaki video apne
-        container ke andar hi rahe aur <code>height: auto</code> se aspect ratio
-        maintain hota hai.
+      <p>
+        Here, max-width: 100% is used so that the video stays within its container, and height: auto maintains the aspect ratio.
       </p>
     </div>
   );
