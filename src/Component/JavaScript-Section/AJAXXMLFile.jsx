@@ -35,52 +35,70 @@ const JSAJAXXMLFile = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-xl shadow-lg mt-10 space-y-6">
-      <h1 className="text-3xl font-medium text-blue-500">
-        AJAX with <span className="text-green-600">XML File</span> in JavaScript
-      </h1>
+    <div className="max-w-4xl p-6 mt-10">
+      <h1 className="text-3xl font-medium text-blue-500 mb-3">AJAX with XML File in JavaScript</h1>
 
-      <p className="text-gray-700">
-        AJAX can also be used to fetch and parse <strong>XML files</strong>. The{" "}
+      <p>
+        AJAX can also be used to fetch and parse <span className="text-red-400">XML files</span>. The{" "}
         <code>responseXML</code> property returns the data as an XML DOM object, 
         which we can traverse using <code>getElementsByTagName</code>.
       </p>
 
-      <button
-        onClick={fetchXML}
-        className="px-5 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700"
-      >
-        Load XML Data
-      </button>
-
-      <div className="p-4 bg-gray-100 rounded-md font-mono text-gray-800 overflow-x-auto">
-        {response}
-      </div>
-
-      <h2 className="text-2xl font-semibold text-gray-800">Code Example:</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
-{`const xhr = new XMLHttpRequest();
-xhr.open("GET", "note.xml", true);
-
-xhr.onload = () => {
-  if (xhr.status === 200) {
-    const xmlDoc = xhr.responseXML;
-    const to = xmlDoc.getElementsByTagName("to")[0].childNodes[0].nodeValue;
-    const from = xmlDoc.getElementsByTagName("from")[0].childNodes[0].nodeValue;
-    console.log("To:", to, "From:", from);
+      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">AJAX XML</h1>
+      <p className="mb-3">The <span className="text-red-400">loadDoc()</span> function is executed when the user selects the "Get CD info" button above.</p>
+      <p className="mb-3">The <span className="text-red-400">loadDoc()</span> function creates an XMLHttpRequest object, assigns a function to run when the server response is ready, and sends the request to the server.</p>
+      <p>When the response arrives, the code builds an HTML table, retrieves nodes from the XML file, and updates the "demo" element with the populated table.</p>
+      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <code>
+          {`function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {myFunction(this);}
+  xhttp.open("GET", "cd_catalog.xml");
+  xhttp.send();
+}
+function myFunction(xml) {
+  const xmlDoc = xml.responseXML;
+  const x = xmlDoc.getElementsByTagName("CD");
+  let table="<tr><th>Artist</th><th>Title</th></tr>";
+  for (let i = 0; i <x.length; i++) {
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    "</td></tr>";
   }
-};
-
-xhr.send();`}
+  document.getElementById("demo").innerHTML = table;
+}`}
+        </code>
       </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800">Explanation:</h2>
-      <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li><code>xhr.responseXML</code> → Returns the response as an XML DOM object.</li>
-        <li><code>getElementsByTagName()</code> → Selects elements from XML.</li>
-        <li><code>childNodes[0].nodeValue</code> → Retrieves the actual text value inside the tag.</li>
-        <li>We can parse XML just like traversing the DOM structure in HTML.</li>
-      </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 };

@@ -3,7 +3,7 @@ import Introduction from './Introduction';
 import What from "./What";
 import How  from "./How";
 import Basics  from "./Basics";
-import Elements  from "./Elements";
+import Elements  from "./Elements"
 import List  from "./List";
 import Comments  from "./Comments";
 import Entities from './Entities';
@@ -192,99 +192,99 @@ const Html = () => {
         <div className="flex mt-16">
                     {/* Hamburg Butt */}
                   <button
-                  className="bg-gray-200 text-2xl px-2 fixed top-16 left-0 z-50 sm:hidden"
+                  className="bg-gray-200 text-2xl px-3 fixed top-16 left-4 z-50 sm:hidden"
                   onClick={() => setIsOpen(!isOpen)}>
                   <i className="fas fa-bars"></i>
                 </button>
         
         
                 {/* Sidebar */}
-                <div className={`sticky top-16 left-0 w-64 h-[calc(100vh-4rem)] overflow-y-auto 
+                <div className={`lg:sticky lg:left-0 lg:top-16 w-56 fixed h-[calc(100vh-4rem)] overflow-y-auto 
                                  bg-gray-200 px-5 py-6 shadow-lg z-40 transform transition-transform
-                                   duration-300 sm:translate-x-0 sm:block 
+                                   duration-300 sm:translate-x-0 sm:block
                                    ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
-                                 >
+                                 >  
 
         
                     <h1 className="text-xl font-semibold mt-5 mb-2">HTML Tutorial</h1>
                     <ul className="space-y-1 text-sm">   
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('What')}>What is HTML ?</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('How')}>How HTML Works on browser </li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Basics')}>HTML Basics</li>  
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Elements')}>HTML Elements</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('List')}>HTML List</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Comments')}>HTML Comments</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Entities')}>HTML Entities</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Tags')}>HTML 5 Tags</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Headings')}>HTML Headings</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Paragraphs')}>HTML Paragraphs</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Formating')}>HTML Text Formating</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Links')}>HTML Links and Anchors</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Images')}>HTML Images</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Table')}>HTML Table</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Colour')}>HTML Colour</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Block')}>HTML Block Vs Inline</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Title')}>HTML Page Title</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Div')}>HTML Div</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Class')}>HTML Class</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Id')}>HTML Id</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Iframe')}>HTML Iframe</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('JavaScript')}>HTML JavaScript</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('FilePath')}>HTML File Path</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Head')}>HTML Head</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Layout')}>HTML Layout</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Emojis')}>HTML Emojis</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Symbols')}>HTML Symbols</li>
-                    <li className='hover:cursor-pointer' onClick={()=> setshowpage('Responsive')}>HTML Responsive</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('What')}>What is HTML ?</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('How')}>How HTML Works on browser </li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Basics')}>HTML Basics</li>  
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Elements')}>HTML Elements</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('List')}>HTML List</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Comments')}>HTML Comments</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Entities')}>HTML Entities</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Tags')}>HTML 5 Tags</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Headings')}>HTML Headings</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Paragraphs')}>HTML Paragraphs</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Formating')}>HTML Text Formating</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Links')}>HTML Links and Anchors</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Images')}>HTML Images</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Table')}>HTML Table</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Colour')}>HTML Colour</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Block')}>HTML Block Vs Inline</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Title')}>HTML Page Title</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Div')}>HTML Div</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Class')}>HTML Class</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Id')}>HTML Id</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Iframe')}>HTML Iframe</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('JavaScript')}>HTML JavaScript</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('FilePath')}>HTML File Path</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Head')}>HTML Head</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Layout')}>HTML Layout</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Emojis')}>HTML Emojis</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Symbols')}>HTML Symbols</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Responsive')}>HTML Responsive</li>
                     </ul>
 
         
                     <h1 className="text-xl font-semibold mt-5 mb-2">HTML Media</h1>
                     <ul className='space-y-2 text-sm'>  
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('Media')}>HTML Media</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('Video')}>HTML Video</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('Audio')}>HTML Audio</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('Plugins')}>HTML Plug-ins</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('YouTube')}>HTML YouTube</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Media')}>HTML Media</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Video')}>HTML Video</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Audio')}>HTML Audio</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Plugins')}>HTML Plug-ins</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('YouTube')}>HTML YouTube</li>
                     </ul>
 
                     <h1 className="text-xl font-semibold mt-5 mb-2">Forms and inputs</h1>
                     <ul className='space-y-2 text-sm'>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('Form')}>HTML Form</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('Attributes')}>HTML Form Attributes</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('FormElements')}>HTML Form Elements</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('InputeTypes')}>HTML inpute Types</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('InputeAttributes')}>HTML inpute Attributes</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('FormAttributes')}>Input Form Attributes</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Form')}>HTML Form</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Attributes')}>HTML Form Attributes</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('FormElements')}>HTML Form Elements</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('InputeTypes')}>HTML inpute Types</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('InputeAttributes')}>HTML inpute Attributes</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('FormAttributes')}>Input Form Attributes</li>
                     </ul>
 
                     <h1 className="text-xl font-semibold mt-5 mb-2">HTML APIs</h1>
                     <ul className='space-y-2 text-sm'>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('WebAPIs')}>HTML Web APIs</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('Geolocation')}>HTML Geolocation</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('DragandDrop')}>HTML Drag and Drop</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('WebStorage')}>HTML Web Storage</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('WebWorker')}>HTML Web Worker</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('WebAPIs')}>HTML Web APIs</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Geolocation')}>HTML Geolocation</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('DragandDrop')}>HTML Drag and Drop</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('WebStorage')}>HTML Web Storage</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('WebWorker')}>HTML Web Worker</li>
                     </ul>
                     
                      <h1 className="text-xl font-semibold mt-5 mb-2">HTML References </h1>
                     <ul className='space-y-2 text-sm'>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('TagList')}>HTML Tag List</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('ReferencesAttributes')}>HTML Attributes</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('GlobalAttributes')}>HTML Global Attributes</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('HTMLCanvas')}>HTML Canvas </li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('HTMLAudio')}>HTML Audio </li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('HTMLVideo')}>HTML Video </li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('HTMLDoctypes')}>HTML Doctypes</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('HTMLCharacterSets')}>HTML Character Sets</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('HTMLURLEncode')}>HTML URL Encode</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('HTMLLangCodes')}>HTML Lang Codes</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('HTTPMessages')}>HTTP Messages</li>
-                      <li className='hover:cursor-pointer' onClick={()=> setshowpage('HTTPMethods')}>HTTP Methods</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('TagList')}>HTML Tag List</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReferencesAttributes')}>HTML Attributes</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('GlobalAttributes')}>HTML Global Attributes</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('HTMLCanvas')}>HTML Canvas </li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('HTMLAudio')}>HTML Audio </li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('HTMLVideo')}>HTML Video </li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('HTMLDoctypes')}>HTML Doctypes</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('HTMLCharacterSets')}>HTML Character Sets</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('HTMLURLEncode')}>HTML URL Encode</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('HTMLLangCodes')}>HTML Lang Codes</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('HTTPMessages')}>HTTP Messages</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('HTTPMethods')}>HTTP Methods</li>
                     </ul>
                     </div>
-                    <div className="ml-10 p-4 w-full">
-
+                    <div className={`transition-all duration-300 p-4 w-full
+                      ${isOpen ? "sm:ml-64" : "sm:ml-0"}`}>
                       {showpage &&(
                         <button onClick={() => setshowpage(null)}
                          className='flex items-center mb-4 bg-green-300 px-4

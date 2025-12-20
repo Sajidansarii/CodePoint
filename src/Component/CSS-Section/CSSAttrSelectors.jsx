@@ -2,13 +2,13 @@ import React from "react";
 
 const CssAttrSelectors = () => {
   return (
-    <div className="p-6 max-w-3xl">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium mb-4 text-blue-500">CSS Attribute Selectors</h1>
       <p className="mb-4">CSS Attribute Selectors is used to select HTML elements with specific attribute or value for attribute. Attribute selectors are enclosed in square brackets [ ] and can take various forms.
       </p>
       <p>As below you can see how to select an HTML element based on attribute in CSS.</p>
 
-        <div className="bg-gray-200 p-4 rounded-lg mt-5">
+        <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5">
           <pre>
             <code>
               {`       a[href]{
@@ -23,7 +23,7 @@ const CssAttrSelectors = () => {
         <p>The [attribute="value"] selector is used to select elements with a specific attribute with an exact value.</p>
         <p>The following example selects all {'<a>'} elements with a target="_blank" attribute:</p>
 
-        <div className="bg-gray-200 p-4 rounded-lg mt-3">
+        <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-3">
           <pre>
             <code>
               {`          a[target="_blank"]{
@@ -48,7 +48,7 @@ const CssAttrSelectors = () => {
       </div>
 
       CSS
-      <div className="bg-gray-200 p-4 rounded-lg">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
         <pre>
           <code>
             {`

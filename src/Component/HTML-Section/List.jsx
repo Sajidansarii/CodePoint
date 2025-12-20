@@ -1,13 +1,13 @@
 const HTMLLists = () => {
   return (
-    <div className="p-4 max-w-3xl">
+    <div className="p-4 max-w-4xl">
       {/* Title */}
       <h1 className="text-3xl sm:text-4xl font-medium text-blue-500 mb-4 text-center sm:text-left">
         HTML Lists
       </h1>
 
       {/* Intro */}
-      <p className="text-gray-700 mb-4">
+      <p className="leading-relaxed mb-4">
         HTML lists let you group related items together. They help organize content in a readable way. There are three main types of lists: unordered, ordered, and definition lists.
       </p>
 
@@ -17,12 +17,12 @@ const HTMLLists = () => {
         <p className="text-gray-700 mb-2">
           An unordered list displays items with bullets. Use the <code>&lt;ul&gt;</code> tag with nested <code>&lt;li&gt;</code> items.
         </p>
-        <pre className="bg-gray-100 p-3 rounded mb-2 overflow-x-auto text-sm">
-          <code>{`<ul>
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+          {`<ul>
   <li>Apple</li>
   <li>Banana</li>
   <li>Cherry</li>
-</ul>`}</code>
+</ul>`}
         </pre>
         <p className="text-gray-700">
           Output: • Apple, • Banana, • Cherry
@@ -35,12 +35,12 @@ const HTMLLists = () => {
         <p className="text-gray-700 mb-2">
           An ordered list shows items in sequence using numbers. Use the <code>&lt;ol&gt;</code> tag.
         </p>
-        <pre className="bg-gray-100 p-3 rounded mb-2 overflow-x-auto text-sm">
-          <code>{`<ol>
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+          {`<ol>
   <li>First step</li>
   <li>Second step</li>
   <li>Third step</li>
-</ol>`}</code>
+</ol>`}
         </pre>
         <p className="text-gray-700">
           Output: 1. First step, 2. Second step, 3. Third step
@@ -53,13 +53,13 @@ const HTMLLists = () => {
         <p className="text-gray-700 mb-2">
           A definition list pairs terms and descriptions using <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code> (term), and <code>&lt;dd&gt;</code> (description).
         </p>
-        <pre className="bg-gray-100 p-3 rounded mb-2 overflow-x-auto text-sm">
-          <code>{`<dl>
+        <pre className="bg-gray-900 p-4 text-green-400 rounded-lg mb-2 overflow-x-auto text-sm">
+           {`<dl>
   <dt>HTML</dt>
   <dd>HyperText Markup Language</dd>
   <dt>CSS</dt>
   <dd>Cascading Style Sheets</dd>
-</dl>`}</code>
+</dl>`}
         </pre>
       </section>
 
@@ -69,8 +69,8 @@ const HTMLLists = () => {
         <p className="text-gray-700 mb-2">
           Lists can be nested inside other list items to create hierarchy.
         </p>
-        <pre className="bg-gray-100 p-3 rounded mb-2 overflow-x-auto text-sm">
-          <code>{`<ul>
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+           {`<ul>
   <li>Fruits
     <ul>
       <li>Apple</li>
@@ -78,7 +78,7 @@ const HTMLLists = () => {
     </ul>
   </li>
   <li>Vegetables</li>
-</ul>`}</code>
+</ul>`}
         </pre>
       </section>
 
@@ -99,11 +99,11 @@ const HTMLLists = () => {
         <p className="text-gray-700">
           Example of customizing start value in ordered list:
         </p>
-        <pre className="bg-gray-100 p-3 rounded mb-2 overflow-x-auto text-sm">
-          <code>{`<ol start="5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+          {`<ol start="5">
   <li>Item five</li>
   <li>Item six</li>
-</ol>`}</code>
+</ol>`}
         </pre>
       </section>
 

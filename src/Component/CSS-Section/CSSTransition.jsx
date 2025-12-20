@@ -10,7 +10,7 @@ const CssTransition = () => {
 
   ];
   return (
-    <div className="p-8 min-h-screen space-y-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Title */}
       <h1 className="text-3xl font-medium text-blue-500">
         CSS Transitions
@@ -22,12 +22,12 @@ const CssTransition = () => {
 
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">Syntax</h2>
-        <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto">
 {`selector {
   transition: property duration timing-function delay;
 }`}
         </pre>
-        <ul className="list-disc pl-6 text-gray-700">
+        <ul className="list-disc pl-6">
           <li>
             <strong>property</strong> → Which CSS property will be animated (for example: background-color, width).
           </li>
@@ -60,7 +60,7 @@ const CssTransition = () => {
         <h2 className="text-xl font-semibold">
           1. Background Color Transition
         </h2>
-        <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto">
 {`div {
   width: 150px;
   height: 150px;
@@ -83,7 +83,7 @@ div:hover {
       {/* Example 2: Width Transition */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">2. Width Transition</h2>
-        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto">
 {`div {
   width: 100px;
   height: 50px;
@@ -105,7 +105,7 @@ div:hover {
       {/* Example 3: Multiple Properties */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">3. Multiple Properties</h2>
-        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto">
 {`div {
   width: 100px;
   height: 100px;
@@ -139,7 +139,7 @@ div:hover {
         <p>The example below illustrates several commonly used speed curves for transitions.</p>
         <h1 className="text-2xl">Example</h1>
         <p>Available speed curve variations for transition effects:</p>
-        <pre className="bg-gray-200 p-4 rounded-lg">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
           <code>
             {`#div1 {transition-timing-function: linear;}
 #div2 {transition-timing-function: ease;}
@@ -155,7 +155,7 @@ div:hover {
       <p>The transition in the following example is configured to begin after a 1-second delay.</p>
       <h1 className="text-2xl">Example</h1>
       <p>Add a 1 second delay before starting:</p>
-      <pre className="bg-gray-200 p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
         <code>
           {`div {
   transition-delay: 1s;
@@ -166,7 +166,7 @@ div:hover {
       <h1 className="text-2xl">Transition + Transform</h1>
       <p>The following code sample integrates CSS transition and transform properties for a {'<div> '}element.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-200 p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
         <code>
           {`div {
   transition: width 2s, height 2s, background-color 2s, transform 2s;

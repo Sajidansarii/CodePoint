@@ -1,6 +1,6 @@
 export default function CssLists() {
   return (
-    <div className="p-6 max-w-5xl mx-auto">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS Lists</h1>
       <p className="mb-4">
         Lists can be styled in CSS using <code>list-style-type</code>,{" "}
@@ -53,8 +53,8 @@ export default function CssLists() {
 
 
       <div className="bg-gray-200 p-4 rounded-lg mt-12">
-        <h2>Example:</h2>
-        <pre className="mt-10">
+        <h2 className="text-2xl">Example:</h2>
+        <pre className="mt-10 p-4 rounded-lg bg-gray-900 text-green-400">
           <code>
             {`             .ul{list-style-type:disc;}
              .red{background-color:red;}

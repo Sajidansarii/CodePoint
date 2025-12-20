@@ -1,86 +1,137 @@
 import React, { useState } from "react";
 
 const JSGetElementsByClassName = () => {
-  const [output, setOutput] = useState("Click the button to update elements...");
 
-  const handleExample = () => {
-    // ✅ Select all elements with the class "demo"
-    const elements = document.getElementsByClassName("demo");
+  const data = [
+    {Parameter:'classname', Description:'Required.\nThe class name of the elements.\nSearch for multiple class names separated by spaces like "test demo".'},
+  ];
 
-    // Loop through HTMLCollection and update each element
-    for (let i = 0; i < elements.length; i++) {
-      elements[i].style.backgroundColor = "#16a34a"; // Tailwind green-600 equivalent
-      elements[i].style.color = "white";
-      elements[i].textContent = ` Element ${i + 1} updated!`;
-    }
-
-    setOutput(Updated `${elements.length} element(s) using getElementsByClassName.`);
-  };
+  const data1 = [
+    {Type:'Object.', Description:'An HTMLCollection object.\nA collection of elements with the specified class name.\nThe elements are sorted as they appear in the document.'},
+  ];
+  
+ 
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-xl shadow-lg mt-10 space-y-6">
-      <h1 className="text-3xl font-medium text-blue-500">
-        getElementsByClassName in <span className="text-green-600">JavaScript</span>
-      </h1>
+    <div className="max-w-4xl p-6 mt-10">
+      <h1 className="text-3xl font-medium text-blue-500 mb-3">GetElementsByClassName in JavaScript</h1>
 
-      <p className="text-gray-700">
-        The <strong>document.getElementsByClassName()</strong> method selects
-        all HTML elements that have the specified <strong>class</strong>. It
-        returns an <strong>HTMLCollection</strong>, which can be looped over to
+      <p>
+        The <span className="text-red-400">document.getElementsByClassName()</span> method selects
+        all HTML elements that have the specified <span className="text-red-400">class</span>. It
+        returns an <span className="text-red-400">HTMLCollection</span>, which can be looped over to
         manipulate multiple elements.
       </p>
 
-      <button
-        onClick={handleExample}
-        className="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-      >
-        Update Elements
-      </button>
-
-      <div className="space-y-2">
-        <div className="demo p-4 bg-gray-100 rounded-md font-semibold text-gray-800">
-          Element 1
-        </div>
-        <div className="demo p-4 bg-gray-100 rounded-md font-semibold text-gray-800">
-          Element 2
-        </div>
-        <div className="demo p-4 bg-gray-100 rounded-md font-semibold text-gray-800">
-          Element 3
-        </div>
-      </div>
-
-      <div className="p-4 bg-gray-200 rounded-md font-semibold text-gray-700">
-        {output}
-      </div>
-
-      <h2 className="text-2xl font-semibold text-gray-800">Code Example:</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
-{`// Select all elements with the class "demo"
-const elements = document.getElementsByClassName("demo");
-
-// Loop through each element and update
-for (let i = 0; i < elements.length; i++) {
-  elements[i].style.backgroundColor = "green";
-  elements[i].style.color = "white";
-  elements[i].textContent = \✅ Element \${i + 1} updated!\;
-}`}
+      <p className="mt-10 mb-3">Select all elements that have the class example</p>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <code>
+          {`const collection = document.getElementsByClassName("example");`}
+        </code>
       </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800">Explanation:</h2>
-      <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li>
-          <code>document.getElementsByClassName("className")</code> selects all elements with the given class.
-        </li>
-        <li>
-          It returns an <strong>HTMLCollection</strong>, which is array-like but not an array.
-        </li>
-        <li>
-          Loop through the collection using <code>for</code> or <code>for...of</code> to manipulate each element.
-        </li>
-        <li>
-          Useful for updating *multiple elements at once* based on their class.
-        </li>
-      </ul>
+      <p className="mt-10">Get all elements that belong to both example and color classes</p>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <code>
+          {`const collection = document.getElementsByClassName("example color");`}
+        </code>
+      </pre>
+
+      <p className="mt-10 mb-3">The <span className="text-red-400">getElementsByClassName()</span> function retrieves all elements that have the specified class name(s).</p>
+      <p><span className="text-red-400">getElementsByClassName()</span> returns an HTMLCollection object.</p>
+     
+     <h2 className="text-2xl text-gray-800 font-semibold mt-10">Syntax</h2>
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`document.getElementsByClassName(classname)`}
+      </code>
+     </pre>
+
+     <h1 className="text-2xl text-gray-800 font-semibold mt-10">Parameter</h1>
+     <table className="min-w-full border border-gray-300 text-gray-700 text-sm text-left mt-5">
+      <thead>
+        <tr className="bg-gray-100">
+          <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Parameter</th>
+          <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {data.map((row,index)=>(
+          <tr className="cursor-text hover:bg-gray-100">
+            <td className="px-4 py-2 border-b border-gray-200">{row.Parameter}</td>
+            <td className="px-4 py-2 border-b border-gray-200 whitespace-pre-line">{row.Description}</td>
+          </tr>
+        ))}
+      </tbody>
+     </table>
+
+
+
+     <h1 className="text-2xl text-gray-800 font-semibold mt-10">Parameter</h1>
+     <table className="min-w-full border border-gray-300 text-gray-700 text-sm text-left mt-5">
+      <thead>
+        <tr className="bg-gray-100">
+          <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Type</th>
+          <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {data1.map((row,index)=>(
+          <tr className="cursor-text hover:bg-gray-100">
+            <td className="px-4 py-2 border-b border-gray-200">{row.Type}</td>
+            <td className="px-4 py-2 border-b border-gray-200 whitespace-pre-line">{row.Description}</td>
+          </tr>
+        ))}
+      </tbody>
+     </table>
+
+
+     <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h2>
+     <p>Count of elements having the class "example"</p>
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`let numb = document.getElementsByClassName("example").length;`}
+      </code>
+     </pre>
+
+
+      <p className="mt-10">Set a new background color for every element with class "example"</p>
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`const collection = document.getElementsByClassName("example");
+for (let i = 0; i < collection.length; i++) {
+  collection[i].style.backgroundColor = "red";
+}`}
+      </code>
+     </pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 };

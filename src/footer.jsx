@@ -35,7 +35,7 @@ function Footer() {
             </div>
             
 
-          <div className="mt-10 sm:">
+          <div className="mt-10  space-x-4 justify-center md:justify-center">
           <h3 className="text-2xl font-medium mb-4">Follow Us</h3>
           <a className="px-2 py-1 text-2xl rounded-full hover:bg-green-50 transition-all duration-200 " href="#"><i class="fa-brands fa-linkedin"></i></a>
           <a className="px-2 py-1 text-2xl rounded-full hover:bg-green-50 transition-all duration-200" href="#"><i class="fa-brands fa-twitter"></i></a>

@@ -1,88 +1,133 @@
 import React, { useState } from "react";
 
 const JSTimingBOM = () => {
-  const [output, setOutput] = useState("Click the buttons to see timing functions in action...");
-
-  const handleTimeout = () => {
-    setOutput("Waiting 2 seconds...");
-    setTimeout(() => {
-      setOutput("✅ 2 seconds passed! This is setTimeout in action.");
-    }, 2000);
-  };
-
-  const handleInterval = () => {
-    let count = 0;
-    const intervalId = setInterval(() => {
-      count += 1;
-      setOutput(Interval `count: ${count}`);
-      if (count === 5) {
-        clearInterval(intervalId);
-        setOutput("✅ Interval stopped after 5 counts (setInterval + clearInterval).");
-      }
-    }, 1000);
-  };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-xl shadow-lg mt-10 space-y-6">
-      <h1 className="text-3xl font-medium text-blue-500">
-        Timing Functions in <span className="text-green-600">BOM (Browser Object Model)</span>
-      </h1>
+    <div className="max-w-4xl p-6 mt-10">
+      <h1 className="text-3xl font-medium text-blue-500 mb-3">Timing Functions in BOM (Browser Object Model)</h1>
 
-      <p className="text-gray-700">
-        BOM provides timing functions like <strong>setTimeout</strong> and <strong>setInterval</strong>
-        to schedule tasks after a delay or repeatedly at intervals.
+      <p>
+        BOM provides timing functions like <span className="text-red-400">setTimeout</span> and <span className="text-red-400">setInterval </span>
+         to schedule tasks after a delay or repeatedly at intervals.
       </p>
 
-      <div className="space-x-2 mt-2">
-        <button
-          onClick={handleTimeout}
-          className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-        >
-          setTimeout Example
-        </button>
-        <button
-          onClick={handleInterval}
-          className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
-        >
-          setInterval Example
-        </button>
-      </div>
+      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Timing Events</h1>
+      <p className="mb-3">The window object can execute code at set time intervals, which are known as timing events.</p>
+      <p>The two main methods in JavaScript are:</p>
+      <ul className="list-[square] list-inside mt-5">
+        <li><span className="text-red-400">setTimeout(function, milliseconds)</span> Executes a function, after waiting a specified number of milliseconds.</li>
+        <li><span className="text-red-400">setInterval(function, milliseconds)</span> Same as setTimeout(), but repeats the execution of the function continuously.</li>
+      </ul>
 
-      <div className="p-4 bg-gray-100 rounded-md font-semibold text-gray-800">
-        {output}
-      </div>
-
-      <h2 className="text-2xl font-semibold text-gray-800">Code Example:</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
-{`// Execute function once after 2 seconds
-setTimeout(() => {
-  console.log("2 seconds passed!");
-}, 2000);
-
-// Execute function repeatedly every 1 second
-let count = 0;
-const intervalId = setInterval(() => {
-  count++;
-  console.log("Interval count:", count);
-  if (count === 5) clearInterval(intervalId); // stop after 5 counts
-}, 1000);`}
+      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The setTimeout() Method</h1>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <code>
+          {`window.setTimeout(function, milliseconds);`}
+        </code>
       </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800">Explanation:</h2>
-      <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li>
-          <strong>setTimeout(function, delay):</strong> Executes a function once after a specified delay in milliseconds.
-        </li>
-        <li>
-          <strong>setInterval(function, delay):</strong> Executes a function repeatedly at every delay interval.
-        </li>
-        <li>
-          <strong>clearInterval(intervalId):</strong> Stops a setInterval from continuing.
-        </li>
-        <li>
-          Timing functions are part of the <strong>window</strong> object in BOM and allow scheduling tasks.
-        </li>
-      </ul>
+      <p className="mt-5 mb-3">The <span className="text-red-400">window.setTimeout()</span> method can be used without the window prefix.</p>
+      <p>The first parameter defines the function to be executed, while the second sets the time delay in milliseconds.</p>
+      <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
+      <p>Click the button, wait 3 seconds, and an alert saying “Hello” will appear.</p>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <code>
+          {`<button onclick="setTimeout(myFunction, 3000)">Try it</button>
+
+<script>
+function myFunction() {
+  alert('Hello');
+}
+</script>`}
+        </code>
+      </pre>
+
+
+      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">How to Stop the Execution?</h1>
+      <p>The <span className="text-red-400">clearTimeout()</span> method cancels the function scheduled by <span className="text-red-400">setTimeout()</span>.</p>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <code>
+          {`window.clearTimeout(timeoutVariable)`}
+        </code>
+      </pre>
+      <p className="mt-5 mb-3">You can call <span className="text-red-400">clearTimeout()</span> directly instead of <span className="text-red-400">window.clearTimeout()</span>.</p>
+      <p>The <span className="text-red-400">clearTimeout()</span> method uses the value returned by <span className="text-red-400">setTimeout()</span>.</p>
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`myVar = setTimeout(function, milliseconds);
+clearTimeout(myVar);`}
+      </code>
+     </pre>
+     <p className="mt-5">If the function hasn’t run yet, you can stop it by calling <span className="text-red-400">clearTimeout()</span>.</p>
+     <h2 className="text-gray-800 text-2xl font-semibold mt-5 mb-3">Example</h2>
+     <p>The same example as before, but with an added Stop button.</p>
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`<button onclick="myVar = setTimeout(myFunction, 3000)">Try it</button>
+
+<button onclick="clearTimeout(myVar)">Stop it</button>`}
+      </code>
+     </pre>
+
+     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The setInterval() Method</h1>
+    <p>The <span className="text-red-400">setInterval()</span> method repeatedly runs a function at specified time intervals.</p>
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`window.setInterval(function, milliseconds);`}
+      </code>
+    </pre>
+    <p className="mt-5 mb-3">The <span className="text-red-400">window.setInterval()</span> method can be used without the window prefix.</p>
+    <p className="mb-3">The first parameter is the function to run, and the second parameter sets the interval duration between executions.</p>
+    <p>This example runs a function named myTimer every second, like a digital clock.</p>
+     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-5">Example</h2>
+     <p>Show the current time.</p>
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-10">
+      <code>
+        {`setInterval(myTimer, 1000);
+
+function myTimer() {
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}`}
+      </code>
+     </pre>
+
+     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">How to Stop the Execution?</h1>
+     <p>The <span className="text-red-400">clearInterval()</span> method cancels a function scheduled by <span className="text-red-400">setInterval()</span>.</p>
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`window.clearInterval(timerVariable)`}
+      </code>
+     </pre>
+
+     <p className="mt-5">The <span className="text-red-400">window.clearInterval()</span> method can be used without the window prefix.</p>
+    <p>The <span className="text-red-400">clearInterval()</span> method uses the ID returned by <span className="text-red-400">setInterval()</span>.</p>
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`let myVar = setInterval(function, milliseconds);
+clearInterval(myVar);`}
+      </code>
+     </pre>
+     <h2 className="text-gray-800 text-2xl font-semibold mt-5 mb-3">Example</h2>
+     <p>The same example as above, now with a Stop time button added.</p>
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`<p id="demo"></p>
+
+<button onclick="clearInterval(myVar)">Stop time</button>
+
+<script>
+let myVar = setInterval(myTimer, 1000);
+function myTimer() {
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>`}
+      </code>
+     </pre>
+
+
+
     </div>
   );
 };

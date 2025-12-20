@@ -2,14 +2,14 @@ import React from "react";
 
 export default function PseudoElements() {
   return (
-    <div className="p-6 max-w-3xl">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Title */}
       <h1 className="text-3xl font-medium mb-4 text-blue-500">
         CSS Pseudo-elements
       </h1>
 
       {/* Intro */}
-      <p className="mb-4 text-gray-700">
+      <p className="mb-4">
         CSS <span className="font-mono">pseudo-elements</span> ka use ek element
         ke specific part ko style karne ke liye hota hai. Ye naya DOM element
         add nahi karte, sirf style lagate hain.
@@ -17,7 +17,7 @@ export default function PseudoElements() {
 
       {/* List */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Common Pseudo-elements</h2>
-      <ul className="list-[square] list-inside text-gray-700 mb-6">
+      <ul className="list-[square] list-inside mb-6">
         <li>
           <code>before</code> – Content ke pehle insert karta hai
         </li>
@@ -37,7 +37,7 @@ export default function PseudoElements() {
 
       {/* Syntax */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Syntax</h2>
-      <pre className="bg-gray-200 p-4 rounded-lg mb-6 overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-6 overflow-x-auto">
         {`selector::pseudo-element {
   property: value;
 }`}
@@ -45,7 +45,7 @@ export default function PseudoElements() {
 
       {/* Example 1 */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Example 1: ::before and ::after</h2>
-      <pre className="bg-gray-200  p-4 rounded-lg mb-4 overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-4 overflow-x-auto">
         {`h1::before {
   content: "Head";
   color: red;
@@ -63,7 +63,7 @@ h1::after {
 
       {/* Example 2 */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Example 2: ::first-letter</h2>
-      <pre className="bg-gray-200  p-4 rounded-lg mb-4 overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-4 overflow-x-auto">
         {`p::first-letter {
   font-size: 40px;
   color: green;
@@ -78,7 +78,7 @@ h1::after {
 
       {/* Example 3 */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Example 3: ::selection</h2>
-      <pre className="bg-gray-200  p-4 rounded-lg mb-4 overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-4 overflow-x-auto">
         {`p::selection {
   background: yellow;
   color: black;

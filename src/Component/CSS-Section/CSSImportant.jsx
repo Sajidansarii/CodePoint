@@ -2,7 +2,7 @@ import React from "react";
 
 const ImportantExample = () => {
   return (
-    <div className="p-6 space-y-4 font-sans">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl mb-5 font-medium text-blue-500">CSS !important Rule</h1>
       
       <>
@@ -13,7 +13,7 @@ const ImportantExample = () => {
                   This can be useful in certain situations where you need to make sure a style is always applied, but it should be used sparingly, as it can make your CSS harder to maintain and debug.
          </p>
       
-      <div className="bg-gray-200 p-4 rounded-lg mt-5">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5">
         <pre>
           {`selector {
    property: value !important; 
@@ -28,7 +28,7 @@ const ImportantExample = () => {
       <h1 className="text-2xl">Specificity in CSS</h1>
       <p>Specificity in CSS determines which styles take precedence when multiple rules target the same element. In general, inline styles have the highest priority, followed by ID selectors, then class selectors (including attributes and pseudo-classes), and finally element (type) selectors.</p>
 
-      <div className="bg-gray-200 p-4 rounded-lg">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
         <pre>
           {`p {
   color: black;
@@ -51,7 +51,7 @@ p {
       <h1 className="text-2xl">CSS !important Rule Example</h1>
       <p>The following example demonstrates the use of '!important' which we saw above.</p>
       <h1 className="text-2xl">Example</h1>
-      <div className="bg-gray-200 p-4 rounded-lg">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
         <pre>
           {`<!DOCTYPE html> 
 <html>
@@ -86,7 +86,7 @@ p {
       <p>The following example uses multiple selectors to apply the color property to a paragraph. However, the style defined using the element selector with the !important keyword is ultimately applied to the paragraph.</p>
 
       <h1 className="text-2xl">Example</h1>
-      <div className="bg-gray-200 rounded-lg p-4">
+      <div className="bg-gray-900 text-green-400 rounded-lg p-4">
         <pre>
           {`<!DOCTYPE html> 
 <html>
@@ -113,8 +113,8 @@ p {
       <h1 className="text-2xl">Override Inline Styles</h1>
       <p>Inline styles have the highest specificity in CSS and usually take priority over any selector. However, the !important keyword can even override inline styles. Let’s look at an example to understand this better.</p>
       <h1 className="text-2xl">Example</h1>
-      <div className="bg-gray-200 p-4 rounded-lg">
-        <pre>
+      <div className="">
+        <pre className="bg-gray-900 text-green-400 rounded-lg p-4">
           {`<!DOCTYPE html> 
 <html>
 
@@ -141,7 +141,7 @@ p {
       <h1 className="text-2xl">Multiple Important Keyword</h1>
       <p>When multiple !important declarations are applied to the same CSS property using different selectors, the declaration within the selector with the highest specificity takes effect. Let’s look at an example to see how this works.</p>
       <h1 className="text-2xl">Example</h1>
-      <div className="bg-gray-200 rounded-lg p-4">
+      <div className="bg-gray-900 text-green-400 rounded-lg p-4">
         <pre>
           {`<!DOCTYPE html> 
 <html>
@@ -184,7 +184,7 @@ p {
       <p>When you add !important to a custom property, it indicates that the custom property's value should take priority. However, the !important flag itself is not included when the custom property is accessed using the var() function.</p>
       <h1 className="text-2xl">Example</h1>
 
-      <div className="bg-gray-200 rounded-lg p-4">
+      <div className="bg-gray-900 text-green-400 rounded-lg p-4">
         <pre>
           {`<!DOCTYPE html> 
 <html>
@@ -219,7 +219,7 @@ p {
       <h1 className="text-2xl">CSS !important on Shorthand Properties</h1>
       <p>When you use !important with a shorthand property in CSS, the importance is applied to all of its individual longhand properties. In effect, each sub-property inherits the !important flag. The following examples produce the same result.</p>
       <h1 className="text-2xl">Example</h1>
-      <div className="bg-gray-200 rounded-lg p-4">
+      <div className="bg-gray-900 text-green-400 rounded-lg p-4">
         <pre>
           {`<!DOCTYPE html> 
 <html>

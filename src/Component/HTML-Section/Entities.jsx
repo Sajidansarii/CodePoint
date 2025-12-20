@@ -2,14 +2,14 @@ import React from "react";
 
 const HTMLEntities = () => {
   return (
-    <div className="p-4 max-w-3xl">
+    <div className="p-4 max-w-4xl">
       {/* Title */}
       <h1 className="text-3xl sm:text-4xl font-medium text-blue-500 mb-4 text-center sm:text-left">
         HTML Entities
       </h1>
 
       {/* Intro */}
-      <p className="text-gray-700 mb-4">
+      <p className="leading-relaxed mb-4">
         HTML entities are special codes used to represent characters that either have special meaning in HTML or are not easily typed. They ensure those characters display correctly in the browser.
       </p>
 
@@ -29,8 +29,8 @@ const HTMLEntities = () => {
 
         <div className="mb-4">
           <p className="font-medium text-gray-800 mb-1">Reserved characters:</p>
-          <pre className="bg-gray-100 p-3 rounded mb-2 overflow-x-auto text-sm">
-            <code>{'&lt;div&gt;This is not a tag&lt;/div&gt;'}</code>
+          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+            {'&lt;div&gt;This is not a tag&lt;/div&gt;'}
           </pre>
           <p className="text-gray-700">
             Displays: <code>&lt;div&gt;This is not a tag&lt;/div&gt;</code> instead of being interpreted as actual HTML.
@@ -39,13 +39,13 @@ const HTMLEntities = () => {
 
         <div className="mb-4">
           <p className="font-medium text-gray-800 mb-1">Special symbols:</p>
-          <pre className="bg-gray-100 p-3 rounded mb-2 overflow-x-auto text-sm">
-            <code>{`&amp;  → &  
+          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+             {`&amp;  → &  
 &copy; → ©  
 &reg; → ®  
 &amp;#169; → © (numeric)  
 &ndash; → –  
-&nbsp; → (non-breaking space)`}</code>
+&nbsp; → (non-breaking space)`}
           </pre>
           <p className="text-gray-700">
             Example: <code>Company &copy; 2025</code> shows © correctly.
@@ -67,7 +67,7 @@ const HTMLEntities = () => {
             <strong>Numeric:</strong> uses code points, e.g., <code>&amp;#60;</code> for <code>&lt;</code>, <code>&amp;#169;</code> for ©
           </li>
         </ul>
-        <p className="text-gray-700">
+        <p className="leading-relaxed">
           Both produce the same visible character; numeric is sometimes used when a named version doesn't exist.
         </p>
       </section>

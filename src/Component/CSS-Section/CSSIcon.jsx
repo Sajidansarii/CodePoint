@@ -2,7 +2,7 @@ import { FaHome, FaUser, FaSearch } from "react-icons/fa";
 
 export default function CssIcons() {
   return (
-    <div className="p-6 max-w-5xl mx-auto">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS Icons</h1>
       <p className="mb-4">
         Icons can be added in HTML using Unicode, Images, or popular icon
@@ -17,15 +17,15 @@ export default function CssIcons() {
       <h1 className="text-3xl mt-5 mb-5">Font Awesome Icons</h1>
       <p>Use the Font Awesome icons, go to fontawesome.com, sign in, and get a code to add in the {'<head>'} section of your HTML page</p>
      
-     <div className="bg-gray-200 p-4 rounded-lg text-sm mb-6">
-      <pre>
+     <div className="bg-gray-200 p-4 rounded-lg text-sm mb-6 mt-5">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
         {'<script src="https://kit.fontawesome.com/5ce9d92c07.js" crossorigin="anonymous"></script>'
           }  </pre>
       </div>
 
       <div className=" bg-gray-200 p-4 rounded-lg ">
-      <h2>Example:</h2>
-      <pre>
+      <h2 className="text-2xl mb-5">Example:</h2>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
         {`<!DOCTYPE html>
 <html>
 <head>
@@ -54,10 +54,10 @@ export default function CssIcons() {
       
       <h2 className="text-2xl font-semibold mt-6 mb-2">Examples</h2>
         <p className="mb-2">Before you have to import it on top of code.</p>
-      <div className="bg-gray-200 p-4 rounded-lg">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
         <pre>{'import { FaHome, FaUser, FaSearch } from "react-icons/fa";'}</pre>
       </div>
-      <div className="bg-gray-200 p-4 rounded-lg mt-10">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-10">
         <pre>{`
          <div className="space-y-4">
         <p>

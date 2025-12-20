@@ -1,6 +1,6 @@
 export default function CssDisplay() {
   return (
-    <div className="p-6 max-w-4xl">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS Display</h1>
       <p className="mb-4">
         The <code>display</code> property defines how elements are displayed on

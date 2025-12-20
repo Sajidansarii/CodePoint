@@ -11,7 +11,7 @@ const HtmlGlobalAttributes = () => {
       </p>
 
       <h2 className="text-xl font-semibold mb-2 text-blue-500">Examples of Global Attributes</h2>
-      <div className="overflow-auto text-sm mb-6 bg-gray-100 p-4 rounded">
+      <div className="overflow-auto text-sm mb-6 bg-gray-900 text-green-400 p-4 rounded-lg ">
         <pre>
 {`<div id="main" class="container" style="color: red;" title="Main container">
   This is a div with global attributes.
@@ -37,7 +37,7 @@ const HtmlGlobalAttributes = () => {
       </ul>
 
       <h2 className="text-xl font-semibold mb-2 text-blue-500">Practical Example</h2>
-      <div className="overflow-auto text-sm bg-gray-100 p-4 rounded mb-6">
+      <div className="overflow-auto text-sm bg-gray-900 p-4 rounded-lg text-green-400 mb-6">
         <pre>
 {`<p id="intro" class="highlight" style="font-weight: bold;" title="Intro paragraph">
   Welcome to CodePoint!
@@ -49,7 +49,7 @@ const HtmlGlobalAttributes = () => {
         You can use multiple global attributes together for styling, identification, accessibility, or scripting.
       </p>
 
-      <p className="text-sm text-gray-600">Note: While global attributes can be added to almost any element, make sure they’re appropriate for the element’s role and purpose.</p>
+      <p className="text-sm leading-relaxed">Note: While global attributes can be added to almost any element, make sure they’re appropriate for the element’s role and purpose.</p>
     </div>
   );
 };

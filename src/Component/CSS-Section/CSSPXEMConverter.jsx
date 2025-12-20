@@ -39,7 +39,7 @@ const PxEmConverter = () => {
   const emValue = (px / base).toFixed(2);
 
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Title */}
       <h2 className="text-3xl text-blue-500 font-medium mb-6">CSS PX ↔ EM Converter</h2>
 

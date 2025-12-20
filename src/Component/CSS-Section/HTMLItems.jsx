@@ -14,7 +14,7 @@ const HTMLItems = () => {
     {Property:'place-self', Description:'A shorthand property for the align-self and the justify-self properties'}
   ];
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Heading */}
       <h1 className="text-3xl font-medium text-blue-500 mb-3">HTML Elements (Items)</h1>
       <p>

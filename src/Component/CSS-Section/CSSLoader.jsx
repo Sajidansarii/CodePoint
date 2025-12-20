@@ -2,13 +2,13 @@ import React from "react";
 
 const CssLoaderDemo = () => {
   return (
-    <div className="p-8  min-h-screen space-y-6">
+    <div className="p-8  max-w-4xl space-y-6 mt-10">
       {/* Page Header / Loading Info */}
       <h1 className="text-3xl font-medium  text-blue-500">
         CSS Loaders
       </h1>
 
-      <p className="text-gray-700">
+      <p>
         To improve user experience, CSS loaders are used as visual indicators during the loading of a webpage. These animations, such as spinners or progress bars, are built with CSS and inform users that content is being processed.
       </p>
 
@@ -26,7 +26,7 @@ const CssLoaderDemo = () => {
       <h1 className="text-2xl">Example</h1>
       <p>Here’s an example of a CSS loader, similar to the loading animations you’ve probably encountered on many sites.</p>
 
-      <pre className="bg-gray-200 p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
         <h3 className="font-semibold mt-0">CSS Code:</h3>
           <code>
 {`/* Spinning Loader CSS */
@@ -61,7 +61,7 @@ const CssLoaderDemo = () => {
         </p>
       </div>
 
-       <pre className="bg-gray-100 p-2 rounded overflow-x-auto text-sm">
+       <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
         <h3 className="font-semibold mt-2">CSS Code:</h3>
         <code>
 {`/* Bouncing Dots CSS */
@@ -108,7 +108,7 @@ const CssLoaderDemo = () => {
       </div>
 
       {/* Optional Tips */}
-      <p className="text-gray-700">
+      <p>
         ✅ Tips:
         <ul className="list-disc list-inside mt-2">
           <li>Use <code>animation</code> to create smooth motion effects.</li>

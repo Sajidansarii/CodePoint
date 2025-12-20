@@ -2,11 +2,11 @@ import React from "react";
 
 const ObjectPositionTutorial = () => {
   return (
-    <div className="p-6 space-y-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Heading */}
       <h1 className="text-3xl font-medium text-blue-500">CSS object-position</h1>
       <p>
-        The <code className="bg-gray-200 px-1 rounded">object-position</code> property is used 
+        The <code className="bg-gray-50 text-red-400 px-1 rounded">object-position</code> property is used 
         to set the <b>alignment</b> of an image or video inside its container when 
         <code className="bg-gray-200 px-1 rounded text-red-400">object-fit</code> is applied.  
         It works like <b>background-position</b> but for images and videos.

@@ -1,6 +1,6 @@
 export default function CssHover() {
   return (
-    <div className="p-6 max-w-3xl ">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium mb-4 text-blue-500">CSS Hover</h1>
       <p className="mb-4">
         The <code>:hover</code> selector is used to apply styles when the user
@@ -8,7 +8,7 @@ export default function CssHover() {
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-200  p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto">
         <code>{`a {
   text-decoration: none;
   color: black;

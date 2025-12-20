@@ -2,7 +2,7 @@ import React from "react";
 
 const CssNavigationBar = () => {
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Title */}
       <h1 className="text-3xl font-medium mb-4 text-blue-500">CSS Navigation Bar</h1>
       <p className="mb-4">
@@ -24,7 +24,7 @@ const CssNavigationBar = () => {
         </ul>
       </div>
 
-      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto mt-4">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mt-4">
 {`ul {
   list-style-type: none;
   margin: 0;
@@ -56,7 +56,7 @@ li a:hover {
         </ul>
       </div>
 
-      <pre className="bg-gray-200  p-4 rounded-lg overflow-x-auto mt-4">
+      <pre className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto mt-4">
 {`ul {
   list-style-type: none;
   padding: 0;
@@ -92,7 +92,7 @@ li a:hover {
         </ul>
       </div>
 
-      <pre className="bg-gray-200  p-4 rounded-lg overflow-x-auto mt-4">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mt-4">
 {`.navbar {
   position: sticky;
   top: 0;

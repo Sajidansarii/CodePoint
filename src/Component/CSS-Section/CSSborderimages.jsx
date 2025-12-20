@@ -10,7 +10,7 @@ const CSSBorderImage = () => {
     {Property:'border-image-repeat', Description:'Specifies whether the border image should be repeated, rounded or stretched'},
   ]; 
   return (
-    <div className="p-6 space-y-8">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Heading */}
       <h1 className="text-3xl font-medium text-blue-500">CSS Border-Image</h1>
       <p>

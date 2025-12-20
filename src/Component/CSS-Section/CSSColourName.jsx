@@ -15,7 +15,7 @@ const CssColorNames = () => {
   ];
 
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h2 className="text-3xl font-medium text-blue-500 mb-4"> CSS Color Names</h2>
       <p className="mb-6 text-gray-700">
        In CSS, color names are predefined, like red, blue, green, etc. You can use them directly in CSS to set the background, text, or border color.</p>

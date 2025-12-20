@@ -3,7 +3,7 @@ import { jsx } from "react/jsx-runtime";
 
 const HttpsMethods = () => {
   return (
-    <div className="p-4 md:p-8 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <div className="p-4 md:p-8 max-w-4xl">
       {/* Heading */}
       <h1 className="text-3xl font-medium mb-4 text-blue-500">HTTPS Methods</h1>
       <p className="mb-4">
@@ -24,7 +24,7 @@ const HttpsMethods = () => {
         <li>Should not change data on the server.</li>
         <li>Can be cached by browsers.</li>
       </ul>
-      <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded overflow-x-auto mb-6">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mb-6">
 {`GET /products HTTP/1.1
 Host: example.com`}
       </pre>
@@ -36,7 +36,7 @@ Host: example.com`}
         <li>Data is sent in the request body.</li>
         <li>Often used for forms and file uploads.</li>
       </ul>
-      <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded overflow-x-auto mb-6">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-6">
 {`POST /products HTTP/1.1
 Host: example.com
 Content-Type: application/json
@@ -53,7 +53,7 @@ Content-Type: application/json
         <li>Replaces an existing resource with new data.</li>
         <li>Updates the entire resource.</li>
       </ul>
-      <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded overflow-x-auto mb-6">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-6">
 {`PUT /products/1 HTTP/1.1
 Host: example.com
 Content-Type: application/json
@@ -70,7 +70,7 @@ Content-Type: application/json
         <li>Partially updates a resource.</li>
         <li>More efficient for small changes than PUT.</li>
       </ul>
-      <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded overflow-x-auto mb-6">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-6">
 {`PATCH /products/1 HTTP/1.1
 Host: example.com
 Content-Type: application/json
@@ -85,7 +85,7 @@ Content-Type: application/json
       <ul className="list-disc ml-6 mb-4">
         <li>Removes a resource from the server.</li>
       </ul>
-      <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded overflow-x-auto mb-6">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-6">
 {`DELETE /products/1 HTTP/1.1
 Host: example.com`}
       </pre>
@@ -93,46 +93,46 @@ Host: example.com`}
       {/* Summary Table */}
       <h2 className="text-2xl font-semibold mt-8 mb-4">Summary Table</h2>
       <div className="overflow-x-auto">
-        <table className="min-w-full border border-gray-300 dark:border-gray-700">
+        <table className="min-w-full border border-gray-300 text-gray-700 text-sm text-left">
           <thead>
-            <tr className="bg-gray-200 dark:bg-gray-700">
-              <th className="border px-4 py-2">Method</th>
-              <th className="border px-4 py-2">Purpose</th>
-              <th className="border px-4 py-2">Data in Body?</th>
-              <th className="border px-4 py-2">Safe?</th>
-              <th className="border px-4 py-2">Idempotent?</th>
+            <tr className="bg-gray-200">
+              <th className="border px-4 py-2 text-gray-700 font-bold">Method</th>
+              <th className="border px-4 py-2 text-gray-700 font-bold">Purpose</th>
+              <th className="border px-4 py-2 text-gray-700 font-bold">Data in Body?</th>
+              <th className="border px-4 py-2 text-gray-700 font-bold">Safe?</th>
+              <th className="border px-4 py-2 text-gray-700 font-bold">Idempotent?</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr className="cursor-text hover:bg-gray-100">
               <td className="border px-4 py-2">GET</td>
               <td className="border px-4 py-2">Read data</td>
               <td className="border px-4 py-2">❌</td>
               <td className="border px-4 py-2">✅</td>
               <td className="border px-4 py-2">✅</td>
             </tr>
-            <tr>
+            <tr className="cursor-text hover:bg-gray-100">
               <td className="border px-4 py-2">POST</td>
               <td className="border px-4 py-2">Create / Process</td>
               <td className="border px-4 py-2">✅</td>
               <td className="border px-4 py-2">❌</td>
               <td className="border px-4 py-2">❌</td>
             </tr>
-            <tr>
+            <tr className="cursor-text hover:bg-gray-100">
               <td className="border px-4 py-2">PUT</td>
               <td className="border px-4 py-2">Replace</td>
               <td className="border px-4 py-2">✅</td>
               <td className="border px-4 py-2">❌</td>
               <td className="border px-4 py-2">✅</td>
             </tr>
-            <tr>
+            <tr className="cursor-text hover:bg-gray-100">
               <td className="border px-4 py-2">PATCH</td>
               <td className="border px-4 py-2">Partial update</td>
               <td className="border px-4 py-2">✅</td>
               <td className="border px-4 py-2">❌</td>
               <td className="border px-4 py-2">❌</td>
             </tr>
-            <tr>
+            <tr className="cursor-text hover:bg-gray-100">
               <td className="border px-4 py-2">DELETE</td>
               <td className="border px-4 py-2">Remove</td>
               <td className="border px-4 py-2">❌</td>

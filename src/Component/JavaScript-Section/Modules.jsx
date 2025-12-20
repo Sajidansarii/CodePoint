@@ -2,45 +2,78 @@ import React from "react";
 
 const JSModules = () => {
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow mt-10">
-      <h1 className="text-3xl font-medium text-blue-500 mb-4">JavaScript <span className="text-green-600">Modules</span></h1>
+    <div className="max-w-4xl p-6">
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">JavaScript Modules</h1>
       
-      <p className="text-gray-700 mb-6">
-        JavaScript *modules* allow you to split your code into separate files and *reuse code* across your project. 
-        You can *export* functions, objects, or variables from one file and *import* them into another.
+      <p className="mb-6">
+        JavaScript <span className="text-red-400">modules</span> allow you to split your code into separate files and *reuse code* across your project. 
+        You can <span className="text-red-400">export</span> functions, objects, or variables from one file and *import* them into another.
       </p>
+      <p>JavaScript modules require the script tag to use <span className="text-red-400 bg-gray-50 px-1">type="module"</span>.</p>
+     <h1 className="text-2xl mt-5">Example</h1>
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      {`<script type="module">
+import message from "./message.js";
+</script>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-2">Example 1: Exporting a Module</h2>
-      <div className="bg-gray-100 p-4 rounded mb-4 overflow-x-auto">
-        <code className="text-green-600">
-          {`// math.js
-export function add(a, b) {
-  return a + b;
-}
+`}
+     </pre>
 
-export const PI = 3.14159;`}
-        </code>
-      </div>
-      <p className="text-gray-700 mb-6">
-        Here, we export a function <span className="font-semibold">add</span> and a constant <span className="font-semibold">PI</span> from the file <span className="font-semibold">math.js</span>.
-      </p>
+     <h1 className="text-2xl mt-10 mb-3">Export</h1>
+     <p className="leading-relaxed mt-2">Module files can contain <span className="font-semibold">functions</span> or <span className="font-semibold">variables</span>.</p>
+     <p className="leading-relaxed mt-2">JavaScript modules use named and default<span className="font-semibold">exports</span>.</p>
+     
+     <h1 className="text-2xl mt-10 mb-3">Named Exports</h1>
+     <p className="leading-relaxed mt-3">Set up <span className="text-red-400 bg-gray-50 px-1">person.js</span> with the functions or variables to export.</p>
+     <p className="leading-relaxed mt-3">Named exports can be declared individually or collectively at the bottom.</p>
+     <h1 className="text-2xl mt-5">In-line individually:</h1>
+     <p><span className="text-red-400 bg-gray-50 px-1">person.js</span></p>
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      {`export const name = "Jesse";
+export const age = 40;`}
+     </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-2">Example 2: Importing a Module</h2>
-      <div className="bg-gray-100 p-4 rounded mb-4 overflow-x-auto">
-        <code className="text-green-600">
-          {`// main.js
-import { add, PI } from './math.js';
+     <h1 className="text-2xl mt-10">All at once at the bottom:</h1>
+     <p><span className="text-red-400 bg-gray-50 px-1">person.js</span></p>
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      {`const name = "Jesse";
+const age = 40;
 
-console.log(add(5, 3)); // Output: 8
-console.log(PI);        // Output: 3.14159`}
-        </code>
-      </div>
-      <p className="text-gray-700">
-        Using <span className="font-semibold">import</span>, we can access the exported function and constant from <span className="font-semibold">math.js</span> in another file.
-      </p>
+export {name, age};`}
+     </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-2">Key Points:</h2>
-      <ul className="list-disc list-inside text-gray-700">
+     <h1 className="text-2xl mt-10">Default Exports</h1>
+     <p className="leading-relaxed mt-3">Create a new file named message.js to illustrate default export.</p>
+     <p className="leading-relaxed mt-3">Only a single default export is permitted in a file.</p>
+     <h1 className="text-2xl mt-5">Example</h1>
+     <p><span className="text-red-400 bg-gray-50 px-1">message.js</span></p>
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      {`const message = () => {
+const name = "Jesse";
+const age = 40;
+return name + ' is ' + age + 'years old.';
+};
+
+export default message;`}
+     </pre>
+
+     <h1 className="text-2xl mt-10">Import</h1>
+     <p className="leading-relaxed mt-3">Module imports vary depending on whether the exports are named or default.</p>
+     <p className="leading-relaxed mt-3">Named exports require curly braces while default exports do not.</p>
+     <h1 className="text-2xl mt-10">Import from named exports</h1>
+     <p className="mt-3">Import named exports from <span className="text-red-400 bg-gray-50 px-1">person.js</span>:</p>
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      {`import { name, age } from "./person.js";`}
+     </pre>
+
+     <h1 className="text-2xl mt-5">Import from default exports</h1>
+     <p className="mt-3">Import the default export from <span className="text-red-400  bg-gray-50 px-1">message.js</span>:</p>
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      {`import message from "./message.js";`}
+     </pre>
+
+      <h2 className="text-2xl font-semibold mb-3 mt-10">Key Points:</h2>
+      <ul className="list-disc list-inside leading-relaxed">
         <li>Modules help organize code into reusable files.</li>
         <li>Use <span className="font-semibold">export</span> to make functions, variables, or objects available to other files.</li>
         <li>Use <span className="font-semibold">import</span> to use exported content in another file.</li>

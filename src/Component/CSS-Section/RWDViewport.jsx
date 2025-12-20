@@ -2,7 +2,7 @@ import React from "react";
 
 const CssRWDViewport = () => {
   return (
-    <div className="p-6 space-y-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Title */}
       <h1 className="text-3xl font-medium text-blue-500">Responsive Web Design - Viewport</h1>
 

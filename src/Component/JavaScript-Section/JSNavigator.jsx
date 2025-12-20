@@ -1,79 +1,161 @@
 import React, { useState } from "react";
 
 const JSNavigatorBOM = () => {
-  const [output, setOutput] = useState("Click the button to see navigator details...");
-
-  const handleExample = () => {
-    // ✅ Browser name
-    const browserName = Browser `Name: ${navigator.appName}`;
-
-    // ✅ Browser version
-    const browserVersion = Browser `Version: ${navigator.appVersion}`;
-
-    // ✅ Platform
-    const platform = `Platform: ${navigator.platform}`;
-
-    // ✅ User agent
-    const userAgent = User `Agent: ${navigator.userAgent}`;
-
-    setOutput(`${browserName}\n${browserVersion}\n${platform}\n${userAgent}`);
-  };
+  
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-xl shadow-lg mt-10 space-y-6">
-      <h1 className="text-3xl font-medium text-blue-500">
-        navigator Object in <span className="text-green-600">BOM (Browser Object Model)</span>
-      </h1>
+    <div className="max-w-4xl p-6 mt-10">
+      <h1 className="text-3xl font-medium text-blue-500 mb-3">Navigator Object in BOM (Browser Object Model)</h1>
 
-      <p className="text-gray-700">
-        The <strong>navigator</strong> object provides information about the browser and operating system.
+      <p>
+        The <span className="text-red-400">navigator</span> object provides information about the browser and operating system.
         It is part of the Browser Object Model (BOM) and can be used to detect the user's environment.
       </p>
 
-      <button
-        onClick={handleExample}
-        className="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-      >
-        Show Navigator Info
-      </button>
+      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The Navigator Object</h1>
+      <p className="mb-1">The <span className="text-red-400">navigator</span> object holds details about the visitor’s browser.</p>
+      <p className="mb-1">You can write it with or without the window prefix, like this:</p>
+      <p><span className="text-red-400">window.navigator</span> or simply navigator</p>
+       
+       <h1 className="text-gray-800 text-2xl font-semibold mt-10 mb-3">Browser Cookies</h1>
+       <p>The cookieEnabled property is true when cookies are allowed, otherwise false.</p>
+       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
+       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <code>
+          {`<p id="demo"></p>
 
-      <div className="p-4 bg-gray-100 rounded-md whitespace-pre-line font-semibold text-gray-800">
-        {output}
-      </div>
+<script>
+document.getElementById("demo").innerHTML =
+"cookiesEnabled is " + navigator.cookieEnabled;
+</script>`}
+        </code>
+       </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800">Code Example:</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
-{`// Browser name
-console.log("Browser Name: " + navigator.appName);
+       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The Browser Language</h1>
+       <p>The <span className="text-red-400">language</span> property provides the browser’s language.</p>
+       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5">
+        <code>
+          {`<p id="demo"></p>
 
-// Browser version
-console.log("Browser Version: " + navigator.appVersion);
-
-// Platform
-console.log("Platform: " + navigator.platform);
-
-// User agent
-console.log("User Agent: " + navigator.userAgent);`}
+<script>
+document.getElementById("demo").innerHTML = navigator.language;
+</script>`}
+        </code>
       </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800">Explanation:</h2>
-      <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li>
-          <strong>navigator.appName:</strong> Returns the browser name (often "Netscape" for modern browsers).  
-        </li>
-        <li>
-          <strong>navigator.appVersion:</strong> Returns the browser version information.  
-        </li>
-        <li>
-          <strong>navigator.platform:</strong> Returns the operating system platform (e.g., "Win32", "MacIntel").  
-        </li>
-        <li>
-          <strong>navigator.userAgent:</strong> Returns the full user agent string, useful for detecting browser and OS details.  
-        </li>
-        <li>
-          Useful for *browser detection, **feature detection*, or adjusting behavior based on platform.
-        </li>
-      </ul>
+      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Is The Browser Online?</h1>
+     <p>The <span className="text-red-400">onLine</span> property is true when the browser has an internet connection.</p>
+     <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = navigator.onLine;
+</script>`}
+      </code>
+     </pre>
+
+     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Browser Application Name</h1>
+     <p>The <span className="text-red-400">appName</span> property gives the name of the browser application.</p>
+    <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"navigator.appName is " + navigator.appName;
+</script>`}
+      </code>
+    </pre>
+
+    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Browser Application Code Name</h1>
+    <p>The <span className="text-red-400">appCodeName</span> property provides the browser’s code name.</p>
+    <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"navigator.appCodeName is " + navigator.appCodeName;
+</script>`}
+      </code>
+    </pre>
+
+    <h1 className="text-gray-800 text-2xl font-semibold mt-10 mb-3">The Browser Engine</h1>
+    <p>The <span className="text-red-400">product</span> property gives the name of the browser engine.</p>
+    <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"navigator.product is " + navigator.product;
+</script>`}
+      </code>
+    </pre>
+
+    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The Browser Version</h1>
+    <p>The <span className="text-red-400">appVersion</span> property provides the browser’s version information.</p>
+    <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = navigator.appVersion;
+</script>`}
+      </code>
+    </pre>
+
+    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The Browser Agent</h1>
+    <p>The <span className="text-red-400">userAgent</span> property provides the user-agent string sent by the browser.</p>
+    <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = navigator.userAgent;
+</script>`}
+      </code>
+    </pre>
+
+    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The Browser Platform</h1>
+    <p>The <span className="text-red-400">platform</span> property provides the browser’s operating system.</p>
+   <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
+   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <code>
+      {`<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = navigator.platform;
+</script>`}
+    </code>
+   </pre>
+
+   <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Is Java Enabled?</h1>
+   <p>The <span className="text-red-400">javaEnabled()</span> method is true when Java is enabled in the browser.</p>
+  <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
+  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <code>
+      {`<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = navigator.javaEnabled();
+</script>`}
+    </code>
+  </pre>
+
+
+
+
+
+
     </div>
   );
 };

@@ -81,7 +81,7 @@ x-loud`},
   ];
 
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h2 className="text-3xl font-medium mb-4 text-blue-500">CSS Aural Properties</h2>
       <p className="mb-6">
        CSS Aural Properties are created for users who rely on screen readers. These properties control how the text is spoken—such as voice pitch, volume, pronunciation, and more.

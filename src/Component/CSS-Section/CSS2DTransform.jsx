@@ -14,7 +14,7 @@ const Css2DTransforms = () => {
     {Funstion:'transform()', Description:'CSS transform() function applies a 2D or 3D transformation to an element.'},
   ];
   return (
-    <div className="p-8 min-h-screen space-y-6">
+    <div className="p-8 max-w-4xl space-y-6 mt-10">
       {/* Title */}
       <h1 className="text-3xl font-medium text-blue-500">
         CSS 2D Transforms
@@ -51,7 +51,7 @@ const Css2DTransforms = () => {
 
       <h1 className="text-2xl">Example</h1>
       <p>In the following example, a box transitions along the X and Y axes when hovered over.</p>
-        <pre className="bg-gray-200 p-3 h-80 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 h-80 rounded-lg text-sm overflow-x-auto">
 {`<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -106,7 +106,7 @@ const Css2DTransforms = () => {
         <h1 className="text-2xl">Example</h1>
         <p>The example below demonstrates a box that rotates on hover, producing a visually engaging effect.</p>
 
-        <pre className="bg-gray-200 p-3 h-80 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 h-80 rounded-lg text-sm overflow-x-auto">
 {`<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -160,7 +160,7 @@ const Css2DTransforms = () => {
         </p>
         <h1 className="text-2xl">Example</h1>
         <p>When hovered over, the box in this example enlarges and shrinks, giving the appearance of a zoom in/out effect.</p>
-        <pre className="bg-gray-200  p-3 h-80 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 h-80 rounded-lg text-sm overflow-x-auto">
 {`<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -214,7 +214,7 @@ const Css2DTransforms = () => {
         <h1 className="text-2xl">Example</h1>
         <p>The example below demonstrates a skew transformation applied on hover, resulting in a slanted appearance.</p>
 
-        <pre className="bg-gray-200 p-3 h-80 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 h-80 rounded-lg text-sm overflow-x-auto">
 {`<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -311,7 +311,7 @@ const Css2DTransforms = () => {
           <li><strong>scale(x, y)</strong> → Makes the size bigger or smaller.</li>
           <li><strong>skew(x, y)</strong> → Tilts the element at an angle.</li>
           <li>Multiple transformations can be applied simultaneously:
-            <pre className="bg-gray-200  p-2 rounded mt-2 text-sm overflow-x-auto">{`transform: translate(50px, 20px) rotate(30deg) scale(1.2);`}
+            <pre className="bg-gray-900 text-green-400  p-4 rounded-lg mt-2 text-sm overflow-x-auto">{`transform: translate(50px, 20px) rotate(30deg) scale(1.2);`}
             </pre>
           </li>
         </ul>

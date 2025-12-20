@@ -2,7 +2,7 @@ import React from "react";
 
 const CSSShadows = () => {
   return (
-    <div className="p-6 space-y-8">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Heading */}
       <h1 className="text-3xl font-medium text-blue-500">CSS Shadows</h1>
       <p className="text-gray-700">In CSS, shadows are used to give elements and text depth and highlight them. We mostly use the <span className="text-red-400 bg-gray-50 px-1">text-shadow</span> and <span className="text-red-400  bg-gray-50 px-1">box-shadow</span> properties for this purpose.</p>

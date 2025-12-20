@@ -7,7 +7,7 @@ const CssProperties = () => {
     {Value:'unset', Description:'It changes all the properties applied to the element or the elements parent to their parent value if they are inheritable else to their initial value if not'}
   ];
   return (
-    <div className="p-8 min-h-screen space-y-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Title */}
       <h1 className="text-3xl font-medium text-blue-500">
         CSS Properties

@@ -2,7 +2,7 @@ import React from "react";
 
 const CssWebsite = () => {
   return (
-    <div className="p-6 max-w-5xl mx-auto">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Heading */}
       <h1 className="text-3xl font-medium mb-6 text-blue-500">
         Build a Website with CSS

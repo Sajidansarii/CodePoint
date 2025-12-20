@@ -2,7 +2,7 @@ import React from "react";
 
 const CssAuralMedia = () => {
   const data = [
-    {Property:'azimuth', Description:'Sets where the sound should come from', Value:'angle, left-side, far-left, left, center-left, center, center-right, right, far-right, right-side, behind, leftwards, rightwards'},
+{Property:'azimuth', Description:'Sets where the sound should come from', Value:'angle, left-side, far-left, left, center-left, center, center-right, right, far-right, right-side, behind, leftwards, rightwards'},
 {Property:'cue', Description:'Sets the cue properties in one declaration', Value:'	cue-before, cue-after'},
 {Property:'cue-after', Description:'Specifies a sound to be played after speaking an elements content', Value:'none,url'},
 {Property:'cue-before', Description:'Specifies a sound to be played before speaking an elements content', Value:'none,url'},
@@ -24,11 +24,11 @@ const CssAuralMedia = () => {
 {Property:'volume', Description:'Specifies the volume of the speaking', Value:'number,%,silent,x-soft,soft,medium,loud,x-loud'}
   ];
   return (
-    <div className="p-8 min-h-screen space-y-6">
+    <div className="p-8 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium text-blue-500">
         CSS Aural Media
       </h1>
-      <p>Aural Media is a CSS media type that was used for speech synthesizers and screen readers. Its purpose was to allow visually impaired users to listen to the website.</p>
+      <p><span className="text-red-400 bg-gray-50 px-1 rounded">Aural Media</span>is a CSS media type that was used for speech synthesizers and screen readers. Its purpose was to allow visually impaired users to listen to the website.</p>
 
       <p> Nowadays, it has been replaced by speech media and ARIA attributes.</p>
 
@@ -46,7 +46,7 @@ const CssAuralMedia = () => {
       <p>The following illustrates a basic aural style sheet:</p>
 
         <h2 className="text-xl font-semibold mb-2">Syntax</h2>
-        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto text-left">
           <code>
 {`@media aural {
   h1 {
@@ -65,7 +65,7 @@ const CssAuralMedia = () => {
         <h2 className="text-xl font-semibold">Example: Aural Media Query</h2>
         <p className="text-gray-700">Below is an example where the aural media type defines a different style for screen readers:</p>
         
-        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded text-sm overflow-x-auto text-left">
           <code>
 {`@media speech {
   h1 {

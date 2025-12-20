@@ -1,6 +1,6 @@
 const HowHTMLWorks = () => {
   return (
-    <div className="p-4 sm:p-6 md:p-8 max-w-3xl">
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
       <h1 className="text-3xl sm:text-3xl font-medium text-blue-500 mb-4">
         How HTML Works in a Browser
       </h1>
@@ -50,9 +50,8 @@ const HowHTMLWorks = () => {
       <h2 className="text-xl sm:text-2xl text-blue-500 font-semibold mt-6 mb-2">
         HTML Example
       </h2>
-      <div className="bg-gray-100 p-3 rounded text-sm sm:text-base overflow-auto mb-4">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm sm:text-base overflow-auto mb-4">
         <pre>
-          <code>
 {`<!DOCTYPE html>
 <html>
   <head>
@@ -63,7 +62,6 @@ const HowHTMLWorks = () => {
     <p>This is my website.</p>
   </body>
 </html>`}
-          </code>
         </pre>
       </div>
 

@@ -65,7 +65,7 @@ export default function CssAtRules() {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto p-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium text-blue-500 mb-10">CSS At-rules Reference
       </h1>
       <p>CSS at-rules are special instructions that tell the CSS how to operate. They always start with an @ symbol followed by a specific rule name.</p>

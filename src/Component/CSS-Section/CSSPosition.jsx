@@ -1,6 +1,6 @@
 export default function CssPosition() {
   return (
-    <div className="p-6 space-y-8">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-bold text-blue-500">CSS Position</h1>
       <p>
         The <code>position</code> property specifies how an element is placed on

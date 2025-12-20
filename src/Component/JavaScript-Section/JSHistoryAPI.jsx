@@ -1,102 +1,104 @@
 import React, { useState } from "react";
 
 const JSHistoryAPI = () => {
-  const [message, setMessage] = useState("Use the buttons below to navigate history...");
+  const data = [
+    {Property:'length', Description:'Returns the number of URLs in the history list'},
+  ];
 
-  // ✅ Go back one step in history
-  const goBack = () => {
-    window.history.back();
-    setMessage("⬅ Moved back in history");
-  };
-
-  // ✅ Go forward one step in history
-  const goForward = () => {
-    window.history.forward();
-    setMessage("➡ Moved forward in history");
-  };
-
-  // ✅ Push a new state to history
-  const pushState = () => {
-    window.history.pushState({ page: "new" }, "New Page", "/new-page");
-    setMessage(" New state pushed to history (URL changed without reload)");
-  };
-
-  // ✅ Listen for popstate (when user navigates with back/forward buttons)
-  window.onpopstate = (event) => {
-    setMessage( `You navigated to: ${document.location.pathname}`);
-  };
+  const data1 = [
+    {Method:'back()', Description:'Loads the previous URL in the history list'},
+    {Method:'forward()', Description:'Loads the next URL in the history list'},
+    {Method:'go()', Description:'Loads a specific URL from the history list'}
+  ]
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-xl shadow-lg mt-10 space-y-6">
-      <h1 className="text-3xl font-medium text-blue-500">
-        History API in <span className="text-green-600">JavaScript</span>
-      </h1>
+    <div className="max-w-4xl p-6 mt-10">
+      <h1 className="text-3xl font-medium text-blue-500 mb-3">History API in JavaScript</h1>
 
-      <p className="text-gray-700">
-        The <strong>History API</strong> allows manipulation of the browser session history. 
+      <p>
+        The <span className="text-red-400">History API</span> allows manipulation of the browser session history. 
         You can navigate back and forward, and change the URL without reloading the page.
       </p>
+    
+    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The History back() Method</h1>
+    <p>The <span className="text-red-400">back()</span> method navigates to the previous URL in the window.history list, just like clicking the browser’s back arrow.</p>
+    <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`<button onclick="myFunction()">Go Back</button>
 
-      <div className="space-x-2">
-        <button
-          onClick={goBack}
-          className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-        >
-          Go Back
-        </button>
-        <button
-          onClick={goForward}
-          className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
-        >
-          Go Forward
-        </button>
-        <button
-          onClick={pushState}
-          className="px-4 py-2 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700"
-        >
-          Push New State
-        </button>
-      </div>
+<script>
+function myFunction() {
+  window.history.back();
+}
+</script>`}
+      </code>
+    </pre>
 
-      <div className="p-4 bg-gray-100 rounded-md font-semibold text-gray-800">
-        {message}
-      </div>
+  <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The History go() Method</h1>
+  <p>The <span className="text-red-400">go()</span> method navigates to a particular URL in the browser’s history.</p>
+  <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
+  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <code>
+      {`<button onclick="myFunction()">Go Back 2 Pages</button>
 
-      <h2 className="text-2xl font-semibold text-gray-800">Code Example:</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
-{`// Go back one step
-window.history.back();
+<script>
+function myFunction() {
+  window.history.go(-2);
+}
+</script>`}
+    </code>
+  </pre>
 
-// Go forward one step
-window.history.forward();
+  <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">History Object Properties</h1>
+  <table className="min-w-full boredr border-gray-300 text-gray-700 text-sm text-left mt-5">
+    <thead>
+      <tr className="bg-gray-200">
+        <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Property</th>
+        <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Description</th>
+      </tr>
+    </thead>
+    {data.map((row,index)=>(
+      <tr className="cursor-text hover:bg-gray-100">
+        <td className="px-4 py-2 border-b border-gray-200">{row.Property}</td>
+        <td className="px-4 py-2 border-b border-gray-200">{row.Description}</td>
+      </tr>
+    ))}
+  </table>
 
-// Push new state to history
-window.history.pushState({ page: "new" }, "New Page", "/new-page");
+  <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">History Object Methods</h1>
+  <table className="min-w-full border border-gray-300 text-gray-700 text-sm text-left mt-5">
+    <thead>
+      <tr className="bg-gray-100">
+        <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Method</th>
+        <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Description</th>
+        </tr>       
+    </thead>
+    {data1.map((row,index)=>(
+      <tr className="cursor-text hover:bg-gray-100">
+        <td className="px-4 py-2 border-b border-gray-200">{row.Method}</td>
+        <td className="px-4 py-2 border-b border-gray-200">{row.Description}</td>
+      </tr>
+    ))}
+  </table>
 
-// Listen for back/forward navigation
-window.onpopstate = (event) => {
-  console.log("Navigated to:", document.location.pathname);
-};`}
-      </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800">Explanation:</h2>
-      <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li>
-          <code>history.back()</code> → Moves one step back in session history.
-        </li>
-        <li>
-          <code>history.forward()</code> → Moves one step forward in session history.
-        </li>
-        <li>
-          <code>history.pushState()</code> → Adds a new entry to the history stack and updates the URL without reloading the page.
-        </li>
-        <li>
-          <code>window.onpopstate</code> → Event triggered when navigating with back/forward buttons.
-        </li>
-        <li>
-          Useful for *Single Page Applications (SPAs)* where you want to update the URL dynamically without reloading.
-        </li>
-      </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 };

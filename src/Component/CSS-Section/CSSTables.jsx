@@ -1,6 +1,6 @@
 export default function CssTables() {
   return (
-    <div className="p-6 max-w-5xl mx-auto">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS Tables</h1>
       <p className="mb-4">
         Tables are styled using properties like <code>border-collapse</code>,{" "}
@@ -20,7 +20,7 @@ export default function CssTables() {
       <p className="mt-10 text-xl">Example</p>
       <p>In this example, we will create a table using CSS property.</p>
 
-      <div className="bg-gray-200 p-4 rounded-lg mt-5 mb-10">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 mb-10">
         <pre>
           <code>
             {`.table-container {

@@ -233,7 +233,7 @@ const data  = [
 
 export default function CssAnimationProperties() {
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium text-blue-500 mb-6">
         CSS Animation Properties
       </h1>
@@ -246,27 +246,11 @@ export default function CssAnimationProperties() {
       <p>Animatable properties can transition smoothly from one value to another, such as size, numbers, percentages, and colors.</p>
       <h1 className="text-2xl mt-10">Example</h1>
       <p>Animate a smooth change in background-color, going from red to blue.</p>
-      <pre className="bg-gray-900 p-4 rounded-lg mt-4">
-        <code>
-          <span className="text-red-700">@keyframes mymove</span>{" "}
-          <span className="text-gray-400">{"{"}</span><br/>{"   "}
-          <span className="text-red-700">from</span>{" "}
-          <span className="text-gray-400">{"{"}</span>
-          <span className="text-red-400">background-color</span>
-          <span className="text-gray-400">:</span>{" "}
-          <span className="text-blue-400">red</span>
-          <span className="text-gray-400">;</span>
-          <span className="text-gray-400">{"}"}</span><br/>
-          <span className="txet-gray-400">{"}"}</span>{"  "}
-          <span className="text-red-700">to</span>{" "}
-          <span className="text-gray-400">{"{"}</span>
-          <span className="text-red-400">background-color</span>
-          <span className="text-gray-400">:</span>{" "}
-          <span className="text-blue-400">blue</span>
-          <span className="text-gray-400">;</span>
-          <span className="text-gray-400">{"}"}</span><br/>
-          <span className="text-gray-400">{"}"}</span>
-        </code>
+      <pre className="bg-gray-900 p-4 text-green-400 rounded-lg mt-4">
+        {`@keyframes mymove {
+   from {background-color: red;}
+}  to {background-color: blue;}
+}`}
       </pre>
        
        <h1 className="text-2xl mt-10">Animatable Properties</h1>

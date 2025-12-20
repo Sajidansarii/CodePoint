@@ -484,7 +484,7 @@ const CssReference = () => {
   ];
 
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h2 className="text-3xl font-medium text-blue-500 mb-4">CSS Reference</h2>
       <p className="mb-6 text-gray-700">
        A CSS Reference is a quick guide that provides a summary of commonly used CSS properties and their values. It gives developers a fast lookup when they need to recall the syntax or values of a property.

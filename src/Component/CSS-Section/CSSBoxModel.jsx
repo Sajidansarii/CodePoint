@@ -2,7 +2,7 @@ import React from "react";
 
 const CssBoxModel = () => {
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Title */}
       <h1 className="text-3xl font-medium text-blue-500 mb-5">CSS Box Model</h1>
 

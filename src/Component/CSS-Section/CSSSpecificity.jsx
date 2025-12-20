@@ -12,7 +12,7 @@ const CssSpecificity = () => {
     { selector: "div #uniqueId .navbar", specificity: 111, calculation: "100 + 10 + 1" },
   ];
   return (
-    <div className="p-6 space-y-4 font-sans">
+    <div className="p-6 max-w-4xl space-y-6 mt-10 font-sans">
       <h1 className="text-3xl font-medium text-blue-500">CSS Specificity Example</h1>
       <p className="mt-10">When a CSS property is declared multiple times using different selectors, the browser uses the concept of specificity to determine which rule takes precedence. Specificity ranks selectors based on their type and importance, ensuring that the most specific rule is applied.</p>
       <p className="mt-10">For example, if an HTML element has both a class selector and an ID selector applied to it, the property defined in the ID selector will take precedence because it has a higher specificity value.</p>
@@ -26,7 +26,7 @@ const CssSpecificity = () => {
         <li><strong>Inline Styles:</strong> Styles defined directly on an element using the style attribute have the highest priority in the cascade, overriding
         <pre>           both ID and class selectors.</pre></li>
       
-      <div className="bg-gray-200 p-4 rounded-lg">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
         <pre>
           {`<h1 style="color: blue;"> Example </h1>`}
         </pre>
@@ -34,7 +34,7 @@ const CssSpecificity = () => {
 
      
       <li className="mt-5m"><strong>ID selectors:</strong> have higher specificity than class, type, and other basic selectors, giving them greater priority when multiple rules apply to the same element.</li>
-      <div className="bg-gray-200 p-4 rounded-lg">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
         <pre>
           {`<style>
    #mainDiv {
@@ -46,7 +46,7 @@ const CssSpecificity = () => {
 
       <li><strong>Class selectors, attribute selectors, and pseudo-classes:</strong> Come next in the specificity hierarchy after ID selectors.<br/> Class selectors begin with a ., attribute selectors use square brackets [], and pseudo-classes are prefixed with a : <br/> (such as :hover or :first-child).</li>
 
-      <div className="bg-gray-200 p-4 rounded-lg">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
         <pre>
           {`<style>
    .subDivs {
@@ -58,7 +58,7 @@ const CssSpecificity = () => {
 
     <li><strong>Elements and Pseudo-elements:</strong> Element selectors and pseudo-elements have the lowest specificity. Element selectors target HTML tags directly (e.g., div, p), while pseudo-elements are prefixed with :: (such as ::before or ::after).</li>
 
-    <div className="bg-gray-200 p-4 rounded-lg">
+    <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
       <pre>
         {`<style>
     div {
@@ -101,61 +101,6 @@ const CssSpecificity = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* 
-
       <p className="text-blue-600">This text is styled by element selector (p).</p>
       
       <p className="highlight text-green-600">
@@ -172,7 +117,7 @@ const CssSpecificity = () => {
       
       <p className="text-purple-600 font-extrabold">
         This text uses !important and overrides all styles.
-      </p> */}
+      </p> 
     </div>
   );
 };

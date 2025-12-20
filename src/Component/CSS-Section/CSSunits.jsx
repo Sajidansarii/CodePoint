@@ -22,14 +22,14 @@ const CssUnitsDemo = () => {
     {Unit:'%', Description:'Relative to the parent element'},
   ];
   return (
-    <div className="p-8 min-h-screen space-y-6">
+    <div className="p-8 max-w-4xl space-y-6 mt-10">
       {/* Page Header */}
       <h1 className="text-3xl font-medium text-blue-500">
         CSS Units
       </h1>
 
       <p className="text-gray-700">
-        CSS Units define length, size, and spacing in your webpage. 
+        CSS <span className="text-red-400 bg-gray-50 px-1 rounded-lg">Units</span> define length, size, and spacing in your webpage. 
         They can be <strong>absolute</strong> or <strong>relative</strong>.
       </p>
       <p>There are multiple units in CSS used to define lengths.</p>
@@ -39,12 +39,12 @@ const CssUnitsDemo = () => {
       {/* Section 1: Absolute Units */}
       <div className="bg-white p-4 rounded shadow space-y-2">
         <h2 className="font-bold">1. Absolute Units</h2>
-        <p className="text-gray-700">
+        <p>
           Absolute units have a fixed size, regardless of other elements or screen size.
         </p>
 
         {/* Code Example */}
-        <pre className="bg-gray-100 p-2 rounded overflow-x-auto text-sm">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
 {`/* Absolute Units Example */
 .box-absolute {
   width: 200px;    
@@ -55,7 +55,7 @@ const CssUnitsDemo = () => {
 }`}
         </pre>
 
-        <p className="text-gray-700 mt-1">
+        <p>
           ✅ Explanation:
           <ul className="list-disc list-inside">
             <li><code>px</code> = pixels, commonly used for screen.</li>
@@ -69,12 +69,12 @@ const CssUnitsDemo = () => {
       {/* Section 2: Relative Units */}
       <div className="bg-white p-4 rounded shadow space-y-2">
         <h2 className="font-bold">2. Relative Units</h2>
-        <p className="text-gray-700">
+        <p>
           Relative units change size based on parent element, viewport, or font size.
         </p>
 
         {/* Code Example */}
-        <pre className="bg-gray-100 p-2 rounded overflow-x-auto text-sm">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
 {`/* Relative Units Example */
 .box-relative {
   width: 50%;      
@@ -85,7 +85,7 @@ const CssUnitsDemo = () => {
 }`}
         </pre>
 
-        <p className="text-gray-700 mt-1">
+        <p className="mt-1">
           ✅ Explanation:
           <ul className="list-disc list-inside">
             <li><code>%</code> = percentage of parent element.</li>
@@ -137,37 +137,9 @@ const CssUnitsDemo = () => {
           ))}
         </tbody>
       </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      
       {/* Tips */}
-      <p className="text-gray-700">
+      <p>
         ✅ Tips:
         <ul className="list-disc list-inside mt-2">
           <li>Use absolute units for fixed size elements like borders.</li>

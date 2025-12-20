@@ -1,86 +1,123 @@
 import React, { useState } from "react";
 
 const JSGetElementsByTagName = () => {
-  const [output, setOutput] = useState("Click the button to update elements...");
+  const data = [
+    {Parameter:'tagname', Description:'Required.\nThe tagname of the elements.'},
+  ];
 
-  const handleExample = () => {
-    // ✅ Select all <p> elements
-    const paragraphs = document.getElementsByTagName("p");
+  const data1 = [
+    {Type:'Object', Description:'An HTMLCollection object.\nA collection of elements with a specified tag name.\nThe elements are sorted as they appear in the document.'},
+  ];
 
-    // Loop through HTMLCollection and update each element
-    for (let i = 0; i < paragraphs.length; i++) {
-      paragraphs[i].style.backgroundColor = "#f97316"; // Tailwind orange-500 equivalent
-      paragraphs[i].style.color = "white";
-      paragraphs[i].textContent = `Paragraph ${i + 1} updated!`;
-    }
 
-    setOutput(Updated` ${paragraphs.length} paragraph(s) using getElementsByTagName.`);
-  };
+  
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-xl shadow-lg mt-10 space-y-6">
-      <h1 className="text-3xl font-medium text-blue-500">
-        getElementsByTagName in <span className="text-green-600">JavaScript</span>
-      </h1>
+    <div className="max-w-4xl p-6 mt-10">
+      <h1 className="text-3xl font-medium text-blue-500 mb-3">GetElementsByTagName in JavaScript</h1>
 
-      <p className="text-gray-700">
-        The <strong>document.getElementsByTagName()</strong> method selects all
-        HTML elements with the specified <strong>tag name</strong>. It returns an
-        <strong> HTMLCollection</strong>, which can be looped over to manipulate
+      <p>
+        The <span className="text-red-400">document.getElementsByTagName()</span> method selects all
+        HTML elements with the specified <span className="text-red-400">tag name</span>. It returns an
+        <span className="text-red-400"> HTMLCollection</span>, which can be looped over to manipulate
         multiple elements.
       </p>
 
-      <button
-        onClick={handleExample}
-        className="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-      >
-        Update Paragraphs
-      </button>
-
-      <div className="space-y-2 mt-4">
-        <p className="p-4 bg-gray-100 rounded-md font-semibold text-gray-800">
-          Paragraph 1
-        </p>
-        <p className="p-4 bg-gray-100 rounded-md font-semibold text-gray-800">
-          Paragraph 2
-        </p>
-        <p className="p-4 bg-gray-100 rounded-md font-semibold text-gray-800">
-          Paragraph 3
-        </p>
-      </div>
-
-      <div className="p-4 bg-gray-200 rounded-md font-semibold text-gray-700">
-        {output}
-      </div>
-
-      <h2 className="text-2xl font-semibold text-gray-800">Code Example:</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
-{`// Select all <p> elements
-const paragraphs = document.getElementsByTagName("p");
-
-// Loop through each paragraph and update
-for (let i = 0; i < paragraphs.length; i++) {
-  paragraphs[i].style.backgroundColor = "orange";
-  paragraphs[i].style.color = "white";
-  paragraphs[i].textContent = \✅ Paragraph \${i + 1} updated!\;
-}`}
+      <p className="mt-10 mb-5">Select all elements that have the li tag</p>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <code>
+          {`const collection = document.getElementsByTagName("li");`}
+        </code>
       </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800">Explanation:</h2>
-      <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li>
-          <code>document.getElementsByTagName("tagName")</code> selects all elements of the specified tag (e.g., "p", "div", "li").
-        </li>
-        <li>
-          Returns an <strong>HTMLCollection</strong>, which is an array-like object.
-        </li>
-        <li>
-          Loop through the collection using <code>for</code> or <code>for...of</code> to manipulate each element.
-        </li>
-        <li>
-          Useful for updating *all elements of a certain type* at once.
-        </li>
-      </ul>
+       <p className="mt-10 mb-5">Retrieve all elements in the document</p>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <code>
+          {`const collection = document.getElementsByTagName("*");`}
+        </code>
+      </pre>
+
+
+      <p className="mt-10 mb-5">Update the inner HTML of the first paragraph in the document</p>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <code>
+          {`document.getElementsByTagName("p")[0].innerHTML = "Hello World!";`}
+        </code>
+      </pre>
+
+      <p className="mt-10 mb-5">The <span className="text-red-400">getElementsByTagName()</span> function retrieves all elements that match a given tag name.</p>
+      <p className="mb-5">The <span className="text-red-400">getElementsByTagName()</span> function gives back an HTMLCollection.</p>
+      <p>The <span className="text-red-400">getElementsByTagName()</span> property can only be read, not written to.</p>
+
+   <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-5">Syntax</h2>
+  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-10">
+    <code>
+      {`document.getElementsByTagName(tagname)`}
+    </code>
+  </pre>
+
+  <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-5">Parameter</h1>
+  <table className="min-w-full border border-gray-300 text-gray-700 text-sm text-left mt-5">
+    <thead>
+      <tr className="bg-gray-100">
+        <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Parameter</th>
+        <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {data.map((row,index)=>(
+        <tr className="cursor-text hover:bg-gray-100">
+          <td className="px-4 py-2 border-b border-gray-200">{row.Parameter}</td>
+          <td className="px-4 py-2 border-b border-gray-200 whitespace-pre-line">{row.Description}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
+
+
+   <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-5">Return Value</h1>
+  <table className="min-w-full border border-gray-300 text-gray-700 text-sm text-left mt-5">
+    <thead>
+      <tr className="bg-gray-100">
+        <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Parameter</th>
+        <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {data1.map((row,index)=>(
+        <tr className="cursor-text hover:bg-gray-100">
+          <td className="px-4 py-2 border-b border-gray-200">{row.Type}</td>
+          <td className="px-4 py-2 border-b border-gray-200 whitespace-pre-line">{row.Description}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
+  <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-5">Example</h1>
+  <p>The total count of <span className="text-red-400">{'<li>'}</span> elements in the document</p>
+  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <code>
+      {`let numb = document.getElementsByTagName("li").length;`}
+    </code>
+  </pre>
+
+  <p className="mt-10">Set a new background color for every <span className="text-red-400">{'<p>'}</span> element</p>
+  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <code>
+      {`const collection = document.getElementsByTagName("P");
+for (let i = 0; i < collection.length; i++) {
+  collection[i].style.backgroundColor = "red";
+}`}
+    </code>
+  </pre>
+
+
+
+
+
+
+
     </div>
   );
 };

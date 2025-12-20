@@ -2,7 +2,7 @@ import React from "react";
 
 const CssImageGallery = () => {
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Title */}
       <h1 className="text-2xl font-medium mb-4 text-blue-500">CSS Image Gallery</h1>
       <p className="mb-4">
@@ -51,8 +51,8 @@ const CssImageGallery = () => {
         />
       </div>
 
-      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto mt-4">
-        {/* <code>
+       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-4">
+         <code>
 {`
 .gallery {
   display: grid;
@@ -69,30 +69,27 @@ const CssImageGallery = () => {
 .gallery img:hover {
   transform: scale(1.05);
 }`}
-</code> */}
+</code> 
       </pre>
 
       {/* Responsive Gallery */}
-      <h2 className="text-xl font-semibold mt-6 mb-2">
-        Responsive Image Gallery
-      </h2>
-      <p className="mb-4">
-        With media queries or Tailwind utilities, the gallery adapts to different screen sizes.
-      </p>
+      <h2 className="text-xl font-semibold mt-6 mb-2">Responsive Image Gallery</h2>
+      <p className="mb-4"> With media queries or Tailwind utilities, the gallery adapts to different screen sizes.</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {Array.from({ length: 8 }).map((_, i) => (
-          <img
-            key={i}
-            src={`https://picsum.photos/300/200?random=${i + 10}`}
-            alt={Gallery `${i}`}
-            className="rounded-lg shadow-md hover:scale-105 transition-transform"
-          />
-        ))}
-      </div>
+  {Array.from({ length: 8 }).map((_, i) => (
+    <img
+      key={i}
+      src={`https://picsum.photos/300/200?random=${i + 10}`}
+      alt={`Gallery ${i}`}
+      className="rounded-lg shadow-md hover:scale-105 transition-transform"
+    />
+  ))}
+</div>
 
-      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto mt-4">
-        {/* <code>
+
+       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-4">
+         <code>
 {`
 @media screen and (max-width: 768px) {
   .gallery {
@@ -105,11 +102,11 @@ const CssImageGallery = () => {
     grid-template-columns: 1fr;
   }
 }`}
-</code> */}
-      </pre>
+</code> 
+      </pre> 
 
-      {/* Hover Effect Gallery */}
-      <h2 className="text-xl font-semibold mt-6 mb-2">Gallery with Hover Effects</h2>
+      {/*   Hover Effect Gallery */}
+       <h2 className="text-xl font-semibold mt-6 mb-2">Gallery with Hover Effects</h2>
       <p className="mb-4">
         Add overlays and captions when hovering over images.
       </p>
@@ -147,8 +144,8 @@ const CssImageGallery = () => {
         </div>
       </div>
 
-      <pre className="bg-gray-200  p-4 rounded-lg overflow-x-auto mt-4">
-        {/* <code>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-4">
+         <code>
 {`
 .gallery-item {
   position: relative;
@@ -175,7 +172,7 @@ const CssImageGallery = () => {
 .gallery-item:hover .overlay {
   opacity: 1;
 }`}
-</code> */}
+</code> 
       </pre>
 
       {/* Notes */}

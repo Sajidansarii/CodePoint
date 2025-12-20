@@ -1,82 +1,71 @@
 import React from "react";
+import JavaScriptSyntax from "./SyntaxofJS";
 
 export default function JavaVsJavaScript() {
+  const data = [
+    {Sr:'1', Key:'Language Type', Java:'Java is primarily an object-oriented programming language that requires a virtual machine platform for its execution.', JavaScript:'JavaScript is a lightweight programming language("scripting language") and is used to make web pages that do not require such a virtual environment for their execution.'},
+    {Sr:'2', Key:'Syntax and semantics', Java:'Java is a type of language where the compiler reports exceptions in case the syntax does not meet the requirement, or we can say that type and code semantics are checked at compile time.', JavaScript:'On the other hand, JavaScript is a weakly typed language and has more relaxed syntax and rules.'},
+    {Sr:'3', Key:'Oops Concept', Java:'Java is a pure object-oriented programming language.', JavaScript:'JavaScript, on the other hand, is an object-based scripting language.'},
+    {Sr:'4', Key:'JVM requirement', Java:'Java requires a JVM in order to create a virtual environment for its code execution.', JavaScript:'On the other hand code of JavaScript runs on the browser only, so no such JVM is required for code execution.'},
+    {Sr:'5', Key:'File extension',  Java:'One difference between them is that the extension of the file in which Java code is saved is ".java".', JavaScript:'While the code of JavaScript gets saved in a file which has an extension of ".js"'},
+    {Sr:'6', Key:'Performance and memory consumption', Java:'As we know, Java requires a JVM, which makes it consume more memory and slower in the performance of code execution. Each time we need to deploy the code to reflect the code change in Java.', JavaScript:'On the other hand, JavaScript code gets compiled and runs on the browser only and thus consumes less memory and is faster in performance. Each time we do not need to deploy the code to reflect the code change in JavaScript.' },
+  ];
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 p-6">
-      <div className="max-w-5xl mx-auto space-y-8">
+    <div className="min-h-screen p-6">
+      <div className="max-w-5xl space-y-8">
         {/* Page Title */}
-        <header className="text-center">
+        <header>
           <h1 className="text-3xl font-medium text-blue-500 mb-2">
             Difference Between Java and JavaScript
           </h1>
           <p className="text-lg text-gray-600">
-            Same name, but two completely different programming languages ⚡
+            Same name, but two completely different programming languages 
           </p>
         </header>
 
         {/* Intro Section */}
-        <section className="bg-white shadow-md rounded-2xl p-6">
-          <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
+        <section className="py-6">
           <p className="leading-relaxed">
-            Despite having similar names,{" "}
-            <span className="font-semibold text-blue-600">Java</span> and{" "}
-            <span className="font-semibold text-yellow-600">JavaScript</span>{" "}
-            are very different in purpose, design, and usage. Java is a{" "}
-            <span className="font-semibold">general-purpose, object-oriented</span>{" "}
-            programming language, while JavaScript is primarily a{" "}
-            <span className="font-semibold">scripting language for the web</span>.
+           Java and JavaScript are used in application development, but they are quite different. The key differences are discussed below.
           </p>
+          <h1 className="text-2xl mt-5 mb-2">Java</h1>
+          <p>Java is a high-level, platform-independent programming language widely used in the development of web applications, mobile apps, games, and more. It is statically typed, meaning the code is checked for errors at compile time before execution.</p>
+          <h1 className="text-2xl mt-5 mb-2">JavaScript</h1>
+          <p>In contrast, JavaScript is a dynamically typed language, meaning errors are detected during runtime. It is both a client-side and server-side language, enabling developers to write code that runs in the browser as well as on the server. JavaScript is primarily used to create interactive and dynamic web pages. Below are the key differences between Java and JavaScript.</p>
         </section>
 
         {/* Comparison Table */}
-        <section className="bg-blue-50 shadow-md rounded-2xl p-6">
           <h2 className="text-2xl font-semibold mb-4">Key Differences</h2>
-          <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse">
+            <table className="min-w-full border border-gray-300 text-gray-700 text-left text-sm mt-10">
               <thead>
-                <tr className="bg-blue-100">
-                  <th className="p-3 border">Aspect</th>
-                  <th className="p-3 border">Java</th>
-                  <th className="p-3 border">JavaScript</th>
+                <tr className="bg-gray-100">
+                  <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Sr. No.</th>
+                  <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Key</th>
+                  <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Java</th>
+                  <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">JavaScript</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td className="p-3 border">Type</td>
-                  <td className="p-3 border">Object-Oriented, Compiled</td>
-                  <td className="p-3 border">Scripting, Interpreted</td>
-                </tr>
-                <tr>
-                  <td className="p-3 border">Platform</td>
-                  <td className="p-3 border">Runs on JVM, cross-platform</td>
-                  <td className="p-3 border">Runs in browser or Node.js</td>
-                </tr>
-                <tr>
-                  <td className="p-3 border">Use Case</td>
-                  <td className="p-3 border">Desktop, Mobile, Backend (Spring, Android)</td>
-                  <td className="p-3 border">Frontend interactivity, Backend (Node.js)</td>
-                </tr>
-                <tr>
-                  <td className="p-3 border">Syntax</td>
-                  <td className="p-3 border">Strictly typed, class-based</td>
-                  <td className="p-3 border">Loosely typed, prototype-based</td>
-                </tr>
-                <tr>
-                  <td className="p-3 border">Execution</td>
-                  <td className="p-3 border">Compiled into bytecode</td>
-                  <td className="p-3 border">Executed directly by browser</td>
-                </tr>
+                {data.map((row,index)=>(
+                  <tr className="cursor-text hover:bg-gray-100">
+                    <td className="px-4 py-2 border-b border-gray-200">{row.Sr}</td>
+                    <td className="px-4 py-2 border-b border-gray-200">{row.Key}</td>
+                    <td className="px-4 py-2 border-b border-gray-200">{row.Java}</td>
+                    <td className="px-4 py-2 border-b border-gray-200">{row.JavaScript}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
-          </div>
-        </section>
+            <p>The following are the key differences between Java and JavaScript.</p>
+            <h1 className="text-2xl">Example</h1>
+            <p>To better understand the difference between Java and JavaScript, consider the following example.</p>
+
+          
 
         {/* Code Example */}
+          <h2 className="text-xl font-semibold mb-4">Example: Java vs JavaScript </h2>
         <section className="bg-gray-900 text-gray-100 rounded-2xl p-6 shadow-lg">
-          <h2 className="text-xl font-semibold text-yellow-400 mb-4">
-            Example: Java vs JavaScript
-          </h2>
-          <pre className="bg-gray-800 p-4 rounded-lg overflow-x-auto">
+          <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
             <code>{`// Java Code Example
 public class HelloWorld {
     public static void main(String[] args) {
@@ -94,7 +83,7 @@ console.log(greet(name));`}</code>
         </section>
 
         {/* Explanation Section */}
-        <section className="bg-white shadow-md rounded-2xl p-6">
+        <section className="py-6">
           <h2 className="text-2xl font-semibold mb-4">Explanation</h2>
           <ul className="list-disc pl-6 space-y-2">
             <li>
@@ -118,7 +107,7 @@ console.log(greet(name));`}</code>
         {/* Takeaway */}
         <section className="bg-green-50 border-l-4 border-green-500 p-4 rounded-xl">
           <p className="text-lg">
-            ✅ Java and JavaScript share a similar name but serve different
+            Java and JavaScript share a similar name but serve different
             purposes. Java is a compiled, general-purpose language, while
             JavaScript is an interpreted scripting language mainly for web
             development.

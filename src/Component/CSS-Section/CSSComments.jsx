@@ -2,22 +2,22 @@ import React from "react";
 
 const CSSComments = () => {
   return (
-    <div className="p-4 sm:p-6 bg-gray-50 min-h-screen">
+    <div className="p-4 sm:p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS Comments</h1>
 
-      <p className="text-gray-700 mb-4">
+      <p className=" mb-4">
         <strong>CSS Comments</strong> are used to explain the code and make it
         more readable. Comments are ignored by the browser and do not affect the
         output of the code.
       </p>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Syntax</h2>
-      <p className="text-gray-700 mb-2">
+      <p className="mb-2">
         A CSS comment starts with{" "}
         <code className="bg-gray-200 px-1 rounded">/*</code> and ends with{" "}
         <code className="bg-gray-200 px-1 rounded">*/</code>.
       </p>
-      <div className="bg-gray-200  p-4 rounded-lg overflow-x-auto text-sm mb-6">
+      <div className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto text-sm mb-6">
         <pre>
 {`/* This is a CSS comment */
 p {
@@ -28,7 +28,7 @@ p {
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Example</h2>
       <p className="text-gray-700 mb-2">CSS file (<code>styles.css</code>):</p>
-      <div className="bg-gray-200  p-4 rounded-lg overflow-x-auto text-sm mb-6">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm mb-6">
         <pre>
 {`/* Style for heading */
 h1 {

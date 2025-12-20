@@ -2,7 +2,7 @@ import React from "react";
 
 const HtmlLangCodes = () => {
   return (
-    <div className="p-4 sm:p-6 bg-white rounded-lg shadow-md max-w-4xl">
+    <div className="p-4 sm:p-6 max-w-4xl">
       <h1 className="text-3xl font-medium mb-4 text-blue-500">HTML Language Codes</h1>
       <p className="mb-4">
         HTML <strong>language codes</strong> are used with the{" "}
@@ -13,7 +13,7 @@ const HtmlLangCodes = () => {
       </p>
 
       <h2 className="text-xl font-semibold mt-6 mb-2 text-blue-500">Syntax</h2>
-      <pre className="bg-gray-200  p-3 rounded-lg overflow-x-auto mb-4">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
         {`<html lang="en"> 
 <head>
   <title>Language Example</title>
@@ -69,12 +69,12 @@ const HtmlLangCodes = () => {
       </table>
 
       <div className="bg-blue-100 p-3 rounded-lg mb-4">
-        💡 <strong>Tip</strong>: Use proper language codes to improve SEO and
+         <strong>Tip</strong>: Use proper language codes to improve SEO and
         accessibility.
       </div>
 
       <h2 className="text-xl font-semibold mt-6 mb-2">Example with Paragraphs</h2>
-      <pre className="bg-gray-200  p-3 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto">
         {`<p lang="en">Hello!</p>
 <p lang="fr">Bonjour!</p>
 <p lang="es">¡Hola!</p>`}

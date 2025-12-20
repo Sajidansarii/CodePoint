@@ -1,100 +1,124 @@
 import React, { useState } from "react";
 
 const JSAJAXASPApp = () => {
-  const [response, setResponse] = useState("Type something to search...");
-
-  // ✅ AJAX request to an ASP application
-  const searchData = (query) => {
-    if (!query) {
-      setResponse("Please type a keyword...");
-      return;
-    }
-
-    const xhr = new XMLHttpRequest();
-    // Example ASP file that searches data
-    xhr.open("GET", `https:www.w3schools.com/js/demo_ajax_database.asp?query=${query}`, true);
-
-    xhr.onload = () => {
-      if (xhr.status === 200) {
-        setResponse(xhr.responseText); // Show ASP response
-      } else {
-        setResponse( `Error: ${xhr.status} - ${xhr.statusText}`);
-      }
-    };
-
-    xhr.onerror = () => {
-      setResponse("⚠ Network error contacting ASP server");
-    };
-
-    xhr.send();
-  };
-
+  
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-xl shadow-lg mt-10 space-y-6">
-      <h1 className="text-3xl font-medium text-blue-500">
-        AJAX <span className="text-green-600">Applications with ASP</span>
-      </h1>
+    <div className="max-w-4xl p-6 mt-10">
+      <h1 className="text-3xl font-medium text-blue-500 mb-3">AJAX Applications with ASP</h1>
 
-      <p className="text-gray-700">
-        AJAX allows JavaScript to interact with <strong>ASP scripts</strong> on the server. 
+      <p>
+        AJAX allows JavaScript to interact with <span className="text-red-400">ASP scripts</span> on the server. 
         This makes real-world applications possible, such as <em>live search</em>, 
         <em>dynamic content loading</em>, and <em>form validation</em> without reloading the page.
       </p>
 
-      <input
-        type="text"
-        placeholder="Type to search..."
-        onChange={(e) => searchData(e.target.value)}
-        className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-      />
+      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Display XML Data in an HTML Table</h1>
+      <p>This example iterates over each <span className="text-red-400">{'<CD>'}</span> element and shows the <span className="text-red-400">{'<ARTIST>'}</span> and <span className="text-red-400">{'<TITLE>'}</span> values in an HTML table.</p>
+       <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <code>
+          {`<table id="demo"></table>
 
-      <div className="p-4 bg-gray-100 rounded-md font-mono text-gray-800 overflow-x-auto">
-        {response}
-      </div>
-
-      <h2 className="text-2xl font-semibold text-gray-800">JavaScript Code:</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
-{`const xhr = new XMLHttpRequest();
-xhr.open("GET", "search.asp?query=keyword", true);
-
-xhr.onload = () => {
-  if (xhr.status === 200) {
-    console.log(xhr.responseText); // Results from ASP
+<script>
+function loadXMLDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    const xmlDoc = xhttp.responseXML;
+    const cd = xmlDoc.getElementsByTagName("CD");
+    myFunction(cd);
   }
-};
+  xhttp.open("GET", "cd_catalog.xml");
+  xhttp.send();
+}
 
-xhr.send();`}
+function myFunction(cd) {
+  let table="<tr><th>Artist</th><th>Title</th></tr>";
+  for (let i = 0; i < cd.length; i++) {
+    table += "<tr><td>" +
+    cd[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    cd[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+</script>
+
+</body>
+</html>`}
+        </code>
       </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800">ASP Code (search.asp):</h2>
-      <pre className="bg-gray-900 text-yellow-300 p-4 rounded-lg overflow-x-auto">
-{`<%
-  Dim query, conn, rs, sql
-  query = Request.QueryString("query")
 
-  Set conn = Server.CreateObject("ADODB.Connection")
-  conn.Open "Provider=SQLOLEDB;Data Source=SERVER;Initial Catalog=DB;User Id=sa;Password=yourpassword;"
+      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Display the First CD in an HTML div Element</h1>
+      <p>This example calls a function to display the first <span className="text-red-400">{'<CD>'}</span> element inside the HTML element with id="showCD".</p>
+      <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <code>
+          {`const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+  const xmlDoc = xhttp.responseXML;
+  const cd = xmlDoc.getElementsByTagName("CD");
+  myFunction(cd, 0);
+}
+xhttp.open("GET", "cd_catalog.xml");
+xhttp.send();
 
-  sql = "SELECT name FROM users WHERE name LIKE '%" & query & "%'"
-  Set rs = conn.Execute(sql)
-
-  Do Until rs.EOF
-    Response.Write(rs("name") & "<br>")
-    rs.MoveNext
-  Loop
-
-  rs.Close
-  conn.Close
-%>`}
+function myFunction(cd, i) {
+  document.getElementById("showCD").innerHTML =
+  "Artist: " +
+  cd[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+  "<br>Title: " +
+  cd[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+  "<br>Year: " +
+  cd[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
+}`}
+        </code>
       </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800">Explanation:</h2>
-      <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li><strong>JavaScript</strong> captures input from the user and sends it to an ASP script.</li>
-        <li><strong>ASP</strong> queries the database (like SQL Server) using the provided keyword.</li>
-        <li>Results are returned dynamically and displayed without refreshing the page.</li>
-        <li>This technique powers <strong>AJAX Applications</strong> such as live search, auto-suggestions, and filtering.</li>
-      </ul>
+
+      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb3">Navigate Between the CDs</h1>
+      <p className="mt-3">Create <span className="text-red-400">next()</span> and <span className="text-red-400">previous()</span> functions to navigate between the CDs in the example.</p>
+      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <code>
+          {`function next() {
+  // display the next CD, unless you are on the last CD
+  if (i < len-1) {
+    i++;
+    displayCD(i);
+  }
+}
+
+function previous() {
+  // display the previous CD, unless you are on the first CD
+  if (i > 0) {
+    i--;
+    displayCD(i);
+  }
+}`}
+        </code>
+      </pre>
+
+
+      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Show Album Information When Clicking On a CD</h1>
+      <p>The last example demonstrates how to display album information when a user clicks on a CD.</p>
+      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <code>
+          {`function displayCD(i) {
+  document.getElementById("showCD").innerHTML =
+  "Artist: " +
+  cd[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+  "<br>Title: " +
+  cd[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+  "<br>Year: " +
+  cd[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
+}`}
+        </code>
+      </pre>
+
+
     </div>
   );
 };

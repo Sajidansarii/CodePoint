@@ -16,14 +16,14 @@ const HTMLWebStorage = () => {
   };
 
   return (
-    <div className="p-4 max-w-3xl">
+    <div className="p-4 max-w-4xl">
       <h1 className="text-3xl font-medium text-blue-500 mb-4">HTML Web Storage</h1>
 
-      <p className="text-gray-700 mb-4">
+      <p className="leading-relaxed mb-3">
         HTML5 Web Storage provides two mechanisms for storing key-value pairs in a web browser:
       </p>
 
-      <ul className="list-disc pl-5 text-gray-700 mb-4">
+      <ul className="list-disc pl-5 leading-relaxed mb-3">
         <li><strong>localStorage</strong> — Data stored with no expiration time.</li>
         <li><strong>sessionStorage</strong> — Data stored until the browser tab is closed.</li>
       </ul>
@@ -31,9 +31,9 @@ const HTMLWebStorage = () => {
       {/* Code Example */}
       <div className="mb-6">
         <h2 className="text-xl font-semibold text-blue-500 mb-2">JavaScript Example</h2>
-        <pre className="bg-gray-100 p-3 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 text-sm overflow-x-auto">
           <code>{`// Save data
-localStorage.setItem("name", "Sajid");
+localStorage.setItem("name", "John");
 
 // Retrieve data
 let user = localStorage.getItem("name");
@@ -77,7 +77,7 @@ localStorage.removeItem("name");`}</code>
       {/* Notes */}
       <div className="p-4 bg-yellow-50 border border-yellow-200 rounded">
         <h3 className="text-lg font-semibold text-yellow-700 mb-2">📝 Good to Know</h3>
-        <ul className="list-disc pl-5 text-gray-700 space-y-1">
+        <ul className="list-disc pl-5 leading-relaxed space-y-1">
           <li>Stored data is in *string format*.</li>
           <li>You can convert objects using <code>JSON.stringify()</code> and <code>JSON.parse()</code>.</li>
           <li>localStorage is shared across tabs from the same origin.</li>

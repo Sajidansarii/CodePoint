@@ -379,7 +379,6 @@ const [showpage,setshowpage] = useState(null);
                   return <CSSStudyplan/>
                 case 'CSSBootcamp':
                   return <CSSBootcamp/>
-
                 case 'CSSAtrules':
                   return <CSSAtrules/>
                   case 'CSSAnimatableProperties':
@@ -413,191 +412,192 @@ const [showpage,setshowpage] = useState(null);
         <div className="flex mt-16">
                     {/* Hamburg Butt */}
                   <button
-                  className="bg-gray-200 text-2xl px-2 fixed top-16 left-0 z-50 sm:hidden"
+                  className="bg-gray-200 text-2xl px-3 fixed top-16 left-4 z-50 sm:hidden"
                   onClick={() => setIsOpen(!isOpen)}>
                   <i className="fas fa-bars"></i>
                 </button>
         
                 {/* Sidebar */}
-                <div className={`sticky top-16 left-0 w-64 h-[calc(100vh-4rem)] overflow-y-auto
+                <div className={`lg:sticky lg:left-0 lg:top-16 w-56 fixed h-[calc(100vh-4rem)] overflow-y-auto
                                bg-gray-200 px-5 py-6 z-40 transform transition-transform
-                                duration-300 shadow-lg sm:translate-x-0 sm:block 
-                                ${isOpen ? "translate-x-0" : "-translate-x-full"}`} >
+                                duration-300 shadow-lg sm:translate-x-0 sm:block   
+                                ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
         
                     <h1 className="text-xl font-semibold mt-5 mb-2">CSS Tutorial</h1>
                     <ul className="space-y-1 text-sm">       
-                    <li className='hover:cursor-pointer' onClick={()=>{setshowpage('WhatisCSS')}}>What is  CSS ?</li>
-                    <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSSyntax')}}>CSS Syntax </li> 
-                    <li className='hover:cursor-pointer' onClick={()=>{setshowpage('Selector')}}>CSS Selector</li>
-                    <li className='hover:cursor-pointer' onClick={()=>{setshowpage('HowToAddCSS')}}>How To Add CSS</li>
-                    <li className='hover:cursor-pointer' onClick={()=>{setshowpage('InlineCSS')}}>Inline CSS</li>
-                    <li className='hover:cursor-pointer' onClick={()=>{setshowpage('InternalCSS')}}>Internal CSS</li>
-                    <li className='hover:cursor-pointer' onClick={()=>{setshowpage('ExternalCSS')}}>External CSS</li>
-                    <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSComments')}}>CSS Comments</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('WhatisCSS')}}>What is  CSS ?</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSSyntax')}}>CSS Syntax </li> 
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('Selector')}}>CSS Selector</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('HowToAddCSS')}}>How To Add CSS</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('InlineCSS')}}>Inline CSS</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('InternalCSS')}}>Internal CSS</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('ExternalCSS')}}>External CSS</li>
+                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSComments')}}>CSS Comments</li>
                     </ul>
 
 
                    <h1 className="text-xl font-semibold mt-5 mb-2">CSS Properties</h1>
                    <ul className='space-y-2 text-sm'>  
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSBackground')}}>CSS Background</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSBorder')}}>CSS Border</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSBorderradius')}}>CSS Border-radius</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSBordercollapse')}}>CSS Border-collapse</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSBorderspacing')}}>CSS Border-spacing</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSDisplay')}}>CSS Display</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('Cursor')}}>CSS Cursor properties with example </li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSButtons')}}>CSS Buttons </li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSFloat')}}>CSS Float </li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSFont')}}>CSS Font </li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('Fontsize')}}>CSS Font-size</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('FontFamily')}}>CSS Font-Family </li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('FontWeight')}}>CSS Font-Weight </li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('Fontstretch')}}>CSS Font-stretch </li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('Colours')}}>CSS Colours </li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('Hover')}}>CSS Hover </li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('Padding')}}>CSS padding</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('Margine')}}>CSS margine</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('HeightWidth')}}>CSS Height/Width</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('BoxModel')}}>CSS Box Model</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSOutline')}}>CSS Outline</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSText')}}>CSS Text</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSFonts')}}>CSS Fonts</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSIcon')}}>CSS Icon</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSLinks')}}>CSS Links</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSLists')}}>CSS Lists</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSTables')}}>CSS Tables</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('Display')}}>CSS Display</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('Maxwidth')}}>CSS Max-width</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('Position')}}>CSS Position</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSZindex')}}>CSS Z-index</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSOverflow')}}>CSS Overflow</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSInlineblock')}}>CSS Inline-block</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSAlign')}}>CSS Align</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSCombinators')}}>CSS Combinators</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSOpacity')}}>CSS Opacity</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSNavigationBar')}}>CSS Navigation Bar</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSDropdowns')}}>CSS Dropdowns</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSImageGallery')}}>CSS Image Gallery</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSImageSprites')}}>CSS Image Sprites</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSAttrSelectors')}}>CSS Attr Selectors</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSForms')}}>CSS Forms</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSCounters')}}>CSS Counters</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSWebsiteLayout')}}>CSS Website Layout</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSSpecificity')}}>CSS Specificity</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSImportant')}}>CSS !Important</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSMathFunctions')}}>CSS Math Functions</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSPerformance')}}>CSS Performance</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSAccessibility')}}>CSS Accessibility</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSBackground')}}>CSS Background</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSBorder')}}>CSS Border</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSBorderradius')}}>CSS Border-radius</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSBordercollapse')}}>CSS Border-collapse</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSBorderspacing')}}>CSS Border-spacing</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSDisplay')}}>CSS Display</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('Cursor')}}>CSS Cursor properties with example </li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSButtons')}}>CSS Buttons </li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSFloat')}}>CSS Float </li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSFont')}}>CSS Font </li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('Fontsize')}}>CSS Font-size</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('FontFamily')}}>CSS Font-Family </li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('FontWeight')}}>CSS Font-Weight </li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('Fontstretch')}}>CSS Font-stretch </li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('Colours')}}>CSS Colours </li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('Hover')}}>CSS Hover </li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('Padding')}}>CSS padding</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('Margine')}}>CSS margine</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('HeightWidth')}}>CSS Height/Width</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('BoxModel')}}>CSS Box Model</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSOutline')}}>CSS Outline</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSText')}}>CSS Text</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSFonts')}}>CSS Fonts</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSIcon')}}>CSS Icon</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSLinks')}}>CSS Links</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSLists')}}>CSS Lists</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSTables')}}>CSS Tables</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('Display')}}>CSS Display</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('Maxwidth')}}>CSS Max-width</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('Position')}}>CSS Position</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSZindex')}}>CSS Z-index</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSOverflow')}}>CSS Overflow</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSInlineblock')}}>CSS Inline-block</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSAlign')}}>CSS Align</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSCombinators')}}>CSS Combinators</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSOpacity')}}>CSS Opacity</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSNavigationBar')}}>CSS Navigation Bar</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSDropdowns')}}>CSS Dropdowns</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSImageGallery')}}>CSS Image Gallery</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSImageSprites')}}>CSS Image Sprites</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSAttrSelectors')}}>CSS Attr Selectors</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSForms')}}>CSS Forms</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSCounters')}}>CSS Counters</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSWebsiteLayout')}}>CSS Website Layout</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSSpecificity')}}>CSS Specificity</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSImportant')}}>CSS !Important</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSMathFunctions')}}>CSS Math Functions</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSPerformance')}}>CSS Performance</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSAccessibility')}}>CSS Accessibility</li>
                     </ul>
 
                     <h1 className="text-xl font-semibold mt-5 mb-2">CSS Advanced</h1>
                     <ul className='space-y-2 text-sm'>  
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSAnimation')}}>CSS Animation</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSKeyframsrule')}}>CSS @Keyframs rule</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSPseudoelements')}}>CSS Pseudo-elements </li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSPseudoclasses')}}>CSS Pseudo-classes</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSradialgradient')}}>CSS radial-gradient</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSStranslate')}}>CSS translate</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSgradient')}}>CSS gradient</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSminify')}}>CSS minify</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSLoader')}}>CSS Loader</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSunits')}}>CSS units</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('Combinators')}}>CSS combinators</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSmasking')}}>CSS masking</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSTransition')}}>CSS Transition</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSTooltips')}}>CSS Tooltips</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSTooltipAnimation')}}>CSS Tooltip Animation</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSMediaQuery')}}>CSS @Media Query</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSS2DTransform')}}>CSS 2D Transform</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSS3DTransform')}}>CSS 3D Transform</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSAuralMedia')}}>CSS Aural Media</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSUserinterface')}}>CSS User interface</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSPagination')}}>CSS Pagination</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSBoxSizing')}}>CSS Box Sizing</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSproperty')}}>CSS @property</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSobjectfit')}}>CSS object-fit</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSobjectposition')}}>CSS object-position</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSImageshapes')}}>CSS Image shapes</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSImagefilters')}}>CSS Image filters</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSImageCentering')}}>CSS Image Centering</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSImageStyling')}}>CSS Image Styling</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSWebfonts')}}>CSS Web fonts</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSTextEffects')}}>CSS Text Effects</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSShadows')}}>CSS Shadows</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSborderimages')}}>CSS border images</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSborderradius')}}>CSS border radius</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSAnimation')}}>CSS Animation</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSKeyframsrule')}}>CSS @Keyframs rule</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSPseudoelements')}}>CSS Pseudo-elements </li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSPseudoclasses')}}>CSS Pseudo-classes</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSradialgradient')}}>CSS radial-gradient</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSStranslate')}}>CSS translate</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSgradient')}}>CSS gradient</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSminify')}}>CSS minify</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSLoader')}}>CSS Loader</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSunits')}}>CSS units</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('Combinators')}}>CSS combinators</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSmasking')}}>CSS masking</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSTransition')}}>CSS Transition</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSTooltips')}}>CSS Tooltips</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSTooltipAnimation')}}>CSS Tooltip Animation</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSMediaQuery')}}>CSS @Media Query</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSS2DTransform')}}>CSS 2D Transform</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSS3DTransform')}}>CSS 3D Transform</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSAuralMedia')}}>CSS Aural Media</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSUserinterface')}}>CSS User interface</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSPagination')}}>CSS Pagination</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSBoxSizing')}}>CSS Box Sizing</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSproperty')}}>CSS @property</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSobjectfit')}}>CSS object-fit</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSobjectposition')}}>CSS object-position</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSImageshapes')}}>CSS Image shapes</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSImagefilters')}}>CSS Image filters</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSImageCentering')}}>CSS Image Centering</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSImageStyling')}}>CSS Image Styling</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSWebfonts')}}>CSS Web fonts</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSTextEffects')}}>CSS Text Effects</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSShadows')}}>CSS Shadows</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSborderimages')}}>CSS border images</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSborderradius')}}>CSS border radius</li>
                     </ul>
         
                     <h1 className="text-xl font-semibold mt-5 mb-2">CSS Flexbox</h1>
                     <ul className='space-y-2 text-sm'>  
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('FlexboxIntro')}}>Flexbox Intro</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('FlexContainer')}}>Flex Container</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('FlexItems')}}>Flex Items</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('FlexResponsive')}}>Flex Responsive</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('FlexboxIntro')}}>Flexbox Intro</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('FlexContainer')}}>Flex Container</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('FlexItems')}}>Flex Items</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('FlexResponsive')}}>Flex Responsive</li>
                     </ul>
 
 
                     <h1 className="text-xl font-semibold mt-5 mb-2">CSS Grid</h1>
                     <ul className='space-y-2 text-sm'>  
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('GridIntro')}}>Grid Intro</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('GridColumnsRows')}}>Grid Columns/Rows</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('GridContainer')}}>Grid Container</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('HTMLItems')}}>HTML Items</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('GridIntro')}}>Grid Intro</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('GridColumnsRows')}}>Grid Columns/Rows</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('GridContainer')}}>Grid Container</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('HTMLItems')}}>HTML Items</li>
                     </ul>
 
                      <h1 className="text-xl font-semibold mt-5 mb-2">CSS Design</h1>
                     <ul className='space-y-2 text-sm'>  
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSLayout')}}>CSS Layout</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSTable')}}>CSS Table</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSBoxModel')}}>CSS Box Model</li>
+                      <li className='cursor-pointer rounded hover:bg-gra3 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSLayout')}}>CSS Layout</li>
+                      <li className='cursor-pointer rounded hover:bg-gra3 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSTable')}}>CSS Table</li>
+                      <li className='cursor-pointer rounded hover:bg-gra3 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSBoxModel')}}>CSS Box Model</li>
                     </ul>
 
                     <h1 className="text-xl font-semibold mt-5 mb-2">CSS Responsive</h1>
                     <ul className='space-y-2 text-sm'>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('RWDIntro')}}>RWD Intro </li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('RWDViewport')}}>RWD Viewport</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('RWDGridView')}}>RWD Grid View</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('RWDMediaQueries')}}>RWD Media Queries</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('RWDimages')}}>RWD images</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('RWDVideos')}}>RWD Videos</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('RWDFrameworks')}}>RWD Frameworks</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('RWDTemplates')}}>RWD Templates</li>
+                      <li className='cursor-pointer rounded hover:bg-gra3 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('RWDIntro')}}>RWD Intro </li>
+                      <li className='cursor-pointer rounded hover:bg-gra3 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('RWDViewport')}}>RWD Viewport</li>
+                      <li className='cursor-pointer rounded hover:bg-gra3 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('RWDGridView')}}>RWD Grid View</li>
+                      <li className='cursor-pointer rounded hover:bg-gra3 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('RWDMediaQueries')}}>RWD Media Queries</li>
+                      <li className='cursor-pointer rounded hover:bg-gra3 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('RWDimages')}}>RWD images</li>
+                      <li className='cursor-pointer rounded hover:bg-gra3 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('RWDVideos')}}>RWD Videos</li>
+                      <li className='cursor-pointer rounded hover:bg-gra3 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('RWDFrameworks')}}>RWD Frameworks</li>
+                      <li className='cursor-pointer rounded hover:bg-gra3 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('RWDTemplates')}}>RWD Templates</li>
                     </ul>
 
                     <h1 className="text-xl font-semibold mt-5 mb-2">CSS Examples</h1>
                     <ul className='space-y-2 text-sm'>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSTemplates')}}>CSS Templates</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSExamples')}}>CSS Examples</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSEditor')}}>CSS Editor</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSSnippets')}}>CSS Snippets</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSQuiz')}}>CSS Quiz</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSExercises')}}>CSS Exercises</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSWebsite')}}>CSS Website</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSSyllabus')}}>CSS Syllabus</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSStudyplan')}}>CSS Study plan</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSBootcamp')}}>CSS Bootcamp</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSTemplates')}}>CSS Templates</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSExamples')}}>CSS Examples</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSEditor')}}>CSS Editor</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSSnippets')}}>CSS Snippets</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSQuiz')}}>CSS Quiz</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSExercises')}}>CSS Exercises</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSWebsite')}}>CSS Website</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSSyllabus')}}>CSS Syllabus</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSStudyplan')}}>CSS Study plan</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSBootcamp')}}>CSS Bootcamp</li>
                     </ul>
                     
                      <h1 className="text-xl font-semibold mt-5 mb-2">CSS References </h1>
                     <ul className='space-y-2 text-sm'>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSAtrules')}}>CSS At-rules</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSAnimatableProperties')}}>CSS Animatable Properties</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSAuralProperties')}}>CSS Aural Properties </li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSColourValues')}}>CSS Colour Values </li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSColourName')}}>CSS Colour Name</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSWebSafeFonts')}}>CSS Web Safe Fonts </li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSReference')}}>CSS Reference</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSSelectors')}}>CSS Selectors</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSPXEMConverter')}}>CSS PX-EM Converter</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSDefaultvalues')}}>CSS Default values</li>
-                      <li className='hover:cursor-pointer' onClick={()=>{setshowpage('CSSBrowserSupport')}}>CSS Browser Support</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSAtrules')}}>CSS At-rules</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSAnimatableProperties')}}>CSS Animatable Properties</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSAuralProperties')}}>CSS Aural Properties </li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSColourValues')}}>CSS Colour Values </li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSColourName')}}>CSS Colour Name</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSWebSafeFonts')}}>CSS Web Safe Fonts </li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSReference')}}>CSS Reference</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSSelectors')}}>CSS Selectors</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSPXEMConverter')}}>CSS PX-EM Converter</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSDefaultvalues')}}>CSS Default values</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>{setshowpage('CSSBrowserSupport')}}>CSS Browser Support</li>
                     </ul>
                     </div>
-                    <div className='ml-10 p-4 w-full'>
+                    <div className={`transition-all duration-300 p-4 w-full mt-10
+                      ${isOpen ? "sm:ml-64" : "sm:ml-0"}`}>
                       {showpage &&(
                         <button onClick={() => setshowpage(null)}
                          className='flex items-center mb-4 bg-green-300 px-4
-                         py-2 text-white rounded text-sm mt-10'>
+                         py-2 text-white rounded text-sm mt-2'>
                           <FiArrowLeft/>
                           Back
                         </button>
@@ -606,9 +606,7 @@ const [showpage,setshowpage] = useState(null);
      
                     </div>
      </div>
-                    
-            )
-        }
+)}
         
  export default Css;
 

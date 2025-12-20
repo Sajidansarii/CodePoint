@@ -20,10 +20,10 @@ const MathFunctions = () => {
     {propertie:'atan2()', value:'Calculates the trigonometric inverse tangent of two-numbers in a plane.'},
   ];
   return (
-    <div className="p-6 space-y-6 font-sans">
+    <div className="p-6 max-w-4xl space-y-6 mt-10 font-sans">
       <h1 className="text-3xl font-medium text-blue-500">CSS Math Functions</h1>
       <p>CSS math functions let you do calculations within your stylesheets, making it easier to adjust values like lengths, angles, colors, and other units directly in CSS.</p>
-      <div className="bg-gray-200 rounded-lg p-4">
+      <div className="bg-gray-900 text-green-400 rounded-lg p-4">
         <pre>
           {`div{
     width: calc(100% - 40px); 
@@ -50,7 +50,7 @@ const MathFunctions = () => {
       <p>The calc() function is a fundamental CSS arithmetic tool that lets you perform calculations—such as addition, subtraction, multiplication, and division—directly on numerical values to dynamically adjust property values.</p>
       <h1 className="text-2xl">Example</h1>
       <p>Here’s an example showing how to use the calc() function in CSS:</p>
-      <div className="bg-gray-200 rounded-lg p-4">
+      <div className="bg-gray-900 text-green-400 rounded-lg p-4">
         <pre>
           {` .box {
                 /* 100% width minus 40px for padding */
@@ -82,7 +82,7 @@ const MathFunctions = () => {
       <p>The max() function in CSS lets you select the largest value from a list of inputs. It’s useful for comparing values and applying styles based on the highest number.</p>
       <h1 className="text-2xl">Example</h1>
       <p>Here’s an example that shows how to use the max() function in CSS:</p>
-      <div className="bg-gray-200 rounded-lg p-4">
+      <div className="bg-gray-900 text-green-400 rounded-lg p-4">
         <pre>
           {`<!DOCTYPE html>
 <html lang="en">
@@ -125,7 +125,7 @@ const MathFunctions = () => {
       <p>The min() function in CSS selects the smallest value from a list of values. It helps you compare values and apply styles based on the minimum number.</p>
       <h1 className="text-2xl">Example</h1>
       <p>Here’s an example demonstrating how to use the min() function in CSS:</p>
-      <div className="bg-gray-200 rounded-lg p-4">
+      <div className="bg-gray-900 text-green-400 rounded-lg p-4">
         <pre>
           {`<!DOCTYPE html>
 <html lang="en">

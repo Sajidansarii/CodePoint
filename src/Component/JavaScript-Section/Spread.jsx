@@ -2,56 +2,45 @@ import React from "react";
 
 const JSSpread = () => {
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow mt-10">
-      <h1 className="text-3xl font-medium text-blue-500 mb-4">JavaScript <span className="text-green-600">Spread Operator</span></h1>
+    <div className="max-w-4xl p-6">
+      <h1 className="text-3xl font-medium text-blue-500 mb-4">JavaScript Spread Operator</h1>
       
-      <p className="text-gray-700 mb-6">
-        The *spread operator (...)* allows you to *expand iterable objects* like arrays or strings into individual elements. 
-        It is commonly used to *copy arrays, merge arrays, or pass multiple arguments* in functions.
+      <p className="mb-6">
+        The <span className="text-red-400">spread operator (...)</span> allows you to expand iterable objects like arrays or strings into individual elements. 
+        It is commonly used to copy arrays, merge arrays, or pass multiple arguments in functions.
       </p>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-2">Example 1: Copying an Array</h2>
-      <div className="bg-gray-100 p-4 rounded mb-4 overflow-x-auto">
-        <code className="text-green-600">
-          {`const originalArray = [1, 2, 3];
-const copyArray = [...originalArray];
+      <h1 className="text-xl mt-10">Example</h1>
+      <p className="leading-relaxed mt-3">Arrays can be joined together using the spread (...) operator.</p>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        {`const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const arr3 = [...arr1, ...arr2];`}
+      </pre>
 
-console.log(copyArray); // Output: [1, 2, 3]`}
-        </code>
-      </div>
-      <p className="text-gray-700 mb-6">
-        Using the spread operator, we create a *shallow copy* of the array. Changes to copyArray won’t affect originalArray.
-      </p>
+      <h1 className="text-2xl mt-10">Definition</h1>
+      <p className="leading-relaxed mt-3">Using the spread operator (...), you can unpack an iterable into separate values.</p>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-2">Example 2: Merging Arrays</h2>
-      <div className="bg-gray-100 p-4 rounded mb-4 overflow-x-auto">
-        <code className="text-green-600">
-          {`const arr1 = [1, 2];
-const arr2 = [3, 4];
-const merged = [...arr1, ...arr2];
+      <h1 className="text-2xl mt-5">Example</h1>
+      <p className="leading-relaxed mt-3">The spread operator (...) can be used to pass array elements as individual arguments to a function.</p>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        {`const numbers = [23,55,21,87,56];
+let minValue = Math.min(...numbers);
+let maxValue = Math.max(...numbers);`}
+      </pre>
 
-console.log(merged); // Output: [1, 2, 3, 4]`}
-        </code>
-      </div>
-      <p className="text-gray-700 mb-6">
-        The spread operator helps merge multiple arrays into a single array without modifying the original arrays.
-      </p>
+      <h1 className="text-2xl mt-10">Example</h1>
+      <p className="leading-relaxed mt-3">You can use the spread syntax (...) to create a shallow copy of an array.</p>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        {`const arr1 = [1, 2, 3];
+const arr2 = [...arr1];`}
+      </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-2">Example 3: Passing Arguments</h2>
-      <div className="bg-gray-100 p-4 rounded mb-4 overflow-x-auto">
-        <code className="text-green-600">
-          {`function sum(a, b, c) {
-  return a + b + c;
-}
-
-const numbers = [1, 2, 3];
-console.log(sum(...numbers)); // Output: 6`}
-        </code>
-      </div>
-      <p className="text-gray-700">
-        You can use the spread operator to *pass elements of an array as individual function arguments*.
-      </p>
-    </div>
+      <h1 className="text-2xl mt-10">Browser Support</h1>
+      <p className="leading-relaxed mt-3">... is an ECMAScript6 (ES6 2015) feature.</p>
+      <p className="leading-relaxed mt-3">JavaScript 2015 is supported in all browsers since June 2017:</p>
+     
+         </div>
   );
 };
 

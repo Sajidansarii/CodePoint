@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CssLinks() {
   return (
-    <div className="p-6 max-w-4xl mx-auto">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Heading */}
       <h1 className="text-3xl font-medium mb-6 text-blue-500">CSS Links</h1>
       <p className="mb-4 text-gray-700">
@@ -23,7 +23,7 @@ export default function CssLinks() {
             <div className="w-5 h-5 text-green-600" />
             Example CSS for Links
           </h2>
-          <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto text-sm">
+          <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
 {`a:link {
   color: blue;
   text-decoration: none;
@@ -76,8 +76,8 @@ a:active {
       </div>
           <p className="text-xl mt-3">styled a Hyper Link with Css.</p>
       <div className="bg-gray-200 p-4 rounded-lg mt-5">
-        <h2>Example</h2>
-        <pre>
+        <h2 className="text-2xl mb-5">Example</h2>
+        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
           <code>
             {`          a{  
             background:blue;

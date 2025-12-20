@@ -1,71 +1,137 @@
 import React, { useState } from "react";
 
 const JSScreenBOM = () => {
-  const [output, setOutput] = useState("Click the button to see screen object details...");
-
-  const handleExample = () => {
-    // ✅ Screen width and height
-    const screenSize = Screen `size: ${window.screen.width} x ${window.screen.height}`;
-
-    // ✅ Available width and height (excluding OS taskbars, etc.)
-    const availableSize = Available `screen size: ${window.screen.availWidth} x ${window.screen.availHeight}`;
-
-    // ✅ Color depth
-    const colorDepth = Color `depth: ${window.screen.colorDepth} bits`;
-
-    setOutput(`${screenSize}\n${availableSize}\n${colorDepth}`);
-  };
-
+ 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-xl shadow-lg mt-10 space-y-6">
-      <h1 className="text-3xl font-medium text-blue-500">
-        screen Object in <span className="text-green-600">BOM (Browser Object Model)</span>
-      </h1>
+    <div className="max-w-4xl p-6 mt-10">
+      <h1 className="text-3xl font-medium text-blue-500 mb-3">screen Object in BOM (Browser Object Model)</h1>
 
-      <p className="text-gray-700">
-        The <strong>screen</strong> object contains information about the user's screen, such as
+      <p>
+        The <span className="text-red-400">screen</span> object contains information about the user's screen, such as
         its width, height, available space, and color depth. It is part of the Browser Object Model (BOM)
         and helps JavaScript interact with the browser environment.
       </p>
 
-      <button
-        onClick={handleExample}
-        className="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-      >
-        Show Screen Info
-      </button>
+      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Window Screen</h1>
+      <p className="mb-3">The <span className="text-red-400">window.screen</span> object can be accessed without using the <span className="text-red-400">window</span> prefix.</p>
+      <p>Properties:</p>
+     <ul className="list-[square] list-inside mt-3">
+      <li><span className="text-red-400">screen.width</span></li>
+      <li><span className="text-red-400">screen.height</span></li>
+      <li><span className="text-red-400">screen.availWidth</span></li>
+      <li><span className="text-red-400">screen.availHeight</span></li>
+      <li><span className="text-red-400">screen.colorDepth</span></li>
+      <li><span className="text-red-400">screen.pixelDepth</span></li>
+     </ul>
 
-      <div className="p-4 bg-gray-100 rounded-md whitespace-pre-line font-semibold text-gray-800">
-        {output}
-      </div>
+     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Window Screen Width</h1>
+    <p>The screen.width property gives the screen width of the user’s device in pixels.</p>
+    <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
+    <p>Show the screen width in pixels.</p>
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`document.getElementById("demo").innerHTML =
+"Screen Width: " + screen.width;`}
+      </code>
+    </pre>
+    <p className="mt-3">Output Will be:</p>
+    <pre className="text-black bg-gray-200 p-4 mt-5">
+      <code>
+        {`Screen Width: 1366`}
+      </code>
+    </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800">Code Example:</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
-{`// Screen width and height
-console.log("Screen size: " + window.screen.width + " x " + window.screen.height);
+    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Window Screen Height</h1>
+    <p>You can use screen.height to get the screen’s height in pixels.</p>
+    <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
+    <p>Show the screen height in pixels.</p>
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`document.getElementById("demo").innerHTML =
+"Screen Height: " + screen.height;`}
+      </code>
+    </pre>
+    <p className="mt-3">Output Will be:</p>
+    <pre className="text-black bg-gray-200 p-4 mt-5">
+      <code>
+        {`Screen Height: 768`}
+      </code>
+    </pre>
 
-// Available screen size
-console.log("Available screen size: " + window.screen.availWidth + " x " + window.screen.availHeight);
+    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Window Screen Available Width</h1>
+    <p>The <span className="text-red-400">screen.availWidth</span> property gives the width of the visitor’s screen in pixels, excluding interface elements like the Windows Taskbar.</p>
+    <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
+    <p>Show the screen’s available width in pixels.</p>
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`document.getElementById("demo").innerHTML =
+"Available Screen Width: " + screen.availWidth;`}
+      </code>
+    </pre>
+     <p className="mt-3">Output Will be:</p>
+    <pre className="text-black bg-gray-200 p-4 mt-5">
+      <code>
+        {`Available Screen Width: 1366`}
+      </code>
+    </pre>
 
-// Color depth
-console.log("Color depth: " + window.screen.colorDepth + " bits");`}
-      </pre>
+    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Window Screen Available Height</h1>
+    <p>The <span className="text-red-400">screen.availHeight</span> property gives the height of the visitor’s screen in pixels, excluding interface elements like the Windows Taskbar.</p>
+    <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
+    <p>Show the screen’s available height in pixels.</p>
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`document.getElementById("demo").innerHTML =
+"Available Screen Height: " + screen.availHeight;`}
+      </code>
+    </pre>
+    <p className="mt-3">Output Will be:</p>
+    <pre className="text-black bg-gray-200 p-4 mt-5">
+      <code>
+        {`Available Screen Height: 728`}
+      </code>
+    </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800">Explanation:</h2>
-      <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li>
-          <strong>screen.width / screen.height:</strong> Returns the total width and height of the screen in pixels.
-        </li>
-        <li>
-          <strong>screen.availWidth / availHeight:</strong> Returns the available width and height excluding OS taskbars and other interface features.
-        </li>
-        <li>
-          <strong>screen.colorDepth:</strong> Returns the number of bits used to display a color.
-        </li>
-        <li>
-          Useful for detecting screen size, adjusting layouts, or gathering display information.
-        </li>
-      </ul>
+    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Window Screen Color Depth</h1>
+    <p className="mb-3">The <span className="text-red-400">screen.colorDepth</span> property gives the number of bits used to represent a single color.</p>
+    <p>All modern computers use 24-bit or 32-bit color hardware.</p>
+   <ul className="list-[square] list-inside mt-5">
+    <li>24 bits =      16,777,216 different "True Colors"</li>
+    <li>32 bits = 4,294,967,296 different "Deep Colors"</li>
+   </ul>
+   <p className="mt-5">Older computers used 16-bit color, providing 65,536 “High Colors,” while very old computers and early cell phones used 8-bit color with 256 “VGA colors.”</p>
+   <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
+   <p>Show the screen’s color depth in bits.</p>
+   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <code>
+      {`document.getElementById("demo").innerHTML =
+"Screen Color Depth: " + screen.colorDepth;`}
+    </code>
+   </pre>
+    <p className="mt-3">Output Will be:</p>
+    <pre className="text-black bg-gray-200 p-4 mt-5">
+      <code>
+        {`Screen Color Depth: 24`}
+      </code>
+    </pre>
+
+    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Window Screen Pixel Depth</h1>
+   <p>The <span className="text-red-400">screen.pixelDepth</span> property gives the pixel depth of the screen.</p>
+   <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
+   <p>Show the screen’s pixel depth in bits.</p>
+   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <code>
+      {`document.getElementById("demo").innerHTML =
+"Screen Pixel Depth: " + screen.pixelDepth;`}
+    </code>
+   </pre>
+    <p className="mt-3">Output Will be:</p>
+    <pre className="text-black bg-gray-200 p-4 mt-5">
+      <code>
+        {`Screen Pixel Depth: 24`}
+      </code>
+    </pre>
+
     </div>
   );
 };

@@ -1,6 +1,6 @@
 export default function CssColors() {
   return (
-    <div className="p-6 max-w-3xl">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium mb-4 text-blue-600">CSS Colours</h1>
       <p className="mb-4">
         In CSS, colours can be defined using <strong>names</strong>,{" "}
@@ -9,7 +9,7 @@ export default function CssColors() {
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-200  p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto">
         <code>{`h1 { color: blue; }
 p { color: #ff0000; }
 div { color: rgba(0, 128, 0, 0.7); }`}</code>

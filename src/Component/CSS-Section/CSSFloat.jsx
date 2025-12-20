@@ -2,12 +2,12 @@ import React from "react";
 
 const CSSFloat = () => {
   return (
-    <div className="p-4 sm:p-6 bg-gray-50 min-h-screen">
+    <div className="p-4 sm:p-6 max-w-4xl space-y-6 mt-10">
       {/* Title */}
       <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS Float</h1>
 
       {/* Intro */}
-      <p className="text-gray-700 mb-4">
+      <p className="mb-4">
         The <code className="bg-gray-200 px-1 rounded">float</code> property in
         CSS is used for positioning and formatting content. It specifies whether
         an element should float to the left, right, or not at all. Floating is
@@ -15,8 +15,8 @@ const CSSFloat = () => {
       </p>
 
       {/* Syntax */}
-      <h2 className="text-xl font-semibold text-gray-800 mb-2">Syntax</h2>
-      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-6">
+      <h2 className="text-xl font-semibold mb-2">Syntax</h2>
+      <div className="bg-gray-900 text-green-400  p-4 rounded-lg text-sm mb-6">
         <pre>
 {`selector {
   float: none | left | right | inline-start | inline-end;
@@ -50,7 +50,7 @@ const CSSFloat = () => {
         </p>
       </div>
 
-      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-6">
+      <div className="bg-gray-900 text-green-400  p-4 rounded-lg text-sm mb-6">
         <pre>
 {`img {
   float: left;
@@ -62,7 +62,7 @@ const CSSFloat = () => {
       {/* Example 2 */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Example: Float Boxes</h2>
       
-      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-6">
+      <div className="bg-gray-900 text-green-400  p-4 rounded-lg text-sm mb-6">
         <pre>
 {`.box {
   float: left;
@@ -93,7 +93,7 @@ const CSSFloat = () => {
         flow, which can cause parent elements to collapse. To fix this, use the{" "}
         <code>clear</code> property or a <code>.clearfix</code> hack.
       </p>
-      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-6">
+      <div className="bg-gray-900 text-green-400  p-4 rounded-lg text-sm mb-6">
         <pre>
 {`.clearfix::after {
   content: "";

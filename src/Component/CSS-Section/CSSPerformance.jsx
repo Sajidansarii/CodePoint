@@ -2,7 +2,7 @@ import React from "react";
 
 const PerformanceExample = () => {
   return (
-    <div className="p-6 font-sans">
+    <div className="p-6 font-sans max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS Performance Optimization</h1>
       <h1 className="text-2xl mb-2">Optimizing CSS</h1>
       <p className="mb-2">Optimizing your CSS helps your website load faster and perform more efficiently, ultimately improving the overall user experience.</p>
@@ -10,7 +10,7 @@ const PerformanceExample = () => {
       <h1 className="text-2xl mt-10">Use Simple Selectors</h1>
       <p>Simple selectors are faster for browsers to process. Avoid overly complex ones to reduce CSS parsing time.</p>
       <h1 className="text-2xl mt-5 mb-2">Example</h1>
-      <div className="bg-gray-200 rounded-lg p-4">
+      <div className="bg-gray-900 text-green-400 rounded-lg p-4">
         <pre>
           {`.button:hover {
   background-color: blue;
@@ -20,7 +20,7 @@ const PerformanceExample = () => {
       <h1 className="text-2xl mt-10">Avoid Universal Selector for Styling</h1>
       <p>Avoid the universal selector (*) when not strictly necessary. The universal selector (*) affects every element and can slow down page rendering.</p>
       <h1 className="text-2xl mt-5">Example</h1>
-      <div className="bg-gray-200 rounded-lg p-4 mt-2">
+      <div className="bg-gray-900 text-green-400 rounded-lg p-4 mt-2">
         <pre>
           {`* {
   margin: 0;
@@ -31,7 +31,7 @@ const PerformanceExample = () => {
       </div>
       <h1 className="text-2xl mt-10">Avoid Inline Styles</h1>
       <p>Inline styles add unnecessary weight to your HTML and reduce maintainability—avoid them when you can.</p>
-      <div className="bg-gray-200 rounded-lg p-4 mt-5">
+      <div className="bg-gray-900 text-green-400 rounded-lg p-4 mt-5">
         <pre>
           {`<div style="color: red; font-size: 18px;">Hello</div>
 <p style="color: blue; font-size: 16px;">Test</p>`}
@@ -42,7 +42,7 @@ const PerformanceExample = () => {
       <p>Avoid using <span className="bg-gray-200 px-1 rounded-md">@import</span> to load external CSS files, as it can delay stylesheet loading and negatively affect performance.</p>
       <p>Add external CSS with the {'<link>'} tag in the head section, so it loads before the page is rendered.</p>
       <h1 className="text-2xl mt-3">Example</h1>
-      <div className="bg-gray-200 rounded-lg p-4 mt-3">
+      <div className="bg-gray-900 text-green-400 rounded-lg p-4 mt-3">
         <pre>
           {`<link rel="stylesheet" href="style.css">`}
         </pre>
@@ -50,7 +50,7 @@ const PerformanceExample = () => {
 
       <h1 className="text-2xl mt-10 mb-2">Use Shorthand Properties</h1>
       <p>Leveraging shorthand properties reduces stylesheet size and improves parsing performance during rendering.</p>
-      <div className="bg-gray-200 rounded-lg p-4 mt-5">
+      <div className="bg-gray-900 text-green-400 rounded-lg p-4 mt-5">
         <pre>
           {`/* Long version */
 margin-top: 10px;

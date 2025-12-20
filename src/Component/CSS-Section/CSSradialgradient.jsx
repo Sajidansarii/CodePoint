@@ -2,7 +2,7 @@ import React from "react";
 
 const RadialGradientDemo = () => {
   return (
-    <div className="p-8 min-h-screen space-y-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium text-blue-500">
         CSS Radial Gradient 
       </h1>
@@ -19,7 +19,7 @@ const RadialGradientDemo = () => {
       </div>
 
      <h2 className="text-2xl">Example</h2>
-      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
         <code>
           {`.radial-gradient-box {
   background: radial-gradient(circle,yellow, orange); 
@@ -35,7 +35,7 @@ const RadialGradientDemo = () => {
         Multi-color Radial Gradient
       </div>
       <h2 className="text-2xl">Example:</h2>
-      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
         <code>
           {`.radial-gradient-box{
           hover:scale-(1.25);
@@ -55,7 +55,7 @@ const RadialGradientDemo = () => {
       <div className="h-80 w-96 rounded-lg bg-[radial-gradient(circle,#10b981,#FFFF00,#FF0000_)] flex items-center justify-center text-white font-bold transform transition duration-500 hover:brightness-125">
         Circle
       </div>
-      <pre className="bg-gray-200 p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
         <code>
           {`.radial-gradient-box{
           hover:scale-(1.25);
@@ -74,7 +74,7 @@ const RadialGradientDemo = () => {
       </ul>
       <h1 className="text-2xl">Example</h1>
       <p>A radial gradient with different size keywords:</p>
-      <pre className="bg-gray-200 p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
         <code>
           {`.radial-gradient-box{
   background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black);
@@ -93,7 +93,7 @@ const RadialGradientDemo = () => {
      <div className="h-80 w-full rounded-lg bg-[repeating-radial-gradient(red,yellow_10%,green_15%)] flex items-center justify-center text-white font-bold transform transition duration-500 hover:brightness-125">
         Circle
       </div>
-      <pre className="bg-gray-200 p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
         <code>
           {`.radial-gradient-box{
           background-color: repeating-radial-gradient(red,yellow 10%,green 15%);
@@ -102,20 +102,7 @@ const RadialGradientDemo = () => {
         </code>
       </pre>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <p className="text-gray-700">
+      <p>
         ✅ Tips:
         <ul className="list-disc list-inside mt-2">
           <li>Use 2–3 colors for smooth blending.</li>

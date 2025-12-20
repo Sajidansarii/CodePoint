@@ -2,7 +2,7 @@ import React from "react";
 
 const CssGradientDemo = () => {
   return (
-    <div className="p-8 min-h-screen space-y-6">
+    <div className="p-8 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium text-blue-500">
         CSS Gradients
       </h1>

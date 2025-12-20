@@ -2,37 +2,37 @@ import React from "react";
 
 const CSSBorder = () => {
   return (
-    <div className="p-4 sm:p-6 bg-gray-50 min-h-screen">
+    <div className="p-4 sm:p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS Borders</h1>
 
-      <p className="text-gray-700 mb-4">
+      <p className="mb-4">
         The <strong>CSS border</strong> properties allow you to define the style, 
         width, and color of an element's border. Borders help to visually separate 
         elements on a page.
       </p>
 
-      <h2 className="text-xl font-semibold text-gray-800 mb-2">
+      <h2 className="text-xl font-semibold mb-2">
         Common Border Properties
       </h2>
-      <ul className="list-disc list-inside text-gray-700 mb-4">
+      <ul className="list-disc list-inside mb-4">
         <li>
-          <code className="bg-gray-200 px-1 rounded">border-style</code> – sets
+          <code className="bg-gray-50 text-red-400 px-1 rounded">border-style</code> – sets
           the type of border (solid, dotted, dashed, etc.).
         </li>
         <li>
-          <code className="bg-gray-200 px-1 rounded">border-width</code> – sets
+          <code className="bg-gray-50 text-red-400 px-1 rounded">border-width</code> – sets
           the thickness of the border.
         </li>
         <li>
-          <code className="bg-gray-200 px-1 rounded">border-color</code> – sets
+          <code className="bg-gray-50 text-red-400 px-1 rounded">border-color</code> – sets
           the border color.
         </li>
         <li>
-          <code className="bg-gray-200 px-1 rounded">border</code> – shorthand
+          <code className="bg-gray-50 text-red-400 px-1 rounded">border</code> – shorthand
           to set width, style, and color in one line.
         </li>
         <li>
-          <code className="bg-gray-200 px-1 rounded">border-radius</code> – used
+          <code className="bg-gray-50 text-red-400 px-1 rounded">border-radius</code> – used
           to make rounded corners.
         </li>
       </ul>
@@ -41,7 +41,7 @@ const CSSBorder = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 1: Border Styles
       </h2>
-      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
         <pre>
 {`p {
   border-style: solid;
@@ -70,7 +70,7 @@ p {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 2: Border Width & Color
       </h2>
-      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
         <pre>
 {`div {
   border: 5px solid red;
@@ -93,7 +93,7 @@ div {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 3: Rounded Borders
       </h2>
-      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
         <pre>
 {`div {
   border: 2px solid green;

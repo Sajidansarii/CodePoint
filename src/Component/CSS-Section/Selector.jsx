@@ -2,48 +2,48 @@ import React from "react";
 
 const CSSSelectors = () => {
   return (
-    <div className="p-4 sm:p-6 bg-gray-50 min-h-screen">
+    <div className="p-4 sm:p-6  max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS Selectors</h1>
 
-      <p className="text-gray-700 mb-4">
+      <p className="mb-4">
         CSS selectors are used to target <strong>HTML elements</strong> that you
         want to style. A selector tells the browser <em>which element(s)</em> a
         CSS rule applies to.
       </p>
 
-      <h2 className="text-xl font-semibold text-gray-800 mb-2">
+      <h2 className="text-xl font-semibold mb-2">
         Types of CSS Selectors
       </h2>
 
-      <ul className="list-disc list-inside text-gray-700 mb-6">
+      <ul className="list-disc list-inside mb-6">
         <li>
-          <strong>Universal Selector (*):</strong> Selects all elements on a page.
+          <span className="text-red-400 bg-gray-50 px-1 rounded">Universal Selector (*):</span> Selects all elements on a page.
         </li>
         <li>
-          <strong>Type Selector (element):</strong> Selects all elements of a given type
+          <span className="text-red-400 bg-gray-50 px-1 rounded">Type Selector (element):</span> Selects all elements of a given type
           (e.g., <code>p</code>, <code>h1</code>).
         </li>
         <li>
-          <strong>Class Selector (.classname):</strong> Selects elements with a
+          <span className="text-red-400 bg-gray-50 px-1 rounded">Class Selector (.classname):</span> Selects elements with a
           specific class attribute.
         </li>
         <li>
-          <strong>ID Selector (#id):</strong> Selects an element with a specific ID.
+          <span className="text-red-400 bg-gray-50 px-1 rounded">ID Selector (#id):</span> Selects an element with a specific ID.
         </li>
         <li>
-          <strong>Group Selector (A, B):</strong> Selects multiple elements at once.
+          <span className="text-red-400 bg-gray-50 px-1 rounded">Group Selector (A, B):</span> Selects multiple elements at once.
         </li>
         <li>
-          <strong>Descendant Selector (A B):</strong> Selects elements inside another element.
+          <span className="text-red-400 bg-gray-50 px-1 rounded">Descendant Selector (A B):</span> Selects elements inside another element.
         </li>
         <li>
-          <strong>Attribute Selector ([attribute]):</strong> Selects elements with a specific attribute.
+          <span className="text-red-400 bg-gray-50 px-1 rounded">Attribute Selector ([attribute]):</span> Selects elements with a specific attribute.
         </li>
       </ul>
 
-      <h2 className="text-xl font-semibold text-gray-800 mb-2">Examples</h2>
+      <h2 className="text-xl font-semibold  mb-2">Examples</h2>
 
-      <div className="bg-gray-200  p-4 rounded-lg overflow-x-auto mb-6 text-sm">
+      <div className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto mb-6 text-sm">
         <pre>
 {`/* Universal Selector */
 * {
@@ -96,7 +96,7 @@ input[type="text"] {
       </ul>
 
       <p className="text-gray-700 mt-4">
-        👉 Selectors are the foundation of CSS. They let you control exactly
+        Selectors are the foundation of CSS. They let you control exactly
         which elements your styles apply to.
       </p>
     </div>

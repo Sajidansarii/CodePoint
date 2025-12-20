@@ -2,7 +2,7 @@ import React from "react";
 
 const CssTooltipsAnimation = () => {
   return (
-    <div className="p-8 min-h-screen space-y-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Title */}
       <h1 className="text-3xl font-medium text-blue-500">
         CSS Tooltips with Animation
@@ -16,7 +16,7 @@ const CssTooltipsAnimation = () => {
       {/* Example 1: Fade In Tooltip */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">1. Fade-in Tooltip</h2>
-        <pre className="bg-gray-20 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto text-left">
 {`.tooltip {
   position: relative;
   display: inline-block;
@@ -60,7 +60,7 @@ const CssTooltipsAnimation = () => {
       {/* Example 2: Slide-in Tooltip */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">2. Slide-in Tooltip</h2>
-        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 p-4 text-green-400 rounded-lg text-sm overflow-x-auto text-left">
 {`.tooltip .tooltip-text {
   visibility: hidden;
   opacity: 0;
@@ -94,7 +94,7 @@ const CssTooltipsAnimation = () => {
       {/* Example 3: Bounce Animation Tooltip */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">3. Bounce Tooltip</h2>
-        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto text-left">
 {`@keyframes bounceIn {
   0%   { transform: translateY(10px); opacity: 0; }
   50%  { transform: translateY(-5px); opacity: 1; }
@@ -143,7 +143,7 @@ const CssTooltipsAnimation = () => {
             <strong>Slide-in Tooltip</strong> → At the start position, translateY is used, and on hover, it returns back to its original position.
           </li>
           <li>
-            <strong>Bounce Tooltip</strong> → A custom animation was created using @keyframes that first slides and then gives a bounce <span className="ml-32">effect.</span>
+            <strong>Bounce Tooltip</strong> → A custom animation was created using @keyframes that first slides and then gives a bounce effect.
           </li>
           <li>
            In all tooltips, position: relative is used for the parent, and position: absolute is used for the tooltip text.

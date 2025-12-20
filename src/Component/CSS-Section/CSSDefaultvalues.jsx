@@ -124,7 +124,7 @@ const CssDefaultValues = () => {
     {Element:'wbr', DefaultCSSValue:'None.'}
   ];
   return (
-    <div className="p-6 max-w-3xl">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Title */}
       <h2 className="text-3xl text-blue-500 font-medium mb-4">CSS Default Values</h2>
       <h1 className="text-2xl mb-5">Default CSS Values for HTML Elements</h1>

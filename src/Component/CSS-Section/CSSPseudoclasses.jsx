@@ -2,7 +2,7 @@ import React from "react";
 
 const CssPseudoClassesDemo = () => {
   return (
-    <div className="p-8  min-h-screen">
+    <div className="p-8  max-w-4xl space-y-6 mt-10">
 <h1 className="text-3xl font-medium text-blue-500">CSS Pseudo-Classes</h1>
       <p className="mt-5">A CSS pseudo-class is a selector keyword used to apply styles to elements based on their state or position in the document structure.</p>
       <p className="mt-3">Common applications of CSS pseudo-classes include:</p>
@@ -15,7 +15,7 @@ const CssPseudoClassesDemo = () => {
       </ul>
       <h1 className="text-2xl mt-10">Syntax</h1>
       <p className="mt-3">CSS pseudo-classes are denoted using a single colon (:) preceding the pseudo-class identifier.</p>
-      <div className="mt-5 bg-gray-200 p-4 rounded-lg">
+      <div className="mt-5 bg-gray-900 text-green-400 p-4 rounded-lg">
         <pre>
           {`selector:pseudo-class-name {
   CSS properties
@@ -45,7 +45,7 @@ const CssPseudoClassesDemo = () => {
       </ul>
       <h1 className="text-2xl mt-10 mb-2">Example</h1>
       <p>Apply distinct color styles to links according to their interaction state (e.g., default, visited, hover, active).</p>
-      <div className="bg-gray-200 p-4 rounded-lg mt-10">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-10">
         <pre>
           {`/* unvisited link */
 a:link {
@@ -72,7 +72,7 @@ a:active {
       <h1 className="text-2xl mt-10 mb-2">:hover on {'<div>'}</h1>
       <p>Below is an example demonstrating the use of the :hover pseudo-class on a {'<div>'} to apply styles when it is hovered.</p>
       <h1 className="text-2xl mt-2">Example</h1>
-      <div className="bg-gray-200 mt-3 p-4 rounded-lg">
+      <div className="bg-gray-900 text-green-400 mt-3 p-4 rounded-lg">
         <pre>
           {`div:hover {
   background-color: blue;
@@ -83,7 +83,7 @@ a:active {
       <h1 className="text-2xl mt-10 mb-2">:Focus on {'<input>'}</h1>
       <p>This example showcases the use of the :focus pseudo-class to apply styles to an input element when it receives focus.</p>
       <h1 className="text-2xl mt-4">Exapmle</h1>
-      <div  className="bg-gray-200 mt-5 p-4 rounded-lg">
+      <div  className="bg-gray-900 text-green-400 mt-5 p-4 rounded-lg">
         <pre>
           {`input:focus {
   background-color: yellow;
@@ -94,7 +94,7 @@ a:active {
       <p>Pseudo-classes may be combined with class selectors to target elements in particular states within a specific class.</p>
       <h1 className="text-2xl mt-5 mb-2">Example</h1>
       <p>Target the {'<a>'} element with the class highlight using the :hover pseudo-class to define hover-specific styles.</p>
-      <div className="bg-gray-200 p-4 rounded-lg mt-5">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5">
         <pre>
           {`a.highlight:hover {
   color: #ff0000;
@@ -121,7 +121,7 @@ a:active {
 </div>
 
       <h1 className="text-2xl mt-5">Example</h1>
-      <div className="bg-gray-200 p-4  rounded-lg">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
         <pre>
           {`.tooltip-container {
   position: relative;
@@ -167,7 +167,7 @@ a:active {
       <h1 className="text-xl mt-3">Style all first child {'<p>'} elements</h1>
       <p className="mt-3">This selector targets all {'<p>'} elements that are the first child within their parent element.</p>
       <h1 className="text-2xl mt-5">Example</h1>
-      <div className="bg-gray-200 p-4 rounded-lg mt-5">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5">
         <pre>
           {`p:first-child {
   color: blue;
@@ -178,7 +178,7 @@ a:active {
       <h1 className="text-xl mt-10">Style the first {'<em>'} element in all {'<p>'} elements</h1>
       <p className="mt-5">Here, the selector selects the first{' <em>'} element that appears within all {'<p>'} elements.</p>
       <h1 className="text-2xl mt-5">Example</h1>
-      <div className="bg-gray-200 p-4 rounded-lg mt-5">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5">
         <pre>
           {`p em:first-child {
   color: blue;
@@ -189,7 +189,7 @@ a:active {
       <h1 className="text-xl mt-10">Style all {'<em>'} elements in all first child {'<p>'} elements</h1>
       <p className="mt-5">Here, the selector applies to all {'<em>'} elements located in {'<p>'} tags, as long as the {'<p>'} is the first child of its parent.</p>
       <h1 className="text-2xl mt-5">Example</h1>
-      <div className="bg-gray-200 p-4 rounded-lg mt-5">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5">
         <pre>
           {`p:first-child em {
   color: blue;
@@ -200,7 +200,7 @@ a:active {
       <h1 className="text-2xl mt-10">The CSS :lang() Pseudo-class</h1>
       <p className="mt-5">You can use the <span className="text-red-500">:lang()</span> pseudo-class to target elements with a specific lang attribute value.</p>
       <h1 className="text-2xl mt-5">Example</h1>
-      <div className="bg-gray-200 p-4 rounded-lg mt-5">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5">
         <pre>
           {`<html>
 <head>
@@ -219,13 +219,6 @@ q:lang(no) {
 `}
         </pre>
       </div>
-
-
-
-
-
-
-
     </div>
   );
 };

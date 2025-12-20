@@ -20,15 +20,15 @@ const HTMLDragAndDrop = () => {
   };
 
   return (
-    <div className="p-4 max-w-3xl">
+    <div className="p-4 max-w-4xl">
       <h1 className="text-3xl font-medium text-blue-500 mb-4">HTML Drag and Drop</h1>
 
-      <p className="text-gray-700 mb-4">
+      <p className="leading-relaxed mb-3">
         The <strong>Drag and Drop API</strong> allows users to drag elements and drop them into other parts of the web page. This feature is commonly used in image uploaders, to-do lists, file explorers, and more.
       </p>
 
       {/* Features */}
-      <ul className="list-disc pl-5 text-gray-700 mb-6">
+      <ul className="list-disc pl-5 leading-relaxed mb-3">
         <li>Draggable elements must have <code>draggable="true"</code></li>
         <li>Use events: <code>onDragStart</code>, <code>onDragOver</code>, <code>onDrop</code></li>
         <li>Uses the <code>dataTransfer</code> object to pass information</li>
@@ -65,7 +65,7 @@ const HTMLDragAndDrop = () => {
       {/* Code Snippet */}
       <div className="mb-6">
         <h3 className="text-xl font-semibold text-blue-500 mb-2">JavaScript Example</h3>
-        <pre className="bg-gray-100 p-3 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 text-sm overflow-x-auto">
           <code>{`element.addEventListener("dragstart", (event) => {
   event.dataTransfer.setData("text", event.target.id);
 });

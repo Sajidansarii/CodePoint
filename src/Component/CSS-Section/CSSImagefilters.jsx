@@ -17,11 +17,11 @@ const ImageFilterTutorial = () => {
     {Value:'inherit', Description:'It inherits the property from the parent element.'},
   ];
   return (
-    <div className="p-6 space-y-8">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Heading */}
       <h1 className="text-3xl font-medium text-blue-500">CSS Image Filters</h1>
-      <p className="text-gray-700">
-        The <code className="bg-gray-200 px-1 rounded">filter</code> property in CSS is used to apply 
+      <p>
+        The <code className="bg-gray-50 px-1 rounded text-red-400 ">filter</code> property in CSS is used to apply 
         visual effects to images like <b>blur</b>, <b>grayscale</b>, <b>brightness</b>, and more.  
         Filters make images more stylish without editing them in Photoshop.
       </p>

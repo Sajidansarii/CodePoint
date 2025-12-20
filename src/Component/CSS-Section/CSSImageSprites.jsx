@@ -1,16 +1,6 @@
 import React from "react";
 
-/**
- * CSS Image Sprites
- * - One image contains many smaller icons.
- * - Each icon is shown by shifting background-position.
- * - Benefits: fewer network requests, better caching, consistent rendering.
- */
 const CssImageSprites = () => {
-  // A tiny 3-icon sprite made as an inline SVG (96x32).
-  //  ┌──────────┬──────────┬──────────┐
-  //  │  ORANGE  │   BLUE   │  GREEN   │  (each cell = 32x32)
-  //  └──────────┴──────────┴──────────┘
   const SPRITE =
     "data:image/svg+xml;utf8," +
     encodeURIComponent(
@@ -21,9 +11,8 @@ const CssImageSprites = () => {
        </svg>`
     );
 
-  // Utility styles: one base "icon" and 3 variants that shift background-position.
   const base = {
-    backgroundImage: url("${SPRITE}"),
+    backgroundImage: `url(${SPRITE})`,
     backgroundRepeat: "no-repeat",
     width: "32px",
     height: "32px",
@@ -31,14 +20,13 @@ const CssImageSprites = () => {
   };
 
   const icons = {
-    // column offsets: 0, -32px, -64px
     star: { backgroundPosition: "0 0" }, // orange
     user: { backgroundPosition: "-32px 0" }, // blue
     check: { backgroundPosition: "-64px 0" }, // green
   };
 
   return (
-    <div className="p-6 max-w-4xl mx-auto">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium text-blue-500 mb-3">CSS Image Sprites</h1>
       <p className="mb-4">
         A <strong>CSS image sprite</strong> combines multiple icons into a single image file.
@@ -48,11 +36,11 @@ const CssImageSprites = () => {
 
       {/* Live Icons */}
       <h2 className="text-xl font-semibold mt-4 mb-2">Live Demo</h2>
-      <div className="flex items-center gap-4 mb-4">
+       <div className="flex items-center gap-4 mb-4">
         <span style={{ ...base, ...icons.star }} aria-hidden="true" />
         <span style={{ ...base, ...icons.user }} aria-hidden="true" />
         <span style={{ ...base, ...icons.check }} aria-hidden="true" />
-      </div>
+      </div> 
 
       {/* Buttons with icons */}
       <div className="flex flex-wrap gap-3 mb-6">
@@ -72,16 +60,17 @@ const CssImageSprites = () => {
 
       {/* Pure CSS version (copy/paste) */}
       <h2 className="text-xl font-semibold mt-4 mb-2">CSS Setup (Sprite + Positions)</h2>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto text-sm">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
 {`.icon {
   display: inline-block;
   width: 32px;
   height: 32px;
   background-repeat: no-repeat;
-  background-image: url('sprite.png'); /* your sprite */
+  background-image: url('sprite.png');  your sprite
 }
 
-/* Each class shifts the window over the sprite */
+ Each class shifts the window over the sprite 
+
 .icon-star  { background-position:   0    0; }
 .icon-user  { background-position: -32px  0; }
 .icon-check { background-position: -64px  0; }`}
@@ -89,7 +78,7 @@ const CssImageSprites = () => {
 
       {/* HTML usage snippet */}
       <h2 className="text-xl font-semibold mt-4 mb-2">HTML Usage</h2>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto text-sm">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
 {`<button class="btn">
   <span class="icon icon-star" aria-hidden="true"></span>
   Favorite
@@ -102,11 +91,11 @@ const CssImageSprites = () => {
         If you export a sprite at <strong>2× size</strong> (e.g., each icon 64×64),
         set <code>background-size</code> to the <em>logical</em> size so icons remain crisp:
       </p>
-      <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-x-auto text-sm">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
 {`.icon {
   width: 32px; height: 32px;
-  background-image: url('sprite@2x.png'); /* double-size sprite */
-  background-size: 96px 32px; /* total logical size (3 * 32) */
+  background-image: url('sprite@2x.png');  double-size sprite 
+  background-size: 96px 32px; total logical size (3 * 32)
 }
 
 .icon-star  { background-position:    0     0; }

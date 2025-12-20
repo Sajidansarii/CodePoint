@@ -366,19 +366,19 @@ const CssBrowserSupport = () => {
      {Property:'zoom', chrome:'12', safari:'126', firefox:'1', Edge:'3.1', opera:'15'},
   ];
   return (
-    <div className="p-6 max-w-3xl">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Title */}
       <h2 className="text-3xl text-blue-500 font-medium mb-4"> CSS Browser Support</h2>
 
       {/* Intro */}
-      <p className="text-gray-700 mb-6">
+      <p className="mb-6">
         Not all CSS properties work the same in every browser. To support new CSS features, some browsers use vendor prefixes.
       </p>
       <h1 className="text-2xl mb-3">CSS Reference With Browser Support</h1>
       <p>Here is a list of all CSS properties along with their support status in major browsers.</p>
       <p className="mt-4 mb-10">Beside each browser icon, the number indicates the version that first included support for the property.</p>
 
-      <table className="min-w-full border border-gray-300 text-gray-700 text-sm txet-left rounded-md mb-10">
+      <table className="min-w-full border border-gray-300 text-sm txet-left rounded-md mb-10">
         <thead>
           <tr className="bg-gray-100">
             <th className="px-4 py-2 border-b border-gray-300">Property</th>

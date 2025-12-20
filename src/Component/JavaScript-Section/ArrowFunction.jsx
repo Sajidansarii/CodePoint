@@ -1,99 +1,91 @@
 import React from 'react';
 
 const ArrowFunctionDemo = () => {
-  // 1. Basic arrow function
-  const greet = (name) => `Hello, ${name}!`;
-
-  // 2. Arrow function with implicit return
-  const square = (n) => n * n;
-
-  // 3. Arrow function without parameters
-  const getTime = () => new Date().toLocaleTimeString();
-
-  // 4. Arrow function with multiple parameters
-  const add = (a, b) => a + b;
-
-  // 5. Arrow function returning object
-  const getUser = () => ({ name: "Alice", age: 25 });
-
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded space-y-6">
+    <div className="max-w-4xl p-6">
       <h1 className="text-3xl font-medium text-blue-500"> JavaScript Arrow Functions</h1>
+      
+      <p>Introduced in ES6, arrow functions provide a shorter syntax, letting you omit the function keyword, return, and curly braces.</p>
 
-      {/* Introduction */}
-      <section>
-        <p className="text-gray-700">
-          Arrow functions are a concise way to write functions using the <code>=&gt;</code> syntax.
-          They are especially useful for short, anonymous functions.
-        </p>
-      </section>
-
-      {/* Example 1 */}
-      <section>
-        <h2 className="text-xl font-semibold text-gray-800">1. Basic Arrow Function</h2>
-        <p className="text-gray-600">A simple function that greets a user.</p>
-        <pre className="bg-gray-100 p-3 rounded mt-2 whitespace-pre-wrap">
-{`const greet = (name) => \`Hello, \${name}!\`;
-
-greet("John") → ${greet("John")}`}
+      <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Before Arrow:</h1>
+       <p>A function used to multiply a and b.</p>
+       <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+          <code>
+            {`let myFunction = function(a, b) {return a * b}`}
+          </code>
         </pre>
-      </section>
 
-      {/* Example 2 */}
-      <section>
-        <h2 className="text-xl font-semibold text-gray-800">2. Implicit Return</h2>
-        <p className="text-gray-600">When there's only one expression, you can omit the return keyword and braces.</p>
-        <pre className="bg-gray-100 p-3 rounded mt-2 whitespace-pre-wrap">
-{`const square = (n) => n * n;
-
-square(5) → ${square(5)}`}
+        <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>With Arrow  </h1>
+        <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+          <code>
+            {`let myFunction = (a, b) => a * b;`}
+          </code>
         </pre>
-      </section>
 
-      {/* Example 3 */}
-      <section>
-        <h2 className="text-xl font-semibold text-gray-800">3. No Parameters</h2>
-        <p className="text-gray-600">Use empty parentheses when there are no parameters.</p>
-        <pre className="bg-gray-100 p-3 rounded mt-2 whitespace-pre-wrap">
-{`const getTime = () => new Date().toLocaleTimeString();
-
-getTime() → ${getTime()}`}
+        <h1 className='text-gray-800 text-2xl font-semibold mt-10 mb-3'>Before Arrow:</h1>
+        <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+          <code>
+            {`let hello = function() {
+  return "Hello World!";
+}`}
+          </code>
         </pre>
-      </section>
 
-      {/* Example 4 */}
-      <section>
-        <h2 className="text-xl font-semibold text-gray-800">4. Multiple Parameters</h2>
-        <p className="text-gray-600">Use regular parentheses when there are two or more parameters.</p>
-        <pre className="bg-gray-100 p-3 rounded mt-2 whitespace-pre-wrap">
-{`const add = (a, b) => a + b;
-
-add(4, 6) → ${add(4, 6)}`}
+        <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>With Arrow Function:</h1>
+        <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+          <code>
+            {`let hello = () => {
+  return "Hello World!";
+}`}
+          </code>
         </pre>
-      </section>
 
-      {/* Example 5 */}
-      <section>
-        <h2 className="text-xl font-semibold text-gray-800">5. Returning Objects</h2>
-        <p className="text-gray-600">Wrap object in parentheses to avoid ambiguity with function body.</p>
-        <pre className="bg-gray-100 p-3 rounded mt-2 whitespace-pre-wrap">
-{`const getUser = () => ({ name: "Alice", age: 25 });
+        <p className='mt-5'>When a function has a single return statement, you can omit both the braces and the return keyword.</p>
 
-getUser() → ${JSON.stringify(getUser())}`}
-        </pre>
-      </section>
+     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Arrow Functions Return Value by Default:</h1>
+     <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+      <code>
+        {`let hello = () => "Hello World!";`}
+      </code>
+     </pre>
 
-      {/* Summary */}
-      <section>
-        <h2 className="text-xl font-semibold text-gray-800">📝 Summary</h2>
-        <ul className="list-disc pl-6 text-gray-700">
-          <li>Arrow functions provide a concise syntax for writing functions.</li>
-          <li>No `function` keyword or curly braces needed (for one-liners).</li>
-          <li>Automatically bind <code>this</code> — no need to manually bind in class methods.</li>
-          <li>Use parentheses when returning an object or using multiple parameters.</li>
-        </ul>
-      </section>
-    </div>
+     <h1 className='text-gray-800 text-2xl font-semibold mt-10 mb-3'>Arrow Function Parameters</h1>
+     <p>When there are parameters, you place them inside the parentheses.</p>
+     <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
+    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+      <code>
+        {`let hello = (val) => "Hello " + val;`}
+      </code>
+    </pre>
+
+    <p className='mt-5'>When there’s just one parameter, the parentheses can be omitted.</p>
+    
+    <h2 className='text-gray-800 text-2xl font-semibold mt-5'>Example</h2>
+    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+      <code>
+        {`let hello = val => "Hello " + val;`}
+      </code>
+    </pre>
+
+    <p className='mt-5'>You can remove the <span className='text-red-400'>return</span> keyword and braces only when the function has one statement, which is why some prefer to keep them for clarity.</p>
+    <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
+    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+      <code>
+        {`// This will not work
+let myFunction = (x, y) => { x * y } ;
+
+// This will not work
+let myFunction = (x, y) => return x * y ;
+
+// Only this will work
+let myFunction = (x, y) => { return x * y };`}
+      </code>
+    </pre>
+
+
+
+     
+     </div>
   );
 };
 

@@ -2,12 +2,12 @@ import React from "react";
 
 const CSSButton = () => {
   return (
-    <div className="p-4 sm:p-6 bg-gray-50 min-h-screen">
+    <div className="p-4 sm:p-6 max-w-4xl space-y-6 mt-10">
       {/* Title */}
       <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS Buttons</h1>
 
       {/* Intro */}
-      <p className="text-gray-700 mb-4">
+      <p className="mb-4">
         Buttons are an essential part of web design, allowing users to perform
         actions like submitting forms, navigating, or triggering JavaScript
         functions. With CSS, you can style buttons to improve usability and
@@ -16,7 +16,7 @@ const CSSButton = () => {
 
       {/* Syntax */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Syntax</h2>
-      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-900 text-green-400  p-4 rounded-lg text-sm mb-4">
         <pre>
 {`button {
   background-color: value;
@@ -36,7 +36,7 @@ const CSSButton = () => {
         Click Me
       </button>
 
-      <div className="bg-gray-200  p-4 rounded-lg text-sm mb-6">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-6">
         <pre>
 {`button {
   background-color: blue;
@@ -95,7 +95,7 @@ button:hover {
         Disabled
       </button>
 
-      <div className="bg-gray-200  p-4 rounded-lg text-sm mt-4 mb-6">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mt-4 mb-6">
         <pre>
 {`button:disabled {
   background-color: gray;

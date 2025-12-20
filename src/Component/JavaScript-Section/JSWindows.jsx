@@ -1,74 +1,82 @@
 import React, { useState } from "react";
 
 const JSWindowBOM = () => {
-  const [output, setOutput] = useState("Click the button to see window object examples...");
-
-  const handleExample = () => {
-    // ✅ Example 1: Alert using window
-    alert("This is a window alert!");
-
-    // ✅ Example 2: Get window dimensions
-    const dimensions = Window `size: ${window.innerWidth} x ${window.innerHeight}`;
-
-    // ✅ Example 3: Scroll position
-    const scrollPos = Scroll `position: X=${window.scrollX}, Y=${window.scrollY}`;
-
-    setOutput(`${dimensions}\n${scrollPos}`);
-  };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-xl shadow-lg mt-10 space-y-6">
-      <h1 className="text-3xl font-medium text-blue-500">
-        window Object in <span className="text-green-600">BOM (Browser Object Model)</span>
-      </h1>
+    <div className="max-w-4xl p-6 mt-10">
+      <h1 className="text-3xl font-medium text-blue-500 mb-3">window Object in BOM (Browser Object Model)</h1>
 
-      <p className="text-gray-700">
-        The <strong>window</strong> object represents the browser window. It is the top-level object
+      <p>
+        The <span className="text-red-400">window</span> object represents the browser window. It is the top-level object
         in the Browser Object Model and provides methods, properties, and events to interact with
         the browser itself, not just the document (DOM).
       </p>
 
-      <button
-        onClick={handleExample}
-        className="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-      >
-        Run Window Examples
-      </button>
+      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The Browser Object Model (BOM)</h1>
+      <p>The Browser Object Model (BOM) has no formal standard; however, most modern browsers support similar methods and properties, which are collectively known as the BOM.</p>
+    
+    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The Window Object</h1>
+   <p className="mb-3">The window object is supported by all browsers and represents the browser window.</p>
+   <p className="mb-3">The window object automatically includes all globally defined JavaScript variables, functions, and objects.</p>
+   <p className="mb-3">Global variables are properties of the window object, and global functions are its methods.</p>
+   <p>Even the document object from the HTML DOM is a property of the window object.</p> 
+  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <code>
+      {`window.document.getElementById("header");`}
+    </code>
+  </pre>
 
-      <div className="p-4 bg-gray-100 rounded-md whitespace-pre-line font-semibold text-gray-800">
-        {output}
-      </div>
+  <p className="mt-5">is the same as:</p>
+  
+  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <code>
+      {`document.getElementById("header");`}
+    </code>
+  </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800">Code Example:</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
-{`// Show an alert
-window.alert("This is a window alert!");
+  <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Window Size</h1>
+  <p className="mb-3">Two properties are available for measuring the browser window size.</p>
+  <p>Both properties return the sizes in pixels:</p>
+  <ul className="list-[square] list-inside mt-3">
+    <li><span className="text-red-400">window.innerWidth</span> - the inner width of the browser window (in pixels)</li>
+    <li><span className="text-red-400">window.innerHeight</span> - the inner height of the browser window (in pixels)</li>
+  </ul>
+  <h2 className="text-2xl text-gra8 font-semibold mt-5">Example</h2>
+  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <code>
+      {`let w = window.innerWidth;
+let h = window.innerHeight;`}
+    </code>
+  </pre>
 
-// Get window size
-console.log("Window size: " + window.innerWidth + " x " + window.innerHeight);
+  <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Other Window Methods</h1>
+  <p>Some other methods:</p>
+  <ul className="list-[square] list-inside mt-3">
+    <li><span className="text-red-400">window.open()</span> - open a new window</li>
+    <li><span className="text-red-400">window.close()</span> - close the current window</li>
+    <li><span className="text-red-400">window.moveTo()</span> - move the current window</li>
+    <li><span className="text-red-400">window.resizeTo()</span> - resize the current window</li>
+  </ul>
 
-// Get scroll position
-console.log("Scroll position: X=" + window.scrollX + ", Y=" + window.scrollY);`}
-      </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800">Explanation:</h2>
-      <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li>
-          <strong>window.alert():</strong> Displays an alert dialog in the browser.
-        </li>
-        <li>
-          <strong>window.innerWidth / innerHeight:</strong> Returns the width and height of the browser window's viewport.
-        </li>
-        <li>
-          <strong>window.scrollX / scrollY:</strong> Returns the current horizontal and vertical scroll position.
-        </li>
-        <li>
-          The <strong>window</strong> object is the global object in the browser; all global variables and functions are properties of window.
-        </li>
-        <li>
-          Useful for controlling browser behavior, detecting window size, handling scrolling, and more.
-        </li>
-      </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 };

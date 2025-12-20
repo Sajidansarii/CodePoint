@@ -7,13 +7,13 @@ export default function KeyframesDemo() {
     {value:'css-styles', description:'It specifies the CSS style properties that have to undergo changes during the animation.'},
   ];
   return (
-    <div className="flex flex-col  min-h-screen p-4 space-y-6">
+    <div className="flex flex-col  max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl sm:text-3xl font-medium text-blue-500">
         CSS @keyframes with Tailwind
       </h1>
       <p>CSS @keyframes defines animations by mapping styles to specific points in the animation timeline. Each keyframe represents a state at a percentage of the total duration, from 0% to 100%, enabling smooth transitions between styles.</p>
       <h1 className="text-2xl">Syntax</h1>
-      <div className="bg-gray-200 p-4 rounded-lg">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
         <pre>
           {`@keyframes animation-name {keyframes-selector {css-styles;}}`}
         </pre>
@@ -42,7 +42,7 @@ export default function KeyframesDemo() {
        <h1 className="text-2xl">Color Changing Animation using @Keyframe</h1>
        <p>The example below features a @keyframes animation named colorchange, which transitions through keyframes at 0%, 25%, 50%, 75%, and 100%. It animates changes in the background-color, color, and top CSS properties.</p>
        <h1 className="text-2xl">Example</h1>
-       <div className="bg-gray-200 p-4 rounded-lg">
+       <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
         <pre>
           {`<!DOCTYPE html>
 <html>
@@ -92,7 +92,7 @@ export default function KeyframesDemo() {
        <h1 className="text-2xl">Motion Example using @Keyframes</h1>
        <p>The following example features a @keyframes animation named motion, defined at 0%, 50%, and 100%. It animates horizontal movement by changing the translateX transform property.</p>
        <h1 className="text-2xl">Example</h1>
-       <div className="bg-gray-200 p-4 rounded-lg">
+       <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
         <pre>
           {`<!DOCTYPE html>
 <html>
@@ -160,8 +160,6 @@ export default function KeyframesDemo() {
 </html>`}
         </pre>
        </div>
-       
-
     </div>
   );
 }

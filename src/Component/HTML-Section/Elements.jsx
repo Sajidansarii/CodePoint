@@ -1,13 +1,13 @@
 const HTMLElements = () => {
   return (
-    <div className="p-4 max-w-3xl">
+    <div className="p-4 max-w-4xl">
       {/* Title */}
       <h1 className="text-3xl sm:text-4xl font-medium text-blue-500 mb-4 text-center sm:text-left">
         HTML Elements
       </h1>
 
       {/* Intro */}
-      <p className="text-gray-700 mb-4">
+      <p className="mb-4">
         An <strong>HTML element</strong> is the building block of a webpage. It consists of a start tag, content (sometimes), and an end tag. Elements define structure and meaning: headings, paragraphs, links, images, and more.
       </p>
 
@@ -101,18 +101,18 @@ const HTMLElements = () => {
       {/* Nesting & Best Practices */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-2">Nesting & Best Practices</h2>
-        <p className="text-gray-700 mb-2">
+        <p className="text-gray-700 leading-relaxed mb-2">
           You can put elements inside other elements. This is called <strong>nesting</strong>. Always make sure your tags are properly closed and nested to avoid rendering problems.
         </p>
 
-        <pre className="bg-gray-100 p-3 rounded mb-2 overflow-x-auto text-sm">
-          <code>{`<div>
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-2 overflow-x-auto text-sm">
+            {`<div>
   <h2>Title</h2>
   <p>This is a <strong>nested</strong> paragraph.</p>
-</div>`}</code>
+</div>`}
         </pre>
 
-        <p className="text-gray-700 mb-2">
+        <p className="mb-2">
           <strong>Good:</strong> Block inside block, inline inside block.  
           <strong>Bad:</strong> Putting block-level tags inside inline tags inappropriately.
         </p>

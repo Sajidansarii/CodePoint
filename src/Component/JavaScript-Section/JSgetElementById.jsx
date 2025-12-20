@@ -1,78 +1,97 @@
 import React, { useState } from "react";
 
 const JSGetElementById = () => {
-  const [output, setOutput] = useState("Click the button to see the result...");
+  const data = [
+    {Parameter:'id', Description:'Required.\nThe id value of an element.'},
+  ];
 
-  const handleExample = () => {
-    // ✅ Access DOM element by ID
-    const element = document.getElementById("demo");
-    element.style.backgroundColor = "#4f46e5"; // Tailwind indigo-700 equivalent
-    element.style.color = "white";
-    element.textContent = "✅ Element updated using getElementById!";
-
-    setOutput("DOM element updated successfully.");
-  };
+  const data1 = [
+    {Type:'Object', Description:'The element with the specified id.\nnull if the element does not exist.'},
+  ];
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-xl shadow-lg mt-10 space-y-6">
-      <h1 className="text-3xl font-medium text-blue-500">
-        getElementById in <span className="text-green-600">JavaScript</span>
-      </h1>
+    <div className="max-w-4xl p-6 mt-10">
+      <h1 className="text-3xl font-medium text-blue-500 mb-3">GetElementById in JavaScript</h1>
 
-      <p className="text-gray-700">
-        The <strong>document.getElementById()</strong> method is used to select
-        an HTML element by its <strong>id</strong>. Once selected, you can
+      <p>
+        The <span className="text-red-400">document.getElementById()</span> method is used to select
+        an HTML element by its <span className="text-red-400">id</span>. Once selected, you can
         manipulate its content, styles, or attributes using JavaScript.
       </p>
 
-      <button
-        onClick={handleExample}
-        className="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-      >
-        Update Element
-      </button>
-
-      <div
-        id="demo"
-        className="p-4 bg-gray-100 rounded-md font-semibold text-gray-800"
-      >
-        This is the element with ID "demo".
-      </div>
-
-      <div className="p-4 bg-gray-200 rounded-md font-semibold text-gray-700">
-        {output}
-      </div>
-
-      <h2 className="text-2xl font-semibold text-gray-800">Code Example:</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
-{`// Select element by ID
-const element = document.getElementById("demo");
-
-// Change background color and text
-element.style.backgroundColor = "indigo";
-element.style.color = "white";
-element.textContent = "✅ Element updated using getElementById!";`}
+      <p className="mt-10">Access the element using its id</p>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <code>
+          {`document.getElementById("demo");`}
+        </code>
       </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800">Explanation:</h2>
-      <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li>
-          <code>document.getElementById("id")</code> returns the element with
-          the specified ID.
-        </li>
-        <li>
-          Once selected, you can manipulate the element’s <code>style</code>,
-          <code>textContent</code>, or other attributes.
-        </li>
-        <li>
-          This is one of the most common ways to interact with specific elements
-          in the DOM.
-        </li>
-        <li>
-          Only one element can have a given ID, so this method returns a single
-          element (or <code>null</code> if not found).
-        </li>
-      </ul>
+
+      <p className="mt-10">Select the element and set a new color</p>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <code>
+          {`const myElement = document.getElementById("demo");
+myElement.style.color = "red";`}
+        </code>
+      </pre>
+
+
+      
+      <p className="mt-10">Or alternatively, update its color property</p>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <code>
+          {`document.getElementById("demo").style.color = "red";`}
+        </code>
+      </pre>
+
+      <p className="mt-10 mb-3">The <span className="text-red-400">getElementById()</span> method returns the element with the given id, or null if no such element exists.</p>
+      <p>The <span className="text-red-400">getElementById()</span> method is a frequently used HTML DOM method, commonly used to access or modify elements.</p>
+      
+
+      <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Syntax</h2>
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <code>
+          {`document.getElementById(elementID)`}
+        </code>
+      </pre>
+
+      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Parameters</h1>
+     <table className="min-w-full border border-gray-300 text-gray-700 text-sm text-left mt-5">
+      <thead>
+        <tr className="bg-gray-100">
+          <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Parameter</th>
+          <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {data.map((row,index)=>(
+          <tr className="cursor-text hover:bg-gray-100">
+            <td className="px-4 py-2 border-b border-gray-200">{row.Parameter}</td>
+            <td className="px-4 py-2 border-b border-gray-200 whitespace-pre-line">{row.Description}</td>
+          </tr>
+        ))}
+      </tbody>
+     </table>
+
+
+     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Return Value</h1>
+     <table className="min-w-full border border-gray-300 text-gray-700 text-sm text-left mt-5">
+      <thead>
+        <tr className="bg-gray-100">
+          <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Parameter</th>
+          <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {data1.map((row,index)=>(
+          <tr className="cursor-text hover:bg-gray-100">
+            <td className="px-4 py-2 border-b border-gray-200">{row.Type}</td>
+            <td className="px-4 py-2 border-b border-gray-200  whitespace-pre-line">{row.Description}</td>
+          </tr>
+        ))}
+      </tbody>
+     </table>
+
     </div>
   );
 };

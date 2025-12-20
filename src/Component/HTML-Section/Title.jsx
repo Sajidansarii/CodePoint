@@ -1,13 +1,13 @@
 const HTMLPageTitle = () => {
   return (
-    <div className="p-4 max-w-3xl">
+    <div className="p-4 max-w-4xl">
       {/* Title */}
       <h1 className="text-3xl sm:text-4xl font-medium text-blue-500 mb-4 text-center sm:text-left">
         HTML Page Title
       </h1>
 
       {/* Intro */}
-      <p className="text-gray-700 mb-4">
+      <p className="leading-relaxed mb-4">
         The HTML page title is set using the <code>&lt;title&gt;</code> element inside the{" "}
         <code>&lt;head&gt;</code> section of an HTML document. It is displayed on the browser tab,
         used by search engines, and appears as the default name when bookmarking a page.
@@ -16,8 +16,8 @@ const HTMLPageTitle = () => {
       {/* Basic Syntax */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-2">Basic Syntax</h2>
-        <pre className="bg-gray-100 p-3 rounded mb-2 overflow-x-auto text-sm">
-          <code>{`<!DOCTYPE html>
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+          {`<!DOCTYPE html>
 <html>
   <head>
     <title>My First Webpage</title>
@@ -25,9 +25,9 @@ const HTMLPageTitle = () => {
   <body>
     <h1>Welcome to my website!</h1>
   </body>
-</html>`}</code>
+</html>`}
         </pre>
-        <p className="text-gray-700">
+        <p className="leading-relaxed mt-3">
           In this example, <strong>My First Webpage</strong> will appear in the browser tab.
         </p>
       </section>
@@ -35,7 +35,7 @@ const HTMLPageTitle = () => {
       {/* Importance */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-2">Why the Page Title is Important</h2>
-        <ul className="list-disc pl-5 space-y-1 text-gray-700">
+        <ul className="list-disc pl-5 space-y-1 leading-relaxed">
           <li>
             <strong>Browser Tabs:</strong> Helps users identify which page is open.
           </li>
@@ -51,7 +51,7 @@ const HTMLPageTitle = () => {
       {/* Best Practices */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-2">Best Practices</h2>
-        <ul className="list-disc pl-5 space-y-1 text-gray-700">
+        <ul className="list-disc pl-5 space-y-1 leading-relaxed">
           <li>Keep it concise — ideally under 60 characters.</li>
           <li>Include relevant keywords naturally for SEO.</li>
           <li>Ensure it accurately describes the page content.</li>
@@ -62,7 +62,7 @@ const HTMLPageTitle = () => {
       {/* Example for CodePoint */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-2">Example for CodePoint</h2>
-        <pre className="bg-gray-100 p-3 rounded overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto text-sm">
           <code>{`<html>
   <head>
     <title>HTML Tutorial - CodePoint</title>

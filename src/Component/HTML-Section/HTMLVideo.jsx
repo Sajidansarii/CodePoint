@@ -2,7 +2,7 @@ import React from "react";
 
 const HtmlVideo = () => {
   return (
-    <div className="p-4 sm:p-6 bg-white rounded-lg shadow-md max-w-4xl">
+    <div className="p-4 sm:p-6 max-w-4xl">
       <h1 className="text-3xl font-medium  mb-4 text-blue-500">HTML &lt;video&gt; Tag</h1>
       <p className="mb-4">
         The <strong>&lt;video&gt;</strong> tag is used to embed video content
@@ -11,7 +11,7 @@ const HtmlVideo = () => {
       </p>
 
       <h2 className="text-xl font-semibold mt-6 mb-2">Basic Syntax</h2>
-      <pre className="bg-gray-200  p-3 rounded-lg overflow-x-auto mb-4">
+      <pre className="bg-gray-900  p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
         {`<video src="movie.mp4" controls>
   Your browser does not support the video tag.
 </video>`}
@@ -33,7 +33,7 @@ const HtmlVideo = () => {
         You can provide multiple video formats to ensure compatibility across
         browsers.
       </p>
-      <pre className="bg-gray-200  p-3 rounded-lg overflow-x-auto mb-4">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
         {`<video width="640" height="360" controls poster="thumbnail.jpg">
   <source src="movie.mp4" type="video/mp4">
   <source src="movie.webm" type="video/webm">
@@ -48,7 +48,7 @@ const HtmlVideo = () => {
       </p>
 
       <div className="bg-yellow-100 p-3 rounded-lg">
-        ⚡ <strong>Tip:</strong> Always include the <code>controls</code> attribute so users can play/pause videos easily.
+        <strong>Tip:</strong> Always include the <code>controls</code> attribute so users can play/pause videos easily.
       </div>
     </div>
   );

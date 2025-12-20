@@ -2,7 +2,7 @@ import React from "react";
 
 const HtmlCharacterSets = () => {
   return (
-    <div className="p-4 sm:p-6 bg-white rounded-lg shadow-md max-w-4xl">
+    <div className="p-4 sm:p-6 max-w-4xl">
       <h1 className="text-3xl font-medium mb-4 text-blue-500">HTML Character Sets</h1>
       <p className="mb-4">
         A <strong>character set</strong> is a collection of characters that your
@@ -27,7 +27,7 @@ const HtmlCharacterSets = () => {
       </ul>
 
       <h2 className="text-xl font-semibold mt-6 mb-2 text-blue-500">Declaring a Character Set in HTML</h2>
-      <pre className="bg-gray-200  p-3 rounded-lg overflow-x-auto mb-4">
+      <pre className="bg-gray-900  p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
         {`<!DOCTYPE html>
 <html>
 <head>
@@ -47,13 +47,13 @@ const HtmlCharacterSets = () => {
         <li>Recommended for modern websites.</li>
       </ul>
 
-      <div className="bg-blue-100 p-3 rounded-lg mb-4">
+      <div className="bg-blue-900 p-4 rounded-lg text-green-400 mb-4">
         💡 <strong>Tip</strong>: Always include <code>{'<meta charset="UTF-8">'}</code> 
         in the <code>{'<head>'}</code> of your HTML document to avoid character display issues.
       </div>
 
       <h2 className="text-xl font-semibold mt-6 mb-2">Example of Character Display</h2>
-      <pre className="bg-gray-200  p-3 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900  p-4 rounded-lg text-green-400 overflow-x-auto">
         {`<p>English: Hello</p>
 <p>Hindi: नमस्ते</p>
 <p>Chinese: 你好</p>

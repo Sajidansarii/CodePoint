@@ -13,11 +13,11 @@ const CssUserInterface = () => {
     {Sr:'9', value:'nav-up', Description:'Used to move up when you have pressed on up arrow button in keypad.'},
   ];
   return (
-    <div className="p-8 min-h-screen space-y-6">
+    <div className="p-8 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium text-blue-500">CSS User Interface (UI) </h1>
 
       <p>
-        CSS <strong>User Interface (UI)</strong> Properties are used to improve the interaction of elements. With them, we can control the cursor, resize behavior, and focus outlines.
+        CSS <span className="text-red-400 bg-gray-50 px-1 rounded">User Interface (UI)</span> Properties are used to improve the interaction of elements. With them, we can control the cursor, resize behavior, and focus outlines.
       </p>
       <p>Some of the common properties which are using in css3 User interface.</p>
       <table className="min-w-full border border-gray-300 text-gray-700 rounded-md text-sm text-left">

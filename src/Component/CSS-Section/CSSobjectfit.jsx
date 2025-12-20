@@ -2,7 +2,7 @@ import React from "react";
 
 const ObjectFitTutorial = () => {
   return (
-    <div className="p-6 space-y-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Heading */}
       <h1 className="text-3xl font-medium text-blue-500">CSS object-fit</h1>
       <h1 className="text-2xl">CSS object-fit Property</h1>

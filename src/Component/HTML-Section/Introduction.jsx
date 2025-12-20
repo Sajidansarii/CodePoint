@@ -2,21 +2,21 @@ import React  from 'react';
 
 const Introduction = () =>{
     return(
-         <div className="p-4 sm:p-6 max-w-3xl">
+         <div className="p-4 my-4 sm:p-6 max-w-4xl">
       <h1 className="text-2xl sm:text-3xl font-medium text-blue-500 mb-4">HTML Introduction</h1>
 
-      <p className="text-gray-700 leading-5">
+      <p className="text-gray-700 leading-relaxed">
         HTML stands for <strong>HyperText Markup Language</strong>. It is the standard language used to create and structure content on the web. Every website you visit is built with HTML at its core.
       </p>
 
-      <p className="text-gray-700 leading-5">
+      <p className="text-gray-700 leading-relaxed">
         HTML is not a programming language. It's a markup language that uses <strong>tags</strong> to define the structure of a webpage — such as headings, paragraphs, links, images, lists, forms, and more.
       </p>
 
       <h2 className="sm:text-2xl text-xl font-semibold text-blue-500 mt-6 mb-2">Basic Structure of an HTML Document</h2>
 
-      <pre className="bg-gray-100 p-3 rounded overflow-x-auto text-sm sm:text-base mb-4">
-        <code>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm sm:text-base mb-4">
+        
 {`<!DOCTYPE html>
 <html>
   <head>
@@ -27,7 +27,6 @@ const Introduction = () =>{
     <p>This is a paragraph.</p>
   </body>
 </html>`}
-        </code>
       </pre>
 
       <h2 className="text-xl font-semibold text-blue-500 mt-6 mb-2">Explanation:</h2>

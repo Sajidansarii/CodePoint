@@ -2,7 +2,7 @@ import React from "react";
 
 const CssWebsiteLayout = () => {
   return (
-    <div className="font-sans max-w-3xl">
+    <div className="font-sans max-w-4xl space-y-6 mt-10">
       <h1 className="tetx-blue-500 font-medium text-3xl">Css Website Layout</h1>
       <p className="mb-10">CSS layout plays a crucial role in shaping the visual structure, organization, and responsiveness of a website. <br/> In this tutorial, we’ll cover key CSS techniques to help you build clean, effective, and responsive layouts.</p>
       <h1 className="text-2xl mt-10">Structure of Webpage Layout</h1>
@@ -13,7 +13,7 @@ const CssWebsiteLayout = () => {
       </header>
 
       {/* Navbar */}
-      <nav className="bg-gray-600 text-white p-4 text-center border">
+      <nav className="text-white p-4 text-center border">
         Navigation Bar
       </nav>
 
@@ -44,7 +44,7 @@ const CssWebsiteLayout = () => {
         <li>Inline-block elements combine both behaviors—they appear inline with other elements but allow you to set their width and height.</li>
       </ul>
       <h1 className="text-3xl mt-5 mb-5">Example</h1>
-     <div className="bg-gray-200 p-4 rounded-lg">
+     <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
       <pre>
         {`<!DOCTYPE html>
 <html>

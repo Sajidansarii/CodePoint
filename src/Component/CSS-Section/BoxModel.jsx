@@ -1,13 +1,13 @@
 export default function CssBoxModel() {
   return (
-    <div className="p-6 max-w-4xl">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS Box Model</h1>
       <p className="mb-4">
         The CSS Box Model treats every element on a web page like a box. In this model, each element is made up of four parts:
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-200  p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
         <code>{`.box {
   width: 200px;
   height: 100px;

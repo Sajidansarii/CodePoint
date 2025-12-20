@@ -27,13 +27,13 @@ const Navbar = () => {
 
   return (
     <div className="bg-green-300 fixed top-0 left-0 w-full z-50 shadow-md">
-      <div className="flex items-center justify-between px-4 h-14">
+      <div className="flex items-center justify-between px-4 sm:px-6 md:px-8 h-14">
         {/* Logo */}
-        <div className="text-xl font-bold">CodePoint</div>
+        <div className="text-xl sm:text-2xl font-bold">CodePoint</div>
 
         {/* Hamburger - Mobile Only */}
         <button
-          className="md:hidden text-2xl"
+          className="md:hidden text-2xl p-2"
           onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <i className="fas fa-bars"></i>
         </button> 
@@ -70,17 +70,19 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-green-300 px-4 py-2">
+        <div className="md:hidden bg-green-300 px-4 py-3 rounded-b-lg shadow-inner">
           <ul className="space-y-2 text-sm font-semibold">
             <li
               className="hover:cursor-pointer hover:bg-gray-200"
               onClick={handleNavigation}>
               <i className="fa-brands fa-html5"></i> HTML
             </li>
-            <li className="hover:cursor-pointer hover:bg-gray-200">
+            <li className="hover:cursor-pointer hover:bg-gray-200"
+            onClick={handleCssNavigation}>
               <i className="fa-brands fa-css3"></i> CSS
             </li>
-            <li className="hover:cursor-pointer hover:bg-gray-200">
+            <li className="hover:cursor-pointer hover:bg-gray-200"
+            onClick={handleJSNavigation}>
               <i className="fa-brands fa-js"></i> JavaScript
             </li>
             <li className="hover:cursor-pointer hover:bg-gray-200">

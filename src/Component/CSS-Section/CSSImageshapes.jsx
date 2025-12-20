@@ -9,11 +9,11 @@ const ImageShapesTutorial = () => {
     {Function:'polygon()', Description:'Defines a polygon'},
   ];
   return (
-    <div className="p-6 space-y-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Heading */}
       <h1 className="text-3xl font-medium text-blue-500">CSS Image Shapes</h1>
       <p>
-        The <code className="bg-gray-200 px-1 rounded">shape-outside</code> property in CSS is used 
+        The <code className="bg-gray-50 p-1 text-red-400 rounded">shape-outside</code> property in CSS is used 
         to define custom shapes around which inline content (like text) will wrap.  
         It works only when the element is <b>floated</b> and has a defined size.
       </p>

@@ -30,7 +30,7 @@ const WhatIsHTML = () => {
   }, [codeString]);
 
   return (
-    <article className="p-4 sm:p-6 md:p-8 max-w-3xl prose prose-sm sm:prose-base dark:prose-invert bg-white dark:bg-gray-900 rounded-2xl shadow-sm">
+    <article className="p-4 sm:p-6 md:p-8 max-w-4xl prose prose-sm sm:prose-base dark:prose-invert bg-white dark:bg-gray-900 rounded-2xl shadow-sm">
       <header>
         <h1 className="text-2xl sm:text-3xl font-medium text-blue-500 mb-2">
           What is HTML?
@@ -80,8 +80,8 @@ const WhatIsHTML = () => {
           Example
         </h2>
         <div className="relative mb-4">
-          <details className="bg-gray-100 dark:bg-gray-800 p-3 rounded overflow-auto">
-            <summary className="cursor-pointer font-semibold mb-2">
+          <details className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-auto">
+            <summary className="cursor-pointer text-white font-semibold mb-2">
               View HTML code
             </summary>
             <div className="mt-2">

@@ -17,7 +17,7 @@ const CssCounter = () => {
     {property:'inherit', value:'If specified, the associated element takes the computed value of its parent element direction property.'},
   ]
   return (
-    <div className="p-6 max-w-4xl">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl mb-4 font-medium text-blue-500">CSS Counters</h1>
       <p className="mb-4">
         CSS Counters are used to automatically number elements with CSS only.
@@ -47,7 +47,7 @@ const CssCounter = () => {
 
       <h1 className="text-3xl mt-10">Syntax</h1>
       <p className="mt-3">The syntax of the property is given with:</p>
-      <div className="bg-gray-200 pb-5 rounded-lg mt-5">
+      <div className="bg-gray-900 text-green-400 pb-5 rounded-lg mt-5">
         <pre className="ml-10">
           {`
 counter-increment: [ identifier integer ]1 or more pairs | none | initial | inherit
@@ -55,9 +55,9 @@ counter-increment: [ identifier integer ]1 or more pairs | none | initial | inhe
         </pre>
       </div>
 
-      <p>The example below shows the counter-increment property in action.</p>
-      <h1 className="mt-5 text-2xl">Example</h1>
-      <div className="bg-gray-200 p-4 rounded-lg">
+      <p className="leading-relaxed mt-10">The example below shows the counter-increment property in action.</p>
+      <h1 className="mt-5 text-2xl mb-5">Example</h1>
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
         <pre>
           {`  
               body {

@@ -2,7 +2,7 @@ import React from "react";
 
 const CssDropdowns = () => {
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Title */}
       <h1 className="text-3xl font-medium mb-4 text-blue-500">CSS Dropdowns</h1>
       <p className="mb-4">
@@ -34,7 +34,7 @@ const CssDropdowns = () => {
         </div>
       </div>
 
-      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto mt-4">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mt-4">
 {`/* CSS Example */
 .dropdown {
   position: relative;
@@ -75,7 +75,7 @@ const CssDropdowns = () => {
         </div>
       </details>
 
-      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto mt-4">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mt-4">
 {`/* Using HTML <details> and <summary> */
 <details>
   <summary>Click Me</summary>
@@ -107,7 +107,7 @@ const CssDropdowns = () => {
         </ul>
       </nav>
 
-      <pre className="bg-gray-200  p-4 rounded-lg overflow-x-auto mt-4">
+      <pre className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto mt-4">
 {`.navbar ul {
   list-style: none;
   display: flex;

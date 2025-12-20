@@ -41,8 +41,8 @@ const CssWebSafeFonts = () => {
 
 
   return (
-    <div className="p-6">
-      <h2 className="text-3xl font-medium mb-4">CSS Web Safe Fonts</h2>
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
+      <h2 className="text-3xl font-medium text-blue-500 mb-4">CSS Web Safe Fonts</h2>
       <p className="mb-6">
         Web safe fonts are those fonts that are available by default on every operating system and browser. This ensures that the text on a website appears the same to every user. Common web safe fonts include: Arial, Verdana, Times New Roman, Georgia, Courier New, etc.</p>
 

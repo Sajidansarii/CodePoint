@@ -14,7 +14,7 @@ const CssMasking = () => {
     {Value:'inherit', Description:'It inherits the property from the parent element.'},
   ];  
   return (
-    <div className="p-8 min-h-screen space-y-6">
+    <div className="p-8 max-w-4xl space-y-6 mt-10">
       {/* Title */}
       <h1 className="text-3xl font-medium text-blue-500">
         CSS Masking
@@ -24,7 +24,7 @@ const CssMasking = () => {
        In CSS, the mask shorthand property defines how an image mask is applied to an element, encapsulating detailed behavior through associated longhand properties.
       </p>
       <h1 className="text-2xl">Syntax</h1>
-      <pre className="bg-gray-200 p-4 w-[900px] rounded-lg overflow-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 w-[900px] rounded-lg overflow-auto">
         <code>
           {`mask: <mask-image> <mask-mode> <mask-composite> <mask-clip> <mask-origin> <mask-position> <mask-repeat> <mask-size> | initial | inherit;`}
         </code>
@@ -39,7 +39,7 @@ const CssMasking = () => {
           We can use the mask-image property to treat the transparent parts of a PNG image as a mask.
         </p>
 
-        <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto">
 {`div {
   mask-image: url('mask-shape.png');
   -webkit-mask-image: url('mask-shape.png'); /* Safari ke liye */
@@ -58,7 +58,7 @@ const CssMasking = () => {
         <h2 className="font-semibold text-xl">2. Gradient Mask</h2>
         <p>By using a gradient as a mask, we can create smooth fade effects.</p>
 
-        <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto">
 {`div {
   mask-image: linear-gradient(to right, black, transparent);
   -webkit-mask-image: linear-gradient(to right, black, transparent);
@@ -77,7 +77,7 @@ const CssMasking = () => {
           We can use an SVG shape as a mask.
         </p>
 
-        <pre className="bg-gray-200  p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto">
 {`div {
   mask-image: url('shape.svg');
   -webkit-mask-image: url('shape.svg');
@@ -120,7 +120,7 @@ const CssMasking = () => {
           Masking aur clipping dono similar lagte hain, lekin:
         </p>
 
-        <ul className="list-disc pl-6 text-gray-700">
+        <ul className="list-disc pl-6">
           <li>
             <strong>Masking</strong> intensity (opacity) ke basis pe visibility
             decide karta hai.

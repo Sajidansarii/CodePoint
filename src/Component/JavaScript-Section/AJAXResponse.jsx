@@ -1,90 +1,141 @@
 import React, { useState } from "react";
 
 const JSAJAXResponse = () => {
-  const [response, setResponse] = useState("Click the button to get AJAX Response...");
+  const data = [
+    {Method:'responseText', Description:'get the response data as a string'},
+    {Method:'responseXML', Description:'get the response data as XML data'},
+  ];
 
-  // ✅ AJAX Response Example
-  const fetchResponse = () => {
-    const xhr = new XMLHttpRequest();
-
-    // Open a GET request
-    xhr.open("GET", "https://jsonplaceholder.typicode.com/posts/1", true);
-
-    // Handle response
-    xhr.onload = () => {
-      if (xhr.status === 200) {
-        // responseText → contains response body as string
-        const data = JSON.parse(xhr.responseText);
-        setResponse(`ID: ${data.id}, 📝 Title: ${data.title}`);
-      } else {
-        setResponse(`Error: ${xhr.status} - ${xhr.statusText}`);
-      }
-    };
-
-    // Handle network error
-    xhr.onerror = () => {
-      setResponse("⚠ Network error occurred while fetching response");
-    };
-
-    // Send the request
-    xhr.send();
-  };
-
+  const data1 = [
+    {Method:'getResponseHeader()', Description:'Returns specific header information from the server resource'},
+    {Method:'getAllResponseHeaders()', Description:'Returns all the header information from the server resource'},
+  ];
+  
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-xl shadow-lg mt-10 space-y-6">
-      <h1 className="text-3xl font-medium text-blue-500">
-        AJAX <span className="text-green-600">Response</span> in JavaScript
-      </h1>
+    <div className="max-w-4xl p-6 mt-10">
+      <h1 className="text-3xl font-medium text-blue-500 mb-3">AJAX Response in JavaScript</h1>
 
-      <p className="text-gray-700">
-        An <strong>AJAX Response</strong> is the data returned by the server
+      <p>
+        An <span className="text-red-400">AJAX Response</span> is the data returned by the server
         after an AJAX request. We can access it using properties like{" "}
         <code>responseText</code>, <code>status</code>, and{" "}
         <code>statusText</code>.
       </p>
 
-      <button
-        onClick={fetchResponse}
-        className="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-      >
-        Get AJAX Response
-      </button>
+      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Server Response Properties</h1>
+      <table className="min-w-full border border-gray-300 text-gray-700 text-sm text-left mt-5">
+      <thead>
+        <tr className="bg-gray-100">
+          <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Method</th>
+          <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {data.map((row,index)=>(
+          <tr className="cursor-text hover:bg-gray-100">
+            <td className="px-4 py-2 border-b border-gray-200">{row.Method}</td>
+            <td className="px-4 py-2 border-b border-gray-200 whitespace-pre-line">{row.Description}</td>
+          </tr>
+        ))}
+      </tbody>
+     </table>
 
-      <div className="p-4 bg-gray-100 rounded-md font-mono text-gray-800 overflow-x-auto">
-        {response}
-      </div>
+     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The responseText Property</h1>
+     <p>The <span className="text-red-400">responseText</span> property provides the server’s response as a JavaScript string, which you can then use as needed.</p>
+     <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`document.getElementById("demo").innerHTML = xhttp.responseText;`}
+      </code>
+    </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800">Code Example:</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
-{`// ✅ AJAX Response Example
-const xhr = new XMLHttpRequest();
-xhr.open("GET", "https://jsonplaceholder.typicode.com/posts/1", true);
+    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The responseXML Property</h1>
+    <p>The XMLHttpRequest object includes a built-in XML parser, and its <span className="text-red-400">responseXML</span> property returns the server response as an XML DOM object that you can parse.</p>
+    <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-5">Example</h2>
+    <p>Request the <span className="text-red-400">cd_catalog.xml</span> file and parse the returned response.</p>
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`const xmlDoc = xhttp.responseXML;
+const x = xmlDoc.getElementsByTagName("ARTIST");
 
-xhr.onload = () => {
-  if (xhr.status === 200) {
-    // Response text
-    const data = JSON.parse(xhr.responseText);
-    console.log("ID:", data.id, "Title:", data.title);
-  } else {
-    console.error("Error:", xhr.status, xhr.statusText);
-  }
-};
+let txt = "";
+for (let i = 0; i < x.length; i++) {
+  txt += x[i].childNodes[0].nodeValue + "<br>";
+}
+document.getElementById("demo").innerHTML = txt;
 
-xhr.onerror = () => {
-  console.error("Network error");
-};
+xhttp.open("GET", "cd_catalog.xml");
+xhttp.send();
+`}
+      </code>
+    </pre>
 
-xhr.send();`}
-      </pre>
+    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Server Response Methods</h1>
+    <table className="min-w-full border border-gray-300 text-gray-700 text-sm text-left mt-5">
+      <thead>
+        <tr className="bg-gray-100">
+          <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Method</th>
+          <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {data1.map((row,index)=>(
+          <tr className="cursor-text hover:bg-gray-100">
+            <td className="px-4 py-2 border-b border-gray-200">{row.Method}</td>
+            <td className="px-4 py-2 border-b border-gray-200 whitespace-pre-line">{row.Description}</td>
+          </tr>
+        ))}
+      </tbody>
+     </table>
 
-      <h2 className="text-2xl font-semibold text-gray-800">Explanation:</h2>
-      <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li><code>xhr.responseText</code> → Contains the response body as a string.</li>
-        <li><code>JSON.parse()</code> → Converts JSON string into a JavaScript object.</li>
-        <li><code>xhr.status</code> → Shows the HTTP status code (e.g., 200 for success).</li>
-        <li><code>xhr.statusText</code> → Gives the status message (e.g., "OK").</li>
-        <li><code>xhr.onerror</code> → Handles errors like no internet connection.</li>
-      </ul>
+     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The getAllResponseHeaders() Method</h1>
+    <p>The <span className="text-red-400">getAllResponseHeaders()</span> method retrieves all header information from the server’s response.</p>
+    <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+    document.getElementById("demo").innerHTML =
+    this.getAllResponseHeaders();
+}
+xhttp.open("GET", "ajax_info.txt");
+xhttp.send();`}
+      </code>
+    </pre>
+
+    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The getResponseHeader() Method</h1>
+    <p>The <span className="text-red-400">getResponseHeader()</span> method retrieves a specific header from the server’s response.</p>
+    <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <code>
+        {`const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+    document.getElementById("demo").innerHTML =
+    this.getResponseHeader("Last-Modified");
+}
+xhttp.open("GET", "ajax_info.txt");
+xhttp.send();
+`}
+      </code>
+    </pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 };

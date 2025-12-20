@@ -2,22 +2,21 @@ import React from "react";
 
 const JSClassStatic = () => {
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow mt-10">
+    <div className="max-w-4xl p-6">
       <h1 className="text-3xl font-medium text-blue-500 mb-4">
-        JavaScript <span className="text-green-600">Static Methods & Properties</span>
+        JavaScript Static Methods & Properties
       </h1>
 
       <p className="text-gray-700 mb-6">
-        *Static methods and properties* belong to the *class itself*, not to instances (objects) of the class. 
+        <span className="text-red-400">Static</span> methods and properties belong to the class itself, not to instances (objects) of the class. 
         They are used for utility functions, constants, or methods that don’t depend on instance data.
       </p>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-2">Static Method Example</h2>
-      <div className="bg-gray-100 p-4 rounded mb-4 overflow-x-auto">
-        <pre className="text-green-600">
-            <code>
-
-{`class Calculator {
+      <h2 className="text-2xl font-semibold text-gray-800 mb-2">Static Method </h2>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 mb-5">
+        <code>
+{`
+class Calculator {
   static add(a, b) {
     return a + b;
     }
@@ -29,14 +28,16 @@ const JSClassStatic = () => {
         
         // Call static methods using the class name
         console.log(Calculator.add(5, 3));       // Output: 8
-        console.log(Calculator.multiply(4, 2));  // Output: 8`}
+        console.log(Calculator.multiply(4, 2));  // Output: 8
+        `}
         </code>
-        </pre>
-      </div>
+      </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-2">Static Property Example</h2>
-      <div className="bg-gray-100 p-4 rounded mb-4 overflow-x-auto">
-        <pre className="text-green-600">
+      <p className="mt-5">If you need to access the myCar object inside a static method, you can pass it in as a parameter.</p>
+
+      <h2 className="text-2xl font-semibold text-gray-800 mt-10 mb-5">Static Property Example</h2>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5">
+        <code>
 {`class Circle {
   static pi = 3.14159;
 
@@ -47,11 +48,10 @@ const JSClassStatic = () => {
 
 console.log(Circle.pi);           // Output: 3.14159
 console.log(Circle.area(5));      // Output: 78.53975`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-2">Key Points</h2>
-      <ul className="list-disc list-inside text-gray-700 mb-4">
+      <ul className="list-disc list-inside text-gray-700 mb-4 mt-10">
         <li>Static methods/properties are *accessed via the class*, not instances.</li>
         <li>They are commonly used for *utility functions, constants, or helper methods*.</li>
         <li>Trying to access static members from an instance will return <code>undefined</code>.</li>

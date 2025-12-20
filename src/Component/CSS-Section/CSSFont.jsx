@@ -1,6 +1,6 @@
 export default function CssFonts() {
   return (
-    <div className="p-6 max-w-3xl">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium mb-4 text-blue-500">CSS Fonts</h1>
       <p className="mb-4">
         Fonts in CSS define how text appears on a webpage. You can control font
@@ -18,7 +18,7 @@ export default function CssFonts() {
       </ul>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
         <code>{`p {
   font-family: "Arial", sans-serif;
   font-size: 18px;
@@ -30,7 +30,7 @@ export default function CssFonts() {
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Google Fonts Example</h2>
       <p className="mb-2">You can import custom fonts from Google Fonts:</p>
-      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
         <code>{`<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 body {

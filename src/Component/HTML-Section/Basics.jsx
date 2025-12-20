@@ -1,6 +1,6 @@
 const HTMLBasics = () => {
   return (
-    <div className="p-4 max-w-3xl">
+    <div className="p-4 max-w-4xl">
       {/* Title */}
       <h1 className="text-3xl font-medium text-blue-500 mb-4 text-center sm:text-left">
         HTML Basics
@@ -41,8 +41,7 @@ const HTMLBasics = () => {
       <h2 className="text-2xl font-semibold text-blue-500 mt-6 mb-2">
         Example: A Basic HTML Page
       </h2>
-      <pre className="bg-gray-100 p-3 rounded mb-4 overflow-x-auto text-sm">
-        <code>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-4 overflow-x-auto text-sm">
 {`<!DOCTYPE html>
 <html>
   <head>
@@ -53,7 +52,6 @@ const HTMLBasics = () => {
     <p>This is my first HTML page.</p>
   </body>
 </html>`}
-        </code>
       </pre>
 
       {/* Explanation */}

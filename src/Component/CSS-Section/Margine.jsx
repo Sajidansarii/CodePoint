@@ -1,6 +1,6 @@
 export default function CssMargin() {
   return (
-    <div className="p-6 max-w-3xl">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium mb-4 text-blue-500">CSS Margin</h1>
       <p className="mb-4">
         The <code>margin</code> property controls the space outside an element’s
@@ -8,7 +8,7 @@ export default function CssMargin() {
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-200  p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto">
         <code>{`div {
   border: 2px solid blue;
   margin: 20px;

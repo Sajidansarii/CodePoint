@@ -2,7 +2,7 @@ import React from "react";
 
 const CssTooltips = () => {
   return (
-    <div className="p-8 min-h-screen space-y-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       {/* Title */}
       <h1 className="text-3xl font-medium text-blue-500">
         CSS Tooltips
@@ -21,7 +21,7 @@ const CssTooltips = () => {
         <p>
          Hover over the button, the tooltip will appear.
         </p>
-        <pre className="bg-gray-200 p-4 rounded-lg text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto text-left">
 {`<div class="tooltip">
   Hover me
   <span class="tooltip-text">Hello! I'm a tooltip</span>
@@ -46,7 +46,7 @@ const CssTooltips = () => {
       {/* Example 2 */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">2. Tooltip on Right</h2>
-        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto text-left">
 {`<div class="tooltip">
   Hover me
   <span class="tooltip-text">Tooltip on Top</span>
@@ -69,7 +69,7 @@ const CssTooltips = () => {
       {/* Example 3 */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">3. Tooltip on Bottom</h2>
-        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto text-left">
 {`<div class="tooltip">
   Hover me
   <span class="tooltip-text">Tooltip on Right</span>
@@ -91,7 +91,7 @@ const CssTooltips = () => {
 
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">4.Tooltip on Left</h2>
-        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto text-left">
 {`<div class="tooltip">
   Hover me
   <span class="tooltip-text">Tooltip on Top</span>
@@ -114,7 +114,7 @@ const CssTooltips = () => {
       
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">Basic Syntax</h2>
-        <pre className="bg-gray-200 p-4 rounded text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto">
 {`.tooltip {
   position: relative;
   display: inline-block;
@@ -160,7 +160,7 @@ const CssTooltips = () => {
 
       <h1 className="text-2xl">Tooltip Arrows</h1>
       <p>To display an arrow on a specific side of the tooltip, add an empty ::after pseudo-element using content: "". Then, apply CSS border styles to form a triangular arrow and position it as needed.</p>
-      <pre className="bg-gray-300 rounded-lg p-4">
+      <pre className="bg-gray-900 text-green-400 rounded-lg p-4">
         {`/* Arrow styles */
 .tooltip-text::after {
     content: "";
@@ -172,7 +172,7 @@ const CssTooltips = () => {
       </pre>
       <p>To create a triangle shape in CSS, set the border color on just one side of an empty element. This forms a triangular top border — a common method for making arrows. Visit our free CSS arrows tutorial to see this in action.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-300 p-4 rounded-lg h-96 overflow-y-scroll">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg h-96 overflow-y-scroll">
         <code>
           {`<!DOCTYPE html>
 <html lang="en">
@@ -274,7 +274,7 @@ const CssTooltips = () => {
       <h1 className="text-2xl">Positioning Tooltips</h1>
       <p>By applying CSS positioning rules, you can place a tooltip on any side of the container — top, bottom, left, or right — depending on your design needs.</p>
       <p>To position a tooltip correctly, apply position: relative; to its container. This enables absolutely positioned child elements to be aligned relative to the container using inset properties like top, bottom, left, and right.</p>
-      <pre className="bg-gray-300 p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
         <code>
           {`.element {
    position: relative;
@@ -289,7 +289,7 @@ const CssTooltips = () => {
       <p>By setting top: 50px and left: 50px, the tooltip appears 50 pixels below the top and 50 pixels from the left edge of the container.</p>
       <p>Next, we’ll see a practical example of tooltips positioned in different directions: top, bottom, left, and right.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-300 p-4 rounded-lg h-96 overflow-y-scroll">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg h-96 overflow-y-scroll">
         <code>
           {`<!DOCTYPE html>
 <html lang="en">
@@ -393,7 +393,7 @@ const CssTooltips = () => {
       <p>The CSS fade-in tooltip uses a gradual opacity transition to smoothly reveal the tooltip, enhancing the user experience with a subtle animation.</p>
       <p>Begin by setting the tooltip’s opacity to 0. In the hover state, update the opacity to 1. Then, apply a CSS transition to animate the change and create a fade-in effect.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-300 p-4 rounded-lg h-96 overflow-y-scroll">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg h-96 overflow-y-scroll">
         <code>
           {`<!DOCTYPE html>
 <html>
@@ -453,7 +453,7 @@ const CssTooltips = () => {
       {/* Explanation */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">📝 Explanation</h2>
-        <ul className="list-disc pl-6 text-gray-700 space-y-2">
+        <ul className="list-disc pl-6 space-y-2">
           <li>
             <strong>position: relative</strong> → To position the tooltip inside the container.”
           </li>

@@ -5,7 +5,7 @@ const CssBoxSizing = () => {
     {Property:'box-sizing', Description:'Defines how the width and height of an element are calculated: should they include padding and borders, or not'},
   ];
   return (
-    <div className="p-8 min-h-screen space-y-6">
+    <div className="p-8 max-w-4xl space-y-6 mt-10">
       {/* Title */}
       <h1 className="text-3xl font-medium text-blue-500">
         CSS Box-Sizing
@@ -13,7 +13,7 @@ const CssBoxSizing = () => {
 
       {/* Intro */}
       <p>
-        box-sizing The property is used to control how the width and height of an element are calculated. Its two most common values are content-box (the default) and border-box.
+        <span className="text-red-400 bg-gray-50 px-1 rounded">box-sizing</span> The property is used to control how the width and height of an element are calculated. Its two most common values are content-box (the default) and border-box.
       </p>
       <h1 className="text-2xl">CSS Box Sizing Property</h1>
       <table className="min-w-full border border-gray-300 text-gray-700 rounded-md text-sm text-left">

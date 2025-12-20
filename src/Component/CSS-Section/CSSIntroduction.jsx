@@ -2,10 +2,10 @@ import React from "react";
 
 const CSSIntroduction = () => {
   return (
-    <div className="p-4 sm:p-6 bg-gray-50 min-h-screen">
+    <div className="p-4 sm:p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS Introduction</h1>
 
-      <p className="text-gray-700 mb-4">
+      <p className="mb-4">
         <strong>CSS (Cascading Style Sheets)</strong> is used to style and
         design web pages. It controls the{" "}
         <span className="italic">layout, colors, fonts, and responsiveness</span> 
@@ -13,8 +13,8 @@ const CSSIntroduction = () => {
         and make websites visually appealing.
       </p>
 
-      <h2 className="text-xl font-semibold text-gray-800 mb-2">Why Learn CSS?</h2>
-      <ul className="list-disc list-inside text-gray-700 mb-4">
+      <h2 className="text-xl font-semibold mb-2">Why Learn CSS?</h2>
+      <ul className="list-disc list-inside mb-4">
         <li>Create visually attractive web pages</li>
         <li>Separate content (HTML) from design (CSS)</li>
         <li>Make layouts responsive for mobile, tablet, and desktop</li>
@@ -22,15 +22,15 @@ const CSSIntroduction = () => {
         <li>Reuse styles across multiple pages</li>
       </ul>
 
-      <h2 className="text-xl font-semibold text-gray-800 mb-2">
+      <h2 className="text-xl font-semibold mb-2">
         How Does CSS Work?
       </h2>
-      <p className="text-gray-700 mb-4">
+      <p className="mb-4">
         CSS works by selecting HTML elements and applying styles to them using
         selectors and properties.
       </p>
 
-      <div className="bg-gray-200  p-4 rounded-lg overflow-x-auto mb-6 text-sm">
+      <div className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto mb-6 text-sm">
         <pre>
 {`/* Example CSS */
 body {

@@ -1,6 +1,6 @@
 export default function CssMaxWidth() {
   return (
-    <div className="p-6 max-w-4xl">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium text-blue-500 mb-4">CSS max-width</h1>
       <p className="mb-4">
         The <code>max-width</code> property defines the maximum width of an

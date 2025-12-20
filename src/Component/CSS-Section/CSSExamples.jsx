@@ -2,7 +2,7 @@ import React from "react";
 
 const CSSExamples = () => {
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-4xl space-y-6 mt-10">
       <h1 className="text-3xl font-medium mb-4 text-blue-500">CSS Examples</h1>
       <p className="mb-6">
         CSS Examples help you understand how different CSS properties work in real

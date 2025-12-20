@@ -2,94 +2,62 @@ import React from "react";
 
 const IfElseInJS = () => {
   return (
-    <div className="p-6 max-w-4xl mx-auto">
+    <div className="p-6 max-w-4xl">
       {/* Title */}
       <h1 className="text-3xl font-medium text-blue-500 mb-4">
         JavaScript if-else Statement
       </h1>
 
       {/* Introduction */}
-      <p className="text-gray-700 mb-4 leading-relaxed">
-        The <code>if-else</code> statement is used to execute a block of code
+      <p className="mb-4 leading-relaxed">
+        The <span className="text-red-400 bg-gray-50 px-1 rounded">if-else</span> statement is used to execute a block of code
         based on a condition. If the condition evaluates to{" "}
         <span className="font-semibold">true</span>, the <code>if</code> block
         runs. Otherwise, the <code>else</code> block runs. This is one of the
-        most common decision-making statements in JavaScript.
+        most common decision-making statements in JavaScript. 
       </p>
-
-      {/* Simple if Example */}
-      <div className="bg-white shadow-md rounded-2xl p-5 mb-6 border-l-4 border-blue-500">
-        <h2 className="text-xl font-semibold text-gray-800 mb-3">Simple if</h2>
-        <p className="text-gray-600 mb-3">
-          The <code>if</code> statement checks a condition and runs code only if
-          it is true.
-        </p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
-{`let age = 20;
-
-if (age >= 18) {
-  console.log("You are an adult");
-}`}</pre>
-      </div>
-
-      {/* if-else Example */}
-      <div className="bg-white shadow-md rounded-2xl p-5 mb-6 border-l-4 border-green-500">
-        <h2 className="text-xl font-semibold text-gray-800 mb-3">if-else</h2>
-        <p className="text-gray-600 mb-3">
-          If the condition is false, the <code>else</code> block is executed
-          instead.
-        </p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
-{`let age = 16;
-
-if (age >= 18) {
-  console.log("You are an adult");
+      <pre className="text-green-400 p-4 bg-gray-900 rounded-lg">{`
+      if (condition) {
+  //  block of code to be executed if the condition is true
+    } else {
+  //  block of code to be executed if the condition is false
+    }`}
+      </pre>
+      <h1 className="text-2xl mt-10">Example</h1>
+      <p className="mt-3">If the time is earlier than 6 PM, display “Good day”; otherwise, show “Good evening.”</p>
+      <pre className="text-green-400 p-4 mt-5 bg-gray-900 rounded-lg">
+        {`if (hour < 6) {
+  greeting = "Good day";
 } else {
-  console.log("You are a minor");
-}`}</pre>
-      </div>
+  greeting = "Good evening";
+}`}
+      </pre>
 
-      {/* if-else-if Ladder */}
-      <div className="bg-white shadow-md rounded-2xl p-5 border-l-4 border-yellow-500">
-        <h2 className="text-xl font-semibold text-gray-800 mb-3">
-          if-else-if Ladder
-        </h2>
-        <p className="text-gray-600 mb-3">
-          Multiple conditions can be checked using an{" "}
-          <code>if-else-if</code> ladder.
-        </p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
-{`let marks = 75;
-
-if (marks >= 90) {
-  console.log("Grade: A");
-} else if (marks >= 75) {
-  console.log("Grade: B");
-} else if (marks >= 50) {
-  console.log("Grade: C");
+      <h1 className="text-2xl mt-10 mb-2">The else if Statement</h1>
+      <p>Apply else if to add a new condition that runs only if the initial if fails.</p>
+      <h1 className="mt-3 text-2xl">Syntax</h1>
+      <pre className="text-green-400 mt-5 bg-gray-900 p-4 rounded-lg">
+        {`if (condition1) {
+  //  block of code to be executed if condition1 is true
+} else if (condition2) {
+  //  block of code to be executed if the condition1 is false and condition2 is true
 } else {
-  console.log("Fail");
-}`}</pre>
-      </div>
+  //  block of code to be executed if the condition1 is false and condition2 is false
+}`}
+      </pre>
 
-      {/* Summary */}
-      <div className="mt-6 bg-blue-50 p-4 rounded-xl">
-        <h3 className="text-lg font-semibold text-blue-700 mb-2">Summary</h3>
-        <ul className="list-disc list-inside text-gray-700 space-y-1">
-          <li>
-            <code>if</code> → Runs code if the condition is true.
-          </li>
-          <li>
-            <code>if-else</code> → Runs one block if true, another if false.
-          </li>
-          <li>
-            <code>if-else-if</code> → Checks multiple conditions in order.
-          </li>
-          <li>
-            Conditions are always checked from top to bottom.
-          </li>
-        </ul>
-      </div>
+      <h1 className="text-2xl mt-10">Example</h1>
+      <p className="mt-3">If the time is earlier than 11:00, show “Good morning.” If it’s not, but still before 09:00, show “Good day.” Otherwise, show “Good evening.”</p>
+      <pre className="text-green-400 mt-3 bg-gray-900 p-4 rounded-lg">
+        {`if (time < 11) {
+  greeting = "Good morning";
+} else if (time < 9) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}`}
+      </pre>
+
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 
 const HttpsMessages = () => {
   return (
-    <div className="p-4 sm:p-6 bg-white rounded-lg shadow-md max-w-4xl">
+    <div className="p-4 sm:p-6 max-w-4xl">
       <h1 className="text-3xl font-medium mb-4 text-blue-500">HTTPS Messages</h1>
       <p className="mb-4">
         <strong>HTTPS</strong> (HyperText Transfer Protocol Secure) works the
@@ -25,7 +25,7 @@ const HttpsMessages = () => {
         <li>Headers → Additional info about the request.</li>
         <li>Body → Data sent to the server (in POST, PUT, etc.).</li>
       </ul>
-      <pre className="bg-gray-200  p-3 rounded-lg overflow-x-auto mb-4">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
         {`GET /secure-page.html HTTP/1.1
 Host: www.example.com
 User-Agent: Mozilla/5.0
@@ -43,7 +43,7 @@ Accept: text/html`}
         <li>Headers → Info about the server and content.</li>
         <li>Body → The encrypted content returned.</li>
       </ul>
-      <pre className="bg-gray-200  p-3 rounded-lg overflow-x-auto mb-4">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
         {`HTTP/1.1 200 OK
 Content-Type: text/html
 Content-Length: 150
@@ -63,7 +63,7 @@ Content-Length: 150
       </ul>
 
       <div className="bg-blue-100 p-3 rounded-lg">
-        ✅ <strong>Key Point</strong>: The structure of HTTPS messages is the same as HTTP messages, but the data is secured using SSL/TLS.
+         <strong>Key Point</strong>: The structure of HTTPS messages is the same as HTTP messages, but the data is secured using SSL/TLS.
       </div>
     </div>
   );
