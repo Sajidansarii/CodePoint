@@ -1,8 +1,25 @@
 import React from "react";
 import { useState } from "react";
 import {FiArrowLeft} from 'react-icons/fi';
+import ReactInstallation from './React Installation';
 import Intro from "./React Intro";
-import Checkbox from "./React Checkbox";
+import ReactClass from './React-Class';
+import Reactcomponent from './React-Components'
+import Conditional from './React Conditionals';
+import ES6 from "./React ES6";
+import ReactFormsubmit from './React Forms Submit';
+import ReactForms from './React Forms';
+import ReactAttributes from './React JSX Attributes';
+import ReactExpressons from './React JSX Expressions';
+import ImportExport from './React Import&Export';
+import JSXIntro from './React JSX Intro';
+import ReactList from './React List';
+import ReactProchild from './React Props Children';
+import ReactProDestructuring from './React Props Destructuring';
+import ReactProps from './React Props';
+import ReactRender from './React Render Html';
+
+
 
 const ReactNav = () => {
     const [isOpen, setisOpen] = useState(false);
@@ -10,9 +27,42 @@ const ReactNav = () => {
 
     const RenderPage = () => {
         switch(showpage){
-            case 'Checkbox':
-            return <Checkbox/>
-        
+          case 'ReactInstallation':
+          return <ReactInstallation/> 
+          case 'ReactClass':
+          return <ReactClass/>  
+          case 'Reactcomponent':
+          return <Reactcomponent/>
+          case 'Conditional':
+          return <Conditional/>
+          case 'ES6':
+          return <ES6/>  
+          case 'ReactFormsubmit':
+          return <ReactFormsubmit/> 
+          case 'ReactForms':
+          return <ReactForms/>  
+          case 'ReactAttributes':
+          return <ReactAttributes/>  
+          case 'ReactExpressons':
+          return <ReactExpressons/>  
+          case 'ImportExport':
+          return <ImportExport/>  
+          case 'JSXIntro':
+          return <JSXIntro/>  
+          case 'ReactList':
+          return <ReactList/>   
+          case 'ReactProchild':
+          return <ReactProchild/> 
+          case 'ReactProDestructuring':
+          return <ReactProDestructuring/>  
+          case 'ReactProps':
+          return <ReactProps/>   
+          case 'ReactRender':
+          return <ReactRender/>    
+
+
+          
+          
 
             default:
           return (
@@ -27,7 +77,7 @@ const ReactNav = () => {
 
                 <button
                   className="bg-gray-200 text-2xl px-3 fixed top-16 left-4 z-50 sm:hidden"
-                  onClick={() => setIsOpen(!isOpen)}>
+                  onClick={() => setisOpen(!isOpen)}>
                   <i className="fas fa-bars"></i>
                 </button>
         
@@ -40,10 +90,33 @@ const ReactNav = () => {
                                  >  
 
 
-                   <h1 className="text-xl font-semibold mt-5 mb-2">JS Statements</h1>
-                   <ul className='space-y-2 text-sm'>  
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Checkbox')}>React Chechbox</li>
+                   <h1 className="text-xl font-semibold mt-5 mb-2">React Tutorial</h1>
+                    <ul className='space-y-2 text-sm'>  
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactInstallation')}>React Installation</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactRender')}>React Render HTML</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ES6')}>React ES6</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('JSXIntro')}>React JSX Intro</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactAttributes')}>React JSX Attributes</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactExpressons')}>React JSX Expressions</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ImportExport')}>React Import & Export</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Reactcomponent')}>React Componenets</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactClass')}>React Class</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactForms')}>React Forms</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactFormsubmit')}>React Forms Submit</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactProps')}>React Props</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactProDestructuring')}>React Props Destructuring</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactProchild')}>React Props Children</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Conditional')}>React Conditionals</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactList')}>React Lists</li>
                     </ul>
+
+
+
+
+
+
+
+
                 </div>
 
 
