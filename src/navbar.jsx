@@ -25,6 +25,14 @@ const Navbar = () => {
     setactive("javascript");
   }
 
+  const handleReactNavigation = () => {
+    navigate('/Component/React/React-Pages')
+    setIsMenuOpen(false);
+    setactive('react');
+  }
+
+
+
   return (
     <div className="bg-green-300 fixed top-0 left-0 w-full z-50 shadow-md">
       <div className="flex items-center justify-between px-4 sm:px-6 md:px-8 h-14">
@@ -58,10 +66,14 @@ const Navbar = () => {
             onClick={handleJSNavigation}>
               <i className="fa-brands fa-js"></i> JavaScript
             </li>
-            <li className="hover:cursor-pointer hover:text-white hover:bg-gray-600 px-2 py-4">
+            <li className={`hover:cursor-pointer hover:text-white hover:bg-gray-600 px-2 py-4
+              ${active === "" ? "bg-gray-600 text-white" : " "}`}
+              >
               <i className="fa-brands fa-bootstrap"></i> Bootstrap
             </li>
-            <li className="hover:cursor-pointer hover:text-white hover:bg-gray-600 px-2 py-4">
+            <li className={`hover:cursor-pointer hover:text-white hover:bg-gray-600 px-2 py-4
+              ${active === "react" ? "bg-gray-600 text-white" : " "}`}
+              onClick={handleReactNavigation}>
               <i className="fa-brands fa-react"></i> React  
             </li>
           </ul>
@@ -88,7 +100,8 @@ const Navbar = () => {
             <li className="hover:cursor-pointer hover:bg-gray-200">
               <i className="fa-brands fa-bootstrap"></i> Bootstrap
             </li>
-            <li className="hover:cursor-pointer hover:bg-gray-200">
+            <li className="hover:cursor-pointer hover:bg-gray-200"
+            onClick={handleReactNavigation}>
               <i className="fa-brands fa-react"></i> React
             </li>
           </ul>

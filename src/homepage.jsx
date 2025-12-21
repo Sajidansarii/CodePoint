@@ -29,11 +29,13 @@ const homepage = ()=> {
   decs: "A CSS framework for designing better web pages.",
   button1: "Bootstrap Tutorial",
   image: "./public/Bootstrap.png",
+  path:'',
 },{
   title: "React",
   decs: "A JavaScript framework for building better web pages.",
   button1: "React Tutorial",
   image: "./public/React.png",
+  path:"./Component/React/React-Pages",
 }
   ]
   

@@ -6,6 +6,7 @@ import Footer from './footer'
 import HtmlSection from "./Component/HTML-Section/HtmlPages"
 import CssSection from "./Component/CSS-Section/CssPages"
 import JavaScriptSection from './Component/JavaScript-Section/JavaScriptPages' 
+import ReactPages from './Component/React/React-Pages'
 
  
 function App ()  { 
@@ -18,6 +19,7 @@ function App ()  {
       <Route path="/Component/HTML-Section/HtmlPages" element={<HtmlSection />}/>
       <Route path='/Component/CSS-Section/CssPages' element={<CssSection/>}/>
       <Route path='/Component/JavaScript-Section/JavaScriptPages' element={<JavaScriptSection/>}/>
+      <Route path='/Component/React/React-Pages' element={<ReactPages/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>
