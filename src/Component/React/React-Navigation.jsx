@@ -18,6 +18,9 @@ import ReactProchild from './React Props Children';
 import ReactProDestructuring from './React Props Destructuring';
 import ReactProps from './React Props';
 import ReactRender from './React Render Html';
+import ReactVirtual from './React Virtual DOM';
+import ReactRedux from './React React Redux';
+import ReactContext from './React Context API';
 
 
 
@@ -58,7 +61,14 @@ const ReactNav = () => {
           case 'ReactProps':
           return <ReactProps/>   
           case 'ReactRender':
-          return <ReactRender/>    
+          return <ReactRender/>   
+          case 'ReactVirtual':
+          return <ReactVirtual/>
+          case 'ReactRedux':
+          return <ReactRedux/> 
+          case 'ReactContext':
+          return <ReactContext/>   
+
 
 
           
@@ -108,6 +118,9 @@ const ReactNav = () => {
                       <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactProchild')}>React Props Children</li>
                       <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Conditional')}>React Conditionals</li>
                       <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactList')}>React Lists</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactVirtual')}>React Virtual DOM</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactRedux')}>React Redux</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactContext')}>React Context API</li>
                     </ul>
 
 
