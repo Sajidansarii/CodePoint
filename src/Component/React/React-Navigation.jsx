@@ -21,6 +21,12 @@ import ReactRender from './React Render Html';
 import ReactVirtual from './React Virtual DOM';
 import ReactRedux from './React React Redux';
 import ReactContext from './React Context API';
+import HooksIntroduction from './React Hooks Introduction';
+import UseStateHooks from './React UseState Hooks';
+import UseEffectHooks from './React UseEffect Hooks';
+import UseRefHooks from './React UseRef Hooks';
+import UseMemoHooks from './React UseMemo Hooks';
+import UseContextHooks from './React UseContext Hooks';
 
 
 
@@ -68,7 +74,18 @@ const ReactNav = () => {
           return <ReactRedux/> 
           case 'ReactContext':
           return <ReactContext/>   
-
+          case 'HooksIntroduction':
+          return <HooksIntroduction/>  
+          case 'UseStateHooks':
+          return <UseStateHooks/>  
+          case 'UseEffectHooks':
+          return <UseEffectHooks/>  
+          case 'UseRefHooks':
+          return <UseRefHooks/>  
+          case 'UseMemoHooks':
+          return <UseMemoHooks/>  
+          case 'UseContextHooks':
+          return <UseContextHooks/>  
 
 
           
@@ -93,7 +110,7 @@ const ReactNav = () => {
         
 
                  {/* Sidebar */}
-                <div className={`lg:sticky lg:left-0 lg:top-16 w-56 fixed h-[calc(100vh-4rem)] overflow-y-auto 
+                <div className={`lg:sticky lg:left-0 lg:top-16 w-60 fixed h-[calc(100vh-4rem)] overflow-y-auto 
                                  bg-gray-200 px-5 py-6 shadow-lg z-40 transform transition-transform
                                    duration-300 sm:translate-x-0 sm:block
                                    ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
@@ -123,6 +140,16 @@ const ReactNav = () => {
                       <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactContext')}>React Context API</li>
                     </ul>
 
+                     <h1 className="text-xl font-semibold mt-5 mb-2">React Hooks</h1>
+                     <ul className="space-y-2 text-sm">
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('HooksIntroduction')}>React Hooks Introduction</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('UseStateHooks')}>React UseState Hooks</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('UseEffectHooks')}>React UseEffect Hooks</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('UseRefHooks')}>React UseRef Hooks</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('UseMemoHooks')}>React UseMemo Hooks</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('UseContextHooks')}>React UseContext Hooks</li>
+                     </ul>
+                      
 
 
 

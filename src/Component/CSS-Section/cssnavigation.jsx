@@ -418,7 +418,7 @@ const [showpage,setshowpage] = useState(null);
                 </button>
         
                 {/* Sidebar */}
-                <div className={`lg:sticky lg:left-0 lg:top-16 w-56 fixed h-[calc(100vh-4rem)] overflow-y-auto
+                <div className={`lg:sticky lg:left-0 lg:top-16 w-60 fixed h-[calc(100vh-4rem)] overflow-y-auto
                                bg-gray-200 px-5 py-6 z-40 transform transition-transform
                                 duration-300 shadow-lg sm:translate-x-0 sm:block   
                                 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
