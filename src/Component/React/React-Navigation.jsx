@@ -27,6 +27,13 @@ import UseEffectHooks from './React UseEffect Hooks';
 import UseRefHooks from './React UseRef Hooks';
 import UseMemoHooks from './React UseMemo Hooks';
 import UseContextHooks from './React UseContext Hooks';
+import ReactDOM from './React DOM Intro';
+import ReactCapture from './React Capture Event';
+import ReactMouse from './React Mouse Events';
+import ReactDoubleClick from './React Doubleclick Event';
+import ReactOnSubmit from './React Onsubmit Event';
+import ReactOnScroll from './React OnScroll Event';
+import ReactonBlur from './React onBlur Events';
 
 
 
@@ -86,6 +93,20 @@ const ReactNav = () => {
           return <UseMemoHooks/>  
           case 'UseContextHooks':
           return <UseContextHooks/>  
+          case 'ReactDOM':
+          return <ReactDOM/>  
+          case 'ReactCapture':
+          return <ReactCapture/>  
+          case 'ReactMouse':
+          return <ReactMouse/>
+          case 'ReactDoubleClick':
+          return <ReactDoubleClick/>  
+          case 'ReactOnSubmit':
+          return <ReactOnSubmit/>  
+          case 'ReactOnScroll':
+          return <ReactOnScroll/>  
+          case 'ReactonBlur':
+          return <ReactonBlur/>  
 
 
           
@@ -148,6 +169,19 @@ const ReactNav = () => {
                       <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('UseRefHooks')}>React UseRef Hooks</li>
                       <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('UseMemoHooks')}>React UseMemo Hooks</li>
                       <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('UseContextHooks')}>React UseContext Hooks</li>
+                     </ul>
+
+
+
+                      <h1 className="text-xl font-semibold mt-5 mb-2">React DOM Events</h1>
+                     <ul className="space-y-2 text-sm">
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactDOM')}>React Events Introduction</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactCapture')}>React onclickcapture Event</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactMouse')}>React onMouseDown Event</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactDoubleClick')}>React onDoubleClick Event</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactOnSubmit')}>React onSubmit Event</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactOnScroll')}>React onScroll Event</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactonBlur')}>React onBlur Event</li>
                      </ul>
                       
 
