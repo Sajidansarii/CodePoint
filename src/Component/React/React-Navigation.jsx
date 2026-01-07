@@ -34,6 +34,12 @@ import ReactDoubleClick from './React Doubleclick Event';
 import ReactOnSubmit from './React Onsubmit Event';
 import ReactOnScroll from './React OnScroll Event';
 import ReactonBlur from './React onBlur Events';
+import ReactLifeCycle from './React LIfecycle Event';
+import ReactComponenetMOunt from './React Component Mount';
+import ReactComponenetcatch from './React ComponentCatch';
+import ReactcomponentUpdate from './React ComponenetUpdate';
+import ReactComponenetUnmount from './React Componenet Unmount';
+
 
 
 
@@ -107,6 +113,16 @@ const ReactNav = () => {
           return <ReactOnScroll/>  
           case 'ReactonBlur':
           return <ReactonBlur/>  
+          case 'ReactLifeCycle':
+          return <ReactLifeCycle/>  
+          case 'ReactComponenetMOunt':
+          return <ReactComponenetMOunt/> 
+          case 'ReactComponenetcatch':
+          return <ReactComponenetcatch/>  
+          case 'ReactcomponentUpdate':
+          return <ReactcomponentUpdate/>   
+          case 'ReactComponenetUnmount':
+          return <ReactComponenetUnmount/>  
 
 
           
@@ -182,6 +198,16 @@ const ReactNav = () => {
                       <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactOnSubmit')}>React onSubmit Event</li>
                       <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactOnScroll')}>React onScroll Event</li>
                       <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactonBlur')}>React onBlur Event</li>
+                     </ul>
+
+
+                      <h1 className="text-xl font-semibold mt-5 mb-2">React Lifecycle Events</h1>
+                     <ul className="space-y-2 text-sm">
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactLifeCycle')}>LifeCycle Events</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactComponenetcatch')}>ComponentCatch Event</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactComponenetMOunt')}>ComponenetMount Event</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactcomponentUpdate')}>Component Update Event</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactComponenetUnmount')}>Component Unmount Event</li>
                      </ul>
                       
 
