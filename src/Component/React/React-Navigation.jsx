@@ -39,6 +39,12 @@ import ReactComponenetMOunt from './React Component Mount';
 import ReactComponenetcatch from './React ComponentCatch';
 import ReactcomponentUpdate from './React ComponenetUpdate';
 import ReactComponenetUnmount from './React Componenet Unmount';
+import ReactRouter from './React JS Router';
+import  ReactRouterdom from './React Router dom';
+import ReactRouterTypes from './React JS Types of Router';
+import ReactRouterHooks from './React Router Hooks';
+import NavigationRouting from './Navigation And Routing in react';
+import NavlinkRouter from './Navlink in React Router dom';
 
 
 
@@ -123,6 +129,20 @@ const ReactNav = () => {
           return <ReactcomponentUpdate/>   
           case 'ReactComponenetUnmount':
           return <ReactComponenetUnmount/>  
+          case 'ReactRouter':
+          return <ReactRouter/>  
+          case 'ReactRouterdom':
+          return <ReactRouterdom/>
+          case 'ReactRouterTypes':
+          return <ReactRouterTypes/>  
+          case 'ReactRouterHooks':
+          return <ReactRouterHooks/> 
+          case 'NavigationRouting':
+          return <NavigationRouting/>  
+          case 'NavlinkRouter':
+          return <NavlinkRouter/>  
+          
+          
 
 
           
@@ -209,11 +229,18 @@ const ReactNav = () => {
                       <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactcomponentUpdate')}>Component Update Event</li>
                       <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactComponenetUnmount')}>Component Unmount Event</li>
                      </ul>
+
+                     <h1 className="text-xl font-semibold mt-5 mb-2">Routing in React</h1>
+                     <ul className="space-y-2 text-sm">
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactRouter')}>React JS Router</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactRouterdom')}>What is react-router-dom?</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactRouterTypes')}>React JS Types of Routers</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactRouterHooks')}>React-Router Hooks</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('NavigationRouting')}>Navigation and Routing</li>
+                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('NavlinkRouter')}>Link and NavLink components</li>
+                     </ul>
+
                       
-
-
-
-
 
 
 
