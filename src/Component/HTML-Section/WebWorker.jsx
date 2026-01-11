@@ -5,15 +5,18 @@ const HTMLWebWorker = () => {
   const [worker, setWorker] = useState(null);
 
   const startWorker = () => {
-    if (window.Worker) {
-      const newWorker = new Worker(new URL("./worker.js", import.meta.url));
-      newWorker.onmessage = (e) => {
-        setCount(e.data);
-      };
-      setWorker(newWorker);
-    } else {
+    if (!window.Worker) {
       alert("Web Workers are not supported in this browser.");
+      return;
     }
+
+    if (worker) return; // prevent multiple workers
+
+    const newWorker = new CounterWorker();
+    newWorker.onmessage = (e) => {
+      setCount(e.data);
+    };
+    setWorker(newWorker);
   };
 
   const stopWorker = () => {
@@ -23,6 +26,7 @@ const HTMLWebWorker = () => {
     }
   };
 
+  
   return (
     <div className="p-4 max-w-4xl">
       <h1 className="text-3xl font-medium text-blue-500 mb-4">HTML Web Workers</h1>
