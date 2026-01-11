@@ -66,14 +66,14 @@ const Navbar = () => {
             onClick={handleJSNavigation}>
               <i className="fa-brands fa-js"></i> JavaScript
             </li>
-            <li className={`hover:cursor-pointer hover:text-white hover:bg-gray-600 px-2 py-4
+            {/* <li className={`hover:cursor-pointer hover:text-white hover:bg-gray-600 px-2 py-4
               ${active === "" ? "bg-gray-600 text-white" : " "}`}
               >
               <i className="fa-brands fa-bootstrap"></i> Bootstrap
-            </li>
+            </li> */}
             <li className={`hover:cursor-pointer hover:text-white hover:bg-gray-600 px-2 py-4
               ${active === "react" ? "bg-gray-600 text-white" : " "}`}
-              onClick={handleReactNavigation}>
+              onClick={handleReactNavigation}> 
               <i className="fa-brands fa-react"></i> React  
             </li>
           </ul>
