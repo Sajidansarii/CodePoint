@@ -2,48 +2,48 @@ import React from "react";
 
 const HttpsMessages = () => {
   return (
-    <div className="p-4 sm:p-6 max-w-4xl">
-      <h1 className="text-3xl font-medium mb-4 text-blue-500">HTTPS Messages</h1>
-      <p className="mb-4">
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
+      <h1 className="text-3xl font-semibold mb-4 text-blue-500">HTTPS Messages</h1>
+      <p className="mb-3">
         <strong>HTTPS</strong> (HyperText Transfer Protocol Secure) works the
         same way as HTTP but adds <strong>encryption</strong> using
         <strong> SSL/TLS</strong> to keep data secure.
       </p>
-      <p className="mb-4">
+      <p className="mb-3">
         When a browser communicates with a server over HTTPS, it still uses{" "}
         <strong>request messages</strong> and <strong>response messages</strong>
         , but the data is <strong>encrypted</strong> so others cannot read it.
       </p>
 
       {/* Request Message */}
-      <h2 className="text-xl font-semibold mt-6 mb-2 text-blue-500">1. HTTPS Request Message</h2>
+      <h2 className="text-2xl font-semibold mt-5 mb-3 text-blue-500">1. HTTPS Request Message</h2>
       <p className="mb-2">
         Sent by the <strong>client</strong> (browser) to the server.
       </p>
-      <ul className="list-disc ml-6 mb-4">
+      <ul className="list-[square] list-inside mb-3">
         <li>Request line → Method, secure URL (<code>https://</code>), and HTTP version.</li>
         <li>Headers → Additional info about the request.</li>
         <li>Body → Data sent to the server (in POST, PUT, etc.).</li>
       </ul>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
         {`GET /secure-page.html HTTP/1.1
 Host: www.example.com
 User-Agent: Mozilla/5.0
 Accept: text/html`}
       </pre>
-      <p className="italic mb-4">In HTTPS, this message is encrypted during transfer.</p>
+      <p className="italic mb-3">In HTTPS, this message is encrypted during transfer.</p>
 
       {/* Response Message */}
-      <h2 className="text-xl font-semibold mt-6 mb-2 text-blue-500">2. HTTPS Response Message</h2>
+      <h2 className="text-2xl font-semibold mt-5 mb-3 text-blue-500">2. HTTPS Response Message</h2>
       <p className="mb-2">
         Sent by the <strong>server</strong> back to the client after processing the request.
       </p>
-      <ul className="list-disc ml-6 mb-4">
+      <ul className="list-[square] list-inside mb-3">
         <li>Status line → HTTP version, status code, and message.</li>
         <li>Headers → Info about the server and content.</li>
         <li>Body → The encrypted content returned.</li>
       </ul>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400mb-3">
         {`HTTP/1.1 200 OK
 Content-Type: text/html
 Content-Length: 150
@@ -55,8 +55,8 @@ Content-Length: 150
       <p className="italic mb-4">Even this response is encrypted in HTTPS.</p>
 
       {/* Why Secure */}
-      <h2 className="text-xl font-semibold mt-6 mb-2">Why HTTPS Messages are Secure</h2>
-      <ul className="list-disc ml-6 mb-4">
+      <h2 className="text-2xl font-semibold mt-5 mb-3">Why HTTPS Messages are Secure</h2>
+      <ul className="list-[square] list-inside mb-3">
         <li><strong>Encryption</strong> → Protects data from being read by attackers.</li>
         <li><strong>Authentication</strong> → Verifies the correct website connection.</li>
         <li><strong>Data Integrity</strong> → Ensures the data is not changed in transit.</li>

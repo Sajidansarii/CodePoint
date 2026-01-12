@@ -28,15 +28,15 @@ const HTMLWebWorker = () => {
 
   
   return (
-    <div className="p-4 max-w-4xl">
-      <h1 className="text-3xl font-medium text-blue-500 mb-4">HTML Web Workers</h1>
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
+      <h1 className="text-3xl font-semibold text-blue-500 mb-3">HTML Web Workers</h1>
 
       <p className="leading-relaxed mb-3">
         A <strong>Web Worker</strong> is a JavaScript script that runs in the background, separate from the main browser thread. It helps perform heavy calculations without freezing the UI.
       </p>
 
       {/* Features */}
-      <ul className="list-disc pl-5 leading-relaxed mb-3">
+      <ul className="list-[square] list-inside leading-relaxed mb-3">
         <li>Runs JavaScript in a background thread.</li>
         <li>Improves UI responsiveness.</li>
         <li>Communicates via <code>postMessage</code>.</li>
@@ -44,7 +44,7 @@ const HTMLWebWorker = () => {
 
       {/* Demo */}
       <div className="bg-gray-100 p-4 rounded mb-6">
-        <h2 className="text-xl font-semibold mb-2 text-blue-500">Web Worker Counter</h2>
+        <h2 className="text-xl font-semibold mb-3 text-blue-500">Web Worker Counter</h2>
         <p className="text-lg text-green-600 font-semibold">Count: {count}</p>
         <div className="mt-3 space-x-2">
           <button
@@ -64,8 +64,8 @@ const HTMLWebWorker = () => {
 
       {/* JavaScript Code */}
       <div className="mb-6">
-        <h3 className="text-lg font-semibold text-blue-500 mb-2">worker.js (Background Script)</h3>
-        <pre className="bg-gray-900 p-4 text-sm rounded-lg text-green-400 overflow-x-auto">
+        <h3 className="text-lg font-semibold text-blue-500 mb-3">worker.js (Background Script)</h3>
+        <pre className="bg-gray-900 p-4 text-sm rounded-lg text-green-400 mb-3">
 {`let i = 0;
 function timedCount() {
   i += 1;
@@ -78,8 +78,8 @@ timedCount();`}
 
       {/* Notes */}
       <div className="p-4 bg-yellow-50 border border-yellow-200 rounded">
-        <h3 className="text-lg font-semibold text-yellow-700 mb-2">📝 Important Notes</h3>
-        <ul className="list-disc pl-5 leading-relaxed space-y-1">
+        <h3 className="text-lg font-semibold text-yellow-700 mb-3">📝 Important Notes</h3>
+        <ul className="list-[square] list-inside leading-relaxed space-y-1">
           <li>Web workers run in separate files (like <code>worker.js</code>).</li>
           <li>They don’t have access to the DOM.</li>
           <li>Use <code>postMessage()</code> to send/receive data.</li>

@@ -1,8 +1,8 @@
         const HTMLVideo = () => {
   return (
-    <div className="p-4 max-w-4xl">
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
       {/* Title */}
-      <h1 className="text-3xl sm:text-4xl font-medium text-blue-500 mb-4 text-center sm:text-left">
+      <h1 className="text-3xl font-semibold text-blue-500 mb-3">
         HTML Video
       </h1>
 
@@ -13,11 +13,11 @@
 
       {/* Basic Syntax */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Basic Syntax</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Basic Syntax</h2>
         <p className="leading-relaxed mb-3">
           A simple video with controls:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`<video width="640" controls>
   <source src="movie.mp4" type="video/mp4" />
   <source src="movie.webm" type="video/webm" />
@@ -31,8 +31,8 @@
 
       {/* Attributes */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Common Attributes</h2>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Common Attributes</h2>
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed">
           <li><code>controls</code> — Shows native play/pause/volume UI.</li>
           <li><code>autoplay</code> — Starts playback automatically (often muted by browsers).</li>
           <li><code>muted</code> — Mutes the video. Required for autoplay in many browsers.</li>
@@ -45,11 +45,11 @@
 
       {/* Captions & Accessibility */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Captions & Accessibility</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Captions & Accessibility</h2>
         <p className="leading-relaxed mb-3">
           Use <code>&lt;track&gt;</code> to add captions or subtitles. They improve accessibility and comprehension.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`<video controls>
   <source src="movie.mp4" type="video/mp4" />
   <track kind="captions" src="captions_en.vtt" srclang="en" label="English" default />
@@ -63,11 +63,11 @@
 
       {/* Responsive Video */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Responsive Video</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Responsive Video</h2>
         <p className="leading-relaxed mb-3">
           Wrap the video in a container that preserves aspect ratio so it scales on all devices.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`.video-wrapper {
   position: relative;
   padding-top: 56.25%; /* 16:9 */
@@ -87,11 +87,11 @@
 
       {/* Advanced Example */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Advanced Example</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Advanced Example</h2>
         <p className="leading-relaxed mb-3">
           Video with poster, captions, autoplay (muted), loop, and fallback text:
         </p>
-        <pre className="bg-gray-109 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-109 p-4 rounded-lg text-green-400 mb-3">
           <code>{`<div class="video-wrapper" style="position:relative; padding-top:56.25%;">
   <video 
     muted 
@@ -111,8 +111,8 @@
 
       {/* Performance Tips */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Performance Tips</h2>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Performance Tips</h2>
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed">
           <li>Use optimized video formats (e.g., H.264/MP4, WebM) and encode at reasonable bitrate.</li>
           <li>Provide multiple source formats for broader compatibility.</li>
           <li>Use <code>preload="metadata"</code> if you want minimal initial load.</li>
@@ -122,8 +122,8 @@
 
       {/* Common Mistakes */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Common Mistakes</h2>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Common Mistakes</h2>
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed">
           <li>Omitting <code>controls</code> and leaving users without playback UI.</li>
           <li>Using autoplay with sound (many browsers block it).</li>
           <li>Not providing captions for accessibility.</li>
@@ -134,8 +134,8 @@
 
       {/* Quick Recap */}
       <div className="mt-6 p-4 bg-blue-50 rounded-md border border-blue-200">
-        <h3 className="text-lg font-semibold text-blue-700 mb-2">Quick Recap:</h3>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed text-sm sm:text-base">
+        <h3 className="text-lg font-semibold text-blue-700 mb-3">Quick Recap:</h3>
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed text-sm sm:text-base">
           <li><code>&lt;video&gt;</code> embeds video; use multiple <code>&lt;source&gt;</code> tags.</li>
           <li>Include <code>controls</code>, and for accessibility add <code>&lt;track&gt;</code> captions.</li>
           <li>Use poster images for initial preview.</li>

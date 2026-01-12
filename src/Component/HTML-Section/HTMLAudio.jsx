@@ -2,8 +2,8 @@ import React from "react";
 
 const HtmlAudio = () => {
   return (
-    <div className="p-4 sm:p-6 max-w-4xl">
-      <h1 className="text-3xl font-medium mb-4 text-blue-500">HTML &lt;audio&gt; Tag</h1>
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
+      <h1 className="text-3xl font-semibold mb-4 text-blue-500">HTML &lt;audio&gt; Tag</h1>
       <p className="mb-4">
         The <strong>&lt;audio&gt;</strong> tag is used to embed sound content in
         an HTML document. It allows you to play audio files like music, sound
@@ -12,14 +12,15 @@ const HtmlAudio = () => {
       </p>
 
       <h2 className="text-xl font-semibold mt-6 mb-2 text-blue-500">Basic Syntax</h2>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
         {`<audio src="song.mp3" controls>
   Your browser does not support the audio element.
 </audio>`}
       </pre>
 
+
       <h2 className="text-xl font-semibold mt-6 mb-2 text-blue-500">Common Attributes</h2>
-      <ul className="list-disc ml-6 mb-4">
+      <ul className="list-[square] list-inside mb-3">
         <li><strong className="text-blue-500">src</strong> – Path to the audio file.</li>
         <li><strong className="text-blue-500">controls</strong> – Displays play, pause, and volume buttons.</li>
         <li><strong className="text-blue-500">autoplay</strong> – Starts playing audio automatically.</li>
@@ -28,12 +29,12 @@ const HtmlAudio = () => {
         <li><strong className="text-blue-500" >preload</strong> – Hints to the browser how to load audio (<code>auto</code>, <code>metadata</code>, or <code>none</code>).</li>
       </ul>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">Example with Multiple Sources</h2>
+      <h2 className="text-xl font-semibold mt-6 mb-3">Example with Multiple Sources</h2>
       <p className="mb-4">
         To ensure maximum browser compatibility, you can include multiple audio
         formats.
       </p>
-      <pre className="bg-gray-900  p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
         {`<audio controls>
   <source src="song.mp3" type="audio/mpeg">
   <source src="song.ogg" type="audio/ogg">
@@ -42,8 +43,8 @@ const HtmlAudio = () => {
 </audio>`}
       </pre>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">Browser Support</h2>
-      <p className="mb-4">
+      <h2 className="text-xl font-semibold mt-6 mb-3">Browser Support</h2>
+      <p className="mb-3">
         Most modern browsers support MP3, OGG, and WAV formats. MP3 has the
         widest compatibility across all devices.
       </p>

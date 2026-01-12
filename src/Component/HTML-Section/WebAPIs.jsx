@@ -1,7 +1,7 @@
 const HTMLWebAPIs = () => {
   return (
-    <div className="p-4 max-w-4xl">
-      <h1 className="text-3xl font-medium text-blue-500 mb-4">HTML Web APIs</h1>
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
+      <h1 className="text-3xl font-semibold text-blue-500 mb-3">HTML Web APIs</h1>
 
       <p className="leading-relaxed mb-3">
         Web APIs (Application Programming Interfaces) are built-in browser features that allow developers to interact with the browser, user devices, or the web page. They enhance HTML by enabling dynamic content, user interaction, and system-level functionality.
@@ -9,8 +9,8 @@ const HTMLWebAPIs = () => {
 
       {/* Features */}
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Why Use Web APIs?</h2>
-        <ul className="list-disc pl-5 leading-relaxed space-y-2">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Why Use Web APIs?</h2>
+        <ul className="list-[square] list-inside leading-relaxed space-y-2">
           <li>Access browser or device features like camera, location, and storage.</li>
           <li>Update web content dynamically using JavaScript.</li>
           <li>Interact with the web server or fetch data using APIs like <code>fetch()</code>.</li>
@@ -19,8 +19,8 @@ const HTMLWebAPIs = () => {
 
       {/* Popular Web APIs */}
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Commonly Used Web APIs</h2>
-        <ul className="list-disc pl-5 leading-relaxed space-y-2">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Commonly Used Web APIs</h2>
+        <ul className="list-[square] list-inside leading-relaxed space-y-2">
           <li><strong>DOM API:</strong> Interact with and update HTML elements dynamically.</li>
           <li><strong>Geolocation API:</strong> Get user’s current location.</li>
           <li><strong>Fetch API:</strong> Send/receive data from a web server asynchronously.</li>
@@ -33,9 +33,9 @@ const HTMLWebAPIs = () => {
 
       {/* Example - Geolocation */}
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Example: Geolocation API</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Example: Geolocation API</h2>
         <p className="leading-relaxed mb-3">Get the user’s current location:</p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 text-sm overflow-x-auto">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`navigator.geolocation.getCurrentPosition((position) => {
   console.log("Latitude:", position.coords.latitude);
   console.log("Longitude:", position.coords.longitude);
@@ -45,9 +45,9 @@ const HTMLWebAPIs = () => {
 
       {/* Example - Fetch API */}
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Example: Fetch API</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Example: Fetch API</h2>
         <p className="leading-relaxed mb-3">Get JSON data from a server:</p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 text-sm overflow-x-auto">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`fetch("https://jsonplaceholder.typicode.com/posts/1")
   .then(response => response.json())
   .then(data => console.log(data));`}</code>
@@ -56,8 +56,8 @@ const HTMLWebAPIs = () => {
 
       {/* Best Practices */}
       <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded">
-        <h3 className="text-lg font-semibold text-blue-700 mb-2">Best Practices</h3>
-        <ul className="list-disc pl-5 leading-relaxed space-y-1">
+        <h3 className="text-lg font-semibold text-blue-700 mb-3">Best Practices</h3>
+        <ul className="list-[square] list-inside leading-relaxed space-y-1">
           <li>Always check if the browser supports the API using <code>if ('API' in window)</code>.</li>
           <li>Handle errors like permissions or unsupported features gracefully.</li>
           <li>Do not request unnecessary user permissions.</li>

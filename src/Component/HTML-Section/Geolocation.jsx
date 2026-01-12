@@ -17,8 +17,8 @@ const HTMLGeolocation = () => {
   };
 
   return (
-    <div className="p-4 max-w-4xl">
-      <h1 className="text-3xl font-medium text-blue-500 mb-4">HTML Geolocation API</h1>
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
+      <h1 className="text-3xl font-semibold text-blue-500 mb-3">HTML Geolocation API</h1>
 
       {/* Introduction */}
       <p className="leading-relaxed mb-3">
@@ -27,8 +27,8 @@ const HTMLGeolocation = () => {
 
       {/* How It Works */}
       <div className="mb-6">
-        <h2 className="text-xl font-semibold text-blue-500 mb-2">How It Works</h2>
-        <ul className="list-disc pl-5 leading-relaxed space-y-1">
+        <h2 className="text-xl font-semibold text-blue-500 mb-3">How It Works</h2>
+        <ul className="list-[square] list-inside leading-relaxed space-y-1">
           <li>Available via <code>navigator.geolocation</code></li>
           <li>Requests user permission to access their location</li>
           <li>Returns latitude, longitude, and more info</li>
@@ -37,8 +37,8 @@ const HTMLGeolocation = () => {
 
       {/* Example Code */}
       <div className="mb-6">
-        <h2 className="text-xl font-semibold text-blue-500 mb-2">Basic Example</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 text-sm overflow-x-auto mb-2">
+        <h2 className="text-xl font-semibold text-blue-500 mb-3">Basic Example</h2>
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`navigator.geolocation.getCurrentPosition((position) => {
   console.log("Latitude:", position.coords.latitude);
   console.log("Longitude:", position.coords.longitude);
@@ -61,8 +61,8 @@ const HTMLGeolocation = () => {
 
       {/* Notes */}
       <div className="p-4 bg-blue-50 border border-blue-200 rounded">
-        <h3 className="text-lg font-semibold text-blue-700 mb-2">⚠ Notes</h3>
-        <ul className="list-disc pl-5 leading-relaxed space-y-1">
+        <h3 className="text-lg font-semibold text-blue-700 mb-3">⚠ Notes</h3>
+        <ul className="list-[square] list-inside leading-relaxed space-y-1">
           <li>User permission is required to access location.</li>
           <li>Geolocation may not work on insecure (non-HTTPS) sites.</li>
           <li>May not be accurate on desktop browsers.</li>

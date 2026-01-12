@@ -20,15 +20,15 @@ const HTMLDragAndDrop = () => {
   };
 
   return (
-    <div className="p-4 max-w-4xl">
-      <h1 className="text-3xl font-medium text-blue-500 mb-4">HTML Drag and Drop</h1>
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
+      <h1 className="text-3xl font-semibold text-blue-500 mb-3">HTML Drag and Drop</h1>
 
       <p className="leading-relaxed mb-3">
         The <strong>Drag and Drop API</strong> allows users to drag elements and drop them into other parts of the web page. This feature is commonly used in image uploaders, to-do lists, file explorers, and more.
       </p>
 
       {/* Features */}
-      <ul className="list-disc pl-5 leading-relaxed mb-3">
+      <ul className="list-[square] list-inside leading-relaxed mb-3">
         <li>Draggable elements must have <code>draggable="true"</code></li>
         <li>Use events: <code>onDragStart</code>, <code>onDragOver</code>, <code>onDrop</code></li>
         <li>Uses the <code>dataTransfer</code> object to pass information</li>
@@ -36,7 +36,7 @@ const HTMLDragAndDrop = () => {
 
       {/* Code Example */}
       <div className="mb-6">
-        <h2 className="text-xl font-semibold text-blue-500 mb-2">Drag & Drop Demo</h2>
+        <h2 className="text-xl font-semibold text-blue-500 mb-3">Drag & Drop Demo</h2>
         <div className="flex flex-col sm:flex-row gap-4">
           {/* Draggable */}
           {!dropped && (
@@ -64,8 +64,8 @@ const HTMLDragAndDrop = () => {
 
       {/* Code Snippet */}
       <div className="mb-6">
-        <h3 className="text-xl font-semibold text-blue-500 mb-2">JavaScript Example</h3>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 text-sm overflow-x-auto">
+        <h3 className="text-xl font-semibold text-blue-500 mb-3">JavaScript Example</h3>
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400">
           <code>{`element.addEventListener("dragstart", (event) => {
   event.dataTransfer.setData("text", event.target.id);
 });
@@ -84,8 +84,8 @@ target.addEventListener("drop", (event) => {
 
       {/* Note */}
       <div className="p-4 bg-blue-50 border border-blue-200 rounded">
-        <h3 className="text-lg font-semibold text-blue-700 mb-2">Important Notes</h3>
-        <ul className="list-disc pl-5 text-gray-700 space-y-1">
+        <h3 className="text-lg font-semibold text-blue-700 mb-3">Important Notes</h3>
+        <ul className="list-[square] list-inside text-gray-700 space-y-1">
           <li>Draggable elements need <code>draggable="true"</code> to work.</li>
           <li>Always call <code>e.preventDefault()</code> in <code>onDragOver</code> to allow dropping.</li>
           <li>You can style the drag effect using CSS or custom JS animations.</li>

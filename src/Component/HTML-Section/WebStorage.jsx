@@ -16,22 +16,22 @@ const HTMLWebStorage = () => {
   };
 
   return (
-    <div className="p-4 max-w-4xl">
-      <h1 className="text-3xl font-medium text-blue-500 mb-4">HTML Web Storage</h1>
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
+      <h1 className="text-3xl font-semibold text-blue-500 mb-3">HTML Web Storage</h1>
 
       <p className="leading-relaxed mb-3">
         HTML5 Web Storage provides two mechanisms for storing key-value pairs in a web browser:
       </p>
 
-      <ul className="list-disc pl-5 leading-relaxed mb-3">
+      <ul className="list-[square] list-inside leading-relaxed mb-3">
         <li><strong>localStorage</strong> — Data stored with no expiration time.</li>
         <li><strong>sessionStorage</strong> — Data stored until the browser tab is closed.</li>
       </ul>
 
       {/* Code Example */}
       <div className="mb-6">
-        <h2 className="text-xl font-semibold text-blue-500 mb-2">JavaScript Example</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 text-sm overflow-x-auto">
+        <h2 className="text-xl font-semibold text-blue-500 mb-3">JavaScript Example</h2>
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`// Save data
 localStorage.setItem("name", "John");
 
@@ -45,8 +45,8 @@ localStorage.removeItem("name");`}</code>
 
       {/* Interactive Demo */}
       <div className="mb-6">
-        <h2 className="text-xl font-semibold text-blue-500 mb-2">Try It Yourself</h2>
-        <div className="flex flex-col sm:flex-row gap-3 mb-2">
+        <h2 className="text-xl font-semibold text-blue-500 mb-3">Try It Yourself</h2>
+        <div className="flex flex-col sm:flex-row gap-3 mb-3">
           <input
             type="text"
             placeholder="Enter your name"
@@ -76,8 +76,8 @@ localStorage.removeItem("name");`}</code>
 
       {/* Notes */}
       <div className="p-4 bg-yellow-50 border border-yellow-200 rounded">
-        <h3 className="text-lg font-semibold text-yellow-700 mb-2">📝 Good to Know</h3>
-        <ul className="list-disc pl-5 leading-relaxed space-y-1">
+        <h3 className="text-lg font-semibold text-yellow-700 mb-3">📝 Good to Know</h3>
+        <ul className="list-[square] list-inside leading-relaxed space-y-1">
           <li>Stored data is in *string format*.</li>
           <li>You can convert objects using <code>JSON.stringify()</code> and <code>JSON.parse()</code>.</li>
           <li>localStorage is shared across tabs from the same origin.</li>

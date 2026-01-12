@@ -1,28 +1,24 @@
 const HTMLBasics = () => {
   return (
-    <div className="p-4 max-w-4xl">
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
       {/* Title */}
-      <h1 className="text-3xl font-medium text-blue-500 mb-4 text-center sm:text-left">
-        HTML Basics
-      </h1>
+      <h1 className="text-3xl font-medium text-blue-500 mb-3">HTML Basics</h1>
 
       {/* Introduction */}
-      <p className="text-gray-700 mb-4">
-        HTML, or <strong>HyperText Markup Language</strong>, is the backbone of every
+      <p className="text-gray-800 mb-3">
+        HTML, or <span className="text-red-400 bg-gray-50">HyperText Markup Language</span>, is the backbone of every
         website. It defines the <strong>structure</strong> of a web page using
         elements called <strong>tags</strong>. Learning HTML basics is the first step
         in web development.
       </p>
 
       {/* Section: HTML Elements */}
-      <h2 className="text-2xl font-semibold text-blue-500 mt-6 mb-2">
-        Basic HTML Elements
-      </h2>
-      <p className="text-gray-700 mb-3">
+      <h2 className="text-2xl font-semibold text-blue-500 mt-5 mb-3">Basic HTML Elements</h2>
+      <p className="text-gray-800 mb-3">
         HTML is made up of elements wrapped in <strong>tags</strong>. A basic HTML page
         usually includes:
       </p>
-      <ul className="list-disc pl-5 space-y-1 text-gray-700 mb-4">
+      <ul className="list-[square] list-inside space-y-1 text-gray-800 mb-3">
         <li>
           <code>&lt;!DOCTYPE html&gt;</code> - Declares HTML5 document type.
         </li>
@@ -38,10 +34,8 @@ const HTMLBasics = () => {
       </ul>
 
       {/* Code Example */}
-      <h2 className="text-2xl font-semibold text-blue-500 mt-6 mb-2">
-        Example: A Basic HTML Page
-      </h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-4 overflow-x-auto text-sm">
+      <h2 className="text-2xl font-semibold text-blue-500 mt-5 mb-5">Example</h2>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
 {`<!DOCTYPE html>
 <html>
   <head>
@@ -55,10 +49,8 @@ const HTMLBasics = () => {
       </pre>
 
       {/* Explanation */}
-      <h2 className="text-2xl font-semibold text-blue-500 mt-6 mb-2">
-        Explanation:
-      </h2>
-      <ul className="list-disc pl-5 space-y-1 text-gray-700 mb-4">
+      <h2 className="text-2xl font-semibold text-blue-500 mt-6 mb-3">Explanation:</h2>
+      <ul className="list-[square] list-inside space-y-1 text-gray-800 mb-3">
         <li><code>&lt;!DOCTYPE html&gt;</code> → Ensures browser uses HTML5.</li>
         <li><code>&lt;html&gt;</code> → Wraps all content.</li>
         <li><code>&lt;head&gt;</code> → Stores title and meta info.</li>
@@ -66,10 +58,10 @@ const HTMLBasics = () => {
       </ul>
 
       {/* Why Learn HTML */}
-      <h2 className="text-2xl font-semibold text-blue-500 mt-6 mb-2">
+      <h2 className="text-2xl font-semibold text-blue-500 mt-5 mb-3">
         Why Learn HTML Basics?
       </h2>
-      <ul className="list-disc pl-5 space-y-1 text-gray-700">
+      <ul className="list-[square] list-inside space-y-1 text-gray-800">
         <li>It is the foundation of all websites.</li>
         <li>It is simple and beginner-friendly.</li>
         <li>Works with CSS and JavaScript for styling and interactivity.</li>
@@ -77,8 +69,8 @@ const HTMLBasics = () => {
 
       {/* Recap */}
       <div className="mt-6 p-4 bg-blue-50 rounded-md border border-blue-200">
-        <h3 className="text-lg font-semibold text-blue-700 mb-2">Quick Recap:</h3>
-        <ul className="list-disc pl-5 space-y-1 text-gray-700 text-sm sm:text-base">
+        <h3 className="text-lg font-semibold text-blue-700 mb-3">Quick Recap:</h3>
+        <ul className="list-[square] list-inside space-y-1 text-gray-800">
           <li>HTML stands for HyperText Markup Language.</li>
           <li>Basic structure includes: <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code>.</li>
           <li>HTML is used to create the structure of web pages.</li>

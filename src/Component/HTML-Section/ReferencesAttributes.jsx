@@ -2,8 +2,8 @@ import React from "react";
 
 const HtmlAttributes = () => {
   return (
-    <div className="p-4 md:p-6 max-w-4xl">
-      <h1 className="text-2xl md:text-3xl font-medium mb-4 text-blue-500">HTML Attributes</h1>
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
+      <h1 className="text-2xl font-semibold mb-3 text-blue-500">HTML Attributes</h1>
 
       <p className="mb-4">
         HTML attributes provide additional information about HTML elements. They are always
@@ -11,14 +11,14 @@ const HtmlAttributes = () => {
         <code className="bg-gray-100 px-2 py-1 rounded ml-1">&nbsp;name="value"</code>
       </p>
 
-      <div className="bg-gray-900 p-4 rounded-lg text-green-400 mb-6 overflow-auto text-sm">
+      <div className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
         <code>
           {"<a href='https://codepoint.dev'>Visit CodePoint</a>"}
         </code>
       </div>
 
       <h2 className="text-xl font-semibold mb-2 text-blue-500">Commonly Used HTML Attributes</h2>
-      <ul className="list-disc ml-6 mb-6 space-y-1">
+      <ul className="list-[square] list-inside mb-5 space-y-1">
         <li><strong className="text-blue-500">href</strong> – Specifies the URL for a link</li>
         <li><strong className="text-blue-500">src</strong> – Specifies the source of an image</li>
         <li><strong className="text-blue-500">alt</strong> – Alternative text for an image</li>
@@ -33,15 +33,15 @@ const HtmlAttributes = () => {
         <li><strong className="text-blue-500">required</strong> – Makes input fields required before submission</li>
       </ul>
 
-      <h2 className="text-xl font-semibold mb-2">Example with Multiple Attributes</h2>
-      <div className="bg-gray-900 p-4 rounded-lg text-green-400 mb-4 overflow-auto text-sm">
+      <h2 className="text-xl font-semibold mb-3">Example with Multiple Attributes</h2>
+      <div className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
         <code>
           {"<input type='text' placeholder='Enter your name' required />"}
         </code>
       </div>
 
-      <h2 className="text-xl font-semibold mb-2">⚠ Rules for Attributes</h2>
-      <ul className="list-disc ml-6 space-y-1">
+      <h2 className="text-xl font-semibold mb-3">⚠ Rules for Attributes</h2>
+      <ul className="list-[square] list-inside space-y-1">
         <li>Attributes are always added to the opening tag.</li>
         <li>Attribute values should be enclosed in quotes (" ").</li>
         <li>You can use both single and double quotes, but double quotes are preferred.</li>

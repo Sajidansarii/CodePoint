@@ -1,23 +1,23 @@
 const HTMLLists = () => {
   return (
-    <div className="p-4 max-w-4xl">
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
       {/* Title */}
-      <h1 className="text-3xl sm:text-4xl font-medium text-blue-500 mb-4 text-center sm:text-left">
+      <h1 className="text-3xl font-medium text-blue-500 mb-3">
         HTML Lists
       </h1>
 
       {/* Intro */}
-      <p className="leading-relaxed mb-4">
+      <p className="leading-relaxed mb-3">
         HTML lists let you group related items together. They help organize content in a readable way. There are three main types of lists: unordered, ordered, and definition lists.
       </p>
 
       {/* Unordered List */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">1. Unordered List</h2>
-        <p className="text-gray-700 mb-2">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">1. Unordered List</h2>
+        <p className="text-gray-700 mb-3">
           An unordered list displays items with bullets. Use the <code>&lt;ul&gt;</code> tag with nested <code>&lt;li&gt;</code> items.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           {`<ul>
   <li>Apple</li>
   <li>Banana</li>
@@ -31,11 +31,11 @@ const HTMLLists = () => {
 
       {/* Ordered List */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">2. Ordered List</h2>
-        <p className="text-gray-700 mb-2">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">2. Ordered List</h2>
+        <p className="text-gray-700 mb-3">
           An ordered list shows items in sequence using numbers. Use the <code>&lt;ol&gt;</code> tag.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           {`<ol>
   <li>First step</li>
   <li>Second step</li>
@@ -49,11 +49,11 @@ const HTMLLists = () => {
 
       {/* Definition List */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">3. Definition List</h2>
-        <p className="text-gray-700 mb-2">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">3. Definition List</h2>
+        <p className="text-gray-700 mb-3">
           A definition list pairs terms and descriptions using <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code> (term), and <code>&lt;dd&gt;</code> (description).
         </p>
-        <pre className="bg-gray-900 p-4 text-green-400 rounded-lg mb-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 text-green-400 rounded-lg mb-3">
            {`<dl>
   <dt>HTML</dt>
   <dd>HyperText Markup Language</dd>
@@ -65,11 +65,11 @@ const HTMLLists = () => {
 
       {/* Nested Lists */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">4. Nested Lists</h2>
-        <p className="text-gray-700 mb-2">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">4. Nested Lists</h2>
+        <p className="text-gray-700 mb-3">
           Lists can be nested inside other list items to create hierarchy.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
            {`<ul>
   <li>Fruits
     <ul>
@@ -84,8 +84,8 @@ const HTMLLists = () => {
 
       {/* Attributes & Tips */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">5. Tips & Common Attributes</h2>
-        <ul className="list-disc pl-5 space-y-1 text-gray-700 mb-2">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">5. Tips & Common Attributes</h2>
+        <ul className="list-[square] list-inside space-y-1 text-gray-700 mb-3">
           <li>
             Use <code>&lt;li&gt;</code> only inside <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, or <code>&lt;menu&gt;</code>.
           </li>
@@ -99,7 +99,7 @@ const HTMLLists = () => {
         <p className="text-gray-700">
           Example of customizing start value in ordered list:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           {`<ol start="5">
   <li>Item five</li>
   <li>Item six</li>
@@ -109,11 +109,11 @@ const HTMLLists = () => {
 
       {/* Accessibility */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">6. Accessibility Notes</h2>
-        <p className="text-gray-700 mb-2">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">6. Accessibility Notes</h2>
+        <p className="text-gray-700 mb-3">
           Well-structured lists help screen readers and users navigate content more easily.
         </p>
-        <ul className="list-disc pl-5 space-y-1 text-gray-700">
+        <ul className="list-[square] list-inside space-y-1 text-gray-700">
           <li>Use semantic list tags (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;dl&gt;</code>) instead of styling non-list elements to look like lists.</li>
           <li>Ensure nested lists are properly indented in markup (not just visually with CSS).</li>
         </ul>
@@ -121,8 +121,8 @@ const HTMLLists = () => {
 
       {/* Quick Recap */}
       <div className="mt-6 p-4 bg-blue-50 rounded-md border border-blue-200">
-        <h3 className="text-lg font-semibold text-blue-700 mb-2">Quick Recap:</h3>
-        <ul className="list-disc pl-5 space-y-1 text-gray-700 text-sm sm:text-base">
+        <h3 className="text-lg font-semibold text-blue-700 mb-3">Quick Recap:</h3>
+        <ul className="list-[square] list-inside space-y-1 text-gray-700">
           <li><strong>Unordered lists</strong> use bullets (<code>&lt;ul&gt;</code>).</li>
           <li><strong>Ordered lists</strong> use numbers (<code>&lt;ol&gt;</code>).</li>
           <li><strong>Definition lists</strong> pair terms with descriptions (<code>&lt;dl&gt;</code>).</li>

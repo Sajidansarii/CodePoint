@@ -1,8 +1,8 @@
 const HTMLIdAttribute = () => {
   return (
-    <div className="p-4 max-w-4xl">
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
       {/* Title */}
-      <h1 className="text-3xl sm:text-4xl font-medium text-blue-500 mb-4 text-center sm:text-left">
+      <h1 className="text-3xl font-semibold text-blue-500 mb-3">
         HTML <code>id</code> Attribute
       </h1>
 
@@ -14,7 +14,7 @@ const HTMLIdAttribute = () => {
       {/* Basic Syntax */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-2">Basic Syntax</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`<div id="header">
   <h1>Welcome to CodePoint</h1>
 </div>`}</code>
@@ -26,11 +26,11 @@ const HTMLIdAttribute = () => {
 
       {/* CSS Selection */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Targeting with CSS</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Targeting with CSS</h2>
         <p className="leading-relaxed mb-3">
           Use the <code>#</code> symbol to select an element by its ID in CSS:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`#header {
   background-color: #f0f8ff;
   padding: 10px;
@@ -43,11 +43,11 @@ const HTMLIdAttribute = () => {
 
       {/* JavaScript Usage */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Using ID in JavaScript</h2>
-        <p className="leading-relaxed mb-2">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Using ID in JavaScript</h2>
+        <p className="leading-relaxed mb-3">
           JavaScript can grab the element directly by its ID:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`const header = document.getElementById('header');
 header.style.border = '2px solid blue';`}</code>
         </pre>
@@ -59,8 +59,8 @@ header.style.border = '2px solid blue';`}</code>
 
       {/* ID vs Class */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">ID vs Class</h2>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">ID vs Class</h2>
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed">
           <li>
             <strong>ID</strong> must be <em>unique</em> per page; used for a single element. Selected with <code>#</code>.
           </li>
@@ -71,7 +71,7 @@ header.style.border = '2px solid blue';`}</code>
             Use <code>id</code> when you need to reference one specific element (e.g., anchor links, JavaScript hooks).
           </li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mt-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mt-3">
           <code>{`<!-- ID (unique) -->
 <div id="main-title">Hello</div>
 
@@ -83,8 +83,8 @@ header.style.border = '2px solid blue';`}</code>
 
       {/* Best Practices */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Best Practices</h2>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Best Practices</h2>
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed">
           <li>Keep IDs meaningful and descriptive (e.g., <code>site-header</code>, <code>user-form</code>).</li>
           <li>Avoid using the same ID more than once; duplicates break uniqueness assumptions.</li>
           <li>Prefer classes for styling multiple elements; use IDs for unique hooks or anchors.</li>
@@ -94,11 +94,11 @@ header.style.border = '2px solid blue';`}</code>
 
       {/* Accessibility / Anchors */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Anchor Links</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Anchor Links</h2>
         <p className="leading-relaxed mb-3">
           IDs can be used as targets for internal navigation:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`<a href="#features">See Features</a>
 
 <section id="features">
@@ -110,8 +110,8 @@ header.style.border = '2px solid blue';`}</code>
 
       {/* Common Mistakes */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Common Mistakes</h2>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Common Mistakes</h2>
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed">
           <li>Using the same ID on multiple elements.</li>
           <li>Including spaces in an ID (invalid; use hyphens or underscores instead).</li>
           <li>Relying on IDs for styling when classes would be more appropriate for reuse.</li>
@@ -120,8 +120,8 @@ header.style.border = '2px solid blue';`}</code>
 
       {/* Quick Recap */}
       <div className="mt-6 p-4 bg-blue-50 rounded-md border border-blue-200">
-        <h3 className="text-lg font-semibold text-blue-700 mb-2">Quick Recap:</h3>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed text-sm sm:text-base">
+        <h3 className="text-lg font-semibold text-blue-700 mb-3">Quick Recap:</h3>
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed">
           <li><code>id</code> gives a single element a unique identifier.</li>
           <li>Selected in CSS with <code>#</code> and in JS with <code>getElementById</code>.</li>
           <li>IDs must be unique; classes are for reuse.</li>

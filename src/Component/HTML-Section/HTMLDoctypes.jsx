@@ -2,9 +2,9 @@ import React from "react";
 
 const HtmlDoctype = () => {
   return (
-    <div className="p-4 sm:p-6 max-w-4xl">
-      <h1 className="text-3xl font-medium mb-4 text-blue-500">HTML &lt;!DOCTYPE&gt;</h1>
-      <p className="mb-4">
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
+      <h1 className="text-3xl font-semibold mb-3 text-blue-500">HTML &lt;!DOCTYPE&gt;</h1>
+      <p className="mb-3">
         The <strong>&lt;!DOCTYPE&gt;</strong> declaration is used to tell the
         web browser what version of HTML the page is written in, so it can be
         displayed correctly.  
@@ -12,19 +12,19 @@ const HtmlDoctype = () => {
         <code> &lt;html&gt; </code> tag.
       </p>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2 text-blue-500">Purpose of DOCTYPE</h2>
-      <ul className="list-disc ml-6 mb-4">
+      <h2 className="text-xl font-semibold mt-5 mb-3 text-blue-500">Purpose of DOCTYPE</h2>
+      <ul className="list-[square] list-inside mb-3">
         <li>Instructs the browser about the HTML version and rules to follow.</li>
         <li>Ensures consistent rendering across browsers.</li>
         <li>Prevents the browser from switching to "quirks mode".</li>
       </ul>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2 text-blue-500">HTML5 DOCTYPE</h2>
+      <h2 className="text-2xl font-semibold mt-6 mb-2 text-blue-500">HTML5 DOCTYPE</h2>
       <p className="mb-4">
         The DOCTYPE for HTML5 is very simple and does not require a reference
         to a Document Type Definition (DTD).
       </p>
-      <pre className="bg-gray-900  p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
         {`<!DOCTYPE html>
 <html>
 <head>
@@ -37,18 +37,18 @@ const HtmlDoctype = () => {
 </html>`}
       </pre>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">Older HTML Versions</h2>
-      <p className="mb-4">
+      <h2 className="text-xl font-semibold mt-6 mb-3">Older HTML Versions</h2>
+      <p className="mb-3">
         Older versions of HTML used more complex DOCTYPE declarations because
         they referenced a DTD file. Example for HTML 4.01:
       </p>
-      <pre className="bg-gray-900  p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
         {`<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">`}
       </pre>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">Key Points</h2>
-      <ul className="list-disc ml-6 mb-4">
+      <h2 className="text-xl font-semibold mt-5 mb-3">Key Points</h2>
+      <ul className="list-[square] list-inside mb-3">
         <li>Always put the DOCTYPE at the top of the HTML document.</li>
         <li>HTML5 uses <code>&lt;!DOCTYPE html&gt;</code> (case-insensitive).</li>
         <li>Helps browsers render the page in "standards mode".</li>

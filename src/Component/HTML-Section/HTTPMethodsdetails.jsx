@@ -3,40 +3,40 @@ import { jsx } from "react/jsx-runtime";
 
 const HttpsMethods = () => {
   return (
-    <div className="p-4 md:p-8 max-w-4xl">
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
       {/* Heading */}
-      <h1 className="text-3xl font-medium mb-4 text-blue-500">HTTPS Methods</h1>
-      <p className="mb-4">
-        <strong>HTTPS</strong> (HyperText Transfer Protocol Secure) is the secure
+      <h1 className="text-3xl font-semibold mb-3 text-blue-500">HTTPS Methods</h1>
+      <p className="mb-3">
+        <span className="text-red-400 bg-gray-50">HTTPS</span> (HyperText Transfer Protocol Secure) is the secure
         version of HTTP. It uses encryption (SSL/TLS) to protect data between the
         client (browser) and the server. HTTPS supports several <b>methods</b> to
         perform specific actions on resources.
       </p>
 
       {/* Common Methods */}
-      <h2 className="text-2xl font-semibold mt-6 mb-2">Common HTTPS Methods</h2>
+      <h2 className="text-2xl font-semibold mt-5 mb-3">Common HTTPS Methods</h2>
 
       {/* GET */}
-      <h3 className="text-xl font-semibold mt-4">1. GET</h3>
-      <ul className="list-disc ml-6 mb-4">
+      <h3 className="text-xl font-semibold mt-3">1. GET</h3>
+      <ul className="list-[square] list-inside mb-3">
         <li>Used to request data from the server.</li>
         <li>Data is sent in the URL (query parameters).</li>
         <li>Should not change data on the server.</li>
         <li>Can be cached by browsers.</li>
       </ul>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mb-6">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5">
 {`GET /products HTTP/1.1
 Host: example.com`}
       </pre>
 
       {/* POST */}
-      <h3 className="text-xl font-semibold mt-4">2. POST</h3>
-      <ul className="list-disc ml-6 mb-4">
+      <h3 className="text-xl font-semibold mt-3">2. POST</h3>
+      <ul className="list-[square] list-inside mb-3">
         <li>Used to send data to the server to create or process something.</li>
         <li>Data is sent in the request body.</li>
         <li>Often used for forms and file uploads.</li>
       </ul>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-6">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
 {`POST /products HTTP/1.1
 Host: example.com
 Content-Type: application/json
@@ -48,12 +48,12 @@ Content-Type: application/json
       </pre>
 
       {/* PUT */}
-      <h3 className="text-xl font-semibold mt-4">3. PUT</h3>
-      <ul className="list-disc ml-6 mb-4">
+      <h3 className="text-xl font-semibold mt-3">3. PUT</h3>
+      <ul className="list-[square] list-inside mb-3">
         <li>Replaces an existing resource with new data.</li>
         <li>Updates the entire resource.</li>
       </ul>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-6">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
 {`PUT /products/1 HTTP/1.1
 Host: example.com
 Content-Type: application/json
@@ -65,12 +65,12 @@ Content-Type: application/json
       </pre>
 
       {/* PATCH */}
-      <h3 className="text-xl font-semibold mt-4">4. PATCH</h3>
-      <ul className="list-disc ml-6 mb-4">
+      <h3 className="text-xl font-semibold mt-3">4. PATCH</h3>
+      <ul className="list-[square] list-inside mb-3">
         <li>Partially updates a resource.</li>
         <li>More efficient for small changes than PUT.</li>
       </ul>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-6">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
 {`PATCH /products/1 HTTP/1.1
 Host: example.com
 Content-Type: application/json
@@ -81,8 +81,8 @@ Content-Type: application/json
       </pre>
 
       {/* DELETE */}
-      <h3 className="text-xl font-semibold mt-4">5. DELETE</h3>
-      <ul className="list-disc ml-6 mb-4">
+      <h3 className="text-xl font-semibold mt-3">5. DELETE</h3>
+      <ul className="list-[square] list-inside mb-3">
         <li>Removes a resource from the server.</li>
       </ul>
       <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-6">
@@ -91,7 +91,7 @@ Host: example.com`}
       </pre>
 
       {/* Summary Table */}
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Summary Table</h2>
+      <h2 className="text-2xl font-semibold mt-8 mb-3">Summary Table</h2>
       <div className="overflow-x-auto">
         <table className="min-w-full border border-gray-300 text-gray-700 text-sm text-left">
           <thead>

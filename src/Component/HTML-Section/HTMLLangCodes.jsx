@@ -2,8 +2,8 @@ import React from "react";
 
 const HtmlLangCodes = () => {
   return (
-    <div className="p-4 sm:p-6 max-w-4xl">
-      <h1 className="text-3xl font-medium mb-4 text-blue-500">HTML Language Codes</h1>
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
+      <h1 className="text-3xl font-semibold mb-3 text-blue-500">HTML Language Codes</h1>
       <p className="mb-4">
         HTML <strong>language codes</strong> are used with the{" "}
         <code>lang</code> attribute to declare the language of a document or an
@@ -12,7 +12,7 @@ const HtmlLangCodes = () => {
         screen readers) understand the language of the content.
       </p>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2 text-blue-500">Syntax</h2>
+      <h2 className="text-2xl font-semibold mt-5 mb-3 text-blue-500">Syntax</h2>
       <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
         {`<html lang="en"> 
 <head>
@@ -24,8 +24,8 @@ const HtmlLangCodes = () => {
 </html>`}
       </pre>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">Common Language Codes</h2>
-      <table className="w-full border border-gray-300 mb-4">
+      <h2 className="text-2xl font-semibold mt-5 mb-3">Common Language Codes</h2>
+      <table className="w-full border border-gray-300 mb-3">
         <thead className="bg-gray-200">
           <tr>
             <th className="border p-2 text-left">Code</th>
@@ -68,12 +68,12 @@ const HtmlLangCodes = () => {
         </tbody>
       </table>
 
-      <div className="bg-blue-100 p-3 rounded-lg mb-4">
+      <div className="bg-blue-100 p-3 rounded-lg mb-3">
          <strong>Tip</strong>: Use proper language codes to improve SEO and
         accessibility.
       </div>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">Example with Paragraphs</h2>
+      <h2 className="text-2xl font-semibold mt-5 mb-3">Example with Paragraphs</h2>
       <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto">
         {`<p lang="en">Hello!</p>
 <p lang="fr">Bonjour!</p>

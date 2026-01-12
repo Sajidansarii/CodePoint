@@ -63,8 +63,8 @@ const HtmlCanvas = () => {
   }, []);
 
   return (
-    <div className="p-4 sm:p-6 max-w-4xl">
-      <h1 className="text-3xl font-medium mb-4 text-blue-500">HTML &lt;canvas&gt; — Drawing with JavaScript</h1>
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
+      <h1 className="text-3xl font-semibold mb-3 text-blue-500">HTML &lt;canvas&gt; — Drawing with JavaScript</h1>
 
       <p className="mb-4">
         The HTML <code>&lt;canvas&gt;</code> element provides a drawable region for
@@ -72,22 +72,22 @@ const HtmlCanvas = () => {
         charts, image processing, and custom UI rendering.
       </p>
 
-      <h2 className="text-xl font-semibold mt-4 mb-2">Basic Syntax</h2>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
+      <h2 className="text-xl font-semibold mt-4 mb-3">Basic Syntax</h2>
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
 {`<canvas id="myCanvas" width="640" height="360">
   Your browser does not support the HTML canvas tag.
 </canvas>`}
       </pre>
 
-      <h2 className="text-xl font-semibold mt-4 mb-2">Get 2D Context</h2>
+      <h2 className="text-xl font-semibold mt-4 mb-3">Get 2D Context</h2>
       <p className="mb-2">Use the rendering context to draw — most common is 2D:</p>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
 {`const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');`}
       </pre>
 
-      <h2 className="text-xl font-semibold mt-4 mb-2">Common Drawing Methods</h2>
-      <ul className="list-disc ml-6 mb-4 space-y-1">
+      <h2 className="text-2xl font-semibold mt-4 mb-2">Common Drawing Methods</h2>
+      <ul className="list-[square] list-inside mb-4 space-y-1">
         <li><code>ctx.fillStyle</code>, <code>ctx.fillRect(x,y,w,h)</code> — filled rectangle</li>
         <li><code>ctx.strokeStyle</code>, <code>ctx.strokeRect(...)</code>, <code>ctx.stroke()</code> — strokes</li>
         <li><code>ctx.beginPath()</code>, <code>ctx.moveTo()</code>, <code>ctx.lineTo()</code>, <code>ctx.arc()</code></li>
@@ -95,36 +95,36 @@ const ctx = canvas.getContext('2d');`}
         <li><code>ctx.clearRect(x,y,w,h)</code> — clear area</li>
       </ul>
 
-      <h2 className="text-xl font-semibold mt-4 mb-2">Example: Draw Image</h2>
-      <pre className="bg-gray-900  p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
+      <h2 className="text-2xl font-semibold mt-5 mb-3">Example: Draw Image</h2>
+      <pre className="bg-gray-900  p-4 rounded-lg text-green-400 mb-3">
 {`const img = new Image();
 img.onload = () => ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 img.src = 'photo.jpg';`}
       </pre>
 
-      <h2 className="text-xl font-semibold mt-4 mb-2">Hi-DPI (Retina) Support</h2>
+      <h2 className="text-xl font-semibold mt-4 mb-3">Hi-DPI (Retina) Support</h2>
       <p className="mb-4">
         Canvas uses pixel dimensions. For sharp rendering on high-DPI displays, scale the internal pixel buffer by <code>window.devicePixelRatio</code> and then use CSS for layout size. (See demo code in this component.)
       </p>
 
-      <h2 className="text-xl font-semibold mt-4 mb-2">Animation Loop</h2>
+      <h2 className="text-xl font-semibold mt-4 mb-3">Animation Loop</h2>
       <p className="mb-2">
         Use <code>requestAnimationFrame()</code> for smooth animations and cancel it when not needed to save CPU.
       </p>
 
-      <h2 className="text-xl font-semibold mt-4 mb-2">Canvas Events & Interactivity</h2>
+      <h2 className="text-xl font-semibold mt-4 mb-3">Canvas Events & Interactivity</h2>
       <p className="mb-2">
         Canvas itself receives pointer events (click, mousemove). You must map event coordinates to canvas coordinates, considering CSS size vs internal pixel size.
       </p>
 
-      <h2 className="text-xl font-semibold mt-4 mb-2">Accessibility</h2>
+      <h2 className="text-xl font-semibold mt-4 mb-3">Accessibility</h2>
       <ul className="list-disc ml-6 mb-4">
         <li>Provide alternative content between the &lt;canvas&gt; tags for non-supporting or assistive browsers.</li>
         <li>For complex visuals (charts), provide accessible text summaries or an off-screen DOM fallback.</li>
         <li>Use ARIA and visible HTML descriptions where appropriate.</li>
       </ul>
 
-      <h2 className="text-xl font-semibold mt-4 mb-2">Performance Tips</h2>
+      <h2 className="text-xl font-semibold mt-4 mb-3">Performance Tips</h2>
       <ul className="list-disc ml-6 mb-4">
         <li>Batch draws where possible — reduce state changes.</li>
         <li>Avoid expensive operations inside tight loops (measure & profile).</li>
@@ -132,12 +132,12 @@ img.src = 'photo.jpg';`}
         <li>Limit canvas size; larger canvases are more expensive to redraw.</li>
       </ul>
 
-      <h2 className="text-xl font-semibold mt-4 mb-2">Security</h2>
+      <h2 className="text-xl font-semibold mt-4 mb-3">Security</h2>
       <p className="mb-4">
         When drawing images from other origins, CORS rules apply. Drawing a tainted image will block reading pixel data (e.g., <code>toDataURL()</code>) unless the image server sends proper CORS headers.
       </p>
 
-      <h2 className="text-xl font-semibold mt-4 mb-2">Live Demo</h2>
+      <h2 className="text-xl font-semibold mt-4 mb-3">Live Demo</h2>
       <div className="mb-4 border rounded overflow-hidden">
         {/* canvas container: CSS size is used, internal pixel buffer scaled for HiDPI */}
         <div className="w-full" style={{ height: 260 }}>

@@ -1,13 +1,13 @@
 const HTMLTables = () => {
   return (
-    <div className="p-4 max-w-4xl">
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
       {/* Title */}
-      <h1 className="text-3xl sm:text-4xl font-medium text-blue-500 mb-4 text-center sm:text-left">
+      <h1 className="text-3xl font-semibold text-blue-500 mb-3">
         HTML Tables
       </h1>
 
       {/* Intro */}
-      <p className="leading-relaxed mb-4">
+      <p className="leading-relaxed mb-3">
         HTML tables are used to display data in rows and columns. The basic
         table structure uses the <code>&lt;table&gt;</code> element along with
         rows (<code>&lt;tr&gt;</code>), header cells (
@@ -15,11 +15,11 @@ const HTMLTables = () => {
       </p>
 
       {/* Basic Syntax */}
-      <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">
+      <section className="mb-5">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">
           Basic Table Structure
         </h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           {`<table>
   <tr>
     <th>Name</th>
@@ -43,13 +43,13 @@ const HTMLTables = () => {
 
       {/* Table Sections */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">
           Table Sections
         </h2>
-        <p className="leading-relaxed mb-2">
+        <p className="leading-relaxed mb-3">
           For better structure, especially in large tables, use:
         </p>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed">
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed">
           <li>
             <code>&lt;thead&gt;</code> — Groups the header rows.
           </li>
@@ -60,7 +60,7 @@ const HTMLTables = () => {
             <code>&lt;tfoot&gt;</code> — Groups the footer rows.
           </li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mt-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mt-3">
           {`<table>
   <thead>
     <tr>
@@ -90,10 +90,10 @@ const HTMLTables = () => {
 
       {/* Table Attributes */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">
           Common Table Attributes
         </h2>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed">
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed">
           <li>
             <code>border</code> — Adds border around table cells (use CSS for
             styling in modern HTML).
@@ -115,10 +115,10 @@ const HTMLTables = () => {
 
       {/* Example with Colspan & Rowspan */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">
           Colspan & Rowspan Example
         </h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           {`<table border="1">
   <tr>
     <th rowspan="2">Name</th>
@@ -139,10 +139,10 @@ const HTMLTables = () => {
 
       {/* Accessibility */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">
           Accessibility Tips
         </h2>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed">
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed">
           <li>
             Use <code>&lt;th scope="col"&gt;</code> or{" "}
             <code>&lt;th scope="row"&gt;</code> to help screen readers.
@@ -159,8 +159,8 @@ const HTMLTables = () => {
 
       {/* Quick Recap */}
       <div className="mt-6 p-4 bg-blue-50 rounded-md border border-blue-200">
-        <h3 className="text-lg font-semibold text-blue-700 mb-2">Quick Recap:</h3>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed text-sm sm:text-base">
+        <h3 className="text-lg font-semibold text-blue-700 mb-3">Quick Recap:</h3>
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed text-sm sm:text-base">
           <li>
             <code>&lt;table&gt;</code> contains rows (<code>&lt;tr&gt;</code>)
             with header cells (<code>&lt;th&gt;</code>) and data cells (

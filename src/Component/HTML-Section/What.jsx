@@ -38,7 +38,7 @@ const WhatIsHTML = () => {
 
       <section aria-label="Why it is called HyperText Markup Language">
         <h2 className="text-xl text-blue-500 mt-6 mb-2">Why is it called "HyperText Markup Language"?</h2>
-        <ul className="list-disc pl-5 space-y-1 mb-4">
+        <ul className="list-[square] list-inside space-y-1 mb-5">
           <li>
             <strong>HyperText:</strong> Linking between web pages using <code>&lt;a&gt;</code> tags.
           </li>
@@ -55,7 +55,7 @@ const WhatIsHTML = () => {
 
       <section aria-label="What HTML can do">
         <h2 className="text-xl text-blue-500 mt-6 mb-2">What Can HTML Do?</h2>
-        <ul className="list-disc pl-5 space-y-1 mb-4">
+        <ul className="list-[square] list-inside space-y-1 mb-4">
           <li>Create headings, paragraphs, and lists</li>
           <li>Add images and videos</li>
           <li>Link pages together</li>
@@ -88,7 +88,7 @@ const WhatIsHTML = () => {
 
       <section aria-label="Summary">
         <h2 className="text-xl sm:text-2xl text-blue-500 mt-6 mb-2">Summary</h2>
-        <ul className="list-disc pl-5 space-y-1 mb-4">
+        <ul className="list-[square] list-inside space-y-1 mb-4">
           <li>HTML = HyperText Markup Language</li>
           <li>Used to structure content on web pages</li>
           <li>HTML uses tags like <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;a&gt;</code>, etc.</li>

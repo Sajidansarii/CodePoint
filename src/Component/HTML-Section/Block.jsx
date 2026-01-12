@@ -1,23 +1,19 @@
 const HTMLBlockElements = () => {
   return (
-    <div className="p-4 max-w-4xl">
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
       {/* Title */}
-      <h1 className="text-3xl sm:text-4xl font-medium text-blue-500 mb-4 text-center sm:text-left">
-        Block-level Elements
-      </h1>
+      <h1 className="text-3xl font-semibold text-blue-500 mb-3">Block-level Elements</h1>
 
       {/* Intro */}
-      <p className="leading-relaxed mb-4">
-        Block-level elements create structure by taking the full available width and starting on a new line. They are used for major building blocks of a page like sections, paragraphs, and containers.
-      </p>
+      <p className="leading-relaxed mb-3"><span className="text-red-400 bg-gray-50">Block-level</span> elements create structure by taking the full available width and starting on a new line. They are used for major building blocks of a page like sections, paragraphs, and containers.</p>
 
       {/* Definition & Example */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">What is a Block Element?</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">What is a Block Element?</h2>
         <p className="leading-relaxed mb-3">
           A block-level element always starts on a new line and stretches to fill its container’s width by default. Examples include <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>–<code>&lt;h6&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;article&gt;</code>.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mt-5">
           {`<div>
   <h1>Title</h1>
   <p>This is a paragraph inside a block.</p>
@@ -28,10 +24,8 @@ const HTMLBlockElements = () => {
       {/* Block vs Inline */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-2">Block vs Inline</h2>
-        <p className="leading-relaxed mb-3">
-          Understanding the difference helps with layout:
-        </p>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed mb-2">
+        <p className="leading-relaxed mb-3">Understanding the difference helps with layout:</p>
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed mb-2">
           <li>
             <strong>Block:</strong> Starts on a new line and stretches horizontally (e.g., <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>).
           </li>
@@ -39,7 +33,7 @@ const HTMLBlockElements = () => {
             <strong>Inline:</strong> Flows inside a line and only takes as much width as needed (e.g., <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>).
           </li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400  mb-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mt-5">
           {`<!-- Block elements stack vertically -->
 <div>Block 1</div>
 <div>Block 2</div>
@@ -51,11 +45,11 @@ const HTMLBlockElements = () => {
 
       {/* Changing Display */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Changing Display Behavior</h2>
-        <p className="leading-relaxed mb-2">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Changing Display Behavior</h2>
+        <p className="leading-relaxed mb-3">
           You can override default behavior with CSS using the <code>display</code> property.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mt-5 mb-3">
           {`<div style="display: inline;">This behaves like inline</div>
 <span style="display: block;">This behaves like block</span>`}
         </pre>
@@ -67,7 +61,7 @@ const HTMLBlockElements = () => {
       {/* Best Practices */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-2">Best Practices</h2>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed">
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed">
           <li>Use block elements to group related content (e.g., wrap sections in <code>&lt;section&gt;</code> or <code>&lt;div&gt;</code>).</li>
           <li>Avoid using block-level elements inside inline contexts incorrectly.</li>
           <li>Control spacing and layout with CSS instead of abusing block nesting for visuals.</li>
@@ -85,7 +79,7 @@ const HTMLBlockElements = () => {
       {/* Quick Recap */}
       <div className="mt-6 p-4 bg-blue-50 rounded-md border border-blue-200">
         <h3 className="text-lg font-semibold text-blue-700 mb-2">Quick Recap:</h3>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed text-sm sm:text-base">
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed text-sm sm:text-base">
           <li>Block elements start on a new line and span full width by default.</li>
           <li>Inline elements stay in-line; use CSS <code>display</code> to change behavior.</li>
           <li>Use semantic block tags for clearer structure and accessibility.</li>

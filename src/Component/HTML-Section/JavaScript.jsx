@@ -1,8 +1,8 @@
 const HTMLJavaScript = () => {
   return (
-    <div className="p-4 max-w-4xl">
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
       {/* Main Title */}
-      <h1 className="text-3xl sm:text-4xl font-medium text-blue-500 mb-4 text-center sm:text-left">
+      <h1 className="text-3xl font-semibold text-blue-500 mb-3">
         HTML JavaScript
       </h1>
 
@@ -15,11 +15,11 @@ const HTMLJavaScript = () => {
       </p>
 
       {/* Adding JavaScript to HTML */}
-      <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">
+      <section className="mb-5">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">
           How to Add JavaScript in HTML
         </h2>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed mb-3">
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed mb-3">
           <li>
             <strong>Internal:</strong> Inside a <code>&lt;script&gt;</code> tag
             in the HTML file.
@@ -33,7 +33,7 @@ const HTMLJavaScript = () => {
             event attribute (not recommended for maintainability).
           </li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`<!-- Internal JavaScript -->
 <script>
   alert('Hello from JavaScript!');
@@ -45,11 +45,11 @@ const HTMLJavaScript = () => {
       </section>
 
       {/* Example */}
-      <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">
+      <section className="mb-5">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">
           Example: Button Click
         </h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`<!DOCTYPE html>
 <html>
   <body>
@@ -70,11 +70,11 @@ const HTMLJavaScript = () => {
       </section>
 
       {/* Best Practices */}
-      <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">
+      <section className="mb-5">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">
           Best Practices
         </h2>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed mb-3">
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed mb-3">
           <li>Place <code>&lt;script&gt;</code> tags before the closing <code>&lt;/body&gt;</code> for faster page load.</li>
           <li>Keep JavaScript in separate files for easier maintenance.</li>
           <li>Use modern JS practices and avoid inline event handlers.</li>
@@ -82,11 +82,11 @@ const HTMLJavaScript = () => {
       </section>
 
       {/* External JS Example */}
-      <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">
+      <section className="mb-5">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">
           External JavaScript Example
         </h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`<!-- index.html -->
 <!DOCTYPE html>
 <html>
@@ -108,7 +108,7 @@ document.getElementById('myBtn').addEventListener('click', () => {
 
       {/* Accessibility Note */}
       <section className="mb-6 p-4 bg-yellow-50 border border-yellow-200 rounded">
-        <h2 className="text-xl font-semibold text-yellow-700 mb-2">
+        <h2 className="text-xl font-semibold text-yellow-700 mb-3">
           Accessibility Tip
         </h2>
         <p className="leading-relaxed mb-3">
@@ -119,8 +119,8 @@ document.getElementById('myBtn').addEventListener('click', () => {
 
       {/* Quick Recap */}
       <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded">
-        <h3 className="text-lg font-semibold text-blue-700 mb-2">Quick Recap:</h3>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed text-sm sm:text-base">
+        <h3 className="text-lg font-semibold text-blue-700 mb-3">Quick Recap:</h3>
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed text-sm sm:text-base">
           <li>JavaScript makes HTML pages interactive.</li>
           <li>Can be added inline, internally, or externally.</li>
           <li>Best to keep JS in separate files and load at the bottom of the body.</li>

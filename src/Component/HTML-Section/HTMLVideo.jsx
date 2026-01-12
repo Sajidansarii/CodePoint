@@ -2,23 +2,23 @@ import React from "react";
 
 const HtmlVideo = () => {
   return (
-    <div className="p-4 sm:p-6 max-w-4xl">
-      <h1 className="text-3xl font-medium  mb-4 text-blue-500">HTML &lt;video&gt; Tag</h1>
-      <p className="mb-4">
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
+      <h1 className="text-3xl font-semibold text-blue-500 mb-3">HTML &lt;video&gt; Tag</h1>
+      <p className="mb-3">
         The <strong>&lt;video&gt;</strong> tag is used to embed video content
         in an HTML document. It allows you to play video files directly in the
         browser without needing external plugins like Flash.
       </p>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">Basic Syntax</h2>
-      <pre className="bg-gray-900  p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
+      <h2 className="text-2xl font-semibold mt-5 mb-3">Basic Syntax</h2>
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
         {`<video src="movie.mp4" controls>
   Your browser does not support the video tag.
 </video>`}
       </pre>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">Common Attributes</h2>
-      <ul className="list-disc ml-6 mb-4">
+      <h2 className="text-2xl font-semibold mt-5 mb-3">Common Attributes</h2>
+      <ul className="list-[square] list-inside mb-3">
         <li><strong className="text-blue-500">src</strong> – Path to the video file.</li>
         <li><strong className="text-blue-500">controls</strong> – Adds play, pause, volume, and other controls.</li>
         <li><strong className="text-blue-500">autoplay</strong> – Starts playing the video automatically.</li>
@@ -28,12 +28,12 @@ const HtmlVideo = () => {
         <li><strong className="text-blue-500">width</strong> / <strong className="text-blue-500">height</strong> – Sets the size of the video player.</li>
       </ul>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">Example with Multiple Sources</h2>
-      <p className="mb-4">
+      <h2 className="text-2xl font-semibold mt-5 mb-3">Example with Multiple Sources</h2>
+      <p className="mb-3">
         You can provide multiple video formats to ensure compatibility across
         browsers.
       </p>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
         {`<video width="640" height="360" controls poster="thumbnail.jpg">
   <source src="movie.mp4" type="video/mp4">
   <source src="movie.webm" type="video/webm">
@@ -42,8 +42,8 @@ const HtmlVideo = () => {
 </video>`}
       </pre>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">Browser Support</h2>
-      <p className="mb-4">
+      <h2 className="text-2xl font-semibold mt-5 mb-3">Browser Support</h2>
+      <p className="mb-3">
         Most modern browsers support MP4, WebM, and Ogg formats, but MP4 (H.264 codec) has the widest support.
       </p>
 

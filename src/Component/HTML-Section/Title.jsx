@@ -1,13 +1,13 @@
 const HTMLPageTitle = () => {
   return (
-    <div className="p-4 max-w-4xl">
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
       {/* Title */}
-      <h1 className="text-3xl sm:text-4xl font-medium text-blue-500 mb-4 text-center sm:text-left">
+      <h1 className="text-3xl font-medium text-blue-500 mb-3">
         HTML Page Title
       </h1>
 
       {/* Intro */}
-      <p className="leading-relaxed mb-4">
+      <p className="leading-relaxed mb-3">
         The HTML page title is set using the <code>&lt;title&gt;</code> element inside the{" "}
         <code>&lt;head&gt;</code> section of an HTML document. It is displayed on the browser tab,
         used by search engines, and appears as the default name when bookmarking a page.
@@ -15,8 +15,8 @@ const HTMLPageTitle = () => {
 
       {/* Basic Syntax */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Basic Syntax</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Basic Syntax</h2>
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           {`<!DOCTYPE html>
 <html>
   <head>
@@ -34,8 +34,8 @@ const HTMLPageTitle = () => {
 
       {/* Importance */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Why the Page Title is Important</h2>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Why the Page Title is Important</h2>
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed">
           <li>
             <strong>Browser Tabs:</strong> Helps users identify which page is open.
           </li>
@@ -50,8 +50,8 @@ const HTMLPageTitle = () => {
 
       {/* Best Practices */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Best Practices</h2>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Best Practices</h2>
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed">
           <li>Keep it concise — ideally under 60 characters.</li>
           <li>Include relevant keywords naturally for SEO.</li>
           <li>Ensure it accurately describes the page content.</li>
@@ -61,8 +61,8 @@ const HTMLPageTitle = () => {
 
       {/* Example for CodePoint */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Example for CodePoint</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto text-sm">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Example for CodePoint</h2>
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`<html>
   <head>
     <title>HTML Tutorial - CodePoint</title>
@@ -76,8 +76,8 @@ const HTMLPageTitle = () => {
 
       {/* Quick Recap */}
       <div className="mt-6 p-4 bg-blue-50 rounded-md border border-blue-200">
-        <h3 className="text-lg font-semibold text-blue-700 mb-2">Quick Recap:</h3>
-        <ul className="list-disc pl-5 space-y-1 text-gray-700 text-sm sm:text-base">
+        <h3 className="text-lg font-semibold text-blue-700 mb-3">Quick Recap:</h3>
+        <ul className="list-[square] list-inside space-y-1 text-gray-700">
           <li>The <code>&lt;title&gt;</code> tag sets the page title in the browser.</li>
           <li>Place it inside the <code>&lt;head&gt;</code> section.</li>
           <li>Important for browser tabs, SEO, and accessibility.</li>

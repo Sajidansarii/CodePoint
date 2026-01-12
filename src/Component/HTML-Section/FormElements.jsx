@@ -1,28 +1,24 @@
 const HTMLFormElements = () => {
   return (
-    <div className="p-4 max-w-4xl">
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
       {/* Title */}
-      <h1 className="text-3xl sm:text-4xl font-medium text-blue-500 mb-4">
-        HTML Form Elements
-      </h1>
+      <h1 className="text-3xl font-medium text-blue-500 mb-3">HTML Form Elements</h1>
 
       {/* Intro */}
-      <p className="leading-relaxed mb-3">
-        HTML provides a variety of form elements to collect different types of user input. Below are the most common controls, how to use them, and accessibility tips.
-      </p>
+      <p className="leading-relaxed mb-3">HTML provides a variety of form elements to collect different types of user input. Below are the most common controls, how to use them, and accessibility tips.</p>
 
       {/* Basic Form Controls */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">1. Basic Controls</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">1. Basic Controls</h2>
         <p className="leading-relaxed mb-3">Common input-based elements:</p>
 
         <div className="space-y-4">
           <div>
-            <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="text"&gt;</h3>
+            <h3 className="text-xl font-semibold text-blue-400 mb-3">&lt;input type="text"&gt;</h3>
             <p className="leading-relaxed mb-3">
               Single-line text input.
             </p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 text-sm overflow-x-auto">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
               <code>{`<label for="name">Name:</label>
 <input type="text" id="name" name="name" placeholder="Your name" required />`}</code>
             </pre>
@@ -64,7 +60,7 @@ const HTMLFormElements = () => {
             <p className="leading-relaxed mb-3">
               Multi-line text input.
             </p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 text-sm overflow-x-auto">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
               <code>{`<label for="message">Message:</label>
 <textarea id="message" name="message" rows="4" placeholder="Type here..."></textarea>`}</code>
             </pre>
@@ -75,7 +71,7 @@ const HTMLFormElements = () => {
             <p className="leading-relaxed mb-3">
               Dropdown selection.
             </p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 text-sm overflow-x-auto">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
               <code>{`<label for="country">Country:</label>
 <select id="country" name="country">
   <option value="">Choose...</option>
@@ -90,7 +86,7 @@ const HTMLFormElements = () => {
             <p className="leading-relaxed mb-3">
               Submit or reset form data.
             </p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 text-sm overflow-x-auto">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400">
               <code>{`<button type="submit">Send</button>
 <button type="reset">Clear</button>`}</code>
             </pre>
@@ -100,11 +96,11 @@ const HTMLFormElements = () => {
 
       {/* Specialized Inputs */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">2. Specialized Input Types</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">2. Specialized Input Types</h2>
         <p className="leading-relaxed mb-3">
           HTML5 introduced input types that improve data entry and validation:
         </p>
-        <ul className="list-disc pl-5 space-y-2 leading-relaxed">
+        <ul className="list-[square] list-inside space-y-2 leading-relaxed">
           <li>
             <code>type="number"</code> — Numeric spinner. <code>{<input type="number" min="0" max="10" />}</code>
           </li>
@@ -131,11 +127,11 @@ const HTMLFormElements = () => {
 
       {/* Grouping & Semantic */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">3. Grouping & Semantics</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">3. Grouping & Semantics</h2>
         <p className="leading-relaxed mb-3">
           Structure related controls with:
         </p>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed mb-3">
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed mb-3">
           <li>
             <code>&lt;label&gt;</code> — Associates text with a control (use <code>for</code>/<code>id</code> or wrap input).
           </li>
@@ -152,7 +148,7 @@ const HTMLFormElements = () => {
             <code>&lt;output&gt;</code> — Displays the result of a calculation.
           </li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 text-sm overflow-x-auto">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`<fieldset>
   <legend>Payment</legend>
   <label for="card">Card number:</label>
@@ -171,11 +167,11 @@ const HTMLFormElements = () => {
 
       {/* Validation & Attributes */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">4. Validation & Helpful Attributes</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">4. Validation & Helpful Attributes</h2>
         <p className="leading-relaxed mb-3">
           Built-in HTML validation and attributes help guide users:
         </p>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed mb-3">
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed mb-3">
           <li><code>required</code> — Field must be filled.</li>
           <li><code>pattern</code> — Regex the value must match.</li>
           <li><code>min</code> / <code>max</code> — Bounds for number/date/range.</li>
@@ -184,7 +180,7 @@ const HTMLFormElements = () => {
           <li><code>readonly</code> / <code>disabled</code> — Non-editable or inactive.</li>
           <li><code>autocomplete</code> — Suggest previously entered values.</li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 text-sm overflow-x-auto">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`<input type="text" name="username" required pattern="[A-Za-z0-9]{4,}" placeholder="4+ alphanumeric" />
 <input type="number" name="age" min="1" max="120" />`}</code>
         </pre>
@@ -192,8 +188,8 @@ const HTMLFormElements = () => {
 
       {/* Accessibility */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">5. Accessibility</h2>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">5. Accessibility</h2>
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed">
           <li>Always associate <code>&lt;label&gt;</code> with its control.</li>
           <li>Use <code>aria-describedby</code> for extra instructions or error messages.</li>
           <li>Ensure focus order is logical and visible.</li>
@@ -203,8 +199,8 @@ const HTMLFormElements = () => {
 
       {/* Example Combined Form */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">6. Combined Example</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 text-sm overflow-x-auto">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">6. Combined Example</h2>
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`<form action="/submit" method="POST">
   <fieldset>
     <legend>Profile</legend>
@@ -233,8 +229,8 @@ const HTMLFormElements = () => {
 
       {/* Common Mistakes */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Common Mistakes</h2>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Common Mistakes</h2>
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed">
           <li>Missing <code>&lt;label&gt;</code> associations.</li>
           <li>Using placeholders as replacements for labels.</li>
           <li>Not providing fallback or indication for required fields.</li>
@@ -245,8 +241,8 @@ const HTMLFormElements = () => {
 
       {/* Quick Recap */}
       <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-md">
-        <h3 className="text-lg font-semibold text-blue-700 mb-2">Quick Recap:</h3>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed text-sm sm:text-base">
+        <h3 className="text-lg font-semibold text-blue-700 mb-3">Quick Recap:</h3>
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed text-sm sm:text-base">
           <li>Use appropriate form elements for different data types.</li>
           <li>Group related inputs with <code>&lt;fieldset&gt;</code> and label everything.</li>
           <li>Leverage HTML5 input types and validation attributes.</li>

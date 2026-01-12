@@ -1,25 +1,19 @@
 const HTMLColors = () => {
   return (
-    <div className="p-4 max-w-4xl">
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
       {/* Title */}
-      <h1 className="text-3xl sm:text-4xl font-medium text-blue-500 mb-4 text-center sm:text-left">
-        HTML Colors
-      </h1>
+      <h1 className="text-3xl font-semibold text-blue-500 mb-3">HTML Colors</h1>
 
       {/* Intro */}
-      <p className="leading-relaxed mb-3">
-        HTML colors are used to set the foreground (text), background, borders, and other visual elements on a web page. Colors in HTML can be defined using names, HEX codes, RGB, RGBA, HSL, or HSLA values.
-      </p>
+      <p className="leading-relaxed mb-3">HTML colors are used to set the foreground (text), background, borders, and other visual elements on a web page. Colors in HTML can be defined using names, HEX codes, RGB, RGBA, HSL, or HSLA values.</p>
 
       {/* Color Names */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">
-          1. Color Names
-        </h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">1. Color Names</h2>
         <p className="leading-relaxed mb-3">
           HTML supports 140 standard color names.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
           {`<p style="color: red;">Red text</p>
 <p style="background-color: lightblue;">Light blue background</p>`}
         </pre>
@@ -38,13 +32,13 @@ const HTMLColors = () => {
 
       {/* HEX Colors */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">
           2. HEX Colors
         </h2>
         <p className="leading-relaxed mb-3">
           A HEX color is a six-digit code representing red, green, and blue values in hexadecimal (0–9, A–F).
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
           <code>{`<p style="color: #ff0000;">Red text</p>
 <p style="background-color: #00ff00;">Green background</p>`}</code>
         </pre>
@@ -63,13 +57,13 @@ const HTMLColors = () => {
 
       {/* RGB & RGBA Colors */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">
           3. RGB and RGBA Colors
         </h2>
         <p className="leading-relaxed mb-3">
           RGB defines colors using red, green, and blue values (0–255). RGBA adds an alpha value (0–1) for transparency.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
           <code>{`<p style="color: rgb(255, 0, 0);">Red text</p>
 <p style="background-color: rgba(0, 255, 0, 0.5);">Semi-transparent green background</p>`}</code>
         </pre>
@@ -85,13 +79,13 @@ const HTMLColors = () => {
 
       {/* HSL & HSLA Colors */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">
           4. HSL and HSLA Colors
         </h2>
         <p className="leading-relaxed mb-3">
           HSL stands for Hue (0–360), Saturation (0%–100%), and Lightness (0%–100%). HSLA adds alpha transparency.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
           <code>{`<p style="color: hsl(0, 100%, 50%);">Red text</p>
 <p style="background-color: hsla(120, 100%, 50%, 0.3);">Semi-transparent green background</p>`}</code>
         </pre>
@@ -107,7 +101,7 @@ const HTMLColors = () => {
 
       {/* Accessibility */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Accessibility Tips</h2>
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Accessibility Tips</h2>
         <ul className="list-disc pl-5 space-y-1 leading-relaxed">
           <l3>Ensure sufficient contrast between text and background for readability.</l3>
           <li>Avoid using color as the only way to convey important information.</li>

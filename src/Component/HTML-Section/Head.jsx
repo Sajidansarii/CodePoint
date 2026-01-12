@@ -1,10 +1,8 @@
 const HTMLHead = () => {
   return (
-    <div className="p-4 max-w-4xl">
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
       {/* Title */}
-      <h1 className="text-3xl sm:text-4xl font-medium text-blue-500 mb-4 text-center sm:text-left">
-        HTML &lt;head&gt; Section
-      </h1>
+      <h1 className="text-3xl font-semibold text-blue-500 mb-3">HTML &lt;head&gt; Section</h1>
 
       {/* Intro */}
       <p className="leading-relaxed mb-3">
@@ -13,8 +11,8 @@ const HTMLHead = () => {
 
       {/* Basic Structure */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Basic Structure</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Basic Structure</h2>
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -33,8 +31,8 @@ const HTMLHead = () => {
 
       {/* Common Elements */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Common Elements Inside &lt;head&gt;</h2>
-        <ul className="list-disc pl-5 space-y-2 leading-relaxed">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Common Elements Inside &lt;head&gt;</h2>
+        <ul className="list-[square] list-inside space-y-2 leading-relaxed">
           <li>
             <code>&lt;meta charset="UTF-8" /&gt;</code> — Defines character encoding (always put early).
           </li>
@@ -64,8 +62,8 @@ const HTMLHead = () => {
 
       {/* Example Full Head */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Example &lt;head&gt; Section</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Example &lt;head&gt; Section</h2>
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
           <code>{`<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -80,8 +78,8 @@ const HTMLHead = () => {
 
       {/* Best Practices */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Best Practices</h2>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Best Practices</h2>
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed">
           <li>Include <code>charset</code> early to avoid encoding issues.</li>
           <li>Use a descriptive but concise <code>&lt;title&gt;</code> for SEO and clarity.</li>
           <li>Always include the viewport tag for mobile responsiveness.</li>
@@ -92,8 +90,8 @@ const HTMLHead = () => {
 
       {/* Common Mistakes */}
       <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Common Mistakes</h2>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Common Mistakes</h2>
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed">
           <li>Omitting the viewport meta on responsive pages.</li>
           <li>Using duplicate or missing <code>&lt;title&gt;</code> tags.</li>
           <li>Forgetting <code>defer</code> and blocking initial page render with heavy scripts.</li>
@@ -104,8 +102,8 @@ const HTMLHead = () => {
 
       {/* Quick Recap */}
       <div className="mt-6 p-4 bg-blue-50 rounded-md border border-blue-200">
-        <h3 className="text-lg font-semibold text-blue-700 mb-2">Quick Recap:</h3>
-        <ul className="list-disc pl-5 space-y-1 leading-relaxed text-sm sm:text-base">
+        <h3 className="text-lg font-semibold text-blue-700 mb-3">Quick Recap:</h3>
+        <ul className="list-[square] list-inside space-y-1 leading-relaxed text-sm sm:text-base">
           <li>The <code>&lt;head&gt;</code> holds metadata and links—not visible directly.</li>
           <li>Essential tags: <code>charset</code>, <code>title</code>, <code>viewport</code>, CSS/JS includes.</li>
           <li>Use <code>defer</code> for scripts and provide clear titles/descriptions.</li>

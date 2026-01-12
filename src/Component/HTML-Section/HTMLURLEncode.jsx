@@ -2,8 +2,8 @@ import React from "react";
 
 const HtmlUrlEncode = () => {
   return (
-    <div className="p-4 sm:p-6 max-w-4xl">
-      <h1 className="text-3xl font-medium mb-4 text-blue-500">HTML URL Encoding</h1>
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
+      <h1 className="text-3xl font-semibold mb-3 text-blue-500">HTML URL Encoding</h1>
       <p className="mb-4">
         <strong>URL Encoding</strong> (also known as <strong>Percent Encoding</strong>) 
         is the process of converting characters into a format that can be transmitted 
@@ -11,19 +11,19 @@ const HtmlUrlEncode = () => {
         <strong> ASCII</strong> character set, so characters outside this range must be encoded.
       </p>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2 text-blue-500">Why URL Encoding is Needed?</h2>
-      <ul className="list-disc ml-6 mb-4">
+      <h2 className="text-xl font-semibold mt-5 mb-3 text-blue-500">Why URL Encoding is Needed?</h2>
+      <ul className="list-[square] list-inside mb-3">
         <li>Spaces in URLs are replaced with <code>%20</code>.</li>
         <li>Special characters like <code>?</code>, <code>=</code>, <code>&</code> are encoded.</li>
         <li>Ensures that data is transmitted correctly between browsers and servers.</li>
       </ul>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2 text-blue-500">Syntax</h2>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
+      <h2 className="text-2xl font-semibold mt-5 mb-3 text-blue-500">Syntax</h2>
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
         {'encodeURIComponent("Hello World!") // "Hello%20World%21"'}
       </pre>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">Common Encoded Characters</h2>
+      <h2 className="text-2xl font-semibold mt-5 mb-3">Common Encoded Characters</h2>
       <table className="w-full border border-gray-300 mb-4">
         <thead className="bg-gray-200">
           <tr>
@@ -67,13 +67,13 @@ const HtmlUrlEncode = () => {
         </tbody>
       </table>
 
-      <div className="bg-blue-100 p-3 rounded-lg mb-4">
+      <div className="bg-blue-100 p-3 rounded-lg mb-3">
         💡 <strong>Tip</strong>: Use <code>encodeURIComponent()</code> for encoding 
         query parameters and <code>encodeURI()</code> for encoding full URLs.
       </div>
 
-      <h2 className="text-xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto">
+      <h2 className="text-2xl font-semibold mt-5 mb-3">Example</h2>
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
         {`const text = "I love HTML & CSS!";
 const encoded = encodeURIComponent(text);
 console.log(encoded); // "I%20love%20HTML%20%26%20CSS%21"`}
