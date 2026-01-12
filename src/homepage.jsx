@@ -16,13 +16,13 @@ const homepage = ()=> {
     title: "CSS",
     decs: "The language for styling web pages.",
     button1: "CSS Tutorial",
-    image: "./public/css3.png",
+    image: "/css3.png",
     path:"/Component/CSS-Section/CssPages"
 },{
   title: "JavaScript",
   decs: "The language for programming web pages.",
   button1: "JavaScript Tutorial",
-  image: "./public/javascript-logo.svg",
+  image: "/javascript-logo.svg",
   path: "/Component/JavaScript-Section/JavaScriptPages",
 },
 // {
@@ -37,7 +37,7 @@ const homepage = ()=> {
   title: "React",
   decs: "A JavaScript framework for building better web pages.",
   button1: "React Tutorial",
-  image: "./public/React.png",
+  image: "/React.png",
   path:"./Component/React/React-Pages",
 }
   ]
