@@ -10,7 +10,7 @@ function Footer() {
             <li className='hover:cursor-pointer hover:text-white hover:scale-150 transition-transform duration-200'>HTML Tutorial</li>
             <li className='hover:cursor-pointer hover:text-white hover:scale-150 transition-transform duration-200'>CSS Tutorial</li>
             <li className='hover:cursor-pointer hover:text-white hover:scale-150 transition-transform duration-200'>JavaScript Tutorial</li>
-            <li className='hover:cursor-pointer hover:text-white hover:scale-150 transition-transform duration-200'>Bootstrap Tutorial</li>
+            <li className='hover:cursor-pointer hover:text-white hover:scale-150 transition-transform duration-200'>React Tutorial</li>
             </ul>
             </div>
 
@@ -20,7 +20,7 @@ function Footer() {
             <li className='hover:cursor-pointer hover:text-white hover:scale-150 transition-transform duration-200'>HTML Reference</li>
             <li className='hover:cursor-pointer hover:text-white hover:scale-150 transition-transform duration-200'>CSS Reference</li>
             <li className='hover:cursor-pointer hover:text-white hover:scale-150 transition-transform duration-200'>JavaScript Reference</li>
-            <li className='hover:cursor-pointer hover:text-white hover:scale-150 transition-transform duration-200'>Bootstrap Reference</li>
+            <li className='hover:cursor-pointer hover:text-white hover:scale-150 transition-transform duration-200'>React Reference</li>
             </ul>
             </div>
 
@@ -30,7 +30,7 @@ function Footer() {
             <li className='hover:cursor-pointer hover:text-white hover:scale-150 transition-transform duration-250'>  HTML Examples</li>
             <li className='hover:cursor-pointer hover:text-white hover:scale-150 transition-transform duration-250'>CSS Examples</li>
             <li className='hover:cursor-pointer hover:text-white hover:scale-150 transition-transform duration-250'>JavaScript Examples</li>
-            <li className='hover:cursor-pointer hover:text-white hover:scale-150 transition-transform duration-250'>Bootstrap Examples</li>
+            <li className='hover:cursor-pointer hover:text-white hover:scale-150 transition-transform duration-250'>React Examples</li>
             </ul>
             </div>
             
