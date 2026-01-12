@@ -30,14 +30,10 @@ const WhatIsHTML = () => {
   }, [codeString]);
 
   return (
-    <article className="p-4 sm:p-6 md:p-8 max-w-4xl prose prose-sm sm:prose-base dark:prose-invert bg-white dark:bg-gray-900 rounded-2xl shadow-sm">
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
       <header>
-        <h1 className="text-2xl sm:text-3xl font-medium text-blue-500 mb-2">
-          What is HTML?
-        </h1>
-        <p className="text-gray-700 dark:text-gray-300 mb-4">
-          <strong>HTML</strong> stands for <strong>HyperText Markup Language</strong>. It is the standard markup language used to create and structure content on the World Wide Web.
-        </p>
+        <h1 className="text-2xl sm:text-3xl font-semibold text-blue-500 mb-3">What is HTML?</h1>
+        <p className="text-gray-700 dark:text-gray-300 mb-4"><span className="text-red-400 bg-gray-50">HTML</span> stands for <span className="text-red-400 bg-gray-50">HyperText Markup Language</span>. It is the standard markup language used to create and structure content on the World Wide Web. </p>
       </header>
 
       <section aria-label="Why it is called HyperText Markup Language">
@@ -76,9 +72,7 @@ const WhatIsHTML = () => {
       </section>
 
       <section aria-label="Example HTML code">
-        <h2 className="text-xl sm:text-2xl text-blue-500 mt-6 mb-2">
-          Example
-        </h2>
+        <h2 className="text-xl sm:text-2xl text-blue-500 mt-6 mb-5">Example</h2>
         <div className="relative mb-4">
           <details className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-auto">
             <summary className="cursor-pointer text-white font-semibold mb-2">
@@ -109,7 +103,7 @@ const WhatIsHTML = () => {
           <li>HTML is not a programming language</li>
         </ul>
       </section>
-    </article>
+    </div>
   );
 };
 
