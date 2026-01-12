@@ -32,7 +32,7 @@ const WhatIsHTML = () => {
   return (
     <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
       <header>
-        <h1 className="text-2xl sm:text-3xl font-semibold text-blue-500 mb-3">What is HTML?</h1>
+        <h1 className="text-2xl font-semibold text-blue-500 mb-3">What is HTML?</h1>
         <p className="text-gray-800 mb-4"><span className="text-red-400 bg-gray-50">HTML</span> stands for <span className="text-red-400 bg-gray-50">HyperText Markup Language</span>. It is the standard markup language used to create and structure content on the World Wide Web. </p>
       </header>
 
