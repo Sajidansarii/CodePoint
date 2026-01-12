@@ -9,7 +9,7 @@ const homepage = ()=> {
     title: "HTML",
     decs: "The language creating web page.",
     button1: "HTML Tutorial",
-    image: "./public/HTML5.png",
+    image: "/HTML5.png",
     path:"/Component/HTML-Section/HtmlPages"
     
   },{
