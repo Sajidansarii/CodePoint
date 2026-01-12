@@ -33,13 +33,11 @@ const WhatIsHTML = () => {
     <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
       <header>
         <h1 className="text-2xl sm:text-3xl font-semibold text-blue-500 mb-3">What is HTML?</h1>
-        <p className="text-gray-700 dark:text-gray-300 mb-4"><span className="text-red-400 bg-gray-50">HTML</span> stands for <span className="text-red-400 bg-gray-50">HyperText Markup Language</span>. It is the standard markup language used to create and structure content on the World Wide Web. </p>
+        <p className="text-gray-800 mb-4"><span className="text-red-400 bg-gray-50">HTML</span> stands for <span className="text-red-400 bg-gray-50">HyperText Markup Language</span>. It is the standard markup language used to create and structure content on the World Wide Web. </p>
       </header>
 
       <section aria-label="Why it is called HyperText Markup Language">
-        <h2 className="text-xl sm:text-2xl text-blue-500 mt-6 mb-2">
-          Why is it called "HyperText Markup Language"?
-        </h2>
+        <h2 className="text-xl sm:text-2xl text-blue-500 mt-6 mb-2">Why is it called "HyperText Markup Language"?</h2>
         <ul className="list-disc pl-5 space-y-1 mb-4">
           <li>
             <strong>HyperText:</strong> Linking between web pages using <code>&lt;a&gt;</code> tags.
@@ -51,18 +49,12 @@ const WhatIsHTML = () => {
       </section>
 
       <section aria-label="HTML is not programming language">
-        <h2 className="text-xl sm:text-2xl text-blue-500 mt-6 mb-2">
-          HTML is not a Programming Language
-        </h2>
-        <p className="text-gray-700 dark:text-gray-300 mb-3">
-          HTML doesn’t include logic, conditions, or loops. It’s used to <em>structure</em> content, not to build logic like JavaScript does.
-        </p>
+        <h2 className="text-xl text-blue-500 mt-5 mb-3">HTML is not a Programming Language</h2>
+        <p className="text-gray-800 mb-3">HTML doesn’t include logic, conditions, or loops. It’s used to <em>structure</em> content, not to build logic like JavaScript does.</p>
       </section>
 
       <section aria-label="What HTML can do">
-        <h2 className="text-xl sm:text-2xl text-blue-500 mt-6 mb-2">
-          What Can HTML Do?
-        </h2>
+        <h2 className="text-xl sm:text-2xl text-blue-500 mt-6 mb-2">What Can HTML Do?</h2>
         <ul className="list-disc pl-5 space-y-1 mb-4">
           <li>Create headings, paragraphs, and lists</li>
           <li>Add images and videos</li>
@@ -72,7 +64,7 @@ const WhatIsHTML = () => {
       </section>
 
       <section aria-label="Example HTML code">
-        <h2 className="text-xl sm:text-2xl text-blue-500 mt-6 mb-5">Example</h2>
+        <h2 className="text-xl  text-blue-500 mt-6 mb-5">Example</h2>
         <div className="relative mb-4">
           <details className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-auto">
             <summary className="cursor-pointer text-white font-semibold mb-2">
