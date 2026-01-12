@@ -97,9 +97,9 @@ const Navbar = () => {
             onClick={handleJSNavigation}>
               <i className="fa-brands fa-js"></i> JavaScript
             </li>
-            <li className="hover:cursor-pointer hover:bg-gray-200">
+            {/* <li className="hover:cursor-pointer hover:bg-gray-200">
               <i className="fa-brands fa-bootstrap"></i> Bootstrap
-            </li>
+            </li> */}
             <li className="hover:cursor-pointer hover:bg-gray-200"
             onClick={handleReactNavigation}>
               <i className="fa-brands fa-react"></i> React

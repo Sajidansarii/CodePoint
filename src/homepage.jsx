@@ -25,11 +25,11 @@ const homepage = ()=> {
   image: "./public/javascript-logo.svg",
   path: "/Component/JavaScript-Section/JavaScriptPages",
 },{
-  title: "Bootstrap",
-  decs: "A CSS framework for designing better web pages.",
-  button1: "Bootstrap Tutorial",
-  image: "./public/Bootstrap.png",
-  path:'',
+  // title: "Bootstrap",
+  // decs: "A CSS framework for designing better web pages.",
+  // button1: "Bootstrap Tutorial",
+  // image: "./public/Bootstrap.png",
+  // path:'',
 },{
   title: "React",
   decs: "A JavaScript framework for building better web pages.",
