@@ -5,20 +5,16 @@ const HTMLElements = () => {
       <h1 className="text-3xl font-semibold text-blue-500 mb-3">HTML Elements</h1>
 
       {/* Intro */}
-      <p className="mb-4">
-        An <strong>HTML element</strong> is the building block of a webpage. It consists of a start tag, content (sometimes), and an end tag. Elements define structure and meaning: headings, paragraphs, links, images, and more.
-      </p>
+      <p>An <span className="text-red-400 bg-gray-50">HTML element</span> is the building block of a webpage. It consists of a start tag, content (sometimes), and an end tag. Elements define structure and meaning: headings, paragraphs, links, images, and more.</p>
 
       {/* Structure */}
-      <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Structure of an Element</h2>
-        <p className="text-gray-700 mb-3">
-          Most HTML elements follow this pattern:
-        </p>
-        <pre className="bg-gray-100 p-3 rounded mb-3">
+      <section className="mt-10">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-2">Structure of an Element</h2>
+        <p>Most HTML elements follow this pattern:</p>
+        <pre className="bg-gray-100 mt-5 p-3 rounded mb-3">
           <code>{<p>This is a paragraph.</p>}</code>
         </pre>
-        <ul className="list-[square] list-inside text-gray-700 space-y-1">
+        <ul className="list-[square] list-inside space-y-1">
           <li>
             <strong>Start tag:</strong> <code>&lt;p&gt;</code>
           </li>
@@ -32,8 +28,8 @@ const HTMLElements = () => {
       </section>
 
       {/* Types */}
-      <section className="mb-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mb-3">Types of HTML Elements</h2>
+      <section>
+        <h2 className="text-2xl font-semibold text-blue-500 mt-10 mb-5">Types of HTML Elements</h2>
 
         <div className="mb-4">
           <h3 className="text-xl font-semibold text-blue-400 mb-3">1. Block-level Elements</h3>
@@ -73,7 +69,7 @@ const HTMLElements = () => {
           Attributes provide extra information about elements. They go inside the start tag.
         </p>
 
-        <pre className="bg-gray-100 p-3 rounded mb-3">
+        <pre className="bg-gray-100 p-3 rounded mb-3 overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>{<a href="https://codepoint.com" target="_blank">Visit CodePoint</a>}</code>
         </pre>
 
@@ -103,7 +99,7 @@ const HTMLElements = () => {
           You can put elements inside other elements. This is called <strong>nesting</strong>. Always make sure your tags are properly closed and nested to avoid rendering problems.
         </p>
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg  overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
             {`<div>
   <h2>Title</h2>
   <p>This is a <strong>nested</strong> paragraph.</p>
