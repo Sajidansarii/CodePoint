@@ -35,7 +35,7 @@ const HTMLBasics = () => {
 
       {/* Code Example */}
       <h2 className="text-2xl font-semibold text-blue-500 mt-5 mb-5">Example</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
 {`<!DOCTYPE html>
 <html>
   <head>

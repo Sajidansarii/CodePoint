@@ -17,7 +17,7 @@ const HTMLResponsive = () => {
         <p className="leading-relaxed mb-3">
           The first step is adding the viewport meta tag in the <code>&lt;head&gt;</code> so browsers scale the page correctly on mobile devices.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<meta name="viewport" content="width=device-width, initial-scale=1.0" />`}</code>
         </pre>
         <p className="leading-relaxed mb-3">
@@ -31,7 +31,7 @@ const HTMLResponsive = () => {
         <p className="leading-relaxed mb-3">
           Avoid fixed widths. Use relative units like percentages, <code>max-width</code>, <code>em</code>, or CSS flex/grid to let content adapt automatically.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`.container {
   max-width: 100%;
   padding: 0 1rem;
@@ -48,7 +48,7 @@ const HTMLResponsive = () => {
         <p className="leading-relaxed mb-3">
           Make images scale and load appropriately using CSS or attributes:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<!-- CSS -->
 img {
   max-width: 100%;
@@ -73,7 +73,7 @@ img {
         <p className="leading-relaxed mb-3">
           Media queries apply different CSS rules depending on screen size or other features.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`/* Mobile first */
 .container {
   display: block;

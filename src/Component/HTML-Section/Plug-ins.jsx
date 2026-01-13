@@ -45,7 +45,7 @@ const HTMLPlugins = () => {
         <p className="leading-relaxed mb-3">
           Many plugins are available via CDN and can be added with a <code>&lt;script&gt;</code> or <code>&lt;link&gt;</code> tag.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<!-- Example: include a carousel plugin -->
 <link rel="stylesheet" href="https://cdn.example.com/carousel.css" />
 <script src="https://cdn.example.com/carousel.min.js" defer></script>`}</code>
@@ -55,7 +55,7 @@ const HTMLPlugins = () => {
         <p className="leading-relaxed mb-3">
           For modern projects, install plugins via npm and import them in your JavaScript.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`// install
 npm install some-plugin
 
@@ -68,7 +68,7 @@ SomePlugin.init();`}</code>
         <p className="leading-relaxed mb-3">
           After including, most plugins require initialization:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<!-- HTML -->
 <div class="slider">...</div>
 
@@ -116,7 +116,7 @@ SomePlugin.init();`}</code>
         <p className="leading-relaxed mb-3">
           Some plugins depend on others (e.g., old jQuery plugins need jQuery loaded first). Always include dependencies in the correct order and initialize after the DOM and required scripts are ready.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<!-- jQuery plugin example -->
 <script src="https://code.jquery.com/jquery.min.js"></script>
 <script src="https://cdn.example.com/jquery.plugin.js"></script>
@@ -160,7 +160,7 @@ SomePlugin.init();`}</code>
         <p className="leading-relaxed mb-3">
           If a plugin fails to load, ensure the core functionality still works or provide a simple fallback. Avoid using plugins for critical features without fallback logic.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<!-- Example: tooltips fallback -->
 <div class="tooltip" data-text="Info">
   Hover me

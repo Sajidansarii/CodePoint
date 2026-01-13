@@ -11,7 +11,7 @@ const HTMLElements = () => {
       <section className="mt-10">
         <h2 className="text-2xl font-semibold text-blue-500 mb-2">Structure of an Element</h2>
         <p>Most HTML elements follow this pattern:</p>
-        <pre className="bg-gray-100 mt-5 p-3 rounded mb-3">
+        <pre className="bg-gray-100 mt-5 p-3 rounded mb-3 overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>{<p>This is a paragraph.</p>}</code>
         </pre>
         <ul className="list-[square] list-inside space-y-1">

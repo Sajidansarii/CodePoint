@@ -14,7 +14,7 @@ const HTMLIdAttribute = () => {
       {/* Basic Syntax */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-2">Basic Syntax</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<div id="header">
   <h1>Welcome to CodePoint</h1>
 </div>`}</code>
@@ -30,7 +30,7 @@ const HTMLIdAttribute = () => {
         <p className="leading-relaxed mb-3">
           Use the <code>#</code> symbol to select an element by its ID in CSS:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`#header {
   background-color: #f0f8ff;
   padding: 10px;
@@ -47,7 +47,7 @@ const HTMLIdAttribute = () => {
         <p className="leading-relaxed mb-3">
           JavaScript can grab the element directly by its ID:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`const header = document.getElementById('header');
 header.style.border = '2px solid blue';`}</code>
         </pre>
@@ -71,7 +71,7 @@ header.style.border = '2px solid blue';`}</code>
             Use <code>id</code> when you need to reference one specific element (e.g., anchor links, JavaScript hooks).
           </li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mt-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mt-3">
           <code>{`<!-- ID (unique) -->
 <div id="main-title">Hello</div>
 
@@ -98,7 +98,7 @@ header.style.border = '2px solid blue';`}</code>
         <p className="leading-relaxed mb-3">
           IDs can be used as targets for internal navigation:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<a href="#features">See Features</a>
 
 <section id="features">

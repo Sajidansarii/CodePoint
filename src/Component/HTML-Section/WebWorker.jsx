@@ -65,7 +65,7 @@ const HTMLWebWorker = () => {
       {/* JavaScript Code */}
       <div className="mb-6">
         <h3 className="text-lg font-semibold text-blue-500 mb-3">worker.js (Background Script)</h3>
-        <pre className="bg-gray-900 p-4 text-sm rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 text-sm rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
 {`let i = 0;
 function timedCount() {
   i += 1;

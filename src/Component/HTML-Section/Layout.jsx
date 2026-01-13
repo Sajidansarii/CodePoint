@@ -17,7 +17,7 @@ const HTMLLayout = () => {
         <p className="leading-relaxed mb-3">
           Every element is a box composed of content, padding, border, and margin. Understanding the box model is the foundation of layout.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`div {
   width: 200px; /* content width */
   padding: 10px; /* inside */
@@ -36,7 +36,7 @@ const HTMLLayout = () => {
         <p className="leading-relaxed mb-3">
           Flexbox is for one-dimensional layouts—arranging items in a row or column with alignment and distribution control.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`.container {
   display: flex;
   gap: 10px;
@@ -64,7 +64,7 @@ const HTMLLayout = () => {
         <p className="leading-relaxed mb-3">
           CSS Grid is for two-dimensional layouts—rows and columns together. It’s powerful for complex page structures.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`.grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -89,7 +89,7 @@ const HTMLLayout = () => {
           <li><code>fixed</code> — fixed relative to viewport (stays on scroll).</li>
           <li><code>sticky</code> — toggles between relative and fixed depending on scroll.</li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`.box {
   position: absolute;
   top: 10px;
@@ -104,7 +104,7 @@ const HTMLLayout = () => {
         <p className="leading-relaxed mb-3">
           Layout must adapt to different screen sizes. Use media queries or utility-first frameworks (like Tailwind) to adjust structure.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`@media (max-width: 768px) {
   .sidebar {
     display: none;

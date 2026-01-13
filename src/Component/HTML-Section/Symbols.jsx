@@ -25,7 +25,7 @@ const HTMLSymbols = () => {
             <strong>Numeric:</strong> code point, e.g., <code>&amp;#169;</code> or hexadecimal <code>&amp;#xA9;</code>.
           </li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`&amp;copy;  → ©
 &amp;#169; → ©
 &amp;#x2665; → ♥
@@ -42,7 +42,7 @@ const HTMLSymbols = () => {
           <p className="leading-relaxed mb-3">
             Examples: dollar, euro, rupee, pound
           </p>
-          <pre className="bg-gray-900 p-4  rounded-lg text-green-400 mb-3">
+          <pre className="bg-gray-900 p-4  rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
             <code>{`&amp;#36; → $
 &amp;euro; → €
 &amp;#8377; → ₹
@@ -55,7 +55,7 @@ const HTMLSymbols = () => {
           <p className="leading-relaxed mb-3">
             Symbols used in math and logic.
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
             <code>{`&amp;le; → ≤
 &amp;ge; → ≥
 &amp;times; → ×
@@ -68,7 +68,7 @@ const HTMLSymbols = () => {
           <p className="leading-relaxed mb-3">
             Directional indicators.
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
             <code>{`&amp;rarr; → →
 &amp;larr; → ←
 &amp;uarr; → ↑
@@ -78,7 +78,7 @@ const HTMLSymbols = () => {
 
         <div className="mb-4">
           <h3 className="text-xl font-semibold text-blue-400 mb-3">4. Miscellaneous</h3>
-          <pre className="bg-gray-900 p-4  rounded-lg text-green-400 mb-3">
+          <pre className="bg-gray-900 p-4  rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
             <code>{`&amp;hearts; → ♥
 &amp;star; → ★ (some use &#9733;)
 &amp;bull; → •
@@ -93,7 +93,7 @@ const HTMLSymbols = () => {
         <p className="leading-relaxed mb-3">
           Some characters have special meaning in HTML and must be escaped to display literally.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`&amp;lt; → <
 &amp;gt; → >
 &amp;amp; → &
@@ -108,7 +108,7 @@ const HTMLSymbols = () => {
         <p className="leading-relaxed mb-3">
           Symbols can be ambiguous; if the meaning isn’t clear, provide a text explanation or use <code>aria-label</code>.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{'<span aria-label="warning">⚠</span> <span>Be careful!</span>'}</code>
         </pre>
       </section>

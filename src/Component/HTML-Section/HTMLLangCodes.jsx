@@ -13,7 +13,7 @@ const HtmlLangCodes = () => {
       </p>
 
       <h2 className="text-2xl font-semibold mt-5 mb-3 text-blue-500">Syntax</h2>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-4">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-4">
         {`<html lang="en"> 
 <head>
   <title>Language Example</title>
@@ -74,7 +74,7 @@ const HtmlLangCodes = () => {
       </div>
 
       <h2 className="text-2xl font-semibold mt-5 mb-3">Example with Paragraphs</h2>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`<p lang="en">Hello!</p>
 <p lang="fr">Bonjour!</p>
 <p lang="es">¡Hola!</p>`}

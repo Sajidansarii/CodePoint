@@ -17,7 +17,7 @@
         <p className="leading-relaxed mb-3">
           A simple video with controls:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<video width="640" controls>
   <source src="movie.mp4" type="video/mp4" />
   <source src="movie.webm" type="video/webm" />
@@ -49,7 +49,7 @@
         <p className="leading-relaxed mb-3">
           Use <code>&lt;track&gt;</code> to add captions or subtitles. They improve accessibility and comprehension.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<video controls>
   <source src="movie.mp4" type="video/mp4" />
   <track kind="captions" src="captions_en.vtt" srclang="en" label="English" default />
@@ -67,7 +67,7 @@
         <p className="leading-relaxed mb-3">
           Wrap the video in a container that preserves aspect ratio so it scales on all devices.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`.video-wrapper {
   position: relative;
   padding-top: 56.25%; /* 16:9 */
@@ -91,7 +91,7 @@
         <p className="leading-relaxed mb-3">
           Video with poster, captions, autoplay (muted), loop, and fallback text:
         </p>
-        <pre className="bg-gray-109 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-109 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<div class="video-wrapper" style="position:relative; padding-top:56.25%;">
   <video 
     muted 

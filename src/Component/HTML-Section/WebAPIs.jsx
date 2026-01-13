@@ -35,7 +35,7 @@ const HTMLWebAPIs = () => {
       <div className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Example: Geolocation API</h2>
         <p className="leading-relaxed mb-3">Get the user’s current location:</p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`navigator.geolocation.getCurrentPosition((position) => {
   console.log("Latitude:", position.coords.latitude);
   console.log("Longitude:", position.coords.longitude);
@@ -47,7 +47,7 @@ const HTMLWebAPIs = () => {
       <div className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Example: Fetch API</h2>
         <p className="leading-relaxed mb-3">Get JSON data from a server:</p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`fetch("https://jsonplaceholder.typicode.com/posts/1")
   .then(response => response.json())
   .then(data => console.log(data));`}</code>

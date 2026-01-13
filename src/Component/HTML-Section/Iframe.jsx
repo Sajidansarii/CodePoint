@@ -14,7 +14,7 @@ const HTMLIFrame = () => {
       {/* Basic Syntax */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-2">Basic Syntax</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{'<iframe src="https://example.com" title="Example site"></iframe>'}</code>
         </pre>
         <p className="leading-relaxed mb-3">
@@ -53,7 +53,7 @@ const HTMLIFrame = () => {
         <p className="leading-relaxed mb-3">
           To make an iframe responsive, wrap it in a container that maintains aspect ratio.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>{`<div style="position:relative; padding-top:56.25%;">
   <iframe 
     src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
@@ -75,7 +75,7 @@ const HTMLIFrame = () => {
         <p className="leading-relaxed mb-3">
           The <code>sandbox</code> attribute restricts what the embedded content can do. Without values, it applies many restrictions.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>{`<iframe 
   src="https://example.com" 
   title="Sandboxed content" 
@@ -85,7 +85,7 @@ const HTMLIFrame = () => {
         <p className="leading-relaxed mb-2">
           You can allow specific features:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>{`<iframe 
   src="https://example.com" 
   title="Limited" 
@@ -104,7 +104,7 @@ const HTMLIFrame = () => {
           <li>Always include a descriptive <code>title</code> attribute.</li>
           <li>Provide fallback content inside the iframe tag for very old browsers:</li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>{`<iframe src="https://example.com" title="Example">
   Your browser does not support iframes.
 </iframe>`}</code>
@@ -126,7 +126,7 @@ const HTMLIFrame = () => {
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-2">YouTube Embed Example</h2>
         
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2 overflow-x-auto text-sm">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
              <code>
             {`<iframe
             src="https://www.youtube.com/embed/https://www.youtube.com

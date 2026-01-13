@@ -18,7 +18,7 @@ const HTMLFormElements = () => {
             <p className="leading-relaxed mb-3">
               Single-line text input.
             </p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
               <code>{`<label for="name">Name:</label>
 <input type="text" id="name" name="name" placeholder="Your name" required />`}</code>
             </pre>
@@ -29,7 +29,7 @@ const HTMLFormElements = () => {
             <p className="leading-relaxed mb-3">
               Email address; browser validates format.
             </p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 text-sm overflow-x-auto">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
               <code>{`<label for="email">Email:</label>
 <input type="email" id="email" name="email" required />`}</code>
             </pre>
@@ -47,7 +47,7 @@ const HTMLFormElements = () => {
             <p className="leading-relaxed mb-3">
               Toggle (checkbox) and exclusive choices (radio).
             </p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 text-sm overflow-x-auto">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
               <code>{`<label><input type="checkbox" name="subscribe" /> Subscribe</label>
 
 <label><input type="radio" name="gender" value="male" /> Male</label>
@@ -60,7 +60,7 @@ const HTMLFormElements = () => {
             <p className="leading-relaxed mb-3">
               Multi-line text input.
             </p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
               <code>{`<label for="message">Message:</label>
 <textarea id="message" name="message" rows="4" placeholder="Type here..."></textarea>`}</code>
             </pre>
@@ -71,7 +71,7 @@ const HTMLFormElements = () => {
             <p className="leading-relaxed mb-3">
               Dropdown selection.
             </p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
               <code>{`<label for="country">Country:</label>
 <select id="country" name="country">
   <option value="">Choose...</option>
@@ -86,7 +86,7 @@ const HTMLFormElements = () => {
             <p className="leading-relaxed mb-3">
               Submit or reset form data.
             </p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
               <code>{`<button type="submit">Send</button>
 <button type="reset">Clear</button>`}</code>
             </pre>
@@ -148,7 +148,7 @@ const HTMLFormElements = () => {
             <code>&lt;output&gt;</code> — Displays the result of a calculation.
           </li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<fieldset>
   <legend>Payment</legend>
   <label for="card">Card number:</label>
@@ -180,7 +180,7 @@ const HTMLFormElements = () => {
           <li><code>readonly</code> / <code>disabled</code> — Non-editable or inactive.</li>
           <li><code>autocomplete</code> — Suggest previously entered values.</li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<input type="text" name="username" required pattern="[A-Za-z0-9]{4,}" placeholder="4+ alphanumeric" />
 <input type="number" name="age" min="1" max="120" />`}</code>
         </pre>
@@ -200,7 +200,7 @@ const HTMLFormElements = () => {
       {/* Example Combined Form */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">6. Combined Example</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<form action="/submit" method="POST">
   <fieldset>
     <legend>Profile</legend>

@@ -19,7 +19,7 @@ const HtmlUrlEncode = () => {
       </ul>
 
       <h2 className="text-2xl font-semibold mt-5 mb-3 text-blue-500">Syntax</h2>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
         {'encodeURIComponent("Hello World!") // "Hello%20World%21"'}
       </pre>
 
@@ -73,7 +73,7 @@ const HtmlUrlEncode = () => {
       </div>
 
       <h2 className="text-2xl font-semibold mt-5 mb-3">Example</h2>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
         {`const text = "I love HTML & CSS!";
 const encoded = encodeURIComponent(text);
 console.log(encoded); // "I%20love%20HTML%20%26%20CSS%21"`}

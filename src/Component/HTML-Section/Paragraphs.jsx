@@ -14,7 +14,7 @@ const HTMLParagraphs = () => {
       {/* Basic Example */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Basic Usage</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           {`<p>This is the first paragraph.</p>
 <p>This is the second paragraph.</p>`}
         </pre>
@@ -29,7 +29,7 @@ const HTMLParagraphs = () => {
         <p className="leading-relaxed mb-3">
           Browsers automatically add some margin around paragraphs. You can customize spacing with CSS. Avoid nesting block-level elements like another <code>&lt;p&gt;</code> inside a paragraph.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           {`<!-- Wrong -->
 <p>This is <p>nested</p> paragraph.</p>
 

@@ -27,7 +27,7 @@ const HtmlCharacterSets = () => {
       </ul>
 
       <h2 className="text-xl font-semibold mt-5 mb-3 text-blue-500">Declaring a Character Set in HTML</h2>
-      <pre className="bg-gray-900  p-4 rounded-lg text-green-400 mb-3">
+      <pre className="bg-gray-900  p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
         {`<!DOCTYPE html>
 <html>
 <head>
@@ -47,13 +47,13 @@ const HtmlCharacterSets = () => {
         <li>Recommended for modern websites.</li>
       </ul>
 
-      <div className="bg-blue-900 p-4 rounded-lg text-green-400 mb-3">
+      <div className="bg-blue-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
         💡 <strong>Tip</strong>: Always include <code>{'<meta charset="UTF-8">'}</code> 
         in the <code>{'<head>'}</code> of your HTML document to avoid character display issues.
       </div>
 
       <h2 className="text-xl font-semibold mt-6 mb-3">Example of Character Display</h2>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
         {`<p>English: Hello</p>
 <p>Hindi: नमस्ते</p>
 <p>Chinese: 你好</p>

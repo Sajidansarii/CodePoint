@@ -33,7 +33,7 @@ const HTMLJavaScript = () => {
             event attribute (not recommended for maintainability).
           </li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<!-- Internal JavaScript -->
 <script>
   alert('Hello from JavaScript!');
@@ -49,7 +49,7 @@ const HTMLJavaScript = () => {
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">
           Example: Button Click
         </h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<!DOCTYPE html>
 <html>
   <body>
@@ -86,7 +86,7 @@ const HTMLJavaScript = () => {
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">
           External JavaScript Example
         </h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<!-- index.html -->
 <!DOCTYPE html>
 <html>

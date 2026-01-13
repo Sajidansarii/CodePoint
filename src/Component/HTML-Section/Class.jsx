@@ -13,14 +13,14 @@ const HTMLClassAttribute = () => {
       {/* Basic Syntax */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-5">Syntax</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
           <code>{<p class="highlight">This is highlighted text.</p>}</code>
         </pre>
         <p className="leading-relaxed mb-3">
        Here, the paragraph element is assigned a class named <code>highlight</code>. 
           You can style it in CSS like this:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`.highlight {
   background-color: yellow;
   font-weight: bold;
@@ -35,10 +35,10 @@ const HTMLClassAttribute = () => {
           You can assign multiple classes to an element by separating them with spaces. 
           Each class can have its own CSS rules.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>{<p class="highlight large-text">This text is highlighted and large.</p>}</code>
         </pre>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mt-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
           <code>{`.large-text {
   font-size: 20px;
 }`}</code>
@@ -51,7 +51,7 @@ const HTMLClassAttribute = () => {
         <p className="leading-relaxed mb-2">
           JavaScript can select and manipulate elements by their class name:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mt-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
           <code>{`document.querySelectorAll('.highlight')
   .forEach(el => el.style.color = 'red');`}</code>
         </pre>

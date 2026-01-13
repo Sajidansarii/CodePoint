@@ -13,7 +13,7 @@ const HTMLForms = () => {
         <p className="leading-relaxed mb-3">
           A form wraps input fields and a submit control. It uses the <code>&lt;form&gt;</code> tag with optional <code>action</code> and <code>method</code> attributes.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
           <code>{`<form action="/submit" method="POST">
   <label for="name">Name:</label>
   <input type="text" id="name" name="name" />
@@ -56,7 +56,7 @@ const HTMLForms = () => {
         <p className="leading-relaxed mb-3">
           Use <code>&lt;label&gt;</code> to associate text with inputs, and <code>&lt;fieldset&gt;</code> / <code>&lt;legend&gt;</code> to group related controls.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
           <code>{`<fieldset>
   <legend>Account Info</legend>
   <label for="email">Email:</label>
@@ -101,7 +101,7 @@ const HTMLForms = () => {
         <p className="leading-relaxed mb-3">
           Browsers provide built-in validation for types like <code>email</code> and attributes like <code>required</code>. You can also add custom validation with JavaScript.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
           <code>{`<form>
   <input type="email" name="userEmail" required />
   <button type="submit">Submit</button>
@@ -126,7 +126,7 @@ const HTMLForms = () => {
       {/* Example Contact Form */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Example: Contact Form</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
           <code>{`<form action="/send" method="POST">
   <label for="name">Name:</label>
   <input type="text" id="name" name="name" required />

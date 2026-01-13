@@ -25,7 +25,7 @@ const HTMLEntities = () => {
 
         <div className="mb-4">
           <p className="font-medium text-gray-800 mb-3">Reserved characters:</p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
             {'&lt;div&gt;This is not a tag&lt;/div&gt;'}
           </pre>
           <p className="text-gray-700">
@@ -35,7 +35,7 @@ const HTMLEntities = () => {
 
         <div className="mb-4">
           <p className="font-medium text-gray-800 mb-3">Special symbols:</p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
              {`&amp;  → &  
 &copy; → ©  
 &reg; → ®  

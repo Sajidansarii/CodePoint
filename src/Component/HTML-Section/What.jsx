@@ -66,12 +66,12 @@ const WhatIsHTML = () => {
       <section aria-label="Example HTML code">
         <h2 className="text-xl  text-blue-500 mt-6 mb-5">Example</h2>
         <div className="relative mb-4">
-          <details className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-auto">
+          <details className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
             <summary className="cursor-pointer text-white font-semibold mb-2">
               View HTML code
             </summary>
             <div className="mt-2">
-              <pre className="overflow-x-auto rounded text-sm sm:text-base">
+              <pre className="text-green-400 rounded-lg p-4 bg-gray-900 overflow-x-auto max-w-full whitespace-pre-wrap">
                 <code className="block whitespace-pre-wrap break-words">{codeString}</code>
               </pre>
               <button

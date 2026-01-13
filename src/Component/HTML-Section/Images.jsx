@@ -15,7 +15,7 @@ const HTMLImagesDetailed = () => {
         <p className="leading-relaxed mb-3">
           The simplest image tag includes <code>src</code> and <code>alt</code>:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           {'<img src="logo.png" alt="CodePoint Logo" />'}
         </pre>
         <p className="leading-relaxed">
@@ -29,7 +29,7 @@ const HTMLImagesDetailed = () => {
         <p className="leading-relaxed mb-3">
           Use <code>srcset</code> and <code>sizes</code> to let the browser pick the best version depending on screen size and resolution.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           {`<img 
   src="small.jpg" 
   srcset="small.jpg 480w, medium.jpg 800w, large.jpg 1200w" 
@@ -48,7 +48,7 @@ const HTMLImagesDetailed = () => {
         <p className="text-gray-700 mb-3">
           Deferring offscreen images speeds up initial load. Use:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           {'<img src="photo.jpg" alt="Example" loading="lazy" />'}
         </pre>
         <p className="text-gray-700">
@@ -62,7 +62,7 @@ const HTMLImagesDetailed = () => {
         <p className="leading-relaxed mb-3">
           Use <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> for semantic captions.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           {`<figure>
   <img src="sunset.jpg" alt="Sunset" loading="lazy" />
   <figcaption>Sunset over mountains.</figcaption>
@@ -114,7 +114,7 @@ const HTMLImagesDetailed = () => {
         <p className="leading-relaxed mb-3">
           Logo with lazy loading and accessibility:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3 overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>{`<img 
   src="/assets/codepoint-logo.png" 
   alt="CodePoint Logo" 

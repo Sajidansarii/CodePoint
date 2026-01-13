@@ -17,7 +17,7 @@ const HTMLLists = () => {
         <p className="text-gray-700 mb-3">
           An unordered list displays items with bullets. Use the <code>&lt;ul&gt;</code> tag with nested <code>&lt;li&gt;</code> items.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           {`<ul>
   <li>Apple</li>
   <li>Banana</li>
@@ -35,7 +35,7 @@ const HTMLLists = () => {
         <p className="text-gray-700 mb-3">
           An ordered list shows items in sequence using numbers. Use the <code>&lt;ol&gt;</code> tag.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           {`<ol>
   <li>First step</li>
   <li>Second step</li>
@@ -53,7 +53,7 @@ const HTMLLists = () => {
         <p className="text-gray-700 mb-3">
           A definition list pairs terms and descriptions using <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code> (term), and <code>&lt;dd&gt;</code> (description).
         </p>
-        <pre className="bg-gray-900 p-4 text-green-400 rounded-lg mb-3">
+        <pre className="bg-gray-900 p-4 text-green-400 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
            {`<dl>
   <dt>HTML</dt>
   <dd>HyperText Markup Language</dd>
@@ -69,7 +69,7 @@ const HTMLLists = () => {
         <p className="text-gray-700 mb-3">
           Lists can be nested inside other list items to create hierarchy.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
            {`<ul>
   <li>Fruits
     <ul>
@@ -99,7 +99,7 @@ const HTMLLists = () => {
         <p className="text-gray-700">
           Example of customizing start value in ordered list:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           {`<ol start="5">
   <li>Item five</li>
   <li>Item six</li>

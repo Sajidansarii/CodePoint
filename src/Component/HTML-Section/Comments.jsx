@@ -10,7 +10,7 @@ const HTMLComments = () => {
       {/* Syntax */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Syntax</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
             {'<!-- This is a comment -->'}
         </pre>
         <p className="leading-relaxed mt-3">
@@ -21,7 +21,7 @@ const HTMLComments = () => {
       {/* Example */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Example</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
            {`<!-- Navigation starts here -->
 <nav>
   <ul>

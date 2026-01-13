@@ -24,7 +24,7 @@ const HtmlDoctype = () => {
         The DOCTYPE for HTML5 is very simple and does not require a reference
         to a Document Type Definition (DTD).
       </p>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
         {`<!DOCTYPE html>
 <html>
 <head>
@@ -42,7 +42,7 @@ const HtmlDoctype = () => {
         Older versions of HTML used more complex DOCTYPE declarations because
         they referenced a DTD file. Example for HTML 4.01:
       </p>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
         {`<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">`}
       </pre>

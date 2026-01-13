@@ -13,7 +13,7 @@ const HTMLAudio = () => {
         <p className="leading-relaxed mb-3">
           A simple audio player with controls:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-2">
           <code>{`<audio controls>
   <source src="audio.mp3" type="audio/mpeg" />
   <source src="audio.ogg" type="audio/ogg" />
@@ -42,7 +42,7 @@ const HTMLAudio = () => {
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Multiple Source Formats</h2>
         <p className="leading-relaxed mb-3">Provide different audio formats to support various browsers:</p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-2">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-2">
           <code>{`<audio controls>
   <source src="track.mp3" type="audio/mpeg" />
   <source src="track.ogg" type="audio/ogg" />
@@ -68,7 +68,7 @@ const HTMLAudio = () => {
         <p className="leading-relaxed mb-3">
           Modern browsers often block autoplay with sound. To increase the chance autoplay works, combine with <code>muted</code>. Even then, user interaction is usually required for unmuted playback.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<audio autoplay muted loop>
   <source src="ambient.mp3" type="audio/mpeg" />
 </audio>`}</code>
@@ -81,14 +81,14 @@ const HTMLAudio = () => {
         <p className="leading-relaxed mb-3">
           You can manipulate audio with JavaScript:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`const audio = document.getElementById('myAudio');
 audio.play(); // start
 audio.volume = 0.5; // set volume
 audio.pause(); // stop`}</code>
         </pre>
         <p className="leading-relaxed mt-5 mb-5">Example markup for script:</p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>{<audio id="myAudio" src="song.mp3" controls></audio>}</code>
         </pre>
       </section>

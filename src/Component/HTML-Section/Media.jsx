@@ -18,14 +18,14 @@ const HTMLMedia = () => {
         <p className="leading-relaxed mb-3">
           Use the <code>&lt;img&gt;</code> tag to display images. Always include the <code>alt</code> attribute for accessibility.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
             <code>{'<img src="mountain.jpg" alt="mountain"/>'}</code>
         
         </pre>
         <p className="leading-relaxed mb-3">
           You can make images responsive with CSS:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
 {`img {
   max-width: 100%;
   height: auto;
@@ -39,7 +39,7 @@ const HTMLMedia = () => {
         <p className="leading-relaxed mb-3">
           The <code>&lt;audio&gt;</code> tag embeds audio content. Use the <code>controls</code> attribute so users can play, pause, or adjust volume.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
 {`<audio controls>
   <source src="song.mp3" type="audio/mpeg" />
   <source src="song.ogg" type="audio/ogg" />
@@ -57,7 +57,7 @@ const HTMLMedia = () => {
         <p className="leading-relaxed mb-3">
           The <code>&lt;video&gt;</code> tag embeds video content. Use the <code>controls</code> attribute for playback controls.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
 {`<video width="400" controls>
   <source src="movie.mp4" type="video/mp4" />
   <source src="movie.webm" type="video/webm" />
@@ -75,7 +75,7 @@ const HTMLMedia = () => {
         <p className="leading-relaxed mb-3">
           Use <code>&lt;iframe&gt;</code> to embed other content like YouTube videos or maps.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
 {`<iframe 
   width="560" 
   height="315" 
@@ -97,7 +97,7 @@ const HTMLMedia = () => {
         <p className="leading-relaxed mb-3">
           To make videos and iframes responsive, wrap them in a container with proportional padding.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
 {`.video-container {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */

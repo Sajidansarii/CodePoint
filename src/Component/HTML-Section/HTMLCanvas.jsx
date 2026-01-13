@@ -73,7 +73,7 @@ const HtmlCanvas = () => {
       </p>
 
       <h2 className="text-xl font-semibold mt-4 mb-3">Basic Syntax</h2>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
 {`<canvas id="myCanvas" width="640" height="360">
   Your browser does not support the HTML canvas tag.
 </canvas>`}
@@ -81,7 +81,7 @@ const HtmlCanvas = () => {
 
       <h2 className="text-xl font-semibold mt-4 mb-3">Get 2D Context</h2>
       <p className="mb-2">Use the rendering context to draw — most common is 2D:</p>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
 {`const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');`}
       </pre>
@@ -96,7 +96,7 @@ const ctx = canvas.getContext('2d');`}
       </ul>
 
       <h2 className="text-2xl font-semibold mt-5 mb-3">Example: Draw Image</h2>
-      <pre className="bg-gray-900  p-4 rounded-lg text-green-400 mb-3">
+      <pre className="bg-gray-900  p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
 {`const img = new Image();
 img.onload = () => ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 img.src = 'photo.jpg';`}

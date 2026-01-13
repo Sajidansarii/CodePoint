@@ -11,7 +11,7 @@ const HtmlVideo = () => {
       </p>
 
       <h2 className="text-2xl font-semibold mt-5 mb-3">Basic Syntax</h2>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
         {`<video src="movie.mp4" controls>
   Your browser does not support the video tag.
 </video>`}
@@ -33,7 +33,7 @@ const HtmlVideo = () => {
         You can provide multiple video formats to ensure compatibility across
         browsers.
       </p>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
         {`<video width="640" height="360" controls poster="thumbnail.jpg">
   <source src="movie.mp4" type="video/mp4">
   <source src="movie.webm" type="video/webm">

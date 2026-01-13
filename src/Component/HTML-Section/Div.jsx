@@ -14,7 +14,7 @@ const HTMLDivElement = () => {
       {/* Basic Syntax */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Basic Syntax</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
           <code>{`<div>
   <h2>Title</h2>
   <p>This is some text inside a div.</p>
@@ -36,7 +36,7 @@ const HTMLDivElement = () => {
       {/* Styling Example */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Styling a &lt;div&gt; with CSS</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
           <code>{`<div style="background-color: lightblue; padding: 10px;">
   <h3>Welcome!</h3>
   <p>This div has a light blue background and padding.</p>

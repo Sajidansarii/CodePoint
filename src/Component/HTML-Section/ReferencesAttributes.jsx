@@ -11,7 +11,7 @@ const HtmlAttributes = () => {
         <code className="bg-gray-100 px-2 py-1 rounded ml-1">&nbsp;name="value"</code>
       </p>
 
-      <div className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+      <div className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
         <code>
           {"<a href='https://codepoint.dev'>Visit CodePoint</a>"}
         </code>
@@ -34,7 +34,7 @@ const HtmlAttributes = () => {
       </ul>
 
       <h2 className="text-xl font-semibold mb-3">Example with Multiple Attributes</h2>
-      <div className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+      <div className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
         <code>
           {"<input type='text' placeholder='Enter your name' required />"}
         </code>

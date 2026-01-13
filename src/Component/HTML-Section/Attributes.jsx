@@ -22,7 +22,7 @@ const HTMLAttributes = () => {
           <li><code>aria-*</code> — Accessibility attributes (e.g., <code>aria-label</code>, <code>aria-describedby</code>).</li>
           <li><code>role</code> — Defines the semantic role for assistive tech.</li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mt-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
           <code>{`<div id="hero" class="bg-blue-100" title="Main banner" data-section="top">
   Welcome!
 </div>`}</code>
@@ -49,7 +49,7 @@ const HTMLAttributes = () => {
           <li><code>checked</code> — Preselects checkbox/radio.</li>
           <li><code>multiple</code> — Allows selecting multiple values (e.g., in <code>&lt;select&gt;</code> or file inputs).</li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>{`<form>
   <label for="email">Email:</label>
   <input 
@@ -79,7 +79,7 @@ const HTMLAttributes = () => {
           <li><code>required</code>, <code>disabled</code>, <code>checked</code> — Boolean (just include them).</li>
           <li><code>type="text"</code>, <code>placeholder="Name"</code> — Key-value pairs.</li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>{`<input type="checkbox" checked />
 <input type="text" placeholder="Your name" required />`}</code>
         </pre>
@@ -91,7 +91,7 @@ const HTMLAttributes = () => {
         <p className="leading-relaxed mb-3">
           Combine custom data attributes with ARIA for semantics and scripting:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>{`<button 
   data-tracking="signup-btn" 
   aria-label="Sign up now"

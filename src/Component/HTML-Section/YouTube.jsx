@@ -32,7 +32,7 @@ const YouTubeTopic = () => {
         <p className="leading-relaxed mb-3">
           Embed a video using an iframe:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<iframe 
   width="560" 
   height="315" 
@@ -54,7 +54,7 @@ const YouTubeTopic = () => {
         <p className="leading-relaxed mb-3">
           To reduce tracking unless the user interacts, use the “nocookie” domain:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<iframe 
   src="https://www.youtube-nocookie.com/embed/UB1O30fR-EE" 
   title="freeCodeCamp HTML Lecture" 
@@ -72,7 +72,7 @@ const YouTubeTopic = () => {
         <p className="leading-relaxed mb-3">
           Wrap the iframe to maintain aspect ratio and make it fluid:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`.video-wrapper {
   position: relative;
   padding-top: 56.25%; /* 16:9 ratio */
@@ -96,7 +96,7 @@ const YouTubeTopic = () => {
         <p className="leading-relaxed mb-3">
           To improve page performance, delay loading the full iframe until user interaction. Show a thumbnail placeholder first:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<!-- HTML -->
 <div class="video-placeholder" style="position:relative; cursor:pointer;">
   <img src="https://img.youtube.com/vi/UB1O30fR-EE/hqdefault.jpg" alt="Video thumbnail" style="width:100%; display:block;" />
@@ -131,7 +131,7 @@ const YouTubeTopic = () => {
         <p className="leading-relaxed mb-3">
           Embed an entire playlist by using its ID:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3 overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>{`<iframe 
   src="https://www.youtube.com/embed?listType=playlist&list=PLWKjhJtqVAbnupwRFO6G0Gnjz8n-3XCTZ" 
   title="YouTube playlist" 
@@ -152,7 +152,7 @@ const YouTubeTopic = () => {
         <p className="leading-relaxed mb-4">
           Example initialization:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
           <code>{`<div id="player"></div>
 <script src="https://www.youtube.com/iframe_api"></script>
 <script>

@@ -21,7 +21,7 @@ const HTMLInputTypes = () => {
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="text"&gt;</h3>
             <p className="leading-relaxed mb-3">Default single-line text field.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
               <code>{'<input type="text" name="username" placeholder="Your name" />'}</code>
             </pre>
           </div>
@@ -29,7 +29,7 @@ const HTMLInputTypes = () => {
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="email"&gt;</h3>
             <p className="leading-relaxed mb-1">Email address with built-in format validation and suitable mobile keyboard.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
               <code>{'<input type="email" name="email" required />'}</code>
             </pre>
           </div>
@@ -37,7 +37,7 @@ const HTMLInputTypes = () => {
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="password"&gt;</h3>
             <p className="leading-relaxed mb-3">Masked input for sensitive text like passwords.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
               <code>{'<input type="password" name="pwd" minlength="8" />'}</code>
             </pre>
           </div>
@@ -45,7 +45,7 @@ const HTMLInputTypes = () => {
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="number"&gt;</h3>
             <p className="leading-relaxed mb-3">Numeric input with optional bounds and step.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
               <code>{'<input type="number" name="quantity" min="1" max="10" step="1" />'}</code>
             </pre>
           </div>
@@ -53,7 +53,7 @@ const HTMLInputTypes = () => {
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="tel"&gt;</h3>
             <p className="leading-relaxed mb-3">Telephone number; brings up tel-specific keyboard on mobile.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
               <code>{'<input type="tel" name="phone" placeholder="+91 98765 43210" />'}</code>
             </pre>
           </div>
@@ -61,7 +61,7 @@ const HTMLInputTypes = () => {
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="url"&gt;</h3>
             <p className="leading-relaxed mb-3">URL input with basic validation.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
               <code>{'<input type="url" name="website" placeholder="https://example.com" />'}</code>
             </pre>
           </div>
@@ -69,7 +69,7 @@ const HTMLInputTypes = () => {
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="search"&gt;</h3>
             <p className="leading-relaxed mb-3">Optimized for search queries; may show clear button in some browsers.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
               <code>{'<input type="search" name="query" placeholder="Search..." />'}</code>
             </pre>
           </div>
@@ -77,7 +77,7 @@ const HTMLInputTypes = () => {
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="color"&gt;</h3>
             <p className="leading-relaxed mb-3">Color picker widget.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
               <code>{'<input type="color" name="favcolor" value="#ff0000" />'}</code>
             </pre>
           </div>
@@ -85,7 +85,7 @@ const HTMLInputTypes = () => {
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="range"&gt;</h3>
             <p className="leading-relaxed mb-3">Slider for numeric selection within a range.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
               <code>{'<input type="range" name="volume" min="0" max="100" />'}</code>
             </pre>
           </div>
@@ -93,7 +93,7 @@ const HTMLInputTypes = () => {
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="file"&gt;</h3>
             <p className="leading-relaxed mb-3">File upload; supports <code>multiple</code>.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
               <code>{'<input type="file" name="avatar" accept="image/*" />'}</code>
             </pre>
           </div>
@@ -101,7 +101,7 @@ const HTMLInputTypes = () => {
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="checkbox"&gt; / &lt;input type="radio"&gt;</h3>
             <p className="leading-relaxed mb-3">Toggle (checkbox) and exclusive options (radio).</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
               <code>{`<label><input type="checkbox" name="agree" /> I agree</label>
 <label><input type="radio" name="plan" value="basic" /> Basic</label>
 <label><input type="radio" name="plan" value="pro" /> Pro</label>`}
@@ -112,7 +112,7 @@ const HTMLInputTypes = () => {
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="hidden"&gt;</h3>
             <p className="leading-relaxed mb-3">Hidden data sent with the form but not shown to user.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
               <code>{'<input type="hidden" name="token" value="abc123" />'}</code>
             </pre>
           </div>
@@ -120,7 +120,7 @@ const HTMLInputTypes = () => {
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="submit"&gt;, <code>reset</code>, <code>button</code></h3>
             <p className="leading-relaxed mb-3">Controls for form actions.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
               <code>{`<input type="submit" value="Send" />
 <input type="reset" value="Clear" />
 <button type="button">Do Something</button>`}</code>
@@ -130,7 +130,7 @@ const HTMLInputTypes = () => {
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="date"&gt;, <code>time</code>, <code>datetime-local</code>, <code>month</code>, <code>week</code></h3>
             <p className="leading-relaxed mb-3">Date and time pickers with native UI support in many browsers.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
               <code>{`<input type="date" name="birthday" />
 <input type="time" name="alarm" />
 <input type="datetime-local" name="appointment" />`}</code>
@@ -154,7 +154,7 @@ const HTMLInputTypes = () => {
           <li><code>multiple</code> — Allow selecting multiple files or emails.</li>
           <li><code>readonly</code> / <code>disabled</code> — Control editability.</li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<input type="email" required placeholder="you@example.com" />
 <input type="number" min="1" max="5" step="1" />
 <input type="text" pattern="[A-Za-z]{3,}" />`}</code>

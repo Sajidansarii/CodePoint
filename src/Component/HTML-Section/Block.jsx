@@ -13,7 +13,7 @@ const HTMLBlockElements = () => {
         <p className="leading-relaxed mb-3">
           A block-level element always starts on a new line and stretches to fill its container’s width by default. Examples include <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>–<code>&lt;h6&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;article&gt;</code>.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mt-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
           {`<div>
   <h1>Title</h1>
   <p>This is a paragraph inside a block.</p>
@@ -33,7 +33,7 @@ const HTMLBlockElements = () => {
             <strong>Inline:</strong> Flows inside a line and only takes as much width as needed (e.g., <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>).
           </li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mt-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
           {`<!-- Block elements stack vertically -->
 <div>Block 1</div>
 <div>Block 2</div>
@@ -49,7 +49,7 @@ const HTMLBlockElements = () => {
         <p className="leading-relaxed mb-3">
           You can override default behavior with CSS using the <code>display</code> property.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mt-5 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mt-5 mb-3">
           {`<div style="display: inline;">This behaves like inline</div>
 <span style="display: block;">This behaves like block</span>`}
         </pre>

@@ -46,7 +46,7 @@ const HowHTMLWorks = () => {
       </p>
 
       <h2 className="text-xl sm:text-2xl text-blue-500 font-semibold mt-6 mb-5">Example</h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm sm:text-base overflow-auto mb-4">
+      <div className="bg-gray-900 text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap p-4 rounded-lg text-sm sm:text-base overflow-auto mb-4">
         <pre>
 {`<!DOCTYPE html>
 <html>

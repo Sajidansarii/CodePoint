@@ -11,7 +11,7 @@ const HtmlGlobalAttributes = () => {
       </p>
 
       <h2 className="text-xl font-semibold mb-3 text-blue-500">Examples of Global Attributes</h2>
-      <div className="mb-6 bg-gray-900 text-green-400 p-4 rounded-lg">
+      <div className="mb-6 bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
         <pre>
 {`<div id="main" class="container" style="color: red;" title="Main container">
   This is a div with global attributes.
@@ -37,7 +37,7 @@ const HtmlGlobalAttributes = () => {
       </ul>
 
       <h2 className="text-xl font-semibold mb-2 text-blue-500">Practical Example</h2>
-      <div className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+      <div className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
         <pre>
 {`<p id="intro" class="highlight" style="font-weight: bold;" title="Intro paragraph">
   Welcome to CodePoint!

@@ -33,7 +33,7 @@ const SemanticHTML = () => {
           <p className="leading-relaxed mb-3">
             Represents introductory content or navigation (usually at top of a page or section).
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
             {`<header>
   <h1>Site Title</h1>
   <nav>…</nav>
@@ -46,7 +46,7 @@ const SemanticHTML = () => {
           <p className="leading-relaxed mb-3">
             Contains navigation links.
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
             {`<nav>
   <ul>
     <li><a href="/">Home</a></li>
@@ -68,7 +68,7 @@ const SemanticHTML = () => {
           <p className="leading-relaxed mb-3">
             Thematic grouping of content, usually with a heading.
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
             {`<section>
   <h2>Features</h2>
   <p>Details about features...</p>
@@ -95,7 +95,7 @@ const SemanticHTML = () => {
           <p className="leading-relaxed mb-3">
             Footer for a page or section, often contains copyright, links, and contact info.
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
             {`<footer>
   <p>&copy; 2025 CodePoint</p>
 </footer>`}
@@ -112,7 +112,7 @@ const SemanticHTML = () => {
         <p className="leading-relaxed">
           Using semantic tags instead gives meaning:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           <code>{`<!-- Non-semantic -->
 <div class="header">...</div>
 <div class="nav">...</div>

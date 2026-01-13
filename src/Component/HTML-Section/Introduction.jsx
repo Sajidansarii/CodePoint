@@ -15,7 +15,7 @@ const Introduction = () =>{
 
       <h2 className="sm:text-2xl text-xl font-semibold text-blue-500 mt-6 mb-2">Basic Structure of an HTML Document</h2>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-3">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-3 overflow-x-auto max-w-full whitespace-pre-wrap">
         
 {`<!DOCTYPE html>
 <html>

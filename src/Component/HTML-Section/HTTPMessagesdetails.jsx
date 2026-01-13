@@ -25,7 +25,7 @@ const HttpsMessages = () => {
         <li>Headers → Additional info about the request.</li>
         <li>Body → Data sent to the server (in POST, PUT, etc.).</li>
       </ul>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
         {`GET /secure-page.html HTTP/1.1
 Host: www.example.com
 User-Agent: Mozilla/5.0
@@ -43,7 +43,7 @@ Accept: text/html`}
         <li>Headers → Info about the server and content.</li>
         <li>Body → The encrypted content returned.</li>
       </ul>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400mb-3">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
         {`HTTP/1.1 200 OK
 Content-Type: text/html
 Content-Length: 150

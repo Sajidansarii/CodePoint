@@ -24,7 +24,7 @@ const HttpsMethods = () => {
         <li>Should not change data on the server.</li>
         <li>Can be cached by browsers.</li>
       </ul>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5">
+      <pre className="bg-gray-900 text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap p-4 rounded-lg mb-5">
 {`GET /products HTTP/1.1
 Host: example.com`}
       </pre>
@@ -36,7 +36,7 @@ Host: example.com`}
         <li>Data is sent in the request body.</li>
         <li>Often used for forms and file uploads.</li>
       </ul>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
 {`POST /products HTTP/1.1
 Host: example.com
 Content-Type: application/json
@@ -53,7 +53,7 @@ Content-Type: application/json
         <li>Replaces an existing resource with new data.</li>
         <li>Updates the entire resource.</li>
       </ul>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
 {`PUT /products/1 HTTP/1.1
 Host: example.com
 Content-Type: application/json
@@ -70,7 +70,7 @@ Content-Type: application/json
         <li>Partially updates a resource.</li>
         <li>More efficient for small changes than PUT.</li>
       </ul>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
 {`PATCH /products/1 HTTP/1.1
 Host: example.com
 Content-Type: application/json
@@ -85,7 +85,7 @@ Content-Type: application/json
       <ul className="list-[square] list-inside mb-3">
         <li>Removes a resource from the server.</li>
       </ul>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto mb-6">
+      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
 {`DELETE /products/1 HTTP/1.1
 Host: example.com`}
       </pre>

@@ -19,7 +19,7 @@ const HTMLTables = () => {
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">
           Basic Table Structure
         </h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           {`<table>
   <tr>
     <th>Name</th>
@@ -60,7 +60,7 @@ const HTMLTables = () => {
             <code>&lt;tfoot&gt;</code> — Groups the footer rows.
           </li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mt-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mt-3">
           {`<table>
   <thead>
     <tr>
@@ -118,7 +118,7 @@ const HTMLTables = () => {
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">
           Colspan & Rowspan Example
         </h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
           {`<table border="1">
   <tr>
     <th rowspan="2">Name</th>

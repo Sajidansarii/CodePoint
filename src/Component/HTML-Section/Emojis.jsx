@@ -15,7 +15,7 @@ const HTMLEmoji = () => {
         <p className="leading-relaxed mb-3">
           You can simply paste emojis into your HTML text. Browsers and devices render the platform’s emoji style.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
           <code>{<p>Welcome to CodePoint! 🎉</p>}</code>
         </pre>
         <p className="leading-relaxed mb-3">
@@ -29,7 +29,7 @@ const HTMLEmoji = () => {
         <p className="leading-relaxed mb-3">
           Instead of pasting the emoji, you can use its Unicode reference with an HTML numeric entity.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
           <code>{'<p>Happy coding! &#x1F600; <!-- grinning face --> </p>'}</code>
         </pre>
         <p className="leading-relaxed mb-3">
@@ -43,7 +43,7 @@ const HTMLEmoji = () => {
         <p className="leading-relaxed mb-3">
           Screen readers may not interpret emojis consistently. Use <code>aria-label</code> or visually hidden text to clarify meaning when the emoji conveys important information.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
           <code>{`<p>
   Success! <span role="img" aria-label="check mark">✅</span>
 </p>`}</code>
@@ -59,7 +59,7 @@ const HTMLEmoji = () => {
         <p className="leading-relaxed mb-3">
           Some emojis have text vs emoji presentation variants. You can force emoji style using a variation selector:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
           <code>{`❤\uFE0F  <!-- heart with emoji presentation -->
 # vs
 ❤\uFE0E  <!-- heart with text presentation -->`}</code>
@@ -78,7 +78,7 @@ const HTMLEmoji = () => {
         <p className="leading-relaxed mb-3">
           Example fallback pattern:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
           <code>{`<p>
   <span aria-hidden="true">🔥</span>
   <span className="sr-only">Fire</span>

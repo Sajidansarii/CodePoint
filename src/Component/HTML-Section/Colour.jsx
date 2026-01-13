@@ -13,7 +13,7 @@ const HTMLColors = () => {
         <p className="leading-relaxed mb-3">
           HTML supports 140 standard color names.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
           {`<p style="color: red;">Red text</p>
 <p style="background-color: lightblue;">Light blue background</p>`}
         </pre>
@@ -38,7 +38,7 @@ const HTMLColors = () => {
         <p className="leading-relaxed mb-3">
           A HEX color is a six-digit code representing red, green, and blue values in hexadecimal (0–9, A–F).
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
           <code>{`<p style="color: #ff0000;">Red text</p>
 <p style="background-color: #00ff00;">Green background</p>`}</code>
         </pre>
@@ -63,7 +63,7 @@ const HTMLColors = () => {
         <p className="leading-relaxed mb-3">
           RGB defines colors using red, green, and blue values (0–255). RGBA adds an alpha value (0–1) for transparency.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
           <code>{`<p style="color: rgb(255, 0, 0);">Red text</p>
 <p style="background-color: rgba(0, 255, 0, 0.5);">Semi-transparent green background</p>`}</code>
         </pre>
@@ -85,7 +85,7 @@ const HTMLColors = () => {
         <p className="leading-relaxed mb-3">
           HSL stands for Hue (0–360), Saturation (0%–100%), and Lightness (0%–100%). HSLA adds alpha transparency.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
           <code>{`<p style="color: hsl(0, 100%, 50%);">Red text</p>
 <p style="background-color: hsla(120, 100%, 50%, 0.3);">Semi-transparent green background</p>`}</code>
         </pre>

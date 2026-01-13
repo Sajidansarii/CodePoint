@@ -48,7 +48,7 @@ const HTMLLinks = () => {
           <p className="leading-relaxed mb-1">
             External link opening in new tab:
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
             {`<a href="https://example.com" target="_blank" rel="noopener noreferrer">
   Visit Example
 </a>`}
@@ -59,7 +59,7 @@ const HTMLLinks = () => {
           <p className="text-gray-700 mb-1">
             Internal anchor to a section:
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3">
+          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
             {`<!-- Link -->
 <a href="#features">See Features</a>
 
@@ -72,7 +72,7 @@ const HTMLLinks = () => {
           <p className="leading-relaxed mb-3">
             Download link:
           </p>
-          <pre className="bg-gray-100 p-3 rounded mb-3">
+          <pre className="bg-gray-100 p-3 rounded overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
             {<a href="/files/ebook.pdf" download>Download eBook</a>}
           </pre>
         </div>

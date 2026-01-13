@@ -65,7 +65,7 @@ const HTMLDragAndDrop = () => {
       {/* Code Snippet */}
       <div className="mb-6">
         <h3 className="text-xl font-semibold text-blue-500 mb-3">JavaScript Example</h3>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400">
+        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>{`element.addEventListener("dragstart", (event) => {
   event.dataTransfer.setData("text", event.target.id);
 });
