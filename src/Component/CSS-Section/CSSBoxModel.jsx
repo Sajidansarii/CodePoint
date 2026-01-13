@@ -14,13 +14,6 @@ const CssBoxModel = () => {
       <p className="mb-2">The CSS box model surrounds each HTML element with a series of boxes.</p>
       <p>Below is a visual representation of the CSS box model:</p>
 
-     <div className="relative">
-      <div  className="absolute min-w-full bg-blue-500 mt-7 h-96 text-center text-black text-xl pt-1">Margin</div>
-       <div className="absolute top-20 min-w-[800px] left-12 bg-green-500 h-72 text-center text-black text-xl pt-1">Border</div>
-       <div className="absolute top-32 min-w-[700px] left-24 bg-gray-400 h-48 text-center text-black text-xl pt-1">Padding</div>
-       <div className="absolute top-40 min-w-[500px] left-48 bg-white h-32 flex items-center justify-center text-black text-xl pt-1">Padding</div>
-     </div>
-
      
       {/* Explanation of Code */}
       <p className="mt-[450px] mb-5">An explanation of each section, beginning at the center and moving outward:</p>
@@ -61,6 +54,15 @@ const CssBoxModel = () => {
   }`}
   </code>
        </pre>
+
+
+     <div className="relative w-full max-w-5xl mx-auto aspect-[3/1] my-20">
+      <div  className="absolute inset-[-5%_0%] bg-blue-500 text-center text-black sm:text-xl text-xs min-h-[2rem] flex justify-center pt-1">Margin</div>
+       <div className="absolute inset-[8%] bg-green-500 text-black text-xs sm:text-xl min-h-[2rem] flex justify-center pt-1">Border</div>
+       <div className="absolute inset-[18%] bg-gray-400 text-black text-xs sm:text-xl min-h-[2rem] flex justify-center pt-1">Padding</div>
+       <div className=" absolute inset-[30%] bg-white text-black text-xs sm:text-xl min-h-[2rem] flex items-center justify-center">Content</div>
+     </div>
+     
 
 
       {/* Total Size Formula */}
