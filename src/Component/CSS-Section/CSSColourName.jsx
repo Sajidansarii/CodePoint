@@ -38,14 +38,16 @@ const CssColorNames = () => {
       {/* Example Code Block */}
       <div className="mt-8 bg-gray-100 p-4 rounded-lg">
         <h3 className="text-lg font-semibold mb-2">Example:</h3>
-        <pre className="bg-black text-green-400 p-3 rounded-lg text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`div {
   background-color: red;
-}
-
-p {
-  color: blue;
-}`}
+  }
+  
+  p {
+    color: blue;
+    }`}
+    </code>
         </pre>
       </div>
 

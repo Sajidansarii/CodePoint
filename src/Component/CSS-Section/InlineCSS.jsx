@@ -12,18 +12,18 @@ const InlineCSS = () => {
       </p>
 
       <h2 className="text-xl font-semibold mb-2">Syntax</h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm mb-6">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`<tagname style="property:value;">
   Content
 </tagname>`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Example</h2>
       <p className="text-gray-700 mb-2">The following example uses inline CSS:</p>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm mb-6">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`<h1 style="color:blue; text-align:center;">
   This is an Inline CSS Example
 </h1>
@@ -31,8 +31,8 @@ const InlineCSS = () => {
 <p style="font-size:18px; color:green;">
   Inline CSS applies styles directly on this paragraph.
 </p>`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Output</h2>
       <div className="border p-4 bg-white rounded-lg mb-6">

@@ -17,13 +17,13 @@ const HowToAddCSS = () => {
         It is written inside the <code>style</code> attribute of an HTML tag.
       </p>
 
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm mb-6">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`<h1 style="color:blue; text-align:center;">
   This is an inline styled heading
 </h1>`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       {/* Internal CSS */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">2. Internal CSS</h2>
@@ -32,8 +32,8 @@ const HowToAddCSS = () => {
         the <code>&lt;style&gt;</code> tag within the <code>&lt;head&gt;</code> section.
       </p>
 
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm mb-6">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`<!DOCTYPE html>
 <html>
 <head>
@@ -51,8 +51,8 @@ const HowToAddCSS = () => {
   <h1>Internal CSS Example</h1>
 </body>
 </html>`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       {/* External CSS */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">3. External CSS</h2>
@@ -62,8 +62,8 @@ const HowToAddCSS = () => {
         and recommended method for large projects.
       </p>
 
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm mb-6">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`/* style.css */
 body {
   font-family: Arial, sans-serif;
@@ -72,11 +72,11 @@ body {
 h1 {
   color: navy;
   text-align: center;
-}`}</pre>
-      </div>
+}`}</code>
+      </pre>
 
-      <div className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto text-sm mb-6">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`<!-- index.html -->
 <!DOCTYPE html>
 <html>
@@ -87,8 +87,8 @@ h1 {
   <h1>External CSS Example</h1>
 </body>
 </html>`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       {/* Summary */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Summary</h2>

@@ -54,26 +54,28 @@ const CssRWDFrameworks = () => {
 
       {/* Example 1: Bootstrap */}
       <h2 className="text-2xl font-semibold">Example: Bootstrap Grid</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Bootstrap Example</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap CDN -->
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<meta charset="UTF-8">
+<title>Bootstrap Example</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap CDN -->
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 bg-primary text-white">Column 1</div>
-      <div class="col-md-6 bg-success text-white">Column 2</div>
-    </div>
-  </div>
+<div class="container">
+<div class="row">
+<div class="col-md-6 bg-primary text-white">Column 1</div>
+<div class="col-md-6 bg-success text-white">Column 2</div>
+</div>
+</div>
 </body>
 </html>`}
+</code>
       </pre>
       <p className="text-gray-700">
       Here, col-md-6 means that on medium screens and above, each column will take up half the width of the screen. On smaller screens, they will automatically stack.
@@ -81,11 +83,13 @@ const CssRWDFrameworks = () => {
 
       {/* Example 2: Tailwind */}
       <h2 className="text-2xl font-semibold">Example: Tailwind CSS Grid</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
   <div class="bg-blue-500 text-white p-4">Column 1</div>
   <div class="bg-green-500 text-white p-4">Column 2</div>
-</div>`}
+  </div>`}
+  </code>
       </pre>
       <p className="text-gray-700">
        In Tailwind, grid-cols-1 creates a single column on small screens, and md:grid-cols-2 breaks it into two columns on medium screens.</p>

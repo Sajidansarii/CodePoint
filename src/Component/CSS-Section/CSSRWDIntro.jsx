@@ -26,42 +26,44 @@ const CssRWD = () => {
 
       {/* Code Example */}
       <h2 className="text-2xl font-semibold">Example Code:</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`<!DOCTYPE html>
 <html>
 <head>
-  <title>Responsive Web Design</title>
+<title>Responsive Web Design</title>
   <style>
-    .container {
-      display: flex;
+  .container {
+    display: flex;
       gap: 10px;
-    }
+      }
     .box {
       flex: 1;
       padding: 20px;
       color: white;
-    }
-    .box1 { background: red; }
+      }
+      .box1 { background: red; }
     .box2 { background: green; }
     .box3 { background: blue; }
-
+    
     /* Media Query for small screens */
     @media (max-width: 600px) {
       .container {
         flex-direction: column;
-      }
-    }
-  </style>
+        }
+        }
+        </style>
 </head>
 <body>
   <h1>Responsive Web Design Example</h1>
   <div class="container">
-    <div class="box box1">Box 1</div>
-    <div class="box box2">Box 2</div>
-    <div class="box box3">Box 3</div>
+  <div class="box box1">Box 1</div>
+  <div class="box box2">Box 2</div>
+  <div class="box box3">Box 3</div>
   </div>
 </body>
 </html>`}
+</code>
       </pre>
 
       {/* Explanation */}

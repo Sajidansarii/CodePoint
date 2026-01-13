@@ -23,11 +23,14 @@ const ObjectPositionTutorial = () => {
             style={{ objectFit: "cover", objectPosition: "center" }}
           />
         </div>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
+
 {`img {
   object-fit: cover;
   object-position: center;
-}`}
+  }`}
+  </code>
         </pre>
         <p className="text-gray-600 mt-2">
           The image is cropped but stays centered in the box.
@@ -45,11 +48,13 @@ const ObjectPositionTutorial = () => {
             style={{ objectFit: "cover", objectPosition: "top left" }}
           />
         </div>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`img {
   object-fit: cover;
   object-position: top left;
-}`}
+  }`}
+  </code>
         </pre>
         <p className="text-gray-600 mt-2">
           The image is cropped but aligned from the top-left corner.
@@ -67,11 +72,13 @@ const ObjectPositionTutorial = () => {
             style={{ objectFit: "cover", objectPosition: "bottom right" }}
           />
         </div>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`img {
   object-fit: cover;
   object-position: bottom right;
-}`}
+  }`}
+  </code>
         </pre>
         <p className="text-gray-600 mt-2">
           The image is cropped but aligned to the bottom-right corner of the box.
@@ -89,11 +96,13 @@ const ObjectPositionTutorial = () => {
             style={{ objectFit: "cover", objectPosition: "20% 80%" }}
           />
         </div>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`img {
   object-fit: cover;
   object-position: 20% 80%;
-}`}
+  }`}
+  </code>
         </pre>
         <p className="text-gray-600 mt-2">
           The first value (20%) moves the image horizontally, and the second value (80%) 

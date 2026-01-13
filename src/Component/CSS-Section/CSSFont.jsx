@@ -18,7 +18,7 @@ export default function CssFonts() {
       </ul>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>{`p {
   font-family: "Arial", sans-serif;
   font-size: 18px;
@@ -30,7 +30,7 @@ export default function CssFonts() {
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Google Fonts Example</h2>
       <p className="mb-2">You can import custom fonts from Google Fonts:</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>{`<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 body {

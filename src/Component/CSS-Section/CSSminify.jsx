@@ -16,21 +16,21 @@ const CssMinifyDemo = () => {
    <p>Our first approach utilizes the css-minify package available via NPM. By installing this package, we can automate the CSS minification process within our project.</p>
    <p>Begin by installing the <span className="text-red-400 bg-gray-50 px-2 rounded-md">css-minify</span> package in the root of your project using the following NPM command:</p>
 
-   <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
+   <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
     <code>
       {`npm install css-minify`}
     </code>
    </pre>
 
    <p>Once you've installed the package, change to your project directory in the terminal and execute the following command to minify a selected CSS file.</p>
-   <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
+   <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
     <code>
       {`npx css-minify -f filename`}
     </code>
    </pre>
    <p>Replace the filename in the command with your actual CSS file name to minify it.</p>
    <p>To minify all the CSS files in a specific directory, run the following command in your terminal.</p>
-   <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
+   <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
     <code>
       {`npx css-minify -d direName`}
     </code>
@@ -40,7 +40,7 @@ const CssMinifyDemo = () => {
       <h1 className="text-2xl">Example</h1>
       <p>In the example below, we first added the regular CSS code to the CSS file. Then, we ran the command above to minify it. This process creates the <span className="text-red-400 bg-gray-50 px-2 rounded-md">?css-dist</span> folder and places the filename.min.css file inside, containing the minified CSS.</p>
       <p>The output shows that whitespaces and comments are removed to minimize the CSS file.</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`.element {
    /* border for element */
@@ -61,7 +61,7 @@ div {
         </code>
       </pre>
       <h1 className="text-2xl">Output</h1>
-      <pre className="bg-gray-900 text-green-400 w-[900px] p-4 rounded-lg overflow-y-hidden">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`.element{background-image:linear-gradient(45deg,#000,#fff);border:2px solid blue;color:red}div{border:1px solid #000;margin:10px;padding:10px}`}
         </code>
@@ -69,7 +69,7 @@ div {
       <h1 className="text-2xl">Example</h1>
       <p>In this example, we showcase CSS minification using features like nested selectors, pseudo selectors, and gradients. The CSS-minify NPM package was used for the minification process.</p>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`li :nth-child(even) {
    /* selecting even elements of the list */
@@ -96,7 +96,7 @@ div > p {
         </code>
       </pre>
       <h1 className="text-2xl">Output</h1>
-      <pre className="bg-gray-900 text-green-400 overflow-auto w-[900px] p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`li :nth-child(2n){background-color:#f2f2f2;border-radius:12px;color:green;padding:4px}ul li ul{color:red;display:none;text-decoration:dashed}div>p,ul li ul{font-size:12px;font-weight:700}div>p{color:blue}`}
         </code>

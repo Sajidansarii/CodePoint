@@ -98,7 +98,7 @@ export default function CssAtRules() {
               {rule.name}
             </h2>
             <p className="text-gray-600 mb-4">{rule.desc}</p>
-            <pre className="bg-gray-900 text-green-300 text-sm p-4 rounded-lg overflow-x-auto">
+            <pre className="bg-gray-900 text-green-300 text-sm p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
               <code>{rule.example}</code>
             </pre>
           </div>

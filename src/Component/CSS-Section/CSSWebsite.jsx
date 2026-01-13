@@ -15,77 +15,80 @@ const CssWebsite = () => {
 
       {/* Example Code */}
       <div className="bg-gray-100 p-4 rounded-lg mb-6">
-        <pre className="text-sm text-gray-800 overflow-x-auto">
+        <pre className="text-green-400  bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
+
 {`<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My CSS Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #1e3a8a;
-      color: white;
-      text-align: center;
-      padding: 20px;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My CSS Website</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  }
+  header {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
     }
     nav {
       background: #2563eb;
       padding: 10px;
       text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      padding: 20px;
-    }
-    footer {
-      background: #1e3a8a;
+      }
+      nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        }
+        nav a:hover {
+          text-decoration: underline;
+          }
+          main {
+            padding: 20px;
+            }
+            footer {
+              background: #1e3a8a;
       color: white;
       text-align: center;
       padding: 15px;
       position: fixed;
       bottom: 0;
       width: 100%;
-    }
-  </style>
-</head>
+      }
+      </style>
+      </head>
 <body>
   <header>
-    <h1>Welcome to My CSS Website</h1>
+  <h1>Welcome to My CSS Website</h1>
   </header>
-
+  
   <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
     <a href="#">Contact</a>
   </nav>
-
+  
   <main>
-    <h2>About This Website</h2>
+  <h2>About This Website</h2>
     <p>
-      Ye ek simple example hai jisme humne CSS ka use karke 
+    Ye ek simple example hai jisme humne CSS ka use karke 
       ek basic website banayi hai.
-    </p>
+      </p>
   </main>
 
   <footer>
     <p>&copy; 2025 My CSS Website</p>
-  </footer>
+    </footer>
 </body>
 </html>`}
+    </code>
         </pre>
       </div>
 

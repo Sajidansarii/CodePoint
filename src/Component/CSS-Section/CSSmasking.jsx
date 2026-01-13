@@ -39,14 +39,16 @@ const CssMasking = () => {
           We can use the mask-image property to treat the transparent parts of a PNG image as a mask.
         </p>
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`div {
   mask-image: url('mask-shape.png');
   -webkit-mask-image: url('mask-shape.png'); /* Safari ke liye */
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: cover;
-}`}
+  }`}
+  </code>
         </pre>
 
           <p>
@@ -58,11 +60,13 @@ const CssMasking = () => {
         <h2 className="font-semibold text-xl">2. Gradient Mask</h2>
         <p>By using a gradient as a mask, we can create smooth fade effects.</p>
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`div {
   mask-image: linear-gradient(to right, black, transparent);
   -webkit-mask-image: linear-gradient(to right, black, transparent);
-}`}
+  }`}
+  </code>
         </pre>
 
           <p>
@@ -77,13 +81,15 @@ const CssMasking = () => {
           We can use an SVG shape as a mask.
         </p>
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`div {
   mask-image: url('shape.svg');
   -webkit-mask-image: url('shape.svg');
   mask-repeat: no-repeat;
   mask-position: center;
-}`}
+  }`}
+  </code>
         </pre>
 
           <p>

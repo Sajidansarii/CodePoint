@@ -16,13 +16,13 @@ const CSSFloat = () => {
 
       {/* Syntax */}
       <h2 className="text-xl font-semibold mb-2">Syntax</h2>
-      <div className="bg-gray-900 text-green-400  p-4 rounded-lg text-sm mb-6">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`selector {
   float: none | left | right | inline-start | inline-end;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       {/* Values */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Float Values</h2>
@@ -50,28 +50,28 @@ const CSSFloat = () => {
         </p>
       </div>
 
-      <div className="bg-gray-900 text-green-400  p-4 rounded-lg text-sm mb-6">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`img {
   float: left;
   margin-right: 15px;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       {/* Example 2 */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Example: Float Boxes</h2>
       
-      <div className="bg-gray-900 text-green-400  p-4 rounded-lg text-sm mb-6">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`.box {
   float: left;
   width: 120px;
   height: 80px;
   margin-right: 10px;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <div className="clearfix mb-6">
         <div className="float-left w-32 h-20 bg-blue-500 text-white flex items-center justify-center mr-2">
@@ -93,15 +93,15 @@ const CSSFloat = () => {
         flow, which can cause parent elements to collapse. To fix this, use the{" "}
         <code>clear</code> property or a <code>.clearfix</code> hack.
       </p>
-      <div className="bg-gray-900 text-green-400  p-4 rounded-lg text-sm mb-6">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`.clearfix::after {
   content: "";
   display: block;
   clear: both;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       {/* Notes */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Key Notes</h2>

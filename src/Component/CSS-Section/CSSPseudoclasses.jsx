@@ -15,17 +15,17 @@ const CssPseudoClassesDemo = () => {
       </ul>
       <h1 className="text-2xl mt-10">Syntax</h1>
       <p className="mt-3">CSS pseudo-classes are denoted using a single colon (:) preceding the pseudo-class identifier.</p>
-      <div className="mt-5 bg-gray-900 text-green-400 p-4 rounded-lg">
-        <pre>
+      <pre className="mt-5 bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
           {`selector:pseudo-class-name {
   CSS properties
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <p className="mt-5">In this context, the <span className="text-red-500">:hover</span> and <span className="text-red-500">:focus</span> pseudo-classes are applied to style elements during user interaction.</p>
       
- <div className="mt-5">
+       <div className="mt-5">
         <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
           Hover Me
         </button>
@@ -45,8 +45,8 @@ const CssPseudoClassesDemo = () => {
       </ul>
       <h1 className="text-2xl mt-10 mb-2">Example</h1>
       <p>Apply distinct color styles to links according to their interaction state (e.g., default, visited, hover, active).</p>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-10">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-10 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
           {`/* unvisited link */
 a:link {
   color: #FF0000;
@@ -66,41 +66,41 @@ a:hover {
 a:active {
   color: #0000FF;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
       
       <h1 className="text-2xl mt-10 mb-2">:hover on {'<div>'}</h1>
       <p>Below is an example demonstrating the use of the :hover pseudo-class on a {'<div>'} to apply styles when it is hovered.</p>
       <h1 className="text-2xl mt-2">Example</h1>
-      <div className="bg-gray-900 text-green-400 mt-3 p-4 rounded-lg">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 mt-5 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
           {`div:hover {
   background-color: blue;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <h1 className="text-2xl mt-10 mb-2">:Focus on {'<input>'}</h1>
       <p>This example showcases the use of the :focus pseudo-class to apply styles to an input element when it receives focus.</p>
       <h1 className="text-2xl mt-4">Exapmle</h1>
-      <div  className="bg-gray-900 text-green-400 mt-5 p-4 rounded-lg">
-        <pre>
+      <pre  className="bg-gray-900 text-green-400 mt-5 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
           {`input:focus {
   background-color: yellow;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
       <h1 className="text-2xl mt-10 mb-2">Pseudo-classes and HTML Classes</h1>
       <p>Pseudo-classes may be combined with class selectors to target elements in particular states within a specific class.</p>
       <h1 className="text-2xl mt-5 mb-2">Example</h1>
       <p>Target the {'<a>'} element with the class highlight using the :hover pseudo-class to define hover-specific styles.</p>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
           {`a.highlight:hover {
   color: #ff0000;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
       <h1 className="text-2xl mt-10">Simple Tooltip Hover</h1>
       <p>Display a hidden {'<p>'} element on hover of a {'<div>'}, mimicking tooltip behavior.</p>
 
@@ -121,8 +121,8 @@ a:active {
 </div>
 
       <h1 className="text-2xl mt-5">Example</h1>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
           {`.tooltip-container {
   position: relative;
   display: inline-block;
@@ -160,48 +160,48 @@ a:active {
 .tooltip-container:hover .tooltip-text {
   display: block; 
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
       <h1 className="text-2xl mt-10">The CSS :first-child Pseudo-class</h1>
       <p className="mt-2">The <span className="text-red-500">:first-child</span> pseudo-class selects an element that appears first among the children of its parent element.</p>
       <h1 className="text-xl mt-3">Style all first child {'<p>'} elements</h1>
       <p className="mt-3">This selector targets all {'<p>'} elements that are the first child within their parent element.</p>
       <h1 className="text-2xl mt-5">Example</h1>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
           {`p:first-child {
   color: blue;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <h1 className="text-xl mt-10">Style the first {'<em>'} element in all {'<p>'} elements</h1>
       <p className="mt-5">Here, the selector selects the first{' <em>'} element that appears within all {'<p>'} elements.</p>
       <h1 className="text-2xl mt-5">Example</h1>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
           {`p em:first-child {
   color: blue;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <h1 className="text-xl mt-10">Style all {'<em>'} elements in all first child {'<p>'} elements</h1>
       <p className="mt-5">Here, the selector applies to all {'<em>'} elements located in {'<p>'} tags, as long as the {'<p>'} is the first child of its parent.</p>
       <h1 className="text-2xl mt-5">Example</h1>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
           {`p:first-child em {
   color: blue;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <h1 className="text-2xl mt-10">The CSS :lang() Pseudo-class</h1>
       <p className="mt-5">You can use the <span className="text-red-500">:lang()</span> pseudo-class to target elements with a specific lang attribute value.</p>
       <h1 className="text-2xl mt-5">Example</h1>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
           {`<html>
 <head>
 <style>
@@ -217,8 +217,8 @@ q:lang(no) {
 </body>
 </html>
 `}
-        </pre>
-      </div>
+        </code>
+      </pre>
     </div>
   );
 };

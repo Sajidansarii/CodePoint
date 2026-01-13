@@ -28,10 +28,12 @@ const ObjectFitTutorial = () => {
             style={{ objectFit: "fill" }}
           />
         </div>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg  mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`img {
   object-fit: fill;
-}`}
+  }`}
+  </code>
         </pre>
         <p className="text-gray-600 mt-2">
           Image is stretched to fill the box. Aspect ratio may be distorted.
@@ -50,10 +52,12 @@ const ObjectFitTutorial = () => {
             style={{ objectFit: "contain" }}
           />
         </div>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded mt-5">
+          <code>
 {`img {
   object-fit: contain;
-}`}
+  }`}
+  </code>
         </pre>
         <p className="text-gray-600 mt-2">
           Entire image is visible and aspect ratio is preserved. Empty space may appear.
@@ -72,10 +76,12 @@ const ObjectFitTutorial = () => {
             style={{ objectFit: "cover" }}
           />
         </div>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`img {
   object-fit: cover;
-}`}
+  }`}
+  </code>
         </pre>
         <p className="text-gray-600 mt-2">
           Image covers the box fully. Aspect ratio is preserved but image may be cropped.
@@ -94,10 +100,12 @@ const ObjectFitTutorial = () => {
             style={{ objectFit: "none" }}
           />
         </div>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg  mt-5">
+          <code>
 {`img {
   object-fit: none;
-}`}
+  }`}
+  </code>
         </pre>
         <p className="text-gray-600 mt-2">
           Image is shown in its original size. It may overflow outside the box.
@@ -116,10 +124,12 @@ const ObjectFitTutorial = () => {
             style={{ objectFit: "scale-down" }}
           />
         </div>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`img {
   object-fit: scale-down;
-}`}
+  }`}
+  </code>
         </pre>
         <p className="text-gray-600 mt-2">
           The image will either be displayed at its original size or scaled down 

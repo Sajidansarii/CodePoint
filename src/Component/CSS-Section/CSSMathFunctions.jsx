@@ -23,8 +23,8 @@ const MathFunctions = () => {
     <div className="p-6 max-w-4xl space-y-6 mt-10 font-sans">
       <h1 className="text-3xl font-medium text-blue-500">CSS Math Functions</h1>
       <p>CSS math functions let you do calculations within your stylesheets, making it easier to adjust values like lengths, angles, colors, and other units directly in CSS.</p>
-      <div className="bg-gray-900 text-green-400 rounded-lg p-4">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
           {`div{
     width: calc(100% - 40px); 
     /* 100% width minus 40px for padding */
@@ -33,8 +33,8 @@ const MathFunctions = () => {
     /* Set width to the maximum value between 
     200px and 50% of the viewport width */
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <h1 className="text-2xl">Types of Mathematical Functions in CSS</h1>
       <p>CSS offers several math functions that you can use to perform calculations. These include:</p>
@@ -50,8 +50,8 @@ const MathFunctions = () => {
       <p>The calc() function is a fundamental CSS arithmetic tool that lets you perform calculations—such as addition, subtraction, multiplication, and division—directly on numerical values to dynamically adjust property values.</p>
       <h1 className="text-2xl">Example</h1>
       <p>Here’s an example showing how to use the calc() function in CSS:</p>
-      <div className="bg-gray-900 text-green-400 rounded-lg p-4">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
           {` .box {
                 /* 100% width minus 40px for padding */
             width: calc(100% - 40px); 
@@ -75,15 +75,15 @@ const MathFunctions = () => {
     </div>
 </body>
 `}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <h1 className="text-2xl">The max Function</h1>
       <p>The max() function in CSS lets you select the largest value from a list of inputs. It’s useful for comparing values and applying styles based on the highest number.</p>
       <h1 className="text-2xl">Example</h1>
       <p>Here’s an example that shows how to use the max() function in CSS:</p>
-      <div className="bg-gray-900 text-green-400 rounded-lg p-4">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
           {`<!DOCTYPE html>
 <html lang="en">
 
@@ -118,15 +118,15 @@ const MathFunctions = () => {
 </body>
 
 </html>`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <h1 className="text-2xl">The min Function</h1>
       <p>The min() function in CSS selects the smallest value from a list of values. It helps you compare values and apply styles based on the minimum number.</p>
       <h1 className="text-2xl">Example</h1>
       <p>Here’s an example demonstrating how to use the min() function in CSS:</p>
-      <div className="bg-gray-900 text-green-400 rounded-lg p-4">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
           {`<!DOCTYPE html>
 <html lang="en">
 
@@ -161,8 +161,8 @@ const MathFunctions = () => {
 </body>
 
 </html>`}
-        </pre>
-      </div>
+        </code>
+      </pre>
       <h1 className="text-2xl">Comparison Functions</h1>
       <p>CSS comparison functions simplify evaluating values, enabling conditional styling directly within your stylesheets based on those comparisons.</p>
       <p>The following table lists the CSS comparison functions:</p>

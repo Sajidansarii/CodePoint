@@ -44,7 +44,8 @@ const CssUnitsDemo = () => {
         </p>
 
         {/* Code Example */}
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>        
 {`/* Absolute Units Example */
 .box-absolute {
   width: 200px;    
@@ -52,7 +53,8 @@ const CssUnitsDemo = () => {
   margin: 10mm;    
   padding: 1in;    
   border: 1pt solid #3b82f6; 
-}`}
+  }`}
+  </code>
         </pre>
 
         <p>
@@ -74,7 +76,8 @@ const CssUnitsDemo = () => {
         </p>
 
         {/* Code Example */}
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
 {`/* Relative Units Example */
 .box-relative {
   width: 50%;      
@@ -82,7 +85,8 @@ const CssUnitsDemo = () => {
   margin: 2em;     
   font-size: 2vw;  
   line-height: 1.5ch; 
-}`}
+  }`}
+  </code>
         </pre>
 
         <p className="mt-1">

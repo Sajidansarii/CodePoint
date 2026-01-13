@@ -48,61 +48,66 @@ const CssRWDGridView = () => {
       <p>The grid layout includes five areas: item1 for the header, item2 for the menu, item3 for the main content, item4 for the right side, and item5 for the footer.</p>
       <h1 className="text-2xl">Example</h1>
       <p>Here’s the full HTML code:</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
+
         {`
        
- <div class="grid-container">
-  <div class="item1">
-    <h1>Chania</h1>
-  </div>
-
-  <div class="item2">
-    <ul>
-      <li>The Flight</li>
-      <li>The City</li>
-      <li>The Island</li>
+       <div class="grid-container">
+       <div class="item1">
+       <h1>Chania</h1>
+       </div>
+       
+       <div class="item2">
+       <ul>
+       <li>The Flight</li>
+       <li>The City</li>
+       <li>The Island</li>
       <li>The Food</li>
     </ul>
-  </div>
-
-  <div class="item3">
-     <h1>The City</h1>
+    </div>
+    
+    <div class="item3">
+    <h1>The City</h1>
     <p>Chania is the capital of the Chania region on the island of Crete.</p>
     <p>The city can be divided in two parts, the old town and the modern city. 
     The old town is situated next to the old harbour and is the matrix around which
-     the whole urban area was developed.</p>
+    the whole urban area was developed.</p>
     <p>Chania lies along the north west coast of the island Crete.</p>
 </div>
 
-  <div class="item4">
-    <h2>Facts:</h2>
-    <ul>
-      <li>Chania is a city on the island of Crete</li>
-      <li>Crete is a Greek island in the Mediterranean Sea</li>
+<div class="item4">
+<h2>Facts:</h2>
+<ul>
+<li>Chania is a city on the island of Crete</li>
+<li>Crete is a Greek island in the Mediterranean Sea</li>
     </ul>
-  </div>
-
-  <div class="item5">
+    </div>
+    
+    <div class="item5">
     <p>Resize the browser window to see how the content respond to the resizing.</p>
   </div>
 
-</div>
+  </div>
 `}
+  </code>
       </pre>
+
       <h1 className="text-2xl">The CSS</h1>
       <p>To improve the user interface, we’ll introduce some CSS for styling and color.</p>
       <h1 className="text-2xl">Example</h1>
       <p>Here’s the full set of CSS styles:</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`
         * {
-  margin: 0;
+          margin: 0;
   box-sizing: border-box;
 }
 
 body {
   font-family: "Lucida Sans", sans-serif;
-}
+  }
 
 .grid-container {
   display: grid;
@@ -113,45 +118,45 @@ body {
     gap: 10px;
     background-color: white;
     padding: 10px;
-}
-
+    }
+    
 .grid-container > div {
   padding: 10px;
   font-size: 16px;
-}
+  }
 
-.item1 {
-  grid-area: header;
-  background-color: purple;
-  text-align: center;
-  color: #ffffff;
-}
-
-.item1 > h1 {
-  font-size: 40px;
+  .item1 {
+    grid-area: header;
+    background-color: purple;
+    text-align: center;
+    color: #ffffff;
+    }
+    
+    .item1 > h1 {
+      font-size: 40px;
 }
 
 .item2 {
   grid-area: menu;
-}
-
-.item2 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+  }
+  
+  .item2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
 
 .item2 li {
   padding: 8px;
   margin-bottom: 7px;
   background-color: #33b5e5;
   color: #ffffff;
-}
-
-.item2 li:hover {
-  background-color: #0099cc;
-}
-
+  }
+  
+  .item2 li:hover {
+    background-color: #0099cc;
+    }
+    
 .item3 {
   grid-area: main;
 }
@@ -163,32 +168,33 @@ body {
 
 .item3 > p {
   margin-bottom: 7px;
-}
+  }
 
-.item4 {
-  grid-area: right;
-  border: 2px solid #0099cc;
+  .item4 {
+    grid-area: right;
+    border: 2px solid #0099cc;
   background-color: white;
   padding: 15px;
   color: #000000;
-}
-
+  }
+  
 .item4 > h2 {
   font-size: 20px;
   padding-bottom: 10px;
-}
-
-.item4 li {
-  padding: 5px;
-  margin-bottom: 5px;
-}
-
-.item5 {
-  grid-area: footer;
-  background-color: #0099cc;
-  color: #ffffff;
-  text-align: center;
+  }
+  
+  .item4 li {
+    padding: 5px;
+    margin-bottom: 5px;
+    }
+    
+    .item5 {
+      grid-area: footer;
+      background-color: #0099cc;
+      color: #ffffff;
+      text-align: center;
 }`}
+      </code>
       </pre>
 
 

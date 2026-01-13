@@ -24,23 +24,25 @@ const CssNavigationBar = () => {
         </ul>
       </div>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mt-4">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
 {`ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-}
-
-li a {
-  text-decoration: none;
-  padding: 10px 15px;
-  color: white;
-}
-
-li a:hover {
-  color: yellow;
-}`}
+  }
+  
+  li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: white;
+    }
+    
+    li a:hover {
+      color: yellow;
+      }`}
+      </code>
       </pre>
 
       {/* Vertical Navbar */}
@@ -56,24 +58,26 @@ li a:hover {
         </ul>
       </div>
 
-      <pre className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto mt-4">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
 {`ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-li a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: black;
-}
-
-li a:hover {
-  background-color: blue;
-  color: white;
-}`}
+  }
+  
+  li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    }
+    
+    li a:hover {
+      background-color: blue;
+      color: white;
+      }`}
+      </code>
       </pre>
 
       {/* Sticky Navbar */}
@@ -92,13 +96,15 @@ li a:hover {
         </ul>
       </div>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mt-4">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
 {`.navbar {
   position: sticky;
   top: 0;
   background-color: blue;
   color: white;
-}`}
+  }`}
+  </code>
       </pre>
 
       {/* Notes */}

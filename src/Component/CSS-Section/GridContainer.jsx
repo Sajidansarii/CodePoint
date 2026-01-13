@@ -45,11 +45,13 @@ const CSSGridContainer = () => {
          <p className="mt-2">To create 4 columns, set their widths—or use auto for equal widths.</p>
          <h1 className="text-2xl mt-10 mb-2">Example</h1>
          <p className="mb-2">Set <span className="text-red-400 bg-gray-50 px-1">grid-template-columns</span> to make 4 equal columns.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
           {`.grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-}`}
+  }`}
+  </code>
         </pre>
 
         <div className="border-2 border-black p-4 grid grid-cols-4 gap-3 mt-6">
@@ -82,11 +84,13 @@ const CSSGridContainer = () => {
         <p className="mt-5 mb-5"><span className="text-red-400 bg-gray-50 px-1">grid-template-columns</span> lets you set exact widths or mix fixed and auto sizes.</p>
         <h1 className="text-2xl mb-2">Example</h1>
         <p className="mb-5">Set columns 1, 2, and 4 to fixed widths; keep column 3 as auto.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
           {`.grid-container {
   display: grid;
   grid-template-columns: 80px 200px auto 40px;
-}`}
+  }`}
+  </code>
         </pre>
 
         <div className="border-2 border-black p-4 grid grid-cols-[80px_200px_auto_40px] gap-3 mt-6">
@@ -122,11 +126,13 @@ const CSSGridContainer = () => {
          <p className="mb-5"><span className="text-red-400 bg-gray-50 px-1">1fr</span> is one unit of space, 2fr is double that.</p>
         <h1 className="text-2xl mt-5 mb-4">Example</h1>
         <p>Columns share the width equally—25% each.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
           {`.grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-}`}
+  }`}
+  </code>
         </pre>
 
         <div className="border-2 border-black p-4 grid grid-cols-4 gap-3 mt-6">
@@ -158,11 +164,13 @@ const CSSGridContainer = () => {
 
         <h1 className="text-2xl mt-10 mb-3">Example</h1>
         <p>Column 2 takes up double the space.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
           {`.grid-container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 1fr;
-}`}
+  }`}
+  </code>
         </pre>
 
         <div className="border-2 border-black p-4 grid grid-cols-[1fr_2fr_1fr_1fr] gap-3 mt-6">
@@ -200,12 +208,14 @@ const CSSGridContainer = () => {
        <p><span className="text-red-400 bg-gray-50 px-1">place-content: end;</span> sets both <span className="text-red-400 bg-gray-50 px-1">place-content: end;</span> and <span className="text-red-400 bg-gray-50 px-1">justify-content</span> to end.</p>
         <h1 className="text-2xl mt-10">Example</h1>
         <p className="mt-3">center places grid items in the middle of the container both vertically and horizontally.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-6">
+        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
           {`.grid-container {
   display: grid;
   height: 400px;
   place-content: center;
-}`}
+  }`}
+  </code>
         </pre>
 
         <div className="border-2 justify-self-center border-black p-4 grid grid-cols-3 h-[400px] gap-2 mt-6 place-content-center ">
@@ -238,12 +248,14 @@ const CSSGridContainer = () => {
 
        <h1 className="text-2xl mt-10">Example</h1>
        <p className="mt-3">end aligns content to the bottom vertically, while space-between spreads items evenly across the row with equal gaps between them.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`.grid-container {
   display: grid;
   height: 400px;
   place-content: end space-between;
-}`}
+  }`}
+  </code>
        </pre>
 
        

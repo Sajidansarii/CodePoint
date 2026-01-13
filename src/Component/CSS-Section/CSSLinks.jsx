@@ -23,24 +23,26 @@ export default function CssLinks() {
             <div className="w-5 h-5 text-green-600" />
             Example CSS for Links
           </h2>
-          <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
+          <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+            <code>
 {`a:link {
   color: blue;
   text-decoration: none;
-}
+  }
 
 a:visited {
   color: purple;
-}
-
-a:hover {
-  color: red;
-  text-decoration: underline;
-}
-
-a:active {
-  color: orange;
-}`}
+  }
+  
+  a:hover {
+    color: red;
+    text-decoration: underline;
+    }
+    
+    a:active {
+      color: orange;
+      }`}
+      </code>
           </pre>
         </div>
       </div>
@@ -77,7 +79,7 @@ a:active {
           <p className="text-xl mt-3">styled a Hyper Link with Css.</p>
       <div className="bg-gray-200 p-4 rounded-lg mt-5">
         <h2 className="text-2xl mb-5">Example</h2>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>
             {`          a{  
             background:blue;

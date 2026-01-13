@@ -53,10 +53,12 @@ const CssOverflow = () => {
       </div>
 
       <h2 className="text-xl font-semibold mt-6 mb-2">Syntax</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
 {`selector {
   overflow: visible | hidden | scroll | auto;
-}`}
+  }`}
+  </code>
       </pre>
     </div>
   );

@@ -47,18 +47,18 @@ const CssCounter = () => {
 
       <h1 className="text-3xl mt-10">Syntax</h1>
       <p className="mt-3">The syntax of the property is given with:</p>
-      <div className="bg-gray-900 text-green-400 pb-5 rounded-lg mt-5">
-        <pre className="ml-10">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
           {`
 counter-increment: [ identifier integer ]1 or more pairs | none | initial | inherit
 `}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <p className="leading-relaxed mt-10">The example below shows the counter-increment property in action.</p>
       <h1 className="mt-5 text-2xl mb-5">Example</h1>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
           {`  
               body {
                      counter-reset:section;
@@ -75,8 +75,8 @@ counter-increment: [ identifier integer ]1 or more pairs | none | initial | inhe
                            content: counter(section) "." counter(category)"";
                            }  
                            `}
-        </pre>
-      </div>
+        </code>
+      </pre>
       <h1 className="text-2xl mt-10">Property Values</h1>
       <p className="mt-3">The following table describes the values of this property.</p>
 

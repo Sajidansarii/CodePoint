@@ -16,8 +16,8 @@ const CSSButton = () => {
 
       {/* Syntax */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Syntax</h2>
-      <div className="bg-gray-900 text-green-400  p-4 rounded-lg text-sm mb-4">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`button {
   background-color: value;
   color: value;
@@ -25,8 +25,8 @@ const CSSButton = () => {
   padding: value;
   cursor: pointer;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       {/* Basic Example */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
@@ -36,8 +36,8 @@ const CSSButton = () => {
         Click Me
       </button>
 
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-6">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`button {
   background-color: blue;
   color: white;
@@ -50,8 +50,8 @@ const CSSButton = () => {
 button:hover {
   background-color: darkblue;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       {/* Types of Buttons */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
@@ -95,15 +95,15 @@ button:hover {
         Disabled
       </button>
 
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mt-4 mb-6">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5 mb-5">
+        <code>
 {`button:disabled {
   background-color: gray;
   cursor: not-allowed;
   opacity: 0.6;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       {/* Notes */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Key Notes</h2>

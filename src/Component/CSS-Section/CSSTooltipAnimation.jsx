@@ -16,7 +16,8 @@ const CssTooltipsAnimation = () => {
       {/* Example 1: Fade In Tooltip */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">1. Fade-in Tooltip</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
 {`.tooltip {
   position: relative;
   display: inline-block;
@@ -34,12 +35,13 @@ const CssTooltipsAnimation = () => {
   left: 50%;
   transform: translateX(-50%);
   transition: opacity 0.5s ease-in-out; /* smooth animation */
-}
-
-.tooltip:hover .tooltip-text {
-  visibility: visible;
-  opacity: 1;
-}`}
+  }
+  
+  .tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    }`}
+    </code>
         </pre>
 
         {/* Live Demo */}
@@ -60,7 +62,8 @@ const CssTooltipsAnimation = () => {
       {/* Example 2: Slide-in Tooltip */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">2. Slide-in Tooltip</h2>
-        <pre className="bg-gray-900 p-4 text-green-400 rounded-lg text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 p-4 text-green-400 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
 {`.tooltip .tooltip-text {
   visibility: hidden;
   opacity: 0;
@@ -72,7 +75,8 @@ const CssTooltipsAnimation = () => {
   visibility: visible;
   opacity: 1;
   transform: translate(-50%, 0); /* slide into place */
-}`}
+  }`}
+  </code>
         </pre>
 
         {/* Live Demo */}
@@ -94,7 +98,8 @@ const CssTooltipsAnimation = () => {
       {/* Example 3: Bounce Animation Tooltip */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">3. Bounce Tooltip</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
 {`@keyframes bounceIn {
   0%   { transform: translateY(10px); opacity: 0; }
   50%  { transform: translateY(-5px); opacity: 1; }
@@ -113,7 +118,8 @@ const CssTooltipsAnimation = () => {
 .tooltip:hover .tooltip-text {
   visibility: visible;
   animation: bounceIn 0.5s ease forwards;
-}`}
+  }`}
+  </code>
         </pre>
 
         {/* Live Demo */}

@@ -47,7 +47,7 @@ export default function AnimationShowcase(){
 
             <h1 className="text-2xl">Understanding the @keyframes Rule</h1>
             <p>The @keyframes rule is used to define keyframes for animation specifying how the animated element looks at various stages of animation. Consider the following code that defines a keyframe rule</p>
-            <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
+            <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
               <pre>
                 {`.box{
     animation: colorChange 5s infinite;
@@ -83,7 +83,7 @@ export default function AnimationShowcase(){
             <h1 className="text-2xl">Example</h1>
             <p>In this example ball will start to move left after 2 seconds.</p>
 
-            <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
+            <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
               <pre>
                 {`<!DOCTYPE html>
 <html lang="en">
@@ -126,7 +126,7 @@ export default function AnimationShowcase(){
             <h1 className="text-2xl">Example</h1>
             <p>The animation for the ball in this example uses an animation-iteration-count of infinite, causing it to repeat without end.</p>
 
-            <div className="bg-gray-900 text-green-400 p-4 rounded">
+            <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
               <pre>
                 {`<!DOCTYPE html>
 <html lang="en">
@@ -175,7 +175,7 @@ export default function AnimationShowcase(){
             </ul>
             <h1 className="text-2xl">Example</h1>
             <p>In this example, the animation-direction property is assigned via an inline style attribute.</p>
-            <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
+            <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
               <pre>
                 {`<!DOCTYPE html>
 <html lang="en">
@@ -238,7 +238,7 @@ export default function AnimationShowcase(){
             </ul>
 
             <h1 className="text-2xl">Example</h1>
-            <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
+            <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
               <pre>
                 {`<h2>ease-out</h2>
     <div class="ball" 
@@ -269,7 +269,7 @@ export default function AnimationShowcase(){
             </ul>
             <p>Check out the output of the following code to better understand.</p>
             <h1 className="text-2xl">Example</h1>
-            <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
+            <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
               <pre>
                 {`<!DOCTYPE html>
 <html lang="en">
@@ -340,7 +340,7 @@ export default function AnimationShowcase(){
             </ul>
 
             <h1 className="text-2xl">Example</h1>
-            <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
+            <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
               <pre>
                 {`<html lang="en">
 <head>

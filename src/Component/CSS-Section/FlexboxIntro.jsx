@@ -43,7 +43,8 @@ const CSSFlexboxIntro = () => {
          By using Flexbox, we can align elements both horizontally and vertically.
         </p>
 
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2 overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`/*We make the container a flex container. */
 .container {
   display: flex;
@@ -57,7 +58,8 @@ const CSSFlexboxIntro = () => {
   background: lightblue;
   padding: 20px;
   margin: 10px;
-}`}
+  }`}
+  </code>
         </pre>
 
         {/* Live Demo */}

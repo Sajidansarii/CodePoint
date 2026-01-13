@@ -44,8 +44,8 @@ const CssWebsiteLayout = () => {
         <li>Inline-block elements combine both behaviors—they appear inline with other elements but allow you to set their width and height.</li>
       </ul>
       <h1 className="text-3xl mt-5 mb-5">Example</h1>
-     <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
-      <pre>
+     <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+      <code>
         {`<!DOCTYPE html>
 <html>
 
@@ -75,8 +75,8 @@ const CssWebsiteLayout = () => {
     </div>
 </body>\
 </html>  `}
-      </pre>
-     </div>
+      </code>
+     </pre>
      <h1 className="text-2xl mt-10 mb-5">CSS Float Layout</h1>
      <p>The float layout is used to position elements to the left or right within the normal document flow. It's commonly used for creating two-column layouts or wrapping text around images on a webpage.</p>
     </div>

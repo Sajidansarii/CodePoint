@@ -22,8 +22,8 @@ const CssExercises = () => {
         </p>
 
         {/* Solution Code */}
-        <div className="bg-gray-100 p-4 rounded-lg mb-4">
-          <pre className="text-sm text-gray-800 overflow-x-auto">
+          <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+            <code>
 {`<style>
   .box {
     background-color: blue;
@@ -31,14 +31,14 @@ const CssExercises = () => {
     padding: 20px;
     text-align: center;
     border-radius: 8px;
-  }
-</style>
-
-<div class="box">
-  Hello! Ye ek CSS Exercise ka solution hai.
-</div>`}
+    }
+    </style>
+    
+    <div class="box">
+    Hello! Ye ek CSS Exercise ka solution hai.
+    </div>`}
+    </code>
           </pre>
-        </div>
 
         {/* Explanation */}
         <h3 className="text-lg font-medium mb-2">Explanation:</h3>
@@ -61,8 +61,8 @@ const CssExercises = () => {
         </p>
 
         {/* Solution Code */}
-        <div className="bg-gray-100 p-4 rounded-lg mb-4">
-          <pre className="text-sm text-gray-800 overflow-x-auto">
+          <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+            <code>
 {`<style>
   .btn {
     background-color: blue;
@@ -70,16 +70,17 @@ const CssExercises = () => {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-  }
-
-  .btn:hover {
-    background-color: green;
-  }
-</style>
-
-<button class="btn">Click Me</button>`}
+    }
+    
+    .btn:hover {
+      background-color: green;
+      }
+      </style>
+      
+      <button class="btn">Click Me</button>`}
+      </code>
           </pre>
-        </div>
+        
 
         {/* Explanation */}
         <h3 className="text-lg font-medium mb-2">Explanation:</h3>

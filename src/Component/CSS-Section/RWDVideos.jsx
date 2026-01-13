@@ -74,32 +74,6 @@ const CssRWDVideos = () => {
         <span className="text-gray-400">{"}"}</span>
       </pre>
 
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       {/* Explanation */}
       <div className="bg-green-100 p-3">

@@ -54,7 +54,7 @@ export default function CssLists() {
 
       <div className="bg-gray-200 p-4 rounded-lg mt-12">
         <h2 className="text-2xl">Example:</h2>
-        <pre className="mt-10 p-4 rounded-lg bg-gray-900 text-green-400">
+        <pre className="mt-10 p-4 rounded-lg bg-gray-900 text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>
             {`             .ul{list-style-type:disc;}
              .red{background-color:red;}

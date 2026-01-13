@@ -11,10 +11,12 @@ const CSSShadows = () => {
       <div>
         <h2 className="text-2xl mb-4">1. Text Shadow</h2>
         <p className="mb-4"> The <span className="text-red-400 bg-gray-50 px-1">text-shadow</span> property creates a shadow behind the text. text-shadow: x-offset y-offset blur-radius color;</p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`h1 {
   text-shadow: 2px 2px 5px gray;
-}`}
+  }`}
+  </code>
         </pre>
         <div className="border p-4 bg-gray-100 text-center">
           <h1 className="text-2xl text-shadow-lg">
@@ -29,12 +31,14 @@ const CSSShadows = () => {
         <p className="mt-4 mb-5">
           The <span className="text-red-400 bg-gray-50 px-1">box-shadow</span> property creates a shadow around the box of an element.
           box-shadow: x-offset y-offset blur-radius color; </p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
 {`div {
   width: 150px;
   height: 100px;
   box-shadow: 5px 5px 15px gray;
-}`}
+  }`}
+  </code>
         </pre>
         <div className="border p-4 bg-gray-100 text-center flex justify-center">
           <div
@@ -51,12 +55,14 @@ const CSSShadows = () => {
         <p className="mt-4 mb-4">
           We can add multiple <span className="text-red-400 bg-gray-50 px-1">shadows</span> to a single element by separating them with commas <span className="text-red-400 bg-gray-50 px-1">(,)</span>.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg mt-5">
+          <code>
 {`div {
   width: 150px;
   height: 100px;
   box-shadow: 2px 2px 5px red, -2px -2px 5px blue;
-}`}
+  }`}
+  </code>
         </pre>
         <div className="border p-4 bg-gray-100 text-center flex justify-center">
           <div

@@ -17,7 +17,7 @@ const CssAlign = () => {
         <p className="text-center">This text is Center aligned</p>
         <p className="text-right">This text is Right aligned</p>
       </div>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
 {`p { text-align: left; }
 p { text-align: center; }
 p { text-align: right; }`}
@@ -31,7 +31,7 @@ p { text-align: right; }`}
         <span className="align-middle bg-green-200 px-2">Middle</span>
         <span className="align-bottom bg-blue-200 px-2">Bottom</span>
       </div>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
 {`span { vertical-align: top; }
 span { vertical-align: middle; }
 span { vertical-align: bottom; }`}
@@ -46,7 +46,7 @@ span { vertical-align: bottom; }`}
       <div className="border p-4 flex justify-center items-center h-32 bg-gray-100 mb-4">
         <div className="bg-purple-500 text-white px-4 py-2 rounded">Centered Box</div>
       </div>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
 {`.container {
   display: flex;
   justify-content: center; /* horizontal */

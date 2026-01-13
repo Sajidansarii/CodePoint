@@ -23,12 +23,14 @@ const CssLayout = () => {
     <h1 className="text-2xl">CSS Header</h1>
     <p>The <span className="text-red-400 bg-gray-50 px-1">{'<header>'}</span> element, located at the top of a webpage, typically contains branding elements such as the logo or site title.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`header {
   background-color: #f1f1f1;
   text-align: center;
   padding: 10px;
-}`}
+  }`}
+  </code>
       </pre>
 
       <div className="bg-[rgb(241_241_241)] text-center p-10 border-2">Header</div>
@@ -36,7 +38,8 @@ const CssLayout = () => {
       <h1 className="text-2xl">CSS Navigation Bar</h1>
       <p>A navigation bar contains a list of links to help visitors navigate through your website:</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg ">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`/* Style the topnav */
 ul.topnav {
   display: flex;
@@ -44,21 +47,22 @@ ul.topnav {
   margin: 0;
   padding: 0;
   background-color: #333333;
-}
-
-/* Style links in topnav */
-ul.topnav li a {
-  display: block;
-  color: #f1f1f1;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-ul.topnav li a:hover {
-  background-color: #dddddd;
-  color: black;
-}`}
+  }
+  
+  /* Style links in topnav */
+  ul.topnav li a {
+    display: block;
+    color: #f1f1f1;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    
+    /* Change color on hover */
+    ul.topnav li a:hover {
+      background-color: #dddddd;
+      color: black;
+      }`}
+      </code>
       </pre>
 
       <ul className="bg-[rgb(51_51_51)] flex text-white gap-5">
@@ -77,23 +81,25 @@ ul.topnav li a:hover {
       </ul>
     <p>We'll implement a responsive layout that displays three columns on wider screens, and collapses to a single column when the viewport is under 600px.</p>
     <h1 className="text-2xl">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
       {`div.flex-container {
   display: flex;
   /* Show the flex items horizontally */
   flex-direction: row;
-}
-
-div.flex-container > div {
-  margin: 10px;
-}
-
-/* Use media query and show the flex items vertically if screen width is less than 600px */
-@media screen and (max-width:600px) {
-  div.flex-container {
-    flex-direction: column;
   }
-}`}
+  
+  div.flex-container > div {
+    margin: 10px;
+    }
+    
+    /* Use media query and show the flex items vertically if screen width is less than 600px */
+    @media screen and (max-width:600px) {
+      div.flex-container {
+        flex-direction: column;
+        }
+        }`}
+        </code>
     </pre>
 
     <div className="flex flex-row bg-gray-200 py-2 px-6">
@@ -118,18 +124,21 @@ div.flex-container > div {
     <p>The <span className="text-red-400 bg-gray-50 px-1">{'<footer>'}</span> element is located at the bottom of the page and commonly includes metadata such as copyright information and links for contacting the site owner.</p>
     <p>Here’s a simple example of how to style a footer.</p>
     <h1 className="text-2xl">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
       {`footer {
   background-color: #f1f1f1;
   text-align: center;
   padding: 8px;
-}`}
+  }`}
+  </code>
     </pre>
 
     <div className="bg-[rgb(241_241_241)] text-center p-5">Footer</div>
     <p>Here’s an example of a footer that stays visible at the bottom as you scroll.</p>
     <h1 className="text-2xl">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
       {`footer {
   position: fixed;
   bottom: 0;
@@ -139,7 +148,8 @@ div.flex-container > div {
   padding: 8px;
   text-align: center;
   z-index: 1000;
-}`}
+  }`}
+  </code>
     </pre>
 
 

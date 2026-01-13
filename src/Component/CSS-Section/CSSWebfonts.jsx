@@ -24,9 +24,11 @@ const WebFontsTutorial = () => {
         </p>
         <h1 className="text-2xl mt-5">Example</h1>
         <p>In this example, we’ll use the 'Sofia' font from Google Fonts.</p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`<!-- Add this inside your <head> -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">`}
+</code>
         </pre>
       </div>
 
@@ -37,14 +39,16 @@ const WebFontsTutorial = () => {
           After importing, you can apply the font to any element using{" "}
           <code>font-family</code>.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
 {`body {
   font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-  font-family: 'Times New Roman', serif;
-}`}
+  }
+  
+  h1 {
+    font-family: 'Times New Roman', serif;
+    }`}
+    </code>
         </pre>
 
         <div className="border p-4 bg-gray-100 text-center space-y-2">
@@ -65,10 +69,12 @@ h1 {
           Example: <code>'Roboto', sans-serif</code> — if Roboto fails, 
           browser will use any available sans-serif font.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
 {`p {
   font-family: 'Roboto', sans-serif;
-}`}
+  }`}
+  </code>
         </pre>
       </div>
     </div>

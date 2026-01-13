@@ -27,10 +27,12 @@ const CssOpacity = () => {
         </div>
       </div>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`div {
   opacity: 0.5; /* 50% visible */
-}`}
+  }`}
+  </code>
       </pre>
 
       {/* Hover Example */}
@@ -40,15 +42,17 @@ const CssOpacity = () => {
         Hover Me
       </div>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`.box {
   opacity: 1;
   transition: opacity 0.3s;
-}
-
-.box:hover {
-  opacity: 0.5;
-}`}
+  }
+  
+  .box:hover {
+    opacity: 0.5;
+    }`}
+    </code>
       </pre>
 
       {/* Note Section */}

@@ -13,13 +13,13 @@ const ImportantExample = () => {
                   This can be useful in certain situations where you need to make sure a style is always applied, but it should be used sparingly, as it can make your CSS harder to maintain and debug.
          </p>
       
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
           {`selector {
    property: value !important; 
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
       <h1 className="text-2xl">What is CSS !important Rule?</h1>
       <p>The exclamation mark (!) followed directly by the word important (i.e., !important) is used in CSS to give a style declaration the highest priority, overriding any other declarations for the same property, regardless of specificity or source order.</p>
       <p>The !important rule overrides all other declarations of the same property, regardless of CSS specificity. We'll cover specificity in more detail later in this tutorial.</p>
@@ -28,8 +28,8 @@ const ImportantExample = () => {
       <h1 className="text-2xl">Specificity in CSS</h1>
       <p>Specificity in CSS determines which styles take precedence when multiple rules target the same element. In general, inline styles have the highest priority, followed by ID selectors, then class selectors (including attributes and pseudo-classes), and finally element (type) selectors.</p>
 
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
           {`p {
   color: black;
 }
@@ -43,16 +43,16 @@ p.special {
 p {
   color: red !important;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
       <p>The above declaration sets the text color of the paragraph to red. The style applied by the element selector is overridden by the class selector, which is then overridden by the !important rule.</p>
       <p>Keep in mind that while !important can be useful in certain situations, it should be used sparingly. Overusing !important can make your CSS harder to maintain and debug. It's best to rely on proper CSS structure and specificity to manage styles effectively, reserving !important for truly exceptional cases.</p>
 
       <h1 className="text-2xl">CSS !important Rule Example</h1>
       <p>The following example demonstrates the use of '!important' which we saw above.</p>
       <h1 className="text-2xl">Example</h1>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
           {`<!DOCTYPE html> 
 <html>
 
@@ -79,15 +79,15 @@ p {
 </body>
 
 </html>`}
-        </pre>
-      </div>
+        </code>
+      </pre>
       <h1>CSS !important and Specificity</h1>
       <p>According to CSS specificity rules, inline styles have the highest priority, followed by ID selectors, then class selectors, and finally element selectors. This means that styles applied using element selectors can be overridden by class selectors, which can be further overridden by ID selectors and, ultimately, by inline styles.</p>
       <p>The following example uses multiple selectors to apply the color property to a paragraph. However, the style defined using the element selector with the !important keyword is ultimately applied to the paragraph.</p>
 
       <h1 className="text-2xl">Example</h1>
-      <div className="bg-gray-900 text-green-400 rounded-lg p-4">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
           {`<!DOCTYPE html> 
 <html>
 
@@ -106,15 +106,15 @@ p {
         #unique {
             color: darkgreen;
         }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
 
       <h1 className="text-2xl">Override Inline Styles</h1>
       <p>Inline styles have the highest specificity in CSS and usually take priority over any selector. However, the !important keyword can even override inline styles. Let’s look at an example to understand this better.</p>
       <h1 className="text-2xl">Example</h1>
-      <div className="">
-        <pre className="bg-gray-900 text-green-400 rounded-lg p-4">
+        <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+            <code>
           {`<!DOCTYPE html> 
 <html>
 
@@ -124,24 +124,24 @@ p {
                 color: black !important; 
                 font-weight: bold;
             }
-    </style>
+            </style>
 </head>
 
 <body>
-    <p style="color:red">
-        Paragraph is black. Inline style is overridden by 
-        important keyword
-    </p>
+<p style="color:red">
+Paragraph is black. Inline style is overridden by 
+important keyword
+</p>
 </body>
 
 </html>`}
+</code>
         </pre>
-      </div>
 
       <h1 className="text-2xl">Multiple Important Keyword</h1>
       <p>When multiple !important declarations are applied to the same CSS property using different selectors, the declaration within the selector with the highest specificity takes effect. Let’s look at an example to see how this works.</p>
       <h1 className="text-2xl">Example</h1>
-      <div className="bg-gray-900 text-green-400 rounded-lg p-4">
+      <div className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
         <pre>
           {`<!DOCTYPE html> 
 <html>
@@ -184,7 +184,7 @@ p {
       <p>When you add !important to a custom property, it indicates that the custom property's value should take priority. However, the !important flag itself is not included when the custom property is accessed using the var() function.</p>
       <h1 className="text-2xl">Example</h1>
 
-      <div className="bg-gray-900 text-green-400 rounded-lg p-4">
+      <div className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
         <pre>
           {`<!DOCTYPE html> 
 <html>
@@ -219,8 +219,8 @@ p {
       <h1 className="text-2xl">CSS !important on Shorthand Properties</h1>
       <p>When you use !important with a shorthand property in CSS, the importance is applied to all of its individual longhand properties. In effect, each sub-property inherits the !important flag. The following examples produce the same result.</p>
       <h1 className="text-2xl">Example</h1>
-      <div className="bg-gray-900 text-green-400 rounded-lg p-4">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
           {`<!DOCTYPE html> 
 <html>
 
@@ -242,8 +242,8 @@ p {
 </body>
 
 </html>`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
 
     </div>

@@ -29,11 +29,13 @@ Elements (or items) in HTML are the building blocks of a webpage. Each element d
        <p>Specifies the ending column line for placing a grid item along the horizontal axis.</p>
        <h1 className="text-2xl mt-6 mb-2">Example</h1>
        <p>The first grid item starts at column line 1 and ends at column line 3.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-7">
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
       {`.item1 {
   grid-column-start: 1;
   grid-column-end: 3;
-}`}
+  }`}
+  </code>
      </pre>
 
      <div className="border-2 border-black p-4 mt-10 grid grid-cols-3 gap-3">
@@ -52,10 +54,12 @@ Elements (or items) in HTML are the building blocks of a webpage. Each element d
       <p>Grid items can be placed by line numbers or by using span to specify column span.</p>
       <h1 className="text-2xl mt-7 mb-2">Example</h1>
       <p>First grid item starts at line 1 and spans 2 columns.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`.item1 {
   grid-column: 1 / span 2;
-}`}
+  }`}
+  </code>
       </pre>
 
       <div className="border-2 border-black p-4 mt-10 grid grid-cols-3 gap-3">
@@ -71,11 +75,14 @@ Elements (or items) in HTML are the building blocks of a webpage. Each element d
 
       <h1 className="text-2xl mt-10 mb-2">Example</h1>
       <p>item1 starts at column 1 and spans across 3 columns.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-6">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`.item1 {
   grid-column: 1 / 4;
-}`}
+  }`}
+  </code>
       </pre>
+
      <div className="border-2 border-black p-4 mt-10 grid grid-cols-3 gap-3">
       <div className="bg-blue-500 text-white font-bold col-start-1 col-end-4 p-6 text-center">1</div>
       <div className="bg-blue-500 text-white font-bold p-6 text-center">2</div>
@@ -89,10 +96,12 @@ Elements (or items) in HTML are the building blocks of a webpage. Each element d
 
       <h1 className="text-2xl mt-5 mb-2">Example</h1>
       <p>item2 starts at column 2 and spans 2 columns.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`.item2 {
   grid-column: 2 / span 2;
-}`}
+  }`}
+  </code>
       </pre>
       
      <div className="border-2 border-black p-4 mt-10 grid grid-cols-3 gap-3">
@@ -112,11 +121,13 @@ Elements (or items) in HTML are the building blocks of a webpage. Each element d
    <p>It defines where a grid item ends vertically.</p>
    <h1 className="text-2xl mt-5 mb-2">Example</h1>
    <p>The first item spans rows from line 1 to 3.</p>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+    <code>
     {`.item1 {
   grid-row-start: 1;
   grid-row-end: 3;
-}`}
+  }`}
+  </code>
    </pre>
 
      <div className="border-2 border-black p-4 mt-10 grid grid-cols-3 gap-3">
@@ -135,10 +146,12 @@ Elements (or items) in HTML are the building blocks of a webpage. Each element d
       <p>Use line numbers or the span keyword to control how many rows an item covers.</p>
       <h1 className="text-2xl mt-5 mb-2">Example</h1>
       <p>The first grid item spans 2 rows starting from line 1.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`.item1 {
   grid-row: 1 / span 2;
-}`}
+  }`}
+  </code>
       </pre>
 
       <div className="border-2 border-black p-4 mt-10 grid grid-cols-3 gap-3">
@@ -154,10 +167,12 @@ Elements (or items) in HTML are the building blocks of a webpage. Each element d
 
       <h1 className="text-2xl mt-5 mb-2">Example</h1>
       <p>item1 starts on row-line 1 and stops at line 4 (not inclusive).</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`.item1 {
   grid-row: 1 / 4;
-}`}
+  }`}
+  </code>
       </pre>
 
       <div className="border-2 border-black p-4 mt-10 grid grid-cols-3 gap-3">

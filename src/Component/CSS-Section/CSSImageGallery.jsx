@@ -51,7 +51,7 @@ const CssImageGallery = () => {
         />
       </div>
 
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-4">
+       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
          <code>
 {`
 .gallery {
@@ -88,7 +88,7 @@ const CssImageGallery = () => {
 </div>
 
 
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-4">
+       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
          <code>
 {`
 @media screen and (max-width: 768px) {
@@ -144,7 +144,7 @@ const CssImageGallery = () => {
         </div>
       </div>
 
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-4">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
          <code>
 {`
 .gallery-item {

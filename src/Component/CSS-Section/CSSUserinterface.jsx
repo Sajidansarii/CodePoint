@@ -44,11 +44,13 @@ const CssUserInterface = () => {
         <p>
           <code>resize</code> The property allows the user to drag and resize the element. It is mostly used with<span className="text-red-400 bg-gray-100 px-1">{'<textarea>'}</span>.
         </p>
-        <pre className="bg-gray-900 text-green-300 p-3 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
 {`textarea {
   resize: both;     
   overflow: auto;
-}`}
+  }`}
+  </code>
         </pre>
         <textarea
           className="border border-gray-400 p-2 w-full h-24 resize"
@@ -62,11 +64,13 @@ const CssUserInterface = () => {
         <p>
           <code>outline-offset</code> The property creates space between the element’s outline and its border.
         </p>
-        <pre className="bg-gray-900 text-green-300 p-3 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
 {`input:focus {
   outline: 2px solid blue;
   outline-offset: 5px;
-}`}
+  }`}
+  </code>
         </pre>
         <input
           type="text"
@@ -81,10 +85,12 @@ const CssUserInterface = () => {
         <p>
           <code>nav-index</code> The property sets the navigation order (using the Tab key). It is not supported in modern browsers but is still important to understand.
         </p>
-        <pre className="bg-gray-900 text-green-300 p-3 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
 {`a {
   nav-index: 1;
-}`}
+  }`}
+  </code>
         </pre>
         <p>
            Note: This property is deprecated and does not work in modern browsers.

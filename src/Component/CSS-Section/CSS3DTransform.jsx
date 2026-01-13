@@ -71,7 +71,7 @@ const Css3DAnimation = () => {
       <h1 className="text-2xl">The CSS rotateX() Function</h1>
       <p>The rotateX() function rotates an element around its X-axis at a given degree:</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 text-green-400 rounded-lg p-4">
+      <pre className="bg-gray-900 text-green-400 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap p-4">
         {`#myDiv {
   transform: rotateX(150deg);
 }`}
@@ -79,7 +79,7 @@ const Css3DAnimation = () => {
       <h1 className="text-2xl">The CSS rotateY() Function</h1>
       <p>The CSS rotateY() function applies a 3D rotation to an element around the Y-axis, which runs vertically through the element.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 text-green-400 rounded-lg p-4">
+      <pre className="bg-gray-900 text-green-400 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap p-4">
         {`#myDiv {
   transform: rotateY(150deg);
 }`}
@@ -88,7 +88,7 @@ const Css3DAnimation = () => {
       <h1 className="text-2xl">The CSS rotateZ() Function</h1>
       <p>The CSS rotateZ() function applies a rotation around the Z-axis, which is perpendicular to the screen, creating a flat, 2D spin.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 text-green-400 rounded-lg p-4">
+      <pre className="bg-gray-900 text-green-400 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap p-4">
         {`#myDiv {
   transform: rotateZ(90deg);
 }

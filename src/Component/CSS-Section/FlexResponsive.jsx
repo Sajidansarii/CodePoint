@@ -31,13 +31,14 @@ const CSSFlexResponsive = () => {
       <p>You can use a media query to switch the flex-direction from row to column at 800px, creating a two-column layout on larger screens and a single column on smaller ones.</p>
 
               <h2 className="text-2xl">Example</h2>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2 overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`/* Flex Container */
 .container {
   display: flex;
   flex-wrap: wrap;     
   gap: 10px;           
-}
+  }
 
 /* Flex Items */
 .item {
@@ -48,6 +49,7 @@ const CSSFlexResponsive = () => {
   text-align: center;
   font-weight: bold;
 }`}
+  </code>
         </pre>
 
         <p>Another approach is to adjust the flex property values (using percentages) on flex items to create different layouts for various screen sizes. Just make sure to set flex-wrap: wrap; on the container for this to work properly.</p>

@@ -22,10 +22,12 @@ const CssCombinators = () => {
           </section>
         </div>
       </div>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`div p {
   color: blue;
-}`}
+  }`}
+  </code>
       </pre>
 
       {/* 2. Child Selector */}
@@ -41,10 +43,12 @@ const CssCombinators = () => {
           </section>
         </div>
       </div>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`div > p {
   color: green;
-}`}
+  }`}
+  </code>
       </pre>
 
       {/* 3. Adjacent Sibling Selector */}
@@ -57,10 +61,12 @@ const CssCombinators = () => {
         <p className="text-red-600">This paragraph comes right after h3 (selected)</p>
         <p>This paragraph is not selected</p>
       </div>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`h3 + p {
   color: red;
-}`}
+  }`}
+  </code>
       </pre>
 
       {/* 4. General Sibling Selector */}
@@ -73,10 +79,12 @@ const CssCombinators = () => {
         <p className="text-purple-600">This is a sibling paragraph (selected)</p>
         <p className="text-purple-600">This one too (selected)</p>
       </div>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`h3 ~ p {
   color: purple;
-}`}
+  }`}
+  </code>
       </pre>
 
       {/* Summary */}

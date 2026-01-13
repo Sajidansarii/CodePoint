@@ -17,19 +17,19 @@ const CSSComments = () => {
         <code className="bg-gray-200 px-1 rounded">/*</code> and ends with{" "}
         <code className="bg-gray-200 px-1 rounded">*/</code>.
       </p>
-      <div className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto text-sm mb-6">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`/* This is a CSS comment */
 p {
   color: blue;  /* This is an inline comment */
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Example</h2>
       <p className="text-gray-700 mb-2">CSS file (<code>styles.css</code>):</p>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm mb-6">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`/* Style for heading */
 h1 {
   color: red;
@@ -41,8 +41,8 @@ p {
   font-size: 18px;
   color: green;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Output</h2>
       <div className="border p-4 bg-white rounded-lg mb-6">

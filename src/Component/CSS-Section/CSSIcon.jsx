@@ -17,15 +17,16 @@ export default function CssIcons() {
       <h1 className="text-3xl mt-5 mb-5">Font Awesome Icons</h1>
       <p>Use the Font Awesome icons, go to fontawesome.com, sign in, and get a code to add in the {'<head>'} section of your HTML page</p>
      
-     <div className="bg-gray-200 p-4 rounded-lg text-sm mb-6 mt-5">
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {'<script src="https://kit.fontawesome.com/5ce9d92c07.js" crossorigin="anonymous"></script>'
-          }  </pre>
-      </div>
+          }  
+          </code>
+          </pre>
 
-      <div className=" bg-gray-200 p-4 rounded-lg ">
       <h2 className="text-2xl mb-5">Example:</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`<!DOCTYPE html>
 <html>
 <head>
@@ -41,9 +42,9 @@ export default function CssIcons() {
 
 </body>
 </html>
-        `}
+`}
+</code>
       </pre>
-      </div>
       
 <i class="fas fa-cloud ml-2 mt-5"></i>
 <i class="fas fa-heart ml-2"></i>
@@ -54,11 +55,12 @@ export default function CssIcons() {
       
       <h2 className="text-2xl font-semibold mt-6 mb-2">Examples</h2>
         <p className="mb-2">Before you have to import it on top of code.</p>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
-        <pre>{'import { FaHome, FaUser, FaSearch } from "react-icons/fa";'}</pre>
-      </div>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-10">
-        <pre>{`
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>{'import { FaHome, FaUser, FaSearch } from "react-icons/fa";'}</code>
+      </pre>
+
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-10 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>{`
          <div className="space-y-4">
         <p>
           Unicode Icon: <span className="text-yellow-500">&#9733;</span> Star
@@ -74,8 +76,8 @@ export default function CssIcons() {
         </p>
       </div>
     
-        `}</pre>
-      </div>
+        `}</code>
+      </pre>
 
       <div className="space-y-4">
         <p>

@@ -41,8 +41,8 @@ const CSSBorder = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 1: Border Styles
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`p {
   border-style: solid;
 }
@@ -52,8 +52,8 @@ p {
 p {
   border-style: dashed;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
         <div className="border border-solid border-gray-600 p-4 text-center">
           Solid Border
@@ -70,16 +70,16 @@ p {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 2: Border Width & Color
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`div {
   border: 5px solid red;
 }
 div {
   border: 10px solid blue;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
         <div className="border-4 border-red-500 p-4 text-center">
           4px Red Border
@@ -93,8 +93,8 @@ div {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 3: Rounded Borders
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`div {
   border: 2px solid green;
   border-radius: 10px;
@@ -103,8 +103,8 @@ div {
   border: 2px solid purple;
   border-radius: 50%;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
         <div className="border-2 border-green-600 rounded-lg p-4 text-center">
           Rounded Corners

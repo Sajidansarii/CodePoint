@@ -21,10 +21,12 @@ const CssTable = () => {
         <li><span className="text-red-400 bg-gray-50 px-1">border-color</span>- sets the color of the border</li>
       </ul>
       <p>Below is an example that applies a solid 1-pixel border to {'<table>'}, {'<th>'}, and {'<td>'} elements.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
         {`table, th, td {
   border: 1px solid;
-}`}
+  }`}
+  </code>
       </pre>
 
       <table className="border border-1 border-black">
@@ -45,10 +47,12 @@ const CssTable = () => {
 
       <h1 className="text-2xl">CSS Table Border Color</h1>
       <p>The following example sets a 1px solid green border on the {'<table>'}, {'<th>'}, and {'<td>'} elements.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
         {`table, th, td {
   border: 1px solid green;
-}`}
+  }`}
+  </code>
        </pre>
 
        
@@ -77,10 +81,12 @@ const CssTable = () => {
       <p>The following table demonstrates collapsed borders:</p>
       <h1 className="text-2xl">Example</h1>
       <p>By setting the <span className="text-red-400 bg-gray-50 px-1">border-collapse</span> property:</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
         {`table {
   border-collapse: collapse;
-}`}
+  }`}
+  </code>
       </pre>
       <table className="border border-1 border-black">
         <thead>
@@ -100,10 +106,12 @@ const CssTable = () => {
       <h1 className="text-2xl">CSS Table Padding</h1>
       <p>o manage the gap between content and borders within a table, apply padding to the {'<td>'} and {'<th>'} elements.</p>
      <h1 className="text-2xl">Example</h1>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+      <code>
       {`th, td {
   padding:6px;
-}`}
+  }`}
+  </code>
      </pre>
 
      <table className="border border-1 border-black">
@@ -134,11 +142,13 @@ const CssTable = () => {
 <p>The table below uses a border-spacing of 15 pixels:</p>
 <h1 className="text-2xl">Example</h1>
 <p>Applying the border-spacing property:</p>
-<pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+<pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
   {`table {
   border-collapse: separate;
   border-spacing: 15px;
-}`}
+  }`}
+  </code>
 </pre>
 
 <table className="border border-1 border-black border-separate [border-spacing:15px]">
@@ -159,10 +169,12 @@ const CssTable = () => {
       <h1 className="text-2xl">CSS Outside Table Borders</h1>
       <p>To add a border only around the table and not inside, apply the border property solely to the {'<table>'} element.</p>
        <h1 className="text-2xl">Example</h1>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`table {
   border: 1px solid;
-}`}
+  }`}
+  </code>
        </pre>
 
        <table className="border border-1 border-black">
@@ -179,17 +191,6 @@ const CssTable = () => {
           </tr>
         </tbody>
       </table>
-
-
-
-
-
-
-
-
-
-
-
 
 
       {/* Conclusion */}

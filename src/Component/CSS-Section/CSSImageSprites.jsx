@@ -60,29 +60,33 @@ const CssImageSprites = () => {
 
       {/* Pure CSS version (copy/paste) */}
       <h2 className="text-xl font-semibold mt-4 mb-2">CSS Setup (Sprite + Positions)</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
 {`.icon {
   display: inline-block;
   width: 32px;
   height: 32px;
   background-repeat: no-repeat;
   background-image: url('sprite.png');  your sprite
-}
-
- Each class shifts the window over the sprite 
-
-.icon-star  { background-position:   0    0; }
-.icon-user  { background-position: -32px  0; }
-.icon-check { background-position: -64px  0; }`}
+  }
+  
+  Each class shifts the window over the sprite 
+  
+  .icon-star  { background-position:   0    0; }
+  .icon-user  { background-position: -32px  0; }
+  .icon-check { background-position: -64px  0; }`}
+  </code>
       </pre>
 
       {/* HTML usage snippet */}
       <h2 className="text-xl font-semibold mt-4 mb-2">HTML Usage</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
 {`<button class="btn">
   <span class="icon icon-star" aria-hidden="true"></span>
   Favorite
-</button>`}
+  </button>`}
+  </code>
       </pre>
 
       {/* Retina tip */}
@@ -91,16 +95,18 @@ const CssImageSprites = () => {
         If you export a sprite at <strong>2× size</strong> (e.g., each icon 64×64),
         set <code>background-size</code> to the <em>logical</em> size so icons remain crisp:
       </p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
 {`.icon {
   width: 32px; height: 32px;
   background-image: url('sprite@2x.png');  double-size sprite 
   background-size: 96px 32px; total logical size (3 * 32)
-}
-
-.icon-star  { background-position:    0     0; }
-.icon-user  { background-position:  -32px   0; }
-.icon-check { background-position:  -64px   0; }`}
+  }
+  
+  .icon-star  { background-position:    0     0; }
+  .icon-user  { background-position:  -32px   0; }
+  .icon-check { background-position:  -64px   0; }`}
+  </code>
       </pre>
 
       {/* Best practices */}

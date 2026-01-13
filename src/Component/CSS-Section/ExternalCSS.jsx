@@ -17,18 +17,18 @@ const ExternalCSS = () => {
         <code className="bg-gray-200 px-1 rounded">&lt;link&gt;</code> tag inside
         the <code>&lt;head&gt;</code> section of your HTML file:
       </p>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm mb-6">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`<head>
   <link rel="stylesheet" href="styles.css">
 </head>`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Example</h2>
       <p className="mb-2">HTML file:</p>
-      <div className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto text-sm mb-6">
-        <pre>
+      <pr className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`<!DOCTYPE html>
 <html>
 <head>
@@ -40,12 +40,12 @@ const ExternalCSS = () => {
   <p>This is a paragraph styled with External CSS.</p>
 </body>
 </html>`}
-        </pre>
-      </div>
+        </code>
+      </pr>
 
       <p className="text-gray-700 mb-2">CSS file (<code>styles.css</code>):</p>
-      <div className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto text-sm mb-6">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`h1 {
   color: blue;
   text-align: center;
@@ -55,8 +55,8 @@ p {
   font-size: 18px;
   color: green;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Output</h2>
       <div className="border p-4 bg-white rounded-lg mb-6">

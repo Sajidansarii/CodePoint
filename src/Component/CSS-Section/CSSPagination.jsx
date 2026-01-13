@@ -25,36 +25,38 @@ const CssPagination = () => {
         </p>
 
         {/* CSS Code Block */}
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
 {`/* CSS Pagination Example */
 .pagination {
   display: flex;
   list-style: none;
   padding: 0;
-}
-
-.pagination li {
-  margin: 0 5px;
-}
-
-.pagination a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-  border: 1px solid #ddd;
-}
-
-.pagination a.active {
-  background-color: #4CAF50;
-  color: white;
+  }
+  
+  .pagination li {
+    margin: 0 5px;
+    }
+    
+    .pagination a {
+      color: black;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      border: 1px solid #ddd;
+      }
+      
+      .pagination a.active {
+        background-color: #4CAF50;
+        color: white;
   border: 1px solid #4CAF50;
-}
-
-.pagination a:hover:not(.active) {
-  background-color: #ddd;
-}
-`}
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    }
+    `}
+    </code>
         </pre>
 
         {/* Live Demo */}

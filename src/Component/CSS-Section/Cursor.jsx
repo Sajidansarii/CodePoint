@@ -15,13 +15,13 @@ const CSSCursor = () => {
       </p>
 
       <h2 className="text-xl font-semibold mb-2">Syntax</h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
 {`selector {
   cursor: value;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Common Cursor Values
@@ -94,8 +94,8 @@ const CSSCursor = () => {
       </div>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Code Example</h2>
-      <div className="bg-gray-900 text-green-400  p-4 rounded-lg text-sm mb-6">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
 {`.default { cursor: default; }
 .pointer { cursor: pointer; }
 .text { cursor: text; }
@@ -106,8 +106,8 @@ const CSSCursor = () => {
 .crosshair { cursor: crosshair; }
 .zoom-in { cursor: zoom-in; }
 .zoom-out { cursor: zoom-out; }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Key Notes</h2>
       <ul className="list-disc list-inside text-gray-700">

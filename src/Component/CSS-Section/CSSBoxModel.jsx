@@ -21,19 +21,6 @@ const CssBoxModel = () => {
        <div className="absolute top-40 min-w-[500px] left-48 bg-white h-32 flex items-center justify-center text-black text-xl pt-1">Padding</div>
      </div>
 
-
-
-
-
-
-
-
-
-
-
-      
-
-  
      
       {/* Explanation of Code */}
       <p className="mt-[450px] mb-5">An explanation of each section, beginning at the center and moving outward:</p>
@@ -48,27 +35,31 @@ const CssBoxModel = () => {
       <p className="mt-5">Using the box model, we can place borders around elements and define gaps between them.</p>
       <h1 className="text-2xl mt-4 mb-2">Example</h1>
       <p>Overview of the box model structure</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`div {
   width: 300px;
   border: 15px solid green;
   padding: 50px;
   margin: 20px;
-}`}
+  }`}
+  </code>
       </pre>
 
       <h1 className="text-2xl mt-10 mb-3">Width and Height of an Element</h1>
       <p>Without understanding the box model, you may face issues when trying to set width and height accurately in different browsers.</p>
        <h1 className="text-2xl mt-2 mb-2">Example</h1>
        <p>This {'<div>'} will measure 350px in width and 80px in height overall.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`div {
   width: 320px;
   height: 50px;
   padding: 10px;
   border: 5px solid gray;
   margin: 0;
-}`}
+  }`}
+  </code>
        </pre>
 
 

@@ -983,7 +983,7 @@ const CssReference = () => {
               <b>Values:</b> {ref.values}
             </p>
             <p className="text-gray-700 mt-1">{ref.description}</p>
-            <pre className="bg-black text-green-400 p-2 rounded-lg mt-2 text-sm overflow-x-auto">
+            <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5overflow-x-auto max-w-full whitespace-pre-wrap">
               {ref.example}
             </pre>
           </div>

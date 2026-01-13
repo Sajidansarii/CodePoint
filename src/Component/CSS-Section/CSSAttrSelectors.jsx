@@ -8,7 +8,7 @@ const CssAttrSelectors = () => {
       </p>
       <p>As below you can see how to select an HTML element based on attribute in CSS.</p>
 
-        <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5">
+        <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg mt-5">
           <pre>
             <code>
               {`       a[href]{
@@ -23,7 +23,7 @@ const CssAttrSelectors = () => {
         <p>The [attribute="value"] selector is used to select elements with a specific attribute with an exact value.</p>
         <p>The following example selects all {'<a>'} elements with a target="_blank" attribute:</p>
 
-        <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-3">
+        <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg mt-3">
           <pre>
             <code>
               {`          a[target="_blank"]{
@@ -48,7 +48,7 @@ const CssAttrSelectors = () => {
       </div>
 
       CSS
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
+      <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
         <pre>
           <code>
             {`

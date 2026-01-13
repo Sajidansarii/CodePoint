@@ -74,7 +74,7 @@ const CssSnippets = () => {
               {snippet.title}
             </h2>
 
-            <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto">
+            <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
               <code>{snippet.code}</code>
             </pre>
 

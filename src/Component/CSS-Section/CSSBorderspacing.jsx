@@ -14,13 +14,13 @@ const CSSBorderSpacing = () => {
       </p>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Syntax</h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`table {
   border-spacing: length | length length;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <p className="text-gray-700 mb-4">
         - If one value is given → applies to both horizontal and vertical
@@ -33,15 +33,15 @@ const CSSBorderSpacing = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 1: Equal Spacing
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`table {
   border: 2px solid black;
   border-collapse: separate;
   border-spacing: 20px;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
       <table className="border-2 border-black border-separate border-spacing-5 mb-6">
         <thead>
           <tr>
@@ -65,15 +65,15 @@ const CSSBorderSpacing = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 2: Different Horizontal & Vertical Spacing
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`table {
   border: 2px solid black;
   border-collapse: separate;
   border-spacing: 30px 10px;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
       <table className="border-2 border-black border-separate border-spacing-x-8 border-spacing-y-2 mb-6">
         <thead>
           <tr>

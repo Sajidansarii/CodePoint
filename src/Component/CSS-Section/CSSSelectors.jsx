@@ -133,12 +133,6 @@ const CssSelectors = () => {
 
 
 
-
-
-
-
-
-
       {/* Selectors List */}
       <div className="grid mt-10 md:grid-cols-2 gap-6">
         {selectors.map((item, index) => (
@@ -150,8 +144,10 @@ const CssSelectors = () => {
               {item.selector}
             </h3>
             <p className="text-gray-700 mt-1">{item.description}</p>
-            <pre className="bg-black text-green-400 p-2 rounded-lg mt-2 text-sm overflow-x-auto">
+            <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+              <code>
               {item.example}
+              </code>
             </pre>
           </div>
         ))}
@@ -160,20 +156,24 @@ const CssSelectors = () => {
       {/* Example Usage */}
       <div className="mt-8 bg-gray-100 p-4 rounded-lg">
         <h3 className="text-lg font-semibold mb-2">Example Usage:</h3>
-        <pre className="bg-black text-green-400 p-3 rounded-lg text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`<div id="main">
   <h1 class="highlight">Hello CSS</h1>
   <p>This is a paragraph.</p>
   <a href="#">Hover over me</a>
-</div>`}
+  </div>`}
+  </code>
         </pre>
 
-        <pre className="bg-black text-green-400 p-3 rounded-lg text-sm mt-3 overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">\
+          <code>
 {`* { margin: 0; padding: 0; }
 p { color: blue; }
 .highlight { background-color: yellow; }
 #main { border: 2px solid red; }
 a:hover { color: green; }`}
+</code>
         </pre>
       </div>
 

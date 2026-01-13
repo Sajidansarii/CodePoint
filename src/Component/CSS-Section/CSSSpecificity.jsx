@@ -26,47 +26,47 @@ const CssSpecificity = () => {
         <li><strong>Inline Styles:</strong> Styles defined directly on an element using the style attribute have the highest priority in the cascade, overriding
         <pre>           both ID and class selectors.</pre></li>
       
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
           {`<h1 style="color: blue;"> Example </h1>`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
      
       <li className="mt-5m"><strong>ID selectors:</strong> have higher specificity than class, type, and other basic selectors, giving them greater priority when multiple rules apply to the same element.</li>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
           {`<style>
    #mainDiv {
         color: blue;
     }
 </style>`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <li><strong>Class selectors, attribute selectors, and pseudo-classes:</strong> Come next in the specificity hierarchy after ID selectors.<br/> Class selectors begin with a ., attribute selectors use square brackets [], and pseudo-classes are prefixed with a : <br/> (such as :hover or :first-child).</li>
 
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
           {`<style>
    .subDivs {
         color: blue;
     }
 </style>`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
     <li><strong>Elements and Pseudo-elements:</strong> Element selectors and pseudo-elements have the lowest specificity. Element selectors target HTML tags directly (e.g., div, p), while pseudo-elements are prefixed with :: (such as ::before or ::after).</li>
 
-    <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
-      <pre>
+    <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+      <code>
         {`<style>
     div {
         color: blue;
     }
 </style>`}
-      </pre>
-    </div>
+      </code>
+    </pre>
 
     <h1>How to Calculate Specificity?</h1>
     <p>To calculate specificity, it's helpful to remember these values:</p>

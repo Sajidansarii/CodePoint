@@ -23,11 +23,13 @@ const ImageStylingTutorial = () => {
         </div>
         <h1 className="text-2xl mt-5">Example</h1>
         <p className="mt-2">Using border-radius you can make rounded corners or even a circular image.</p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`img {
   border-radius: 8px; 
-}
-`}
+  }
+  `}
+  </code>
         </pre>
       </div>
 
@@ -44,11 +46,14 @@ const ImageStylingTutorial = () => {
         </div>
         <h1 className="text-2xl mt-5">Example</h1>
         <p className="mt-3">The <code>border</code> property adds outline around an image.</p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
+
 {`img {
   border: 5px solid blue;
   border-radius: 10px;
-}`}
+  }`}
+  </code>
         </pre>
       </div>
 
@@ -65,10 +70,12 @@ const ImageStylingTutorial = () => {
         </div>
         <h1 className="text-2xl mt-5">Example</h1>
         <p className="mt-3">The <code>box-shadow</code> property adds depth to the image.</p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
 {`img {
   box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
-}`}
+  }`}
+  </code>
         </pre>
       </div>
 
@@ -87,14 +94,16 @@ const ImageStylingTutorial = () => {
         <p className="mt-3">With <code>opacity</code> you can make an image transparent. 
         Hover effects can make it fully visible when user interacts.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`img {
   opacity: 0.6;
-}
-
-img:hover {
-  opacity: 1;
-}`}
+  }
+  
+  img:hover {
+    opacity: 1;
+    }`}
+    </code>
         </pre>
       </div>
 
@@ -113,14 +122,16 @@ img:hover {
         <p className=" mt-3">
           Using <code>transform</code> with <code>:hover</code>, you can create zoom effects on images.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`img {
   transition: transform 0.3s ease;
-}
-
-img:hover {
-  transform: scale(1.1);
-}`}
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+    }`}
+    </code>
         </pre>
       </div>
     </div>

@@ -46,7 +46,7 @@ const CssAuralMedia = () => {
       <p>The following illustrates a basic aural style sheet:</p>
 
         <h2 className="text-xl font-semibold mb-2">Syntax</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
           <code>
 {`@media aural {
   h1 {
@@ -65,7 +65,7 @@ const CssAuralMedia = () => {
         <h2 className="text-xl font-semibold">Example: Aural Media Query</h2>
         <p className="text-gray-700">Below is an example where the aural media type defines a different style for screen readers:</p>
         
-        <pre className="bg-gray-900 text-green-400 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>
 {`@media speech {
   h1 {

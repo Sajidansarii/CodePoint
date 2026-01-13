@@ -34,7 +34,8 @@ const CssDropdowns = () => {
         </div>
       </div>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mt-4">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
 {`/* CSS Example */
 .dropdown {
   position: relative;
@@ -47,11 +48,12 @@ const CssDropdowns = () => {
   background-color: #fff;
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}`}
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    }`}
+    </code>
       </pre>
 
       {/* Click Dropdown */}
@@ -75,16 +77,18 @@ const CssDropdowns = () => {
         </div>
       </details>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mt-4">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <code>
 {`/* Using HTML <details> and <summary> */
 <details>
-  <summary>Click Me</summary>
-  <div class="dropdown-content">
-    <a href="#">Profile</a>
-    <a href="#">Settings</a>
-    <a href="#">Logout</a>
-  </div>
+<summary>Click Me</summary>
+<div class="dropdown-content">
+<a href="#">Profile</a>
+<a href="#">Settings</a>
+<a href="#">Logout</a>
+</div>
 </details>`}
+</code>
       </pre>
 
       {/* Navbar Dropdown */}
@@ -107,27 +111,29 @@ const CssDropdowns = () => {
         </ul>
       </nav>
 
-      <pre className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto mt-4">
+      <pre className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto mt-5">
+        <code>
 {`.navbar ul {
   list-style: none;
   display: flex;
-}
-
-.navbar li {
-  position: relative;
-  margin-right: 20px;
-}
-
-.navbar li:hover ul {
-  display: block;
-}
-
-.navbar ul ul {
-  display: none;
-  position: absolute;
-  background: #fff;
-  color: #000;
-}`}
+  }
+  
+  .navbar li {
+    position: relative;
+    margin-right: 20px;
+    }
+    
+    .navbar li:hover ul {
+      display: block;
+      }
+      
+      .navbar ul ul {
+        display: none;
+        position: absolute;
+        background: #fff;
+        color: #000;
+        }`}
+        </code>
       </pre>
 
       {/* Notes */}

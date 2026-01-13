@@ -43,8 +43,8 @@ const CSSSelectors = () => {
 
       <h2 className="text-xl font-semibold  mb-2">Examples</h2>
 
-      <div className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto mb-6 text-sm">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`/* Universal Selector */
 * {
   margin: 0;
@@ -81,8 +81,8 @@ div p {
 input[type="text"] {
   border: 1px solid black;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Explanation</h2>
       <ul className="list-disc list-inside text-gray-700">

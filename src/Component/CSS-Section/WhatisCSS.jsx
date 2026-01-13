@@ -37,8 +37,8 @@ const WhatIsCSS = () => {
       </ul>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Example:</h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mb-6 text-sm">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`<!DOCTYPE html>
 <html>
 <head>
@@ -64,8 +64,8 @@ const WhatIsCSS = () => {
   <p>This page is styled with CSS.</p>
 </body>
 </html>`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <p className="text-gray-700">
         ✅ <strong>Tip:</strong> CSS can be applied in three ways:{" "}

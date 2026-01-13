@@ -20,10 +20,12 @@ const CSSFlexboxContainer = () => {
           <div className="bg-red-600 px-4 py-2">Item 3</div>
         </div>
 
-        <pre className="text-green-400 bg-gray-900 rounded-lg p-4">
+        <pre className="text-green-400 bg-gray-900 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
           {`.flex-container {
   display: flex;
-}`}
+  }`}
+  </code>
         </pre>
 
         <h1 className="text-2xl">CSS flex-direction Property</h1>
@@ -38,11 +40,13 @@ const CSSFlexboxContainer = () => {
 
         <h1 className="text-2xl">Example</h1>
         <p>Flex items are arranged left to right in a horizontal line when using the default row value.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
           {`.flex-container {
   display: flex;
   flex-direction: row;
-}`}
+  }`}
+  </code>
         </pre>
         
         <div className="border-2 border-black h-20 flex flex-row justify-around items-center mt-6">
@@ -53,11 +57,13 @@ const CSSFlexboxContainer = () => {
          
          <h1 className="text-2xl">Example</h1>
         <p>The column value arranges flex items vertically, from top to bottom.</p>
-        <pre className="bg-gray-900 text-green-400 rounded-lg p-4">
+        <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
           {`.flex-container {
   display: flex;
   flex-direction: column;
-}`}
+  }`}
+  </code>
         </pre>
         <div className="border-2 border-black h-52 flex flex-col justify-around items-center mt-6">
           <div className="bg-red-400 px-4 py-2">Item 1</div>
@@ -67,11 +73,13 @@ const CSSFlexboxContainer = () => {
 
         <h1 className="text-2xl">Example</h1>
         <p>The row-reverse value arranges flex items horizontally, but in reverse order—from right to left.</p>
-        <pre className="text-green-400 bg-gray-900 rounded-lg p-4">
+        <pre className="text-green-400 bg-gray-900 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
           {`.flex-container {
   display: flex;
   flex-direction: row-reverse;
-}`}
+  }`}
+  </code>
         </pre>
 
        <div className="border-2 border-black h-52 flex flex-row-reverse justify-around items-center mt-6">
@@ -82,11 +90,13 @@ const CSSFlexboxContainer = () => {
 
         <h1 className="text-2xl">Example</h1>
         <p>The column-reverse value arranges flex items vertically, starting from the bottom and moving up.</p>
-        <pre className="text-green-400 bg-gray-900 rounded-lg p-4">
+        <pre className="text-green-400 bg-gray-900 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
           {`.flex-container {
   display: flex;
   flex-direction: column-reverse;
-}`}
+  }`}
+  </code>
         </pre>
 
         <div className="border-2 border-black h-52 flex flex-col-reverse justify-around items-center mt-6">
@@ -106,11 +116,13 @@ const CSSFlexboxContainer = () => {
 
         <h1 className="text-2xl">Example</h1>
         <p>The nowrap value prevents flex items from wrapping; they will stay on a single line. This is the default behavior.</p>
-        <pre className="text-green-400 bg-gray-900 rounded-lg p-4">
+        <pre className="text-green-400 bg-gray-900 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
           {`.flex-container {
   display: flex;
   flex-wrap: nowrap;
-}`}
+  }`}
+  </code>
         </pre>
 
         <div className="border-2 border-black h-20 flex flex-nowrap justify-around items-center mt-6">
@@ -124,11 +136,13 @@ const CSSFlexboxContainer = () => {
 
         <h1 className="text-2xl">Example</h1>
         <h1>The wrap value allows flex items to move onto a new line when there isn’t enough space.</h1>
-        <pre className="text-green-400 bg-gray-900 rounded-lg p-4">
+        <pre className="text-green-400 bg-gray-900 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
           {`.flex-container {
   display: flex;
   flex-wrap: wrap;
-}`}
+  }`}
+  </code>
         </pre>
 
         <div className="border-2 border-black h-40 w-2/3  flex flex-wrap justify-around items-center mt-6">
@@ -149,11 +163,13 @@ const CSSFlexboxContainer = () => {
 
         <h1 className="text-2xl">Example</h1>
         <p>The wrap-reverse value lets flex items wrap onto multiple lines when needed, but in the opposite direction.</p>
-        <pre className="text-green-400 bg-gray-900 rounded-lg p-4">
+        <pre className="text-green-400 bg-gray-900 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
           {`.flex-container {
   display: flex;
   flex-wrap: wrap-reverse;
-}`}
+  }`}
+  </code>
         </pre>
 
         <div className="border-2 border-black h-40 w-2/3  flex flex-wrap-reverse justify-around items-center mt-6">
@@ -179,7 +195,8 @@ const CSSFlexboxContainer = () => {
       <div>
         <h2 className="text-xl font-semibold text-gray-800">Example: Flex Container</h2>
 
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2 overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`/* Container ko flex banaya */
 .container {
   display: flex;        /* Flexbox activate */
@@ -188,17 +205,16 @@ const CSSFlexboxContainer = () => {
   align-items: center;  /* Vertical alignment */
   border: 2px solid black;
   height: 150px;
-}
-
-.item {
-  background: lightcoral;
-  padding: 20px;
-  color: white;
-  font-weight: bold;
-}`}
+  }
+  
+  .item {
+    background: lightcoral;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    }`}
+    </code>
         </pre>
-
-        
       </div>
 
       {/* Explanation */}

@@ -246,7 +246,7 @@ export default function CssAnimationProperties() {
       <p>Animatable properties can transition smoothly from one value to another, such as size, numbers, percentages, and colors.</p>
       <h1 className="text-2xl mt-10">Example</h1>
       <p>Animate a smooth change in background-color, going from red to blue.</p>
-      <pre className="bg-gray-900 p-4 text-green-400 rounded-lg mt-4">
+      <pre className="bg-gray-900 p-4 text-green-400 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-4">
         {`@keyframes mymove {
    from {background-color: red;}
 }  to {background-color: blue;}
@@ -287,7 +287,7 @@ export default function CssAnimationProperties() {
             <h2 className="text-xl font-semibold text-gray-800 mb-2">
               {prop.name}
             </h2>
-            <pre className="bg-gray-900 text-green-400 text-sm p-3 rounded-md mb-3 overflow-x-auto">
+            <pre className="bg-gray-900 text-green-400 text-sm p-3 rounded-lg mb-3overflow-x-auto max-w-full whitespace-pre-wrap">
               <code>{prop.code}</code>
             </pre>
             <p>{prop.explanation}</p>

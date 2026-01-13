@@ -415,14 +415,14 @@ const CssBrowserSupport = () => {
 
 
       {/* Example */}
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-6">
-<pre>{`/* Browser Prefix Example */
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-6">
+<code>{`/* Browser Prefix Example */
 .my-box {
   -webkit-border-radius: 10px; /* Safari, iOS */
   -moz-border-radius: 10px;    /* Firefox */
   border-radius: 10px;         /* Standard */
-}`}</pre>
-      </div>
+}`}</code>
+      </pre>
 
       {/* Support Table */}
       <h3 className="text-2xl font-semibold mb-3">Common Browser Prefixes</h3>

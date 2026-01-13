@@ -20,24 +20,27 @@ const CSSBorderRadius = () => {
         <h2 className="text-2xl mb-3">Example: Border-Radius</h2>
         <p className="mb-4">In the examples given below, different border-radius values have been used.</p>
 
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2 overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-3 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
+
 {`/* Simple rounded corners */
 div {
   border: 2px solid black;
   border-radius: 15px;
-}
-
-/* Circle shape */
-div {
-  border: 2px solid black;
-  border-radius: 50%;
-}
-
-/* Elliptical radius */
-div {
-  border: 2px solid black;
-  border-radius: 50px 15px;
-}`}
+  }
+  
+  /* Circle shape */
+  div {
+    border: 2px solid black;
+    border-radius: 50%;
+    }
+    
+    /* Elliptical radius */
+    div {
+      border: 2px solid black;
+      border-radius: 50px 15px;
+      }`}
+      </code>
         </pre>
 
         {/* Live Demo */}
@@ -90,32 +93,37 @@ div {
 
       <h1 className="text-2xl">Example</h1>
       <p>Create an element with a background color and smooth, rounded corners.</p>
-      <pre className="text-green-400 bg-black rounded-lg p-4">
+      <pre className="text-green-400 bg-black rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap"> 
+        <code>
         {`#rcorners1 {
   border-radius: 25px;
   background: #73AD21;
   padding: 20px;
   width: 200px;
   height: 150px;
-}`}
+  }`}
+  </code>
       </pre>
 
       <h1 className="text-2xl">Example</h1>
       <p>Create an element with smooth, curved corners and a visible border.</p>
-      <pre className="text-green-400 bg-black rounded-lg p-4">
+      <pre className="text-green-400 bg-black rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`#rcorners2 {
   border-radius: 25px;
   border: 2px solid #73AD21;
   padding: 20px;
   width: 200px;
   height: 150px;
-}
-`}
+  }
+  `}
+  </code>
       </pre>
 
       <h1 className="text-2xl">Example</h1>
       <p>Create an element with a background image and apply corner rounding.</p>
-      <pre className="text-green-400 bg-black rounded-lg p-4">
+      <pre className="text-green-400 bg-black rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`#rcorners3 {
   border-radius: 25px;
   background: url(paper.gif);
@@ -124,7 +132,8 @@ div {
   padding: 20px;
   width: 200px;
   height: 150px;
-}`}
+  }`}
+  </code>
       </pre>
 
 

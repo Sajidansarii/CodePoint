@@ -26,7 +26,7 @@ const CssLoaderDemo = () => {
       <h1 className="text-2xl">Example</h1>
       <p>Here’s an example of a CSS loader, similar to the loading animations you’ve probably encountered on many sites.</p>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
         <h3 className="font-semibold mt-0">CSS Code:</h3>
           <code>
 {`/* Spinning Loader CSS */
@@ -61,7 +61,7 @@ const CssLoaderDemo = () => {
         </p>
       </div>
 
-       <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
+       <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
         <h3 className="font-semibold mt-2">CSS Code:</h3>
         <code>
 {`/* Bouncing Dots CSS */

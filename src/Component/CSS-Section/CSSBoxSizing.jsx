@@ -42,25 +42,27 @@ const CssBoxSizing = () => {
         <h2 className="text-2xl font-semibold">Box-Sizing Example</h2>
 
         {/* CSS Code */}
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 text-green-300 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`/* CSS Box-Sizing Example */
 .box {
   width: 300px;
   padding: 20px;
   border: 5px solid #4CAF50;
   margin: 10px 0;
-}
-
-/* Default - Content Box */
-.content-box {
-  box-sizing: content-box; /* default */
-}
-
-/* Border Box */
-.border-box {
-  box-sizing: border-box;
-}
-`}
+  }
+  
+  /* Default - Content Box */
+  .content-box {
+    box-sizing: content-box; /* default */
+    }
+    
+    /* Border Box */
+    .border-box {
+      box-sizing: border-box;
+      }
+      `}
+      </code>
         </pre>
 
         {/* Live Demo */}
@@ -82,10 +84,12 @@ const CssBoxSizing = () => {
       <p>Globally applying this ensures consistent box sizing and avoids unexpected layout behavior.</p>
 
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+      <pre className="bg-gray-900 text-green-300 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`* {
   box-sizing: border-box;
 }`}
+  </code>
       </pre>
 
       <h1 className="text-2xl">Without the CSS box-sizing Property</h1>
@@ -96,19 +100,21 @@ const CssBoxSizing = () => {
      <p>The diagram below displays two {'<div>'} elements, each assigned the same width and height properties.</p>
      <p>The two {'<div>'} elements appear different in size because div2 has padding, which increases its overall dimensions.</p>
      <h1 className="text-2xl">Example</h1>
-     <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+     <pre className="bg-gray-900 text-green-300 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
       {`.div1 {
   width: 300px;
   height: 100px;
   border: 1px solid blue;
-}
-
-.div2 {
-  width: 300px;
-  height: 100px;
-  padding: 50px;
-  border: 1px solid red;
-}`}
+  }
+  
+  .div2 {
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    border: 1px solid red;
+    }`}
+    </code>
      </pre>
 
      <div className="w-300px h-100px border border-blue-500">This is div1</div>

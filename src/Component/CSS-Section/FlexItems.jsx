@@ -19,13 +19,15 @@ const CSSFlexItems = () => {
       </div>
       <p>The layout above consists of a grey flex container with four blue items inside.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="text-green-400 bg-gray-900 rounded-lg p-4">
+      <pre className="text-green-400 bg-gray-900 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`<div class="flex-container">
   <div>1</div>
   <div>2</div>
   <div>3</div>
   <div>4</div>
-</div>`}
+  </div>`}
+  </code>
       </pre>
 
       <h1 className="text-2xl">CSS order Property</h1>
@@ -42,13 +44,15 @@ const CSSFlexItems = () => {
 
     <h1 className="text-2xl">Example</h1>
     <p>With the order property, you can change the layout order of items without altering the markup.</p>
-    <pre className="text-green-400 bg-black rounded-lg p-4">
-      {`<div class="flex-container">
+    <pre className="text-green-400 bg-gray-900 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
+   {`<div class="flex-container">
   <div style="order: 3">1</div>
   <div style="order: 2">2</div>
   <div style="order: 4">3</div>
   <div style="order: 1">4</div>
-</div>`}
+  </div>`}
+  </code>
     </pre>
 
     <h1 className="text-2xl">CSS flex-grow Property</h1>
@@ -61,12 +65,14 @@ const CSSFlexItems = () => {
      <p>This property accepts a numeric value, with a default of 0.</p>
      <h1 className="text-2xl">Example</h1>
      <p>The third flex item should grow eight times faster compared to its siblings.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
       {`<div class="flex-container">
   <div style="flex-grow: 1">1</div>
   <div style="flex-grow: 1">2</div>
   <div style="flex-grow: 8">3</div>
-</div>`}
+  </div>`}
+  </code>
      </pre>
 
      <h1 className="text-2xl">CSS flex-shrink Property</h1>
@@ -86,7 +92,8 @@ const CSSFlexItems = () => {
      <p>The default value is 1, and the value must be a number.</p>
      <h1 className="text-2xl">Example</h1>
      <p>The third flex item should shrink less than the other items.</p>
-     <pre className="text-green-400 bg-black p-4 rounded-lg">
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
       {`<div class="flex-container">
   <div>1</div>
   <div>2</div>
@@ -98,7 +105,8 @@ const CSSFlexItems = () => {
   <div>8</div>
   <div>9</div>
   <div>10</div>
-</div>`}
+  </div>`}
+  </code>
      </pre>
 
      <h1 className="text-2xl">CSS flex-basis Property</h1>
@@ -112,28 +120,32 @@ const CSSFlexItems = () => {
 
      <h1 className="text-2xl">Example</h1>
      <p>Set the flex-basis of the third item to 200 pixels.</p>
-     <pre className="text-green-400 bg-black p-4 rounded-lg">
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
       {`<div class="flex-container">
   <div>1</div>
   <div>2</div>
   <div style="flex-basis: 200px">3</div>
   <div>4</div>
-</div>
-
-`}
+  </div>
+  
+  `}
+  </code>
      </pre>
 
      <h1 className="text-2xl">CSS flex Property</h1>
      <p>The flex property is a shorthand for flex-grow, flex-shrink, and flex-basis.</p>
      <h1 className="text-2xl">Example</h1>
      <p>Make the third flex item fixed at 200px by setting flex-grow and flex-shrink to 0.</p>
-     <pre className="text-green-400 bg-black p-4 rounded-lg">
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
       {`<div class="flex-container">
   <div>1</div>
   <div>2</div>
   <div style="flex: 0 0 200px">3</div>
   <div>4</div>
-</div>`}
+  </div>`}
+  </code>
      </pre>
 
      <h1 className="text-2xl">CSS align-self Property</h1>
@@ -149,24 +161,28 @@ const CSSFlexItems = () => {
      <p>These examples use a container with a height of 200 pixels to clearly show how the align-self property works.</p>
      <h1 className="text-2xl">Example</h1>
      <p>Align the third flex item in the middle of the container:</p>
-     <pre className="text-green-400 bg-black p-4 rounded-lg">
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
       {`<div class="flex-container">
   <div>1</div>
   <div>2</div>
   <div style="align-self: center">3</div>
   <div>4</div>
-</div>`}
+  </div>`}
+  </code>
      </pre>
 
      <h1 className="text-2xl">Example</h1>
      <p>Align the second item to the container’s top and the third item to its bottom.</p>
-    <pre className="text-green-400 bg-black p-4 rounded-lg">
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
       {`<div class="flex-container">
   <div>1</div>
   <div style="align-self: flex-start">2</div>
   <div style="align-self: flex-end">3</div>
   <div>4</div>
-</div>`}
+  </div>`}
+  </code>
     </pre>
 
 
@@ -174,7 +190,8 @@ const CSSFlexItems = () => {
       <div>
         <h2 className="text-xl font-semibold text-gray-800">Example: Flex Items</h2>
 
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2 overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`/* Flex Container */
 .container {
   display: flex;
@@ -186,15 +203,16 @@ const CSSFlexItems = () => {
 .item1 {
   flex: 1;
   background: lightcoral;
-}
-.item2 {
-  flex: 2;
-  background: lightseagreen;
+  }
+  .item2 {
+    flex: 2;
+    background: lightseagreen;
 }
 .item3 {
   flex: 1;   
   background: lightskyblue;
-}`}
+  }`}
+  </code>
         </pre>
 
         {/* Live Demo */}

@@ -93,20 +93,24 @@ const CssColorValues = () => {
     
     <h1 className="text-2xl mb-2">Example</h1>
     <p>List various HEX color codes:</p>
-    <pre className="bg-gray-900 mt-3 text-green-400 p-4 rounded-lg">
+    <pre className="bg-gray-900 mt-r5 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
 {`#p1 {background-color: #ff0000;}   /* red */
 #p2 {background-color: #00ff00;}   /* green */
 #p3 {background-color: #0000ff;}   /* blue */`}
+</code>
     </pre>
 
     <h1 className="text-2xl mt-10 mb-2">Hexadecimal Colors With Transparency</h1>
     <p>A hexadecimal color is written as #RRGGBB. To include transparency, add two extra digits representing the alpha value, ranging from 00 to FF.</p>
     <h1 className="text-2xl mt-5">Example</h1>
     <p>Specify various HEX colors including transparency:</p>
-    <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-3">
+    <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
       {`#p1a {background-color: #ff000080;}   /* red transparency */
 #p2a {background-color: #00ff0080;}   /* green transparency */
 #p3a {background-color: #0000ff80;}   /* blue transparency */`}
+</code>
     </pre>
 
     <h1 className="text-2xl mt-10">RGB Colors</h1>
@@ -117,10 +121,12 @@ const CssColorValues = () => {
     <p className="mt-3">The following values produce the same color: rgb(0, 0, 255) and rgb(0%, 0%, 100%).</p>
     <h1 className="text-2xl mt-4">Example</h1>
     <p>List various RGB color values:</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-3">
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
       {`#p1 {background-color: rgb(255, 0, 0);}   /* red */
 #p2 {background-color: rgb(0, 255, 0);}   /* green */
 #p3 {background-color: rgb(0, 0, 255);}   /* blue */`}
+</code>
     </pre>
 
     <h1 className="text-2xl mt-10">RGBA Colors</h1>
@@ -130,11 +136,13 @@ const CssColorValues = () => {
     <p className="mt-3">The alpha value ranges from 0.0 (completely transparent) to 1.0 (completely opaque).</p>
     <h1 className="text-2xl mt-5">Example</h1>
     <p className="mt-3">List various RGBA color values with different opacity levels:</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
       {`#p1 {background-color: rgba(255, 0, 0, 0.3);}   /* red with opacity */
 #p2 {background-color: rgba(0, 255, 0, 0.3);}   /* green with opacity */
 #p3 {background-color: rgba(0, 0, 255, 0.3);}   /* blue with opacity */
 `}
+</code>
     </pre>
 
     <h1 className="text-2xl mt-10">HSL Colors</h1>
@@ -144,11 +152,13 @@ const CssColorValues = () => {
     <p className="mt-3">Hue represents a position on the color wheel measured in degrees from 0 to 360, where 0 (or 360) corresponds to red, 120 to green, and 240 to blue. Saturation is given as a percentage, with 0% producing a gray tone and 100% showing the full color. Lightness is also expressed as a percentage, where 0% is black and 100% is white.</p>
     <h1 className="text-2xl mt-5">Example</h1>
     <p className="mt-3 mb-5">List various HSL color values:</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
       {`#p1 {background-color: hsl(120, 100%, 50%);}   /* green */
 #p2 {background-color: hsl(120, 100%, 75%);}   /* light green */
 #p3 {background-color: hsl(120, 100%, 25%);}   /* dark green */
 #p4 {background-color: hsl(120, 60%, 70%);}    /* pastel green */`}
+</code>
     </pre>
 
     <h1 className="text-2xl mt-10">HSLA Colors</h1>
@@ -158,11 +168,13 @@ const CssColorValues = () => {
     <p className="mt-3">The alpha value ranges from 0.0 (completely transparent) to 1.0 (completely opaque).</p>
     <h1 className="text-2xl mt-5">Example</h1>
     <p className="mt-3 mb-5">List various HSLA color values with different opacity levels:</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
       {`#p1 {background-color: hsla(120, 100%, 50%, 0.3);}   /* green with opacity */
 #p2 {background-color: hsla(120, 100%, 75%, 0.3);}   /* light green with opacity */
 #p3 {background-color: hsla(120, 100%, 25%, 0.3);}   /* dark green with opacity */
 #p4 {background-color: hsla(120, 60%, 70%, 0.3);}    /* pastel green with opacity */`}
+</code>
     </pre>
 
     <h1 className="text-2xl mt-10">Predefined/Cross-browser Color Names</h1>
@@ -170,19 +182,21 @@ const CssColorValues = () => {
     <p className="mt-3">For example: <span className="text-red-400 bg-gray-50 px-1">blue, red, coral, brown,</span> etc:</p>
     <h1 className="text-2xl mt-5">Example</h1>
     <p className="mt-3 mb-5">List various predefined color names:</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
       {`#p1 {background-color: blue;}
 #p2 {background-color: red;}
 #p3 {background-color: coral;}
 #p4 {background-color: brown;}
 `}
+</code>
     </pre>
 
     <h1 className="text-2xl mt-10">The currentcolor Keyword</h1>
     <p className="mt-3">The <span className="text-red bg-gray-50 px-1">currentcolor</span> keyword refers to the value of the color property of an element.</p>
     <h1 className="text-2xl mt-3">Example</h1>
     <p className="mb-5 mt-3">The border color of the following {'<div>'} element will appear blue since its text color is set to blue.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
       {`#myDIV {
   color: blue; /* Blue text color */
   border: 10px solid currentcolor; /* Blue border color */

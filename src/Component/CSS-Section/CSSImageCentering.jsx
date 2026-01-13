@@ -26,12 +26,14 @@ const ImageCenteringTutorial = () => {
         </div>
     <h1 className="text-2xl">Example</h1>
     <p>Horizontally centered image using margin: auto:</p>
-    <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
+    <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
       {`img {
   display: block;
   margin: auto;
   width: 50%;
-}`}
+  }`}
+  </code>
     </pre>
 
 
@@ -53,14 +55,16 @@ const ImageCenteringTutorial = () => {
           By applying <code>text-align: center;</code> to the parent element, the inline 
           image will be horizontally centered.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`.container {
   text-align: center;
-}
-
-img {
-  display: inline-block;
-}`}
+  }
+  
+  img {
+    display: inline-block;
+    }`}
+    </code>
         </pre>
       </div>
 
@@ -85,16 +89,18 @@ img {
         </div>         
         <h1 className="text-2xl">Example</h1>
         <p>Horizontally centered image using display: flex:</p>
-        <pre className="text-green-400 bg-gray-900 rounded-lg p-4">
+        <pre className="text-green-400 bg-gray-900 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
           {`div {
   display: flex;
   justify-content: center;
-}
-
-img {
-  width: 320px;
-  height 320px;
-}`}
+  }
+  
+  img {
+    width: 320px;
+    height 320px;
+    }`}
+    </code>
         </pre>
         </div>
 
@@ -124,19 +130,21 @@ img {
         </div>
         <h1 className="text-2xl">Example</h1>
         <p>True centering using display: flex:</p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`div {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 600px;
   border: 1px solid black;
-}
-
-img {
-  width: 320px;
+  }
+  
+  img {
+    width: 320px;
   height: 320px;
-}`}
+  }`}
+  </code>
         </pre>
       </div>
 
@@ -153,22 +161,24 @@ img {
         <p>This example shows an image perfectly centered in both directions using Grid layout.</p>
        <div className="border p-4 bg-gray-100 grid place-items-center h-[600px]">
         <img src="https://cloudinary-marketing-res.cloudinary.com/image/upload/w_1300/q_auto/f_auto/hiking_dog_mountain" alt="centered wib th grid" 
-        className="h-80 w-80"/>
+        className="h-80 w-80"/> 
        </div>
-       <h1 className="text-2xl">Example</h1>
+       <h1 className="text-2xl">Example </h1>
        <p>Using Grid for true vertical and horizontal centering</p>
-       <pre className="text-green-400 bg-gray-900 rounded-lg p-4">
+       <pre className="text-green-400 bg-gray-900 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`div {
   display: grid;
   place-items: center;
   height: 600px;
   border: 1px solid black;
-}
-
-img {
+  }
+  
+  img {
   width: 320px;
   height:320px;
-}`}
+  }`}
+  </code>
        </pre>
       </div>
         </div>

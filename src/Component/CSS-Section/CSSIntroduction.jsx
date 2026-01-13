@@ -30,8 +30,8 @@ const CSSIntroduction = () => {
         selectors and properties.
       </p>
 
-      <div className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto mb-6 text-sm">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`/* Example CSS */
 body {
   background-color: #f2f2f2;
@@ -48,8 +48,8 @@ p {
   font-size: 16px;
   text-align: center;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Three Ways to Add CSS

@@ -13,11 +13,11 @@ export default function KeyframesDemo() {
       </h1>
       <p>CSS @keyframes defines animations by mapping styles to specific points in the animation timeline. Each keyframe represents a state at a percentage of the total duration, from 0% to 100%, enabling smooth transitions between styles.</p>
       <h1 className="text-2xl">Syntax</h1>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
           {`@keyframes animation-name {keyframes-selector {css-styles;}}`}
-        </pre>
-      </div>
+        </code>
+      </pre>
       <h1 className="text-2xl">Property Values</h1>
 
       <table className="min-w-full border border-gray-300 rounded-md text-sm text-left mt-10">
@@ -42,8 +42,8 @@ export default function KeyframesDemo() {
        <h1 className="text-2xl">Color Changing Animation using @Keyframe</h1>
        <p>The example below features a @keyframes animation named colorchange, which transitions through keyframes at 0%, 25%, 50%, 75%, and 100%. It animates changes in the background-color, color, and top CSS properties.</p>
        <h1 className="text-2xl">Example</h1>
-       <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
-        <pre>
+       <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
           {`<!DOCTYPE html>
 <html>
 <head>
@@ -87,13 +87,13 @@ export default function KeyframesDemo() {
    </div>
 </body>
 </html>`}
-        </pre>
-       </div>
+        </code>
+       </pre>
        <h1 className="text-2xl">Motion Example using @Keyframes</h1>
        <p>The following example features a @keyframes animation named motion, defined at 0%, 50%, and 100%. It animates horizontal movement by changing the translateX transform property.</p>
        <h1 className="text-2xl">Example</h1>
-       <div className="bg-gray-900 text-green-400 p-4 rounded-lg">
-        <pre>
+       <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
           {`<!DOCTYPE html>
 <html>
 
@@ -158,8 +158,8 @@ export default function KeyframesDemo() {
 </body>
 
 </html>`}
-        </pre>
-       </div>
+        </code>
+       </pre>
     </div>
   );
 }

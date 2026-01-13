@@ -13,8 +13,8 @@ const InternalCSS = () => {
       </p>
 
       <h2 className="text-2xl font-semibold mb-2">Syntax</h2>
-      <div className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto text-sm mb-6">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`<head>
   <style>
     selector {
@@ -22,13 +22,13 @@ const InternalCSS = () => {
     }
   </style>
 </head>`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-2">Example</h2>
       <p className="mb-2">Here is an example of internal CSS:</p>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm mb-6">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`<!DOCTYPE html>
 <html>
 <head>
@@ -49,8 +49,8 @@ const InternalCSS = () => {
   <p>This is a paragraph styled with Internal CSS.</p>
 </body>
 </html>`}
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Output</h2>
       <div className="border p-4 bg-white rounded-lg mb-6">

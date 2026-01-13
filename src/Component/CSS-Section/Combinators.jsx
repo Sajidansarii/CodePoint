@@ -27,7 +27,7 @@ const CssCombinators = () => {
           This combinator enables the selection of elements that are structurally subordinate to a given element, regardless of nesting depth.
         </p>
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
 {`div p {
   background-color: blue;
 }`}
@@ -42,7 +42,7 @@ const CssCombinators = () => {
           <p>The following example demonstrates how to select all {'<p>'} elements that are immediate child nodes of {'<div>'} elements.</p>
 
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
 {`div > p {
   background-color: red;
 }`}
@@ -60,7 +60,7 @@ const CssCombinators = () => {
         <p>In the DOM, sibling elements are defined as elements that share a common parent node.</p>
         <p>In this example, a {'<p>'} element is selected only if it directly succeeds a {'<div>'} within the same parent container.</p>
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
 {`h2 + p {
   background-color: green;
 }`}
@@ -74,7 +74,7 @@ const CssCombinators = () => {
         </p>
         <p>In this example, the selector applies styles to each {'<p>'} element that appears after a {'<div>'} as a sibling within the same parent element.</p>
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
 {`h2 ~ p {
   background-color: purple;
 }`}

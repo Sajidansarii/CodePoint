@@ -77,16 +77,18 @@ const CssMediaQueries = () => {
       <p>Media queries consist of a media type and one or more media features. Each feature is tested, and if the conditions are met (true), the styles are applied.</p>
 
       {/* Syntax Example */}
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm overflow-x-auto text-left">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
 {`@media screen and (max-width: 600px) {
   body {
     background-color: lightblue;
-  }
-}`}
+    }
+    }`}
+    </code>
       </pre>
       <p>By default, the media type is optional and will default to all if left out. However, if your media query includes not or only, then specifying a media type is required.</p>
       <p>Stylesheets can be linked selectively to respond to various media types or viewport widths.</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg max-w-3xl overflow-x-scroll">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`<link rel="stylesheet" media="print" href="print.css">
 <link rel="stylesheet" media="screen" href="screen.css">
@@ -98,7 +100,7 @@ const CssMediaQueries = () => {
       <p>Media queries can be written directly inside your existing stylesheet to apply styles conditionally based on screen size or device type.</p>
       <p>In this case, a media query sets the background to lightgreen at widths of 480px or more, and pink for anything narrower.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`@media screen and (min-width: 480px) {
   body {
@@ -111,7 +113,7 @@ const CssMediaQueries = () => {
       <p>In this example, the menu is positioned to the left side of the page when the viewport is at least 480 pixels wide. For smaller viewports, it shifts above the main content.</p>
 
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`@media screen and (min-width: 480px) {
   #leftsidebar {width: 200px; float: left;}

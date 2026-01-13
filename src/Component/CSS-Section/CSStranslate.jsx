@@ -30,7 +30,7 @@ const TranslateDemo = () => {
 
       <h1 className="text-2xl">Syntax</h1>
       <p>Here’s the syntax you use for the CSS translate property:</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`translate: x-axis y-axis z-axis | none;`}
         </code>
@@ -63,7 +63,7 @@ const TranslateDemo = () => {
       <p>To prevent any movement on any axis, set the translate property to none.</p>
       <h1 className="text-2xl">Example</h1>
       <p>In the example below, translate is set to none, disabling any translation effect on the div box.</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`<html>
 <head>
@@ -95,7 +95,7 @@ const TranslateDemo = () => {
       <p>A single value in the translate property moves an element horizontally, using either a length or percentage.</p>
       <h1 className="text-2xl">Example</h1>
       <p>This example applies a positive length value to the first box and a negative <span className="bg-gray-50 text-red-400 px-2 rounded-md">percentage</span> to the second using the <span className="bg-gray-50 text-red-400 px-2 rounded-md">translate</span> property. As a result, the first box shifts right, while the second moves left along the X-axis.</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`<!DOCTYPE html>
 <html lang="en">
@@ -147,7 +147,7 @@ const TranslateDemo = () => {
       <h1 className="text-2xl">Example</h1>
       <p>In this example, the <span className="text-red-400 bg-gray-50 px-2 rounded-md">translate</span> property is used with a positive length on the first box and a negative percentage on the second. As a result, the first box moves downward, while the second moves upward along the y-axis.</p>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`<!DOCTYPE html>
 <html lang="en">
@@ -198,7 +198,7 @@ const TranslateDemo = () => {
       <p>To move an element along the z-axis, use the translate property with three values, setting the x and y values to <span className="bg-gray-50">0.</span></p>
       <h1 className="text-2xl">Example</h1>
       <p>In this example, we applied a positive length value to the first box and a negative one to the second using the <span className="txet-red-400 bg-gray-50 px-2 rounded-md">translate</span> property. This causes the first box to move closer to the viewer, while the second moves farther away.</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`<!DOCTYPE html>
 <html lang="en">
@@ -251,7 +251,7 @@ const TranslateDemo = () => {
       <h1 className="text-2xl">Example</h1>
       <p>This example shows how translate uses two values to move the box horizontally and vertically.</p>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`<!DOCTYPE html>
 <html lang="en">

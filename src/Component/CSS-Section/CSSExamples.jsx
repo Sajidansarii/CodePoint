@@ -12,14 +12,16 @@ const CSSExamples = () => {
       {/* Example 1 */}
       <div className="mb-8">
         <h2 className="text-2xl mb-2">1. CSS Colors</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mb-10">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+          <code>
 {`p {
   color: red;
-}
-
-h1 {
-  color: blue;
-}`}
+  }
+  
+  h1 {
+    color: blue;
+    }`}
+    </code>
         </pre>
         <p className="mb-2">Output:</p>
         <div className="border p-4 rounded">
@@ -35,11 +37,13 @@ h1 {
       {/* Example 2 */}
       <div className="mb-8">
         <h2 className="text-2xl mb-2">2. CSS Borders</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-10 overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`div {
   border: 2px solid green;
   padding: 10px;
-}`}
+  }`}
+  </code>
         </pre>
         <p className="mb-2">Output:</p>
         <div className="border-2 border-green-600 p-10 rounded">
@@ -54,11 +58,13 @@ h1 {
       {/* Example 3 */}
       <div className="mb-8">
         <h2 className="text-2xl mb-2">3. CSS Background</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-10 overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`div {
   background-color: lightblue;
   padding: 20px;
-}`}
+  }`}
+  </code>
         </pre>
         <p className="mb-2">Output:</p>
         <div className="p-20 rounded bg-[#90D5FF]">
@@ -72,11 +78,13 @@ h1 {
       {/* Example 4 */}
       <div className="mb-8">
         <h2 className="text-2xl mb-2">4. CSS Text</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-10 overflow-x-auto">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`h2 {
   text-align: center;
   text-decoration: underline;
-}`}
+  }`}
+  </code>
         </pre>
         <p className="mb-2">Output:</p>
         <h2 className="text-center underline">This is Underlined Center Text</h2>

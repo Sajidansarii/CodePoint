@@ -39,14 +39,16 @@ const ImageShapesTutorial = () => {
             The <code>circle(50%)</code> function makes the wrapping area circular.
           </p>
         </div>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
 {`img {
   float: left;
   width: 150px;
   height: 150px;
   shape-outside: circle(50%);
   clip-path: circle(50%);
-}`}
+  }`}
+  </code>
         </pre>
       </div>
 
@@ -71,14 +73,16 @@ const ImageShapesTutorial = () => {
             <code>ellipse(50% 40%)</code> creates an ellipse with horizontal and vertical radii.
           </p>
         </div>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`img {
   float: left;
   width: 160px;
   height: 120px;
   shape-outside: ellipse(50% 40%);
   clip-path: ellipse(50% 40%);
-}`}
+  }`}
+  </code>
         </pre>
       </div>
 
@@ -103,14 +107,16 @@ const ImageShapesTutorial = () => {
             <code>polygon()</code> allows you to define multiple points to create complex wrapping areas.
           </p>
         </div>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
 {`img {
   float: left;
   width: 160px;
   height: 160px;
   shape-outside: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
-}`}
+  }`}
+  </code>
         </pre>
       </div>
       <h1 className="text-2xl">CSS Properties and Functions</h1>

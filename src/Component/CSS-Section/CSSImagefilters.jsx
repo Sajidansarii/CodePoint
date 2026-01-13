@@ -26,9 +26,11 @@ const ImageFilterTutorial = () => {
         Filters make images more stylish without editing them in Photoshop.
       </p>
       <h1 className="text-2xl">Syntax</h1>
-      <pre className="text-green-400 bg-gray-900 rounded-lg p-4 w-[750px]">
+      <pre className="text-green-400 bg-gray-900 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() 
         | hue-rotate() | invert() | opacity() | saturate() | sepia() | url();`}
+        </code>
       </pre>
       <h1 className="text-2xl">Property Values</h1>
       <table className="min-w-full border border-gray-300 rounded-md text-sm text-left">
@@ -60,10 +62,12 @@ const ImageFilterTutorial = () => {
         <p className="text-gray-700 mt-2">
           The <code>blur(5px)</code> filter makes the image look blurred by <b>5px</b>.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
 {`img {
   filter: blur(5px);
-}`}
+  }`}
+  </code>
         </pre>
       </div>
 
@@ -79,10 +83,13 @@ const ImageFilterTutorial = () => {
         <p className="text-gray-700 mt-2">
           The <code>grayscale(100%)</code> filter converts the image into black and white.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-3 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
+
 {`img {
   filter: grayscale(100%);
-}`}
+  }`}
+  </code>
         </pre>
       </div>
 
@@ -98,7 +105,7 @@ const ImageFilterTutorial = () => {
         <p className="text-gray-700 mt-2">
           The <code>brightness(150%)</code> filter increases the brightness of the image by 50%.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-3 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
 {`img {
   filter: brightness(150%);
 }`}
@@ -117,7 +124,7 @@ const ImageFilterTutorial = () => {
         <p className="text-gray-700 mt-2">
           The <code>contrast(200%)</code> filter doubles the difference between dark and light areas.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-3 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
 {`img {
   filter: contrast(200%);
 }`}
@@ -137,7 +144,7 @@ const ImageFilterTutorial = () => {
           You can also apply <b>multiple filters together</b> like this example 
           where the image is grayscale, slightly blurred, and brightened.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded mt-2">
+        <pre className="bg-gray-900 text-green-400 p-3 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
 {`img {
   filter: grayscale(80%) blur(2px) brightness(120%);
 }`}

@@ -56,11 +56,13 @@ const CSSGridColumnsRows = () => {
       <p>column-gap adjusts the gap between columns.</p>
       <h1 className="text-2xl mt-5 mb-3">Example</h1>
       <p>Set a 50px gap between grid columns:</p>
-      <pre className="text-green-400 bg-gray-900 rounded-lg p-4 mt-5">
+      <pre className="text-green-400 bg-gray-900 rounded-lg p-4 mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`.container {
   display: grid;
   column-gap: 50px;
-}`}
+  }`}
+  </code>
       </pre>
 
       <div className="border-2 border-black p-4 grid grid-cols-[100px_100px_100px] justify-center gap-3 mt-10">
@@ -78,11 +80,13 @@ const CSSGridColumnsRows = () => {
       <p>row-gap sets the space between grid rows.</p>
       <h1 className="text-2xl mt-5 mb-3">Example</h1>
       <p>Set a 50px gap between grid rows.</p>
-      <pre className="text-green-400 bg-gray-900 rounded-lg p-4 mt-5">
+      <pre className="text-green-400 bg-gray-900 rounded-lg p-4 mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`.container {
   display: grid;
   row-gap: 50px;
-}`}
+  }`}
+  </code>
       </pre>
 
       <div className="border-2 h-96 pb-14 border-black p-4 grid grid-cols-[100px_100px_100px] justify-center gap-y-[20%] mt-10">
@@ -100,11 +104,13 @@ const CSSGridColumnsRows = () => {
       <p>Use gap to set both row and column spacing.</p>
       <h1 className="text-2xl mt-5 mb-3">Example</h1>
       <p>Set row-gap to 50px and column-gap to 100px.</p>
-      <pre className="text-green-400 bg-gray-900 rounded-lg p-4 mt-5">
-        {`.container {
+      <pre className="text-green-400 bg-gray-900 rounded-lg p-4 mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
+      {`.container {
   display: grid;
   gap: 50px 100px;
-}`}
+  }`}
+  </code>
       </pre>
       <div className="border-2 h-96 pb-14 border-black p-4 grid grid-cols-[100px_100px_100px] justify-center gap-[50px_100px] mt-10">
          <div className="bg-blue-500   text-white font-bold p-6 text-center">1</div>
@@ -119,11 +125,13 @@ const CSSGridColumnsRows = () => {
 
       <h1 className="text-2xl mt-10 mb-2">Example</h1>
       <p>Set gap to 50px for both rows and columns.</p>
-      <pre className="text-green-400 bg-gray-900 rounded-lg p-4 mt-5">
+      <pre className="text-green-400 bg-gray-900 rounded-lg p-4 mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <code>
         {`.container {
   display: grid;
   gap: 50px;
-}`}
+  }`}
+  </code>
       </pre>
 
             <div className="border-2 h-96 pb-14 border-black p-4 grid grid-cols-[100px_100px_100px] justify-center gap-[50px] mt-10">

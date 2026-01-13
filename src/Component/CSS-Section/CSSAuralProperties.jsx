@@ -98,7 +98,7 @@ x-loud`},
 
       <p className="mt-5">With aural presentation, the content is converted into plain text and passed to a screen reader that reads the characters out loud.</p>
       <p className="mt-5 mb-5">A practical example of applying Aural CSS</p>
-      <pre className="border-2 border-gray-100 p-4 rounded-sm">
+      <pre className="border-2 border-gray-100 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-sm">
         {`@media aural {
   h1, h2, h3, h4 {
     voice-family: male;

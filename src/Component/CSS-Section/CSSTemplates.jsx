@@ -11,20 +11,21 @@ const CSSTemplates = () => {
       </p>
 
       <h2 className="text-2xl mb-2">Simple Page Template</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mb-4">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`<!DOCTYPE html>
 <html>
 <head>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    header {
-      background: #4CAF50;
-      color: white;
-      padding: 15px;
-      text-align: center;
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  }
+  header {
+    background: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
     }
     nav {
       float: left;
@@ -32,40 +33,41 @@ const CSSTemplates = () => {
       height: 300px;
       background: #f1f1f1;
       padding: 20px;
-    }
-    section {
-      float: left;
-      width: 80%;
-      height: 300px;
-      padding: 20px;
-    }
-    footer {
-      clear: both;
-      background: #ddd;
+      }
+      section {
+        float: left;
+        width: 80%;
+        height: 300px;
+        padding: 20px;
+        }
+        footer {
+          clear: both;
+          background: #ddd;
       text-align: center;
       padding: 10px;
     }
-  </style>
-</head>
-<body>
-  <header>
+    </style>
+    </head>
+    <body>
+    <header>
     <h2>My Website</h2>
-  </header>
+    </header>
 
-  <nav>
+    <nav>
     <p>Navigation Links</p>
-  </nav>
-
-  <section>
+    </nav>
+    
+    <section>
     <h2>Main Content</h2>
     <p>This is a simple template example.</p>
-  </section>
-
-  <footer>
+    </section>
+    
+    <footer>
     <p>Footer Information</p>
-  </footer>
-</body>
-</html>`}
+    </footer>
+    </body>
+    </html>`}
+    </code>
       </pre>
 
 <div className="bg-green-100 p-3">

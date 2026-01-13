@@ -36,7 +36,7 @@ const CSSBorderImage = () => {
          In the example given below, a PNG image has been used for the border.
         </p>
 
-        <pre className="min-w-fit bg-gray-900 text-green-400 p-3 rounded mt-2 overflow-x-auto">
+        <pre className="min-w-fit bg-gray-900 text-green-400 p-3 rounded-lg mt-2 overflow-x-auto max-w-full whitespace-pre-wrap">
 {`div {
   border: 15px solid transparent;
   border-image-source: url('https://cloudinary-marketing-res.

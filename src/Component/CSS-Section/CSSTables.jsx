@@ -20,8 +20,7 @@ export default function CssTables() {
       <p className="mt-10 text-xl">Example</p>
       <p>In this example, we will create a table using CSS property.</p>
 
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 mb-10">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>
             {`.table-container {
   overflow-x: auto;
@@ -48,9 +47,8 @@ export default function CssTables() {
   background-color: #f9fafb; 
 }
 `}
-          </code>
-        </pre>
-      </div>
+        </code>
+      </pre>
 
       <div className="overflow-x-auto">
         <table className="w-full border-collapse">

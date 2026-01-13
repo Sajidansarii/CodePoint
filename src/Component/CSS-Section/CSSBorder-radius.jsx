@@ -17,7 +17,7 @@ const CSSBorderRadius = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Syntax
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-4">
         <pre>
 {`selector {
   border-radius: value;
@@ -36,7 +36,7 @@ const CSSBorderRadius = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 1: Rounded Corners
       </h2>
-      <div className="bg-gray-900 text-green-400  p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-4">
         <pre>
 {`div {
   border: 2px solid blue;
@@ -52,7 +52,7 @@ const CSSBorderRadius = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 2: Circle
       </h2>
-      <div className="bg-gray-900 text-green-400  p-4 rounded-lg text-sm mb-4">
+      <div className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-4">
         <pre>
 {`div {
   border: 2px solid red;
@@ -68,14 +68,14 @@ const CSSBorderRadius = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 3: Different Corner Radius
       </h2>
-      <div className="bg-gray-900 text-green-400  p-4 rounded-lg text-sm mb-4">
-        <pre>
+      <pre className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`div {
   border: 2px solid green;
   border-radius: 20px 40px 60px 80px;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
       <div className="border-2 border-green-600 p-6 text-center mb-6 rounded-[20px_40px_60px_80px]">
         Different Radius per Corner
       </div>
@@ -84,14 +84,14 @@ const CSSBorderRadius = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 4: Elliptical Radius
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg text-sm mb-4">
-        <pre>
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <code>
 {`div {
   border: 2px solid purple;
   border-radius: 50px / 20px;
 }`}
-        </pre>
-      </div>
+        </code>
+      </pre>
       <div className="border-2 border-purple-600 p-6 text-center mb-6 rounded-[50px/20px]">
         Elliptical Radius
       </div>

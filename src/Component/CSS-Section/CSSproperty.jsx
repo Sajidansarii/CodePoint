@@ -26,20 +26,22 @@ const CssProperties = () => {
         </p>
 
         {/* CSS Code */}
-        <pre className="bg-gray-900 text-green-300 p-4 rounded text-sm overflow-x-auto text-left">
+        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
 {`/* CSS Properties Example */
 h1 {
   color: blue;            /* Text ka color set karta hai */
   font-size: 32px;        /* Font size set karta hai */
   text-align: center;     /* Text alignment control karta hai */
-}
-
-p {
-  color: gray;            /* Paragraph text ka color */
-  line-height: 1.6;       /* Lines ke beech ka gap */
-  margin-top: 10px;       /* Upar ka space */
-}
-`}
+  }
+  
+  p {
+    color: gray;            /* Paragraph text ka color */
+    line-height: 1.6;       /* Lines ke beech ka gap */
+    margin-top: 10px;       /* Upar ka space */
+    }
+    `}
+    </code>
         </pre>
 
         <h1 className="text-2xl">Property Values</h1>
@@ -64,66 +66,72 @@ p {
         <h1 className="text-2xl">All Property with Initial Value</h1>
         <p>The initial keyword in CSS resets a property to its default value as defined by the browser, disregarding any previously applied styles. This can be seen in the following example.</p>
         <h1 className="text-2xl">Example</h1>
-        <pre className="bg-gray-900 text-green-400 rounded-lg p-4">
+        <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
           {`html {
          font-size: 25px;
          color: lightcoral;
          font-style: italic;
-      }
-
-      #custom1 {
-         background-color: #ecf0f1;
-         color: #e74c3c;
-      }
-
-      #custom2 {
-         all: initial;
-      }`}
+         }
+         
+         #custom1 {
+          background-color: #ecf0f1;
+          color: #e74c3c;
+          }
+          
+          #custom2 {
+            all: initial;
+            }`}
+            </code>
         </pre>
 
         <h1 className="text-2xl">All Property with Inherit Value</h1>
         <p>Using the inherit keyword tells the browser to apply the same value for a property as that of the element’s parent. If the parent doesn't have the property explicitly set, the value is inherited from higher up in the DOM tree, usually from the {'<html>'} element. The example below demonstrates this behavior.</p>
         <h1 className="text-2xl">Example</h1>
-        <pre className="bg-gray-900 text-green-400 rounded-lg p-4">
+        <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
           {` html {
          font-size: 25px;
          color: lightcoral;
          font-style: italic;
-      }
-
-      #custom1 {
-         background-color: lightgreen;
-         font-weight: bold;
-         padding: 10px;
-         color: #e74c3c;
-      }
-
-      #custom2 {
-         all: inherit;
-      }
-`}
+         }
+         
+         #custom1 {
+          background-color: lightgreen;
+          font-weight: bold;
+          padding: 10px;
+          color: #e74c3c;
+          }
+          
+          #custom2 {
+            all: inherit;
+            }
+            `}
+            </code>
         </pre>
 
         <h1 className="text2xl">All Property with Unset Value</h1>
         <p>The unset keyword resets a property to its inherited value if it’s naturally inheritable, or to its initial (default) value otherwise. This dual behavior is illustrated in the example that follows.</p>
         <h1 className="text-2xl">Example</h1>
-        <pre className="bg-gray-900 text-green-400 rounded-lg p-4">
+        <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
           {`.parent {
          color: purple;
          font-weight: bold;
          font-size: 20px;
          text-align: center;
          background-color: lightgrey;
-      }
-
-      .custom1 {
-         font-weight: bold;
-         padding: 10px;
-      }
-
-      .custom2 {
-         all: unset;
-      }`}
+         }
+         
+         .custom1 {
+          font-weight: bold;
+          padding: 10px;
+          }
+          
+          .custom2 {
+            all: unset;
+            }`}
+            </code>
         </pre>
       </div>
 
