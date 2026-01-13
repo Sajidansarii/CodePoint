@@ -23,7 +23,7 @@ const JSConst = () => {
       <h1 className="text-2xl mt-10">Cannot be Reassigned</h1>
       <p className="leading-relaxed mt-5">Variables declared using <span className="text-red-400 bg-gray-50 px-1">const</span> are immutable — they can’t be reassigned.</p>
        <h1 className="text-2xl mt-5">Example</h1>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
         {`const PI = 3.141592653589793;
 PI = 3.14;      // This will give an error
 PI = PI + 10;   // This will also give an error`}
@@ -71,7 +71,7 @@ PI = 3.14159265359;`}
         <h1 className="text-2xl mt-10 mb-3">Constant Arrays</h1>
         <p>The <span className="text-red-400 bg-gray-50 px-1">contents</span> of an array declared with const can still be change.</p>
         <h1 className="text-2xl">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
           {`// You can create a constant array:
 const cars = ["Saab", "Volvo", "BMW"];
 
@@ -84,7 +84,7 @@ cars.push("Audi");`}
 
         <p className="mt-10">While the contents can change, the array itself cannot be reassigned.</p>
         <h1 className="text-2xl mt-5">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
           {`const cars = ["Saab", "Volvo", "BMW"];
 
 cars = ["Toyota", "Volvo", "Audi"];    // ERROR`}
@@ -93,7 +93,7 @@ cars = ["Toyota", "Volvo", "Audi"];    // ERROR`}
         <h1 className="text-2xl mt-10 mb-5">Constant Objects</h1>
         <p>Even if an object is declared with const, you can update its properties.</p>
         <h1 className="text-2xl mt-5">Example</h1>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
         {`// You can create a const object:
 const car = {type:"Fiat", model:"500", color:"white"};
 
@@ -106,14 +106,15 @@ car.owner = "Johnson";`}
 
        <p className="mt-10">But you can NOT reassign the object:</p>
        <h1 className="text-2xl mt-5">Example</h1>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
         {`const car = {type:"Fiat", model:"500", color:"white"};
 
 car = {type:"Volvo", model:"EX60", color:"red"}    // ERROR`}
        </pre>
 
        <h1 className="text-2xl mt-10">Difference Between var, let and const</h1>
-       <table className="min-w-full border border-gray-300 text-sm text-left text-gray-700 mt-5">
+       <div className="w-full overflow-x-auto">
+       <table className="w-full border border-gray-300 text-sm text-left text-gray-700 mt-5">
         <thead>
           <tr className="bg-gray-100">
             <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold"></th>
@@ -137,6 +138,7 @@ car = {type:"Volvo", model:"EX60", color:"red"}    // ERROR`}
           ))}
         </tbody>
        </table>
+     </div>
 
        <h1 className="text-2xl mt-10">What is Good?</h1>
        <p className="leading-relaxed mt-3"><span className="text-red-400 bg-gray-50 px-1">let</span> and <span className="text-red-400 bg-gray-50 px-1">const</span> follow block-level scoping rules.</p>
