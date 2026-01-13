@@ -2,7 +2,7 @@ import React from "react";
 
 const CSSIntroduction = () => {
   return (
-    <div className="p-4 sm:p-6 max-w-4xl space-y-6 mt-10">
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl mt-10">
       <h1 className="text-3xl font-medium text-blue-500 mb-3">CSS Introduction</h1>
 
       <p className="mb-4">
