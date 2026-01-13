@@ -87,7 +87,7 @@ const CssAuralMedia = () => {
         
 
         <h1 className="text-2xl">CSS Aural Reference</h1>
-        <table className="min-w-full border border-gray-300 text-gray-700 text-left text-sm rounded-md">
+        <table className="min-w-full border border-gray-300 text-sm rounded-md text-left mt-10">
           <thead>
             <tr className="bg-gray-100">
               <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Property</th>
