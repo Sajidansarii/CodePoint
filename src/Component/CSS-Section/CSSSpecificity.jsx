@@ -20,11 +20,10 @@ const CssSpecificity = () => {
       <img src="https://salehmubashar.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdco9fiuhw%2Fimage%2Fupload%2Fv1696245722%2FSpecificity_in_CSS_Large_gcg11u.webp&w=3840&q=75" alt="img" className="w-11/12" />
 
       <h1 className="text-2xl">Specificity Hierarchy</h1>
-      <p>Every <span className="text-green-700">selectors</span> in CSS have a specificity level. Following are specificity order of CSS selectors.</p>
+      <p>Every <span className="text-red-400 bg-gray-50">selectors</span> in CSS have a specificity level. Following are specificity order of CSS selectors.</p>
 
       
-        <li><strong>Inline Styles:</strong> Styles defined directly on an element using the style attribute have the highest priority in the cascade, overriding
-        <pre>           both ID and class selectors.</pre></li>
+        <li><strong>Inline Styles:</strong> Styles defined directly on an element using the style attribute have the highest priority in the cascade, overriding, both ID and class selectors.</li>
       
       <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
         <code>

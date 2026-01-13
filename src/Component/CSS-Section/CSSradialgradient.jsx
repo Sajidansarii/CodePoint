@@ -31,7 +31,7 @@ const RadialGradientDemo = () => {
       <h1 className="text-2xl">Radial Gradient - Differently Spaced Color Stops</h1>
       <p>The following illustration showcases a radial gradient with color stops set at different positions.</p>
 
-      <div className="h-40 w-full rounded-lg bg-[radial-gradient(circle,#3b82f6,#10b981,_#f43f5e)] flex items-center justify-center text-white font-bold transform transition duration-500 hover:brightness-125">
+      <div className="h-96 max-w-full rounded-lg bg-[radial-gradient(circle,#3b82f6,#10b981,_#f43f5e)] flex items-center justify-center text-white font-bold transform transition duration-500 hover:brightness-125">
         Multi-color Radial Gradient
       </div>
       <h2 className="text-2xl">Example:</h2>
@@ -52,7 +52,7 @@ const RadialGradientDemo = () => {
         <li><strong>circle</strong></li>
       </ul>
       <p>The example below demonstrates a radial gradient with a circular shape.</p>
-      <div className="h-80 w-96 rounded-lg bg-[radial-gradient(circle,#10b981,#FFFF00,#FF0000_)] flex items-center justify-center text-white font-bold transform transition duration-500 hover:brightness-125">
+      <div className="h-96 max-w-full rounded-lg bg-[radial-gradient(circle,#10b981,#FFFF00,#FF0000_)] flex items-center justify-center text-white font-bold transform transition duration-500 hover:brightness-125">
         Circle
       </div>
       <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">

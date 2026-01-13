@@ -9,7 +9,7 @@ export default function CssMaxWidth() {
 
       {/* Fixed Width */}
       <h2 className="text-xl font-semibold mt-4">Without max-width</h2>
-      <div className="w-[600px] bg-red-400 text-white p-4 mb-4">
+      <div className="max-w-[600px] bg-red-400 text-white p-4 mb-4">
         This box is fixed at 600px wide.
       </div>
 

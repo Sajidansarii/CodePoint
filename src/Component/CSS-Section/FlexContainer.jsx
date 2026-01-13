@@ -125,7 +125,7 @@ const CSSFlexboxContainer = () => {
   </code>
         </pre>
 
-        <div className="border-2 border-black h-20 flex flex-nowrap justify-around items-center mt-6">
+        <div className="border-2 p-8 sm:p-4 border-black flex flex-wrap gap-4 justify-center items-center mt-6">
           <div className="bg-red-400 px-4 py-2">Item1</div>
           <div className="bg-red-500 px-4 py-2">Item2</div>
           <div className="bg-red-600 px-4 py-2">Item3</div>
@@ -145,7 +145,7 @@ const CSSFlexboxContainer = () => {
   </code>
         </pre>
 
-        <div className="border-2 border-black h-40 w-2/3  flex flex-wrap justify-around items-center mt-6">
+        <div className="border-2 p-8 sm:p-4 border-black flex flex-wrap gap-4 justify-around items-center mt-6">
           <div className="bg-red-400 px-4 py-2">Item1</div>
           <div className="bg-red-500 px-4 py-2">Item2</div>
           <div className="bg-red-600 px-4 py-2">Item3</div>
@@ -172,7 +172,7 @@ const CSSFlexboxContainer = () => {
   </code>
         </pre>
 
-        <div className="border-2 border-black h-40 w-2/3  flex flex-wrap-reverse justify-around items-center mt-6">
+        <div className="border-2 p-8 sm:p-4 border-black flex flex-wrap-reverse gap-4 justify-around items-center mt-6">
           <div className="bg-red-400 px-4 py-2">Item1</div>
           <div className="bg-red-500 px-4 py-2">Item2</div>
           <div className="bg-red-600 px-4 py-2">Item3</div>

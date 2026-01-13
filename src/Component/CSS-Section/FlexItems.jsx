@@ -11,7 +11,7 @@ const CSSFlexItems = () => {
 
       <h1 className="text-2xl">Example</h1>
       <p>The children that are directly inside a flex container are flex items by default.</p>
-      <div className=" border-2 border-black h-20  flex  items-center mt-6">
+      <div className=" border-2 border-black flex flex-wrap items-center mt-6">
         <div className="bg-red-400 px-4 py-2 m-2">Item 1</div>
         <div className="bg-red-400 px-4 py-2 m-2">Item 2</div>
         <div className="bg-red-400 px-4 py-2 m-2">Item 3</div>
@@ -35,7 +35,7 @@ const CSSFlexItems = () => {
       <p>The first item in the markup can appear later in the layout, depending on its order value.</p>
      <p>The order property takes a numeric value—0 is used if no value is specified.</p>
 
-    <div className="border-2 border-black h-20 flex items-center mt-6">
+    <div className="border-2 border-black flex flex-wrap items-center mt-6">
       <div className="bg-red-400 px-4 py-2 m-2 order-3">Item 1</div>
       <div className="bg-red-400 px-4 py-2 m-2 order-2">Item 2</div>
       <div className="bg-red-400 px-4 py-2 m-2 order-4">Item 3</div>
@@ -57,10 +57,10 @@ const CSSFlexItems = () => {
 
     <h1 className="text-2xl">CSS flex-grow Property</h1>
      <p>When there's extra space, flex-grow decides how much of it each item should receive.</p>
-     <div className="border-2 border-black flex h-20 items-center mt-6">
+     <div className="border-2 border-black flex flex-wrap items-center mt-6">
       <div className="bg-red-400 px-20 py-5 m-2">Item1</div>
       <div className="bg-red-400 px-20 py-5 m-2">Item2</div>
-      <div className="bg-red-400 px-44 py-5 m-2">Item3</div>
+      <div className="bg-red-400 px-32 py-5 m-2">Item3</div>
      </div>
      <p>This property accepts a numeric value, with a default of 0.</p>
      <h1 className="text-2xl">Example</h1>
@@ -77,7 +77,7 @@ const CSSFlexItems = () => {
 
      <h1 className="text-2xl">CSS flex-shrink Property</h1>
      <p>This property determines how much a flex item will reduce its size in relation to other flex items.</p>
-     <div className="border-2 border-black h-20 flex items-center mt-6">
+     <div className="border-2 border-black flex flex-wrap items-center mt-6">
       <div className="bg-red-400 px-3 py-5 m-2">Item1</div>
       <div className="bg-red-400 px-3 py-5 m-2">Item2</div>
       <div className="bg-red-400 px-10 py-5 m-2">Item3</div>
@@ -111,7 +111,7 @@ const CSSFlexItems = () => {
 
      <h1 className="text-2xl">CSS flex-basis Property</h1>
      <p>The flex-basis value specifies the base size of a flex item.</p>
-     <div className="border-2 border-black h-20 flex items-center mt-6">
+     <div className="border-2 border-black flex flex-wrap items-center mt-6">
       <div className="bg-red-400 px-4 py-5 m-2">Item1</div>
       <div className="bg-red-400 px-4 py-5 m-2">Item1</div>
       <div className="bg-red-400 px-10 py-5 m-2">Item1</div>
@@ -151,12 +151,12 @@ const CSSFlexItems = () => {
      <h1 className="text-2xl">CSS align-self Property</h1>
      <p>The align-self property sets how a specific flex item is aligned within the flex container.</p>
      <p>This property overrides the alignment set by the container’s align-items property.</p>
-     <div className="border-2 border-black flex h-40 items-center mt-6">
-      <div className="bg-red-400 px-4 py-14 m-2">Item1</div>
-      <div className="bg-red-400 px-4 py-14 m-2">Item2</div>
-      <div className="bg-red-400 px-4 py-8 m-2">Item3</div>
-      <div className="bg-red-400 px-4 py-14 m-2">Item4</div>
-      <div className="bg-red-400 px-4 py-14 m-2">Item5</div>
+     <div className="border-2 border-black flex flex-wrap justify-center p-4 items-center mt-6">
+      <div className="bg-red-400 px-4 py-12 m-2">Item1</div>
+      <div className="bg-red-400 px-4 py-12 m-2">Item2</div>
+      <div className="bg-red-400 px-4 py-8  m-2">Item3</div>
+      <div className="bg-red-400 px-4 py-12 m-2">Item4</div>
+      <div className="bg-red-400 px-4 py-12 m-2">Item5</div>
      </div>
      <p>These examples use a container with a height of 200 pixels to clearly show how the align-self property works.</p>
      <h1 className="text-2xl">Example</h1>

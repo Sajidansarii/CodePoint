@@ -88,7 +88,7 @@ export default function CssAtRules() {
       </table>
 
        <h1 className="text-2xl mb-5">Examples</h1>
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-6 md:grid-cols-2 overflow-x-hidden">
         {atRules.map((rule, index) => (
           <div
             key={index}
@@ -98,7 +98,7 @@ export default function CssAtRules() {
               {rule.name}
             </h2>
             <p className="text-gray-600 mb-4">{rule.desc}</p>
-            <pre className="bg-gray-900 text-green-300 text-sm p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+            <pre className="bg-gray-900 text-green-300 text-sm rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
               <code>{rule.example}</code>
             </pre>
           </div>

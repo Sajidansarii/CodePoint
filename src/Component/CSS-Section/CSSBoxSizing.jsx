@@ -68,12 +68,12 @@ const CssBoxSizing = () => {
         {/* Live Demo */}
         <div className="flex flex-col md:flex-row gap-6 justify-center items-start">
           {/* Content Box */}
-          <div className="w-[300px] p-5 border-[5px] border-green-600 box-content bg-green-100">
+          <div className="w-full p-5 border-[5px] border-green-600 box-content bg-green-100">
             <p className="text-center text-gray-800">content-box</p>
           </div>
 
           {/* Border Box */}
-          <div className="w-[300px] p-5 border-[5px] border-blue-600 box-border bg-blue-100">
+          <div className="w-full p-5 border-[5px] border-blue-600 box-border bg-blue-100">
             <p className="text-center text-gray-800">border-box</p>
           </div>
         </div>

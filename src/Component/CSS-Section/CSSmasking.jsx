@@ -24,7 +24,7 @@ const CssMasking = () => {
        In CSS, the mask shorthand property defines how an image mask is applied to an element, encapsulating detailed behavior through associated longhand properties.
       </p>
       <h1 className="text-2xl">Syntax</h1>
-      <pre className="bg-gray-900 text-green-400 p-4 w-[900px] rounded-lg overflow-auto">
+      <pre className="bg-gray-900 text-green-400 p-4 max-w-full rounded-lg overflow-auto">
         <code>
           {`mask: <mask-image> <mask-mode> <mask-composite> <mask-clip> <mask-origin> <mask-position> <mask-repeat> <mask-size> | initial | inherit;`}
         </code>

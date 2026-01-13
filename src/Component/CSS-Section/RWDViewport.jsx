@@ -23,7 +23,7 @@ const CssRWDViewport = () => {
       <p>HTML5 provided a way for web designers to control the viewport using the <span className="text-red-400 bg-gray-50 px-1">{'<meta>'}</span> tag.</p>
       <p>You should add the following <span className="text-red-400 bg-gray-50 px-1">{'<meta>'}</span> viewport tag inside the <span className="text-red-400 bg-gray-50 px-1">{'<head>'}</span> section of every web page.</p>
       
-  <pre className="border p-2 border-1 border-gray-300">
+  <pre className="border p-2 border-1 border-gray-300 overflow-x-auto max-w-full whitespace-pre-wrap">
   <code>
     <span className="text-gray-500">&lt;</span>
     <span className="text-orange-500">meta</span> {' '}

@@ -184,7 +184,7 @@ div:hover {
 
       <h1 className="text-2xl">CSS Transition Properties</h1>
       <p>The subsequent table enumerates all the properties related to CSS transitions.</p>
-     <table className="min-w-full border border-gray-300 text-sm rounded-md text-leftmt-10">
+     <table className="min-w-full border border-gray-300 text-sm rounded-md text-left mt-10">
       <thead>
         <tr className="bg-gray-100">
           <th className="px-4 py-2 border-b border-gray-300 font-bold text-gray-700">Property</th>
@@ -194,8 +194,8 @@ div:hover {
       <tbody>
         {data.map((row,index)=>(
           <tr className="hover:bg-gray-100 cursor-text">
-            <td className="px-4 py-2 border-b">{row.Property}</td>
-            <td className="px-4 py-2 border-b">{row.Description}</td>
+            <td className="px-4 py-2 border-b border-gray-200">{row.Property}</td>
+            <td className="px-4 py-2 border-b border-gray-200">{row.Description}</td>
           </tr>
         ))}
       </tbody>

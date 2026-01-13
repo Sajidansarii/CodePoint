@@ -39,11 +39,11 @@ const MathFunctions = () => {
       <h1 className="text-2xl">Types of Mathematical Functions in CSS</h1>
       <p>CSS offers several math functions that you can use to perform calculations. These include:</p>
 
-      <ul className="list-[square] list-inside">
-      <li>Basic Arithmetic Functions: These include the calc() function, which allows you to perform mathematical operations like    <pre>  addition, subtraction, multiplication, and division directly on CSS values.</pre></li>
-      <li>Comparison Functions: These include min(), max(), and clamp(), which allow you to compare values and set limits directly in <pre>  your CSS.</pre></li>
-      <li>Stepped Value Functions: These include the round() function, which rounds numbers according to a specified rounding <pre>  method directly in your CSS.</pre></li>
-      <li>Trigonometric Functions: Functions like sin(), cos(), and tan() allow you to use sine, cosine, and tangent calculations directly <pre>   within your CSS.</pre></li>
+      <ul className="list-[square] list-inside space-y-1 whitespace-pre-wrap">
+      <li>Basic Arithmetic Functions: These include the calc() function, which allows you to perform mathematical operations <span className="lg:ml-5">like</span> addition, subtraction, multiplication, and division directly on CSS values.</li>
+      <li>Comparison Functions: These include min(), max(), and clamp(), which allow you to compare values and set limits <span className="lg:ml-5">directly</span> in your CSS.</li>
+      <li>Stepped Value Functions: These include the round() function, which rounds numbers according to a specified <span className="lg:ml-5">rounding</span>  method directly in your CSS.</li>
+      <li>Trigonometric Functions: Functions like sin(), cos(), and tan() allow you to use sine, cosine, and tangent calculations <span className="lg:ml-5">directly</span> within your CSS.</li>
       </ul>
 
       <h1 className="text-2xl">The calc Function</h1>
@@ -79,7 +79,7 @@ const MathFunctions = () => {
       </pre>
 
       <h1 className="text-2xl">The max Function</h1>
-      <p>The max() function in CSS lets you select the largest value from a list of inputs. It’s useful for comparing values and applying styles based on the highest number.</p>
+      <p>The <span className="text-red-400 bg-gray-50">max()</span> function in CSS lets you select the largest value from a list of inputs. It’s useful for comparing values and applying styles based on the highest number.</p>
       <h1 className="text-2xl">Example</h1>
       <p>Here’s an example that shows how to use the max() function in CSS:</p>
       <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
@@ -122,7 +122,7 @@ const MathFunctions = () => {
       </pre>
 
       <h1 className="text-2xl">The min Function</h1>
-      <p>The min() function in CSS selects the smallest value from a list of values. It helps you compare values and apply styles based on the minimum number.</p>
+      <p>The <span className="text-red-400 bg-gray-50">min()</span> function in CSS selects the smallest value from a list of values. It helps you compare values and apply styles based on the minimum number.</p>
       <h1 className="text-2xl">Example</h1>
       <p>Here’s an example demonstrating how to use the min() function in CSS:</p>
       <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">

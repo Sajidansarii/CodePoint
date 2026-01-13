@@ -92,7 +92,8 @@ const CssSelectors = () => {
 
         <h1 className="text-2xl mt-10 mb-2">CSS Attribute Selectors</h1>
         <p>HTML elements with a certain attribute can be selected using the attribute selector. </p>
-       <table className="min-w-full border mt-10 border-gray-300 text-gray-700 text-sm text-left rounded-md">
+        <div className="w-full overflow-x-scroll">
+       <table className="min-w-full mt-10 border border-gray-300 text-gray-700 text-sm text-left rounded-md">
           <thead>
             <tr className="bg-gray-100">
               <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Selector</th>
@@ -110,6 +111,7 @@ const CssSelectors = () => {
             ))}
           </tbody>
         </table>
+            </div>
 
         <h1 className="text-2xl mt-10">CSS Nesting Selector</h1>
         <table className="min-w-full border mt-10 border-gray-300 text-gray-700 text-sm text-left rounded-md">

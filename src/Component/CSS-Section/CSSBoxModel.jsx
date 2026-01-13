@@ -56,13 +56,23 @@ const CssBoxModel = () => {
        </pre>
 
 
-     <div className="relative w-full max-w-5xl mx-auto aspect-[3/1] my-20">
-      <div  className="absolute inset-[-5%_0%] bg-blue-500 text-center text-black sm:text-xl text-xs min-h-[2rem] flex justify-center pt-1">Margin</div>
-       <div className="absolute inset-[8%] bg-green-500 text-black text-xs sm:text-xl min-h-[2rem] flex justify-center pt-1">Border</div>
-       <div className="absolute inset-[18%] bg-gray-400 text-black text-xs sm:text-xl min-h-[2rem] flex justify-center pt-1">Padding</div>
-       <div className=" absolute inset-[30%] bg-white text-black text-xs sm:text-xl min-h-[2rem] flex items-center justify-center">Content</div>
-     </div>
-     
+     <div className="max-w-5xl mx-auto my-10 bg-blue-500 p-6 sm:p-10 text-center">
+  <p className="text-black mb-2">Margin</p>
+
+  <div className="bg-green-500 p-6 sm:p-10">
+    <p className="text-black mb-2">Border</p>
+
+    <div className="bg-gray-400 p-6 sm:p-10">
+      <p className="text-black mb-2">Padding</p>
+
+      <div className="bg-white py-6">
+        <p className="text-black">Content</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 
       {/* Total Size Formula */}

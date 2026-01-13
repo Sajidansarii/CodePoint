@@ -60,12 +60,12 @@ const CSSGridColumnsRows = () => {
         <code>
         {`.container {
   display: grid;
-  column-gap: 50px;
+  column-gap: 20px;
   }`}
   </code>
       </pre>
 
-      <div className="border-2 border-black p-4 grid grid-cols-[100px_100px_100px] justify-center gap-3 mt-10">
+      <div className="border-2 border-black p-4 grid grid-cols-[92px_92px_92px] justify-center gap-y-[20px] mt-10">
          <div className="bg-blue-500 text-white font-bold p-6 text-center">1</div>
          <div className="bg-blue-500 text-white font-bold p-6 text-center">2</div>
          <div className="bg-blue-500 text-white font-bold p-6 text-center">3</div>
@@ -84,12 +84,12 @@ const CSSGridColumnsRows = () => {
         <code>
         {`.container {
   display: grid;
-  row-gap: 50px;
+  row-gap: 20px;
   }`}
   </code>
       </pre>
 
-      <div className="border-2 h-96 pb-14 border-black p-4 grid grid-cols-[100px_100px_100px] justify-center gap-y-[20%] mt-10">
+      <div className="border-2 h-96 pb-14 border-black p-4 grid grid-cols-[96px_96px_96px] justify-center gap-x-[20px] mt-10">
          <div className="bg-blue-500  border-2 border-black text-white font-bold p-6 text-center">1</div>
          <div className="bg-blue-500  border-2 border-black text-white font-bold p-6 text-center">2</div>
          <div className="bg-blue-500  border-2 border-black text-white font-bold p-6 text-center">3</div>
@@ -108,11 +108,11 @@ const CSSGridColumnsRows = () => {
         <code>
       {`.container {
   display: grid;
-  gap: 50px 100px;
+  gap: 50px 20px;
   }`}
   </code>
       </pre>
-      <div className="border-2 h-96 pb-14 border-black p-4 grid grid-cols-[100px_100px_100px] justify-center gap-[50px_100px] mt-10">
+      <div className="border-2 border-black p-3 grid grid-cols-[82px_82px_82px] justify-center gap-[50px_20px] mt-10">
          <div className="bg-blue-500   text-white font-bold p-6 text-center">1</div>
          <div className="bg-blue-500   text-white font-bold p-6 text-center">2</div>
          <div className="bg-blue-500   text-white font-bold p-6 text-center">3</div>
@@ -129,12 +129,12 @@ const CSSGridColumnsRows = () => {
         <code>
         {`.container {
   display: grid;
-  gap: 50px;
+  gap: 30px;
   }`}
   </code>
       </pre>
 
-            <div className="border-2 h-96 pb-14 border-black p-4 grid grid-cols-[100px_100px_100px] justify-center gap-[50px] mt-10">
+            <div className="border-2 h-96 pb-14 border-black p-4 grid grid-cols-[92px_92px_92px] justify-center gap-[30px] mt-10">
          <div className="bg-blue-500   text-white font-bold p-6 text-center">1</div>
          <div className="bg-blue-500   text-white font-bold p-6 text-center">2</div>
          <div className="bg-blue-500   text-white font-bold p-6 text-center">3</div>

@@ -377,7 +377,8 @@ const CssBrowserSupport = () => {
       <h1 className="text-2xl mb-3">CSS Reference With Browser Support</h1>
       <p>Here is a list of all CSS properties along with their support status in major browsers.</p>
       <p className="mt-4 mb-10">Beside each browser icon, the number indicates the version that first included support for the property.</p>
-
+      
+      <div className="w-full overflow-x-scroll">
       <table className="min-w-full border border-gray-300 text-sm txet-left rounded-md mb-10">
         <thead>
           <tr className="bg-gray-100">
@@ -400,18 +401,7 @@ const CssBrowserSupport = () => {
           </tr>
         ))}
       </table>
-
-
-
-
-
-
-
-
-
-
-
-
+      </div>
 
 
       {/* Example */}

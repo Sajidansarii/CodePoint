@@ -45,7 +45,7 @@ const CSSGridContainer = () => {
          <p className="mt-2">To create 4 columns, set their widths—or use auto for equal widths.</p>
          <h1 className="text-2xl mt-10 mb-2">Example</h1>
          <p className="mb-2">Set <span className="text-red-400 bg-gray-50 px-1">grid-template-columns</span> to make 4 equal columns.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
           <code>
           {`.grid-container {
   display: grid;
@@ -88,12 +88,12 @@ const CSSGridContainer = () => {
           <code>
           {`.grid-container {
   display: grid;
-  grid-template-columns: 80px 200px auto 40px;
+  grid-template-columns: 40px 100px auto 50px;
   }`}
   </code>
         </pre>
 
-        <div className="border-2 border-black p-4 grid grid-cols-[80px_200px_auto_40px] gap-3 mt-6">
+        <div className="border-2 border-black p-4 grid grid-cols-[40px_100px_auto_50px] gap-3 mt-6">
           <div className="bg-blue-500 text-white font-bold p-6 text-center">
             1
           </div>
