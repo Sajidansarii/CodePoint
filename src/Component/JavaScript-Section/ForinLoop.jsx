@@ -11,7 +11,7 @@ const JSForInLoop = () => {
       </p>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-2">Syntax:</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-4">
+      <pre className="bg-gray-900 overflow-x-auto text-green-400 p-4 rounded-lg mb-4">
         <code>
           {`
  for (let key in object) {
@@ -25,7 +25,7 @@ const JSForInLoop = () => {
 
 
       <h2 className="text-2xl font-semibold text-gray-800 mt-10">Example</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-4 mt-5">
+      <pre className="bg-gray-900 overflow-x-auto text-green-400 p-4 rounded-lg mb-4 mt-5">
         <code>
           {`
  const person = {

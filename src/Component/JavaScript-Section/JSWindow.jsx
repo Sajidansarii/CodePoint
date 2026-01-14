@@ -80,7 +80,7 @@ const JSWindowDocumentEvents = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Demonstrating Window Events</h1>
       <p>This example listens for load, resize, and scroll events on the window. On load, it alerts the user. Resizing triggers another alert showing the new window size, and scrolling also produces an alert.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-5 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-5 rounded-lg mt-5">
         <code>
           {` window.addEventListener('load', function() {
          var initialSizeInfo = 'Initial window size: ' + window.innerWidth + ' x ' + window.
@@ -126,7 +126,7 @@ const JSWindowDocumentEvents = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Demonstrating Document Events</h1>
       <p>The script listens for DOM content load, clicks, form submissions, and key presses. It logs when the DOM is ready, alerts clicked element tags, alerts on form submit, and shows each key pressed.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {` document.addEventListener('DOMContentLoaded', function() {
          alert('DOM content has been fully loaded!');
@@ -146,13 +146,6 @@ const JSWindowDocumentEvents = () => {
 `}
         </code>
       </pre>
-
-
-
-
-
-
-
     
     </div>
   );
