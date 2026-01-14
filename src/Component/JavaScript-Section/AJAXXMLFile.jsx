@@ -49,7 +49,7 @@ const JSAJAXXMLFile = () => {
       <p className="mb-3">The <span className="text-red-400">loadDoc()</span> function creates an XMLHttpRequest object, assigns a function to run when the server response is ready, and sends the request to the server.</p>
       <p>When the response arrives, the code builds an HTML table, retrieves nodes from the XML file, and updates the "demo" element with the populated table.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`function loadDoc() {
   const xhttp = new XMLHttpRequest();
@@ -72,31 +72,6 @@ function myFunction(xml) {
 }`}
         </code>
       </pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     </div>

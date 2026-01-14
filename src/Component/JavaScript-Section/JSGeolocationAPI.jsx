@@ -30,7 +30,7 @@ const JSGeolocationAPI = () => {
     <p className="mb-3">The <span className="text-red-400">getCurrentPosition()</span> method retrieves the user’s current location.</p>
     <p>The following example outputs the latitude and longitude of the user’s location.</p>
     <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`<script>
 const x = document.getElementById("demo");
@@ -63,7 +63,7 @@ function showPosition(position) {
    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Handling Errors and Rejections</h1>
   <p>The second parameter of the <span className="text-red-400">getCurrentPosition()</span> method is responsible for error handling and defines a function that runs if the user’s location cannot be retrieved.</p>
   <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`function showError(error) {
   switch(error.code) {
@@ -87,7 +87,7 @@ function showPosition(position) {
   <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Displaying the Result in a Map</h1>
   <p>To show the result on a map, you need access to a mapping service such as Google Maps. In the example below, the returned latitude and longitude are used to display the location on a Google Map using a static image.</p>
   <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`function showPosition(position) {
   let latlon = position.coords.latitude + "," + position.coords.longitude;
@@ -136,7 +136,7 @@ function showPosition(position) {
 
   <p className="mt-5">The example below demonstrates the <span className="text-red-400">watchPosition()</span> method. Testing it requires an accurate GPS device, such as a smartphone.</p>
   <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`<script>
 const x = document.getElementById("demo");
@@ -154,14 +154,6 @@ function showPosition(position) {
 </script>`}
     </code>
   </pre>
-
-
-
-
-
-
-
-
 
     </div>
   );

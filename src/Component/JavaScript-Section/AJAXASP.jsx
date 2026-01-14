@@ -15,7 +15,7 @@ const JSAJAXASP = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">AJAX ASP</h1>
       <p>The <span className="text-red-400">showHint()</span> function runs whenever the user presses a key in the input field, triggered by the onkeyup event.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`<p>Start typing a name in the input field below:</p>
 <p>Suggestions: <span id="txtHint"></span></p>
@@ -54,7 +54,7 @@ function showHint(str) {
 
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The ASP File - "gethint.asp"</h1>
       <p>The ASP file queries an array of names and outputs the matching name(s) to the browser.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`<%
 response.expires=-1

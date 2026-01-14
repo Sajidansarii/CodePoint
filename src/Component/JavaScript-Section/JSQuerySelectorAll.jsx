@@ -23,7 +23,7 @@ const JSQuerySelectorAll = () => {
       </p>
 
       <p className="mt-5 mb-10">Set a new background color for the first "example" element within "myDiv".</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`const element = document.getElementById("myDIV");
 const list = element.querySelectorAll(".example"); 
@@ -37,7 +37,7 @@ list[0].style.backgroundColor = "red";`}
        <p>A NodeList is an array-like collection of nodes. You can access each node in the list using its index, which starts at 0. The <span className="text-red-400">length</span> property of a NodeList returns the total number of nodes in the collection.</p>
          
          <h2 className="text-gray-800 text-2xl font-semibold mt-10">Syntax</h2>
-         <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
           <code>
             {`document.querySelectorAll(CSS selectors)`}
           </code>
@@ -83,7 +83,7 @@ list[0].style.backgroundColor = "red";`}
 
         <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h1>
         <p>Apply a background color to the first paragraph.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
           <code>
             {`const nodeList= document.querySelectorAll("p");
 nodeList[0].style.backgroundColor = "red"; `}
@@ -91,7 +91,7 @@ nodeList[0].style.backgroundColor = "red"; `}
         </pre>
 
         <p className="mt-10 mb-10">Set a background color for the first <span className="text-red-400">{'<p>'}</span> element with class "example".</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
           <code>
             {`const nodeList = document.querySelectorAll("p.example");
 nodeList[0].style.backgroundColor = "red"; `}
@@ -99,7 +99,7 @@ nodeList[0].style.backgroundColor = "red"; `}
         </pre>
 
         <p className="mt-10 mb-10">Count of elements with class "example".</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
           <code>
             {`let numb = document.querySelectorAll(".example").length;`}
           </code>
@@ -108,7 +108,7 @@ nodeList[0].style.backgroundColor = "red"; `}
 
 
          <p className="mt-10 mb-10">Apply a background color to all elements with class "example".</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
           <code>
             {`const nodeList = document.querySelectorAll(".example");
 for (let i = 0; i < nodeList.length; i++) {
@@ -118,7 +118,7 @@ for (let i = 0; i < nodeList.length; i++) {
         </pre>
 
         <p className="mt-10 mb-10">Apply a background color to all <span className="text-red-400">{'<p>'}</span> elements.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
           <code>
             {`let nodeList = document.querySelectorAll("p");
 for (let i = 0; i < nodeList.length; i++) {
@@ -128,7 +128,7 @@ for (let i = 0; i < nodeList.length; i++) {
         </pre>
 
         <p className="mt-10 mb-10">Set a border for every <span className="text-red-400">{'<a>'}</span> tag with a target attribute.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`const nodeList = document.querySelectorAll("a[target]");
 for (let i = 0; i < nodeList.length; i++) {
@@ -140,7 +140,7 @@ for (let i = 0; i < nodeList.length; i++) {
 
 
        <p className="mt-10 mb-10">Set a background color for every paragraph inside a <span className="text-red-400">{'<div>'}</span> element.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`const nodeList = document.querySelectorAll("div > p");
 for (let i = 0; i < nodeList.length; i++) {
@@ -150,7 +150,7 @@ for (let i = 0; i < nodeList.length; i++) {
       </pre>
 
       <p className="mt-10 mb-10">Set a background color for every <span className="text-red-400">{'<h3>'}</span> and <span className="text-red-400">{'<span>'}</span> tag.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`const nodeList = document.querySelectorAll("h3, span");
 for (let i = 0; i < nodeList.length; i++) {
@@ -158,37 +158,6 @@ for (let i = 0; i < nodeList.length; i++) {
 }`}
       </code>
      </pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

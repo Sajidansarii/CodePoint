@@ -11,7 +11,7 @@ const FunctionParametersDemo = () => {
 
         <h1 className="text-2xl font-semibold text-gray-800 mt-10 mb-3">Function Parameters and Arguments</h1>
         <p>In the previous section, you learned that functions can accept parameters.</p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5">
+        <pre className="bg-gray-900 overflow-x-auto text-green-400 p-4 rounded-lg mt-5">
           <code>
             {`function functionName(parameter1, parameter2, parameter3) {
   // code to be executed
@@ -57,7 +57,7 @@ myFunction(5);`}
      <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Function Rest Parameter</h1>
      <p>The rest parameter <span className='text-red-400'>(...)</span> lets a function handle any number of arguments as an array.</p>
      <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-     <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+     <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`function sum(...args) {
   let sum = 0;
@@ -74,7 +74,7 @@ let x = sum(4, 9, 16, 25, 29, 100, 66, 77);`}
      <p className='mb-3'>The <span className='text-red-400'>arguments</span> object holds an array of all arguments passed to the function when it was called.</p>
     <p>Using this method, a function can easily determine the highest value in an array of numbers.</p>
     <h2 className='text-gray-800 text-2xl font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`x = findMax(1, 123, 500, 115, 44, 88);
 
@@ -92,7 +92,7 @@ function findMax() {
 
     <p className='mt-5'>You can also make a function to calculate the total of all input values.</p>
     <h2 className='text-gray-800 text-2xl font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg'>
       <code>
         {`x = sumAll(1, 123, 500, 115, 44, 88);
 

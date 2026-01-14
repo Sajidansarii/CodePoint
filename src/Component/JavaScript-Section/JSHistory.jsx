@@ -25,7 +25,7 @@ const JSHistoryBOM = () => {
       <p>This works the same way as clicking the browser’s Back button.</p>
        <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
        <p>Add a Back button to the page.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`<html>
 <head>
@@ -53,7 +53,7 @@ function goBack() {
          <p>This works the same way as clicking the browser’s Forward button.</p>
          <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
          <p>Add a Forward button to the page.</p>
-         <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
           <code>
             {`<html>
 <head>
@@ -75,20 +75,6 @@ function goForward() {
         <div className="bg-gray-200 p-4 mt-5">
     <button className="bg-gray-360 border border-black px-2 rounded">Forward</button>
         </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     </div>
   );

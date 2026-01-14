@@ -14,7 +14,7 @@ const JSCookieAttributes = () => {
 
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Cookie HttpOnly Attribute</h1>
     <p>The HttpOnly attribute prevents JavaScript from accessing the cookie via document.cookie. It can only be used by the server, not JavaScript.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 mb-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5 mb-5">
       <code>
         {`Set-Cookie: username=abcd; HttpOnly; Path=/`}
       </code>
@@ -31,13 +31,13 @@ const JSCookieAttributes = () => {
       <li><span className="text-red-400">None</span> – Cookie is sent in all requests (must be Secure as well).</li>
      </ul>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`document.cookie = "name=value; SameSite=Strict";`}
         </code>
       </pre>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`<html>
 <body>
@@ -75,13 +75,13 @@ const JSCookieAttributes = () => {
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Cookie Secure Attribute</h1>
     <p>The <span className="text-red-400">Secure</span> attribute ensures that the cookie is sent only over HTTPS connections, protecting it from being sent over unencrypted HTTP.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`document.cookie = "name=value; secure";`}
       </code>
      </pre>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`<html>
 <body>
@@ -120,7 +120,7 @@ const JSCookieAttributes = () => {
    <p>The <span className="text-red-400">domain</span> attribute defines which domain a cookie is valid for. By default, it uses the domain that made the request, but it can be set to include subdomains.</p>
    <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Syntax</h2>
    <p>Use the following syntax to assign a value to the domain attribute of a cookie.</p>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`document.cookie = "name=value;domain:domain_name ";`}
     </code>
@@ -129,7 +129,7 @@ const JSCookieAttributes = () => {
   <p className="mt-5">In this syntax, substitute domain_name with the actual domain, such as example.com.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
     <p>The following code assigns tutorialspoint.com as the domain for the cookie.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`<html>
 <body>
@@ -161,7 +161,7 @@ const JSCookieAttributes = () => {
      <p>The <span className="text-red-400">maxAge</span> attribute is an alternative to expires and defines how long a cookie should last in seconds; once the time ends, the cookie is automatically deleted.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Syntax</h2>
     <p>Follow the syntax given below to set the <span className="text-red-400">maxAge</span> attribute for a cookie.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`document.cookie = "name=value;max-ge=age;";`}
       </code>
@@ -171,7 +171,7 @@ const JSCookieAttributes = () => {
     
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
     <p>The following code assigns maxAge a value equal to 10 days in seconds. You can test the behavior by setting the cookie lifetime to 1 second and checking it afterward.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`<html>
 <body>
@@ -198,10 +198,6 @@ const JSCookieAttributes = () => {
 </html>`}
       </code>
     </pre>
-    
-    
-    
-    
     
     
     </div>

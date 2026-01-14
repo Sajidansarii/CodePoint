@@ -29,7 +29,7 @@ const JSAsynchronous = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Asynchronous JavaScript</h1>
       <p>The purpose of the previous chapter’s examples was to teach <span className="text-red-400">callback</span> function syntax, so they were kept simple.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`function myDisplayer(something) {
   document.getElementById("demo").innerHTML = something;
@@ -49,7 +49,7 @@ myCalculator(5, 5, myDisplayer);`}
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Waiting for a Timeout</h1>
       <p>The <span className="text-red-400">setTimeout()</span> function allows you to specify a <span className="text-red-400">callback</span> to execute once the timeout occurs.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`setTimeout(myFunction, 3000);
 
@@ -66,7 +66,7 @@ function myFunction() {
      <p>You don’t have to pass only a function name—you can provide the full function as an argument.</p>
     
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`setTimeout(function() { myFunction("I love You !!!"); }, 3000);
 
@@ -82,7 +82,7 @@ function myFunction(value) {
    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Waiting for Intervals:</h1>
    <p>The <span className="text-red-400">setInterval()</span> function allows you to specify a callback that executes repeatedly at each interval.</p>
    <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`setInterval(myFunction, 1000);
 

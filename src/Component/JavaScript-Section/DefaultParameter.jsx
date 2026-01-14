@@ -37,7 +37,7 @@ sum(); // NaN`}
 
        <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Default Parameters Syntax</h1>
         <p>JavaScript functions can have default parameters, and the syntax looks like this.</p>
-        <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+        <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
           <code>
             {`function functName(param1 = defaultValue1, param2 = DefaultValue2, ..) {
     // Use parameters here
@@ -49,7 +49,7 @@ sum(); // NaN`}
      
      <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Example (Default parameters)</h1>
     <p>In the code below, p and q default to 30 and 40 respectively, so when any argument is missing, the output shows the sum of these default values.</p>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`let output = document.getElementById("output");
       function sum(p = 30, q = 40) {
@@ -72,7 +72,7 @@ sum(); // NaN`}
     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Passing an expression as a default parameter value</h1>
     <p>You can assign an expression as a default value in a JavaScript function, and it can utilize values from preceding parameters.</p>
     <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`let output = document.getElementById("output");
       function sum(p = 2, q = p * 2, r = p * q * 2) {
@@ -97,7 +97,7 @@ sum(); // NaN`}
     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Passing Undefined Argument</h1>
     <p>When a function receives undefined as an argument, it applies the default values to maintain error-free execution. </p>
     <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`let output = document.getElementById("output");
       function sum(p = 24, q = 26) {
@@ -121,7 +121,7 @@ sum(); // NaN`}
     <h1 className='text-2xl text-gray-800 mt-10 mb-3 font-semibold'>Function expression as a default parameter</h1>
    <p>A function expression can serve as a default parameter in JavaScript. Here, the <span className='text-red-400'>getNum()</span> function returns 5 and is set as q’s default. If the second argument isn’t provided, q uses the return value of <span className='text-red-400'>getNum()</span>.</p>
    <h2 className='text-gray-800 text-2xl font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`let output = document.getElementById("output");
       function getNum() {
@@ -156,7 +156,7 @@ sum(); // NaN`}
     <p className='mt-5'>In the JavaScript snippet above, the optional parameter q is placed at the end of the parameter list.</p>
     <h2 className='text-gray-800 text-2xl font-semibold mt-5 mb-3'>Example</h2>
     <p>In the code below, the first parameter must be provided, and the second parameter is optional.</p>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {` let output = document.getElementById("output");
       function func(p, q=10) {
@@ -183,13 +183,6 @@ sum(10) // NaN`}
     </pre>
 
     <p className='mt-5'>So, if you pass only a single argument, it replaces the default value of the first parameter, and the second parameter remains undefined.</p>
-    
-    
-    
-    
-    
-    
-    
     
     
     </div>

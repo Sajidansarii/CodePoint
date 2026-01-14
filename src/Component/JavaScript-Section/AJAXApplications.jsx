@@ -15,7 +15,7 @@ const JSAJAXASPApp = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Display XML Data in an HTML Table</h1>
       <p>This example iterates over each <span className="text-red-400">{'<CD>'}</span> element and shows the <span className="text-red-400">{'<ARTIST>'}</span> and <span className="text-red-400">{'<TITLE>'}</span> values in an HTML table.</p>
        <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`<table id="demo"></table>
 
@@ -53,7 +53,7 @@ function myFunction(cd) {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Display the First CD in an HTML div Element</h1>
       <p>This example calls a function to display the first <span className="text-red-400">{'<CD>'}</span> element inside the HTML element with id="showCD".</p>
       <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`const xhttp = new XMLHttpRequest();
 xhttp.onload = function() {
@@ -80,7 +80,7 @@ function myFunction(cd, i) {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb3">Navigate Between the CDs</h1>
       <p className="mt-3">Create <span className="text-red-400">next()</span> and <span className="text-red-400">previous()</span> functions to navigate between the CDs in the example.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`function next() {
   // display the next CD, unless you are on the last CD
@@ -104,7 +104,7 @@ function previous() {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Show Album Information When Clicking On a CD</h1>
       <p>The last example demonstrates how to display album information when a user clicks on a CD.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`function displayCD(i) {
   document.getElementById("showCD").innerHTML =

@@ -20,21 +20,21 @@ const JSInnerHTML = () => {
       </p>
 
       <p className="mt-10 mb-3">Retrieve the HTML content of the element with id="myP".</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`let html = document.getElementById("myP").innerHTML;`}
         </code>
       </pre>
 
       <p className="mt-5">Change the inner HTML of the element identified by demo.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`document.getElementById("demo").innerHTML = "I have changed!";`}
         </code>
       </pre>
 
       <p className="mt-5">Get the inner HTML of the <span className="text-red-400">{'<ul>'}</span> element identified by myList.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`let html = document.getElementById("myList").innerHTML;`}
         </code>
@@ -101,7 +101,7 @@ const JSInnerHTML = () => {
 
    <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h2>
   <p>Change the inner HTML of two elements.</p>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`let text = "Hello Dolly.";
 document.getElementById("myP").innerHTML = text;
@@ -112,7 +112,7 @@ document.getElementById("myDIV").innerHTML = text;`}
 
    <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h2>
   <p>Display the same HTML content multiple times.</p>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`element.innerHTML += element.innerHTML;`}
     </code>
@@ -121,7 +121,7 @@ document.getElementById("myDIV").innerHTML = text;`}
 
   <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h2>
   <p>Update both the HTML content and the URL of a link.</p>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`element.innerHTML = "W3Schools";
 element.href = "https://www.w3schools.com";`}
@@ -137,14 +137,14 @@ element.href = "https://www.w3schools.com";`}
   </ul>
 
   <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`<p id="myP">   This element has extra spacing     and contains <span>a span element</span>.</p>`}
     </code>
   </pre>
 
   <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`let text = document.getElementById("myP").innerText;
 

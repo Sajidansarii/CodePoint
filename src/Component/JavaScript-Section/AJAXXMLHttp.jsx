@@ -61,7 +61,7 @@ const JSAJAXXMLHttp = () => {
 
        <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Define a Callback Function</h1>
        <p>A callback function is a function provided as an argument to another function. In this context, it should include the code that runs when the response is ready.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
           <code>
             {`xhttp.onload = function() {
   // What to do when the response is ready
@@ -72,14 +72,14 @@ const JSAJAXXMLHttp = () => {
 
         <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Send a Request</h1>
         <p>The <span className="text-red-400">open()</span> and <span className="text-red-400">send()</span> methods of the XMLHttpRequest object are used to send requests to a server.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
           <code>
             {`xhttp.open("GET", "ajax_info.txt");
 xhttp.send();`}
           </code>
         </pre>
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h2>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`// Create an XMLHttpRequest object
 const xhttp = new XMLHttpRequest();
@@ -142,7 +142,7 @@ xhttp.send();
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The onload Property</h1>
      <p>The XMLHttpRequest object allows you to define a callback that executes once the request gets a response. This callback is placed in the <span className="text-red-400">onload</span> property.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`xhttp.onload = function() {
   document.getElementById("demo").innerHTML = this.responseText;
@@ -156,7 +156,7 @@ xhttp.send();`}
      <p className="mb-3">If a website has multiple AJAX tasks, you should create a single function to execute the <span className="text-red-400">XMLHttpRequest</span> object and a separate callback function for each task.</p>
      <p>When calling the function, provide both the URL and the function to execute once the response is ready.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`loadDoc("url-1", myFunction1);
 
@@ -199,7 +199,7 @@ function myFunction2(xhttp) {
 
      <p className="mt-5">The <span className="text-red-400">onreadystatechange</span> function executes whenever the <span className="text-red-400">readyState</span> changes. When readyState equals 4 and status is 200, the response has been received.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`function loadDoc() {
   const xhttp = new XMLHttpRequest();
@@ -217,13 +217,6 @@ function myFunction2(xhttp) {
 
      <p className="mt-5">The <span className="text-red-400">onreadystatechange</span> event fires four times (from 1 to 4), once for each change in <span className="text-red-400">readyState</span>.</p>
    
-
-
-
-
-
-
-
 
 
     </div>

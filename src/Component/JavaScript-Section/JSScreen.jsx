@@ -28,7 +28,7 @@ const JSScreenBOM = () => {
     <p>The screen.width property gives the screen width of the user’s device in pixels.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
     <p>Show the screen width in pixels.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`document.getElementById("demo").innerHTML =
 "Screen Width: " + screen.width;`}
@@ -45,7 +45,7 @@ const JSScreenBOM = () => {
     <p>You can use screen.height to get the screen’s height in pixels.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
     <p>Show the screen height in pixels.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`document.getElementById("demo").innerHTML =
 "Screen Height: " + screen.height;`}
@@ -62,7 +62,7 @@ const JSScreenBOM = () => {
     <p>The <span className="text-red-400">screen.availWidth</span> property gives the width of the visitor’s screen in pixels, excluding interface elements like the Windows Taskbar.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
     <p>Show the screen’s available width in pixels.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`document.getElementById("demo").innerHTML =
 "Available Screen Width: " + screen.availWidth;`}
@@ -79,7 +79,7 @@ const JSScreenBOM = () => {
     <p>The <span className="text-red-400">screen.availHeight</span> property gives the height of the visitor’s screen in pixels, excluding interface elements like the Windows Taskbar.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
     <p>Show the screen’s available height in pixels.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`document.getElementById("demo").innerHTML =
 "Available Screen Height: " + screen.availHeight;`}
@@ -102,7 +102,7 @@ const JSScreenBOM = () => {
    <p className="mt-5">Older computers used 16-bit color, providing 65,536 “High Colors,” while very old computers and early cell phones used 8-bit color with 256 “VGA colors.”</p>
    <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
    <p>Show the screen’s color depth in bits.</p>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`document.getElementById("demo").innerHTML =
 "Screen Color Depth: " + screen.colorDepth;`}
@@ -119,7 +119,7 @@ const JSScreenBOM = () => {
    <p>The <span className="text-red-400">screen.pixelDepth</span> property gives the pixel depth of the screen.</p>
    <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
    <p>Show the screen’s pixel depth in bits.</p>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`document.getElementById("demo").innerHTML =
 "Screen Pixel Depth: " + screen.pixelDepth;`}

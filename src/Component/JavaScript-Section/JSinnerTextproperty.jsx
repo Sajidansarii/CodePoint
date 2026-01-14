@@ -90,7 +90,7 @@ const JSInnerText = () => {
       
 
       <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`<p id="myP">   This element has extra spacing     and contains <span>a span element</span>.</p>`}
         </code>
@@ -98,7 +98,7 @@ const JSInnerText = () => {
 
 
       <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
        <code>
         {`let text = document.getElementById("myP").innerText;
 
@@ -108,24 +108,7 @@ let text = document.getElementById("demo").textContent;`}
        </code>
       </pre>
 
-
       <p className="mt-5">The <span className="text-red-400">innerText</span> property shows only visible text. The <span className="text-red-400">innerHTML</span> property shows the full HTML inside the element, including tags and spacing. The <span className="text-red-400">textContent</span> property shows all text inside the element, including spacing, but strips out any HTML tags.</p>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     </div>

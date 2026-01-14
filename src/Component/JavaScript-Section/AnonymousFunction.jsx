@@ -14,7 +14,7 @@ const AnonymousFunctionDemo = () => {
         <p>JavaScript, like other modern languages, allows anonymous functions, which are functions without names. Unlike regular functions that have identifiers, anonymous ones are nameless and ideal for short, simple code. This article explains their meaning, syntax, usage, pros, and cons.</p>
 
        <h1 className='text-2xl text-gray-800 font-semibold mt-10'>Syntax</h1>
-       <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+       <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
         <code>
           {`const EnumType = {
    variable = function () {
@@ -26,7 +26,7 @@ const AnonymousFunctionDemo = () => {
 
        <p className='mt-10'>As shown, the function has no name and is assigned directly to a variable, which can then be used as the function itself. You can also copy it to another variable. Let’s look at an example.</p>
       <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-      <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+      <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
         <code>
           {`var content = ''
       var error = ''
@@ -63,7 +63,7 @@ const AnonymousFunctionDemo = () => {
       <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Passing function as an argument</h1>
        <p>Sometimes we pass a function itself—not its returned value—as a parameter to another function. Here’s an example where a line is printed after a 2-second (2000 ms) delay.</p>
        <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-       <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+       <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
         <code>
           {`var content = ''
       var error = ''
@@ -108,7 +108,7 @@ const AnonymousFunctionDemo = () => {
    </pre>
 
    <h2 className='text-2xl text-gray-800 mt-10 mb-3 font-semibold'>Example</h2>
-   <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+   <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
     <code>
       {`  var content = ''
       var error = ''
@@ -139,15 +139,6 @@ const AnonymousFunctionDemo = () => {
    <p className='mb-3'>Anonymous functions are useful because they can be written inline and can access all local variables, making the code simpler. Since they have no name, they don’t interfere with any namespace—global or local.</p>
   <p>Anonymous functions aren’t always ideal. For example, with addEventListener(type, function), you can’t remove the event handler later because the function has no reference. Another downside is that each anonymous function creates a new instance. In situations where a regular function works the same, using an anonymous one offers no benefit. This becomes a performance issue if the function is created repeatedly inside a loop.</p>
   
-
-
-
-
-
-
-
-
-
     </div>
   );
 };

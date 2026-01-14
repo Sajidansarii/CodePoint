@@ -20,7 +20,7 @@ const JSWindowBOM = () => {
    <p className="mb-3">The window object automatically includes all globally defined JavaScript variables, functions, and objects.</p>
    <p className="mb-3">Global variables are properties of the window object, and global functions are its methods.</p>
    <p>Even the document object from the HTML DOM is a property of the window object.</p> 
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`window.document.getElementById("header");`}
     </code>
@@ -28,7 +28,7 @@ const JSWindowBOM = () => {
 
   <p className="mt-5">is the same as:</p>
   
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`document.getElementById("header");`}
     </code>

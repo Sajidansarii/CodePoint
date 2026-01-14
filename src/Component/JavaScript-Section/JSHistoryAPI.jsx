@@ -23,7 +23,7 @@ const JSHistoryAPI = () => {
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The History back() Method</h1>
     <p>The <span className="text-red-400">back()</span> method navigates to the previous URL in the window.history list, just like clicking the browser’s back arrow.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`<button onclick="myFunction()">Go Back</button>
 
@@ -38,7 +38,7 @@ function myFunction() {
   <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The History go() Method</h1>
   <p>The <span className="text-red-400">go()</span> method navigates to a particular URL in the browser’s history.</p>
   <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`<button onclick="myFunction()">Go Back 2 Pages</button>
 

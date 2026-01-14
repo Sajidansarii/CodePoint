@@ -120,7 +120,7 @@ function myFunction() {
    
    <h2 className='text-gray-800 text-2xl font-semibold mt-5 mb-3'>Example</h2>
    <p>"name" and "age" are parameters:</p>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`function greet(name, age) {
   return \`Hello \${name}! You are \${age} years old.\`;
@@ -138,7 +138,7 @@ function myFunction() {
    <p>Functions can act like variables and be used in formulas, assignments, and calculations.</p>
    <h2 className='text-2xl text-gray-800 font-semibold mt-5 mc-3'>Example</h2>
     <p>Instead of using a variable to store the return value of a function:</p>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`let x = toCelsius(77);
 let text = "The temperature is " + x + " Celsius";`}
@@ -146,7 +146,7 @@ let text = "The temperature is " + x + " Celsius";`}
     </pre>
 
     <p className='mt-5'>You can use the function directly, as a variable value:</p>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`let text = "The temperature is " + toCelsius(77) + " Celsius";`}
       </code>

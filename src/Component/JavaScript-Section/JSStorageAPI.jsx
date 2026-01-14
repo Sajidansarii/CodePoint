@@ -27,7 +27,7 @@ const JSStorageAPI = () => {
       </p>
 
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`localStorage.setItem("name", "John Doe");
 localStorage.getItem("name");`}
@@ -42,7 +42,7 @@ localStorage.getItem("name");`}
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The setItem() Method</h1>
      <p>The <span className="text-red-400">localStorage.setItem()</span> method saves a data item in local storage, requiring a key and a value as parameters.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`localStorage.setItem("name", "John Doe");`}
       </code>
@@ -69,7 +69,7 @@ localStorage.getItem("name");`}
   <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The setItem() Method</h1>
   <p>Using <span className="text-red-400">sessionStorage.setItem()</span>, you can store a value in the browser for the current session by providing a name and value.</p>
   <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`sessionStorage.setItem("name", "John Doe");`}
     </code>

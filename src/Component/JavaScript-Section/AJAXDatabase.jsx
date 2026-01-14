@@ -16,7 +16,7 @@ const JSAJAXDatabase = () => {
       <p className="mt-5">The onchange event triggers the showCustomer() function when a user selects a customer from the dropdown.</p>
      
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">showCustomer</h1>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`function showCustomer(str) {
   if (str == "") {
@@ -33,7 +33,7 @@ const JSAJAXDatabase = () => {
       </code>
      </pre>
 
-     <p>Here’s what the <span className="text-red-400">showCustomer()</span> function does:</p>
+     <p className="mt-10">Here’s what the <span className="text-red-400">showCustomer()</span> function does:</p>
      <ul className="list-[square] list-inside mt-5 space-y-1">
       <li>Check if a customer is selected</li>
       <li>Create an XMLHttpRequest object</li>
@@ -44,7 +44,7 @@ const JSAJAXDatabase = () => {
 
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The AJAX Server Page</h1>
     <p>The JavaScript above calls a server page named <span className="text-red-400">getcustomer.php</span>, which executes a database query and returns the result in an HTML table.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`<?php
 $mysqli = new mysqli("servername", "username", "password", "dbname");

@@ -28,7 +28,7 @@ const JSGetElementById = () => {
 
 
       <p className="mt-10">Select the element and set a new color</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`const myElement = document.getElementById("demo");
 myElement.style.color = "red";`}
@@ -38,7 +38,7 @@ myElement.style.color = "red";`}
 
       
       <p className="mt-10">Or alternatively, update its color property</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`document.getElementById("demo").style.color = "red";`}
         </code>
@@ -49,7 +49,7 @@ myElement.style.color = "red";`}
       
 
       <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Syntax</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`document.getElementById(elementID)`}
         </code>

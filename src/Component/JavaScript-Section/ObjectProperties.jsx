@@ -23,7 +23,7 @@ let age = person[x];
     </pre>
 
     <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`person.firstname + " is " + person.age + " years old.";
       person["firstname"] + " is " + person["age"] + " years old.";
@@ -45,7 +45,7 @@ person[x] + " is " + person[y] + " years old.";`}
     <h1 className="text-gray-800 text-2xl font-semibold mt-10 mb-3">Property Default Values</h1>
     <p>The value given to a property in a constructor function is used as the default for every object it creates.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`function Person(first, last, age, eyecolor) {
   this.firstName = first;

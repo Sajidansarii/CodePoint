@@ -24,14 +24,14 @@ const JSGetElementsByClassName = () => {
       </p>
 
       <p className="mt-10 mb-3">Select all elements that have the class example</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`const collection = document.getElementsByClassName("example");`}
         </code>
       </pre>
 
       <p className="mt-10">Get all elements that belong to both example and color classes</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`const collection = document.getElementsByClassName("example color");`}
         </code>
@@ -41,7 +41,7 @@ const JSGetElementsByClassName = () => {
       <p><span className="text-red-400">getElementsByClassName()</span> returns an HTMLCollection object.</p>
      
      <h2 className="text-2xl text-gray-800 font-semibold mt-10">Syntax</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`document.getElementsByClassName(classname)`}
       </code>
@@ -88,7 +88,7 @@ const JSGetElementsByClassName = () => {
 
      <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h2>
      <p>Count of elements having the class "example"</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`let numb = document.getElementsByClassName("example").length;`}
       </code>
@@ -96,7 +96,7 @@ const JSGetElementsByClassName = () => {
 
 
       <p className="mt-10">Set a new background color for every element with class "example"</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`const collection = document.getElementsByClassName("example");
 for (let i = 0; i < collection.length; i++) {

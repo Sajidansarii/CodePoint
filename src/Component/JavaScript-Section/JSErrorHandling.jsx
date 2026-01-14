@@ -166,6 +166,7 @@ try {
 
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">JavaScript Type Errors</h1>
    <p>A <span className="text-red-400">TypeError</span> occurs when a value has an incorrect type or an invalid operation is performed on it.</p>
+    <div className="max-w-full overflow-x-auto">
    <table className="min-w-full border border-gray-300 text-gray-700 text-sm text-left mt-5">
     <thead>
       <tr className="bg-gray-100">
@@ -184,6 +185,7 @@ try {
       ))}
     </tbody>
    </table>
+   </div>
 
    <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
    <p>Anna() is not a function:</p>
@@ -213,6 +215,7 @@ try {
 
    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">JavaScript Range Errors</h1>
    <p>A <span className="text-red-400">RangeError</span> happens when a value exceeds its allowed limits.</p>
+    <div className="max-w-full overflow-x-auto">
    <table className="min-w-full border border-gray-300 text-gray-700 text-sm text-left mt-5">
     <thead>
       <tr className="bg-gray-100">
@@ -231,6 +234,7 @@ try {
       ))}
     </tbody>
    </table>
+   </div>
 
    <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
    <p>You cannot set the number of array elements to -1:</p>
@@ -245,7 +249,7 @@ new Array(-1);
    </pre>
 
    <p className="mt-5">You cannot set the number of significant digits of a number to 500:</p>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`let num = 1;
 
@@ -259,6 +263,7 @@ try {
 
   <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">JavaScript URI Errors</h1>
   <p>A <span className="text-red-400">URIError</span> occurs when invalid characters are used in a URI function.</p>
+   <div className="max-w-full overflow-x-auto">
   <table className=" min-w-full border border-gray-300 text-gray-700 text-sm txet-left mt-5">
     <thead>
       <tr className="bg-gray-100">
@@ -277,9 +282,10 @@ try {
       ))}
     </tbody>
   </table>
+  </div>
 
   <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`try {
   decodeURI("%%%");   // You cannot URI decode percent signs
@@ -291,7 +297,8 @@ try {
 
    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">JavaScript Syntax Errors</h1>
    <p>A <span className="text-red-400">Syntax Error</span> occurs when JavaScript code breaks its grammatical rules.</p>
-   <table className="min-w-full border border-gray-300 text-gray-700 text-sm text-left mt-5">
+   <div className="max-w-full overflow-x-auto">
+   <table className="w-full border border-gray-300 text-gray-700 text-sm text-left mt-5">
     <thead>
       <tr className="bg-gray-100">
         <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Error</th>
@@ -309,10 +316,11 @@ try {
      ))}
     </tbody>
    </table>
+   </div>
 
    <h2 className="text-gray-800 text-2xl font-semibold mt-5 mb-3">Example</h2>
    <p>This example shows an error caused by not properly closing the string.</p>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`// This line cannot be parsed by JavaScript
 let fName = "John);
@@ -327,7 +335,7 @@ let fName = "John);
    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Syntax Errors are Not Catchable</h1>
    <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
    <p>The code shown below is expected to produce an error, but it doesn’t.</p>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`try {
   let x = Math.round(4.6;)

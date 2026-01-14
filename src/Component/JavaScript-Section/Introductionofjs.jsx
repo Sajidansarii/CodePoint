@@ -2,13 +2,11 @@ import React from "react";
 
 export default function IntroJavaScript() {
   return (
-    <div className="min-h-screen p-6">
+    <div className="p-4 sm:p-6 md:p-8 max-w-4xl mt-10">
       <div className="max-w-4xl">
         {/* Page Title */}
         <header>
-          <h1 className="text-3xl font-medium text-blue-500 mb-1">
-            Introduction to JavaScript
-          </h1>
+          <h1 className="lg:text-3xl text-2xl font-medium text-blue-500 mb-1">JavaScript Introduction</h1>
           <p className="text-lg">
             Learn the language of the web step by step 
           </p>
@@ -43,11 +41,11 @@ export default function IntroJavaScript() {
         <p className="leading-relaxed">JavaScript provides multiple HTML methods, including getElementById().</p>
         <p className="leading-relaxed">In this example, an element with the ID demo is found, and its innerHTML is set to "Hello JavaScript".</p>
         <h1 className="text-2xl mt-5 mb-5">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mb-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mb-5">
           {`document.getElementById("demo").innerHTML = "Hello JavaScript";`}
         </pre>
         <h1 className="text-2xl mb-5 mt-10">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mb-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mb-5">
           {`document.getElementById('demo').innerHTML = 'Hello JavaScript';`}
         </pre>
 
@@ -57,21 +55,21 @@ export default function IntroJavaScript() {
          <h1 className="text-2xl mt-14">JavaScript Can Change HTML Styles (CSS)</h1>       
          <p className="leading-relaxed">Updating the style of an HTML tag is essentially tweaking one of its attributes—so make the change.</p>
          <h1 className="text-2xl mt-10">Example</h1>
-         <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
           {`document.getElementById("demo").style.fontSize = "35px";`}
          </pre>
 
          <h1 className="text-2xl mt-10">JavaScript Can Hide HTML Elements</h1>
          <p>Changing the display property is an effective way to hide HTML elements.</p>
          <h1 className="text-2xl mt-10">Example</h1>
-         <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mb-5 mt-5">
+         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mb-5 mt-5">
           {`document.getElementById("demo").style.display = "none";`}
          </pre>
 
          <h1 className="text-2xl mt-10">JavaScript Can Show HTML Elements</h1>
          <p>Changing the display property is also how you make hidden HTML elements visible.</p>
          <h1 className="text-2xl mt-10">Example</h1>
-         <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 mb-10">
+         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5 mb-10">
           {`document.getElementById("demo").style.display = "block";`}
          </pre>
 

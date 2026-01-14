@@ -12,7 +12,7 @@ const JSExtendingError = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Extending the Error Class: Creating Custom Errors</h1>
       <p>The easiest and most effective way to create custom errors is by creating a class that extends Error. Through inheritance, the custom error class gets all properties of the Error class, which can be initialized in the <span className="text-red-400">constructor()</span>.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`class customError extends Error {
    constructor(message) {
@@ -25,7 +25,7 @@ const JSExtendingError = () => {
 
      <p className="mt-5">Here, user input is read, and the check age button calls <span className="text-red-400">checkAge()</span>. The ageError class is defined by extending Error, with a constructor that initializes properties. The constructor uses <span className="text-red-400">super()</span> for the message and sets name and age. The <span className="text-red-400">checkAge()</span> function throws an error for ages below 18, and the catch block prints the error details.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {` const output = document.getElementById("demo");
       class ageError extends Error {
@@ -55,7 +55,7 @@ const JSExtendingError = () => {
    
     <p className="mt-10">The following code defines three custom classes that extend <span className="text-red-400">Error</span> to create custom errors. Inside the <span className="text-red-400">try</span> block, <span className="text-red-400">StringError</span> is thrown, and the <span className="text-red-400">catch</span> block uses instanceof to check the error type and print its message.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {` const output = document.getElementById("demo");
       class StringError extends Error { };
@@ -80,7 +80,7 @@ const JSExtendingError = () => {
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Multilevel Inheritance</h1>
     <p>The code defines a NotFound class that extends Error, followed by propertyNotFound and valueNotFound classes extending NotFound, creating a multilevel inheritance structure. In the try block, a valueNotFound error is thrown when 6 is missing from the array.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {` const output = document.getElementById("output");
       class NotFound extends Error {

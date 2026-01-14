@@ -25,7 +25,7 @@ const JSAsyncAwait = () => {
 
      <p className="mt-5">Is the same as:</p>
      
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`function myFunction() {
   return Promise.resolve("Hello");
@@ -34,7 +34,7 @@ const JSAsyncAwait = () => {
      </pre>
 
      <p className="mt-5">Here is how to use the Promise:</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`myFunction().then(
   function(value) { /* code if successful */ },
@@ -44,7 +44,7 @@ const JSAsyncAwait = () => {
      </pre>
 
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`async function myFunction() {
   return "Hello";
@@ -60,7 +60,7 @@ myFunction().then(
 
     <p className="mt-5">Simply put, for cases where you anticipate a standard value and not an error.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`async function myFunction() {
   return "Hello";
@@ -83,7 +83,7 @@ myFunction().then(
 
    <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
    <p>Let's go slowly and learn how to use it.</p>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`async function myDisplay() {
   let myPromise = new Promise(function(resolve, reject) {
@@ -97,7 +97,7 @@ myDisplay();`}
    </pre>
 
    <h1 className="text-2xl text-gray-800 font-semibold mt-10">Example without reject</h1>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`async function myDisplay() {
   let myPromise = new Promise(function(resolve) {
@@ -111,7 +111,7 @@ myDisplay();`}
   </pre>
 
   <h1 className="text-2xl text-gray-800 font-semibold mt-5">Waiting for a Timeout</h1>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`async function myDisplay() {
   let myPromise = new Promise(function(resolve) {
@@ -125,7 +125,7 @@ myDisplay();`}
   </pre>
 
   <h1 className="text-gray-800 text-2xl font-semibold mt-5">Waiting for a File</h1>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`async function getFile() {
   let myPromise = new Promise(function(resolve) {

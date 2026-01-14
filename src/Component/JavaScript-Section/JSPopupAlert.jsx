@@ -32,9 +32,6 @@ const JSAlertBOM = () => {
         or messages in the browser.
       </p>
 
-
-    
-
       <p className="mt-10">JavaScript provides three types of popup boxes.</p>
       <ul className="list-[square] list-inside mt-5">
         <li>Alert box</li>
@@ -53,7 +50,7 @@ const JSAlertBOM = () => {
 
       <p className="mt-5">The <span className="text-red-400">window.alert()</span> method can be accessed without using the window prefix.</p>
       <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`alert("You pressed alert button!");`}
         </code>
@@ -82,7 +79,7 @@ const JSAlertBOM = () => {
 
       <p className="mt-10">The <span className="text-red-400">window.confirm()</span> method can be called without using the window prefix.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`if (confirm("Press a button!")) {
   txt = "You pressed OK!";
@@ -109,14 +106,14 @@ const JSAlertBOM = () => {
       <p className="mb-3">A <span className="text-red-400">prompt</span> box is used when you want the user to provide input before proceeding, requiring them to click "OK" or "Cancel" after entering a value.</p>
       <p>Clicking "OK" returns the entered value, while clicking "Cancel" returns null.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`window.prompt("sometext","defaultText");`}
         </code>
       </pre>
    <p className="mt-5">You can use <span className="text-red-400">prompt()</span> directly instead of writing window.prompt().</p>
    <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`let person = prompt("Please enter your name", "Harry Potter");
 let text;

@@ -24,7 +24,7 @@ const JSPromises = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">JavaScript Promise Object</h1>
       <p>A Promise holds both the code that generates a value and the code that uses it.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`let myPromise = new Promise(function(myResolve, myReject) {
 // "Producing Code" (May take some time)
@@ -84,7 +84,7 @@ myPromise.then(
 
   <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Promise How To</h1>
   <p>Here is how to use a Promise:</p>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`myPromise.then(
   function(value) { /* code if successful */ },
@@ -95,7 +95,7 @@ myPromise.then(
 
   <p className="mt-5"><span className="text-red-400">Promise.then()</span> accepts two arguments: a callback for success and one for failure. Both are optional, so you can provide just one if needed.</p>
   <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`function myDisplayer(some) {
   document.getElementById("demo").innerHTML = some;
@@ -129,7 +129,7 @@ myPromise.then(
 
   <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-5">Waiting for a Timeout</h1>
   <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example Using Callback</h2>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`setTimeout(function() { myFunction("I love You !!!"); }, 3000);
 
@@ -142,7 +142,7 @@ function myFunction(value) {
   </pre>
 
   <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-5">Example Using Promise</h1>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`let myPromise = new Promise(function(myResolve, myReject) {
   setTimeout(function() { myResolve("I love You !!"); }, 3000);
@@ -156,7 +156,7 @@ myPromise.then(function(value) {
 
   <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-5">Waiting for a file</h1>
   <p className="text-2xl text-gray-800 font-semibold mt-5">Example using Callback</p>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`function getFile(myCallback) {
   let req = new XMLHttpRequest();
@@ -176,7 +176,7 @@ getFile(myDisplayer);`}
    </pre>
 
    <p className="text-2xl text-gray-800 font-semibold mt-5">Example using Promise</p>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`let myPromise = new Promise(function(myResolve, myReject) {
   let req = new XMLHttpRequest();
@@ -201,7 +201,7 @@ myPromise.then(
    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-5">JavaScript Promise.allSettled()</h1>
    <p>The <span className="text-red-400">Promise.allSettled()</span> method takes an array of promises and returns a single Promise.</p>
   <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`// Create a Promise
 const myPromise1 = new Promise((resolve, reject) => {
@@ -225,7 +225,7 @@ Promise.allSettled([myPromise1, myPromise2]).then((results) =>
   <p className="mb-3">The static method <span className="text-red-400">Promise.withResolvers()</span> streamlines the creation and management of Promises.</p>
   <p className="mb-3">Using <span className="text-red-400">Promise.withResolvers()</span>, you can conveniently get the resolve and reject functions of a Promise without being inside the executor function.</p>
   <p>Rather than using the usual <span className="text-red-400">new Promise((resolve, reject) {'=> { ... }'})</span> constructor, Promise.withResolvers() returns an object that includes:</p>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`<p id="demo">Waiting...</p>
 
@@ -265,7 +265,7 @@ promise
   </ul>
 
   <p className="mt-5">The code for simulating asynchronous work can be simplified as follows:</p>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`// Simulate async work
 setTimeout(() => {
@@ -277,7 +277,7 @@ setTimeout(() => {
   </pre>
 
   <p className="mt-5">The <span className="text-red-400">then/catch</span> code can be written more simply as:</p>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`// Set text in then/catch, update DOM in finally
 promise
@@ -297,7 +297,7 @@ promise
   </ul>
 
   <p className="mt-5">Using <span className="text-red-400">async/await</span> provides the clearest and simplest code.</p>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`// Use async/await to handle the promise
 (async () => {
@@ -318,11 +318,7 @@ promise
     <li>The DOM is updated after the promise resolves or rejects</li>
     <li>async/await makes asynchronous code look synchronous</li>
   </ul>
-
-
-
-
-
+  
     </div>
   );
 };

@@ -41,7 +41,7 @@ console.log(c);
    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The debugger Keyword</h1>
    <p>The <span className="text-red-400">debugger</span> keyword pauses JavaScript execution and invokes the debugging tool if one is available. It works the same way as placing a breakpoint in the debugger. If debugging is not supported, the statement does nothing. When debugging is enabled, the code will pause before running the third line.</p>
    <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`let x = 15 * 5;
 debugger;

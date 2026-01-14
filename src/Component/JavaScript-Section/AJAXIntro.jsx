@@ -46,7 +46,7 @@ const JSAJAXIntro = () => {
 
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">AJAX Example Explained</h1>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">HTML Page</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`<!DOCTYPE html>
 <html>
@@ -67,7 +67,7 @@ const JSAJAXIntro = () => {
      
 
      <h1 className="text-2xl text-gray-800 mt-10 mb-3 font-semibold">Function loadDoc()</h1>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`function loadDoc() {
   const xhttp = new XMLHttpRequest();

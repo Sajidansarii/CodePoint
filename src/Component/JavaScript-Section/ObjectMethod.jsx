@@ -34,7 +34,7 @@ const ObjectMethod = () => {
        <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Adding a Method to an Object</h1>
       <p>You can easily add a new method to an object.</p>
      <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`person.name = function () {
   return this.firstName + " " + this.lastName;
@@ -46,23 +46,13 @@ const ObjectMethod = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Using JavaScript Methods</h1>
       <p>This example demonstrates using JavaScript’s <span className="text-red-400">toUpperCase( )</span> method to convert text to uppercase.</p>
       <h2 className="text-2xl text-gray-800 mt-5 font-semibold">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`person.name = function () {
   return (this.firstName + " " + this.lastName).toUpperCase();
 };`}
         </code>
       </pre>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
       
       </div>
   );

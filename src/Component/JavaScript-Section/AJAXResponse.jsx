@@ -43,7 +43,7 @@ const JSAJAXResponse = () => {
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The responseText Property</h1>
      <p>The <span className="text-red-400">responseText</span> property provides the server’s response as a JavaScript string, which you can then use as needed.</p>
      <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`document.getElementById("demo").innerHTML = xhttp.responseText;`}
       </code>
@@ -53,7 +53,7 @@ const JSAJAXResponse = () => {
     <p>The XMLHttpRequest object includes a built-in XML parser, and its <span className="text-red-400">responseXML</span> property returns the server response as an XML DOM object that you can parse.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-5">Example</h2>
     <p>Request the <span className="text-red-400">cd_catalog.xml</span> file and parse the returned response.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`const xmlDoc = xhttp.responseXML;
 const x = xmlDoc.getElementsByTagName("ARTIST");
@@ -91,7 +91,7 @@ xhttp.send();
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The getAllResponseHeaders() Method</h1>
     <p>The <span className="text-red-400">getAllResponseHeaders()</span> method retrieves all header information from the server’s response.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`const xhttp = new XMLHttpRequest();
 xhttp.onload = function() {
@@ -106,7 +106,7 @@ xhttp.send();`}
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The getResponseHeader() Method</h1>
     <p>The <span className="text-red-400">getResponseHeader()</span> method retrieves a specific header from the server’s response.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`const xhttp = new XMLHttpRequest();
 xhttp.onload = function() {
@@ -118,21 +118,6 @@ xhttp.send();
 `}
       </code>
     </pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

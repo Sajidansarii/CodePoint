@@ -15,7 +15,7 @@ const JSAJAXPHP = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">AJAX PHP </h1>
       <p>This example demonstrates real-time communication between a web page and a web server while the user enters characters.</p>
        <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`<p>Start typing a name in the input field below:</p>
 <p>Suggestions: <span id="txtHint"></span></p>
