@@ -5,21 +5,18 @@ export default function IntroJavaScript() {
     <div className="p-4 sm:p-6 md:p-8 max-w-4xl mt-10">
       <div className="max-w-4xl">
         {/* Page Title */}
-        <header>
+        
           <h1 className="lg:text-3xl text-2xl font-medium text-blue-500 mb-1">JavaScript Introduction</h1>
-          <p className="text-lg">
-            Learn the language of the web step by step 
-          </p>
-        </header>
+          <p className="text-lg">Learn the language of the web step by step </p>
 
         {/* Introduction Section */}
-        <section className="bg-white rounded-2xl p-6">
-          <h2 className="text-2xl font-semibold mb-4">What is JavaScript?</h2>
+        <section className="bg-white rounded-2xl mt-5">
+          <h2 className="text-2xl font-semibold">What is JavaScript?</h2>
           <p className="leading-relaxed">
             JavaScript (JS) is a powerful programming language that allows you
-            to add <span className="font-semibold text-blue-600">interactivity</span>, 
-            <span className="font-semibold text-blue-600"> logic</span>, and{" "}
-            <span className="font-semibold text-blue-600">dynamic content</span>{" "}
+            to add <span className="font-semibold text-red-400">interactivity</span>, 
+            <span className="font-semibold text-red-400"> logic</span>, and{" "}
+            <span className="font-semibold text-red-400">dynamic content</span>{" "}
             to websites. It runs directly in the browser and is one of the
             three core web technologies along with{" "}
             <span className="font-semibold">HTML</span> and{" "}
@@ -27,10 +24,10 @@ export default function IntroJavaScript() {
           </p>
         </section>
 
-        <div className="bg-white rounded-2xl p-6">
+        <div className="bg-white rounded-2xl mt-5">
           <h1 className="text-2xl font-semibold mb-4">Why study javascript?</h1>
           <p>Javascript is one the 3 language every web developer must learn:</p>
-          <ul className="list-[square] list-inside leading-relaxed">
+          <ul className="list-[square] list-inside mt-2 leading-relaxed">
             <li>HTML to define the content of web pages</li>
             <li>CSS to specify the layout of web pages</li>
             <li>Javascript to program the behavior of web pages</li>
