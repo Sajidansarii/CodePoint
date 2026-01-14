@@ -30,7 +30,7 @@ export default function IntroJavaScript() {
           <ul className="list-[square] list-inside mt-2 leading-relaxed">
             <li>HTML to define the content of web pages</li>
             <li>CSS to specify the layout of web pages</li>
-            <li>Javascript to program the behavior of web pages</li>
+            <li>Javascript to program the behavior of web <span className="lg:ml-0 ml-5">pages</span></li>
           </ul>
         </div>
 
