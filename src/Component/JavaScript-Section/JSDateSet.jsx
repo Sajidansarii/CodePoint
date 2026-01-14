@@ -43,7 +43,7 @@ const JSDateSet = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The setFullYear() Method</h1>
      <p>The <span className="text-red-400">setFullYear()</span> method updates the year of a date object — in this case, to 2020.</p>
       <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
         <code>
           {`const d = new Date("January 01, 2025");
 d.setFullYear(2020);`}
@@ -51,7 +51,7 @@ d.setFullYear(2020);`}
       </pre>
 
       <p className="mt-5">The <span className="text-red-400">setFullYear()</span> method can also set the month and day if needed.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
         <code>
           {`const d = new Date("January 01, 2025");
 d.setFullYear(2020, 11, 3);`}
@@ -61,7 +61,7 @@ d.setFullYear(2020, 11, 3);`}
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The setMonth() Method</h1>
       <p><span className="text-red-400">The setMonth()</span> method updates the month of a date object using a value from 0 to 11.</p>
       <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-     <pre className="text-green-400 bg-gray-900 rounded-lg p-4 mt-5">
+     <pre className="text-green-400 bg-gray-900 overflow-x-auto rounded-lg p-4 mt-5">
       <code>
         {`const d = new Date("January 01, 2025");
 d.setMonth(11);`}
@@ -71,7 +71,7 @@ d.setMonth(11);`}
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The setDate() Method</h1>
      <p><span className="text-red-400">Using setDate()</span>, you can set the day of a date object to a value between 1 and 31.</p>
      <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
       <code>
         {`const d = new Date("January 01, 2025");
 d.setDate(15);`}
@@ -81,7 +81,7 @@ d.setDate(15);`}
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The setHours() Method</h1>
      <p>The <span className="text-red-400">setHours()</span> method updates the hour value of a Date object, using a range from 0 to 23.</p>
     <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
       <code>
         {`const d = new Date("January 01, 2025");
 d.setHours(22);`}
@@ -90,7 +90,7 @@ d.setHours(22);`}
 
     <p className="mt-5">The <span className="text-red-400">setHours()</span> method updates the hour value of a Date object, using a range from 0 to 23.</p>
     <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
       <code>
         {`const d = new Date("January 01, 2025");
 d.setHours(22, 10, 20);`}
@@ -100,7 +100,7 @@ d.setHours(22, 10, 20);`}
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The setMinutes() Method</h1>
     <p>The <span className="text-red-400">setMinutes()</span> method updates the minutes value of a Date object, ranging from 0 to 59.</p>
     <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
       <code>
         {`const d = new Date("January 01, 2025");
 d.setMinutes(30);`}
@@ -110,7 +110,7 @@ d.setMinutes(30);`}
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The setSeconds() Method</h1>
     <p>The <span className="text-red-400">setSeconds()</span> method updates the seconds value of a Date object, ranging from 0 to 59.</p>
     <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
       <code>
         {`const d = new Date("January 01, 2025");
 d.setSeconds(30);`}
@@ -120,7 +120,7 @@ d.setSeconds(30);`}
     <h1 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Compare Dates</h1>
     <p>Dates can easily be compared.</p>
     <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
       <code>
         {`let text = "";
 const today = new Date();

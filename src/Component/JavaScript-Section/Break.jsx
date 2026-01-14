@@ -16,7 +16,7 @@ const JSBreak = () => {
       <p className="leading-relaxed mt-3">No more steps in the loop are done.</p>
       <h1 className="text-2xl mt-5">Example</h1>
       <p>When i becomes 3, exit the loop.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
         {`for (let i = 0; i < 10; i++) {
   if (i === 3) { break; }
   text += "The number is " + i + "<br>";
@@ -77,7 +77,7 @@ const JSBreak = () => {
       <p className="leading-relaxed mt-5">The <span className="text-red-400 bg-gray-50 px-1">break</span> statement is useful for leaving any loop in nested loops.</p>
       <h1 className="text-2xl mt-5 mb-3">Example</h1>
       <p>Break to loop1:</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
         {`let text = "";
 
 loop1: for (let j = 1; j < 5; j++) {
@@ -90,7 +90,7 @@ loop1: for (let j = 1; j < 5; j++) {
 
       <h1 className="text-2xl mt-10 mb-5">Example</h1>
       <p>Break to loop2:</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
         {`let text = "";
 
 loop1: for (let j = 1; j < 5; j++) {
@@ -107,7 +107,7 @@ loop1: for (let j = 1; j < 5; j++) {
 
       <h1 className="text-2xl mt-10 mb-5">Example</h1>
       <p>Break the block after the second car is handled.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
         {`const cars = ["BMW", "Volvo", "Saab", "Ford"];
 list: {
   text += cars[0] + "<br>";
@@ -117,14 +117,6 @@ list: {
   text += cars[3] + "<br>";
 }`}
       </pre>
-
-      
-
-
-
-     
-
-
 
       <p className="mt-10">
         <span className="font-semibold text-xl">Key points about break:</span>

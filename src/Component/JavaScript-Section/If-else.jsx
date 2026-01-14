@@ -16,7 +16,7 @@ const IfElseInJS = () => {
         runs. Otherwise, the <code>else</code> block runs. This is one of the
         most common decision-making statements in JavaScript. 
       </p>
-      <pre className="text-green-400 p-4 bg-gray-900 rounded-lg">{`
+      <pre className="text-green-400 p-4 overflow-x-auto bg-gray-900 rounded-lg">{`
       if (condition) {
   //  block of code to be executed if the condition is true
     } else {
@@ -36,7 +36,7 @@ const IfElseInJS = () => {
       <h1 className="text-2xl mt-10 mb-2">The else if Statement</h1>
       <p>Apply else if to add a new condition that runs only if the initial if fails.</p>
       <h1 className="mt-3 text-2xl">Syntax</h1>
-      <pre className="text-green-400 mt-5 bg-gray-900 p-4 rounded-lg">
+      <pre className="text-green-400 mt-5 bg-gray-900 overflow-x-auto p-4 rounded-lg">
         {`if (condition1) {
   //  block of code to be executed if condition1 is true
 } else if (condition2) {

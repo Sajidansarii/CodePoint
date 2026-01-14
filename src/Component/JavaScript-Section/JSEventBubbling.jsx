@@ -39,7 +39,7 @@ const JSEventBubbling = () => {
        <h1 className="text-2xl text-gray-800 mt-10 font-semibold mb-3">Event Bubbling using 2 Nested DIVs</h1>
       <p className="mt-10">In nested {'<div>'}s, clicking the child triggers both the child and parent listeners as the event bubbles upward.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`let messageElement = document.getElementById('message');
 
@@ -56,7 +56,7 @@ const JSEventBubbling = () => {
      <h1 className="text-2xl text-gray-800 mt-10 font-semibold mb-3">Event Bubbling using 3 Nested Levels</h1>
      <p>Three nested {'<div>'}s show event bubbling. Clicking Level 3 fires listeners on Level 3, then Level 2, then Level 1. Different background colors and console logs make the bubbling path easy to see.</p>
      <h2 className="text-2xl text-gray-800 mt-10 font-semibold mb-3"></h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`	const messageElement = document.getElementById("message");
 		document.getElementById('div1').addEventListener("click", function (event) {

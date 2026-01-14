@@ -79,39 +79,39 @@ const JSCustomEvents = () => {
      <h1 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Custom Event</h1>
      <p>In this example, a custom event called myCustomEvent is created, and a button is displayed. We use addEventListener to listen for button events. Clicking the button dispatches the custom event and shows the alert "Custom event triggered!"</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`
-        const customEvent = new Event('myCustomEvent');
-		// Adds an event listener to the button.
-		document.getElementById('triggerBtn').addEventListener('click', 
-		function() {
-			// Dispatches custom event on button click.
-			document.dispatchEvent(customEvent);
-		});
-		// Add listener for the custom event.
-		document.addEventListener('myCustomEvent', function() {
-			alert('Custom event triggered!');
-		});`}
+  const customEvent = new Event('myCustomEvent');
+ // Adds an event listener to the button.
+ document.getElementById('triggerBtn').addEventListener('click', 
+ function() {
+ 	// Dispatches custom event on button click.
+ 	document.dispatchEvent(customEvent);
+ });
+ // Add listener for the custom event.
+ document.addEventListener('myCustomEvent', function() {
+ 	alert('Custom event triggered!');
+ });`}
       </code>
     </pre>
 
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3 ">Event with Data</h1>
     <p>We create a CustomEvent called myCustomEventWithData that carries a message via detail. Clicking the button triggers the event and shows the alert.</p>
    <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-10">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-10">
     <code>
       {`
-      const eventData = { message: 'Hello from custom event!' };
-		const customEvent = new CustomEvent('myCustomEventWithData', 
-		{ detail: eventData });
-		document.getElementById('triggerBtn').addEventListener('click', 
-		function() {       
-			document.dispatchEvent(customEvent);
-		});
-		document.addEventListener('myCustomEventWithData', 
-		function(event) {
-			alert('Custom event triggered with data: ' + event.detail.message);
+ const eventData = { message: 'Hello from custom event!' };
+ const customEvent = new CustomEvent('myCustomEventWithData', 
+ { detail: eventData });
+ document.getElementById('triggerBtn').addEventListener('click', 
+ function() {       
+ 	document.dispatchEvent(customEvent);
+ });
+ document.addEventListener('myCustomEventWithData', 
+ function(event) {
+ 	alert('Custom event triggered with data: ' + event.detail.message);
 		});`}
     </code>
    </pre>
@@ -119,24 +119,25 @@ const JSCustomEvents = () => {
    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Condition-based Event Dispatching</h1>
    <p>The example dispatches TutorialEvent or TutorialEvent2 depending on v. The listener reacts to the chosen event.</p>
    <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
-      {`var v='tutorialspoint';
-		const event = new Event("TutorialEvent");
-		const event2 = new Event("TutorialEvent2");
+      {`
+   var v='tutorialspoint';
+ const event = new Event("TutorialEvent");
+ const event2 = new Event("TutorialEvent2");
 	 
-		document.addEventListener('TutorialEvent', ()=>{
-			alert("Welcome to Tutorialspoint Event")
-		});
-		document.addEventListener('TutorialEvent2', ()=>{
-			alert("Welcome to Event 2")
-		});
+ document.addEventListener('TutorialEvent', ()=>{
+ 	alert("Welcome to Tutorialspoint Event")
+ });
+ document.addEventListener('TutorialEvent2', ()=>{
+ 	alert("Welcome to Event 2")
+ });
 	 
-		if(v == 'tutorialspoint'){
-			document.dispatchEvent(event);
-		}
-		else{
-			document.dispatchEvent(event2);
+ if(v == 'tutorialspoint'){
+ 	document.dispatchEvent(event);
+ }
+ else{
+ 	document.dispatchEvent(event2);
 		}`}
     </code>
    </pre>

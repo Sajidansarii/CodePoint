@@ -27,7 +27,7 @@ const JSLoops = () => {
       </pre>
 
       <h1 className="text-2xl mt-5 mb-5">You make it:</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg">
         <code>
           {`
 for (let i = 0; i < cars.length; i++) {
@@ -53,7 +53,7 @@ for (let i = 0; i < cars.length; i++) {
       <p className="mt-1">The third expression <span className="font-semibold">exp3</span> is executed every time the loop completes an iteration.</p>
 
       <h1 className="text-2xl mt-5 mb-3">Example</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg">
         <code>
           {`
 for (let i = 0; i < 5; i++) {

@@ -52,19 +52,19 @@ const JSEvents = () => {
 
         <p className="mt-5">Here, we add an onclick event to a <span className="text-red-400 bg-gray-100 px-1">{"<button>"}</span> to run JavaScript when it’s clicked.</p>
         <h1 className="text-2xl mt-5">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
           {`<button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>`}
         </pre>
 
         <p className="leading-relaxed mt-10">The code above updates the text inside the element with the id "demo".</p>
         <p className="leading-relaxed">In the next example, the element changes its own content using <span className="text-red-400 bg-gray-50 px-1">this.innerHTML</span>.</p>
         <h1 className="text-2xl mt-5">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
           {`<button onclick="this.innerHTML = Date()">The time is?</button>`}
         </pre>
 
         <h1 className="text-2xl mt-5">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
           {`<button onclick="displayDate()">The time is?</button>`}
         </pre>
 

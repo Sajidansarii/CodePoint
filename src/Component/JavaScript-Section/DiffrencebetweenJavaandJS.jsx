@@ -35,8 +35,9 @@ export default function JavaVsJavaScript() {
         </section>
 
         {/* Comparison Table */}
-          <h2 className="text-2xl font-semibold mb-4">Key Differences</h2>
-            <table className="min-w-full border border-gray-300 text-gray-700 text-left text-sm mt-10">
+          <h2 className="text-2xl font-semibold">Key Differences</h2>
+          <div className="w-full overflow-x-auto">
+            <table className="w-full border border-gray-300 text-gray-700 text-left text-sm">
               <thead>
                 <tr className="bg-gray-100">
                   <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold">Sr. No.</th>
@@ -56,6 +57,8 @@ export default function JavaVsJavaScript() {
                 ))}
               </tbody>
             </table>
+          </div>
+
             <p>The following are the key differences between Java and JavaScript.</p>
             <h1 className="text-2xl">Example</h1>
             <p>To better understand the difference between Java and JavaScript, consider the following example.</p>

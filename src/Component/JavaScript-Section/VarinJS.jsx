@@ -42,11 +42,6 @@ var identifier = value;`}
         </tbody>
       </table>
 
-
-
-
-
-
       <h2 className="text-2xl font-semibold text-gray-800 mt-10">Example:</h2>
       <p className="leading-relaxed mt-2 mb-2">This example shows the declaration of three variables using <span className="text-red-400 bg-gray-50 px-1">var</span>:</p>
       <ul className="list-[square] list-inside">
@@ -54,7 +49,7 @@ var identifier = value;`}
         <li><span className="text-red-400 bg-gray-50 px-1">str1</span> holds a string,</li>
         <li>and <span className="text-red-400 bg-gray-50 px-1">bool</span> holds a boolean.</li>
       </ul> 
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-10">
+        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-10">
           {`<html>
 <body>
    <div id = "output1"> </div>
@@ -79,7 +74,7 @@ true`}
         </pre>
         
         <p className="mt-10 mb-5">Use let to assign 5 to x and 6 to y, and display x + y:</p>
-        <pre className="text-green-400 bg-gray-900 rounded-lg p-4">
+        <pre className="text-green-400 bg-gray-900 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
           {`let x = 5;
 let y = 6;
 document.getElementById("demo").innerHTML = x + y;`}

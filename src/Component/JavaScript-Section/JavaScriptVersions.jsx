@@ -99,7 +99,9 @@ fetchData().then(console.log);`}</code>
         </section>
 
         <p className="mt-14">The following table outlines comprehensive information regarding each ECMAScript version.</p>
-        <table className="min-w-full border border-gray-300 text-gray-700 text-left text-sm mt-4">
+         <div className="w-full overflow-x-auto">
+
+        <table className="w-full border border-gray-300 text-gray-700 text-left text-sm mt-4">
           <thead>
             <tr className="bg-gray-100">
               <th className="px-4 py-2 border-b border-gray-300 font-bold text-gray-700">Version</th>
@@ -119,13 +121,16 @@ fetchData().then(console.log);`}</code>
             ))}
           </tbody>
         </table>
+         </div>
 
         <p className="mt-5">Since 2016, early updates have been released annually, each version named after its release year. The update released in June 2023 is referred to as ECMAScript 2023.</p>
 
         <h1 className="text-2xl mt-10 mb-2">Browser Support</h1>
         <p>All modern browsers offer full support for ECMAScript versions ES1 through ES6. For later versions, developers can utilize polyfills and include supplementary code as needed.</p>
       
-  <table className="min-w-full border border-gray-300 text-gray-700 text-left text-sm mt-4">
+
+          <div className="w-full overflow-x-auto">
+          <table className="w-full border border-gray-300 text-gray-700 text-left text-sm mt-4">
           <thead>
             <tr className="bg-gray-100">
               <th className="px-4 py-2 border-b border-gray-300 font-bold text-gray-700">Chrome</th>
@@ -149,6 +154,8 @@ fetchData().then(console.log);`}</code>
             ))}
           </tbody>
         </table>
+            </div>
+
 
         {/* Explanation Section */}
         <section className="py-6 mt-5">

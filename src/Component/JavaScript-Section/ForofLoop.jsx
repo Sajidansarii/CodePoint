@@ -11,7 +11,7 @@ const JSForLoop = () => {
       </p>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-2">Syntax:</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 mt-5">
         <code>
           {`
  for (variable of iterable) {
@@ -25,7 +25,7 @@ const JSForLoop = () => {
 
       <h1 className="text-2xl text-gray-800 mt-10">Looping over an Array</h1>
       <h2 className="text-2xl mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
         <code>
           {`
 const fruits = ["Apple", "Banana", "Cherry"] ;

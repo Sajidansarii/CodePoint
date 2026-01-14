@@ -23,10 +23,12 @@ const JSConst = () => {
       <h1 className="text-2xl mt-10">Cannot be Reassigned</h1>
       <p className="leading-relaxed mt-5">Variables declared using <span className="text-red-400 bg-gray-50 px-1">const</span> are immutable — they can’t be reassigned.</p>
        <h1 className="text-2xl mt-5">Example</h1>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+       <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mt-5">
+        <code>
         {`const PI = 3.141592653589793;
-PI = 3.14;      // This will give an error
-PI = PI + 10;   // This will also give an error`}
+      PI = 3.14;      // This will give an error
+      PI = PI + 10;   // This will also give an error`}
+      </code>
        </pre>
 
        <h1 className="text-2xl mt-10">Must be Assigned</h1>
@@ -71,7 +73,7 @@ PI = 3.14159265359;`}
         <h1 className="text-2xl mt-10 mb-3">Constant Arrays</h1>
         <p>The <span className="text-red-400 bg-gray-50 px-1">contents</span> of an array declared with const can still be change.</p>
         <h1 className="text-2xl">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
           {`// You can create a constant array:
 const cars = ["Saab", "Volvo", "BMW"];
 
@@ -84,7 +86,7 @@ cars.push("Audi");`}
 
         <p className="mt-10">While the contents can change, the array itself cannot be reassigned.</p>
         <h1 className="text-2xl mt-5">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
           {`const cars = ["Saab", "Volvo", "BMW"];
 
 cars = ["Toyota", "Volvo", "Audi"];    // ERROR`}
@@ -93,7 +95,7 @@ cars = ["Toyota", "Volvo", "Audi"];    // ERROR`}
         <h1 className="text-2xl mt-10 mb-5">Constant Objects</h1>
         <p>Even if an object is declared with const, you can update its properties.</p>
         <h1 className="text-2xl mt-5">Example</h1>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
         {`// You can create a const object:
 const car = {type:"Fiat", model:"500", color:"white"};
 

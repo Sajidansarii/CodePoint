@@ -24,7 +24,7 @@ console.log(sym2); // Output: Symbol(description)`}
         Symbols are always unique, even if they have the same description. They are *not equal* to each other:
       </p>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5">
+      <pre className="bg-gray-900 text-green-400 overflow-x-auto p-4 rounded-lg mb-5">
         <code>
           {`const a = Symbol("id");
 const b = Symbol("id");
@@ -34,7 +34,7 @@ console.log(a === b); // Output: false`}
       </pre>
 
       <h2 className="text-2xl font-semibold text-gray-800 mt-10 mb-5">Using Symbols as Object Keys</h2>
-      <pre className="bg-gray-900  text-green-400 p-4 rounded-lg mb-5">
+      <pre className="bg-gray-900  text-green-400 overflow-x-auto p-4 rounded-lg mb-5">
         <code>
           {`
 const id = Symbol("id");

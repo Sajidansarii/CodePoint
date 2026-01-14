@@ -65,7 +65,7 @@ const JSKeyboardEvents = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Keydown Event</h1>
       <p>This example shows how the JavaScript keydown event works. When any key is pressed, the event listener detects it and displays the pressed key inside the HTML element with the ID "output".</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-10">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
         <code>
           {`document.addEventListener('keydown', function (event) {
          document.getElementById('output').innerHTML = 
@@ -77,7 +77,7 @@ const JSKeyboardEvents = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Keyup Event</h1>
       <p>This example demonstrates the functionality of the keyup event. It registers the moment a pressed key is released and then displays the corresponding key on the screen.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {` document.addEventListener('keyup', function (event) {
          document.getElementById('output').innerHTML = 
@@ -90,13 +90,10 @@ const JSKeyboardEvents = () => {
       <p>In all the examples above, we used addEventListener, but it’s also possible to handle events without it by assigning functions directly to event properties. Still, addEventListener is preferred because it lets you attach multiple handlers to the same event and keeps JavaScript separate from HTML.</p>
 
 
-
-
-
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Keypress Event</h1>
       <p>In this example, the keypress event is employed to register user-typed characters. Once a character is entered, the event listener activates and renders the character inside the HTML element identified as "output".</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {` document.addEventListener('keypress', function (event) {
          document.getElementById('output').innerHTML = 
@@ -108,7 +105,7 @@ const JSKeyboardEvents = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Without using addEventListener method</h1>
       <p>This example has an input box. When a key is pressed, the handleKeyDown function runs, and when a key is released, the handleKeyUp function runs. Both functions display messages on the screen.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`function handleKeyDown(event) {
          document.getElementById('output').innerHTML+= 

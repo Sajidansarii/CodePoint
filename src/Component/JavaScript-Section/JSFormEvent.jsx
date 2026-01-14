@@ -109,7 +109,7 @@ const JSFormEvents = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The onchange Event</h1>
       <p>This example shows how the onchange event works. When the user selects a different option from the {'<select>'} dropdown, the handleChange function updates an {'<h2>'} element with the chosen country.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
       <code>
         {`   function handleChange() {
          var selectedCountry = document.getElementById('country').value;
@@ -122,18 +122,19 @@ const JSFormEvents = () => {
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The onsubmit Event</h1>
      <p>The onsubmit event runs when the form is submitted. The form requires both username and password. If validateForm confirms they’re filled, a success message appears.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
-        {`   function validateForm() {
-         var username = document.getElementById('username').value;
-         var password = document.getElementById('password').value;
-         // Perform validation
-         if (username === "" || password === "") {
-            alert("Please fill in all fields");
-            return false; // Prevent form submission
-         }
-         alert("Form submitted! Username is:"+username+",Password is:"+password);      
-         return true; // Allow form submission
+        {`  
+  function validateForm() {
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+  // Perform validation
+  if (username === "" || password === "") {
+     alert("Please fill in all fields");
+     return false; // Prevent form submission
+  }
+  alert("Form submitted! Username is:"+username+",Password is:"+password);      
+ return true; // Allow form submission
       }`}
       </code>
      </pre>
@@ -143,7 +144,7 @@ const JSFormEvents = () => {
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The onreset event</h1>
     <p>This example shows how the onreset event works. When the user clicks the Reset button, the resetForm function clears the form and displays a confirmation alert.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`function resetForm() {
          // Perform actions when the form is reset
@@ -156,7 +157,7 @@ const JSFormEvents = () => {
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The oninput Event</h1>
      <p>The oninput event fires while the user types. Each keystroke triggers handleInput, which logs the current search text.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {` var messageElement = document.getElementById('message');
       function handleInput() {
@@ -170,7 +171,7 @@ const JSFormEvents = () => {
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">onfocus and onblur Events</h1>
      <p>Focusing on the input triggers handleFocus and logs a message. Leaving the input triggers handleBlur, which logs another message.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`const output = document.getElementById('output');
       function handleFocus() {
@@ -183,15 +184,6 @@ const JSFormEvents = () => {
       }`}
       </code>
      </pre>
-
-
-
-
-
-
-
-
-
 
 
     </div>

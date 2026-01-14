@@ -47,7 +47,7 @@ const ArrayMethodsDemo = () => {
       <h1 className='text-gray-800 text-2xl font-semibold mt-10 mb-3'>JavaScript Array length</h1>
      <p>The <span className='text-red-400'>length</span> property returns the length (size) of an array:</p>
      <h2 className='text-gray-800 text-2xl font-semibold mt-5'>Example</h2>
-     <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5 mb-5'>
+     <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5 mb-5'>
       <code>
         {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
  let size = fruits.length;`}
@@ -55,7 +55,7 @@ const ArrayMethodsDemo = () => {
      </pre>
      <p>The <span className='text-red-400'>length</span> property may be used not only to retrieve an array’s size but also to adjust it.</p>
     <h2 className='text-gray-800 text-2xl font-semibold mt-5'>Example</h2>
-       <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+       <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
         <code>
           {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.length = 2;`}
@@ -65,7 +65,7 @@ fruits.length = 2;`}
        <h1 className='text-gray-800 text-2xl font-semibold mt-10 mb-3'>JavaScript Array toString()</h1>
        <p>The <span className='text-red-400'>toString()</span> method converts an array into a comma-separated string.</p>
        <h2 className='text-gray-800 text-2xl font-semibold mt-5'>Example</h2>
-       <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+       <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
         <code>
           {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let myList = fruits.toString();
@@ -77,7 +77,7 @@ let myList = fruits.toString();
        <p>In ES2022, JavaScript got a new array method known as <span className='text-red-400'>at()</span>.</p>
        <h2 className='text-gray-800 text-2xl font-semibold mt-5 mb-3'>Example</h2>
        <p>Use the <span className='text-red-400'>at()</span> method to access the third item in the fruits array.</p>
-       <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5 mb-5'>
+       <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5 mb-5'>
         <code>
           {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let fruit = fruits.at(2);`}
@@ -85,7 +85,7 @@ let fruit = fruits.at(2);`}
        </pre>
 
        <p>Use square brackets to access the third item in the fruits array.</p>
-       <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-10'>
+       <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-10'>
         <code>
           {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let fruit = fruits[2];`}
@@ -99,7 +99,7 @@ let fruit = fruits[2];`}
       <p>The <span className='text-red-400'>join()</span> method combines all elements of an array into a single string.</p>
       <p className='mt-3'>It works like <span className='text-red-400'>toString()</span>, but allows you to choose a separator.</p>
      <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-     <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+     <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 document.getElementById("demo").innerHTML = fruits.join(" * ");`}
@@ -113,7 +113,7 @@ document.getElementById("demo").innerHTML = fruits.join(" * ");`}
      <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>JavaScript Array pop()</h1>
      <p>Using <span className='text-red-400'>pop()</span> removes the last item from an array.</p>
      <h2 className='text-2xl text-gray-800 font-semibold mt-5' >Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5 mb-3'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5 mb-3'>
       <code>
         {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.pop();`}
@@ -122,7 +122,7 @@ fruits.pop();`}
     
     <p>When you use <span className='text-red-400'>pop()</span>, it returns the element that was taken out</p>
      <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-     <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+     <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let fruit = fruits.pop();`}
@@ -133,7 +133,7 @@ let fruit = fruits.pop();`}
      <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>JavaScript Array push()</h1>
     <p>The <span className='text-red-400'>push()</span> method adds a new element to an array (at the end):</p>
     <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5 mb-3'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5 mb-3'>
       <code>
         {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.push("Kiwi");`}
@@ -142,7 +142,7 @@ fruits.push("Kiwi");`}
 
     <p>The <span className='text-red-400'>push()</span> method gives the updated length of the array.</p>
     <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let length = fruits.push("Kiwi");`}
@@ -152,7 +152,7 @@ let length = fruits.push("Kiwi");`}
     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>JavaScript Array shift()</h1>
     <p>The <span className='text-red-400'>shift()</span> method deletes the first element of an array and moves all remaining elements down one index.</p>
     <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.shift();`}
@@ -162,7 +162,7 @@ fruits.shift();`}
     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>JavaScript Array unshift()</h1>
     <p>The <span className='text-red-400'>unshift()</span> method inserts a new element at the start of an array and moves existing elements to higher indexes.</p>
     <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.unshift("Lemon");`}
@@ -172,7 +172,7 @@ fruits.unshift("Lemon");`}
     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Changing Elements</h1>
     <p>You can access array elements by their index number.</p>
     <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits[0] = "Kiwi";
@@ -183,7 +183,7 @@ fruits[0] = "Kiwi";
     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>JavaScript Array length</h1>
    <p>The <span className='text-red-400'>length</span> property offers a simple way to add a new element to an array.</p>
    <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-   <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+   <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
     <code>
       {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits[fruits.length] = "Kiwi";`}
@@ -202,7 +202,7 @@ fruits[fruits.length] = "Kiwi";`}
    <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>JavaScript Array delete()</h1>
   <p>Using <span className='text-red-400'>delete</span> creates empty slots in the array. It’s better to use <span className='text-red-400'>pop()</span> or <span className='text-red-400'>shift()</span>.</p>
   <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-  <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+  <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
     <code>
       {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 delete fruits[0];`}
@@ -212,7 +212,7 @@ delete fruits[0];`}
   <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>JavaScript Array concat()</h1>
   <p>Using <span className='text-red-400'>concat()</span>, you can combine multiple arrays into a new one.</p>
   <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-  <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+  <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
     <code>
       {`const myGirls = ["Cecilie", "Lone"];
 const myBoys = ["Emil", "Tobias", "Linus"];
@@ -223,7 +223,7 @@ const myChildren = myGirls.concat(myBoys);`}
 
   <p className='mt-5'>The <span className='text-red-400'>concat()</span> method doesn’t modify the original arrays; it always returns a new one. It can accept multiple array arguments.</p>
   <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-   <pre className='text-green-400 bg-gray-900 p-4 rounde-lg mt-5'>
+   <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
     <code>
       {`const arr1 = ["Cecilie", "Lone"];
 const arr2 = ["Emil", "Tobias", "Linus"];
@@ -235,7 +235,7 @@ const myChildren = arr1.concat(arr2, arr3);`}
    <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Array copyWithin()</h1>
    <p>The <span className='text-red-400'>copyWithin()</span> method duplicates elements of an array to a different position within the same array.</p>
    <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-   <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+   <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
     <code>
       {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.copyWithin(2, 0);`}
@@ -245,7 +245,7 @@ fruits.copyWithin(2, 0);`}
    <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>JavaScript Array flat()</h1>
     <p>The <span className='text-red-400'>flat()</span> method returns a new array with sub-array elements merged to a specified depth.</p>
     <h2 className='text-2xl text-gray-800 mt-5 font-semibold'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`const myArr = [[1,2],[3,4],[5,6]];
 const newArr = myArr.flat();`}
@@ -256,7 +256,7 @@ const newArr = myArr.flat();`}
     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>JavaScript Array flatMap()</h1>
     <p>ES2019 introduced the <span className='text-red-400'>flatMap()</span> method to JavaScript. It first maps each element of an array and then flattens the result into a new array.</p>
     <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`const myArr = [1, 2, 3, 4, 5, 6];
 const newArr = myArr.flatMap(x => [x, x * 10]);`}
@@ -266,7 +266,7 @@ const newArr = myArr.flatMap(x => [x, x * 10]);`}
     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>JavaScript Array splice()</h1>
     <p>The <span className='text-red-400'>splice()</span> method allows you to insert new elements into an array.</p>
     <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.splice(2, 0, "Lemon", "Kiwi");`}
@@ -276,7 +276,7 @@ fruits.splice(2, 0, "Lemon", "Kiwi");`}
     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Using splice() to Remove Elements</h1>
     <p>Using <span className='text-red-400'>splice()</span> correctly, you can remove elements while keeping the array continuous.</p>
      <h2 className='text-2xl text-gray-800 mt-5 font-semibold'>Example</h2>
-      <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5 mb-5'>
+      <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5 mb-5'>
         <code>
           {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.splice(0, 1);`}
@@ -289,7 +289,7 @@ fruits.splice(0, 1);`}
     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>JavaScript Array toSpliced()</h1>
    <p>ES2023 introduced the toSpliced() method, allowing arrays to be spliced without modifying the original array. Unlike <span className='text-red-400'>splice()</span>, toSpliced() returns a new array while leaving the original intact.</p>
     <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`const months = ["Jan", "Feb", "Mar", "Apr"];
 const spliced = months.toSpliced(0, 1);`}
@@ -299,15 +299,12 @@ const spliced = months.toSpliced(0, 1);`}
     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>JavaScript Array slice()</h1>
     <p>Using <span className='text-red-400'>slice()</span>, you can create a new array by taking a part of an existing array.</p>
     <h2 className='text-2xl text-gray-800 mt-5 font-semibold'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 const citrus = fruits.slice(1);`}
       </code>
     </pre>
-
-
-
 
       </div>
   );

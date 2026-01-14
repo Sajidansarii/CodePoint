@@ -11,7 +11,7 @@ const JSModules = () => {
       </p>
       <p>JavaScript modules require the script tag to use <span className="text-red-400 bg-gray-50 px-1">type="module"</span>.</p>
      <h1 className="text-2xl mt-5">Example</h1>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
       {`<script type="module">
 import message from "./message.js";
 </script>
@@ -47,7 +47,7 @@ export {name, age};`}
      <p className="leading-relaxed mt-3">Only a single default export is permitted in a file.</p>
      <h1 className="text-2xl mt-5">Example</h1>
      <p><span className="text-red-400 bg-gray-50 px-1">message.js</span></p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
       {`const message = () => {
 const name = "Jesse";
 const age = 40;
@@ -62,13 +62,13 @@ export default message;`}
      <p className="leading-relaxed mt-3">Named exports require curly braces while default exports do not.</p>
      <h1 className="text-2xl mt-10">Import from named exports</h1>
      <p className="mt-3">Import named exports from <span className="text-red-400 bg-gray-50 px-1">person.js</span>:</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
       {`import { name, age } from "./person.js";`}
      </pre>
 
      <h1 className="text-2xl mt-5">Import from default exports</h1>
      <p className="mt-3">Import the default export from <span className="text-red-400  bg-gray-50 px-1">message.js</span>:</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
       {`import message from "./message.js";`}
      </pre>
 

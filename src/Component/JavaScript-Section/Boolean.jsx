@@ -11,7 +11,7 @@ const JSBoolean = () => {
       </p>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-2">Creating Boolean Values</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 mt-5">
+      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mb-5 mt-5">
         <code>
           {`
 let isLoggedIn = true;
@@ -41,7 +41,7 @@ if (isLoggedIn) {
       </pre>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-5">Boolean Conversion</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 mt-5">
+      <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto rounded-lg mb-5 mt-5">
         <code>
           {`
 console.log(Boolean(1)); // Output: true

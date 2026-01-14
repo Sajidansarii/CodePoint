@@ -101,7 +101,7 @@ let result = text1 < text2;
       <p>For accurate results, variables must be converted to the correct type before comparing.</p>
       <h1 className="text-2xl mt-5">Example</h1>
 
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
         <code>
           {`
 age = Number(age);

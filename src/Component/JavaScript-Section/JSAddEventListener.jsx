@@ -43,7 +43,7 @@ const JSAddEventListener = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10">The addEventListener() method</h1>
       <p>Add an event listener that fires when a user clicks a button:</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-10">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`document.getElementById("myBtn").addEventListener("click", displayDate);`}
         </code>
@@ -55,7 +55,7 @@ const JSAddEventListener = () => {
        Event listeners can be removed easily with removeEventListener().</p>
 
        <h1 className="text-2xl text-gray-800 font-semibold mt-10">Syntax</h1>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg">
         <code>{`element.addEventListener(event, function, useCapture);`}</code>
        </pre>
        <p>The first argument indicates the type of event to listen for, e.g., "click", "keydown", or any standard DOM event.The second argument is the callback function that will be invoked whenever the event is triggered.</p>
@@ -65,7 +65,7 @@ const JSAddEventListener = () => {
        <h1 className="text-2xl text-gray-800 font-semibold mt-10">Add an Event Handler to an Element</h1>
        <p>Alert "Hello World!" when the user clicks on an element:</p>
        <h2 className="text-2xl text-gray-800 font-semibold mt-10">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`element.addEventListener("click", function(){ alert("Hello World!"); });`}
         </code>
@@ -74,7 +74,7 @@ const JSAddEventListener = () => {
 
       <h2 className="text-2xl text-gray-800 font-semibold mt-10">Example</h2>
      <p>Alert "Hello World!" when the user clicks on an element:</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`element.addEventListener("click", myFunction);
 
@@ -88,7 +88,7 @@ function myFunction() {
      <h1 className="text-2xl text-gray-800 font-semibold mt-10">Add Many Event Handlers to the Same Element</h1>
      <p>Using <span className="text-red-400">addEventListener()</span>, you can register multiple event handlers on the same element without overwriting previously attached handlers.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-     <pre className="text-green-400 bg-gray-900 font-semibold mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg font-semibold mt-5">
       <code>
         {`element.addEventListener("click", myFunction);
 element.addEventListener("click", mySecondFunction);`}
@@ -96,7 +96,7 @@ element.addEventListener("click", mySecondFunction);`}
      </pre>
 
      <p>You can add events of different types to the same element:</p>
-     <pre className="text-green-400 bg-gray-900  p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900  p-4 rounded-lg mt-5">
       <code>
         {`element.addEventListener("mouseover", myFunction);
 element.addEventListener("click", mySecondFunction);
@@ -109,7 +109,7 @@ element.addEventListener("mouseout", myThirdFunction);`}
     <p>The <span className="text-red-400">addEventListener()</span> method can attach event listeners to any HTML DOM object, including HTML elements, the document, the window, or other event-supporting objects like XMLHttpRequest.</p>
    <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
    <p>Attach an event listener that triggers whenever the window is resized.</p>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`window.addEventListener("resize", function(){
   document.getElementById("demo").innerHTML = sometext;
@@ -120,7 +120,7 @@ element.addEventListener("mouseout", myThirdFunction);`}
    <h1 className="text-2xl text-gray-800 font-semibold mt-10">Passing Parameters</h1>
    <p>When you need to pass arguments, wrap the function call in an anonymous function so the parameters are supplied correctly.</p>
   <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 ">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5 ">
     <code>
       {`element.addEventListener("click", function(){ myFunction(p1, p2); });`}
     </code>
@@ -130,7 +130,7 @@ element.addEventListener("mouseout", myThirdFunction);`}
   <h1 className="text-2xl text-gray-800 font-semibold mt-10">The removeEventListener() method</h1>
   <p><span className="text-red-400">removeEventListener()</span> removes event listeners previously registered with <span className="text-red-400">addEventListener()</span> from a specified element.</p>
   <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-  <pre className="text-gray-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
       {`element.removeEventListener("mousemove", myFunction);`}
     </code>

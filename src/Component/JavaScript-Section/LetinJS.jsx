@@ -90,7 +90,8 @@ let x = 2;
        </pre>
 
        <h1 className="mt-10 text-2xl">Difference Between var, let and const</h1>
-       <table className="min-w-full border border-gray-300 text-gray-700 text-sm text-left mt-5">
+       <div className="w-full overflow-x-auto">
+       <table className="w-full border border-gray-300 text-gray-700 text-sm text-left mt-5">
         <thead>
           <tr className="bg-gray-100">
             <th className="px-4 py-2 border-b border-gray-300 text-gray-700 font-bold"></th>
@@ -114,6 +115,7 @@ let x = 2;
           ))}
         </tbody>
        </table>
+          </div>
 
        <h1 className="text-2xl mb-2 mt-10">What is Good?</h1>
        <p className="leading-relaxed mt-3">Both <span className="bg-gray-50 px-1 text-red-400">let</span> and <span className="bg-gray-50 px-1 text-red-400">const</span> are block-scoped.</p>

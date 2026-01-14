@@ -165,12 +165,15 @@ let answer = 'Yes I am!';`}
      </pre>
 
      <h1 className="text-2xl mt-10 mb-2">One Statement, Many Variables</h1>
-     <p>avaScript allows multiple variable declarations in a single statement using commas.</p>
+     <p>JavaScript allows multiple variable declarations in a single statement using commas.</p>
      <p className="mt-2">Use <span className="text-red-400 bg-gray-50 px-1">let</span> or <span className="text-red-400 bg-gray-50 px-1">const</span> to begin the declaration, and separate each variable with a comma within the same statement.</p>
      <h1 className="text-2xl mt-5 mb-5">Example</h1>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+      <code>
       {`let person = "John Doe", carName = "Volvo", price = 200;`}
+      </code>
      </pre>
+
      <p className="mt-5">A declaration can span multiple lines:</p>
      
      <h1 className="text-2xl mt-10 mb-5">Example</h1>

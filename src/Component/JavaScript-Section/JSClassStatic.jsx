@@ -13,7 +13,7 @@ const JSClassStatic = () => {
       </p>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-2">Static Method </h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 mb-5">
+      <pre className="bg-gray-900 text-green-400 overflow-x-auto p-4 rounded-lg mt-5 mb-5">
         <code>
 {`
 class Calculator {
@@ -36,7 +36,7 @@ class Calculator {
       <p className="mt-5">If you need to access the myCar object inside a static method, you can pass it in as a parameter.</p>
 
       <h2 className="text-2xl font-semibold text-gray-800 mt-10 mb-5">Static Property Example</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5">
+      <pre className="bg-gray-900 text-green-400 overflow-x-auto p-4 rounded-lg mb-5">
         <code>
 {`class Circle {
   static pi = 3.14159;

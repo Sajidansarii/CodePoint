@@ -20,7 +20,7 @@ const JSMath = () => {
       <p className="leading-relaxed mt-3">In JavaScript, <span className="text-red-400 bg-gray-50 px-1">Math</span> properties are accessed using dot notation, like this: <span className="text-red-400 bg-gray-50 px-1">Math.property</span>.</p>
       <p className="leading-relaxed mt-3">JavaScript offers eight predefined mathematical constants, accessible via the properties of the <span className="text-red-400 bg-gray-50 px-1">Math</span> object.</p>
       <h1 className="text-2xl mt-5">Example</h1>
-      <pre className="text-green-400 p-4 bg-gray-900 rounded-lg mt-5">
+      <pre className="text-green-400 p-4 bg-gray-900 overflow-x-auto rounded-lg mt-5">
         {`Math.E        // returns Euler's number
 Math.PI       // returns PI
 Math.SQRT2    // returns the square root of 2
@@ -109,10 +109,12 @@ Math.trunc(-4.2);`}
     </ul>
 
     <h1 className="text-2xl mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 p-4 bg-gray-900 rounded-lg mt-5">
+      <code>
       {`Math.sign(-4);
 Math.sign(0);
 Math.sign(4);`}
+</code>
     </pre>
 
     <h1 className="text-2xl mt-10">Math.pow()</h1>
@@ -143,26 +145,26 @@ Math.sign(4);`}
     <h1 className="text-2xl mt-10">Math.sin()</h1>
      <p className="leading-relaxed mt-5"><span className="text-red-400 bg-gray-50 px-1">Math.sin(x)</span> gives you the sine of angle x (in radians), which is always a number between -1 and 1.</p>
     <h1 className="text-2xl mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg mt-5">
       {`Math.sin(90 * Math.PI / 180);     // returns 1 (the sine of 90 degrees)`}
     </pre>
 
     <h1 className="text-2xl mt-10">Math.cos()</h1>
     <p className="leading-relaxed mt-5"><span className="text-red-400 bg-gray-50 px-1">The Math.cos(x)</span> method computes the cosine of the angle x, with x specified in radians. The result will always fall between -1 and 1.</p>
     <h1 className="text-2xl mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg mt-5">
       {`Math.cos(0 * Math.PI / 180);     // returns 1 (the cos of 0 degrees)`}
     </pre>
 
     <h1 className="text-2xl mt-10">Math.min() and Math.max()</h1>
     <p className="leading-relaxed mt-5"><span className="text-red-400 bg-gray-50 px-1">The Math.min()</span> and <span className="text-red-400 bg-gray-50 px-1">Math.max()</span> methods are used to determine the minimum and maximum values, respectively, from a set of numeric arguments.</p>
     <h1 className="text-2xl mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
       {`Math.min(0, 150, 30, 20, -8, -200);`}
     </pre>
 
     <h1 className="text-2xl mt-10">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-10">
+    <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-10">
       {`Math.max(0, 150, 30, 20, -8, -200);`}
     </pre>
 

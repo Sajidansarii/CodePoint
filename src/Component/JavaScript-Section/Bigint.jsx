@@ -11,7 +11,7 @@ const JSBigInt = () => {
       </p>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-5">Creating BigInt</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5">
+      <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto rounded-lg mb-5">
         <code>
           {`
 const bigNumber1 = 123456789012345678901234567890n;
@@ -26,7 +26,7 @@ console.log(bigNumber2); // Output: 123456789012345678901234567890n
       </pre>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-5">BigInt Operations</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5">
+      <pre className="bg-gray-900 text-green-400 overflow-x-auto p-4 rounded-lg mb-5">
         <code>
           {`
 const a = 9007199254740991n;
@@ -47,7 +47,7 @@ console.log(a * 2n); // Output: 18014398509481982n
       </ul>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-5">Conditional Check with BigInt</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-4">
+      <pre className="bg-gray-900 text-green-400 overflow-x-auto p-4 rounded-lg mb-4">
         <code>
           {`
 const population = 9007199254740993n;

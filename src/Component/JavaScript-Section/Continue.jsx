@@ -12,7 +12,7 @@ const JSContinue = () => {
 
       <h1 className="text-2xl mt-10 mb-3">Example</h1>
       <p>Skip the value of 3:</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
         {`for (let i = 1; i < 10; i++) {
   if (i === 3) { continue; }
   text += "The number is " + i + "<br>";
@@ -43,7 +43,7 @@ const JSContinue = () => {
 
       <h1 className="text-2xl mt-5 mb-3">Example</h1>
       <p>Continue to loop1:</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
         {`let text = "";
 
 loop1: for (let j = 1; j < 5; j++) {
@@ -56,7 +56,7 @@ loop1: for (let j = 1; j < 5; j++) {
 
       <h1 className="text-2xl mt-5 mb-3">Example</h1>
       <p>Continue to loop2:</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
         {`let text = "";
 
 loop1: for (let j = 1; j < 5; j++) {
@@ -68,9 +68,6 @@ loop1: for (let j = 1; j < 5; j++) {
       </pre>
 
       <p>The only JavaScript statements that can jump out of a block are <span className="text-red-400 bg-gray-50 px-1 ">break</span> and <span className="text-red-400 bg-gray-50 px-1">continue</span>.</p>
-
-
-     
 
       <p className="mt-10">
         <span className="font-semibold text-xl">Key points about continue:</span>

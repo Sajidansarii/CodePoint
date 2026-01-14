@@ -36,7 +36,7 @@ const JSDate = () => {
 
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">JavaScript Date Output</h1>
       <p>No matter which format you use for input, JavaScript (by default) outputs dates as full text strings.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
         <code>
           {`Mon Dec 08 2025 11:01:14 GMT+0530 (India Standard Time)`}
         </code>
@@ -73,7 +73,7 @@ const JSDate = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">ISO Dates (Date-Time)</h1>
       <p>ISO dates can include time information—hours, minutes, and seconds—using the format YYYY-MM-DDTHH:MM:SSZ.</p>
       <h1 className="text-2xl text-gray-800 font-semibold">Example</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
         <code>
           {`const d = new Date("2015-03-25T12:00:00Z");`}
         </code>
@@ -83,7 +83,7 @@ const JSDate = () => {
       <p className="mb-3">UTC time is indicated by a capital “Z.”</p>
       <p>If you need to adjust the time zone, remove the Z and use an offset like +HH:MM or -HH:MM.</p>
       <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
       <code>
         {`const d = new Date("2015-03-25T12:00:00-06:30");`}
       </code>
@@ -121,14 +121,14 @@ const JSDate = () => {
 
      <p className="mt-10">And, month can be written in full (January), or abbreviated (Jan):</p>
      <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
       <code>
         {`const d = new Date("January 25 2015");`}
       </code>
      </pre>
 
      <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
       <code>
         {`const d = new Date("JANUARY, 25, 2015");`}
       </code>
@@ -138,7 +138,7 @@ const JSDate = () => {
      <p className="mb-3">If the date string is valid, you can convert it to milliseconds using <span className="text-red-400">Date.parse()</span>.</p>
      <p><span className="text-red-400">Date.parse()</span> gives the number of milliseconds elapsed since January 1, 1970.</p>
      <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
       <code>
         {`let msec = Date.parse("March 21, 2012");`}
       </code>
@@ -146,7 +146,7 @@ const JSDate = () => {
 
      <p className="mt-10">You can use the milliseconds value to create a Date object.</p>
      <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
       <code>
         {`let msec = Date.parse("March 21, 2012");
 const d = new Date(msec);`}

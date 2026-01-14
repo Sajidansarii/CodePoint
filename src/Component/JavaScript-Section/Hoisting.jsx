@@ -11,7 +11,7 @@ const JSHoisting = () => {
       <h1 className="text-2xl mt-10">JavaScript Declarations are Hoisted</h1>
       <p>You can use a variable before its actual declaration line.</p>
       <h1 className="text-2xl mt-5">Example1</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-10">
+      <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-10">
         {`x = 5; // Assign 5 to x
 
 elem = document.getElementById("demo"); // Find an element
@@ -21,7 +21,7 @@ var x; // Declare x`}
       </pre>
 
       <h1 className="text-2xl mt-5">Example 2</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-10">
+      <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-10">
         {`var x; // Declare x
 x = 5; // Assign 5 to x
 
@@ -56,7 +56,7 @@ const cityName;`}
     <h1 className="text-2xl mt-10">JavaScript Initializations are Not Hoisted</h1>
     <p className="leading-relaxed mt-3">Variable declarations are moved to the top during hoisting, but their initializations are not.</p>
     <h1 className="text-2xl mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rouded-lg mt-5">
+    <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
       {`var x = 5; // Initialize x
 var y = 7; // Initialize y
 
@@ -65,7 +65,7 @@ elem.innerHTML = x + " " + y;           // Display x and y`}
     </pre>
 
     <h1 className="text-2xl mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 mb-10">
+    <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5 mb-10">
       {`var x = 5; // Initialize x
 
 elem = document.getElementById("demo"); // Find an element
@@ -77,7 +77,7 @@ var y = 7; // Initialize y`}
     <p className="leading-relaxed mt-3">That's because only the declaration <span className="bg-gray-50">(var y)</span> is hoisted — the assignment <span className="bg-gray-50">(= 7)</span> stays where it is.</p>
     <p className="leading-relaxed mt-3">Hoisting causes <span className="bg-gray-50"> y </span> to be declared ahead of time, but without its initialization, so it holds undefined initially.</p>
     <h1 className="text-2xl mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
       {`var x = 5; // Initialize x
 var y;     // Declare y
 

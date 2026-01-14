@@ -225,7 +225,7 @@ x ??= 10;
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Conditional (Ternary) Operator</h1>
      <p>The Nullish Coalescing Operator (??) returns the right-hand side value if the left-hand side is null or undefined. It is useful for providing default values when a variable might be null or undefined.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
       <code>
         {`
 let name = null;
@@ -238,7 +238,7 @@ console.log(displayName);   // Output: Guest
 
     <h1 className="text-2xl font-semibold text-gray-800 mt-10">With Undefine</h1>
     <h2 className="text-2xl font-semibold text-gray-800 mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
       <code>
         {`
 let age;

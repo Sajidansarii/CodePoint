@@ -217,7 +217,7 @@ d.getTime();`}
 
     <p>Calculate the number of years since 1970/01/01:</p>
 
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
       <code>
         {`const minute = 1000 * 60;
 const hour = minute * 60;

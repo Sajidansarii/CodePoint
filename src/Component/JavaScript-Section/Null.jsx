@@ -11,7 +11,7 @@ const JSNull = () => {
       </p>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-5">Assigning Null</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-4">
+      <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto rounded-lg mb-4">
         <code>
           {`
 let user = null;
@@ -20,7 +20,7 @@ console.log(user);   // Output: null`}
       </pre>
 
       <h2 className="text-2xl font-semibold text-gray-800 mt-10 mb-5">Using Null in Conditional Checks</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5">
+      <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto rounded-lg mb-5">
         <code>
           {`
 let selectedItem = null;
@@ -37,7 +37,7 @@ if (selectedItem === null) {
       </pre>
 
       <h2 className="text-2xl font-semibold text-gray-800 mt-10 mb-5">Null vs Undefined</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5">
+      <pre className="bg-gray-900 text-green-400 overflow-x-auto p-4 rounded-lg mb-5">
         <code>
           {`
 let a;

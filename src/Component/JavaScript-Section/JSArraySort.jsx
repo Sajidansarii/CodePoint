@@ -36,7 +36,7 @@ const ArraySortDemo = () => {
       <h1 className='text-gray-800 text-2xl font-semibold mt-10 mb-3'>Sorting an Array</h1>
      <p>The <span className='text-red-400'>sort()</span> method arranges the elements of an array in alphabetical order.</p>
      <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-       <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+       <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
         <code>
           {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.sort();`}
@@ -46,7 +46,7 @@ fruits.sort();`}
        <h1 className='text-gray-800 text-2xl font-semibold mt-10 mb-3'>Reversing an Array</h1>
        <p>The <span className='text-red-400'>reverse()</span> method flips the order of elements in an array.</p>
       <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-      <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+      <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
         <code>
           {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.reverse();`}
@@ -55,7 +55,7 @@ fruits.reverse();`}
 
       <p className='mt-5'>Using <span className='text-red-400'>sort()</span> and <span className='text-red-400'>reverse()</span> together will order the array in descending sequence.</p>
       <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-     <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+     <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.sort();
@@ -67,7 +67,7 @@ fruits.reverse();`}
      <p className='mb-3'>ES2023 introduced <span className='text-red-400'>toSorted()</span> as a safe sorting method that leaves the original array unchanged.</p>
      <p>The key difference is that <span className='text-red-400'>toSorted()</span> returns a new sorted array without touching the original, while <span className='text-red-400'>sort()</span> modifies the array in place.</p>
      <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-     <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+     <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`const months = ["Jan", "Feb", "Mar", "Apr"];
 const sorted = months.toSorted();
@@ -79,7 +79,7 @@ const sorted = months.toSorted();
      <p className='mb-3'>The <span className='text-red-400'>toReversed()</span> method, added in ES2023, creates a reversed copy of an array while leaving the original untouched.</p>
      <p>The key difference is that <span className='text-red-400'>toReversed()</span> returns a new reversed array without touching the original, while <span className='text-red-400'>reverse()</span> modifies the original array.</p>
      <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`const months = ["Jan", "Feb", "Mar", "Apr"];
 const reversed = months.toReversed();`}
@@ -89,7 +89,7 @@ const reversed = months.toReversed();`}
     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Numeric Sort</h1>
     <p>By default, <span className='text-red-400'>sort()</span> treats all values as strings. This is fine for text (e.g., “Apple” comes before “Banana”), but it causes problems when sorting numbers. For example, "25" is considered greater than "100" because "2" is greater than "1" in string comparison. As a result, sorting numbers with <span className='text-red-400'>sort()</span> gives incorrect output. To fix this, you need to provide a compare function.</p>
    <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-   <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5 mb-5'>
+   <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5 mb-5'>
     <code>
       {`const points = [40, 100, 1, 5, 25, 10];
 points.sort(function(a, b){return a - b});`}
@@ -98,7 +98,7 @@ points.sort(function(a, b){return a - b});`}
 
    <p>Use the same trick to sort an array descending:</p>
    <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`const points = [40, 100, 1, 5, 25, 10];
 points.sort(function(a, b){return b - a});`}
@@ -108,7 +108,7 @@ points.sort(function(a, b){return b - a});`}
     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Sorting an Array in Random Order</h1>
     <p>With the sort function described earlier, you can arrange a numeric array randomly.</p>
      <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-     <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+     <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`const points = [40, 100, 1, 5, 25, 10];
 points.sort(function(){return 0.5 - Math.random()});
@@ -119,7 +119,7 @@ points.sort(function(){return 0.5 - Math.random()});
      <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>The Fisher Yates Method</h1>
      <p>The example using points.<span className='text-red-400'>sort()</span> isn’t fully accurate because it gives some numbers a higher chance of appearing in certain positions. A better solution is the Fisher–Yates shuffle, a method dating back to 1938. Here’s how you can write it in JavaScript:</p>
      <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`const points = [40, 100, 1, 5, 25, 10];
 for (let i = points.length -1; i > 0; i--) {
@@ -136,7 +136,7 @@ for (let i = points.length -1; i > 0; i--) {
     <p>Sorting the array allows you to use indexes to find both the highest and lowest items.</p>
     <p className='mt-3'>Sort Ascending:</p>
     <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`const points = [40, 100, 1, 5, 25, 10];
 points.sort(function(a, b){return a - b});
@@ -146,7 +146,7 @@ points.sort(function(a, b){return a - b});
     </pre>
 
     <p className='mt-10'>Sort Descending:</p>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`const points = [40, 100, 1, 5, 25, 10];
 points.sort(function(a, b){return b - a});
@@ -158,7 +158,7 @@ points.sort(function(a, b){return b - a});
     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Using Math.min() on an Array</h1>
    <p>Using <span className='text-red-400'>Math.min.apply</span>, you’re able to get the lowest element from an array.</p>
    <h2 className='text-gray-800 text-2xl font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`function myArrayMin(arr) {
   return Math.min.apply(null, arr);
@@ -225,7 +225,7 @@ points.sort(function(a, b){return b - a});
 <p className='mt-3'>The way to solve this is by creating a compare function that checks the property values.</p>
 
 <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-<pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+<pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
   <code>
     {`cars.sort(function(a, b){return a.year - b.year});`}
   </code>
@@ -275,10 +275,6 @@ X04 110
 X06 110
 X07 110`}</code>
 </pre>
-
-
-
-
 
     </div>
   );

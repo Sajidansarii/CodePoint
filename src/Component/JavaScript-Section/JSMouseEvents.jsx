@@ -75,7 +75,7 @@ const JSMouseEvents = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10">Click Event</h1>
       <p>This example shows how the click event works. When the button is clicked, it prints “Clicked!” to the console. Click events are commonly used for submitting forms.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rpunded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
           {`const clickButton = document.getElementById('clickButton');
       const outputDiv = document.getElementById("output");
@@ -88,7 +88,7 @@ const JSMouseEvents = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10">Double Click Event</h1>
      <p>This example uses the dblclick event, which fires when the button is double-clicked. The listener is attached to the element with the ID "doubleClickButton", and a function logs a message to the console when the user double-clicks it.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-10">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {` const doubleClickButton = document.getElementById('doubleClickButton');
       const outputDiv = document.getElementById("output");
@@ -101,7 +101,7 @@ const JSMouseEvents = () => {
      <h1 className="text-2xl text-gray-800 font-semibold mt-10">Mouse Down and Mouse Up Events</h1>
      <p>In this scenario, the mousedown and mouseup events are applied to a {'<div>'} element with the ID "mouseUpDownDiv". Two separate event listeners are attached: one triggers when the mouse button is pressed, logging a corresponding message, and the other triggers upon release, logging an appropriate notification.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-10">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {` const mouseUpDownDiv = document.getElementById('mouseUpDownDiv');
       const outputDiv = document.getElementById("output");
@@ -118,7 +118,7 @@ const JSMouseEvents = () => {
      <h1 className="text-2xl text-gray-800 font-semibold mt-10">Mouse Move Event</h1>
      <p>This example demonstrates the mousemove event on a {'<div>'} element identified as "mouseMoveDiv". The handler function retrieves the clientX and clientY properties from the event object, representing the pointer’s X and Y coordinates, and logs them to the console, providing continuous feedback on the cursor’s location within the div.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {`const mouseMoveDiv = document.getElementById('mouseMoveDiv');
       const outputDiv = document.getElementById("output");
@@ -133,7 +133,7 @@ const JSMouseEvents = () => {
      <h1 className="text-2xl text-gray-800 font-semibold mt-10">Wheel Event</h1>
      <p>This example demonstrates the wheel event on a {'<div>'} with the ID "wheelDiv". When the mouse wheel is scrolled over the div, the event listener logs a message in the console indicating that the wheel was rotated.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
       <code>
         {` const wheelDiv = document.getElementById('wheelDiv');
       const outputDiv = document.getElementById("output");

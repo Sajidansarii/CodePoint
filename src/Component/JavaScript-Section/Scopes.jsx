@@ -51,7 +51,7 @@ function myFunction() {
     <p className="leading-relaxed mt-2">Function-scoped variables are limited in visibility to the function in which they are declared.</p>
     <p className="leading-relaxed mt-2">Within the scope of a function, <span className="text-red-400 bg-gray-50 px-1">var</span>, <span className="text-red-400 bg-gray-50 px-1">let</span>, and <span className="text-red-400 bg-gray-50 px-1">const</span> all create function-scoped variables with minor differences.</p>
     <p className="leading-relaxed mt-2"><span className="text-red-400 bg-gray-50 px-1">var</span>, <span className="text-red-400 bg-gray-50 px-1">let</span>, and <span className="text-red-400 bg-gray-50 px-1">const</span> are only accessible within the function they’re defined in.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-10">
+    <pre className="text-green-400 bg-gray-900 overflow-auto p-4 rounded-lg mt-10">
       {`function myFunction1() {
   var carName = "Volvo";  // Function Scope
 }
@@ -140,7 +140,7 @@ function myFunction() {
     <p className="leading-relaxed mt-3">Global variables defined with the <span className="text-red-400 bg-gray-50 px-1">var</span> keyword belong to the window object:</p>
 
 <h1 className="text-2xl mt-5">Example (Not Recommended)</h1>
-<pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+<pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
   {`var cityName = "Mumbai";
 // code here can use window.cityName`}
 </pre>
@@ -148,7 +148,7 @@ function myFunction() {
 <p className="leading-relaxed mt-5">Global variables declared with <span className="text-red-400 bg-gray-50 px-1">let</span> are not properties of the global window object.</p>
 
 <h1 className="text-2xl mt-5">Example</h1>
-<pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+<pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
   {`let carName = "Volvo";
 // code here can NOT use window.carName`}
 </pre>

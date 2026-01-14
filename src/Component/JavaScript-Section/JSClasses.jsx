@@ -39,7 +39,7 @@ const JSClasses = () => {
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-5">Using a Class</h1>
     <p>Once you have a class, it can be used to create objects.</p>
     <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 mb-5">
+    <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5 mb-5">
       <code>
         {`const myCar1 = new Car("Mango", 120);
 const myCar2 = new Car("Apple", 150);`}
@@ -76,7 +76,7 @@ const myCar2 = new Car("Apple", 150);`}
 
     <p className="mt-10">Define a class method called age that returns the age of the Car.</p>
     <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
       <code>
         {`class Car {
   constructor(name, year) {
@@ -97,7 +97,7 @@ document.getElementById("demo").innerHTML =
 
     <p className="mt-5">You can pass parameters to class methods.</p>
     <h1 className="text-2xl text-gray-800 font-semibold mt-5 mb-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg">
       <code>
         {`class Car {
   constructor(name, year) {
@@ -122,7 +122,7 @@ document.getElementById("demo").innerHTML=
     <p>You’ll get an error if you break "strict mode" rules.</p>
     <h1 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h1>
     <p>In "strict mode" you will get an error if you use a variable without declaring it:</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
       <code>
         {`class Car {
   constructor(name, year) {
@@ -139,7 +139,7 @@ document.getElementById("demo").innerHTML=
     </pre>
 
 
-        <ul className="list-disc list-inside mt-2">
+        <ul className="list-disc mt-5">
           <li>Create objects with shared properties and methods</li>
           <li>Use inheritance to extend functionality</li>
           <li>Define static methods for class-level operations</li>
