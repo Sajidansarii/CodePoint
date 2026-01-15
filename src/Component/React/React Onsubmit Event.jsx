@@ -169,15 +169,15 @@ export default PreventForm;`}
                 </code>
             </pre>
 
-            <ul className="list-[square] list-inside space-y-1 mt-5">
-                <li><span className="font-semibold">State Management</span>:value holds the  <span className="lg:ml-0 ml-5">input</span> text, and result stores the output <span className="lg:ml-0 ml-5">after</span> form submission.</li>
+            <ul className="list-[square] space-y-1 mt-5">
+                <li><span className="font-semibold">State Management</span>:value holds the input text, and result stores the output after form submission.</li>
                 <li><span className="text-red-400">handleSubmit</span>: Uses <span className="text-red-400">event.preventDefault()</span> to stop the page from reloading. If the input is empty, it shows an alert; otherwise, it sets result to the input value and displays a success message.</li>
                 <li><span className="text-red-400">handleChange</span>: Updates value as the user types and clears result whenever the input changes.</li>
             </ul>
 
 
             <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Use Cases for onSubmit</h2>
-             <ul className="list-[square] list-inside space-y-1 mt-5">
+             <ul className="list-[square] space-y-1 mt-5">
                 <li><span className="font-semibold">Form Validation</span>: Ensure all required fields are filled and data is valid before submitting.</li>
                 <li><span className="font-semibold">Submitting Data</span>: Send the form data to a server or API when submitted.</li>
                 <li><span className="font-semibold">Prevent Page Reload</span>: Stop the default browser behavior and handle submission with JavaScript.</li>

@@ -30,16 +30,16 @@ const ReactVirtual = () => {
             <p>React Fiber is an improved engine that helps React run faster and smoother by splitting work into smaller tasks and handling important updates first.</p>
             
             <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Key Features of React’s Virtual DOM</h2>
-            <ul className="list-[square] list-inside mt-5 space-y-1">
+            <ul className="list-[square] mt-5 space-y-1">
                 <li><span className="font-bold">Efficient Updates</span>: React speeds up rendering by reducing direct changes to the real DOM.</li>
                 <li><span className="font-bold">Reconciliation</span>: React smartly updates the UI by comparing changes in the Virtual DOM.</li>
                 <li><span className="font-bold">Batching Updates</span>: Multiple state changes are grouped into one render to improve performance.</li>
                 <li><span className="font-bold">Cross-Browser Consistency</span>: The Virtual DOM ensures the UI behaves the same across all browsers.</li>
-                <li><span className="font-bold">Component-Based Design</span>: The Virtual DOM works smoothly with React components, encouraging reusable and <span className="ml-5">modular</span> code.</li>
+                <li><span className="font-bold">Component-Based Design</span>: The Virtual DOM works smoothly with React components, encouraging reusable and modular code.</li>
             </ul>
 
             <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">How React’s Virtual DOM Improves Performance</h2>
-            <ul className="list-[square] list-inside mt-5 space-y-1">
+            <ul className="list-[square] mt-5 space-y-1">
                 <li><span className="font-bold">Avoids Full DOM Repaints</span>: React changes only what’s needed, not the whole page.</li>
                 <li><span className="font-bold">Optimized Rendering</span>: Updates happen at the right time to avoid repeated or wasted rendering.</li>
                 <li><span className="font-bold">Reduces JavaScript Execution Time</span>: The Virtual DOM is quicker to work with than the real DOM.</li>
@@ -50,7 +50,7 @@ const ReactVirtual = () => {
            <p>React stays fast by using a Virtual DOM instead of changing the real DOM every time. It figures out what actually needs to change and updates only that, and Fiber helps handle important tasks first so the app feels smooth.</p>
       
          <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Frameworks and Libraries Using Virtual DOM</h2>
-        <ul className="list-[square] list-inside space-y-1 mt-5">
+        <ul className="list-[square] space-y-1 mt-5">
             <li><span className="font-bold">ReactJS</span>: Introduced the Virtual DOM to make UI updates faster.</li>
             <li><span className="font-bold">Vue.js</span>: Uses the Virtual DOM to easily build reactive user interfaces.</li>
             <li><span className="font-bold">Inferno</span>: A fast and simple library similar to React that relies on the Virtual DOM.</li>
@@ -87,7 +87,7 @@ const ReactVirtual = () => {
         </table>
         </div>
 
-        <ul className="list-[square] list-inside mt-5 space-y-1">
+        <ul className="list-[square] mt-5 space-y-1">
             <li>Use the Virtual DOM when you want your app to run fast.</li>
             <li>Shadow DOM helps keep components separate and organized.</li>
             <li>The real DOM is slower, so it’s not the best choice for modern apps.</li>   

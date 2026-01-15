@@ -14,7 +14,7 @@ const ReactDoubleClick = () => {
             </code>
            </pre>
 
-           <ul className="list-[square] list-inside space-y-1 mt-5">
+           <ul className="list-[square] space-y-1 mt-5">
             <li><span className="text-red-400">{'<Element>'}</span>: The React component or HTML element (e.g., {'<button>'}, {'<div>'}) where you want to detect double-clicks.</li>
             <li>onDoubleClickHandler: The function that runs when the onDoubleClick event occurs.</li>
            </ul>
@@ -101,8 +101,8 @@ export default PreventDefaultComponent;`}
             </code>
            </pre>
 
-           <ul className="list-[square] list-inside space-y-1 mt-5">
-           <li><span className="font-semibold">handleDoubleClick</span>: Runs when the paragraph is double-clicked and uses <span className="text-red-400">event.preventDefault()</span> to stop text from <span className="ml-5">being</span> selected.</li>
+           <ul className="list-[square] space-y-1 mt-5">
+           <li><span className="font-semibold">handleDoubleClick</span>: Runs when the paragraph is double-clicked and uses <span className="text-red-400">event.preventDefault()</span> to stop text from being selected.</li>
            <li><span className="font-semibold">console.log</span>: Prints "Text selection prevented!" to the console to show that the default action was blocked.</li>
            <li><span className="font-semibold">Effect</span>: Normally, double-clicking selects text, but here it doesn’t because of <span className="font-semibold">preventDefault()</span>.</li>
            </ul>
@@ -153,7 +153,7 @@ export default ToggleModeComponent;`}
            <p className="mt-5">The component toggles between "Edit Mode" and "View Mode" on a double-click event. The isEditing state manages the current mode, and the paragraph’s background and text color change depending on the mode. It is styled with a pointer cursor to show it’s interactive.</p>
         
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Key features of the onDoubleClick event</h2>
-        <ul className="list-[square] list-inside space-y-1 mt-5">
+        <ul className="list-[square] space-y-1 mt-5">
             <li><span className="font-semibold">Triggered on Double-Click</span>: Fires when a user double-clicks an element.</li>
             <li><span className="font-semibold">Event Handler</span>: Runs a function when the event happens.</li>
             <li><span className="font-semibold">Prevent Default Behavior</span>: Use <span className="text-red-400">event.preventDefault()</span> to stop default browser actions.</li>
@@ -161,9 +161,6 @@ export default ToggleModeComponent;`}
             <li><span className="font-semibold">Cross-Browser Compatibility</span>: React’s synthetic event system ensures consistent behavior across browsers.</li>
         </ul>
 
-        
-
-       
        
         </div>
     )

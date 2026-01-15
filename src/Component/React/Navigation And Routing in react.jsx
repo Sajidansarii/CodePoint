@@ -17,7 +17,7 @@ import { BrowserRouter } from 'react-router-dom';`}
                 </code>
             </pre>
 
-            <ul className="list-[square] list-inside space-y-1 mt-5">
+            <ul className="list-[square] space-y-1 mt-5">
                 <li><span className="font-semibold">Installing</span>: Run npm i react-router-dom to add React Router to your React project.</li>
                 <li><span className="font-semibold">Importing</span>: Use import { '{BrowserRouter}' } from 'react-router-dom'; to bring in BrowserRouter and enable routing.</li>
             </ul>
@@ -26,7 +26,7 @@ import { BrowserRouter } from 'react-router-dom';`}
             <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Programmatically Navigate in React</h2>
             <p>Programmatic <span className="text-red-400 bg-gray-50">navigation</span> enables route changes based on specific actions such as button clicks or form submissions. It offers greater control over routing by allowing navigation to occur in response to user-triggered events.</p>
            <h2 className="text-2xl text-gray-800 font-semibold mt-5">Approach</h2>
-           <ul className="list-[square] list-inside space-y-1 mt-5">
+           <ul className="list-[square]  space-y-1 mt-5">
             <li>Build two simple pages that users can navigate between.</li>
             <li>Add buttons on each page to trigger redirection.</li>
             <li>Import the useNavigate hook from react-router-dom.</li>
@@ -60,7 +60,7 @@ export default App;`}
            </pre>
 
            <h2 className="text-2xl text-gray-800 font-semibold mt-5">In this example</h2>
-           <ul className="list-[square] list-inside space-y-1 mt-5">
+           <ul className="list-[square]  space-y-1 mt-5">
             <li><span className="font-semibold">App.js</span>: Renders the AboutUs component.</li>
             <li><span className="font-semibold">AboutUs.js</span>: Creates a button that links to the Contact Us page.</li>
             <li><span className="font-semibold">ContactUs.js</span>: Contains a button that navigates back to the previous page.</li>
@@ -69,7 +69,7 @@ export default App;`}
            <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Dynamic Routing with React router</h2>
            <p>When an application contains many pages, adding multiple Link routes can become verbose. To simplify the code and reduce repetition, dynamic routing is used. Dynamic routing enables routes to be created programmatically based on specific conditions.</p>
            <h2 className="text-2xl text-gray-800 font-semibold mt-5">Approach</h2>
-           <ul className="list-[square] list-inside space-y-1 mt-5">
+           <ul className="list-[square] space-y-1 mt-5">
             <li>Build a page that generates Link components using the map function.</li>
             <li>Create another page that displays data dynamically with the help of useParams.</li>
             <li>Define a dynamic Route that passes an id value as a parameter.</li>
@@ -107,7 +107,7 @@ export default App;`}
            </pre>
 
            <h2 className="text-2xl text-gray-800 font-semibold mt-5">In this code</h2>
-           <ul className="list-[square] list-inside space-y-1 mt-5">
+           <ul className="list-[square] space-y-1 mt-5">
             <li><span className="font-semibold">App.js</span>: Dynamically generates Link components and passes the course name as a parameter.</li>
             <li><span className="font-semibold">CourseDetails.js</span>: Retrieves the course parameter and uses it accordingly.</li>
            </ul>
@@ -115,7 +115,7 @@ export default App;`}
            <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Handling 404 Errors (Page Not Found)</h2>
            <p>Sometimes, users enter a URL that does not exist on the website, causing the router to fail and display an error. To handle this scenario, a universal Route component is created that redirects users to a “Page Not Found” view whenever an invalid URL is accessed.</p>
            <h2 className="text-2xl text-gray-800 font-semibold mt-5">Approach</h2>
-           <ul className="list-[square] list-inside space-y-1 mt-5">
+           <ul className="list-[square] space-y-1 mt-5">
             <li>Create three basic pages where navigation will be added.</li>
             <li>Build a Navbar component to navigate between the pages.</li>
             <li>Create a NoPageFound.js file to handle all invalid routes.</li>
@@ -156,7 +156,7 @@ export default App;`}
            </pre>
 
            <h2 className="text-2xl text-gray-800 font-semibold mt-5">In this code</h2>
-           <ul className="list-[square] list-inside space-y-1 mt-5">
+           <ul className="list-[square] space-y-1 mt-5">
             <li><span className="font-semibold">Home.js</span>: Acts as the home page.</li>
             <li><span className="font-semibold">AboutUs.js</span>: Contains the About Us page.</li>
             <li><span className="font-semibold">ContactUs.js</span>: Displays the Contact Us page.</li>

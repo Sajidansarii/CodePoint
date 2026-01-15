@@ -60,7 +60,7 @@ createRoot(document.getElementById('root')).render(
 
            <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Using Array Index as Keys</h2>
            <p>While the array index may serve as a key, this practice is generally discouraged except under particular circumstances.</p>
-          <ul className="list-[square] list-inside mt-5">
+          <ul className="list-[square] mt-5">
             <li>The list is static (won't change)</li>
             <li>The list will never be reordered or filtered</li>
             <li>The items in the list have no IDs</li>

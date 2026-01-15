@@ -299,7 +299,7 @@ createRoot(document.getElementById('root')).render(
    <p>Every React component has a lifecycle that you can observe and control through its three main phases: Mounting, Updating, and Unmounting.</p>
    <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Mounting</h2>
    <p>Mounting refers to inserting elements into the DOM. React triggers four built-in methods in sequence when a component mounts.</p>
-   <ul className="list-[square] list-inside mt-5">
+   <ul className="list-[square] mt-5">
     <li>constructor()</li>
     <li>getDerivedStateFromProps()</li>
     <li>render()</li>
@@ -413,7 +413,7 @@ createRoot(document.getElementById('root')).render(
   <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Updating</h2>
   <p>The update phase occurs whenever a component’s state or props are modified.</p>
   <p>When a component updates, React calls five built-in methods in a specific order:</p>
-  <ul className="list-[square] list-inside mt-5">
+  <ul className="list-[square] mt-5">
     <li>getDerivedStateFromProps()</li>
     <li>shouldComponentUpdate()</li>
     <li>render()</li>

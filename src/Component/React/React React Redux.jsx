@@ -6,10 +6,10 @@ const ReactRedux = () => {
             <h1 className="text-3xl text-blue-500 font-semibold mb-3">React Redux</h1>
             <p>React-Redux manages state through a single global store, allowing predictable updates, easier debugging, and maintainable architecture for complex React applications.</p>
            <p className="mt-5 text-xl">Redux works like this:</p>
-           <ul className="list-[square] list-inside space-y-1 mt-3">
+           <ul className="list-[square] space-y-1 mt-3">
             <li><span className="font-bold">Single Source of Truth</span>: The complete state of the application resides in a single store object.</li>
             <li><span className="font-bold">State is Read-Only</span>: State modifications occur solely through dispatched actions.</li>
-            <li><span className="font-bold">Changes via Pure Functions</span>: Reducers, which are pure functions, determine state transitions by receiving the <span className="ml-5">previous</span> state and an action to return the updated state.</li>
+            <li><span className="font-bold">Changes via Pure Functions</span>: Reducers, which are pure functions, determine state transitions by receiving the previous state and an action to return the updated state.</li>
            </ul>
 
            <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Core Concepts of React-Redux</h2>

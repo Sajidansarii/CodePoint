@@ -15,7 +15,7 @@ const ReactComponenetMOunt = () => {
         </code>
        </pre>
 
-       <ul className="list-[square] list-inside mt-5">
+       <ul className="list-[square] mt-5">
         <li>This method does not accept any parameters.</li>
         <li>It does not return a value.</li>
         <li>React automatically calls it after the first render.</li>
@@ -24,7 +24,7 @@ const ReactComponenetMOunt = () => {
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">When is componentDidMount() Called?</h2>
        <p>The <span className="text-red-400 bg-gray-50">componentDidMount()</span> method is invoked immediately following the initial rendering of a component.</p>
-       <ul className="list-[square] list-inside mt-5">
+       <ul className="list-[square] mt-5">
         <li>After the component is rendered on the screen for the first time.</li>
         <li>After the component is inserted into the DOM.</li>
         <li>Before the browser displays the component’s content.</li>
@@ -32,7 +32,7 @@ const ReactComponenetMOunt = () => {
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">How componentDidMount() Works in the Component Lifecycle</h2>
        <p>React components follow a lifecycle, and <span className="text-red-400 bg-gray-50">componentDidMount()</span> is part of the mounting phase. These lifecycle methods run in a defined sequence.</p>
-       <ul className="list-[square] list-inside space-y-1 mt-5">
+       <ul className="list-[square] space-y-1 mt-5">
         <li><span className="font-semibold">Constructor</span>: Sets the initial state and binds class methods.</li>
         <li><span className="font-semibold">render()</span>: Produces the JSX output.</li>
         <li><span className="font-semibold">componentDidMount()</span>: Triggered after the component mounts and is added to the DOM.</li>
@@ -89,7 +89,7 @@ export default DataFetcher;`}
        </pre>
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">In this example</h2>
-       <ul className="list-[square] list-inside mt-5">
+       <ul className="list-[square] mt-5">
         <li>The <span className="text-red-400 bg-gray-50">componentDidMount()</span> method fetches data from an API.</li>
         <li>After fetching, <span className="text-red-400 bg-gray-50">this.setState()</span> updates the component’s state, causing it to re-render.</li>
         <li>Initially, the component shows a "Loading..." message, and once the data arrives, it displays the JSON content.</li>
@@ -154,7 +154,7 @@ export default App;`}
        </pre>
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">In this example</h2>
-       <ul className="list-[square] list-inside mt-5">
+       <ul className="list-[square] mt-5">
         <li>The App component initializes with a color state set to "lightgreen".</li>
         <li>A setInterval calls the getRandomColor method every 2 seconds.</li>
         <li>setState updates the color state with a new random color returned by getRandomColor().</li>
@@ -164,7 +164,7 @@ export default App;`}
        </ul>
        
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">When To Use componentDidMount()?</h2>
-       <ul className="list-[square] list-inside space-y-1 mt-5">
+       <ul className="list-[square] space-y-1 mt-5">
         <li><span className="font-semibold">Fetching Data</span>: Retrieve data from an API or external source after the component mounts.</li>
         <li><span className="font-semibold">Setting Up Subscriptions</span>: Subscribe to data streams or WebSocket connections.</li>
         <li><span className="font-semibold">Initializing Third-Party Libraries</span>: Integrate third-party libraries or plugins that need DOM access.</li>
@@ -173,21 +173,13 @@ export default App;`}
        </ul>
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">When Not to Use componentDidMount()?</h2>
-       <ul className="list-[square] list-inside space-y-1 mt-5">
-        <li><span className="font-semibold">No Post-Mount Work</span>: Components that don’t need data fetching, subscriptions, or other post-render operations <span className="ml-5">don’t</span> require componentDidMount().</li>
+       <ul className="list-[square] space-y-1 mt-5">
+        <li><span className="font-semibold">No Post-Mount Work</span>: Components that don’t need data fetching, subscriptions, or other post-render operations don’t require componentDidMount().</li>
         <li><span className="font-semibold">Static Components</span>: Purely presentational components or those relying only on props rarely need after-mount setup.</li>
        </ul>
        
 
-       
-       
-       
-       
-       
-       
-       
-       
-       
+     
        
         </div>
     )

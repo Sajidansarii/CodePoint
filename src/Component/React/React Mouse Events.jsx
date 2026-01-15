@@ -13,14 +13,14 @@ const ReactMouse = () => {
                 {`onMouseDown = {handleMouseDown}`}
             </code>
            </pre>
-           <ul className="list-[square] list-inside space-y-1 mt-5">
+           <ul className="list-[square] space-y-1 mt-5">
             <li><span className="font-semibold">onMouseDown</span>: The React event handler that detects when a mouse button is pressed.</li>
             <li><span className="font-semibold">handleMouseDown</span>: The function that runs when the mouse button is pressed.</li>
            </ul>
          
          <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-5">When Does the onMouseDown Event Get Triggered?</h2>
           <p>The onMouseDown event in React fires as soon as any mouse button (left, middle, or right) is pressed on an element.</p>
-         <ul className="list-[square] list-inside space-y-1 mt-5">
+         <ul className="list-[square] space-y-1 mt-5">
             <li><span className="font-semibold">Fires on Press</span>: Triggered immediately when a mouse button is pressed.</li>
             <li><span className="font-semibold">Before Release</span>: Happens before the onMouseUp event, capturing the start of interaction.</li>
             <li><span className="font-semibold">Supports All Buttons</span>: Works for left, middle, and right buttons.</li>
@@ -79,7 +79,7 @@ export default AccessMouseDownEvent;`}
             </code>
         </pre>
 
-        <ul className="list-[square] list-inside space-y-1 mt-5">
+        <ul className="list-[square] space-y-1 mt-5">
             <li><span className="font-semibold">handleMouseDown</span>: Logs the mouse button you clicked and the X and Y position of the mouse.</li>
             <li><span className="font-semibold">Event Handling</span>: Runs automatically when the onMouseDown event occurs on the element.</li>
         </ul>
@@ -107,7 +107,7 @@ export default PreventTextSelection;`}
             </code>
         </pre>
 
-       <ul className="list-[square] list-inside space-y-1 mt-5">
+       <ul className="list-[square] space-y-1 mt-5">
         <li><span className="font-semibold">handleMouseDown</span>: Uses event.preventDefault() to stop the default text selection.</li>
         <li><span className="font-semibold">console.log</span>: Prints "Text selection prevented!" when the mouse button is pressed.</li>
        </ul>
@@ -148,8 +148,8 @@ export default ChangeColorOnMouseDown;`}
             </code>
         </pre>
 
-        <ul className="list-[square] list-inside space-y-1 mt-5">
-            <li><span className="font-semibold">handleMouseDown</span>: Changes the background color between lightblue and lightcoral whenever the mouse button is <span className="ml-5">pressed</span>.</li>
+        <ul className="list-[square] space-y-1 mt-5">
+            <li><span className="font-semibold">handleMouseDown</span>: Changes the background color between lightblue and lightcoral whenever the mouse button is pressed.</li>
             <li><span className="font-semibold">State Management</span>: Keeps track of the current background color using state.</li>
         </ul>
 

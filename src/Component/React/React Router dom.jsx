@@ -9,11 +9,11 @@ const ReactRouterdom = () => {
         
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Why Use React Router DOM?</h2>
         <p>React Router DOM allows React applications to navigate between pages without refreshing the browser. It simplifies page transitions and helps structure the app with well-defined routes. Here are some advantages of using React Router DOM:</p>
-        <ul className="list-[square] list-inside space-y-1 mt-5">
+        <ul className="list-[square] space-y-1 mt-5">
             <li><span className="font-semibold">Dynamic Routing</span>: Routes can include parameters, allowing content to change based on user input.</li>
             <li><span className="font-semibold">Nested Routes</span>: Routes can be nested inside other routes, making complex layouts easier to manage.</li>
-            <li><span className="font-semibold">URL-Based Component Rendering</span>: Each URL corresponds to a component, which is loaded automatically when the <span className="ml-5">URL</span> is accessed.</li>
-            <li><span className="font-semibold">Navigation Without Page Reloads</span>: React Router DOM lets users move between pages without refreshing the <span className="ml-5">browser</span>.</li>
+            <li><span className="font-semibold">URL-Based Component Rendering</span>: Each URL corresponds to a component, which is loaded automatically when the URL is accessed.</li>
+            <li><span className="font-semibold">Navigation Without Page Reloads</span>: React Router DOM lets users move between pages without refreshing the browser.</li>
         </ul>
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Components of React Router DOM</h2>
@@ -257,7 +257,7 @@ export default App;`}
     </pre>
 
     <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">In this code</h2>
-    <ul className="list-[square] list-inside space-y-1">
+    <ul className="list-[square] space-y-1">
         <li>Home.js: A simple component that shows a heading “GeeksforGeeks” and appears at /.</li>
         <li>About.js: Displays “Geeks Learning” and is shown when visiting /about.</li>
         <li>Contact.js: Shows “Geeks Contact Page” at /contact.</li>
@@ -265,7 +265,6 @@ export default App;`}
     </ul>
 
     <p className="mt-5">React Router DOM provides seamless page transitions in React applications without triggering full reloads. It supports dynamic and nested routing, allowing developers to structure applications efficiently. Its navigation components facilitate smooth management of multiple views.</p>
-
 
         </div>
     )

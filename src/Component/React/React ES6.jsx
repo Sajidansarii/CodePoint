@@ -9,7 +9,7 @@ const ES6 = () => {
             
             <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Why Should I Learn ES6?</h2>
             <p>React uses ES6, so it’s helpful to know some of its new features, such as:</p>
-            <ul className="list-[square] list-inside mt-5">
+            <ul className="list-[square] mt-5">
                 <li>Classes</li>
                 <li>Arrow Functions</li>
                 <li>Variables (let, const, var)</li>

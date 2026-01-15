@@ -22,14 +22,14 @@ const ReactInstallation = () =>{
             <p>If you want to add small features like form validation or modal dialogs, you can include React in your web page using a CDN, just like jQuery. But for bigger applications, it’s better to split your code into multiple files and use a bundler like Webpack, Parcel, or Rollup to combine everything before deployment.
             The React toolchain makes it easier to create, run, build, and deploy your app. It gives you a starter template with all the basic code needed to get started.</p>
       
-           <ul className="list-[square] list-inside mt-5">
+           <ul className="list-[square] mt-5">
             <li><strong>Create React App </strong>− SPA oriented toolchain</li>
             <li><strong>Next.js</strong> − server-side rendering oriented toolchain</li>
             <li><strong>Gatsby</strong> − Static content oriented toolchain</li>
            </ul>
 
            <p>Tools needed to develop a React application:</p>
-           <ul className="list-[square] list-inside mt-5">
+           <ul className="list-[square] mt-5">
             <li>The serve, a static server to serve our application during development</li>
             <li>Babel compiler</li>
             <li>Create React App CLI</li>
@@ -52,7 +52,7 @@ added 86 packages in 6s`}
            </pre>
 
            <p className="mt-5">Next, execute the serve command.</p>
-           <pre className="text-green-400 bg-gray-900 p-4 4ounded-lg mt-5">
+           <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`serve .`}
             </code>

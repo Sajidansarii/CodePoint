@@ -25,7 +25,7 @@ const NavlinkRouter = () => {
         </pre>
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Features of Link</h2>
-         <ul className="list-[square] list-inside space-y-1 mt-5">
+         <ul className="list-[square] space-y-1 mt-5">
             <li><span className="font-semibold">No Page Reload</span>: Link lets you move between pages without refreshing the whole page.</li>
             <li><span className="font-semibold">Destination URL</span>: Use the to prop to set where the link goes.</li>
             <li><span className="font-semibold">Dynamic Navigation</span>: Supports passing dynamic values for routes.</li>
@@ -65,7 +65,7 @@ export default App;`}
          </pre>
 
          <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">In this example</h2>
-        <ul className="list-[square] list-inside space-y-1 mt-5">
+        <ul className="list-[square] space-y-1 mt-5">
             <li>Routes wraps Route elements that define the application's routing paths.</li>
             <li>Unlike NavLink, Link does not render any active styling by default.</li>
             <li>The Link component from react-router-dom provides client-side navigation between the Home ("/") and About <span className="ml-5">("/about")</span> pages, preventing full-page reloads.</li>
@@ -73,7 +73,7 @@ export default App;`}
         </ul>
         
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">What is NavLink Component?</h2>
-        <ul className="list-[square] list-inside space-y-1 mt-5">
+        <ul className="list-[square] space-y-1 mt-5">
             <li>NavLink is like Link but adds an “active” class to show which page is currently selected.</li>
             <li>It’s great for highlighting the active menu item in a navbar.</li>
             <li>Use it to indicate the active route.</li>
@@ -88,7 +88,7 @@ export default App;`}
 
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Features of NavLink</h2>
-        <ul className="list-[square] list-inside space-y-1 mt-5">
+        <ul className="list-[square] space-y-1 mt-5">
             <li><span className="font-semibold">Applies Active Class</span>: NavLink automatically assigns an active class to links that match the current route.</li>
             <li><span className="font-semibold">Supports Custom Styling</span>: Developers can define styles for both active and inactive link states.</li>
             <li><span className="font-semibold">Exact Matching Option</span>: By default, NavLink allows partial route matches; setting exact ensures precise path <span className="ml-5">matching</span>.</li>
@@ -154,7 +154,7 @@ export default App;`}
         </pre>
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">In this example</h2>
-        <ul className="list-[square] list-inside space-y-1 mt-5">
+        <ul className="list-[square] space-y-1 mt-5">
             <li>NavLink is used instead of Link to apply dynamic styling to the active route.</li>
             <li>Active links receive red text and bold font, while inactive links remain black and normal.</li>
             <li>The navigation bar is encapsulated in a Navbar component for modularity.</li>

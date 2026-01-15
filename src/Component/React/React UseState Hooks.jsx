@@ -13,7 +13,7 @@ const UseStateHooks = () => {
                 </code>
             </pre>
 
-            <ul className="list-[square] list-inside space-y-1 mt-5">
+            <ul className="list-[square] space-y-1 mt-5">
                 <li><span className="font-bold">State</span> refers to the current value of a variable in a component that determines how it behaves or renders.</li>
                 <li><span className="font-bold">setState</span> is the function used to change the value of the state.</li>
                 <li><span className="font-bold">initialState</span> represents the default value assigned to the state when a component mounts.</li>
@@ -99,11 +99,11 @@ function Form() {
 export default Form;`}
             </code>
          </pre>
-         <ul className="list-[square] list-inside space-y-1 mt-5">
-            <li>onChange={(e) => setAge(e.target.value)}: Updates age as the user <span className="lg:ml-0 ml-5">types</span>.</li>
-            <li>onChange={(e) => setName(e.target.value)}: Updates name as the user <span className="lg:ml-0 ml-5">types</span>.</li>
-            <li>useState(''): Starts name and age with <span className="lg:ml-5 ml-5">empty</span> strings.</li>
-            <li>setSubmitted(true): Marks the form as <span className="lg:ml-0 ml-5">submitted</span>.</li>
+         <ul className="list-[square] space-y-1 mt-5">
+            <li>onChange={(e) => setAge(e.target.value)}: Updates age as the user types.</li>
+            <li>onChange={(e) => setName(e.target.value)}: Updates name as the user types.</li>
+            <li>useState(''): Starts name and age with empty strings.</li>
+            <li>setSubmitted(true): Marks the form as submitted.</li>
          </ul>
 
          <p className="mt-5">The useState hook is well-suited for straightforward state management tasks, including toggling booleans, updating counters, and handling form inputs.</p>
@@ -138,10 +138,10 @@ setValue(10); // No re-render happens`}
        </pre>
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-5">When to Use useState</h2>
-       <ul className="list-[square] list-inside space-y-1 mt-5">
-        <li>A straightforward state management <span className="lg:ml-0 ml-5">solution</span> is sufficient.</li>
-        <li>The component maintains state that <span className="lg:ml-0 ml-5">evolves</span> over time.</li>
-        <li>The state updates are simple and don’t <span className="lg:ml-0 ml-5">involve</span> intricate dependencies.</li>
+       <ul className="list-[square] space-y-1 mt-5">
+        <li>A straightforward state management solution is sufficient.</li>
+        <li>The component maintains state that evolves over time.</li>
+        <li>The state updates are simple and don’t involve intricate dependencies.</li>
        </ul>
 
       

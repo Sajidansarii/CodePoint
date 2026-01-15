@@ -17,17 +17,17 @@ const ReactonBlur = () => {
 				</code>
 			</pre>
 
-			<ul className="list-[square] list-inside space-y-1 mt-5">
-				<li><span className="font-semibold">{'<Element>'}</span>: The React component or <span className="lg:ml-0 ml-5">HTML</span> element (such as an input or <span className="lg:ml-0 ml-5">textarea</span>) whose focus change you want <span className="lg:ml-0 ml-5">to</span> monitor.</li>
-				<li><span className="font-semibold">handleBlur</span>: The function that runs when <span className="lg:ml-0 ml-5">the</span> element loses focus. This function is <span className="lg:ml-0 ml-5">defined</span> inside your component.</li>
+			<ul className="list-[square] space-y-1 mt-5">
+				<li><span className="font-semibold">{'<Element>'}</span>: The React component or HTML element (such as an input or textarea) whose focus change you want to monitor.</li>
+				<li><span className="font-semibold">handleBlur</span>: The function that runs when the element loses focus. This function is defined inside your component.</li>
 			</ul>
 
 			<h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">When Does the onBlur Event Get Triggered?</h2>
             <p>The onBlur event is triggered when an element loses focus. This typically happens in the following situations:</p>
-            <ul className="list-[square] list-inside space-y-1 mt-5">
+            <ul className="list-[square] space-y-1 mt-5">
 				<li>Clicking anywhere outside the element</li>
-				<li>Navigating to another element using the <span className="lg:ml-0 ml-5">Tab</span> key</li>
-				<li>Focusing on a different interactive <span className="lg:ml-0 ml-5">element</span>, such as a link or button</li>
+				<li>Navigating to another element using the Tab key</li>
+				<li>Focusing on a different interactive element, such as a link or button</li>
 			</ul>
 
 			<h1 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Handling the onBlur Event</h1>
@@ -63,11 +63,11 @@ export default App;`}
 				</code>
 			</pre>
 
-			<ul className="list-[square] list-inside space-y-1 mt-5">
-				<li>A React component that uses the <span className="lg:ml-0 ml-5">useState</span> hook to manage a controlled <span className="lg:ml-0 ml-5">input</span> field.</li>
-				<li>The value state stores the current value <span className="lg:ml-0 ml-5">of</span> the input.</li>
-				<li>The onChange event updates the value <span className="lg:ml-0 ml-5">state</span> as the user types.</li>
-				<li>The onBlur event calls the handleBlur <span className="lg:ml-0 ml-5">function</span> and logs "Input blurred" when <span className="lg:ml-0 ml-5">the</span> input loses focus.</li>
+			<ul className="list-[square] space-y-1 mt-5">
+				<li>A React component that uses the useState hook to manage a controlled input field.</li>
+				<li>The value state stores the current value of the input.</li>
+				<li>The onChange event updates the value state as the user types.</li>
+				<li>The onBlur event calls the handleBlur function and logs "Input blurred" when the input loses focus.</li>
 			</ul>
 
 			<h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Preventing Default Behavior</h2>
@@ -235,21 +235,21 @@ export default ToggleEdit;`}
 				</code>
 			</pre>
          
-		 <ul className="list-[square] list-inside space-y-1 mt-5 mb-3">
-			<li><span className="font-semibold">Edit Mode</span>: If the user clicks the text, it <span className="lg:ml-0 ml-5">becomes</span> an input box so they can <span className="lg:ml-0 ml-5">change</span> the text. The onBlur event <span className="lg:ml-0 ml-5">automatically</span> exits edit mode when they <span className="lg:ml-0 ml-5">click</span> away.</li>
-			<li><span className="font-semibold">Display Mode</span>: The text shows as a <span className="lg:ml-0 ml-5">paragraph</span>. Clicking it lets the user edit it.</li>
+		 <ul className="list-[square] space-y-1 mt-5 mb-3">
+			<li><span className="font-semibold">Edit Mode</span>: If the user clicks the text, it becomes an input box so they can change the text. The onBlur event automatically exits edit mode when they click away.</li>
+			<li><span className="font-semibold">Display Mode</span>: The text shows as a paragraph. Clicking it lets the user edit it.</li>
 		 </ul>
 
 
 		 <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Common Use Cases for React onBlur Event</h2>
          <p>The <span className="text-red-400">onBlur</span> event in React offers a versatile way to handle user interactions and enhance the user interface. Some of the most common use cases include:</p>
-         <ul className="list-[square] list-inside space-y-1 mt-5">
-			<li><span className="font-semibold">Form Validation</span>: Validate the input <span className="lg:ml-0 ml-5">when</span> the user leaves a field, such as <span className="lg:ml-0 ml-5">checking</span> if an email is correct.</li>
-			<li><span className="font-semibold">Auto-Saving</span>: Save data automatically <span className="lg:ml-0 ml-5">when</span> the user finishes editing a field.</li>
-			<li><span className="font-semibold">UI Updates</span>: Update the interface, like <span className="lg:ml-0 ml-5">showing</span> error messages or changing <span className="lg:ml-0 ml-5">field</span> styles.</li>
-			<li><span className="font-semibold">Focus Management</span>: Move the focus to <span className="lg:ml-0 ml-5">the</span> next input or step automatically.</li>
-			<li><span className="font-semibold">Hide UI Elements</span>: Close tooltips, <span className="lg:ml-0 ml-5">dropdowns</span>, or popups when focus is <span className="lg:ml-0 ml-5">lost</span>.</li>
-			<li><span className="font-semibold">Closing Modals</span>: Close modals or <span className="lg:ml-0 ml-5">popups</span> when the user clicks outside or <span className="lg:ml-0 ml-5">changes</span> focus.</li>
+         <ul className="list-[square] space-y-1 mt-5">
+			<li><span className="font-semibold">Form Validation</span>: Validate the input when the user leaves a field, such as checking if an email is correct.</li>
+			<li><span className="font-semibold">Auto-Saving</span>: Save data automatically when the user finishes editing a field.</li>
+			<li><span className="font-semibold">UI Updates</span>: Update the interface, like showing error messages or changing field styles.</li>
+			<li><span className="font-semibold">Focus Management</span>: Move the focus to the next input or step automatically.</li>
+			<li><span className="font-semibold">Hide UI Elements</span>: Close tooltips, dropdowns, or popups when focus is lost.</li>
+			<li><span className="font-semibold">Closing Modals</span>: Close modals or popups when the user clicks outside or changes focus.</li>
 		 </ul>
         
         </div>

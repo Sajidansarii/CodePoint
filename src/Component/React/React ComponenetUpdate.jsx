@@ -8,7 +8,7 @@ const ReactcomponentUpdate = () => {
          
          <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">What is componentDidUpdate()?</h2>
          <p>The <span className="text-red-400 bg-gray-50">componentDidUpdate()</span> method belongs to React’s class component lifecycle and is called right after a component’s updates are applied to the DOM. It is typically used to perform side effects that depend on the latest state or props.</p>
-         <ul className="list-[square] list-inside space-y-1 mt-5">
+         <ul className="list-[square] space-y-1 mt-5">
             <li>Fetching fresh data whenever a prop is updated</li>
             <li>Making direct changes to the DOM after React finishes rendering</li>
             <li>Logging or debugging whenever the component re-renders</li>
@@ -24,7 +24,7 @@ const ReactcomponentUpdate = () => {
             </code>
         </pre>
 
-        <ul className="list-[square] list-inside space-y-1 mt-5">
+        <ul className="list-[square] space-y-1 mt-5">
             <li><span className="font-semibold">prevProps</span>: The previous props passed to the component before it updated.</li>
             <li><span className="font-semibold">prevState</span>: The component’s state prior to the update.</li>
             <li><span className="font-semibold">snapshot (optional)</span>: Value returned from getSnapshotBeforeUpdate(), typically used only when necessary.</li>
@@ -80,11 +80,11 @@ export default ScrollTracker;`}
         </pre>
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-5">In this example</h2>
-        <ul className="list-[square] list-inside space-y-1 mt-5">
+        <ul className="list-[square] space-y-1 mt-5">
             <li>The code listens to the window’s scroll event and saves the current scroll position in the component state.</li>
             <li>In componentWillUnmount(), the scroll listener is removed to prevent memory leaks and unnecessary updates.</li>
-            <li>When the scroll position changes, componentDidUpdate() logs the new position and shows a message if it exceeds <span className="ml-5">300</span> pixels.</li>
-            <li>The component renders a heading and a long paragraph, encouraging the user to scroll and check the console <span className="ml-5">updates</span>.</li>
+            <li>When the scroll position changes, componentDidUpdate() logs the new position and shows a message if it exceeds 300 pixels.</li>
+            <li>The component renders a heading and a long paragraph, encouraging the user to scroll and check the console updates.</li>
         </ul>
 
 
@@ -140,16 +140,16 @@ export default ScrollTracker;`}
         </pre>
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-5">Best Practices for using componentDidMount()</h2>
-        <ul className="list-[square] list-inside space-y-1 mt-5">
+        <ul className="list-[square] space-y-1 mt-5">
             <li>Use componentDidUpdate() to handle tasks that occur after a component updates, such as fetching data or <span className="ml-5">triggering</span> animations.</li>
             <li>Always compare previous and current props/state to determine if something has changed before performing actions. <span className="ml-5">This</span> prevents unnecessary operations.</li>
             <li>If you need information from before the update (like scroll position), use getSnapshotBeforeUpdate() and then <span className="ml-5">access</span> it inside componentDidUpdate().</li>
         </ul>
       
       <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">When Not to Use componentDidUpdate()?</h2>
-      <ul className="list-[square] list-inside space-y-1 mt-5">
-        <li><span className="font-semibold">No Additional Operations After Updates</span>: If your component doesn’t need to perform side effects such as API calls <span className="ml-5">or</span> DOM changes, there’s no need to use componentDidUpdate().</li>
-        <li><span className="font-semibold">Simple Components Without Dependencies</span>: If the component’s rendering depends solely on its props and state, <span className="ml-5">and</span> no external actions are required, componentDidUpdate() isn’t necessary.</li>
+      <ul className="list-[square] space-y-1 mt-5">
+        <li><span className="font-semibold">No Additional Operations After Updates</span>: If your component doesn’t need to perform side effects such as API calls or DOM changes, there’s no need to use componentDidUpdate().</li>
+        <li><span className="font-semibold">Simple Components Without Dependencies</span>: If the component’s rendering depends solely on its props and state, and no external actions are required, componentDidUpdate() isn’t necessary.</li>
       </ul>
 
 

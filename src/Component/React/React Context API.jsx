@@ -23,10 +23,10 @@ const ReactContext = () => {
         </ul>
 
         <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Benefits of Context API over React Redux</h1>
-        <ul className="list-[square] list-inside space-y-1 mt-5">
-            <li>Redux tends to be more verbose, requiring multiple files and boilerplate to support a new feature, whereas Context <span className="ml-5">API</span> lets you make similar changes with much less setup.</li>
-            <li>React enforces one-way data binding where state moves down through components, and Context maintains this <span className="ml-5">pattern</span> Redux, by introducing actions and a central store, shifts how data updates propagate, making the flow more <span className="ml-5">complex</span> compared to simple one-way binding.</li>
-            <li>Context lets you create multiple independent contexts to manage different bits of data, whereas Redux keeps all <span className="ml-5">state</span> in a single global store.</li>
+        <ul className="list-[square] space-y-1 mt-5">
+            <li>Redux tends to be more verbose, requiring multiple files and boilerplate to support a new feature, whereas Context API lets you make similar changes with much less setup.</li>
+            <li>React enforces one-way data binding where state moves down through components, and Context maintains this pattern Redux, by introducing actions and a central store, shifts how data updates propagate, making the flow more <span className="ml-5">complex</span> compared to simple one-way binding.</li>
+            <li>Context lets you create multiple independent contexts to manage different bits of data, whereas Redux keeps all state in a single global store.</li>
         </ul>
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Implement Context API in React</h2>
@@ -49,7 +49,7 @@ const ReactContext = () => {
           <p>We’ll leverage the Context API to render the user’s name and identification on the screen.</p>
           <p className="mt-5">First, create a file called Context.js in the src directory and define your UserContext there, making sure to extract the Provider and Consumer. Then build a simple component that shows the user’s name and ID from the context. Finally, wrap your {'<App/>'} component with the context provider in index.js, passing the name and ID as the provider’s values — otherwise nothing will display.</p>
            <p className="mt-5">Add the following code into each corresponding file:</p>
-           <ul className="list-[square] list-inside space-y-1 mt-5">
+           <ul className="list-[square] space-y-1 mt-5">
             <li><span className="text-red-400">Context.js</span>: We create the consumer and provider in this file</li>
             <li><span className="text-red-400">WelocomePage.js</span>: The consumer consumes the value in this file</li>
             <li><span className="text-red-400">Index.js</span>: The provider is given to the application in this file</li>

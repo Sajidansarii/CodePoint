@@ -57,12 +57,12 @@ export default App;`}
             </code>
          </pre>
 
-         <ul className="list-[square] list-inside space-y-1 mt-5">
+         <ul className="list-[square] space-y-1 mt-5">
             <li><span className="text-red-400">useState</span> tracks number from the input <span className="lg:ml-0 ml-5">and</span> counter from button interactions.</li>
-            <li>useMemo memoizes squareNum <span className="lg:ml-0 ml-5">(number)</span> for performance, recalculating <span className="lg:ml-0 ml-5">only</span> on number change.</li>
-            <li>Input changes trigger number state <span className="lg:ml-0 ml-5">updates</span>.</li>
+            <li>useMemo memoizes squareNum (number) for performance, recalculating <span className="lg:ml-0 ml-5">only</span> on number change.</li>
+            <li>Input changes trigger number state updates.</li>
             <li>Button click updates counter.</li>
-            <li>Component renders the input field, <span className="lg:ml-0 ml-5">memoized</span> square, and current counter.</li>
+            <li>Component renders the input field, memoized square, and current counter.</li>
          </ul>
 
 
@@ -91,12 +91,12 @@ export default Parent;`}
         </code>
        </pre>
 
-       <ul className="list-[square] list-inside space-y-1 mt-5">
-        <li>The app imports React, useState, and <span className="lg:ml-0 ml-5">useMemo</span> for state handling and <span className="lg:ml-0 ml-5">memoization</span>.</li>
-        <li>ChildComponent renders userInfo.name <span className="lg:ml-0 ml-5">and</span> logs its render activity.</li>
-        <li>ChildComponent renders userInfo.name <span className="lg:ml-0 ml-5">and</span> logs its render activity.</li>
-        <li>Clicking the increment button updates <span className="lg:ml-0 ml-5">the</span> count state, re-rendering the parent <span className="lg:ml-0 ml-5">component</span>.</li>
-        <li>Clicking the increment button updates <span className="lg:ml-0 ml-5">the</span> count state, re-rendering the parent <span className="lg:ml-0 ml-5">component</span>.</li>
+       <ul className="list-[square] space-y-1 mt-5">
+        <li>The app imports React, useState, and useMemo for state handling and memoization.</li>
+        <li>ChildComponent renders userInfo.name and logs its render activity.</li>
+        <li>ChildComponent renders userInfo.name and logs its render activity.</li>
+        <li>Clicking the increment button updates the count state, re-rendering the parent component.</li>
+        <li>Clicking the increment button updates the count state, re-rendering the parent component.</li>
        </ul>
 
 
@@ -108,14 +108,12 @@ export default Parent;`}
       <p className="mb-3">Applying useMemo appropriately can optimize component performance in React applications. Conversely, improper or excessive use may result in unnecessary memory consumption and added complexity. Consider the following guidelines:</p>
       <p>Don’t use useMemo for easy calculations, because it can make your code more complicated without helping. Save it for heavy tasks, like working with big datasets or performing slow calculations. You can also use it to keep objects or arrays stable when giving them to child components so they don’t re-render unnecessarily. Always check your app’s performance first with tools like React DevTools before deciding to use useMemo.</p>
      
-     <ul className="list-[square] list-inside space-y-1 mt-5">
-        <li><span className="font-semibold">Performance Optimization:</span> useMemo <span className="lg:ml-0 ml-5">avoids</span> recalculating expensive <span className="lg:ml-0 ml-5">computations</span>.</li>
-        <li><span className="font-semibold">Prevent Unnecessary Re-renders</span>: It <span className="lg:ml-0 ml-5">stabilizes</span> object and array references <span className="lg:ml-0 ml-5">passed</span> as props.</li>
-        <li><span className="font-semibold">Use with Care</span>: Overusing useMemo can <span className="lg:ml-0 ml-5">make</span> your code more complex.</li>
+     <ul className="list-[square] space-y-1 mt-5">
+        <li><span className="font-semibold">Performance Optimization:</span> useMemo avoids recalculating expensive computations.</li>
+        <li><span className="font-semibold">Prevent Unnecessary Re-renders</span>: It stabilizes object and array references passed as props.</li>
+        <li><span className="font-semibold">Use with Care</span>: Overusing useMemo can make your code more complex.</li>
      </ul>
      
-
-
         </div>
     )
 }

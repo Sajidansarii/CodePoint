@@ -121,22 +121,14 @@ root.render(
        </pre>
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Uses of React Router</h2>
-       <ul className="list-[square] list-inside space-y-1 mt-5">
+       <ul className="list-[square] space-y-1 mt-5">
         <li><span className="font-semibold">Dynamic Routing</span>: Routes can change based on app state or data, allowing complex navigation flows.</li>
         <li><span className="font-semibold">URL Management</span>: It manages URLs, supports deep linking, bookmarks, and preserves browser history.</li>
         <li><span className="font-semibold">Component-Based Approach</span>: Routes are defined using components, making them modular and reusable.</li>
         <li><span className="font-semibold">Nested Routes</span>: You can create nested routes for better organization, which is especially helpful in large apps.</li>
-        <li><span className="font-semibold">Navigation and Routing</span>: React Router lets you navigate between different pages or views in a React app without <span className="ml-5">refreshing</span> the page.</li>
+        <li><span className="font-semibold">Navigation and Routing</span>: React Router lets you navigate between different pages or views in a React app without refreshing the page.</li>
        </ul>
 
-       
-
-
-
-
-
-
-      
         </div>
     )
 }

@@ -7,7 +7,7 @@ const ImportExport = () => {
             <p>React applications are built using components, which allow you to divide a large user interface into independent, reusable parts. </p>
             <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Types of Exports in React</h2>
             <p>In React, there are two types of exports</p>
-            <ul className="list-[square] list-inside mt-5">
+            <ul className="list-[square] mt-5">
                 <li>Default Exports and Imports</li>
                 <li>Named Exports and Imports</li>
             </ul>

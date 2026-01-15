@@ -29,10 +29,10 @@ const HooksIntroduction = () => {
                 </code>
             </pre>
 
-            <ul className="list-[square] list-inside space-y-1 mt-5 ">
+            <ul className="list-[square] space-y-1 mt-5 ">
                 <li><span className="font-bold">state</span>: The current value of the state.</li>
-                <li><span className="font-bold">setState</span>: A function used to update the <span className="lg:ml-0 ml-5">state</span>.</li>
-                <li><span className="font-bold">InitialState</span>: The initial value of the <span className="lg:ml-0 ml-5">state</span>, which can be a primitive type or an <span className="lg:ml-0 ml-5">object/array</span></li>
+                <li><span className="font-bold">setState</span>: A function used to update the state.</li>
+                <li><span className="font-bold">InitialState</span>: The initial value of the state, which can be a primitive type or an <span className="lg:ml-0 ml-5">object/array</span></li>
             </ul>
 
             <p className="mt-10"><span className="text-red-400 bg-gray-50 px-1">useReducer</span> is an advanced hook for managing complex state in functional components. It’s useful when state has multiple parts or requires complicated updates.</p>
@@ -44,10 +44,10 @@ const HooksIntroduction = () => {
                 </code>
              </pre>
 
-             <ul className="list-[square] list-inside space-y-1 mt-5">
+             <ul className="list-[square] space-y-1 mt-5">
                 <li><span className="font-bold">state</span>: The current state value.</li>
-                <li><span className="font-bold">dispatch</span>: A function used to dispatch <span className="lg:ml-0 ml-5">actions</span> that will update the state.</li>
-                <li><span className="font-bold">reducer</span>: A function that defines how <span className="lg:ml-0 ml-5">the</span> state should change based on the <span className="lg:ml-0 ml-5">dispatched</span> action.</li>
+                <li><span className="font-bold">dispatch</span>: A function used to dispatch actions that will update the state.</li>
+                <li><span className="font-bold">reducer</span>: A function that defines how the state should change based on the <span className="lg:ml-0 ml-5">dispatched</span> action.</li>
                 <li><span className="font-bold">initialState</span>: The initial state value.</li>
              </ul>
 
@@ -83,9 +83,9 @@ export default App;`}
                 </code>
               </pre>
 
-             <ul className="list-[square] list-inside space-y-1 mt-5">
+             <ul className="list-[square] space-y-1 mt-5">
                 <li>The <span className="text-red-400">useContext</span> hook accepts a context object, like MyContext, and gives you its current value.</li>
-                <li>The value stored in <span className="text-red-400">contextValue</span> comes from the nearest <span className="text-red-400">{'<MyContext.Provider>'}</span> in the component tree, making it <span className="ml-5">easy</span> for the component to access context data without prop drilling.</li>
+                <li>The value stored in <span className="text-red-400">contextValue</span> comes from the nearest <span className="text-red-400">{'<MyContext.Provider>'}</span> in the component tree, making it easy for the component to access context data without prop drilling.</li>
              </ul>
 
              <p className="mt-5">Let’s explore the functionality of the context hook using the following example.</p>
@@ -138,8 +138,8 @@ export default App;`}
             </code>
         </pre>
 
-        <ul className="list-[square] list-inside space-y-1 mt-5">
-         <li>The <span className="text-red-400">useEffect</span> hook, written as useEffect <span className="text-red-400">{'(() => { ... }, [dependencies])'}</span>;, triggers side effects after the component’s <span className="ml-5">render</span> phase.</li>
+        <ul className="list-[square] space-y-1 mt-5">
+         <li>The <span className="text-red-400">useEffect</span> hook, written as useEffect <span className="text-red-400">{'(() => { ... }, [dependencies])'}</span>;, triggers side effects after the component’s render phase.</li>
          <li>The effect is triggered based on changes in the specified dependency values.</li>   
         </ul>
 
@@ -195,9 +195,9 @@ export default App;`}
         </code>
      </pre>
 
-     <ul className="list-[square] list-inside space-y-1 mt-5">
-        <li>The useEffect hook is used to handle side effects in functional components, including data retrieval, managing <span className="ml-5">subscriptions</span>, or directly manipulating the DOM.</li>
-        <li>The cleanup function is used to remove resources, like timers or event listeners, when a component is removed or <span className="ml-5">before</span> the effect runs again.</li>
+     <ul className="list-[square] space-y-1 mt-5">
+        <li>The useEffect hook is used to handle side effects in functional components, including data retrieval, managing subscriptions, or directly manipulating the DOM.</li>
+        <li>The cleanup function is used to remove resources, like timers or event listeners, when a component is removed or before the effect runs again.</li>
      </ul>
 
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Performance Hook</h1>
@@ -219,8 +219,8 @@ export default App;`}
         </code>
      </pre>
 
-     <ul className="list-[square] list-inside space-y-1 mt-5">
-        <li>With useMemo, num * 2 is remembered and only recalculated when num changes, so it doesn’t waste time <span className="ml-5">recalculating</span> every render.</li>
+     <ul className="list-[square] space-y-1 mt-5">
+        <li>With useMemo, num * 2 is remembered and only recalculated when num changes, so it doesn’t waste time recalculating every render.</li>
      </ul>
 
      <p className="mt-5">Here’s an example to understand how the performance hook works.</p>
@@ -257,8 +257,8 @@ export default App;`}
         </code>
      </pre>
 
-     <ul className="list-[square] list-inside space-y-1 mt-5">
-        <li>The useMemo hook caches the result of expensiveCalculation and recalculates it solely when the count dependency <span className="ml-5">Changes</span>. Changes in text do not trigger a recomputation. console.log demonstrates the memoization in action.</li>
+     <ul className="list-[square] space-y-1 mt-5">
+        <li>The useMemo hook caches the result of expensiveCalculation and recalculates it solely when the count dependency Changes. Changes in text do not trigger a recomputation. console.log demonstrates the memoization in action.</li>
      </ul>
 
      <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Resource Hooks(useFetch)</h2>
@@ -271,7 +271,7 @@ export default App;`}
         </code>
     </pre>
 
-    <ul className="list-[square] list-inside space-y-1 mt-5">
+    <ul className="list-[square] space-y-1 mt-5">
         <li>The useFetch hook is a custom React hook designed to retrieve data from a specified URL.</li>
         <li>It uses useEffect to fetch data whenever the URL changes and updates the state with the new data.</li>
     </ul>
@@ -303,15 +303,15 @@ export default App;`}
         </code>
     </pre>
 
-    <ul className="list-[square] list-inside space-y-1 mt-5">
-        <li>The mutable countRef holds the count value. The forceRender state via useState triggers component re-renders to <span className="ml-5">reflect</span> updates in the UI. The Increment button updates countRef.</li>
+    <ul className="list-[square] space-y-1 mt-5">
+        <li>The mutable countRef holds the count value. The forceRender state via useState triggers component re-renders to reflect updates in the UI. The Increment button updates countRef.</li>
         <li>setForceRender triggers a re-render so the UI updates. The new count is shown in an <span className="text-red-400">{'<h1>'}</span> element, not in a prompt.</li>
     </ul>
 
 
     <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Other Hooks</h2>
     <p>React includes additional hooks that are intended for more specialized tasks or particular use cases.</p>
-     <ul className="list-[square] list-inside space-y-1 mt-5">
+     <ul className="list-[square] space-y-1 mt-5">
         <li><span className="font-bold">useReducer</span>: For complex state management.</li>
         <li><span className="font-bold">useImperativeHandle</span>: Customizes the instance value exposed by useRef.</li>
         <li><span className="font-bold">useLayoutEffect</span>: Like useEffect but fires synchronously after DOM updates.</li>
@@ -357,7 +357,7 @@ export default App;`}
         </code>
     </pre>
 
-    <ul className="list-[square] list-inside space-y-1 mt-5">
+    <ul className="list-[square] space-y-1 mt-5">
         <li>The useWidth hook encapsulates the functionality needed to monitor the width of the browser window.</li>
         <li>By reusing logic in multiple components, it minimizes redundancy and keeps the code cleaner.</li>
     </ul>
@@ -382,14 +382,6 @@ export default App;`}
             ))}
         </tbody>
     </table>
-
-
-
-
-
-
-
-
 
         </div>
     )

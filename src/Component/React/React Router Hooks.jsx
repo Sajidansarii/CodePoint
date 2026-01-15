@@ -11,7 +11,7 @@ const ReactRouterHooks = () => {
                       
           <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Hooks Of React Router 5:</h2>
           <p>The following are four React Router hooks provided in React Router v5 for use in React applications:</p>  
-          <ul className="list-[square] list-inside space-y-1 mt-5">
+          <ul className="list-[square] space-y-1 mt-5">
             <li>useHistory</li>
             <li>useParams</li>
             <li>useLocation</li>
@@ -38,7 +38,7 @@ export default function SomeComponent(props){
            <p className="mt-5">The history object returned by the <span className="text-red-400 bg-gray-50">useHistory()</span> hook contains multiple methods and properties.</p>
              <h2 className="text-2xl text-gray-800 font-semibold mt-5">Properties:</h2>
              
-             <ul className="list-[square] list-inside space-y-1 mt-5">
+             <ul className="list-[square] space-y-1 mt-5">
                 <li><span className="font-semibold">length</span>: Provides a numeric value representing the total number of entries in the history stack.</li>
                 <li><span className="font-semibold">action</span>: Indicates the current navigation type as a string (PUSH, REPLACE, or POP).</li>
                 <li><span className="font-semibold">location</span>: An object that represents the active location and includes:   </li>
@@ -52,7 +52,7 @@ export default function SomeComponent(props){
              </ul>
 
              <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Methods:</h2>
-             <ul className="list-[square] list-inside space-y-1 mt-5">
+             <ul className="list-[square] space-y-1 mt-5">
                 <li><span className="font-semibold">push(path, [state])</span>: Inserts a new entry into the history stack and navigates to the specified path.</li>
                 <li><span className="font-semibold">replace(path, [state])</span>: Substitutes the current history entry with a new one.</li>
                 <li><span className="font-semibold">go(n)</span>: Navigates through the history stack by moving n entries forward or backward.</li>
@@ -245,7 +245,7 @@ export default function Profile(props) {
           <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">useRouteMatch Hook</h2>
           <p>Returns a match object that includes all details about how the current URL corresponds to the Route path.</p>
           <h2 className="text-2xl text-gray-800 font-semibold mt-5">Properties:</h2>
-          <ul className="list-[square] list-inside space-y-1 mt-5">
+          <ul className="list-[square] space-y-1 mt-5">
             <li><span className="font-semibold">params</span>: An object holding the dynamic segment of the URL.</li>
             <li><span className="font-semibold">path</span>: A string representing the Route path pattern.</li>
             <li><span className="font-semibold">isExact</span>: A boolean that indicates whether the entire URL exactly matches the given Route path.</li>

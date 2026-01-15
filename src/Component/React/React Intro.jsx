@@ -18,7 +18,7 @@ const Intro = () => {
             
             <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">What You Should Already Know</h1>
              <p>Make sure you understand the following basics before continuing.</p>
-            <ul className="list-[square] list-inside mt-5 mb-3">
+            <ul className="list-[square] mt-5 mb-3">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Javascript</li>

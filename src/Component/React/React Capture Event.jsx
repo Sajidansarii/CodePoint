@@ -7,7 +7,7 @@ const ReactCapture = () => {
         
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">What is onClickCapture Event in ReactJS?</h2>
          <p>The onClickCapture event in React is part of its event system and handles clicks during the capture phase of event propagation. It differs from the standard onClick event in the order it is triggered.</p>
-         <ul className="list-[square] list-inside space-y-1 mt-5">
+         <ul className="list-[square] space-y-1 mt-5">
             <li><span className="font-semibold">Capture Phase</span>: The event begins at the root and moves down to the target element.</li>
             <li><span className="font-semibold">Bubbling Phase</span>: The event starts at the target element and moves up to the root.</li>
          </ul>
@@ -52,7 +52,7 @@ export default App;`}
 
     <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">When Should You Use onClickCapture?</h2>
     <p>The onClickCapture event is helpful when you want to catch events before they reach the target element. It can be useful in situations like:</p>
-   <ul className="list-[square] list-inside space-y-1 mt-5">
+   <ul className="list-[square] inside space-y-1 mt-5">
     <li><span className="font-semibold">Logging</span>: Log what’s happening with the event before other handlers respond.</li>
     <li><span className="font-semibold">Validation</span>: Make sure the event meets certain conditions before it continues.</li>
     <li><span className="font-semibold">Intercepting events</span>: Catch events for things like tracking clicks or analytics without stopping the usual flow.</li>
@@ -102,7 +102,7 @@ export default PreventDefaultComponent;`}
   <p>Event propagation in the DOM has two phases: capture and bubbling. Normally, events bubble up from the target element, but onClickCapture lets you handle the event during the capture phase, before it reaches the target.</p>
   <h2 className="text-2xl text-gray-800 font-semibold mt-5">Breakdown of Event Propagation with onClickCapture:</h2>
  
- <ul className="list-[square] list-inside space-y-1 mt-5">
+ <ul className="list-[square] space-y-1 mt-5">
     <li><span className="font-semibold">Click Event Triggered</span>: The user clicks an element, like a button.</li>
     <li><span className="font-semibold">Capture Phase</span>: The event moves from the root down to the target element.</li>
     <li><span className="font-semibold">onClickCapture Fires</span>: Any onClickCapture handlers on parent elements run during the capture phase.</li>

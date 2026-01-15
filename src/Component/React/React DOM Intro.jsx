@@ -35,7 +35,7 @@ const ReactDOM = () => {
             </code>
         </pre>
 
-        <ul className="list-[square] list-inside space-y-1 mt-5">
+        <ul className="list-[square] space-y-1 mt-5">
             <li><span className="font-semibold">element</span>: The JSX tag where the user interaction takes place.</li>
             <li><span className="font-semibold">onEvent</span>: The name of the event written in camelCase.</li>
             <li><span className="font-semibold">handlerFunction</span>: The function that responds to the event action.</li>

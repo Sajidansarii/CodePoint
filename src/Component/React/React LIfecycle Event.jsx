@@ -26,7 +26,7 @@ const ReactLifeCycle = () => {
           <p>The mounting phase in React describes the process of creating a component and inserting it into the DOM for the first time. During this phase, React initializes the component, sets up any required state, and renders the UI.</p>
 
          <h2 className="text-xl mt-3">Methods executed during mounting are:</h2>
-          <ul className="list-[square] list-inside mt-5">
+          <ul className="list-[square] mt-5">
             <li>constructor</li>
             <li>getDerivedStateFromProps</li>
             <li>render()</li>
@@ -98,7 +98,7 @@ const ReactLifeCycle = () => {
 
       <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">2.Updating</h2>
       <p>The update phase occurs whenever a component's state changes or it receives new props from its parent. During this phase, React re-renders the component and updates the DOM.</p>
-      <ul className="list-[square] list-inside mt-5 mb-10">
+      <ul className="list-[square] mt-5 mb-10">
         <li>getDerivedStateFromProps</li>
         <li>setState() Function</li>
         <li>shouldComponentUpdate()</li>
@@ -220,7 +220,7 @@ root.render(<Test />);`}
      <p>The Test class is a React component where the state hello starts as “World!”.When the component appears on the page, <span className="text-red-400 bg-gray-50">componentDidMount()</span> runs and prints a message in the console.The changeState() function changes hello to “Geek!”.Inside <span className="text-red-400 bg-gray-50">render()</span>, the value of hello is shown in an <span className="text-red-400 bg-gray-50">{'<h1>'}</span> tag and a link is provided to change the state.The component re-renders because shouldComponentUpdate() allows it,</p>
    
      <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">React Lifecycle Methods: Class Components vs Functional Components</h2>
-     <ul className="list-[square] list-inside mt-5">
+     <ul className="list-[square] mt-5">
         <li>Managing state and side effects in class components requires different lifecycle methods, which can be confusing.</li>
         <li>Functional components use Hooks like <span className="text-red-400 bg-gray-50">useState()</span> and <span className="text-red-400 bg-gray-50">useEffect()</span>, making the code easier to write and understand.</li>
      </ul>

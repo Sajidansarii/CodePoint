@@ -8,7 +8,7 @@ const ReactComponenetUnmount = () => {
        
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">What is componentWillUnmount()?</h2>
        <p>The <span className="text-red-400 bg-gray-50">componentWillUnmount()</span> method is part of the React class component lifecycle and executes right before a component is removed. It should be used for cleaning up side effects, including:</p>
-       <ul className="list-[square] list-inside space-y-1 mt-5">
+       <ul className="list-[square] space-y-1 mt-5">
         <li>Cancelling API calls or network requests</li>
         <li>Removing event listeners</li>
         <li>Clearing timers set with setInterval() or setTimeout()</li>
@@ -96,12 +96,12 @@ export default App;`}
        </pre>
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">In this example</h2>
-       <ul className="list-[square] list-inside space-y-1 mt-5">
+       <ul className="list-[square] space-y-1 mt-5">
         <li>The App component controls the visibility of the User component using the showUser state.</li>
         <li>Clicking the "Hide User" button sets showUser to false, which hides the User component.</li>
         <li>While visible, the User component displays the current mouse position (X and Y coordinates) in real time.</li>
-        <li>When the User component mounts, it starts listening for mouse movements and updates the X and Y coordinates in <span className="ml-5">the</span> state.</li>
-        <li>When the User component is removed, the componentWillUnmount() method cleans up by stopping the mouse <span className="ml-5">tracking</span> and removing the event listener.</li>
+        <li>When the User component mounts, it starts listening for mouse movements and updates the X and Y coordinates in the state.</li>
+        <li>When the User component is removed, the componentWillUnmount() method cleans up by stopping the mouse tracking and removing the event listener.</li>
        </ul>
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">2. Component Cleanup with componentWillUnmount()</h2>
@@ -144,7 +144,7 @@ export default App;`}
        </pre>
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-5">In this example</h2>
-       <ul className="list-[square] list-inside space-y-1 mt-5">
+       <ul className="list-[square] space-y-1 mt-5">
         <li>The message "Hello, I am a Component!" appears initially.</li>
         <li>Press the "Unmount Component" button.</li>
         <li>MyComponent is removed, and the console logs a message.</li>
@@ -208,7 +208,7 @@ export default App;`}
        </pre>
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">When Not to Use componentWillUnmount()?</h2>
-       <ul className="list-[square] list-inside space-y-1 mt-5">
+       <ul className="list-[square] space-y-1 mt-5">
         <li><span className="font-semibold">Stateless Components</span>: No resource management? No componentWillUnmount() needed.</li>
         <li><span className="font-semibold">Static Components</span>: Display-only components typically don’t need cleanup.</li>
        </ul>

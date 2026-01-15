@@ -6,11 +6,11 @@ const UseEffectHooks = () =>{
             <h1 className="lg:text-3xl text-2xl text-blue-500 font-semibold mb-3">React UseEfect Hooks</h1>
             <p>The <span className="text-red-400">useEffect</span> hook is a core feature in ReactJS that enables functional components to manage side effects. Prior to hooks, this functionality was limited to class components through lifecycle methods such as componentDidMount, componentDidUpdate, and componentWillUnmount.</p>
             
-            <ul className="list-[square] list-inside space-y-1 mt-5">
+            <ul className="list-[square] space-y-1 mt-5">
                 <li>Fetching API data.</li>
-                <li>Registering event listeners or <span className="lg:ml-0 ml-5">subscriptions</span>.</li>
-                <li>Making direct DOM changes when <span className="lg:ml-0 ml-5">needed</span>.</li>
-                <li>Cleaning up resources on component <span className="lg:ml-0 ml-5">unmount</span>.</li>
+                <li>Registering event listeners or subscriptions.</li>
+                <li>Making direct DOM changes when needed.</li>
+                <li>Cleaning up resources on component unmount.</li>
             </ul>
 
             <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
@@ -25,10 +25,10 @@ const UseEffectHooks = () =>{
                 </code>
             </pre>
 
-            <ul className="list-[square] list-inside space-y-1 mt-5">
-                <li><span className="font-semibold">Effect function</span>: Runs the side effect <span className="lg:ml-0 ml-5">code</span>.</li>
-                <li><span className="font-semibold">Cleanup function</span>: Cleans up <span className="lg:ml-0 ml-5">subscriptions</span> or timers when needed.</li>
-                <li><span className="font-semibold">Dependencies array</span>: Controls when the <span className="lg:ml-0 ml-5">effect</span> re-runs.</li>
+            <ul className="list-[square] space-y-1 mt-5">
+                <li><span className="font-semibold">Effect function</span>: Runs the side effect code.</li>
+                <li><span className="font-semibold">Cleanup function</span>: Cleans up subscriptions or timers when needed.</li>
+                <li><span className="font-semibold">Dependencies array</span>: Controls when the effect re-runs.</li>
             </ul>
 
             <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">How does it work?</h2>
@@ -175,7 +175,7 @@ export default App;`}
 
     <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Cleaning Up Side Effects</h2>
     <p>By returning a cleanup function, useEffect helps remove side effects. This is particularly helpful for:</p>
-     <ul className="list-[square] list-inside space-y-1 mt-5">
+     <ul className="list-[square] space-y-1 mt-5">
         <li>Removing event listeners.</li>
         <li>Canceling network requests.</li>
         <li>Clearing timers or intervals.</li>
