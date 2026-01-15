@@ -176,68 +176,68 @@ const ReactNav = () => {
 
                    <h1 className="text-xl font-semibold mt-5 mb-2">React Tutorial</h1>
                     <ul className='space-y-2 text-sm'>  
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactInstallation')}>React Installation</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactRender')}>React Render HTML</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ES6')}>React ES6</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('JSXIntro')}>React JSX Intro</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactAttributes')}>React JSX Attributes</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactExpressons')}>React JSX Expressions</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ImportExport')}>React Import & Export</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Reactcomponent')}>React Componenets</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactClass')}>React Class</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactForms')}>React Forms</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactFormsubmit')}>React Forms Submit</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactProps')}>React Props</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactProDestructuring')}>React Props Destructuring</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactProchild')}>React Props Children</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Conditional')}>React Conditionals</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactList')}>React Lists</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactVirtual')}>React Virtual DOM</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactRedux')}>React Redux</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactContext')}>React Context API</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactInstallation' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactInstallation')}>React Installation</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactRender' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactRender')}>React Render HTML</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ES6' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ES6')}>React ES6</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSXIntro' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('JSXIntro')}>React JSX Intro</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactAttributes' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactAttributes')}>React JSX Attributes</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactExpressons' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactExpressons')}>React JSX Expressions</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ImportExport' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ImportExport')}>React Import & Export</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Reactcomponent' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('Reactcomponent')}>React Componenets</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactClass' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactClass')}>React Class</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactForms' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactForms')}>React Forms</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactFormsubmit' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactFormsubmit')}>React Forms Submit</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactProps' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactProps')}>React Props</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactProDestructuring' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactProDestructuring')}>React Props Destructuring</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactProchild' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactProchild')}>React Props Children</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Conditional' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('Conditional')}>React Conditionals</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactList' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactList')}>React Lists</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactVirtual' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactVirtual')}>React Virtual DOM</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactRedux' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactRedux')}>React Redux</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactContext' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactContext')}>React Context API</li>
                     </ul>
 
                      <h1 className="text-xl font-semibold mt-5 mb-2">React Hooks</h1>
                      <ul className="space-y-2 text-sm">
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('HooksIntroduction')}>React Hooks Introduction</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('UseStateHooks')}>React UseState Hooks</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('UseEffectHooks')}>React UseEffect Hooks</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('UseRefHooks')}>React UseRef Hooks</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('UseMemoHooks')}>React UseMemo Hooks</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('UseContextHooks')}>React UseContext Hooks</li>
+                      <li className={`cursor-pointer rounded hover:bg' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('HooksIntroduction')}>React Hooks Introduction</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'UseStateHooks' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('UseStateHooks')}>React UseState Hooks</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'UseEffectHooks' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('UseEffectHooks')}>React UseEffect Hooks</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'UseRefHooks' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('UseRefHooks')}>React UseRef Hooks</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'UseMemoHooks' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('UseMemoHooks')}>React UseMemo Hooks</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'UseContextHooks' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('UseContextHooks')}>React UseContext Hooks</li>
                      </ul>
 
 
 
                       <h1 className="text-xl font-semibold mt-5 mb-2">React DOM Events</h1>
                      <ul className="space-y-2 text-sm">
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactDOM')}>React Events Introduction</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactCapture')}>React onclickcapture Event</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactMouse')}>React onMouseDown Event</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactDoubleClick')}>React onDoubleClick Event</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactOnSubmit')}>React onSubmit Event</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactOnScroll')}>React onScroll Event</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactonBlur')}>React onBlur Event</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactDOM' ? "bg-gray-300" : ''}`} onClick={()=> setshowpage('ReactDOM')}>React Events Introduction</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactCapture' ? "bg-gray-300" : ''}`} onClick={()=> setshowpage('ReactCapture')}>React onclickcapture Event</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactMouse' ? "bg-gray-300" : ''}`} onClick={()=> setshowpage('ReactMouse')}>React onMouseDown Event</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactDoubleClick' ? "bg-gray-300" : ''}`} onClick={()=> setshowpage('ReactDoubleClick')}>React onDoubleClick Event</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactOnSubmit' ? "bg-gray-300" : ''}`} onClick={()=> setshowpage('ReactOnSubmit')}>React onSubmit Event</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactOnScroll' ? "bg-gray-300" : ''}`} onClick={()=> setshowpage('ReactOnScroll')}>React onScroll Event</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactonBlur' ? "bg-gray-300" : ''}`} onClick={()=> setshowpage('ReactonBlur')}>React onBlur Event</li>
                      </ul>
 
 
                       <h1 className="text-xl font-semibold mt-5 mb-2">React Lifecycle Events</h1>
                      <ul className="space-y-2 text-sm">
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactLifeCycle')}>LifeCycle Events</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactComponenetcatch')}>ComponentCatch Event</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactComponenetMOunt')}>ComponenetMount Event</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactcomponentUpdate')}>Component Update Event</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactComponenetUnmount')}>Component Unmount Event</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactLifeCycle' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactLifeCycle')}>LifeCycle Events</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactComponenetcatch' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactComponenetcatch')}>ComponentCatch Event</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactComponenetMOunt' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactComponenetMOunt')}>ComponenetMount Event</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactcomponentUpdate' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactcomponentUpdate')}>Component Update Event</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactComponenetUnmount' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactComponenetUnmount')}>Component Unmount Event</li>
                      </ul>
 
                      <h1 className="text-xl font-semibold mt-5 mb-2">Routing in React</h1>
                      <ul className="space-y-2 text-sm">
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactRouter')}>React JS Router</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactRouterdom')}>What is react-router-dom?</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactRouterTypes')}>React JS Types of Routers</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ReactRouterHooks')}>React-Router Hooks</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('NavigationRouting')}>Navigation and Routing</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('NavlinkRouter')}>Link and NavLink components</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactRouter' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactRouter')}>React JS Router</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactRouterdom' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactRouterdom')}>What is react-router-dom?</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactRouterTypes' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactRouterTypes')}>React JS Types of Routers</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ReactRouterHooks' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('ReactRouterHooks')}>React-Router Hooks</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'NavigationRouting' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('NavigationRouting')}>Navigation and Routing</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'NavlinkRouter' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('NavlinkRouter')}>Link and NavLink components</li>
                      </ul>
 
                       
