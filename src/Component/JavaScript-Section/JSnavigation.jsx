@@ -349,181 +349,181 @@ const JS = () => {
         
                     <h1 className="text-xl font-semibold mt-5 mb-2">JS Basics</h1>
                     <ul className="space-y-1 text-sm">   
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('WhatisJavaScript')}>What is JavaScript ?</li>
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('FeaturesofJS')}>Features of JavaScript</li>
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('JavaScriptVersions')}>JavaScript Versions</li>  
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('DiffrencebetweenJavaandJS')}>Diffrence between Java and JavaScript</li>
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('SyntaxofJS')}>Syntax of JS</li>
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('CommentinJS')}>Comment in JS</li>
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('VariablesinJS')}>Variables in JS</li>
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('VarinJS')}>Var in JS</li>
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('LetinJS')}>Let in JS</li>
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('ConstinJS')}>Const in JS</li>
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Break')}>Break</li>
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Continue')}>Continue</li>
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Events')}>Events</li>
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Math')}>Math</li>
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Random')}>Random</li>
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Errors')}>Errors</li>
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage("Scopes")}>Scopes</li>
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Modules')}>Modules</li>
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Hoisting')}>Hoisting</li>
-                    <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Spread')}>Spread</li>
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'WhatisJavaScript' ? 'bg-gra3' :''}`} onClick={()=> setshowpage('WhatisJavaScript')}>What is JavaScript ?</li>
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'FeaturesofJS' ? 'bg-gra3' :''}`} onClick={()=> setshowpage('FeaturesofJS')}>Features of JavaScript</li>
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JavaScriptVersions' ? 'bg-gra3' :''}`} onClick={()=> setshowpage('JavaScriptVersions')}>JavaScript Versions</li>  
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'DiffrencebetweenJavaandJS' ? 'bg-gra3' :''}`} onClick={()=> setshowpage('DiffrencebetweenJavaandJS')}>Diffrence between Java and JavaScript</li>
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'SyntaxofJS' ? 'bg-gra3' :''}`} onClick={()=> setshowpage('SyntaxofJS')}>Syntax of JS</li>
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'CommentinJS' ? 'bg-gra3' :''}`} onClick={()=> setshowpage('CommentinJS')}>Comment in JS</li>
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'VariablesinJS' ? 'bg-gra3' :''}`} onClick={()=> setshowpage('VariablesinJS')}>Variables in JS</li>
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'VarinJS' ? 'bg-gra3' :''}`} onClick={()=> setshowpage('VarinJS')}>Var in JS</li>
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'LetinJS' ? 'bg-gra3' :''}`} onClick={()=> setshowpage('LetinJS')}>Let in JS</li>
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ConstinJS' ? 'bg-gra3' :''}`} onClick={()=> setshowpage('ConstinJS')}>Const in JS</li>
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Break' ? 'bg-gra3' :''}`} onClick={()=> setshowpage('Break')}>Break</li>
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Continue' ? 'bg-gra3' :''}`} onClick={()=> setshowpage('Continue')}>Continue</li>
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Events' ? 'bg-gra3' :''}`} onClick={()=> setshowpage('Events')}>Events</li>
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Math' ? 'bg-gra3' :''}`} onClick={()=> setshowpage('Math')}>Math</li>
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Random' ? 'bg-gra3' :''}`} onClick={()=> setshowpage('Random')}>Random</li>
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Errors' ? 'bg-gra3' :''}`} onClick={()=> setshowpage('Errors')}>Errors</li>
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Scopes' ? 'bg-gra3' :''}`} onClick={()=> setshowpage("Scopes")}>Scopes</li>
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Modules' ? 'bg-gra3' :''}`} onClick={()=> setshowpage('Modules')}>Modules</li>
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Hoisting' ? 'bg-gra3' :''}`} onClick={()=> setshowpage('Hoisting')}>Hoisting</li>
+                    <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Spread' ? 'bg-gra3' :''}`} onClick={()=> setshowpage('Spread')}>Spread</li>
                     </ul>
 
 
                    <h1 className="text-xl font-semibold mt-5 mb-2">JS Statements</h1>
                    <ul className='space-y-2 text-sm'>  
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('IfElseInJS')}>If-else</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('Switch')}>Switch</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('Loops')}>Loops</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('ForofLoop')}>For ..of Loop</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('ForinLoop')}>For ..in Loop</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('Return')}>Return</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'IfElseInJS' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('IfElseInJS')}>If-else</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Switch' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('Switch')}>Switch</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Loops' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('Loops')}>Loops</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ForofLoop' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('ForofLoop')}>For ..of Loop</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ForinLoop' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('ForinLoop')}>For ..in Loop</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Return' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('Return')}>Return</li>
                     </ul>
 
         
                     <h1 className="text-xl font-semibold mt-5 mb-2">Js Data Types</h1>
                     <ul className='space-y-2 text-sm'>  
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('String')}>String</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=> setshowpage('Symbol')}>Symbol</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('Number')}>Number</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('Null')}>Null</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('Boolean')}>Boolean</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('Bigint')}>Bigint</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'String' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('String')}>String</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Symbol' ? 'bg-gray-300' : ''}`} onClick={()=> setshowpage('Symbol')}>Symbol</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Number' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('Number')}>Number</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Null'    ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('Null')}>Null</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Boolean' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('Boolean')}>Boolean</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Bigint' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('Bigint')}>Bigint</li>
                     </ul>
 
 
                     <h1 className="text-xl font-semibold mt-5 mb-2">JS Oprator</h1>
                     <ul className='space-y-2 text-sm'>  
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('Arithmatic')}>Arithmatic Oprator</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('Assignment')}>Assignment Oprator</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('Comparison')}>Comparison Oprator</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Arithmatic' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('Arithmatic')}>Arithmatic Oprator</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Assignment' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('Assignment')}>Assignment Oprator</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Comparison' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('Comparison')}>Comparison Oprator</li>
                     </ul>
 
                      <h1 className="text-xl font-semibold mt-5 mb-2">JS Dates</h1>
                     <ul className='space-y-2 text-sm'>  
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSDate')}>JS Date Formats</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSDateGet')}>JS Date Get</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSDateSet')}>JS Date Set</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSDate' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSDate')}>JS Date Formats</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSDateGet' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSDateGet')}>JS Date Get</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSDateSet' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSDateSet')}>JS Date Set</li>
                     </ul>
 
                     
                      <h1 className="text-xl font-semibold mt-5 mb-2">JS Class</h1>
                     <ul className='space-y-2 text-sm'>  
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSClasses')}>JS Classes</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSClassInheritance')}>JS Class Inheritance</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSClassStatic')}>JS Class Static</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSClasses' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSClasses')}>JS Classes</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSClassInheritance' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSClassInheritance')}>JS Class Inheritance</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSClassStatic' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSClassStatic')}>JS Class Static</li>
                     </ul>
 
                      <h1 className="text-xl font-semibold mt-5 mb-2">JS DOM Events</h1>
                     <ul className='space-y-2 text-sm'>  
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSDOMEvents')}>JS DOM Events</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSCustomEvents')}>JS Custom Events</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSEventCapturing')}>JS Event Capturing</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSEventBubbling')}>JS Event Bubbling</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSEventDelegation')}>JS Event Delegation</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSWindow')}>JS Window/Document Events</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSFormEvent')}>JS Form Event</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSKeyboardEvents')}>JS Keyboard Events</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSMouseEvents')}>JS Mouse Events</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSAddEventListener')}>JS AddEventListener()</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSDOMEvents' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSDOMEvents')}>JS DOM Events</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSCustomEvents' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSCustomEvents')}>JS Custom Events</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSEventCapturing' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSEventCapturing')}>JS Event Capturing</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSEventBubbling' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSEventBubbling')}>JS Event Bubbling</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSEventDelegation' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSEventDelegation')}>JS Event Delegation</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSWindow' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSWindow')}>JS Window/Document Events</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSFormEvent' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSFormEvent')}>JS Form Event</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSKeyboardEvents' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSKeyboardEvents')}>JS Keyboard Events</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSMouseEvents' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSMouseEvents')}>JS Mouse Events</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSAddEventListener' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSAddEventListener')}>JS AddEventListener()</li>
                     </ul>
                     
 
                      <h1 className="text-xl font-semibold mt-5 mb-2">JS Arrays</h1>
                     <ul className='space-y-2 text-sm'>  
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSArrayMethods')}>JS Array Methods</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSArraySearch')}>JS Array Search</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSArraySort')}>JS Array Sort</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSArrayIterations')}>JS Array Iterations</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSArrayMethods' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSArrayMethods')}>JS Array Methods</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSArraySearch' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSArraySearch')}>JS Array Search</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSArraySort' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSArraySort')}>JS Array Sort</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSArrayIterations' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSArrayIterations')}>JS Array Iterations</li>
                     </ul>
 
                      <h1 className="text-xl font-semibold mt-5 mb-2">JS Functions</h1>
                     <ul className='space-y-2 text-sm'>  
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('Function')}>Function</li> 
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('FunctionParameter')}>Function Parameter</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('DefaultParameter')}>Default Parameter</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('ArrowFunction')}>Arrow Function</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('AnonymousFunction')}>Anonymous Function</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Function' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('Function')}>Function</li> 
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'FunctionParameter' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('FunctionParameter')}>Function Parameter</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'DefaultParameter' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('DefaultParameter')}>Default Parameter</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ArrowFunction' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('ArrowFunction')}>Arrow Function</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'AnonymousFunction' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('AnonymousFunction')}>Anonymous Function</li>
                     </ul>
 
                     <h1 className="text-xl font-semibold mt-5 mb-2">JS Object</h1>
                     <ul className='space-y-2 text-sm'>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('Object')}>Object</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('ObjectProperties')}>Object Properties</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('ObjectMethod')}>Object Method</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('ObjectDisplay')}>Object Display</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'Object' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('Object')}>Object</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ObjectProperties' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('ObjectProperties')}>Object Properties</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ObjectMethod' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('ObjectMethod')}>Object Method</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'ObjectDisplay' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('ObjectDisplay')}>Object Display</li>
                     </ul>
 
                     <h1 className="text-xl font-semibold mt-5 mb-2">JS Error Handling</h1>
                     <ul className='space-y-2 text-sm'>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSErrorHandling')}>JS Error Handling </li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSTryCatch')}>JS Try Catch</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSDebugging')}>JS Debugging</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSCustomError')}>JS Custom Error</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSExtendingError')}>JS Extending Error</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSErrorHandling' ? 'bg-gra3' : ''}` } onClick={()=>setshowpage('JSErrorHandling')}>JS Error Handling </li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSTryCatch' ? 'bg-gra3' : ''}` } onClick={()=>setshowpage('JSTryCatch')}>JS Try Catch</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSDebugging' ? 'bg-gra3' : ''}` } onClick={()=>setshowpage('JSDebugging')}>JS Debugging</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSCustomError' ? 'bg-gra3' : ''}` } onClick={()=>setshowpage('JSCustomError')}>JS Custom Error</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSExtendingError' ? 'bg-gra3' : ''}` } onClick={()=>setshowpage('JSExtendingError')}>JS Extending Error</li>
                     </ul>
 
                      <h1 className="text-xl font-semibold mt-5 mb-2">JS Async/Await</h1>
                     <ul className='space-y-2 text-sm'>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSPromises')}>JS Promises</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSCallbacks')}>JS Callbacks</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSAsynchronous')}>JS Asynchronous</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSAsyncAwait')}>JS Async/Await</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSPromises' ? 'bg-gra3' : ''}` } onClick={()=>setshowpage('JSPromises')}>JS Promises</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSCallbacks' ? 'bg-gra3' : ''}` } onClick={()=>setshowpage('JSCallbacks')}>JS Callbacks</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSAsynchronous' ? 'bg-gra3' : ''}` } onClick={()=>setshowpage('JSAsynchronous')}>JS Asynchronous</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSAsyncAwait' ? 'bg-gra3' : ''}` } onClick={()=>setshowpage('JSAsyncAwait')}>JS Async/Await</li>
                     </ul>
 
                     
                      <h1 className="text-xl font-semibold mt-5 mb-2">JS DOM</h1>
                     <ul className='space-y-2 text-sm'>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSgetElementById')}>getElementById</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSgetElementByClassName')}>getElementByClassName</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSgetElementByTagName')}>getElementByTagName</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSQuerySelector')}>QuerySelector</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSQuerySelectorAll')}>QuerySelectorAll</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSinnerHTMLproperty')}>JS innerHTML property</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSinnerTextproperty')}>JS innerText property</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSgetElementById' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSgetElementById')}>getElementById</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSgetElementByClassName' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSgetElementByClassName')}>getElementByClassName</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSgetElementByTagName' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSgetElementByTagName')}>getElementByTagName</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSQuerySelector' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSQuerySelector')}>QuerySelector</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSQuerySelectorAll' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSQuerySelectorAll')}>QuerySelectorAll</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSinnerHTMLproperty' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSinnerHTMLproperty')}>JS innerHTML property</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSinnerTextproperty' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSinnerTextproperty')}>JS innerText property</li>
                     </ul>
 
                       <h1 className="text-xl font-semibold mt-5 mb-2">JS BOM</h1>
                     <ul className='space-y-2 text-sm'>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSWindows')}>JS Window</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSScreen')}>JS Screen</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSLocation')}>JS Location</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSHistory')}>JS History</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSNavigator')}>JS Navigator</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSPopupAlert')}>JS Popup Alert</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSTiming')}>JS Timing</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSWindows' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSWindows')}>JS Window</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSScreen' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSScreen')}>JS Screen</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSLocation' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSLocation')}>JS Location</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSHistory' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSHistory')}>JS History</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSNavigator' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSNavigator')}>JS Navigator</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSPopupAlert' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSPopupAlert')}>JS Popup Alert</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSTiming' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSTiming')}>JS Timing</li>
                     </ul>
 
                     
                       <h1 className="text-xl font-semibold mt-5 mb-2">JS Cookies </h1>
                     <ul className='space-y-2 text-sm'>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSCookies')}>JS Cookies</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('CookiesAttributes')}>Cookies Attributes</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSCookies' ? 'bg-gray-300' :''}`} onClick={()=>setshowpage('JSCookies')}>JS Cookies</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'CookiesAttributes' ? 'bg-gray-300' :''}`} onClick={()=>setshowpage('CookiesAttributes')}>Cookies Attributes</li>
                     </ul>
 
                      <h1 className="text-xl font-semibold mt-5 mb-2">JS Web APIs </h1>
                     <ul className='space-y-2 text-sm'>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSWebAPI')}>JS Web API</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSHistoryAPI')}>JS History API</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSStorageAPI')}>JS Storage API</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSWorkerAPI')}>JS Worker API</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSFetchAPI')}>JS Fetch API</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('JSGeolocationAPI')}>JS Geolocation API</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSTiming' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('c')}>JS Web API</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSHistoryAPI' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSHistoryAPI')}>JS History API</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSStorageAPI' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSStorageAPI')}>JS Storage API</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSWorkerAPI' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSWorkerAPI')}>JS Worker API</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSFetchAPI' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSFetchAPI')}>JS Fetch API</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'JSGeolocationAPI' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('JSGeolocationAPI')}>JS Geolocation API</li>
                     </ul>
 
                      <h1 className="text-xl font-semibold mt-5 mb-2">JS AJAX</h1>
                     <ul className='space-y-2 text-sm'>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('AJAXIntro')}>AJAX Intro</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('AJAXXMLHttp')}>AJAX XMLHttp</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('AJAXRequest')}>AJAX Request</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('AJAXResponse')}>AJAX Response</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('AJAXXMLFile')}>AJAX XML File</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('AJAXPHP')}>AJAX PHP</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('AJAXASP')}>AJAX ASP</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('AJAXDatabase')}>AJAX Database</li>
-                      <li className='cursor-pointer rounded hover:bg-gray-300 active:bg-gray-300 transition-colors' onClick={()=>setshowpage('AJAXApplications')}>AJAX Applications</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'AJAXIntro' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('AJAXIntro')}>AJAX Intro</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'AJAXXMLHttp' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('AJAXXMLHttp')}>AJAX XMLHttp</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'AJAXRequest' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('AJAXRequest')}>AJAX Request</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'AJAXResponse' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('AJAXResponse')}>AJAX Response</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'AJAXXMLFile' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('AJAXXMLFile')}>AJAX XML File</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'AJAXPHP' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('AJAXPHP')}>AJAX PHP</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'AJAXASP' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('AJAXASP')}>AJAX ASP</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'AJAXDatabase' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('AJAXDatabase')}>AJAX Database</li>
+                      <li className={`cursor-pointer rounded hover:bg-gray-300 ${showpage === 'AJAXApplications`' ? 'bg-gray-300' : ''}`} onClick={()=>setshowpage('AJAXApplications')}>AJAX Applications</li>
                     </ul>
 
                     
