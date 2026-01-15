@@ -31,7 +31,7 @@ const NavlinkRouter = () => {
             <li><span className="font-semibold">Dynamic Navigation</span>: Supports passing dynamic values for routes.</li>
          </ul>
 
-         <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`import React from "react";
 import { Link, Route, Routes } from "react-router-dom";
@@ -80,7 +80,7 @@ export default App;`}
         </ul>
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`<NavLink to="/path" activeClassName="active">Text</NavLink>`}
             </code>
@@ -94,7 +94,7 @@ export default App;`}
             <li><span className="font-semibold">Exact Matching Option</span>: By default, NavLink allows partial route matches; setting exact ensures precise path <span className="ml-5">matching</span>.</li>
         </ul>
 
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
              <code>
                 {`import React from "react";
 import { NavLink, Route, Routes } from "react-router-dom";
@@ -163,7 +163,7 @@ export default App;`}
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Handling External Links</h2>
         <p>Both Link and NavLink handle client-side routing within the React app and are not suitable for external URLs. Use the standard {'<a>'} element for linking externally.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`<a href="https://example.com/" target="_blank" rel="noopener noreferrer">
     External Link
@@ -173,7 +173,7 @@ export default App;`}
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Combining useNavigate with Link</h2>
         <p>React Router offers the useNavigate hook for programmatic route changes. When navigation must occur based on user interactions—such as post-form submission—useNavigate should be used in place of the Link component.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`import { useNavigate } from "react-router-dom";
 function Home() {
@@ -189,6 +189,7 @@ function Home() {
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Link vs NavLink in React Router Dom</h2>
         <p>Link and NavLink components in React Router provide client-side navigation without page reloads. NavLink applies an "active" class to indicate the current route, whereas Link does not. Employ NavLink for navigation menus and Link for standard routing.</p>
+         <div className="max-w-full overflow-x-auto">
         <table className="min-w-full border border-gray-300 text-gray-700 text-sm text-left mt-10">
             <thead>
                 <tr className="bg-gray-100">
@@ -207,6 +208,7 @@ function Home() {
                 ))}
             </tbody>
         </table>
+        </div>
         
         
         

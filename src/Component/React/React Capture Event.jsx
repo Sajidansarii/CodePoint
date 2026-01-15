@@ -3,7 +3,7 @@ import React from "react";
 const ReactCapture = () => {
    return(
     <div className="max-w-4xl p-6 mt-10">
-        <h1 className="text-3xl text-blue-500 font-semibold mb-3">React Capture Event</h1>
+        <h1 className="lg:text-3xl text-2xl text-blue-500 font-semibold mb-3">React onclick Capture Event</h1>
         
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">What is onClickCapture Event in ReactJS?</h2>
          <p>The onClickCapture event in React is part of its event system and handles clicks during the capture phase of event propagation. It differs from the standard onClick event in the order it is triggered.</p>
@@ -13,7 +13,7 @@ const ReactCapture = () => {
          </ul>
 
          <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Syntax</h2>
-         <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`<button onClickCapture = {function}/>`}
             </code>
@@ -23,7 +23,7 @@ const ReactCapture = () => {
       
       <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Using onClickCapture in React</h2>
       <p>Using onClickCapture is straightforward: attach it to a React element just like you would with onClick.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`//App.js
 
@@ -60,7 +60,7 @@ export default App;`}
 
    <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Preventing Default Behavior Using onClickCapture</h2>
    <p>You can use <span className="text-red-400">event.preventDefault()</span> and <span className="text-red-400">event.stopPropagation()</span> in onClickCapture just like in onClick to stop the event from continuing.</p>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
         {`import React from "react";
 
@@ -110,7 +110,7 @@ export default PreventDefaultComponent;`}
     <li><span className="font-semibold">onClick Fires</span>: The onClick handler on the target element runs during the bubble phase.</li>
  </ul>
 
- <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+ <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
         {`import React from "react";
 
@@ -155,11 +155,6 @@ export default EventPropagation;`}
  <p className="mt-5">During a click event, the handleCapture function on the parent div fires first in the capture phase, before the event reaches the child element. Next, the handleChildClick function on the child div triggers in the bubbling phase as the event starts moving upward. Finally, the handleParentClick function on the parent div runs in the bubble phase after the event has bubbled up from the child. This demonstrates the order of event execution in React.</p>
 
 
-
-
-
-
-    
     
     </div>
    )

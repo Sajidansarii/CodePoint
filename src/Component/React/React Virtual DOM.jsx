@@ -16,7 +16,7 @@ const ReactVirtual = () => {
 
     return(
         <div className="max-w-4xl p-6 mt-10">
-            <h1 className="text-3xl text-blue-500 font-semibold mb-3">React Virtual</h1>
+            <h1 className="text-3xl text-blue-500 font-semibold mb-3">React Virtual DOM</h1>
             <p>The ReactJS Virtual DOM is an in-memory representation of the Document Object Model that enables efficient updates by modifying only the necessary parts of the actual DOM.</p>
            
            <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">How Does the Virtual DOM Work?</h2>
@@ -64,6 +64,7 @@ const ReactVirtual = () => {
     <p>Big websites like Facebook, Instagram, and Netflix use the Virtual DOM to keep their apps fast. It first checks changes in memory and then updates only the necessary parts of the real DOM, making the user experience smoother.</p>
       
       <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Real DOM vs Virtual DOM vs Shadow DOM</h2>
+       <div className="max-w-full overflow-x-auto">
         <table className="min-w-4xl border border-gray-300 text-gray-700 font-sm font-left mt-5">
             <thead>
                 <tr className="bg-gray-100">
@@ -84,6 +85,7 @@ const ReactVirtual = () => {
                 ))}
             </tbody>
         </table>
+        </div>
 
         <ul className="list-[square] list-inside mt-5 space-y-1">
             <li>Use the Virtual DOM when you want your app to run fast.</li>

@@ -9,7 +9,7 @@ const ReactProDestructuring  = () => {
             <p>Destructuring allows you to pick only the props you need in a component.</p>
             <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
             <p>Since the component only requires the color prop, it declares just that in the function parameters.</p>
-            <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
                 <code>
                     {`function Car({color}) {
   return (
@@ -26,7 +26,7 @@ createRoot(document.getElementById('root')).render(
             <p className="mt-5">By destructuring within the component, you can access just the properties required, even though all props are received.</p>
             <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
             <p>All props are passed in, but destructuring ensures only selected properties are accessed inside the component.</p>
-            <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
                 <code>
                     {`function Car(props) {
   const {brand, model} = props;
@@ -46,7 +46,7 @@ createRoot(document.getElementById('root')).render(
             <p>You can extract only the properties you need and store all other props in a separate object.</p>
             <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
            <p>The component picks the color and brand props, while the remaining properties, such as {'{ model: "Mustang", year: 1969 }'}, are collected into an object.</p>
-           <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+           <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`function Car({color, brand, ...rest}) {
   return (
@@ -64,7 +64,7 @@ createRoot(document.getElementById('root')).render(
            <p>Using destructuring, you can assign default values to props so that if a prop isn’t provided, the default will be applied.</p>
            <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
            <p>Set the default color value to "blue":</p>
-          <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+          <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`function Car({color = "blue", brand}) {
   return (
@@ -77,16 +77,7 @@ createRoot(document.getElementById('root')).render(
 );`}
             </code>
           </pre>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+    
         
         
         </div>

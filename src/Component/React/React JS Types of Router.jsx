@@ -16,7 +16,7 @@ const ReactRouterTypes = () => {
            </ul>
 
            <p className="mt-5">Prior to exploring the various router types, ensure that React Router DOM is installed in your React application.</p>
-         <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`npm install react-router-dom`}
             </code>
@@ -49,7 +49,7 @@ const ReactRouterTypes = () => {
         <li><span className="font-semibold">Handling Multiple Views or Pages:</span> If your app includes multiple views or pages BrowserRouter helps manage these <span className="ml-5">views</span> by linking each one to a specific URL.</li>
        </ul>
 
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
@@ -148,7 +148,7 @@ export default App;`}
        <li><span className="font-semibold">When URL Doesn’t Matter</span>: Manages routes internally when you don’t need URL updates.</li>
        </ul>
 
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import React from "react";
 import { MemoryRouter, Routes, Route, Link } from "react-router-dom";
@@ -248,7 +248,7 @@ export default App;`}
         <li><span className="font-semibold">Lightweight Projects</span>: For smaller applications or prototypes not requiring SEO-friendly or clean URLs, HashRouter <span className="ml-5">provides</span> a straightforward routing solution.</li>
     </ul>
 
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import React from "react";
 import { HashRouter, Routes, Route, Link } from "react-router-dom";

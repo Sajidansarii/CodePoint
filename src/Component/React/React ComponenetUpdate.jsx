@@ -16,7 +16,7 @@ const ReactcomponentUpdate = () => {
          </ul>
 
          <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`componentDidUpdate(prevProps, prevState, snapshot) {   /
     / Your code here
@@ -37,7 +37,7 @@ const ReactcomponentUpdate = () => {
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Tracking Scroll Position</h2>
         <p>As the user scrolls, the component keeps track of their position and updates its state. If they scroll past a specific threshold, the component can respond by performing additional actions or showing messages.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`import React, { Component } from "react";
 
@@ -91,7 +91,7 @@ export default ScrollTracker;`}
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">When To Use componentDidUpdate()</h2>
          <p>After Props or State Change Use componentDidUpdate() to perform tasks that depend on changes in props or state. This is useful for side effects such as fetching new data or updating content based on updated props.</p>
          <p>When a component’s userId prop changes, you might need to fetch updated data for that user.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`componentDidUpdate(prevProps) {  
     if (this.props.userId !== prevProps.userId) {
@@ -104,7 +104,7 @@ export default ScrollTracker;`}
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">To Trigger Side Effects</h2>
         <p>After a state or prop update, <span className="text-red-400 bg-gray-50">componentDidUpdate()</span> can be used to handle side effects such as updating external libraries, working with third-party tools, or executing operations that don’t directly affect the UI.</p>
         <p>You can trigger animations each time the component’s state changes.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`componentDidUpdate(prevState) {  
     if (this.state.isVisible !== prevState.isVisible) { 
@@ -117,7 +117,7 @@ export default ScrollTracker;`}
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">When You Need to Compare Old and New State or Props</h2>
         <p>Whenever you need to see what’s changed in props or state, <span className="text-red-400 bg-gray-50">componentDidUpdate()</span> provides the previous and current values. This allows you to determine if another state update or side effect should be executed.</p>
         <p>If the filter changes, you’ll usually want to recalculate or get new data—but only when the filter has actually changed.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`componentDidUpdate(prevProps) {  
     if (this.props.filter !== prevProps.filter) { 
@@ -129,7 +129,7 @@ export default ScrollTracker;`}
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">For DOM Manipulation (Post Update)</h2>
         <p>Although direct DOM manipulation is generally discouraged in React, componentDidUpdate() can be used when you need to ensure the component has fully updated before making changes. After the update, you might use it to adjust the scroll position or focus a specific element.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`componentDidUpdate() {  
     if (this.state.scrollToBottom) {  
@@ -151,12 +151,6 @@ export default ScrollTracker;`}
         <li><span className="font-semibold">No Additional Operations After Updates</span>: If your component doesn’t need to perform side effects such as API calls <span className="ml-5">or</span> DOM changes, there’s no need to use componentDidUpdate().</li>
         <li><span className="font-semibold">Simple Components Without Dependencies</span>: If the component’s rendering depends solely on its props and state, <span className="ml-5">and</span> no external actions are required, componentDidUpdate() isn’t necessary.</li>
       </ul>
-
-
-
-
-
-
 
 
       

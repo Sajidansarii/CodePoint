@@ -14,8 +14,8 @@ const ReactOnScroll = () => {
          </pre>
 
          <ul className="list-[square] list-inside space-y-1 mt-5">
-            <li><span className="font-semibold">Parameter</span>: The onScroll event handler takes a function that defines what should happen when the scroll position <span className="ml-5">changes</span>.</li>
-            <li><span className="font-semibold">Return Type</span>: The function doesn’t return anything; it simply performs actions in response to scrolling.</li>
+            <li><span className="font-semibold">Parameter</span>: The onScroll event handler <span className="lg:ml-0 ml-5">takes</span> a function that defines what should <span className="lg:ml-0 ml-5">happen</span> when the scroll position <span className="ml-5">changes</span>.</li>
+            <li><span className="font-semibold">Return Type</span>: The function doesn’t <span className="lg:ml-0 ml-5">return</span> anything; it simply performs <span className="lg:ml-0 ml-5">actions</span> in response to scrolling.</li>
          </ul>
 
          <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
@@ -61,7 +61,7 @@ export default App;`}
          </pre>
 
          <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h2>
-         <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`//App.js
 
@@ -110,16 +110,6 @@ export default App;`}
             </code>
          </pre>
        
-
-
-
-        
-        
-        
-        
-        
-        
-        
         
         
         

@@ -9,7 +9,7 @@ const ReactFormsubmit = () => {
            <p>Handle the form submission by assigning a function to the onSubmit <span className="text-red-400">attribute</span>.</p>
            <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
            <p>Include a submit button and attach a handler to the form’s <span className="text-red-400">onSubmit</span>.</p>
-           <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+           <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`import { useState } from 'react';
 import { createRoot } from 'react-dom/client';

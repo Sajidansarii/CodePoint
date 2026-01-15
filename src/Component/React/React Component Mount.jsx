@@ -3,7 +3,7 @@ import React from "react";
 const ReactComponenetMOunt = () => {
     return(
         <div className="max-w-4xl p-6 mt-10">
-        <h1 className="text-3xl text-blue-500 font-semibold mb-3">React Component Mount</h1>
+        <h1 className="lg:text-3xl text-2xl text-blue-500 font-semibold mb-3">React Component Mount</h1>
         <p>In React, <span className="text-red-400 bg-gray-50">componentDidMount()</span> is a lifecycle method that runs after a component is rendered and added to the DOM. It is called only once, right after the initial render, making it useful for tasks like data fetching, subscriptions, and DOM interactions.</p>
        
        <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
@@ -41,7 +41,7 @@ const ReactComponenetMOunt = () => {
        
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">1. Fetching Data in componentDidMount()</h2>
        <p>Here, the componentDidMount method will be employed to fetch the data.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import React from 'react';
 
@@ -97,7 +97,7 @@ export default DataFetcher;`}
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">2. Name Color Changer Application</h2>
        <p>We’re going to make a name color app that automatically changes the text color when it shows up in the DOM. For this, we’ll rely on <span className="text-red-400 bg-gray-50">componentDidMount()</span>.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import React from "react";
 class App extends React.Component {

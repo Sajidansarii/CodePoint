@@ -31,7 +31,7 @@ const ReactContext = () => {
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Implement Context API in React</h2>
          <p>Run the following command to set up a React project:</p>
-         <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`npx create-react-app context-api-demo`}
             </code>
@@ -56,7 +56,7 @@ const ReactContext = () => {
             <li><span className="text-red-400">App.js</span>: The components are imported in this file and then rendered on the webpage</li>
            </ul>
 
-           <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+           <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`// App.js
 import React from 'react';
@@ -83,20 +83,6 @@ export default App;`}
             </code>
            </pre>
 
-           
-
-
-
-
-
-
-
-
-
-
-
-
-        
         </div>
 
     )

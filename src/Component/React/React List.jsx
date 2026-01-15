@@ -8,7 +8,7 @@ const ReactList = () => {
             
             <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h2>
             <p>Let’s make a simple list with the <span className="text-red-400">map()</span> method.</p>
-             <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+             <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
                 <code>
                     {`function MyCars() {
   const cars = ['Ford', 'BMW', 'Audi'];
@@ -34,7 +34,7 @@ createRoot(document.getElementById('root')).render(
             <p>React uses keys to identify elements, allowing individual items to re-render when updated or removed instead of the full list, and each key must be unique among siblings but not globally.</p>
             <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
             <p>Here’s the previous example, now using keys.</p>
-           <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+           <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`function MyCars() {
   const cars = [
@@ -68,7 +68,7 @@ createRoot(document.getElementById('root')).render(
 
           <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
           <p>You can use the index of an array as a key, but it’s not a good idea for lists that update.</p>
-          <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+          <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`function MyCars() {
   const cars = ['Ford', 'BMW', 'Audi'];
@@ -87,20 +87,6 @@ createRoot(document.getElementById('root')).render(
 );`}
             </code>
           </pre>
-
-          
-
-
-
-
-
-
-
-
-
-
-
-
 
         </div>
     )

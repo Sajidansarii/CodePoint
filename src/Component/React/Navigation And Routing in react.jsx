@@ -3,12 +3,12 @@ import React from "react";
 const NavigationRouting = () =>{
     return(
         <div className="max-w-4xl p-6 mt-10">
-            <h1 className="text-3xl text-blue-500 font-semibold mb-3">React Navigation and Routing</h1>
+            <h1 className="lg:text-3xl text-2xl text-blue-500 font-semibold mb-3">React Navigation and Routing</h1>
             <p>React <span className="text-red-400 bg-gray-50">routing</span> is a method used to manage <span className="text-red-400 bg-gray-50">navigation</span> in a React application. It allows users to switch between different views, pages, or components without reloading the page, which is a core characteristic of Single Page Applications (SPAs).In this article, we will discuss the fundamental concepts of routing in React. React Router offers a robust and flexible solution for handling navigation in SPAs.</p>
             <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">What is Navigation in React?</h2>
             <p><span className="text-red-400 bg-gray-50">Navigation</span> is the mechanism that allows users to switch between various views or sections in a React application. Most React apps are built as Single Page Applications (SPAs), where the application loads once and navigation is managed on the client side, eliminating the need for full page reloads and enabling seamless transitions between components.</p>
             <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-            <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
                 <code>
                     {`// Installing
 npm i react-router-dom
@@ -33,7 +33,7 @@ import { BrowserRouter } from 'react-router-dom';`}
             <li>Use the hook inside the button’s onClick event to perform the navigation.</li>
            </ul>
 
-           <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+           <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`// App.js
 
@@ -74,7 +74,7 @@ export default App;`}
             <li>Create another page that displays data dynamically with the help of useParams.</li>
             <li>Define a dynamic Route that passes an id value as a parameter.</li>
            </ul>
-           <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+           <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`// App.js
 
@@ -122,7 +122,7 @@ export default App;`}
             <li>Add a route for paths that are not configured, redirecting them to NoPageFound.js.</li>
             <li>Use the '*' path to catch all non-configured routes.</li>
            </ul>
-           <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+           <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`// App.js
 
@@ -167,12 +167,6 @@ export default App;`}
 
            <p className="mt-10">Mastering navigation and routing in React is crucial for developing responsive, interactive web applications. React Router simplifies the process of navigating between pages or views without page reloads, enabling the creation of seamless single-page applications. By learning to configure basic routes, handle dynamic paths, implement programmatic navigation, and use nested routes, you can build efficient and user-friendly React apps that provide a smooth browsing experience.</p>
 
-
-        
-        
-        
-        
-        
         
         </div>
     )

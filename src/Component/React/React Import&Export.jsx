@@ -3,7 +3,7 @@ import React  from "react";
 const ImportExport = () => {
     return (
         <div className="max-w-4xl p-6 mt-10">
-            <h1 className="text-3xl text-blue-500 font-semibold mb-3">React Importing and Exporting Components</h1>
+            <h1 className="lg:text-3xl text-2xl text-blue-500 font-semibold mb-3">React Importing and Exporting Components</h1>
             <p>React applications are built using components, which allow you to divide a large user interface into independent, reusable parts. </p>
             <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Types of Exports in React</h2>
             <p>In React, there are two types of exports</p>
@@ -15,7 +15,7 @@ const ImportExport = () => {
             <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Default Export and Import</h2>
             <p>With a default export, you can export a single value from a file, and the import can be given any identifier you prefer.</p>
             <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-            <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
                 <code>
                     {`import React from "react";
 import MyComponent from "./components/MyComponent"; 
@@ -36,7 +36,7 @@ export default App;`}
            <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Named Export and Import</h2>
            <p>Named exports let you export several components or variables from one file, and when you import them you must use the exact names they were exported with.</p>
            <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-          <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+          <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`import { MyComponent, AnotherComponent } from "./components/component.js";
 
@@ -58,7 +58,7 @@ export default App;`}
           <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3"> Combining Default and Named Exports</h2>
           <p>It’s possible to export one main thing as the default and also export other related components or functions by name from the same module, giving you flexibility in how you import them.</p>
           <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-          <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+          <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`import { MyComponent, AnotherComponent } from "./components/component.js";
 
@@ -78,7 +78,7 @@ export default App;`}
           <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Exporting Multiple Components from the Same File</h2>
           <p>React supports exporting many things from one file with named exports, but you’re limited to just one default export per module.</p>
           <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
-          <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+          <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`import React from "react";
 import { Header, Footer } from "./components"; 
@@ -108,15 +108,6 @@ export default App;`}
         <p className="mb-3">This is useful if a file contains more than one component or utility you want to export. </p>
         <p className="mb-3">When you want consistency in import names.</p>
         <p>Useful for utility functions, constants, or multiple related components.</p>
-
-
-
-
-
-
-
-
-        
         
         </div>
     )

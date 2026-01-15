@@ -15,7 +15,7 @@ const ReactClass = () => {
     <p>In React, class components must be named with a capital first letter to work correctly in JSX. The component class must include extends React.Component so it inherits the functionality provided by React, and it must implement a <span className="text-red-400">render()</span> method that returns the UI’s HTML structure.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
      <p>Create a class-based component named Car.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`class Car extends React.Component {
   render() {
@@ -29,7 +29,7 @@ const ReactClass = () => {
      
      <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
      <p>Render the Car component into the DOM element with the id <span className="text-red-400">"root"</span>. </p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`createRoot(document.getElementById('root')).render(
   <Car />
@@ -41,7 +41,7 @@ const ReactClass = () => {
     <p>When defining a class component in React, the <span className="text-red-400">constructor()</span> method (if present) runs before anything else and is where you set up your component’s initial state object to hold its properties. To use this.props and other inherited functionality from React.Component, you start the constructor with super(props), which calls the parent constructor. The <span className="text-red-400">render()</span> method then returns the HTML that should be displayed, and you’ll explore state in more detail later in this tutorial.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
     <p>Create a constructor function for Car and assign a color field inside the component’s state object.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`class Car extends React.Component {
   constructor() {
@@ -57,7 +57,7 @@ const ReactClass = () => {
 
      <p className="mt-5">Access the color value from this.state within the <span className="text-red-400">render()</span> method and use it in the returned element.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`class Car extends React.Component {
   constructor() {
@@ -75,7 +75,7 @@ const ReactClass = () => {
     <p>Another way of handling component properties is by using props.Props are like function arguments, and you send them into the component as attributes.You will learn more about props in the next chapter.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
     <p>Give the Car component a color prop when rendering it, and access that value inside the render (or return) to display the color.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`class Car extends React.Component {
   render() {
@@ -92,7 +92,7 @@ createRoot(document.getElementById('root')).render(
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Props in the Constructor</h2>
     <p>When you define a constructor in a React class component, you should accept props as an argument and pass them to the parent class by calling super(props), so that the component is properly initialized with its props.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`class Car extends React.Component {
   constructor(props) {
@@ -115,7 +115,7 @@ createRoot(document.getElementById('root')).render(
     <p>One component can be nested inside another component’s output.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
     <p>Nest the Car component inside the Garage component.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`class Car extends React.Component {
   render() {
@@ -145,7 +145,7 @@ createRoot(document.getElementById('root')).render(
     <p>Since React is designed for code reuse, it’s a good idea to keep some components in separate files.Create a .jsx file for the component and include your code inside.</p>
     <h2 className="text-gray-800 text-2xl font-semibold mt-5 mb-3">Example</h2>
     <p>We created a new file and named it <span className="text-red-400">Vehicle.jsx</span>.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import React from 'react';
 
@@ -163,7 +163,7 @@ export default Car;`}
     
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
     <p>After importing <span className="text-red-400">Vehicle.jsx</span> into the app, we can use the Car component just like it was defined here.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import { createRoot } from 'react-dom/client'
 import Car from './Vehicle.jsx';
@@ -179,7 +179,7 @@ createRoot(document.getElementById('root')).render(
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Creating the state Object</h2>
     <p>The constructor is where the state object gets initialized.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`class Car extends React.Component {
   constructor(props) {
@@ -201,7 +201,7 @@ createRoot(document.getElementById('root')).render(
    
    <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
    <p>Define every property your component will use.</p>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
         {`class Car extends React.Component {
   constructor(props) {
@@ -228,7 +228,7 @@ createRoot(document.getElementById('root')).render(
    <p>Access the state object anywhere in the component with <span className="text-red-400">this.state.propertyName</span>.</p>
    <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
    <p>Access the state object inside the <span className="text-red-400">render()</span> method.</p>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
         {`class Car extends React.Component {
   constructor(props) {
@@ -260,7 +260,7 @@ createRoot(document.getElementById('root')).render(
    <p>To update a value in the state object, use <span className="text-red-400">this.setState()</span>. When the state changes, the component automatically re-renders, updating the output to reflect the new value(s).</p>
    <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
    <p>Add a button that, when clicked, modifies the color property.</p>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
         {`class Car extends React.Component {
   constructor(props) {
@@ -312,7 +312,7 @@ createRoot(document.getElementById('root')).render(
   <p>The <span className="text-red-400">constructor()</span> method runs first when a component is created and is the proper place to initialize state and other values. It receives props as arguments, and you should always call super(props) at the start to invoke the parent class constructor and inherit methods from React.Component.</p>
   <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
   <p>React calls the <span className="text-red-400">constructor</span> method each time a component is created.</p>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
         {`class Header extends React.Component {
   constructor(props) {
@@ -336,7 +336,7 @@ createRoot(document.getElementById('root')).render(
   <p>The <span className="text-red-400">getDerivedStateFromProps()</span> method runs just before rendering elements to the DOM. It’s used to update the state based on the initial props. The method receives the current state as an argument and returns an object with changes to the state. For example, a component may start with favoriteColor set to "red", but <span className="text-red-400">getDerivedStateFromProps()</span> updates it according to the favcol prop.</p>
   <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
   <p>The getDerivedStateFromProps method is invoked just prior to <span className="text-red-400">render()</span>.</p>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
         {`class Header extends React.Component {
   constructor(props) {
@@ -363,7 +363,7 @@ createRoot(document.getElementById('root')).render(
   <p>The <span className="text-red-400">render()</span> method is mandatory and responsible for outputting HTML to the DOM.</p>
   <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
   <p>A basic component that has a straightforward <span className="text-red-400">render()</span> method.</p>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
         {`class Header extends React.Component {
   render() {
@@ -383,7 +383,7 @@ createRoot(document.getElementById('root')).render(
   <p>The <span className="text-red-400">componentDidMount()</span> method is called after a component has been rendered. This is the right place to run code that depends on the component being present in the DOM.</p>
   <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
   <p>Initially, my favorite color is red, but after a moment, it changes to yellow.</p>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
         {`class Header extends React.Component {
   constructor(props) {
@@ -427,7 +427,7 @@ createRoot(document.getElementById('root')).render(
  <p>During updates, the <span className="text-red-400">getDerivedStateFromProps()</span> method is called first. This method remains the proper place to update the state based on props. For example, even if a button changes the favorite color to blue, getDerivedStateFromProps() updates the state using the favcol prop, so the favorite color is still rendered as yellow.</p>
 <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
 <p>When a component updates, <span className="text-red-400">getDerivedStateFromProps()</span> is invoked.</p>
-<pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+<pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
         {`class Header extends React.Component {
   constructor(props) {
@@ -460,7 +460,7 @@ createRoot(document.getElementById('root')).render(
 <p>The <span className="text-red-400">shouldComponentUpdate()</span> method returns a Boolean value that determines whether React should proceed with rendering. By default, it returns true. In the example below, returning false prevents the component from re-rendering.</p>
 <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
 <p>Prevent the component from re-rendering on any update.</p>
-<pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 mb-3">
+<pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5 mb-3">
     <code>
         {`class Header extends React.Component {
   constructor(props) {
@@ -488,36 +488,6 @@ createRoot(document.getElementById('root')).render(
 );`}
     </code>
 </pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     
     </div>

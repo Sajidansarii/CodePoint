@@ -8,7 +8,7 @@ const ReactDoubleClick = () => {
             <p>The onDoubleClick event is triggered when a user rapidly clicks a mouse button twice on the same element. It usually occurs within approximately 300 milliseconds and is ideal for differentiating between single clicks (onClick) and double clicks (onDoubleClick).</p>
            
            <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Syntax</h2>
-           <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+           <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`<Element onDoubleClick={onDoubleClickHandler} />`}
             </code>
@@ -21,7 +21,7 @@ const ReactDoubleClick = () => {
 
            <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Handling the onDoubleClick Event</h2>
            <p>The onDoubleClick event in React lets you run actions or change the UI when an element is double-clicked. You can update state, trigger animations, or log messages.</p>
-            <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
                 <code>
                     {`import React, { useState } from "react";
 import "./App.css";
@@ -48,7 +48,7 @@ export default App;`}
           
           <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Accessing the Event Object</h2>
           <p>The onDoubleClick event handler gets an event object with details about the event, including the mouse position, target element, and other properties.</p>
-          <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+          <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`import React, { useState } from "react";
 
@@ -80,7 +80,7 @@ export default AccessEventObjectComponent;`}
            
            <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Preventing Default Behavior</h2>
            <p>Using <span className="text-red-400">event.preventDefault()</span> in React allows you to cancel the default behavior of events, such as submitting a form, following a link, or selecting text, giving you complete control over how the event is processed.</p>
-           <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+           <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`import React from "react";
 
@@ -109,7 +109,7 @@ export default PreventDefaultComponent;`}
 
            <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Using onDoubleClick for Custom Feature</h2>
            <p>The onDoubleClick event in React lets you run custom code when a user double-clicks an element. You can use it to toggle UI states, update content, or perform actions that should happen only on a double-click.</p>
-           <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+           <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`import React, { useState } from "react";
 
@@ -162,18 +162,6 @@ export default ToggleModeComponent;`}
         </ul>
 
         
-
-
-
-
-
-
-
-
-
-
-
-
 
        
        

@@ -3,7 +3,7 @@ import React from "react";
 const ReactRedux = () => {
     return(
         <div className="max-w-4xl p-6 mt-10">
-            <h1 className="text-3xl text-blue-500 font-semibold mb-3">React Context API</h1>
+            <h1 className="text-3xl text-blue-500 font-semibold mb-3">React Redux</h1>
             <p>React-Redux manages state through a single global store, allowing predictable updates, easier debugging, and maintainable architecture for complex React applications.</p>
            <p className="mt-5 text-xl">Redux works like this:</p>
            <ul className="list-[square] list-inside space-y-1 mt-3">
@@ -33,7 +33,7 @@ const ReactRedux = () => {
           <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Reducers</h2>
           <p><span className="text-red-400">Reducers</span> are pure functions in Redux that compute new state from the previous state and an action, without modifying the original state.</p>
            <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
-          <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+          <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`const counterReducer = (state = 0, action) => {
     switch (action.type) {
@@ -60,7 +60,7 @@ const ReactRedux = () => {
          <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Selectors</h2>
          <p><span className="text-red-400">Selectors</span> are functions that access and return specific slices of the Redux store state, allowing for organized and maintainable state retrieval.</p>
          <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
-         <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`const selectCount = (state) => state.count;`}
             </code>
@@ -68,7 +68,7 @@ const ReactRedux = () => {
 
          <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Provider</h2>
          <p>The <span className="text-red-400">Provider</span> component supplies the Redux store to all components within the application. It should encompass the entire application to ensure universal access to the store.</p>
-         <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`import { Provider } from 'react-redux';
 
@@ -81,7 +81,7 @@ const ReactRedux = () => {
          <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">connect()</h2>
          <p>React-Redux’s <span className="text-red-400">connect()</span> function integrates a React component with the Redux store, providing it with selected state and dispatch methods as props.</p>
         <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`import { connect } from 'react-redux';
 
@@ -112,7 +112,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(Counter);`}
        <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Setting Up the Store</h2>
        <p>Redux’s store maintains the entire app state, created through <span className="text-red-400">createStore()</span> and initialized with a reducer function to compute state updates.</p>
        <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`const store = createStore(counterReducer);`}
             </code>
@@ -121,7 +121,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(Counter);`}
         <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Dispatching Actions</h2>
        <p>In Redux, actions are plain objects containing information about state changes; dispatching an action triggers the store’s reducer to compute the new state.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`store.dispatch({ type: 'INCREMENT', payload: 1 });`}
         </code>
@@ -130,7 +130,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(Counter);`}
       <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Reducers Update the State</h2>
       <p>Reducers are pure functions in Redux that compute the next state from the previous state and a dispatched action without mutating the original state.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`const counterReducer = (state = 0, action) => {
     switch (action.type) {
@@ -144,7 +144,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(Counter);`}
 
       <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Connecting Components with connect()</h2>
      <p>React-Redux’s <span className="text-red-400">connect()</span> integrates a React component with the Redux store, supplying selected state and dispatch methods as props.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`const mapStateToProps = (state) => ({ count: state });
 const mapDispatchToProps = (dispatch) => ({
@@ -156,7 +156,7 @@ const mapDispatchToProps = (dispatch) => ({
       <h2 className="text-2xl text-gray-800 font-s font-medium mt-5 mb-3">Using Provider to Make Store Accessible</h2>
       <p>The <span className="text-red-400">Provider</span> component connects the Redux store to the React component tree, allowing nested components to access state and dispatch actions.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`<Provider store={store}><App /></Provider>`}
         </code>
@@ -168,7 +168,7 @@ const mapDispatchToProps = (dispatch) => ({
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Implement React-Redux</h2>
        <p>Use create-react-app to bootstrap a new React project as the first step.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`npx create-react-app react-redux-countercd react-redux-counter`}
         </code>
@@ -182,7 +182,7 @@ const mapDispatchToProps = (dispatch) => ({
        </pre>
 
        <p className="mt-5 mb-3">Dependencies</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`"dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -200,7 +200,7 @@ const mapDispatchToProps = (dispatch) => ({
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Define Action Types</h2>
        <p>Action types must be defined as constants to represent the actions that trigger state updates in Redux.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`// src/redux/actionTypes.js
 export const INCREMENT = 'INCREMENT';
@@ -210,7 +210,7 @@ export const DECREMENT = 'DECREMENT';`}
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Action Creators</h2>
        <p><span className="text-red-400">Action creators</span> are functions that return plain objects representing actions to update the Redux state.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 mb-3">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5 mb-3">
         <code>
             {`// src/redux/actions.js
 import { INCREMENT, DECREMENT } from "./actionTypes";
@@ -227,7 +227,7 @@ export const decrement = () => ({
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Reducers</h2>
        <p>In Redux, reducers are pure functions that compute the next state from the previous state and a dispatched action without mutating the original state.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`// src/redux/reducer.js
 import { INCREMENT, DECREMENT } from "./actionTypes";
@@ -253,7 +253,7 @@ export default counterReducer;`}
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Create the Redux Store</h2>
        <p>Now, use Redux’s createStore function to initialize the store with the root reducer.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`// src/redux/store.js
 import { createStore } from 'redux';
@@ -267,7 +267,7 @@ export default store;`}
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Wrap the App with the Redux Provider</h2>
        <p>Use the Redux <span className="text-red-400">Provider</span> to wrap the React component tree, enabling any nested component to access the store via React-Redux.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`/* src/index.css */
 
@@ -290,20 +290,6 @@ button {
             {`npm start`}
         </code>
        </pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       
       

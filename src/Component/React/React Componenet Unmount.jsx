@@ -3,7 +3,7 @@ import React from "react";
 const ReactComponenetUnmount = () => {
     return(
         <div className="max-w-4xl p-6 mt-10">
-         <h1 className="text-3xl text-blue-500 font-semibold mb-3">React Componenet Unmount Event</h1>
+         <h1 className="lg:text-3xl text-2xl text-blue-500 font-semibold mb-3">React Componenet Unmount Event</h1>
         <p>In React, lifecycle methods let you control how components behave at different stages. One key method for cleanup is <span className="text-red-400 bg-gray-50">componentWillUnmount()</span>, which is called right before a component is removed from the DOM. This makes it crucial for freeing resources and preventing memory leaks.</p>
        
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">What is componentWillUnmount()?</h2>
@@ -32,7 +32,7 @@ const ReactComponenetUnmount = () => {
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">1. Mouse Tracking with Cleanup using componentWillUnmount()</h2>
        <p>Here, we’ll use componentDidMount() to start tracking the mouse and componentWillUnmount() to clean up when the component is removed.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import React from 'react';
 
@@ -106,7 +106,7 @@ export default App;`}
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">2. Component Cleanup with componentWillUnmount()</h2>
        <p>To properly clean up the component, we make use of the componentWillUnmount() lifecycle method.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import React, { Component } from "react";
 
@@ -150,7 +150,7 @@ export default App;`}
         <li>MyComponent is removed, and the console logs a message.</li>
        </ul>
 
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`Component is about to be removed from the DOM.`}
         </code>
@@ -159,7 +159,7 @@ export default App;`}
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">When to Use componentWillUnmount()?</h2>
        <h2 className="text-2xl text-gray-800 font-semibold mb-3">Remove Event Listeners</h2>
        <p>If you attached an event listener via window.addEventListener or document.addEventListener, this is where you should clean it up.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`componentWillUnmount() {  
     window.removeEventListener('resize', this.handleResize);
@@ -179,7 +179,7 @@ export default App;`}
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Canceling network requests</h2>
        <p>When your component makes API calls, make sure to cancel any ongoing requests if the component unmounts before completion. This prevents updates to an unmounted component.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`componentWillUnmount() {  
     this.controller.abort();  // Cancel fetch request
@@ -213,20 +213,6 @@ export default App;`}
         <li><span className="font-semibold">Static Components</span>: Display-only components typically don’t need cleanup.</li>
        </ul>
        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
        
        

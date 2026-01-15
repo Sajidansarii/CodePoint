@@ -36,7 +36,7 @@ const ReactComponenetcatch = () => {
        <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h1>
        <p>Program to Demonstrate the Use of the <span className="text-red-400 bg-gray-50">componentDidCatch()</span> Method</p>
        <h2 className="mt-5 text-2xl text-gray-800 font-semibold">Source File: App.js</h2>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import React, { Component } from 'react';
 

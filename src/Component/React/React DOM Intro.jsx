@@ -29,7 +29,7 @@ const ReactDOM = () => {
             <p>React events are actions performed by users, such as clicking buttons or typing in input fields. React makes it easy to handle these actions by using event handlers like <span className="text-red-400">onClick</span>, <span className="text-red-400">onChange</span>, and <span className="text-red-400">onSubmit</span>.</p>
          
          <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`<element onEvent={handlerFunction} />`}
             </code>
@@ -42,7 +42,7 @@ const ReactDOM = () => {
         </ul>
         
         <p className="mt-5">Now, let’s understand this with an example.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`/*App.css*/
 
@@ -123,7 +123,7 @@ h2 {
         <h2 className="text-3xl text-gray-800 font-semibold mt-10 mb-3">Handling Events in React</h2>
         <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Adding Event Handlers</h2>
         <p>React allows event handlers to be added directly to JSX elements. These event names use camelCase naming, which is different from standard HTML event naming (for example, onClick rather than onclick).</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import React, { Component } from 'react';
 
@@ -162,7 +162,7 @@ export default App;`}
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Reading Props in Event Handlers</h2>
       <p>React event handlers frequently rely on props received from parent components to carry out actions based on that data.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`body {
     margin: 0;
@@ -203,7 +203,7 @@ button:hover {
 
      <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Passing Event Handlers as Props</h2>
      <p>You can pass event handler functions to child components as props so that the child can send information back to the parent when something happens.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import React, { Component } from 'react';
 import Child from './Child';
@@ -242,7 +242,7 @@ export default Parent;`}
 
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Naming Event Handler Props</h2>
      <p>React developers often name event handler props according to the event, making the code easier to understand.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import React from "react";
 
@@ -265,7 +265,7 @@ export default Parent;`}
 
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Event Propagation in React</h2>
     <p>Event propagation in React refers to the process where an event triggered on a target element flows upward to its ancestor elements in the DOM. React uses the bubbling phase by default, meaning events move from the target element to its parents unless explicitly stopped.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import React from "react";
 
@@ -300,7 +300,7 @@ export default Parent;`}
 
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Preventing Default Behavior in React Events</h2>
      <p>The <span className="text-red-400">event.preventDefault()</span> method in React is used to prevent the default action associated with an event. It allows developers to implement custom handling rather than relying on the browser’s built-in behavior.</p>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
         {`import React, { useState } from "react";
 
@@ -371,6 +371,7 @@ export default SimpleForm;`}
    </pre>
 
    <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-5">Difference Between HTML DOM and React DOM</h2>
+    <div className="max-w-full overflow-x-auto">
    <table className="min-w-full border border-gray-300 text-gray-700 text-sm text-left mt-5">
     <thead>
         <tr className="bg-gray-100">
@@ -389,25 +390,7 @@ export default SimpleForm;`}
         ))}
     </tbody>
    </table>
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+   </div>
         
         </div>
     )

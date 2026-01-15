@@ -13,7 +13,7 @@ const HooksIntroduction = () => {
 
     return(
         <div className="max-w-4xl p-6 mt-10">
-            <h1 className="text-3xl text-blue-500 font-semibold mb-3">React Hooks Introduction</h1>
+            <h1 className="lg:text-3xl text-2xl text-blue-500 font-semibold mb-3">React Hooks Introduction</h1>
             <p>Introduced in React 16.8, Hooks revolutionized React development. They’re used in over 80% of modern React projects to handle state and lifecycle tasks. By removing the need for class components, Hooks simplify code, enhance readability, and enable a functional programming style that makes functional components extremely capable.</p>
              
              <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Types of React Hooks</h2>
@@ -23,7 +23,7 @@ const HooksIntroduction = () => {
              <p>State hooks, like <span className="text-red-400">useState</span> and useReducer, let functional components handle state more efficiently and in a modular way. They make managing component-level state easier and cleaner compared to using class components.</p>
              <p>useState is a hook that lets you create state variables in functional components. You can use it to access and update the component’s state.</p>
             <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Syntax</h2>
-            <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
                 <code>
                     {`const [state, setState] = useState(initialState);`}
                 </code>
@@ -31,14 +31,14 @@ const HooksIntroduction = () => {
 
             <ul className="list-[square] list-inside space-y-1 mt-5 ">
                 <li><span className="font-bold">state</span>: The current value of the state.</li>
-                <li><span className="font-bold">setState</span>: A function used to update the state.</li>
-                <li><span className="font-bold">InitialState</span>: The initial value of the state, which can be a primitive type or an object/array</li>
+                <li><span className="font-bold">setState</span>: A function used to update the <span className="lg:ml-0 ml-5">state</span>.</li>
+                <li><span className="font-bold">InitialState</span>: The initial value of the <span className="lg:ml-0 ml-5">state</span>, which can be a primitive type or an <span className="lg:ml-0 ml-5">object/array</span></li>
             </ul>
 
-            <p className="mt-5"><span className="text-red-400 bg-gray-50 px-1">useReducer</span> is an advanced hook for managing complex state in functional components. It’s useful when state has multiple parts or requires complicated updates.</p>
+            <p className="mt-10"><span className="text-red-400 bg-gray-50 px-1">useReducer</span> is an advanced hook for managing complex state in functional components. It’s useful when state has multiple parts or requires complicated updates.</p>
              
              <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Syntax</h2>
-             <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+             <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
                 <code>
                     {`const [state, dispatch] = useReducer(reducer, initialState);`}
                 </code>
@@ -46,13 +46,13 @@ const HooksIntroduction = () => {
 
              <ul className="list-[square] list-inside space-y-1 mt-5">
                 <li><span className="font-bold">state</span>: The current state value.</li>
-                <li><span className="font-bold">dispatch</span>: A function used to dispatch actions that will update the state.</li>
-                <li><span className="font-bold">reducer</span>: A function that defines how the state should change based on the dispatched action.</li>
+                <li><span className="font-bold">dispatch</span>: A function used to dispatch <span className="lg:ml-0 ml-5">actions</span> that will update the state.</li>
+                <li><span className="font-bold">reducer</span>: A function that defines how <span className="lg:ml-0 ml-5">the</span> state should change based on the <span className="lg:ml-0 ml-5">dispatched</span> action.</li>
                 <li><span className="font-bold">initialState</span>: The initial state value.</li>
              </ul>
 
              <p className="mt-5">Here’s an example to understand how the state hook works.</p>
-             <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+             <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
                 <code>
                     {`import React, { useState } from "react";
 
@@ -75,11 +75,9 @@ export default App;`}
              </pre>
 
              <p className="mt-5">The useState hook declares state in functional components. count stores the state, and setCount updates it.</p>
-              
-
               <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Context Hooks</h2>
               <p>The <span className="text-red-400">useContext</span> hook lets functional components easily get values from the React Context API. This way, you don’t have to pass props through each level of the component tree.</p>
-              <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+              <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
                 <code>
                     {`const contextValue = useContext(MyContext);`}
                 </code>
@@ -91,7 +89,7 @@ export default App;`}
              </ul>
 
              <p className="mt-5">Let’s explore the functionality of the context hook using the following example.</p>
-            <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 mb-3">
+            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5 mb-3">
                 <code>
                     {`import React, { createContext, useContext, useState } from "react";
 
@@ -132,7 +130,7 @@ export default App;`}
         <p className="mb-3">Effect hooks—including <span className="text-red-400">useEffect</span>, useLayoutEffect, and useInsertionEffect—allow functional components to manage side effects in a modular and efficient manner.</p>
         <p>The useEffect hook in React helps functional components handle side effects. You can use it for tasks like fetching data, updating the DOM, or setting up subscriptions—things that used to be done in class lifecycle methods like componentDidMount or componentDidUpdate.</p>
         <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Syntax</h2>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`useEffect(() => {
     // Side effect logic here
@@ -148,7 +146,7 @@ export default App;`}
           <p className="mt-10">The <span className="text-red-400">useLayoutEffect</span> hook runs before the browser paints, allowing layout measurements and updates for smoother visuals.</p>          
         
         <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`useLayoutEffect(() => {
   // Logic to manipulate layout or measure DOM elements
@@ -159,7 +157,7 @@ export default App;`}
         <p className="mt-5">The <span className="text-red-400">useInsertionEffect</span> hook injects styles before a component renders, useful for SSR and styling libraries.</p>
        
        <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Syntax</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`useInsertionEffect(() => {
     // Logic to inject styles or manipulate stylesheets
@@ -168,7 +166,7 @@ export default App;`}
       </pre>
 
       <p className="mt-5">Let’s check out an example to see the effect hook in action.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import React, { useState, useEffect } from "react";
 
@@ -206,7 +204,7 @@ export default App;`}
      <p className="mb-5">Performance hooks, such as useMemo and useCallback, help make React apps faster by preventing unnecessary re-renders or repeated calculations.</p>
      <p>The useMemo hook memoizes costly computations, recalculating them only when dependencies change to boost performance.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Syntax</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);`}
         </code>
@@ -215,7 +213,7 @@ export default App;`}
      <p className="mt-5">useCallback is a React hook that remembers a function so it doesn’t get recreated on every render, unless its dependencies change. This is useful when passing functions to child components to avoid unnecessary re-renders.</p>
       
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`const memoizedCallback = useCallback(() => { doSomething(a, b); }, [a, b]);`}
         </code>
@@ -226,7 +224,7 @@ export default App;`}
      </ul>
 
      <p className="mt-5">Here’s an example to understand how the performance hook works.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import React, { useState, useMemo } from "react";
 
@@ -267,7 +265,7 @@ export default App;`}
      <p>The <span className="text-red-400">useFetch hook</span> is typically custom-built to retrieve data from an API. It leverages <span className="text-red-400">useEffect</span> to perform the fetch when the component mounts or its dependencies change.</p>
     
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`const { data, loading, error } = useFetch(url);`}
         </code>
@@ -280,7 +278,7 @@ export default App;`}
 
     <p className="mt-5">Let’s explore the functionality of a resource hook using the following example.</p>
     
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import React, { useState, useRef } from "react";
 
@@ -321,7 +319,7 @@ export default App;`}
 
      <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Custom Hooks</h2>
      <p>Custom Hooks are developer-defined functions that encapsulate reusable logic, allowing behavior to be shared across multiple components while enhancing code clarity.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`//useWidth.js
 
@@ -345,7 +343,7 @@ export default useWidth;`}
 
 
      <h2 className="text-2xl font-semibold text-gray-800 mt-10 mb-3">Using a Custom Hook</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import React from "react";
 import useWidth from "./useWidth";

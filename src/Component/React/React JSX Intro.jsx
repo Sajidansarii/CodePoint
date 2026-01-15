@@ -15,7 +15,7 @@ const JSXIntro = () => {
        <p className="mt-5">Here are two examples: the first one uses JSX, and the second one does not.</p>
       
       <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`const myElement = <h1>I Love JSX!</h1>;
 
@@ -26,13 +26,10 @@ createRoot(document.getElementById('root')).render(
       </pre>
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h2>        
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
-                {`const myElement = React.createElement('h1', {}, 'I do not use JSX!');
-
-createRoot(document.getElementById('root')).render(
-  myElement
-);`}
+                {` const myElement = React.createElement('h1', {}, 'I do not use JSX!');  
+  createRoot(document.getElementById('root')).render(myElement);`}
             </code>
         </pre>
 
@@ -43,7 +40,7 @@ createRoot(document.getElementById('root')).render(
     <p>JSX allows you to include expressions inside curly braces { }. These expressions can be React variables, properties, or any valid JavaScript code, and JSX will evaluate them and return the result.</p>
 
   <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
         {`const myElement = <h1>React is {5 + 5} times better with JSX</h1>;`}
     </code>
@@ -98,7 +95,7 @@ createRoot(document.getElementById('root')).render(
  <p>JSX follows XML syntax, so all HTML elements must be properly closed.</p>
 <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
 <p>Use{' />'} to close self-closing elements.</p>
-<pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+<pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
         {`const myElement = <input type="text" />;`}
     </code>
@@ -110,7 +107,7 @@ createRoot(document.getElementById('root')).render(
 
 <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h2>
 <p>Replace class with className when writing JSX.</p>
-<pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+<pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
         {`const myElement = <h1 className="myclass">Hello World</h1>;`}
     </code>
@@ -120,7 +117,7 @@ createRoot(document.getElementById('root')).render(
 <p>In JSX, comments are written using <span className="text-red-400">{'/* */'}</span>.</p>
 <h2 className="text-gray-800 text-2xl font-semibold mt-5 mb-3">Example</h2>
 <p>Comments in JSX:</p>
-<pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+<pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
         {`const myElement = <h1>Hello {/* Wonderful */} World </h1>;`}
     </code>
@@ -131,7 +128,7 @@ createRoot(document.getElementById('root')).render(
 <p>React uses components to create user interfaces. Components are independent, reusable pieces of code, similar to JavaScript functions, and they return HTML. JSX works seamlessly inside these components.</p>
 <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
 <p>JSX in Components:</p>
-<pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+<pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
         {`function Car() {
   return (
@@ -151,7 +148,7 @@ createRoot(document.getElementById('root')).render(
 <p className="mt-5">Within components, you can perform other operations before returning the HTML.</p>
 <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
 <p>JSX in Components:</p>
-<pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+<pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
     <code>
         {`function Car() {
   const brand = "Ford";
@@ -171,26 +168,6 @@ createRoot(document.getElementById('root')).render(
 </pre>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     
     </div>
     

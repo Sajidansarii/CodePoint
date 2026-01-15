@@ -39,7 +39,7 @@ const ReactRouter = () => {
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">2. Routes and Route</h2>
        <p>Routes act as a container for all route definitions, while Route specifies an individual path and the component that should be rendered.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`<Routes>
     <Route path="/" element={<Home />} />
@@ -51,7 +51,7 @@ const ReactRouter = () => {
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">3. Link and NavLink</h2>
        <p>Link enables navigation within the app, whereas NavLink extends it by applying styles when the route is active.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`<nav>
     <NavLink to="/" activeClassName="active">Home</NavLink>
@@ -63,7 +63,7 @@ const ReactRouter = () => {
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Create Routes using React Router</h2>
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">1: Initialize React Project</h2>
        <p>To create a new React app, run the command below.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`npm create vite@latest react-router-example
 cd react-router-example`}
@@ -79,7 +79,7 @@ cd react-router-example`}
        </pre>
 
        <p className="mt-5">Depenedencies list after installing react router</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`"dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -95,7 +95,7 @@ cd react-router-example`}
        </pre>
 
        <p className="mt-10">This demonstrates the implementation of fundamental routing in a React application.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`// src/index.js
 

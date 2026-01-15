@@ -30,7 +30,7 @@ const ReactMouse = () => {
 
          <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Handling the onMouseDown Event</h2>
          <p>The onMouseDown event handler runs custom code when a mouse button is pressed. It can be used for tasks like starting a drag-and-drop, triggering animations, or updating state based on mouse actions.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`import React, { useState } from "react";
 import "./App.css";
@@ -58,7 +58,7 @@ export default App;`}
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Accessing the Event Object</h2>
         <p>The onMouseDown event handler gets an event object with details about the mouse interaction, like which button was pressed, the mouse position, and other properties.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`import React from "react";
 
@@ -86,7 +86,7 @@ export default AccessMouseDownEvent;`}
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Preventing Default Behavior</h2>
          <p>In certain situations, it may be necessary to prevent the default actions that occur when a mouse button is pressed. Examples include disabling text selection, blocking right-click context menus, or stopping other standard browser behaviors.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`import React from "react";
 
@@ -114,7 +114,7 @@ export default PreventTextSelection;`}
         
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Using onMouseDown for Changing Colors</h2>
         <p>The onMouseDown event can be used to modify component styles and manage state during a mouse interaction.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`import React, { useState } from "react";
 
@@ -157,12 +157,6 @@ export default ChangeColorOnMouseDown;`}
         <p className="mb-3">The onMouseDown event has unique qualities that make it handy in React projects.</p>
         <p>The onMouseDown event in React activates on mouse button press, supports left, right, and middle buttons, and can be combined with touch events for mobile. It follows React’s synthetic event model with bubbling and capturing, and its handler receives an event object containing properties such as event.button and event.clientX/Y.</p>
         
-
-
-
-
-
-
         
         </div>
     )

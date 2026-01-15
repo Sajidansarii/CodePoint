@@ -11,21 +11,21 @@ const UseContextHooks = () => {
 
     return(
         <div className="max-w-4xl p-6 mt-10">
-            <h1 className="text-3xl text-blue-500 font-semibold mb-3">React Usecontext Hooks</h1>
+            <h1 className="lg:text-3xl text-2xl text-blue-500 font-semibold mb-3">React Usecontext Hooks</h1>
             <p>In complex React applications, state management across deeply nested components can become cumbersome. The useContext hook enables efficient state sharing between components, eliminating the need for extensive prop drilling.</p>
             
             <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">What is useContext Hook?</h2>
             <p className="mb-3">The useContext hook lets React components access values from a context. React’s Context API is meant to pass data through the component tree without manually sending props at every level. Introduced in React 16.8, useContext allows functional components to read context values easily.</p>
             <p>It eliminates the need for prop drilling, where data must be manually passed through multiple nested components.</p>
             <ul className="list-[square] list-inside space-y-1 mt-5">
-                <li>Simplifies access to shared state across components.</li>
-                <li>Eliminates prop drilling by removing the need to pass props down many levels.</li>
-                <li>Works with React’s Context API to provide global state.</li>
-                <li>Perfect for managing themes, authentication, or user preferences.</li>
+                <li>Simplifies access to shared state across <span className="lg:ml-0 ml-5">components</span>.</li>
+                <li>Eliminates prop drilling by removing the <span className="lg:ml-0 ml-5">need</span> to pass props down many levels.</li>
+                <li>Works with React’s Context API to <span className="lg:ml-0 ml-5">provide</span> global state.</li>
+                <li>Perfect for managing themes, <span className="lg:ml-0 ml-5">authentication</span>, or user preferences.</li>
             </ul>
 
             <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-             <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+             <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
                 <code>
                     {`const contextValue = useContext(MyContext);`}
                 </code>
@@ -34,16 +34,16 @@ const UseContextHooks = () => {
              <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">How does it work?</h2>
              <p>The useContext hook facilitates consumption of context values, enabling components to access shared state throughout the component tree without the need for manual prop propagation. Here’s the mechanism:</p>
              <ul className="list-[square] list-inside space-y-1 mt-5">
-                <li>useContext lets functional components access values from a React Context.</li>
-                <li>Create a Context object using React.createContext() to hold shared state.</li>
-                <li>Use useContext in any component that needs the value, avoiding prop drilling.</li>
-                <li>When the Context value changes, all consuming components re-render automatically.</li>
+                <li>useContext lets functional components <span className="lg:ml-0 ml-5">access</span> values from a React Context.</li>
+                <li>Create a Context object using <span className="lg:ml-0 ml-5">React.createContext()</span> to hold shared <span className="lg:ml-0 ml-5">state</span>.</li>
+                <li>Use useContext in any component that <span className="lg:ml-0 ml-5">needs</span> the value, avoiding prop drilling.</li>
+                <li>When the Context value changes, all <span className="lg:ml-0 ml-5">consuming</span> components re-render <span className="lg:ml-0 ml-5">automatically</span>.</li>
              </ul>
 
 
              <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Creating a Context</h2>
             <p>Before using useContext, you first create a context with React.createContext(). This context holds a value that any child component inside a Context.Provider can access.</p>
-            <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
                 <code>
                     {`import React, { createContext, useContext, useState } from 'react';
 
@@ -71,7 +71,7 @@ function ChildComponent() {
         <h2 className="text-3xl text-gray-800 font-semibold mt-10 mb-3">Implementing the useContext Hook</h2>
         <h2 className="text-2xl text-gray-800 font-semibold mb-3">Managing Authentication with useContext</h2>
        <p>You can use useContext to keep track of whether a user is logged in or not and share this state with all components.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import React, { createContext, useContext, useState } from 'react';
 const AuthContext = createContext();
@@ -107,7 +107,7 @@ export default App;`}
 
       <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Sharing a Theme Across Components</h2>
       <p>Create a theme context and consume its values in child components using useContext.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import React, { createContext, useContext, useState } from 'react';
 

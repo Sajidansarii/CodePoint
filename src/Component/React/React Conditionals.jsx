@@ -3,7 +3,7 @@ import React from "react";
 const Conditional = () => {
     return (
         <div className="max-w-4xl p-6 mt-10">
-            <h1 className="text-3xl text-blue-500 font-semibold mb-3">This is react Conditional</h1>
+            <h1 className="text-3xl text-blue-500 font-semibold mb-3">React Conditional</h1>
             <p>React allows you to render components conditionally.You can do this using several different approaches.</p>
             
             <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3"><span className="text-red-400">if</span> Statement</h2>
@@ -24,7 +24,7 @@ function MadeGoal() {
 
           <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
           <p>Next, we will create a component that selects which component to render depending on a condition.</p>
-          <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+          <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`function Goal(props) {
   const isGoal = props.isGoal;
@@ -42,7 +42,7 @@ createRoot(document.getElementById('root')).render(
 
           <p className="mt-5">Set the isGoal attribute to true and observe the result.</p>
            <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
-           <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+           <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`createRoot(document.getElementById('root')).render(
   <Goal isGoal={true} />
@@ -57,7 +57,7 @@ createRoot(document.getElementById('root')).render(
             
             <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
             <p>With the && operator, the right side will render only if the left side evaluates to true.</p>
-            <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
                 <code>
                     {`function Car(props) {
   return (
@@ -75,7 +75,7 @@ createRoot(document.getElementById('root')).render(
 
             <p className="mt-5">If props.brand evaluates to true, the expression following && will be rendered.Try emptying the brand property to see the change.</p>
             <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
-            <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
                 <code>
                     {`createRoot(document.getElementById('root')).render(
   <Car />
@@ -96,7 +96,7 @@ createRoot(document.getElementById('root')).render(
            
            <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
            <p>Show the <span className="text-red-400">MadeGoal</span> component if <span className="text-red-400">isGoal</span> is true; otherwise, show the <span className="text-red-400">MissedGoal</span> component.</p>
-           <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+           <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`function Goal(props) {
   const isGoal = props.isGoal;

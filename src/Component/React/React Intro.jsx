@@ -32,13 +32,6 @@ const Intro = () => {
                <p className="mb-3">React.JS was originally used in 2011 for Facebook’s Newsfeed.</p>
                <p>It was created by Facebook engineer Jordan Walke.</p>
 
-               
-
-
-
-
-
-
           
        </div>
     )

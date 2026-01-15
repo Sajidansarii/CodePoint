@@ -37,7 +37,7 @@ const ReactLifeCycle = () => {
          <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">constructor</h1>
         <p>This method initializes the state and binds functions, and it is called before the component mounts.</p>
         <h2 className="text-2xl text-gray-800 font-semibold mt-2">Example</h2>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`constructor(props) {
     super(props); // Always call super(props) before using this.props
@@ -52,7 +52,7 @@ const ReactLifeCycle = () => {
          <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">getDerivedStateFromProps</h1>
         <p>This method updates state using props and is executed before every render cycle.</p>
         <h2 className="text-2xl text-gray-800 font-semibold mt-2">Example</h2>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`static getDerivedStateFromProps(props, state) {
     if (props.value !== state.value) {
@@ -67,7 +67,7 @@ const ReactLifeCycle = () => {
         <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">render()</h1>
        <p>This method renders JSX and applies updates to the DOM.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-2">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`render() {
     return (
@@ -83,7 +83,7 @@ const ReactLifeCycle = () => {
         <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">componentDidMount()</h1>
       <p>This function runs once, right after the initial render, when the component is added to the DOM.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-2">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`componentDidMount() {
     console.log("Component has been mounted");
@@ -109,7 +109,7 @@ const ReactLifeCycle = () => {
        <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">getDerivedStateFromProps</h1>
       <p>During mounting and updating, <span className="text-red-400 bg-gray-50">getDerivedStateFromProps(props, state)</span> is invoked before <span className="text-red-400 bg-gray-50">render()</span>, allowing the component to update state based on incoming props.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-2">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`static getDerivedStateFromProps(props, state) {
     if (props.name !== state.name) {
@@ -123,7 +123,7 @@ const ReactLifeCycle = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">setState() Function</h1>
       <p>This function isn’t part of the standard lifecycle and can be executed at any moment to update the state of a component.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-2">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`this.setState((prevState, props) => ({
       counter: prevState.count + props.diff
@@ -134,7 +134,7 @@ const ReactLifeCycle = () => {
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">shouldComponentUpdate()</h1>
      <p>This lifecycle method, <span className="text-red-400 bg-gray-50">shouldComponentUpdate()</span>, checks the current and upcoming props and state to determine whether the component needs to update.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-2">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`shouldComponentUpdate(nextProps, nextState)`}
         </code>
@@ -145,7 +145,7 @@ const ReactLifeCycle = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">getSnapshotBeforeUpdate() Method</h1>
     <p>This method runs just before the DOM is rendered and allows you to save the component’s state before the update.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-2">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`getSnapshotBeforeUpdate(prevProps, prevState)`}
         </code>
@@ -154,7 +154,7 @@ const ReactLifeCycle = () => {
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">componentDidUpdate()</h1>
     <p>Invoked after the component updates, this function runs once following render() after state or prop modifications.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-2">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`componentDidUpdate(prevProps, prevState, snapshot)`}
         </code>
@@ -166,7 +166,7 @@ const ReactLifeCycle = () => {
       <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">componentWillUnmount()</h2>
       <p>This function is called once before the component is unmounted from the DOM, signaling the end of its lifecycle.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`// Filename - src/index.js:
 import React from "react";
@@ -224,7 +224,8 @@ root.render(<Test />);`}
         <li>Managing state and side effects in class components requires different lifecycle methods, which can be confusing.</li>
         <li>Functional components use Hooks like <span className="text-red-400 bg-gray-50">useState()</span> and <span className="text-red-400 bg-gray-50">useEffect()</span>, making the code easier to write and understand.</li>
      </ul>
-
+     
+     <div className="max-w-full overflow-x-auto">
      <table className="min-w-full border border-gray-300 text-gray-700 text-left text-sm mt-10">
         <thead>
             <tr className="bg-gray-100">
@@ -242,23 +243,9 @@ root.render(<Test />);`}
                 </tr>
             ))}
         </tbody>
-     </table>  
-
+     </table> 
+     </div>
      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
     )
 }

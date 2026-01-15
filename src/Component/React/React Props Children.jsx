@@ -8,7 +8,7 @@ const ReactProchild = () => {
            <p>React allows you to send whatever is inside a component’s opening and closing tags to another component. The target component can then use props.children to access it.</p>
            <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
            <p>Using the Parent component, forward the content placed between the Son and Daughter components’ tags.</p>
-          <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+          <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`function Son(props) {
   return (
@@ -56,18 +56,6 @@ createRoot(document.getElementById('root')).render(
 `}
             </code>
           </pre>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         </div>
     )

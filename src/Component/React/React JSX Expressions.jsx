@@ -11,7 +11,7 @@ const ReactExpressons = () => {
              
              <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
             <p>Evaluate 218 times 1.36.</p>
-            <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
                 <code>
                     {`function Car() {
   return (
@@ -28,7 +28,7 @@ const ReactExpressons = () => {
             <p>Variables count as valid JavaScript expressions, and you insert them into JSX by wrapping them in {'{ }'}.</p>
             <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
             <p>Use a variable inside JSX:</p>
-            <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
                 <code>
                     {`function Car() {
   const hp = 218 * 1.36;
@@ -46,7 +46,7 @@ const ReactExpressons = () => {
              <p>You can call functions inside JSX by putting the call in curly braces {'{ }'}, because function calls are valid JavaScript expressions.</p>
             <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
             <p>Call a JavaScript function inside your JSX code by wrapping it in {'{ }'}. </p>
-            <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
                 <code>
                     {`function kwtohp(kw) {
   return kw * 1.36;
@@ -67,7 +67,7 @@ function Car() {
            <p>Access properties of an object inside JSX by using dot notation {'(e.g., {user.name})'}.</p>
           <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
          <p>Access an object’s property inside JSX by referencing it within curly braces.</p>
-         <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
             <code>
                 {`function Car() {
   const myobj = {

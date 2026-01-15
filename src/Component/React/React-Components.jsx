@@ -25,7 +25,7 @@ const Reactcomponent = () => {
        <p>Now your React app includes a component named Car that returns an <span className="text-red-400">{'<h2>'}</span> element. To render it in your app, you reference it like a normal HTML tag using <span className="text-red-400">{'<Car/>'}</span>.</p>
        <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
        <p>Render the Car component inside the element with the id "root". </p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`createRoot(document.getElementById('root')).render(
   <Car />
@@ -37,7 +37,7 @@ const Reactcomponent = () => {
        <p>Props (properties) let you send values into a React component, and you pass them the same way you set HTML attributes on an element.</p>
        <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
       <p>Specify a color attribute when rendering Car, and then use that prop in the component to affect the rendered content or style.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`function Car(props) {
   return (
@@ -56,7 +56,7 @@ createRoot(document.getElementById('root')).render(
       <p>Components in React can render other components within them.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
      <p>Include the Car component within the JSX of the Garage component.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`function Car() {
   return (
@@ -86,7 +86,7 @@ createRoot(document.getElementById('root')).render(
     <p>You can render the same component more than once in your UI.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
     <p>Place two instances of the Car component inside the Garage component’s JSX.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`function Car() {
   return (
@@ -113,7 +113,7 @@ createRoot(document.getElementById('root')).render(
     <p className="mt-5">The previous example might seem trivial, but if we make the Car component dynamic by passing data (props) into it, it becomes much more useful.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
     <p>Display two instances of the Car component, passing different attributes so each car appears uniquely.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`function Car(props) {
   return (
@@ -157,7 +157,7 @@ export default Car;`}
     <p className="mt-5">You must import the Car component by bringing in the Vehicle.jsx file before you can render it in your React application.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
    <p>After importing the Vehicle.jsx file into your app, you can use the Car component just like any component defined in the same file.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
         <code>
             {`import { createRoot } from 'react-dom/client'
 import Car from './Vehicle.jsx';
