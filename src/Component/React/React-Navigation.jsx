@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import {FiArrowLeft} from 'react-icons/fi';
 import ReactInstallation from './React Installation';
 import Intro from "./React Intro";
@@ -52,6 +52,33 @@ import NavlinkRouter from './Navlink in React Router dom';
 const ReactNav = () => {
     const [isOpen, setisOpen] = useState(false);
     const [showpage,setshowpage] = useState(null);
+
+    const sidebarRef = useRef(null);
+    const buttonRef = useRef(null);
+
+    
+      useEffect(() => {
+        const handleclickoutside = (e) => {
+          if(
+            sidebarRef.current &&
+            !sidebarRef.current.contains(e.target) &&
+            buttonRef.current &&
+            !buttonRef.current.contains(e.target)
+          )
+          {
+            setisOpen(false);
+          }
+        };
+        
+        document.addEventListener("mousedown", handleclickoutside);
+        
+        return () => {
+          document.removeEventListener("mousedown", handleclickoutside);
+        };
+      }, [isOpen]);
+    
+    
+    
 
     const RenderPage = () => {
         switch(showpage){
@@ -141,12 +168,6 @@ const ReactNav = () => {
           return <NavigationRouting/>  
           case 'NavlinkRouter':
           return <NavlinkRouter/>  
-          
-          
-
-
-          
-          
 
             default:
           return (
@@ -160,6 +181,7 @@ const ReactNav = () => {
     <div className="flex mt-16">
 
                 <button
+                  ref={buttonRef}
                   className="bg-gray-200 text-2xl px-3 fixed top-16 left-4 z-50 sm:hidden"
                   onClick={() => setisOpen(!isOpen)}>
                   <i className="fas fa-bars"></i>
@@ -171,7 +193,7 @@ const ReactNav = () => {
                                  bg-gray-200 px-5 py-6 shadow-lg z-40 transform transition-transform
                                    duration-300 sm:translate-x-0 sm:block
                                    ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
-                                 >  
+                                  ref={sidebarRef}  >  
 
 
                    <h1 className="text-xl font-semibold mt-5 mb-2">React Tutorial</h1>

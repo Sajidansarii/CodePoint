@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { FiArrowLeft } from 'react-icons/fi';
 import WhatisCSS from './WhatisCSS';
 import CSSIntroduction from './CSSIntroduction';
@@ -136,6 +136,31 @@ import CSSBrowserSupport from './CSSBrowserSupport';
 const Css = () => {      
 const [isOpen, setIsOpen] = useState(false);
 const [showpage,setshowpage] = useState(null);
+
+const sidebarRef = useRef(null);
+  const buttonRef = useRef(null);
+
+    useEffect(() => {
+    if (!isOpen) return;
+
+    const handleClickOutside = (e) => {
+      if (
+        sidebarRef.current &&
+        !sidebarRef.current.contains(e.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(e.target)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
+
 
     const renderpage = () => {
         switch (showpage) {
@@ -413,7 +438,8 @@ const [showpage,setshowpage] = useState(null);
                     {/* Hamburg Butt */}
                   <button
                   className="bg-gray-200 text-2xl px-3 fixed top-16 left-4 z-50 sm:hidden"
-                  onClick={() => setIsOpen(!isOpen)}>
+                  onClick={() => setIsOpen(!isOpen)}
+                  ref={buttonRef}>
                   <i className="fas fa-bars"></i>
                 </button>
         
@@ -421,7 +447,8 @@ const [showpage,setshowpage] = useState(null);
                 <div className={`lg:sticky lg:left-0 lg:top-16 w-60 fixed h-[calc(100vh-4rem)] overflow-y-auto
                                bg-gray-200 px-5 py-6 z-40 transform transition-transform
                                 duration-300 shadow-lg sm:translate-x-0 sm:block   
-                                ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
+                                ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
+                                ref={sidebarRef}>
         
                     <h1 className="text-xl font-semibold mt-5 mb-2">CSS Tutorial</h1>
                     <ul className="space-y-1 text-sm">       

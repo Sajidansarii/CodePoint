@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { FiArrowLeft } from 'react-icons/fi';
 import Introduction from './Introductionofjs';
 import WhatisJavaScript from './WhatisJavaScript';
@@ -109,6 +109,33 @@ import AJAXApplications from './AJAXApplications';
 const JS = () => {      
   const [isOpen, setisOpen] = useState(false);
   const [showpage,setshowpage] = useState(null);
+
+  const sidebarRef = useRef(null);
+  const buttonRef = useRef(null);
+
+
+  useEffect(() => {
+    const handleclickoutside = (e) => {
+      if(
+        sidebarRef.current &&
+        !sidebarRef.current.contains(e.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(e.target)
+      )
+      {
+        setisOpen(false);
+      }
+    };
+    
+    document.addEventListener("mousedown", handleclickoutside);
+    
+    return () => {
+      document.removeEventListener("mousedown", handleclickoutside);
+    };
+  }, [isOpen]);
+
+
+
 
   const renderpage = () => {
     switch(showpage){
@@ -336,6 +363,7 @@ const JS = () => {
         <div className="flex mt-16">
                     {/* Hamburg Butt */}
                   <button
+                  ref={buttonRef}
                   className="bg-gray-200 text-2xl px-2 fixed top-16 left-4 z-50 sm:hidden"
                   onClick={() => setisOpen(!isOpen)}>
                   <i className="fas fa-bars"></i>
@@ -345,7 +373,8 @@ const JS = () => {
                                  bg-gray-200 px-5 py-6 shadow-lg z-40 transform transition-transform
                                    duration-300 sm:translate-x-0 sm:block
                                 ${isOpen ? "translate-x-0" : "-translate-x-full"}
-                                `} >
+                                `} 
+                                ref={sidebarRef}>
         
                     <h1 className="text-xl font-semibold mt-5 mb-2">JS Basics</h1>
                     <ul className="space-y-1 text-sm">   
