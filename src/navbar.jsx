@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [active, setactive]= useState(null);
+
 
   const handleNavigation = () => {
     navigate("/Component/HTML-Section/HtmlPages");
@@ -31,6 +32,31 @@ const Navbar = () => {
     setactive('react');
   }
 
+  
+  const menuRef = useRef(null);
+  const buttonRef = useRef(null);
+
+
+   useEffect(() => {
+    if (!isMenuOpen) return;
+
+    const handleClickOutside = (e) => {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(e.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(e.target)
+      ) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMenuOpen]);
 
 
   return (
@@ -41,6 +67,7 @@ const Navbar = () => {
 
         {/* Hamburger - Mobile Only */}
         <button
+          ref={buttonRef}
           className="md:hidden text-2xl p-2"
           onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <i className="fas fa-bars"></i>
@@ -82,7 +109,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-green-300 px-4 py-3 rounded-b-lg shadow-inner">
+        <div className="md:hidden bg-green-300 px-4 py-3 rounded-b-lg shadow-inner" ref={menuRef}>
           <ul className="space-y-2 text-sm font-semibold">
             <li
               className="hover:cursor-pointer hover:bg-gray-200"
