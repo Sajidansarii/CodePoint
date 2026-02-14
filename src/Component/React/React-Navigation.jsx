@@ -180,6 +180,11 @@ const ReactNav = () => {
    return (
     <div className="flex mt-16">
 
+             <Helmet>
+          <title>React Tutorial for Beginers | Codepoint</title>
+          <meta name="description" content="Learn React step by step with codepoint examples" />
+        </Helmet>
+
                 <button
                   ref={buttonRef}
                   className="bg-gray-200 text-2xl px-3 fixed top-16 left-4 z-50 sm:hidden"
