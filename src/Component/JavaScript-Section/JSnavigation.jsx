@@ -362,10 +362,6 @@ const JS = () => {
     return (
         <div className="flex mt-16">
 
-           <Helmet>
-          <title>JavaScript Tutorial for Beginers | Codepoint</title>
-          <meta name="description" content="Learn JavaScript step by step with codepoint examples" />
-        </Helmet>
                     {/* Hamburg Butt */}
                   <button
                   ref={buttonRef}

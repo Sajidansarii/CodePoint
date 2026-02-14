@@ -1,7 +1,6 @@
 import React from "react";
 import {Typewriter} from 'react-simple-typewriter';
 import { useNavigate } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 
 const homepage = ()=> {
   const navigate = useNavigate() ;
@@ -45,10 +44,6 @@ const homepage = ()=> {
   
     return (
       <div className='px-4 py-8'>
-        <Helmet>
-          <title>HTML Tutorial for Beginers | Codepoint</title>
-          <meta name="description" content="Learn HTML step by step with codepoint examples" />
-        </Helmet>
          {/*Hero section  */}
         <div className='text-center mb-20 sm:mb-32 lg:mb-40'>
           <h1 className='font-semibold text-3xl sm:text-3xl md:text-4xl mt-20 sm:mt-32 lg:mt-40'>

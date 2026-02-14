@@ -218,10 +218,7 @@ const Html = () => {
     return (
         <div className="flex mt-16">
 
-           <Helmet>
-          <title>HTML Tutorial for Beginers | Codepoint</title>
-          <meta name="description" content="Learn HTML step by step with codepoint examples" />
-        </Helmet>
+          
                     {/* Hamburg Butt */}
                   <button
                   className="bg-gray-200 text-2xl px-3 fixed top-16 left-4 z-50 sm:hidden"
