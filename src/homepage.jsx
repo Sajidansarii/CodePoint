@@ -1,7 +1,7 @@
 import React from "react";
 import {Typewriter} from 'react-simple-typewriter';
 import { useNavigate } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import SEO from "./Component/seo";
 
 const homepage = ()=> {
   const navigate = useNavigate() ;
@@ -44,16 +44,12 @@ const homepage = ()=> {
   ]
   
     return (
-      <>
-       <Helmet>
-        <title>Your Name | React Developer</title>
-        <meta
-          name="Codepoint"
-          content="Learn web technologies by Codepoint with real examples. "
-        />
-      </Helmet>
-
       <div className='px-4 py-8'>
+
+        <SEO  title={"Codepoint  | React Developer" } 
+             description={"Learn Web technologies on Codepoint with real examples."} />
+
+
          {/*Hero section  */}
         <div className='text-center mb-20 sm:mb-32 lg:mb-40'>
           <h1 className='font-semibold text-3xl sm:text-3xl md:text-4xl mt-20 sm:mt-32 lg:mt-40'>
@@ -127,7 +123,6 @@ const homepage = ()=> {
             </ul>
             </div>
         </div>
-            </>
 )}
 
 export default homepage;

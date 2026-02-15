@@ -58,8 +58,8 @@ const JSErrorObjects = () => {
   ]
 
   const data4 = [
-    {Error:'SyntaxError', Example:'fname = "John);', Error:'Invalid or unexpected token )'},
-    {Error:'SyntaxError', Example:'Math.round(4.6;', Error:'Missing ) after argument list'}
+    {ErrorType:'SyntaxError', Example:'fname = "John);', Message:'Invalid or unexpected token )'},
+    {ErrorType:'SyntaxError', Example:'Math.round(4.6;', Message:'Missing ) after argument list'}
 
   ]
 
@@ -309,9 +309,9 @@ try {
     <tbody>
      {data4.map((row,index)=>(
       <tr className="cursor-text hover:bg-gray-100">
-        <td className="px-4 py-2 border-b border-gray-200">{row.Error}</td>
+        <td className="px-4 py-2 border-b border-gray-200">{row.ErrorType}</td>
         <td className="px-4 py-2 border-b border-gray-200">{row.Example}</td>
-        <td className="px-4 py-2 border-b border-gray-200">{row.Error}</td>
+        <td className="px-4 py-2 border-b border-gray-200">{row.Message}</td>
       </tr>
      ))}
     </tbody>

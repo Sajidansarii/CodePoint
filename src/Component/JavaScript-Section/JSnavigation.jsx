@@ -105,6 +105,7 @@ import AJAXPHP from './AJAXPHP';
 import AJAXASP from './AJAXASP';
 import AJAXDatabase from './AJAXDatabase'; 
 import AJAXApplications from './AJAXApplications';
+import SEO from '../seo';
 
 const JS = () => {      
   const [isOpen, setisOpen] = useState(false);
@@ -361,6 +362,9 @@ const JS = () => {
 
     return (
         <div className="flex mt-16">
+
+          <SEO title={'Codepoint | Javascript'} 
+               description={'Learn Javascript on Codepoint with real examples.'} />
 
                     {/* Hamburg Butt */}
                   <button

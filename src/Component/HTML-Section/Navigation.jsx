@@ -57,6 +57,7 @@ import HTMLDoctypes from './HTMLDoctypes';
 import HTMLVideo from './HTMLVideo';
 import HTMLAudio from './HTMLAudio';
 import HTMLCanvas from './HTMLCanvas';
+import SEO from '../seo';
 
 
 
@@ -217,6 +218,9 @@ const Html = () => {
       
     return (
         <div className="flex mt-16">
+
+          <SEO title={'Codepoint | HTML'}
+               description={'Learn HTML on Codepoint with real examples.'}/>
 
           
                     {/* Hamburg Butt */}

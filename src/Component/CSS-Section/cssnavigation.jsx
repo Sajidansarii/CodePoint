@@ -132,6 +132,7 @@ import CSSSelectors from './CSSSelectors';
 import CSSPXEMConverter from './CSSPXEMConverter';
 import CSSDefaultvalues from './CSSDefaultvalues';
 import CSSBrowserSupport from './CSSBrowserSupport';
+import SEO from '../seo';
 
 const Css = () => {      
 const [isOpen, setIsOpen] = useState(false);
@@ -435,6 +436,9 @@ const sidebarRef = useRef(null);
 
     return (
         <div className="flex mt-16">
+
+          <SEO title={'Codepoint | CSS'}
+                description={'Learn Css on Codepoint with real examples.'}/>
 
          
                     {/* Hamburg Butt */}

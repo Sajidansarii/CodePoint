@@ -45,6 +45,7 @@ import ReactRouterTypes from './React JS Types of Router';
 import ReactRouterHooks from './React Router Hooks';
 import NavigationRouting from './Navigation And Routing in react';
 import NavlinkRouter from './Navlink in React Router dom';
+import SEO from "../seo";
 
 
 
@@ -179,6 +180,9 @@ const ReactNav = () => {
 
    return (
     <div className="flex mt-16">
+
+      <SEO title={Codepoint | React}
+           description={'Learn React.js on Codepoint with real examples'} />
 
 
                 <button
