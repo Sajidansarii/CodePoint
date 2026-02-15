@@ -8,7 +8,7 @@ import CssSection from "./Component/CSS-Section/CssPages"
 import JavaScriptSection from './Component/JavaScript-Section/JavaScriptPages' 
 import ReactPages from './Component/React/React-Pages'
 
- 
+
 function App ()  { 
   return (
     
