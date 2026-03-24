@@ -181,7 +181,7 @@ const ReactNav = () => {
    return (
     <div className="flex mt-16">
 
-      <SEO title={Codepoint | React}
+      <SEO title={React}
            description={'Learn React.js on Codepoint with real examples'} />
 
 
