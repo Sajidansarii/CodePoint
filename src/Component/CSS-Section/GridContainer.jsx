@@ -45,14 +45,14 @@ const CSSGridContainer = () => {
          <p className="mt-2">To create 4 columns, set their widths—or use auto for equal widths.</p>
          <h1 className="text-2xl mt-10 mb-2">Example</h1>
          <p className="mb-2">Set <span className="text-red-400 bg-gray-50 px-1">grid-template-columns</span> to make 4 equal columns.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-          {`.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  }`}
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">.grid-container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">grid</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">grid-template-columns</span>: <span className="text-green-700">auto auto auto auto</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
 
         <div className="border-2 border-black p-4 grid grid-cols-4 gap-3 mt-6">
           <div className="bg-blue-500 text-white font-bold p-6 text-center">
@@ -84,14 +84,14 @@ const CSSGridContainer = () => {
         <p className="mt-5 mb-5"><span className="text-red-400 bg-gray-50 px-1">grid-template-columns</span> lets you set exact widths or mix fixed and auto sizes.</p>
         <h1 className="text-2xl mb-2">Example</h1>
         <p className="mb-5">Set columns 1, 2, and 4 to fixed widths; keep column 3 as auto.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-          {`.grid-container {
-  display: grid;
-  grid-template-columns: 40px 100px auto 50px;
-  }`}
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">.grid-container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">grid</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">grid-template-columns</span>: <span className="text-green-700">40px 100px auto 50px</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
 
         <div className="border-2 border-black p-4 grid grid-cols-[40px_100px_auto_50px] gap-3 mt-6">
           <div className="bg-blue-500 text-white font-bold p-6 text-center">
@@ -126,14 +126,14 @@ const CSSGridContainer = () => {
          <p className="mb-5"><span className="text-red-400 bg-gray-50 px-1">1fr</span> is one unit of space, 2fr is double that.</p>
         <h1 className="text-2xl mt-5 mb-4">Example</h1>
         <p>Columns share the width equally—25% each.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-          {`.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  }`}
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">.grid-container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">grid</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">grid-template-columns</span>: <span className="text-green-700">1fr 1fr 1fr 1fr</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
 
         <div className="border-2 border-black p-4 grid grid-cols-4 gap-3 mt-6">
           <div className="bg-blue-500 text-white font-bold p-6 text-center">
@@ -164,14 +164,14 @@ const CSSGridContainer = () => {
 
         <h1 className="text-2xl mt-10 mb-3">Example</h1>
         <p>Column 2 takes up double the space.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-          {`.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr 1fr;
-  }`}
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">.grid-container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">grid</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">grid-template-columns</span>: <span className="text-green-700">1fr 2fr 1fr 1fr</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
 
         <div className="border-2 border-black p-4 grid grid-cols-[1fr_2fr_1fr_1fr] gap-3 mt-6">
           <div className="bg-blue-500 text-white font-bold p-6 text-center">
@@ -208,15 +208,15 @@ const CSSGridContainer = () => {
        <p><span className="text-red-400 bg-gray-50 px-1">place-content: end;</span> sets both <span className="text-red-400 bg-gray-50 px-1">place-content: end;</span> and <span className="text-red-400 bg-gray-50 px-1">justify-content</span> to end.</p>
         <h1 className="text-2xl mt-10">Example</h1>
         <p className="mt-3">center places grid items in the middle of the container both vertically and horizontally.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-          {`.grid-container {
-  display: grid;
-  height: 400px;
-  place-content: center;
-  }`}
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">.grid-container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">grid</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">400px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">place-content</span>: <span className="text-green-700">center</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
 
         <div className="border-2 justify-self-center border-black p-4 grid grid-cols-3 h-[400px] gap-2 mt-6 place-content-center ">
           <div className="bg-blue-500  text-white font-bold p-6 text-center">
@@ -248,16 +248,15 @@ const CSSGridContainer = () => {
 
        <h1 className="text-2xl mt-10">Example</h1>
        <p className="mt-3">end aligns content to the bottom vertically, while space-between spreads items evenly across the row with equal gaps between them.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-        {`.grid-container {
-  display: grid;
-  height: 400px;
-  place-content: end space-between;
-  }`}
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">.grid-container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">grid</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">400px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">place-content</span>: <span className="text-green-700">end space-between</span>;<br />
+    <span>{'}'}</span>
   </code>
-       </pre>
-
+</pre>
        
         <div className="border-2 border-black h-[400px] p-4 grid grid-cols-3 place-content-end 
         place-items-between gap-3 mt-6">

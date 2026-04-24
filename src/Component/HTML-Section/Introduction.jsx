@@ -15,20 +15,71 @@ const Introduction = () =>{
 
       <h2 className="sm:text-2xl text-xl font-semibold text-blue-500 mt-6 mb-2">Basic Structure of an HTML Document</h2>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-3 overflow-x-auto max-w-full whitespace-pre-wrap">
-        
-{`<!DOCTYPE html>
-<html>
-  <head>
-    <title>My First HTML Page</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <p>This is a paragraph.</p>
-  </body>
-</html>`}
-      </pre>
+    <pre className="bg-gray-100 text-sm p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-gray-500">!DOCTYPE</span>
+    <span className="text-blue-500"> html</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
 
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">html</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">head</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">title</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">My First HTML Page</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">title</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;/</span>
+    <span className="text-blue-500">head</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">body</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">h1</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Hello, world!</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">h1</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">This is a paragraph.</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;/</span>
+    <span className="text-blue-500">body</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">html</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
       <h2 className="text-xl font-semibold text-blue-500 mt-6 mb-2">Explanation:</h2>
       <ul className="list-[square] list-inside text-gray-700 space-y-1 mb-3">
         <li><code>&lt;!DOCTYPE html&gt;</code> — Declares the document type (HTML5).</li>

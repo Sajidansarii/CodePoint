@@ -9,7 +9,7 @@ const ObjectDisplay = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">How to Display JavaScript Objects?</h1>
     <p>When you display a JavaScript object, it appears as <span className="text-red-400">[object Object]</span>.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       <code>
         {`// Create an Object
 const person = {
@@ -25,7 +25,7 @@ let text = person;`}
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Displaying Object Properties</h1>
     <p>Object properties can be added using strings.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       <code>
         {`// Create an Object
 const person = {
@@ -42,7 +42,7 @@ let text = person.name + "," + person.age + "," + person.city;`}
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Using a For .. In Loop</h1>
    <p>Object properties can be gathered using a loop.</p>
    <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
     <code>
       {`// Create an Object
 const person = {
@@ -62,7 +62,7 @@ for (let x in person) {
    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Using Object.values()</h1>
     <p><span className="text-red-400">Object.values( )</span> generates an array containing the object’s property values.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       <code>
         {`// Create an Object
 const person = {
@@ -83,7 +83,7 @@ let text = myArray.toString();`}
 <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Using Object.entries()</h1>
 <p>You can use <span className="text-red-400">Object.entries( )</span> to simplify iterating over objects.</p>
 <h2 className="text-2xl text-gray-800 mt-5 font-semibold">Example</h2>
-<pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+<pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
   <code>
     {`const fruits = {Bananas:300, Oranges:200, Apples:500};
 
@@ -98,7 +98,7 @@ for (let [fruit, value] of Object.entries(fruits)) {
 <p className="mb-3">You can convert a JavaScript object to a string with <span className="text-red-400">JSON.stringify()</span>.</p>
 <p><span className="text-red-400">JSON.stringify()</span> is built into JavaScript and works in all browsers.</p>
 <h2 className="text-2xl text-gray-800 mt-5 font-semibold">Example</h2>
-<pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+<pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
   <code>
     {`// Create an Object
 const person = {

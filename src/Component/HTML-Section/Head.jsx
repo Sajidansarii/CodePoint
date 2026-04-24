@@ -12,18 +12,68 @@ const HTMLHead = () => {
       {/* Basic Structure */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Basic Structure</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Page Title</title>
-  </head>
-  <body>
-    <!-- visible content -->
-  </body>
-</html>`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;!DOCTYPE html&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">html</span>
+
+    <span className="text-red-500"> lang</span>=
+    <span className="text-green-600">"en"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">head</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">meta</span>
+
+    <span className="text-red-500"> charset</span>=
+    <span className="text-green-600">"UTF-8"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">title</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Page Title</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">title</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;/</span>
+    <span className="text-blue-600">head</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">body</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--</span>
+    <span className="text-gray-400"> visible content </span>
+    <span className="text-gray-500">--&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;/</span>
+    <span className="text-blue-600">body</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">html</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed mt-3">
           Everything inside <code>&lt;head&gt;</code> helps define the document’s settings, identity, and linked assets.
         </p>
@@ -63,17 +113,97 @@ const HTMLHead = () => {
       {/* Example Full Head */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Example &lt;head&gt; Section</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HTML Tutorial - CodePoint</title>
-  <meta name="description" content="Learn HTML basics with simple examples on CodePoint." />
-  <link rel="stylesheet" href="/css/styles.css" />
-  <link rel="icon" href="/favicon.ico" />
-  <script src="/js/main.js" defer></script>
-</head>`}</code>
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">head</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">meta</span>
+
+    <span className="text-red-500"> charset</span>=
+    <span className="text-green-600">"UTF-8"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">meta</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"viewport"</span>
+
+    <span className="text-red-500"> content</span>=
+    <span className="text-green-600">"width=device-width, initial-scale=1.0"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">title</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">HTML Tutorial - CodePoint</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">title</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">meta</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"description"</span>
+
+    <span className="text-red-500"> content</span>=
+    <span className="text-green-600">"Learn HTML basics with simple examples on CodePoint."</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">link</span>
+
+    <span className="text-red-500"> rel</span>=
+    <span className="text-green-600">"stylesheet"</span>
+
+    <span className="text-red-500"> href</span>=
+    <span className="text-green-600">"/css/styles.css"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">link</span>
+
+    <span className="text-red-500"> rel</span>=
+    <span className="text-green-600">"icon"</span>
+
+    <span className="text-red-500"> href</span>=
+    <span className="text-green-600">"/favicon.ico"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">script</span>
+
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"/js/main.js"</span>
+
+    <span className="text-red-500"> defer</span>
+
+    <span className="text-gray-500">&gt;&lt;/</span>
+    <span className="text-blue-600">script</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">head</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Best Practices */}

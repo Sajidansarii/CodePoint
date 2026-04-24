@@ -44,14 +44,16 @@ const CssUserInterface = () => {
         <p>
           <code>resize</code> The property allows the user to drag and resize the element. It is mostly used with<span className="text-red-400 bg-gray-100 px-1">{'<textarea>'}</span>.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`textarea {
-  resize: both;     
-  overflow: auto;
-  }`}
+        <pre className="bg-gray-200 p-4 rounded overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">textarea</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">resize</span>: <span className="text-green-700">both</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">overflow</span>: <span className="text-green-700">auto</span>;<br />
+
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
         <textarea
           className="border border-gray-400 p-2 w-full h-24 resize"
           placeholder="Try resizing me..."
@@ -64,14 +66,16 @@ const CssUserInterface = () => {
         <p>
           <code>outline-offset</code> The property creates space between the element’s outline and its border.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`input:focus {
-  outline: 2px solid blue;
-  outline-offset: 5px;
-  }`}
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">input:focus</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">outline</span>: <span className="text-green-700">2px solid blue</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">outline-offset</span>: <span className="text-green-700">5px</span>;<br />
+
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
         <input
           type="text"
           placeholder="Click to focus"
@@ -85,13 +89,15 @@ const CssUserInterface = () => {
         <p>
           <code>nav-index</code> The property sets the navigation order (using the Tab key). It is not supported in modern browsers but is still important to understand.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`a {
-  nav-index: 1;
-  }`}
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">a</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">nav-index</span>: <span className="text-green-700">1</span>;<br />
+
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
         <p>
            Note: This property is deprecated and does not work in modern browsers.
         </p>

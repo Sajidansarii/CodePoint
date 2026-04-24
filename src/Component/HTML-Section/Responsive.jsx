@@ -17,9 +17,18 @@ const HTMLResponsive = () => {
         <p className="leading-relaxed mb-3">
           The first step is adding the viewport meta tag in the <code>&lt;head&gt;</code> so browsers scale the page correctly on mobile devices.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<meta name="viewport" content="width=device-width, initial-scale=1.0" />`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;meta</span>
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"viewport"</span>
+
+    <span className="text-red-500"> content</span>=
+    <span className="text-green-600">"width=device-width, initial-scale=1.0"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed mb-3">
         This makes the layout width match the device width and sets initial zoom to 1.
         </p>
@@ -31,15 +40,37 @@ const HTMLResponsive = () => {
         <p className="leading-relaxed mb-3">
           Avoid fixed widths. Use relative units like percentages, <code>max-width</code>, <code>em</code>, or CSS flex/grid to let content adapt automatically.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`.container {
-  max-width: 100%;
-  padding: 0 1rem;
-}
-.card {
-  width: 100%; /* shrinks/grows with parent */
-}`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-blue-600">.container</span>
+    <span className="text-gray-500"> {`{`}</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;max-width</span>:
+    <span className="text-green-600"> 100%</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;padding</span>:
+    <span className="text-green-600"> 0 1rem</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-gray-500">{`}`}</span>
+    <br/><br/>
+
+    <span className="text-blue-600">.card</span>
+    <span className="text-gray-500"> {`{`}</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;width</span>:
+    <span className="text-green-600"> 100%</span>
+    <span className="text-gray-500">; /* shrinks/grows with parent */</span>
+    <br/>
+
+    <span className="text-gray-500">{`}`}</span>
+  </code>
+</pre>
       </section>
 
       {/* Responsive Images */}
@@ -48,20 +79,55 @@ const HTMLResponsive = () => {
         <p className="leading-relaxed mb-3">
           Make images scale and load appropriately using CSS or attributes:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<!-- CSS -->
-img {
-  max-width: 100%;
-  height: auto;
-}
+     <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;!-- CSS --&gt;</span>
+    <br/>
 
-<!-- srcset example -->
-<img 
-  src="small.jpg" 
-  srcset="small.jpg 480w, medium.jpg 800w, large.jpg 1200w" 
-  sizes="(max-width: 600px) 480px, 800px" 
-  alt="Example" />`}</code>
-        </pre>
+    <span className="text-blue-600">img</span>
+    <span className="text-gray-500"> {`{`}</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;max-width</span>:
+    <span className="text-green-600"> 100%</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;height</span>:
+    <span className="text-green-600"> auto</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-gray-500">{`}`}</span>
+
+    <br/><br/>
+
+    <span className="text-gray-500">&lt;!-- srcset example --&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;img</span>
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"small.jpg"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;srcset</span>=
+    <span className="text-green-600">
+      "small.jpg 480w, medium.jpg 800w, large.jpg 1200w"
+    </span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;sizes</span>=
+    <span className="text-green-600">
+      "(max-width: 600px) 480px, 800px"
+    </span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;alt</span>=
+    <span className="text-green-600">"Example"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed mb-3">
           This ensures images don’t overflow and the browser picks the best size.
         </p>
@@ -73,20 +139,52 @@ img {
         <p className="leading-relaxed mb-3">
           Media queries apply different CSS rules depending on screen size or other features.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`/* Mobile first */
-.container {
-  display: block;
-}
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">/* Mobile first */</span>
+    <br/>
 
-/* Larger screens */
-@media (min-width: 768px) {
-  .container {
-    display: flex;
-    gap: 1rem;
-  }
-}`}</code>
-        </pre>
+    <span className="text-blue-600">.container</span>
+    <span className="text-gray-500"> {`{`}</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;display</span>:
+    <span className="text-green-600"> block</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-gray-500">{`}`}</span>
+
+    <br/><br/>
+
+    <span className="text-gray-500">/* Larger screens */</span>
+    <br/>
+
+    <span className="text-blue-600">@media</span>
+    <span className="text-gray-700"> (min-width: 768px)</span>
+    <span className="text-gray-500"> {`{`}</span>
+    <br/>
+
+    <span className="text-blue-600">&nbsp;&nbsp;.container</span>
+    <span className="text-gray-500"> {`{`}</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;&nbsp;&nbsp;display</span>:
+    <span className="text-green-600"> flex</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;&nbsp;&nbsp;gap</span>:
+    <span className="text-green-600"> 1rem</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;{`}`}</span>
+    <br/>
+
+    <span className="text-gray-500">{`}`}</span>
+  </code>
+</pre>
         <p className="leading-relaxed mb-3">
           Start with styles for small screens, then override for wider viewports (mobile-first).
         </p>

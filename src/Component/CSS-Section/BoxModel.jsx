@@ -7,15 +7,38 @@ export default function CssBoxModel() {
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>{`.box {
-  width: 200px;
-  height: 100px;
-  padding: 20px;
-  border: 5px solid blue;
-  margin: 15px;
-}`}</code>
-      </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">.box</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">width</span>
+    <span>: </span>
+    <span className="text-green-700">200px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">height</span>
+    <span>: </span>
+    <span className="text-green-700">100px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">padding</span>
+    <span>: </span>
+    <span className="text-green-700">20px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">border</span>
+    <span>: </span>
+    <span className="text-green-700">5px solid blue</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">margin</span>
+    <span>: </span>
+    <span className="text-green-700">15px</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Demo</h2>
       <div className="flex justify-center mt-6">

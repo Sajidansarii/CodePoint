@@ -13,19 +13,36 @@ export default function CssSyntax() {
       <p>The property is the style attribute you want to change; they could be font, color, background, etc. Each property has a value, for example color property can have value either blue or #0000FF etc.</p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Basic Syntax</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>{`selector {
-  property: value;
-}`}</code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">selector</span> {"{"}
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">property</span>:{" "}
+    <span className="text-green-700">value</span>;
+    <br />
+
+    {"}"}
+  </code>
+</pre>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>{`h1 {
-  color: blue;
-  font-size: 24px;
-}`}</code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">h1</span> {"{"}
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">color</span>:{" "}
+    <span className="text-green-700">blue</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">font-size</span>:{" "}
+    <span className="text-green-700">24px</span>;
+    <br />
+
+    {"}"}
+  </code>
+</pre>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Demo</h2>
       <h1 className="text-blue-600 text-2xl mb-4">This is a styled H1</h1>

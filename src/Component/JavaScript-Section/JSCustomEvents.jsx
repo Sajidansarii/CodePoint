@@ -79,7 +79,7 @@ const JSCustomEvents = () => {
      <h1 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Custom Event</h1>
      <p>In this example, a custom event called myCustomEvent is created, and a button is displayed. We use addEventListener to listen for button events. Clicking the button dispatches the custom event and shows the alert "Custom event triggered!"</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`
   const customEvent = new Event('myCustomEvent');
@@ -99,7 +99,7 @@ const JSCustomEvents = () => {
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3 ">Event with Data</h1>
     <p>We create a CustomEvent called myCustomEventWithData that carries a message via detail. Clicking the button triggers the event and shows the alert.</p>
    <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-10">
+   <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-10">
     <code>
       {`
  const eventData = { message: 'Hello from custom event!' };
@@ -119,7 +119,7 @@ const JSCustomEvents = () => {
    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Condition-based Event Dispatching</h1>
    <p>The example dispatches TutorialEvent or TutorialEvent2 depending on v. The listener reacts to the chosen event.</p>
    <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`
    var v='tutorialspoint';
@@ -141,9 +141,6 @@ const JSCustomEvents = () => {
 		}`}
     </code>
    </pre>
-
-
-
 
 
     </div>

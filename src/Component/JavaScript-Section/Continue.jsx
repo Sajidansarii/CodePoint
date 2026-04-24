@@ -12,60 +12,89 @@ const JSContinue = () => {
 
       <h1 className="text-2xl mt-10 mb-3">Example</h1>
       <p>Skip the value of 3:</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
-        {`for (let i = 1; i < 10; i++) {
-  if (i === 3) { continue; }
-  text += "The number is " + i + "<br>";
-}`}
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    for (let i = 1; i &lt; 10; i++) {"{"}
+    <br />
+    &nbsp;&nbsp;if (i === 3) {"{"} continue; {"}"}
+    <br />
+    &nbsp;&nbsp;text += "The number is " + i + "&lt;br&gt;";
+    <br />
+    {"}"}
+  </code>
+</pre>
 
       <h1 className="text-2xl mt-10">JavaScript Labels</h1>
       <p className="leading-relaxed mt-3">A label gives a name to a line or group of lines so the program can jump to them, especially in loops.</p>
       <p className="text-xl mt-5 mb-3">Syntax</p>
       <p>A label is an identifier followed by a colon (:).</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        {`labelname: statement;`}
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    labelname: statement;
+  </code>
+</pre>
 
       <p className="mt-5">A label precedes a statement or a block of code.</p>
 
-      <pre className="text-green-400  bg-gray-900 p-4 rounded-lg mt-5">
-        {`labelname: {
-  statements
-}`}
-      </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    labelname: {"{"}
+    <br />
+    &nbsp;&nbsp;statements
+    <br />
+    {"}"}
+  </code>
+</pre>
 
       <h1 className="text-2xl mt-10">Continue to Labelname</h1>
       <h1 className="text-xl mt-5">Syntax</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        {`continue labelname;`}
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    continue labelname;
+  </code>
+</pre>
 
       <h1 className="text-2xl mt-5 mb-3">Example</h1>
       <p>Continue to loop1:</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
-        {`let text = "";
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let text = "";
+    <br /><br />
 
-loop1: for (let j = 1; j < 5; j++) {
-  loop2: for (let i = 1; i < 5; i++) {
-    if (i === 3) { continue loop1; }
-    text += i;
-   }
-}`}
-      </pre>
+    loop1: for (let j = 1; j &lt; 5; j++) {"{"}
+    <br />
+    &nbsp;&nbsp;loop2: for (let i = 1; i &lt; 5; i++) {"{"}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;if (i === 3) {"{"} continue loop1; {"}"}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;text += i;
+    <br />
+    &nbsp;&nbsp;{"}"}
+    <br />
+    {"}"}
+  </code>
+</pre>
 
       <h1 className="text-2xl mt-5 mb-3">Example</h1>
       <p>Continue to loop2:</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
-        {`let text = "";
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let text = "";
+    <br /><br />
 
-loop1: for (let j = 1; j < 5; j++) {
-  loop2: for (let i = 1; i < 5; i++) {
-    if (i === 3) { continue loop2; }
-    text += i;
-   }
-}`}
-      </pre>
+    loop1: for (let j = 1; j &lt; 5; j++) {"{"}
+    <br />
+    &nbsp;&nbsp;loop2: for (let i = 1; i &lt; 5; i++) {"{"}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;if (i === 3) {"{"} continue loop2; {"}"}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;text += i;
+    <br />
+    &nbsp;&nbsp;{"}"}
+    <br />
+    {"}"}
+  </code>
+</pre>
 
       <p>The only JavaScript statements that can jump out of a block are <span className="text-red-400 bg-gray-50 px-1 ">break</span> and <span className="text-red-400 bg-gray-50 px-1">continue</span>.</p>
 

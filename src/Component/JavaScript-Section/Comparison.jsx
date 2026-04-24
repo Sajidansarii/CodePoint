@@ -54,28 +54,28 @@ const JSComparisonOperators = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-2">String Comparison</h1>
       <p>The comparison operators listed above are also valid for evaluating string values.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-          {`
-let text1 = "A";
-let text2 = "B";
-let result = text1 < text2;
-          `}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let text1 = "A";
+    <br />
+    let text2 = "B";
+    <br />
+    let result = text1 &lt; text2;
+  </code>
+</pre>
 
       <p className="mt-5">Keep in mind that string comparisons are performed using alphabetical ordering.</p>
 
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-          {`
-let text1 = "20";
-let text2 = "5";
-let result = text1 < text2;
-          `}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let text1 = "20";
+    <br />
+    let text2 = "5";
+    <br />
+    let result = text1 &lt; text2;
+  </code>
+</pre>
 
       <h1 className="text-2xl text-gray-800 font-semibold mb-5 mt-10">Comparing Different Types</h1>
       <p>In JavaScript, comparing a string with a numeric value triggers type coercion, converting the string into a number. An empty string coerces to 0, whereas a non-numeric string coerces to <span className="text-red-400">NaN</span>, resulting in a comparison that always <span className="text-red-400">false</span>.</p>
@@ -101,18 +101,21 @@ let result = text1 < text2;
       <p>For accurate results, variables must be converted to the correct type before comparing.</p>
       <h1 className="text-2xl mt-5">Example</h1>
 
-      <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
-        <code>
-          {`
-age = Number(age);
-if (isNaN(age)) {
-  voteable = "Input is not a number";
-} else {
-  voteable = (age < 18) ? "Too young" : "Old enough";
-}
-          `}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    age = Number(age);
+    <br />
+    if (isNaN(age)) {"{"}
+    <br />
+    &nbsp;&nbsp;voteable = "Input is not a number";
+    <br />
+    {"}"} else {"{"}
+    <br />
+    &nbsp;&nbsp;voteable = (age &lt; 18) ? "Too young" : "Old enough";
+    <br />
+    {"}"}
+  </code>
+</pre>
 
 
                                          

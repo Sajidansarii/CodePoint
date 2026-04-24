@@ -44,39 +44,45 @@ const CssWebsiteLayout = () => {
         <li>Inline-block elements combine both behaviors—they appear inline with other elements but allow you to set their width and height.</li>
       </ul>
       <h1 className="text-3xl mt-5 mb-5">Example</h1>
-     <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-      <code>
-        {`<!DOCTYPE html>
-<html>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-600">&lt;html&gt;</span><br /><br />
 
-<head>
-    <style>
-        div, span{
-            border: 2px solid;
-            margin: 10px;
-        }
-        .inlineBlock{
-            display: inline-block;
-            height: 100px;
-            width: 100px;
-        }
-    </style>
-</head>
+    <span className="text-blue-600">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;style&gt;</span><br />
 
-<body>
-    <div> Block Element </div>
-    <div> Block Element </div>
-    <span> Inline element </span>
-    <span> Inline element </span>
-    <div> Block Element </div>
-    <span> Inline element </span>
-    <div class="inlineBlock">
-        Inline Block Element
-    </div>
-</body>\
-</html>  `}
-      </code>
-     </pre>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">div, span</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">2px solid</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">margin</span>: <span className="text-green-700">10px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.inlineBlock</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">inline-block</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">100px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">100px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+
+    <span className="text-blue-600">&lt;/style&gt;</span><br />
+    <span className="text-blue-600">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-600">&lt;body&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span> Block Element <span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span> Block Element <span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;span&gt;</span> Inline element <span className="text-blue-600">&lt;/span&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;span&gt;</span> Inline element <span className="text-blue-600">&lt;/span&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span> Block Element <span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;span&gt;</span> Inline element <span className="text-blue-600">&lt;/span&gt;</span><br /><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"inlineBlock"</span><span className="text-blue-600">&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;Inline Block Element<br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/div&gt;</span><br />
+
+    <span className="text-blue-600">&lt;/body&gt;</span><br />
+    <span className="text-blue-600">&lt;/html&gt;</span>
+  </code>
+</pre>
      <h1 className="text-2xl mt-10 mb-5">CSS Float Layout</h1>
      <p>The float layout is used to position elements to the left or right within the normal document flow. It's commonly used for creating two-column layouts or wrapping text around images on a webpage.</p>
     </div>

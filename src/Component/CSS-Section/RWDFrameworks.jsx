@@ -54,43 +54,131 @@ const CssRWDFrameworks = () => {
 
       {/* Example 1: Bootstrap */}
       <h2 className="text-2xl font-semibold">Example: Bootstrap Grid</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Bootstrap Example</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Bootstrap CDN -->
-<link rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-</head>
-<body>
-<div class="container">
-<div class="row">
-<div class="col-md-6 bg-primary text-white">Column 1</div>
-<div class="col-md-6 bg-success text-white">Column 2</div>
-</div>
-</div>
-</body>
-</html>`}
-</code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;!DOCTYPE html&gt;</span>
+    <br />
+
+    <span className="text-blue-600">&lt;html</span>{" "}
+    <span className="text-red-500">lang</span>=
+    <span className="text-green-700">"en"</span>
+    <span className="text-blue-600">&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;head&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;meta</span>{" "}
+    <span className="text-red-500">charset</span>=
+    <span className="text-green-700">"UTF-8"</span>
+    <span className="text-blue-600"> /&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;title&gt;</span>
+    Bootstrap Example
+    <span className="text-blue-600">&lt;/title&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;meta</span>{" "}
+    <span className="text-red-500">name</span>=
+    <span className="text-green-700">"viewport"</span>{" "}
+    <span className="text-red-500">content</span>=
+    <span className="text-green-700">"width=device-width, initial-scale=1.0"</span>
+    <span className="text-blue-600"> /&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-500">&lt;!-- Bootstrap CDN --&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;link</span>{" "}
+    <span className="text-red-500">rel</span>=
+    <span className="text-green-700">"stylesheet"</span>{" "}
+    <span className="text-red-500">href</span>=
+    <span className="text-green-700">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"</span>
+    <span className="text-blue-600"> /&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/head&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;body&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;div</span>{" "}
+    <span className="text-red-500">class</span>=
+    <span className="text-green-700">"container"</span>
+    <span className="text-blue-600">&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;div</span>{" "}
+    <span className="text-red-500">class</span>=
+    <span className="text-green-700">"row"</span>
+    <span className="text-blue-600">&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;div</span>{" "}
+    <span className="text-red-500">class</span>=
+    <span className="text-green-700">"col-md-6 bg-primary text-white"</span>
+    <span className="text-blue-600">&gt;</span>
+    Column 1
+    <span className="text-blue-600">&lt;/div&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;div</span>{" "}
+    <span className="text-red-500">class</span>=
+    <span className="text-green-700">"col-md-6 bg-success text-white"</span>
+    <span className="text-blue-600">&gt;</span>
+    Column 2
+    <span className="text-blue-600">&lt;/div&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;/div&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;/div&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/body&gt;</span>
+    <br />
+
+    <span className="text-blue-600">&lt;/html&gt;</span>
+  </code>
+</pre>
+
       <p className="text-gray-700">
       Here, col-md-6 means that on medium screens and above, each column will take up half the width of the screen. On smaller screens, they will automatically stack.
       </p>
 
       {/* Example 2: Tailwind */}
       <h2 className="text-2xl font-semibold">Example: Tailwind CSS Grid</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-  <div class="bg-blue-500 text-white p-4">Column 1</div>
-  <div class="bg-green-500 text-white p-4">Column 2</div>
-  </div>`}
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;div</span>{" "}
+    <span className="text-red-500">class</span>=
+    <span className="text-green-700">"grid grid-cols-1 md:grid-cols-2 gap-4"</span>
+    <span className="text-blue-600">&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span>{" "}
+    <span className="text-red-500">class</span>=
+    <span className="text-green-700">"bg-blue-500 text-white p-4"</span>
+    <span className="text-blue-600">&gt;</span>
+    Column 1
+    <span className="text-blue-600">&lt;/div&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span>{" "}
+    <span className="text-red-500">class</span>=
+    <span className="text-green-700">"bg-green-500 text-white p-4"</span>
+    <span className="text-blue-600">&gt;</span>
+    Column 2
+    <span className="text-blue-600">&lt;/div&gt;</span>
+    <br />
+
+    <span className="text-blue-600">&lt;/div&gt;</span>
   </code>
-      </pre>
+</pre>
+
       <p className="text-gray-700">
        In Tailwind, grid-cols-1 creates a single column on small screens, and md:grid-cols-2 breaks it into two columns on medium screens.</p>
     </div>

@@ -15,82 +15,90 @@ const CssWebsite = () => {
 
       {/* Example Code */}
       <div className="bg-gray-100 p-4 rounded-lg mb-6">
-        <pre className="text-green-400  bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-600">&lt;html</span> <span className="text-red-500">lang</span>=<span className="text-green-700">"en"</span><span className="text-blue-600">&gt;</span><br /><br />
 
-{`<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My CSS Website</title>
-<style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  }
-  header {
-    background: #1e3a8a;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    }
-    nav {
-      background: #2563eb;
-      padding: 10px;
-      text-align: center;
-      }
-      nav a {
-        color: white;
-        margin: 0 15px;
-        text-decoration: none;
-        }
-        nav a:hover {
-          text-decoration: underline;
-          }
-          main {
-            padding: 20px;
-            }
-            footer {
-              background: #1e3a8a;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      }
-      </style>
-      </head>
-<body>
-  <header>
-  <h1>Welcome to My CSS Website</h1>
-  </header>
-  
-  <nav>
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-    <a href="#">Contact</a>
-  </nav>
-  
-  <main>
-  <h2>About This Website</h2>
-    <p>
-    Ye ek simple example hai jisme humne CSS ka use karke 
-      ek basic website banayi hai.
-      </p>
-  </main>
+    <span className="text-blue-600">&lt;head&gt;</span><br />
+    <span className="text-blue-600">&lt;meta</span> <span className="text-red-500">charset</span>=<span className="text-green-700">"UTF-8"</span><span className="text-blue-600">&gt;</span><br />
+    <span className="text-blue-600">&lt;meta</span> <span className="text-red-500">name</span>=<span className="text-green-700">"viewport"</span> <span className="text-red-500">content</span>=<span className="text-green-700">"width=device-width, initial-scale=1.0"</span><span className="text-blue-600">&gt;</span><br />
+    <span className="text-blue-600">&lt;title&gt;</span>My CSS Website<span className="text-blue-600">&lt;/title&gt;</span><br /><br />
 
-  <footer>
-    <p>&copy; 2025 My CSS Website</p>
-    </footer>
-</body>
-</html>`}
-    </code>
-        </pre>
-      </div>
+    <span className="text-blue-600">&lt;style&gt;</span><br />
+
+    <span className="text-blue-600">body</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font-family</span>: <span className="text-green-700">Arial, sans-serif</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">margin</span>: <span className="text-green-700">0</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">0</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">header</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background</span>: <span className="text-green-700">#1e3a8a</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-align</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">20px</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">nav</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background</span>: <span className="text-green-700">#2563eb</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">10px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-align</span>: <span className="text-green-700">center</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">nav a</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">margin</span>: <span className="text-green-700">0 15px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-decoration</span>: <span className="text-green-700">none</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">nav a:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">text-decoration</span>: <span className="text-green-700">underline</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">main</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">20px</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">footer</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background</span>: <span className="text-green-700">#1e3a8a</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-align</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">15px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">position</span>: <span className="text-green-700">fixed</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">bottom</span>: <span className="text-green-700">0</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">100%</span>;<br />
+    <span>{'}'}</span><br />
+
+    <span className="text-blue-600">&lt;/style&gt;</span><br />
+    <span className="text-blue-600">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-600">&lt;body&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;header&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;h1&gt;</span>Welcome to My CSS Website<span className="text-blue-600">&lt;/h1&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/header&gt;</span><br /><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;nav&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;a&gt;</span>Home<span className="text-blue-600">&lt;/a&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;a&gt;</span>About<span className="text-blue-600">&lt;/a&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;a&gt;</span>Services<span className="text-blue-600">&lt;/a&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;a&gt;</span>Contact<span className="text-blue-600">&lt;/a&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/nav&gt;</span><br /><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;main&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;h2&gt;</span>About This Website<span className="text-blue-600">&lt;/h2&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;p&gt;</span>Ye ek simple example hai jisme humne CSS ka use karke ek basic website banayi hai.<span className="text-blue-600">&lt;/p&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/main&gt;</span><br /><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;footer&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;p&gt;</span>© 2025 My CSS Website<span className="text-blue-600">&lt;/p&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/footer&gt;</span><br /><br />
+
+    <span className="text-blue-600">&lt;/body&gt;</span><br />
+    <span className="text-blue-600">&lt;/html&gt;</span>
+  </code>
+</pre></div>
 
       {/* Explanation */}
       <div className="bg-green-100 p-3">

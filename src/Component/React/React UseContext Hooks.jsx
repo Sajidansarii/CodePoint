@@ -25,11 +25,16 @@ const UseContextHooks = () => {
             </ul>
 
             <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-             <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-                <code>
-                    {`const contextValue = useContext(MyContext);`}
-                </code>
-             </pre>
+          <pre className="bg-gray-200 text-sm p-4 rounded-lg overflow-x-auto mt-5">
+  <code>
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-blue-600">contextValue</span>{" "}
+    <span className="text-pink-500">=</span>{" "}
+    <span className="text-blue-600">useContext</span>
+    <span className="text-gray-800">(MyContext)</span>
+    <span className="text-pink-500">;</span>
+  </code>
+</pre>
 
              <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">How does it work?</h2>
              <p>The useContext hook facilitates consumption of context values, enabling components to access shared state throughout the component tree without the need for manual prop propagation. Here’s the mechanism:</p>
@@ -43,109 +48,428 @@ const UseContextHooks = () => {
 
              <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Creating a Context</h2>
             <p>Before using useContext, you first create a context with React.createContext(). This context holds a value that any child component inside a Context.Provider can access.</p>
-            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-                <code>
-                    {`import React, { createContext, useContext, useState } from 'react';
+           <pre className="bg-gray-200 text-sm p-4 rounded-lg overflow-x-auto mt-5">
+  <code>
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-800">
+      React, {`{ createContext, useContext, useState }`}
+    </span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-green-600">'react'</span>
+    <span className="text-pink-500">;</span>
 
-const MyContext = createContext();
+    {"\n\n"}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-blue-600">MyContext</span>{" "}
+    <span className="text-pink-500">=</span>{" "}
+    <span className="text-blue-600">createContext</span>
+    <span className="text-gray-800">()</span>
+    <span className="text-pink-500">;</span>
 
-function App() {
-    const [value, setValue] = useState('Hello, World!');
+    {"\n\n"}
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-blue-600">App</span>
+    <span className="text-gray-800">()</span>
+    <span className="text-gray-800">{`{`}</span>
 
-    return (
-        <MyContext.Provider value={value}>
-            <ChildComponent />
-        </MyContext.Provider>
-    );
-}
+    {"\n"}
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-gray-800">{`[value, setValue]`}</span>{" "}
+    <span className="text-pink-500">=</span>{" "}
+    <span className="text-blue-600">useState</span>
+    <span className="text-gray-800">('Hello, World!')</span>
+    <span className="text-pink-500">;</span>
 
-function ChildComponent() {
-    const contextValue = useContext(MyContext);
-    return <h1>{contextValue}</h1>;
-}`}
-                </code>
-            </pre>
+    {"\n\n"}
+    {"  "}
+    <span className="text-purple-600">return</span>{" "}
+    <span className="text-gray-800">(</span>
+
+    {"\n"}
+    {"    "}
+    <span className="text-blue-600">&lt;MyContext.Provider</span>{" "}
+    <span className="text-green-600">value</span>
+    <span className="text-pink-500">=</span>
+    <span className="text-gray-800">{`{value}`}</span>
+    <span className="text-blue-600">&gt;</span>
+
+    {"\n"}
+    {"      "}
+    <span className="text-blue-600">&lt;ChildComponent /&gt;</span>
+
+    {"\n"}
+    {"    "}
+    <span className="text-blue-600">&lt;/MyContext.Provider&gt;</span>
+
+    {"\n"}
+    {"  "}
+    <span className="text-gray-800">)</span>
+    <span className="text-pink-500">;</span>
+
+    {"\n"}
+    <span className="text-gray-800">{`}`}</span>
+
+    {"\n\n"}
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-blue-600">ChildComponent</span>
+    <span className="text-gray-800">()</span>
+    <span className="text-gray-800">{`{`}</span>
+
+    {"\n"}
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-blue-600">contextValue</span>{" "}
+    <span className="text-pink-500">=</span>{" "}
+    <span className="text-blue-600">useContext</span>
+    <span className="text-gray-800">(MyContext)</span>
+    <span className="text-pink-500">;</span>
+
+    {"\n"}
+    {"  "}
+    <span className="text-purple-600">return</span>{" "}
+    <span className="text-gray-800">(</span>
+    <span className="text-blue-600">&lt;h1&gt;</span>
+    {`{contextValue}`}
+    <span className="text-blue-600">&lt;/h1&gt;</span>
+    <span className="text-gray-800">)</span>
+    <span className="text-pink-500">;</span>
+
+    {"\n"}
+    <span className="text-gray-800">{`}`}</span>
+  </code>
+</pre>
+
 
             <p className="mt-5">When you call <span className="text-red-400">createContext()</span>, you get a context object (like MyContext) with a default value. Using MyContext.Provider, you can pass that value to all children inside it. Any component, such as ChildComponent, can use useContext(MyContext) to get the value.</p>
         
         <h2 className="text-3xl text-gray-800 font-semibold mt-10 mb-3">Implementing the useContext Hook</h2>
         <h2 className="text-2xl text-gray-800 font-semibold mb-3">Managing Authentication with useContext</h2>
        <p>You can use useContext to keep track of whether a user is logged in or not and share this state with all components.</p>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`import React, { createContext, useContext, useState } from 'react';
-const AuthContext = createContext();
-function AuthProvider({ children }) {
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
-    return (
-        <AuthContext.Provider value={{ isLoggedIn, setIsLoggedIn }}>
-            {children}
-        </AuthContext.Provider>
-    );
-}
-function LoginButton() {
-    const { isLoggedIn, setIsLoggedIn } = useContext(AuthContext);
-    return (
-        <button onClick={() => setIsLoggedIn(!isLoggedIn)}>
-            {isLoggedIn ? 'Logout' : 'Login'}
-        </button>
-    );
-}
-function App() {
-    return (
-        <AuthProvider>
-            <LoginButton />
-        </AuthProvider>
-    );
-}
-export default App;`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 text-sm p-4 rounded-lg overflow-x-auto mt-5">
+  <code>
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-800">
+      React, {`{ createContext, useContext, useState }`}
+    </span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-green-600">'react'</span>
+    <span className="text-pink-500">;</span>
+
+    {"\n"}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-blue-600">AuthContext</span>{" "}
+    <span className="text-pink-500">=</span>{" "}
+    <span className="text-blue-600">createContext</span>
+    <span className="text-gray-800">()</span>
+    <span className="text-pink-500">;</span>
+
+    {"\n\n"}
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-blue-600">AuthProvider</span>
+    <span className="text-gray-800">{`({ children })`}</span>
+    <span className="text-gray-800">{`{`}</span>
+
+    {"\n"}
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-gray-800">{`[isLoggedIn, setIsLoggedIn]`}</span>{" "}
+    <span className="text-pink-500">=</span>{" "}
+    <span className="text-blue-600">useState</span>
+    <span className="text-gray-800">(false)</span>
+    <span className="text-pink-500">;</span>
+
+    {"\n\n"}
+    {"  "}
+    <span className="text-purple-600">return</span>{" "}
+    <span className="text-gray-800">(</span>
+
+    {"\n"}
+    {"    "}
+    <span className="text-blue-600">&lt;AuthContext.Provider</span>{" "}
+    <span className="text-green-600">value</span>
+    <span className="text-pink-500">=</span>
+    <span className="text-gray-800">{`{{ isLoggedIn, setIsLoggedIn }}`}</span>
+    <span className="text-blue-600">&gt;</span>
+
+    {"\n"}
+    {"      "}
+    <span className="text-gray-800">{`{children}`}</span>
+
+    {"\n"}
+    {"    "}
+    <span className="text-blue-600">&lt;/AuthContext.Provider&gt;</span>
+
+    {"\n"}
+    {"  "}
+    <span className="text-gray-800">)</span>
+    <span className="text-pink-500">;</span>
+
+    {"\n"}
+    <span className="text-gray-800">{`}`}</span>
+
+    {"\n\n"}
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-blue-600">LoginButton</span>
+    <span className="text-gray-800">()</span>
+    <span className="text-gray-800">{`{`}</span>
+
+    {"\n"}
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-gray-800">{`{ isLoggedIn, setIsLoggedIn }`}</span>{" "}
+    <span className="text-pink-500">=</span>{" "}
+    <span className="text-blue-600">useContext</span>
+    <span className="text-gray-800">(AuthContext)</span>
+    <span className="text-pink-500">;</span>
+
+    {"\n\n"}
+    {"  "}
+    <span className="text-purple-600">return</span>{" "}
+    <span className="text-gray-800">(</span>
+
+    {"\n"}
+    {"    "}
+    <span className="text-blue-600">&lt;button</span>{" "}
+    <span className="text-green-600">onClick</span>
+    <span className="text-pink-500">=</span>
+    <span className="text-gray-800">{`() => setIsLoggedIn(!isLoggedIn)`}</span>
+    <span className="text-blue-600">&gt;</span>
+
+    {"\n"}
+    {"      "}
+    <span className="text-gray-800">{`{isLoggedIn ? 'Logout' : 'Login'}`}</span>
+
+    {"\n"}
+    {"    "}
+    <span className="text-blue-600">&lt;/button&gt;</span>
+
+    {"\n"}
+    {"  "}
+    <span className="text-gray-800">)</span>
+    <span className="text-pink-500">;</span>
+
+    {"\n"}
+    <span className="text-gray-800">{`}`}</span>
+
+    {"\n\n"}
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-blue-600">App</span>
+    <span className="text-gray-800">()</span>
+    <span className="text-gray-800">{`{`}</span>
+
+    {"\n"}
+    {"  "}
+    <span className="text-purple-600">return</span>{" "}
+    <span className="text-gray-800">(</span>
+
+    {"\n"}
+    {"    "}
+    <span className="text-blue-600">&lt;AuthProvider&gt;</span>
+
+    {"\n"}
+    {"      "}
+    <span className="text-blue-600">&lt;LoginButton /&gt;</span>
+
+    {"\n"}
+    {"    "}
+    <span className="text-blue-600">&lt;/AuthProvider&gt;</span>
+
+    {"\n"}
+    {"  "}
+    <span className="text-gray-800">)</span>
+    <span className="text-pink-500">;</span>
+
+    {"\n"}
+    <span className="text-gray-800">{`}`}</span>
+
+    {"\n\n"}
+    <span className="text-purple-600">export default</span>{" "}
+    <span className="text-blue-600">App</span>
+    <span className="text-pink-500">;</span>
+  </code>
+</pre>
 
       <p className="mt-5">AuthContext is initialized via createContext(), with AuthProvider handling the isLoggedIn state and supplying it through the context to descendant components. LoginButton consumes isLoggedIn and setIsLoggedIn via useContext to toggle authentication status. The App component renders LoginButton within AuthProvider, supporting dynamic login and logout operations.</p>
       
 
       <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Sharing a Theme Across Components</h2>
       <p>Create a theme context and consume its values in child components using useContext.</p>
-       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`import React, { createContext, useContext, useState } from 'react';
+   <pre className="bg-gray-200 text-sm p-4 rounded-lg overflow-x-auto mt-5">
+  <code>
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-800">
+      React, {`{ createContext, useContext, useState }`}
+    </span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-green-600">'react'</span>
+    <span className="text-pink-500">;</span>
 
-const ThemeContext = createContext();
-function ThemeProvider({ children }) {
-    const [theme, setTheme] = useState('light');
+    {"\n\n"}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-blue-600">ThemeContext</span>{" "}
+    <span className="text-pink-500">=</span>{" "}
+    <span className="text-blue-600">createContext</span>
+    <span className="text-gray-800">()</span>
+    <span className="text-pink-500">;</span>
 
-    const toggleTheme = () => {
-        setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
-    };
+    {"\n\n"}
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-blue-600">ThemeProvider</span>
+    <span className="text-gray-800">{`({ children })`}</span>
+    <span className="text-gray-800">{`{`}</span>
 
-    return (
-        <ThemeContext.Provider value={{ theme, toggleTheme }}>
-            {children}
-        </ThemeContext.Provider>
-    );
-}
-function ThemedComponent() {
-    const { theme, toggleTheme } = useContext(ThemeContext);
-    return (
-        <div style={{ background: theme === 'light' ? '#fff' : '#333', 
-            color: theme === 'light' ? '#000' : '#fff', padding: '20px', textAlign: 'center' }}>
-            <p>Current Theme: {theme}</p>
-            <button onClick={toggleTheme}>Toggle Theme</button>
-        </div>
-    );
-}
-function App() {
-    return (
-        <ThemeProvider>
-            <ThemedComponent />
-        </ThemeProvider>
-    );
-}
+    {"\n"}
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-gray-800">{`[theme, setTheme]`}</span>{" "}
+    <span className="text-pink-500">=</span>{" "}
+    <span className="text-blue-600">useState</span>
+    <span className="text-gray-800">('light')</span>
+    <span className="text-pink-500">;</span>
 
-export default App;`}
-        </code>
-        </pre> 
+    {"\n\n"}
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-blue-600">toggleTheme</span>{" "}
+    <span className="text-pink-500">=</span>{" "}
+    <span className="text-gray-800">()</span>{" "}
+    <span className="text-pink-500">=&gt;</span>{" "}
+    <span className="text-gray-800">{`{`}</span>
+
+    {"\n"}
+    {"    "}
+    <span className="text-blue-600">setTheme</span>
+    <span className="text-gray-800">(prevTheme =&gt; (prevTheme === 'light' ? 'dark' : 'light'))</span>
+    <span className="text-pink-500">;</span>
+
+    {"\n"}
+    {"  "}
+    <span className="text-gray-800">{`}`}</span>
+    <span className="text-pink-500">;</span>
+
+    {"\n\n"}
+    {"  "}
+    <span className="text-purple-600">return</span>{" "}
+    <span className="text-gray-800">(</span>
+
+    {"\n"}
+    {"    "}
+    <span className="text-blue-600">&lt;ThemeContext.Provider</span>{" "}
+    <span className="text-green-600">value</span>
+    <span className="text-pink-500">=</span>
+    <span className="text-gray-800">{`{{ theme, toggleTheme }}`}</span>
+    <span className="text-blue-600">&gt;</span>
+
+    {"\n"}
+    {"      "}
+    <span className="text-gray-800">{`{children}`}</span>
+
+    {"\n"}
+    {"    "}
+    <span className="text-blue-600">&lt;/ThemeContext.Provider&gt;</span>
+
+    {"\n"}
+    {"  "}
+    <span className="text-gray-800">)</span>
+    <span className="text-pink-500">;</span>
+
+    {"\n"}
+    <span className="text-gray-800">{`}`}</span>
+
+    {"\n\n"}
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-blue-600">ThemedComponent</span>
+    <span className="text-gray-800">()</span>
+    <span className="text-gray-800">{`{`}</span>
+
+    {"\n"}
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-gray-800">{`{ theme, toggleTheme }`}</span>{" "}
+    <span className="text-pink-500">=</span>{" "}
+    <span className="text-blue-600">useContext</span>
+    <span className="text-gray-800">(ThemeContext)</span>
+    <span className="text-pink-500">;</span>
+
+    {"\n\n"}
+    {"  "}
+    <span className="text-purple-600">return</span>{" "}
+    <span className="text-gray-800">(</span>
+
+    {"\n"}
+    {"    "}
+    <span className="text-blue-600">&lt;div</span>{" "}
+    <span className="text-green-600">style</span>
+    <span className="text-pink-500">=</span>
+    <span className="text-gray-800">{`{{ background: theme === 'light' ? '#fff' : '#333', color: theme === 'light' ? '#000' : '#fff', padding: '20px', textAlign: 'center' }}`}</span>
+    <span className="text-blue-600">&gt;</span>
+
+    {"\n"}
+    {"      "}
+    <span className="text-blue-600">&lt;p&gt;</span>
+    Current Theme: {`{theme}`}
+    <span className="text-blue-600">&lt;/p&gt;</span>
+
+    {"\n"}
+    {"      "}
+    <span className="text-blue-600">&lt;button</span>{" "}
+    <span className="text-green-600">onClick</span>
+    <span className="text-pink-500">=</span>
+    <span className="text-gray-800">{`{toggleTheme}`}</span>
+    <span className="text-blue-600">&gt;</span>
+    Toggle Theme
+    <span className="text-blue-600">&lt;/button&gt;</span>
+
+    {"\n"}
+    {"    "}
+    <span className="text-blue-600">&lt;/div&gt;</span>
+
+    {"\n"}
+    {"  "}
+    <span className="text-gray-800">)</span>
+    <span className="text-pink-500">;</span>
+
+    {"\n"}
+    <span className="text-gray-800">{`}`}</span>
+
+    {"\n\n"}
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-blue-600">App</span>
+    <span className="text-gray-800">()</span>
+    <span className="text-gray-800">{`{`}</span>
+
+    {"\n"}
+    {"  "}
+    <span className="text-purple-600">return</span>{" "}
+    <span className="text-gray-800">(</span>
+
+    {"\n"}
+    {"    "}
+    <span className="text-blue-600">&lt;ThemeProvider&gt;</span>
+
+    {"\n"}
+    {"      "}
+    <span className="text-blue-600">&lt;ThemedComponent /&gt;</span>
+
+    {"\n"}
+    {"    "}
+    <span className="text-blue-600">&lt;/ThemeProvider&gt;</span>
+
+    {"\n"}
+    {"  "}
+    <span className="text-gray-800">)</span>
+    <span className="text-pink-500">;</span>
+
+    {"\n"}
+    <span className="text-gray-800">{`}`}</span>
+
+    {"\n\n"}
+    <span className="text-purple-600">export default</span>{" "}
+    <span className="text-blue-600">App</span>
+    <span className="text-pink-500">;</span>
+  </code>
+</pre>
 
         <p className="mt-5">First, ThemeContext is made with <span className="text-red-400">createContext()</span>. ThemeProvider keeps track of the current theme and provides a toggleTheme function. ThemedComponent uses useContext(ThemeContext) to get the theme and toggle it. When the button is clicked, it switches between light and dark themes.</p>
 
@@ -174,16 +498,6 @@ export default App;`}
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Performance Considerations</h2>
       <p>To make your app faster, avoid extra re-renders by using useMemo and useCallback for values and functions. For expensive state setups, use lazy initialization in useState. Always clean up any side effects in useEffect, and try to keep dependencies as small as possible so useEffect doesn’t run more than it needs to.</p>
-
-
-
-
-
-
-
-
-
-        
         </div>
     )
 }

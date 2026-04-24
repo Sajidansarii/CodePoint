@@ -17,46 +17,49 @@ const ExternalCSS = () => {
         <code className="bg-gray-200 px-1 rounded">&lt;link&gt;</code> tag inside
         the <code>&lt;head&gt;</code> section of your HTML file:
       </p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`<head>
-  <link rel="stylesheet" href="styles.css">
-</head>`}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-blue-600">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;link</span> <span className="text-red-500">rel</span>=<span className="text-green-700">"stylesheet"</span> <span className="text-red-500">href</span>=<span className="text-green-700">"styles.css"</span><span className="text-blue-600">&gt;</span><br />
+    <span className="text-blue-600">&lt;/head&gt;</span>
+  </code>
+</pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Example</h2>
       <p className="mb-2">HTML file:</p>
-      <pr className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`<!DOCTYPE html>
-<html>
-<head>
-  <title>External CSS Example</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h1>This is a Heading</h1>
-  <p>This is a paragraph styled with External CSS.</p>
-</body>
-</html>`}
-        </code>
-      </pr>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-blue-600">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-600">&lt;html&gt;</span><br /><br />
+
+    <span className="text-blue-600">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;title&gt;</span>External CSS Example<span className="text-blue-600">&lt;/title&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;link</span> <span className="text-red-500">rel</span>=<span className="text-green-700">"stylesheet"</span> <span className="text-red-500">href</span>=<span className="text-green-700">"styles.css"</span><span className="text-blue-600">&gt;</span><br />
+    <span className="text-blue-600">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-600">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;h1&gt;</span>This is a Heading<span className="text-blue-600">&lt;/h1&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;p&gt;</span>This is a paragraph styled with External CSS.<span className="text-blue-600">&lt;/p&gt;</span><br />
+    <span className="text-blue-600">&lt;/body&gt;</span><br />
+
+    <span className="text-blue-600">&lt;/html&gt;</span>
+  </code>
+</pre>
 
       <p className="text-gray-700 mb-2">CSS file (<code>styles.css</code>):</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`h1 {
-  color: blue;
-  text-align: center;
-}
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-blue-600">h1</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">blue</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-align</span>: <span className="text-green-700">center</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-p {
-  font-size: 18px;
-  color: green;
-}`}
-        </code>
-      </pre>
+    <span className="text-blue-600">p</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font-size</span>: <span className="text-green-700">18px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">green</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Output</h2>
       <div className="border p-4 bg-white rounded-lg mb-6">

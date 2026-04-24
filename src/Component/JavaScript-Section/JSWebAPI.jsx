@@ -21,7 +21,7 @@ const JSWebAPI = () => {
      <p>Browsers include a collection of native Web APIs to support complex functions and retrieve data; as an example, the Geolocation API returns the location coordinates of the browser.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
      <p>Fetch the user’s current position in terms of latitude and longitude.</p>
-     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`const myElement = document.getElementById("demo");
 
@@ -48,21 +48,6 @@ function showPosition(position) {
         <li>Twitter API - Allows you to display Tweets on a web site.</li>
         <li>Facebook API - Allows you to display Facebook info on a web site.</li>
       </ul>
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     </div>

@@ -13,11 +13,29 @@ const HTMLBlockElements = () => {
         <p className="leading-relaxed mb-3">
           A block-level element always starts on a new line and stretches to fill its container’s width by default. Examples include <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>–<code>&lt;h6&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;article&gt;</code>.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          {`<div>
-  <h1>Title</h1>
-  <p>This is a paragraph inside a block.</p>
-</div>`}
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">div</span>
+            <span className="text-gray-30">&gt;</span><br></br>
+            <span className="text-gray-30">&lt;</span> 
+            <span className="text-blue-500">h1</span>
+            <span className="text-gray-30">&lt;</span>
+            <span className="">Title</span>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">h1</span>
+            <span className="text-gray-30">&gt;</span><br></br>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">p</span>
+            <span className="text-gray-30">&gt;</span>
+            <span className="text-gray-30">This is a paragraph inside a block.</span>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">p</span>
+            <span className="text-gray-30">&gt;</span><br></br>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">div</span>
+            <span className="text-gray-30">&gt;</span>
+          </code>
         </pre>
       </section>
 
@@ -33,13 +51,41 @@ const HTMLBlockElements = () => {
             <strong>Inline:</strong> Flows inside a line and only takes as much width as needed (e.g., <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>).
           </li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          {`<!-- Block elements stack vertically -->
-<div>Block 1</div>
-<div>Block 2</div>
-
-<!-- Inline elements sit horizontally -->
-<span>Inline 1</span><span>Inline 2</span>`}
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+         <code>
+          <span className="text-gray-30">&lt;</span>
+          <span className="">!-- Block elements stack vrtically</span>
+          <span className="text-gray-30">--&gt;</span><br></br>
+          <span className="text-gray-30">&lt;</span>
+          <span className="text-blue-500">div</span>
+          <span className="text-gray-30">&gt;</span>
+          <span className="">Block 1</span>
+          <span className="text-gray-30">&lt;</span>
+          <span className="text-blue-500">div</span>
+          <span className="text-gray-30">&gt;</span><br></br>
+          <span className="text-gray-30">&lt;</span>
+          <span className="text-blue-500">div</span>
+          <span className="text-text-30">&gt;</span>
+          <span className="">Block 2</span>
+          <span className="text-gray-30">&lt;/</span>
+          <span className="text-blue-500">div</span>
+          <span className="text-gray-30">&gt;</span><br></br><br></br>
+          <span className="text-gray-30">&lt;</span>
+          <span className="text-gray-30">!-- Inline elements sit horizontal --</span>
+          <span className="text-gray-30">&gt;</span><br></br>
+          <span className="text-gray-30">&lt;</span>
+          <span className="text-blue-500">span</span>
+          <span className="">Inline 1</span>
+          <span className="text-gray-30">&lt;/</span>
+          <span className="text-blue-500">span</span>
+          <span className="text-gray-30">&gt;</span><br></br>
+          <span className="text-gray-30">&lt;</span>
+          <span className="text-blue-500">span</span>
+          <span className="">Inline 2</span>
+          <span className="text-gray-30">&lt;/</span>
+          <span className="text-blue-500">span</span>
+          <span className="text-gray-30">&gt;</span>
+         </code>
         </pre>
       </section>
 
@@ -49,10 +95,35 @@ const HTMLBlockElements = () => {
         <p className="leading-relaxed mb-3">
           You can override default behavior with CSS using the <code>display</code> property.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mt-5 mb-3">
-          {`<div style="display: inline;">This behaves like inline</div>
-<span style="display: block;">This behaves like block</span>`}
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+         <code>
+          <span className="text-gray-30">&lt;</span>
+          <span className="text-blue-500">div</span>
+          <span className="text-red-500"> style=</span>
+          <span className="text-green-600">"display: inline";</span>
+          <span className="text-gray-30">&gt;</span>
+          <span>This behaves like inline</span>
+          <span className="text-gray-30">&lt;/</span>
+          <span className="text-blue-500">div</span>
+          <span className="text-gray-30">&gt;</span><br></br>
+          <span className="text-gray-30">&lt;</span>
+          <span className="text-blue-500">span</span>
+          <span className="text-red-500"> style=</span>
+          <span className="text-green-600">"display: block";</span>
+          <span className="text-gray-30">&gt;</span>
+          <span className="">This behaves like block</span>
+          <span className="text-gray-30">&lt;/</span>
+          <span className="text-blue-500">span</span>
+          <span className="text-gray-30">&gt;</span>
+         </code>
+
+          {/* {`<div style="display: inline;">This behaves like inline</div>
+<span style="display: block;">This behaves like block</span>`} */}
+       
+       
         </pre>
+
+
         <p className="leading-relaxed">
           This gives flexibility when building layouts.
         </p>

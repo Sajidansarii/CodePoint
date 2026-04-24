@@ -22,13 +22,18 @@ const CssCombinators = () => {
           </section>
         </div>
       </div>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`div p {
-  color: blue;
-  }`}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">div p</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">color</span>
+    <span>: </span>
+    <span className="text-green-700">blue</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
 
       {/* 2. Child Selector */}
       <h2 className="text-xl font-semibold mt-6 mb-2">2. Child Selector (A {'>'} B)</h2>
@@ -43,13 +48,18 @@ const CssCombinators = () => {
           </section>
         </div>
       </div>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`div > p {
-  color: green;
-  }`}
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">div &gt; p</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">color</span>
+    <span>: </span>
+    <span className="text-green-700">green</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
 
       {/* 3. Adjacent Sibling Selector */}
       <h2 className="text-xl font-semibold mt-6 mb-2">3. Adjacent Sibling Selector (A + B)</h2>
@@ -61,13 +71,18 @@ const CssCombinators = () => {
         <p className="text-red-600">This paragraph comes right after h3 (selected)</p>
         <p>This paragraph is not selected</p>
       </div>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`h3 + p {
-  color: red;
-  }`}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">h3 + p</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">color</span>
+    <span>: </span>
+    <span className="text-green-700">red</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
 
       {/* 4. General Sibling Selector */}
       <h2 className="text-xl font-semibold mt-6 mb-2">4. General Sibling Selector (A ~ B)</h2>
@@ -79,13 +94,18 @@ const CssCombinators = () => {
         <p className="text-purple-600">This is a sibling paragraph (selected)</p>
         <p className="text-purple-600">This one too (selected)</p>
       </div>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`h3 ~ p {
-  color: purple;
-  }`}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">h3 ~ p</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">color</span>
+    <span>: </span>
+    <span className="text-green-700">purple</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
 
       {/* Summary */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Summary</h2>

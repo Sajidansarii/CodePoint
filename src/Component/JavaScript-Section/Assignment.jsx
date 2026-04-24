@@ -87,167 +87,173 @@ const data2 = [
 
       <h1 className="text-2xl font-semibold text-gray-800 mt-10 mb-2">The = Operator</h1>
       <p>The simple assignment operator sets a variable to a given value.</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-4 mt-5">
-        <code>
-          {`
-let x = 10;    // Assign 10 to x
-let y = 5;     // Assign 5 to y
-`}
-        </code>
-      </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let x = 10; &nbsp;&nbsp;// Assign 10 to x
+    <br />
+    let y = 5; &nbsp;&nbsp;// Assign 5 to y
+  </code>
+</pre>
 
       <h1 className="text-2xl font-semibold text-gray-800 mt-10 mb-2">The += Operator</h1>
       <p>The addition assignment operator (+=) increases a variable by a given value.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-          {`
-let x = 10;
-x += 5;
-          `}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let x = 10;
+    <br />
+    x += 5;
+  </code>
+</pre>
 
       <h1 className="text-2xl font-semibold text-gray-800 mt-10 mb-2">The -= Operator</h1>
       <p>The subtraction assignment operator (-=) decreases a variable by a specified value.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-          {`
-let x = 10;
-x -= 5;
-          `}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let x = 10;
+    <br />
+    x -= 5;
+  </code>
+</pre>
 
       <h1 className="text-2xl font-semibold text-gray-800 mt-10 mb-2">The *= Operator</h1>
      <p>The multiplication assignment operator (*=) multiplies a variable by a specified value.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-      <code>
-        {`
-let x = 10;
-x *= 5;
-        `}
-      </code>
-     </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let x = 10;
+    <br />
+    x *= 5;
+  </code>
+</pre>
 
      <h1 className="text-2xl font-semibold text-gray-800 mt-10 mb-2">The **= Operator</h1>
      <p>The exponentiation assignment operator (**=) raises a variable to the power of a specified value.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-      <code>
-        {`
-let x = 10;
-x **= 5;
-        `}
-      </code>
-     </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let x = 10;
+    <br />
+    x **= 5;
+  </code>
+</pre>
 
      <h1 className="text-2xl text-gray-800 mt-10 font-semibold mb-2">The /= Operator</h1>
      <p>The division assignment operator (/=) divides a variable by a specified value.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-      <code>
-        {`
-let x = 10;
-x /= 5;
-        `}
-      </code>
-     </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let x = 10;
+    <br />
+    x /= 5;
+  </code>
+</pre>
 
      <h1 className="text-2xl text-gray-800 mt-10 font-semibold mb-2">The %= Operator</h1>
      <p>The remainder assignment operator (%=) assigns the remainder of a division to a variable.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-      <code>
-        {`
-let x = 10;
-x %= 5;
-        `}
-      </code>
-     </pre>
+ <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let x = 10;
+    <br />
+    x %= 5;
+  </code>
+</pre>
 
      <h1 className="text-2xl text-gray-800 mt-10 font-semibold mb-2">The &&= Operator</h1>
      <p>The logical AND assignment operator (&&=) is applied between two values.</p>
      <p>If the first value is truthy, the second value gets assigned.</p>
      <h2 className="text-2xl mt-5 font-semibold text-gray-800">Example</h2>
-     <pre className="text-green-400 bg-gray-900 px-5 rounded-lg mt-5">
-      <code>
-        {`
-let x = true;
-let y = x &&= 10;
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let x = true;
+    <br />
+    let y = x &amp;&amp;= 10;
+    <br /><br />
 
-let x = null;
-let y = x &&= 10;
+    let x = null;
+    <br />
+    let y = x &amp;&amp;= 10;
+    <br /><br />
 
-let x = undefined;
-let y = x &&= 10;
-        `}
-      </code>
-     </pre>
+    let x = undefined;
+    <br />
+    let y = x &amp;&amp;= 10;
+  </code>
+</pre>
 
 
      <h1 className="text-2xl font-semibold text-gray-800 mt-10 mb-2">The ||= Operator</h1>
      <p>The logical OR assignment operator (||=) is applied between two values.</p>
      <p>If the any condition is true, the value is assigned</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-      <code>
-        {`
-let x = true;
-let y = x ||= 10;
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let x = true;
+    <br />
+    let y = x ||= 10;
+    <br /><br />
 
-let x = null;
-let y = x ||= 10;
+    let x = null;
+    <br />
+    let y = x ||= 10;
+    <br /><br />
 
-let x = undefined;
-let y = x ||= 10;
-        `}
-      </code>
-     </pre>
+    let x = undefined;
+    <br />
+    let y = x ||= 10;
+  </code>
+</pre>
 
      <h1 className="text-2xl font-semibold text-gray-800 mt-10 mb-2">The ??= Operator</h1>
      <p className="mb-2">The nullish coalescing assignment operator (??=) is applied between two values.</p>
      <p>If the first value is null or undefined, the second value gets assigned.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-      <code>
-        {`
-let x;
-x ??= 10;
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let x;
+    <br />
+    x ??= 10;
+    <br /><br />
 
-let x = 0;
-x ??= 10;
+    let x = 0;
+    <br />
+    x ??= 10;
+    <br /><br />
 
-let x = null;
-x ??= 10;
+    let x = null;
+    <br />
+    x ??= 10;
+    <br /><br />
 
-let x = undefined;
-x ??= 10;
-        `}
-      </code>
-     </pre>
+    let x = undefined;
+    <br />
+    x ??= 10;
+  </code>
+</pre>
 
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Conditional (Ternary) Operator</h1>
      <p>The Nullish Coalescing Operator (??) returns the right-hand side value if the left-hand side is null or undefined. It is useful for providing default values when a variable might be null or undefined.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
-      <code>
-        {`
-let name = null;
-let defaultName = "Guest"; 
-let displayName = name ?? defaultName;
-console.log(displayName);   // Output: Guest
-        `}
-      </code>
-    </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let name = null;
+    <br />
+    let defaultName = "Guest";
+    <br />
+    let displayName = name ?? defaultName;
+    <br />
+    console.log(displayName); &nbsp;&nbsp;// Output: Guest
+  </code>
+</pre>
 
     <h1 className="text-2xl font-semibold text-gray-800 mt-10">With Undefine</h1>
     <h2 className="text-2xl font-semibold text-gray-800 mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
-      <code>
-        {`
-let age;
-let defaultAge = 18;
-let userAge = age ?? defaultAge;
-console.log(userAge);  // Output: 18
-        `}
-      </code>
-    </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let age;
+    <br />
+    let defaultAge = 18;
+    <br />
+    let userAge = age ?? defaultAge;
+    <br />
+    console.log(userAge); &nbsp;&nbsp;// Output: 18
+  </code>
+</pre>
    
     </div>
   );

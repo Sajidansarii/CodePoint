@@ -26,12 +26,18 @@ const ImageFilterTutorial = () => {
         Filters make images more stylish without editing them in Photoshop.
       </p>
       <h1 className="text-2xl">Syntax</h1>
-      <pre className="text-green-400 bg-gray-900 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-        {`filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() 
-        | hue-rotate() | invert() | opacity() | saturate() | sepia() | url();`}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">filter</span>
+    <span>: </span>
+    <span className="text-green-700">
+      none | blur() | brightness() | contrast() | drop-shadow() | grayscale() <br />
+      | hue-rotate() | invert() | opacity() | saturate() | sepia() | url()
+    </span>
+    <span>;</span>
+  </code>
+</pre>
+
       <h1 className="text-2xl">Property Values</h1>
       <table className="min-w-full border border-gray-300 rounded-md text-sm text-left">
         <thead>
@@ -62,13 +68,19 @@ const ImageFilterTutorial = () => {
         <p className="text-gray-700 mt-2">
           The <code>blur(5px)</code> filter makes the image look blurred by <b>5px</b>.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`img {
-  filter: blur(5px);
-  }`}
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">img</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">filter</span>
+    <span>: </span>
+    <span className="text-green-700">blur(5px)</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
       </div>
 
       {/* Grayscale Example */}
@@ -83,14 +95,19 @@ const ImageFilterTutorial = () => {
         <p className="text-gray-700 mt-2">
           The <code>grayscale(100%)</code> filter converts the image into black and white.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
+      <pre className="bg-gray-200 p-3 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">img</span> <span>{'{'}</span><br />
 
-{`img {
-  filter: grayscale(100%);
-  }`}
+    <span className="text-red-500">filter</span>
+    <span>: </span>
+    <span className="text-green-700">grayscale(100%)</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
       </div>
 
       {/* Brightness Example */}
@@ -105,11 +122,18 @@ const ImageFilterTutorial = () => {
         <p className="text-gray-700 mt-2">
           The <code>brightness(150%)</code> filter increases the brightness of the image by 50%.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-{`img {
-  filter: brightness(150%);
-}`}
-        </pre>
+      <pre className="bg-gray-200 p-3 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">img</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">filter</span>
+    <span>: </span>
+    <span className="text-green-700">brightness(150%)</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
       </div>
 
       {/* Contrast Example */}
@@ -124,11 +148,18 @@ const ImageFilterTutorial = () => {
         <p className="text-gray-700 mt-2">
           The <code>contrast(200%)</code> filter doubles the difference between dark and light areas.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-{`img {
-  filter: contrast(200%);
-}`}
-        </pre>
+       <pre className="bg-gray-200 p-3 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-500">img</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">filter</span>
+    <span>: </span>
+    <span className="text-green-700">contrast(200%)</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
       </div>
 
       {/* Multiple Filters Example */}
@@ -144,11 +175,20 @@ const ImageFilterTutorial = () => {
           You can also apply <b>multiple filters together</b> like this example 
           where the image is grayscale, slightly blurred, and brightened.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-3 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-{`img {
-  filter: grayscale(80%) blur(2px) brightness(120%);
-}`}
-        </pre>
+     <pre className="bg-gray-200 p-3 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">img</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">filter</span>
+    <span>: </span>
+    <span className="text-green-700">
+      grayscale(80%) blur(2px) brightness(120%)
+    </span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
       </div>
     </div>
   );

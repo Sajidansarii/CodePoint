@@ -12,27 +12,41 @@ const InlineCSS = () => {
       </p>
 
       <h2 className="text-xl font-semibold mb-2">Syntax</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`<tagname style="property:value;">
-  Content
-</tagname>`}
-        </code>
-      </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;tagname</span>{" "}
+    <span className="text-red-500">style</span>=
+    <span className="text-green-700">"property:value;"</span>
+    <span className="text-blue-600">&gt;</span>
+    <br />
+    &nbsp;&nbsp;Content<br />
+    <span className="text-blue-600">&lt;/tagname&gt;</span>
+  </code>
+</pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Example</h2>
       <p className="text-gray-700 mb-2">The following example uses inline CSS:</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`<h1 style="color:blue; text-align:center;">
-  This is an Inline CSS Example
-</h1>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;h1</span>{" "}
+    <span className="text-red-500">style</span>=
+    <span className="text-green-700">"color:blue; text-align:center;"</span>
+    <span className="text-blue-600">&gt;</span>
+    <br />
+    &nbsp;&nbsp;This is an Inline CSS Example<br />
+    <span className="text-blue-600">&lt;/h1&gt;</span>
 
-<p style="font-size:18px; color:green;">
-  Inline CSS applies styles directly on this paragraph.
-</p>`}
-        </code>
-      </pre>
+    <br /><br />
+
+    <span className="text-blue-600">&lt;p</span>{" "}
+    <span className="text-red-500">style</span>=
+    <span className="text-green-700">"font-size:18px; color:green;"</span>
+    <span className="text-blue-600">&gt;</span>
+    <br />
+    &nbsp;&nbsp;Inline CSS applies styles directly on this paragraph.<br />
+    <span className="text-blue-600">&lt;/p&gt;</span>
+  </code>
+</pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Output</h2>
       <div className="border p-4 bg-white rounded-lg mb-6">

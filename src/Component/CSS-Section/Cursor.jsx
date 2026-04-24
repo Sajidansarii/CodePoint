@@ -15,13 +15,15 @@ const CSSCursor = () => {
       </p>
 
       <h2 className="text-xl font-semibold mb-2">Syntax</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-{`selector {
-  cursor: value;
-}`}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">selector</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">cursor</span>: <span className="text-green-700">value</span>;<br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Common Cursor Values
@@ -94,20 +96,20 @@ const CSSCursor = () => {
       </div>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Code Example</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-{`.default { cursor: default; }
-.pointer { cursor: pointer; }
-.text { cursor: text; }
-.move { cursor: move; }
-.wait { cursor: wait; }
-.not-allowed { cursor: not-allowed; }
-.help { cursor: help; }
-.crosshair { cursor: crosshair; }
-.zoom-in { cursor: zoom-in; }
-.zoom-out { cursor: zoom-out; }`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">.default</span> <span>{'{'}</span> <span className="text-red-500">cursor</span>: <span className="text-green-700">default</span>; <span>{'}'}</span><br />
+    <span className="text-blue-600">.pointer</span> <span>{'{'}</span> <span className="text-red-500">cursor</span>: <span className="text-green-700">pointer</span>; <span>{'}'}</span><br />
+    <span className="text-blue-600">.text</span> <span>{'{'}</span> <span className="text-red-500">cursor</span>: <span className="text-green-700">text</span>; <span>{'}'}</span><br />
+    <span className="text-blue-600">.move</span> <span>{'{'}</span> <span className="text-red-500">cursor</span>: <span className="text-green-700">move</span>; <span>{'}'}</span><br />
+    <span className="text-blue-600">.wait</span> <span>{'{'}</span> <span className="text-red-500">cursor</span>: <span className="text-green-700">wait</span>; <span>{'}'}</span><br />
+    <span className="text-blue-600">.not-allowed</span> <span>{'{'}</span> <span className="text-red-500">cursor</span>: <span className="text-green-700">not-allowed</span>; <span>{'}'}</span><br />
+    <span className="text-blue-600">.help</span> <span>{'{'}</span> <span className="text-red-500">cursor</span>: <span className="text-green-700">help</span>; <span>{'}'}</span><br />
+    <span className="text-blue-600">.crosshair</span> <span>{'{'}</span> <span className="text-red-500">cursor</span>: <span className="text-green-700">crosshair</span>; <span>{'}'}</span><br />
+    <span className="text-blue-600">.zoom-in</span> <span>{'{'}</span> <span className="text-red-500">cursor</span>: <span className="text-green-700">zoom-in</span>; <span>{'}'}</span><br />
+    <span className="text-blue-600">.zoom-out</span> <span>{'{'}</span> <span className="text-red-500">cursor</span>: <span className="text-green-700">zoom-out</span>; <span>{'}'}</span>
+  </code>
+</pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Key Notes</h2>
       <ul className="list-disc list-inside text-gray-700">

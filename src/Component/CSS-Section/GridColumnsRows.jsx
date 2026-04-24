@@ -56,14 +56,14 @@ const CSSGridColumnsRows = () => {
       <p>column-gap adjusts the gap between columns.</p>
       <h1 className="text-2xl mt-5 mb-3">Example</h1>
       <p>Set a 50px gap between grid columns:</p>
-      <pre className="text-green-400 bg-gray-900 rounded-lg p-4 mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-        {`.container {
-  display: grid;
-  column-gap: 20px;
-  }`}
+     <pre className="bg-gray-200 rounded-lg p-4 mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">grid</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">column-gap</span>: <span className="text-green-700">20px</span>;<br />
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
 
       <div className="border-2 border-black p-4 grid grid-cols-[92px_92px_92px] justify-center gap-y-[20px] mt-10">
          <div className="bg-blue-500 text-white font-bold p-6 text-center">1</div>
@@ -80,14 +80,14 @@ const CSSGridColumnsRows = () => {
       <p>row-gap sets the space between grid rows.</p>
       <h1 className="text-2xl mt-5 mb-3">Example</h1>
       <p>Set a 50px gap between grid rows.</p>
-      <pre className="text-green-400 bg-gray-900 rounded-lg p-4 mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-        {`.container {
-  display: grid;
-  row-gap: 20px;
-  }`}
+     <pre className="bg-gray-200 rounded-lg p-4 mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">grid</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">row-gap</span>: <span className="text-green-700">20px</span>;<br />
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
 
       <div className="border-2 h-96 pb-14 border-black p-4 grid grid-cols-[96px_96px_96px] justify-center gap-x-[20px] mt-10">
          <div className="bg-blue-500  border-2 border-black text-white font-bold p-6 text-center">1</div>
@@ -104,14 +104,15 @@ const CSSGridColumnsRows = () => {
       <p>Use gap to set both row and column spacing.</p>
       <h1 className="text-2xl mt-5 mb-3">Example</h1>
       <p>Set row-gap to 50px and column-gap to 100px.</p>
-      <pre className="text-green-400 bg-gray-900 rounded-lg p-4 mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-      {`.container {
-  display: grid;
-  gap: 50px 20px;
-  }`}
+     <pre className="bg-gray-200 rounded-lg p-4 mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">grid</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">gap</span>: <span className="text-green-700">50px 20px</span>;<br />
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
+
       <div className="border-2 border-black p-3 grid grid-cols-[82px_82px_82px] justify-center gap-[50px_20px] mt-10">
          <div className="bg-blue-500   text-white font-bold p-6 text-center">1</div>
          <div className="bg-blue-500   text-white font-bold p-6 text-center">2</div>
@@ -125,14 +126,14 @@ const CSSGridColumnsRows = () => {
 
       <h1 className="text-2xl mt-10 mb-2">Example</h1>
       <p>Set gap to 50px for both rows and columns.</p>
-      <pre className="text-green-400 bg-gray-900 rounded-lg p-4 mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-        {`.container {
-  display: grid;
-  gap: 30px;
-  }`}
+     <pre className="bg-gray-200 rounded-lg p-4 mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">grid</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">gap</span>: <span className="text-green-700">30px</span>;<br />
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
 
             <div className="border-2 h-96 pb-14 border-black p-4 grid grid-cols-[92px_92px_92px] justify-center gap-[30px] mt-10">
          <div className="bg-blue-500   text-white font-bold p-6 text-center">1</div>

@@ -17,13 +17,13 @@ const HowToAddCSS = () => {
         It is written inside the <code>style</code> attribute of an HTML tag.
       </p>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`<h1 style="color:blue; text-align:center;">
-  This is an inline styled heading
-</h1>`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;h1</span> <span className="text-red-500">style</span>=<span className="text-green-700">"color: blue; text-align: center;"</span><span className="text-blue-600">&gt;</span><br />
+    &nbsp;&nbsp;This is an inline styled heading<br />
+    <span className="text-blue-600">&lt;/h1&gt;</span>
+  </code>
+</pre>
 
       {/* Internal CSS */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">2. Internal CSS</h2>
@@ -32,27 +32,33 @@ const HowToAddCSS = () => {
         the <code>&lt;style&gt;</code> tag within the <code>&lt;head&gt;</code> section.
       </p>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    body {
-      background-color: lightyellow;
-    }
-    h1 {
-      color: green;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <h1>Internal CSS Example</h1>
-</body>
-</html>`}
-        </code>
-      </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-600">&lt;html&gt;</span><br />
+
+    <span className="text-blue-600">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;style&gt;</span><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">body</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">lightyellow</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">h1</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">green</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">text-align</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/style&gt;</span><br />
+    <span className="text-blue-600">&lt;/head&gt;</span><br />
+
+    <span className="text-blue-600">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;h1&gt;</span>Internal CSS Example<span className="text-blue-600">&lt;/h1&gt;</span><br />
+    <span className="text-blue-600">&lt;/body&gt;</span><br />
+
+    <span className="text-blue-600">&lt;/html&gt;</span>
+  </code>
+</pre>
 
       {/* External CSS */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">3. External CSS</h2>
@@ -62,33 +68,39 @@ const HowToAddCSS = () => {
         and recommended method for large projects.
       </p>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`/* style.css */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-}
-h1 {
-  color: navy;
-  text-align: center;
-}`}</code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-gray-500">/* style.css */</span><br />
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`<!-- index.html -->
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>External CSS Example</h1>
-</body>
-</html>`}
-        </code>
-      </pre>
+    <span className="text-blue-600">body</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font-family</span>: <span className="text-green-700">Arial, sans-serif</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#f4f4f4</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">h1</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">navy</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-align</span>: <span className="text-green-700">center</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
+
+     <pre className="bg-gray-200 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-gray-500">&lt;!-- index.html --&gt;</span><br />
+    <span className="text-blue-600">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-600">&lt;html&gt;</span><br />
+
+    <span className="text-blue-600">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;link</span> <span className="text-red-500">rel</span>=<span className="text-green-700">"stylesheet"</span> <span className="text-red-500">href</span>=<span className="text-green-700">"style.css"</span><span className="text-blue-600">&gt;</span><br />
+    <span className="text-blue-600">&lt;/head&gt;</span><br />
+
+    <span className="text-blue-600">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;h1&gt;</span>External CSS Example<span className="text-blue-600">&lt;/h1&gt;</span><br />
+    <span className="text-blue-600">&lt;/body&gt;</span><br />
+
+    <span className="text-blue-600">&lt;/html&gt;</span>
+  </code>
+</pre>
 
       {/* Summary */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Summary</h2>

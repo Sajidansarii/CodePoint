@@ -8,17 +8,19 @@ export default function CssText() {
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>{`p {
-  color: blue;
-  text-align: center;
-  text-decoration: underline;
-  text-transform: capitalize;
-  letter-spacing: 2px;
-  word-spacing: 10px;
-  line-height: 1.8;
-}`}</code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">p</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">blue</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-align</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-decoration</span>: <span className="text-green-700">underline</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-transform</span>: <span className="text-green-700">capitalize</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">letter-spacing</span>: <span className="text-green-700">2px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">word-spacing</span>: <span className="text-green-700">10px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">line-height</span>: <span className="text-green-700">1.8</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Demo</h2>
       <div className="space-y-4">

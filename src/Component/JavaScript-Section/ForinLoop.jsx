@@ -11,40 +11,50 @@ const JSForInLoop = () => {
       </p>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-2">Syntax:</h2>
-      <pre className="bg-gray-900 overflow-x-auto text-green-400 p-4 rounded-lg mb-4">
-        <code>
-          {`
- for (let key in object) {
-  // code to execute using object[key]
-}
-`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    for (let key in object) {"{"}
+    <br />
+    &nbsp;&nbsp;// code to execute using object[key]
+    <br />
+    {"}"}
+  </code>
+</pre>
+
     <p className="mt-2">The <span className="text-red-400">for…in</span> statement loops through all the properties of an object.</p>
     <p className="mt-2">The loop executes the code block once for every property.</p>
 
 
       <h2 className="text-2xl font-semibold text-gray-800 mt-10">Example</h2>
-      <pre className="bg-gray-900 overflow-x-auto text-green-400 p-4 rounded-lg mb-4 mt-5">
-        <code>
-          {`
- const person = {
-  name: "Alice",
-  age: 25,
-  city: "New York"
-};
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    const person = {"{"}
+    <br />
+    &nbsp;&nbsp;name: "Alice",
+    <br />
+    &nbsp;&nbsp;age: 25,
+    <br />
+    &nbsp;&nbsp;city: "New York"
+    <br />
+    {"}"};
+    <br /><br />
 
-for (let key in person) {
-  console.log(key + ":", person[key]);
-}
-// Output:
-// name: Alice
-// age: 25
-// city: New York
-// 
-`}
-        </code>
-      </pre>
+    for (let key in person) {"{"}
+    <br />
+    &nbsp;&nbsp;console.log(key + ":", person[key]);
+    <br />
+    {"}"}
+    <br /><br />
+
+    // Output:
+    <br />
+    // name: Alice
+    <br />
+    // age: 25
+    <br />
+    // city: New York
+  </code>
+</pre>
 
       <p className="text-gray-700 mt-10">
         Although <span className="font-semibold">for...in</span> can be used with arrays, it is *not recommended* because it iterates over keys and not values. 

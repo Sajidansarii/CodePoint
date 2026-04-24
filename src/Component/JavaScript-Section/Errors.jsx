@@ -35,14 +35,21 @@ const JSErrors = () => {
      <p className="leading-relaxed mt-3">The <span className="text-red-400 bg-gray-50 px-1">try</span>  and <span className="text-red-400 bg-gray-50 px-1">catch</span> statements in JavaScript are typically used together to handle errors.</p>
    
    <h1 className="text-2xl mt-5">Example</h1>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-    {`try {
-  Block of code to try
-}
-catch(err) {
-  Block of code to handle errors
-}`}
-   </pre>
+  <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    try {"{"}
+    <br />
+    &nbsp;&nbsp;Block of code to try
+    <br />
+    {"}"}
+    <br />
+    catch(err) {"{"}
+    <br />
+    &nbsp;&nbsp;Block of code to handle errors
+    <br />
+    {"}"}
+  </code>
+</pre>
 
    <h1 className="text-2xl mt-10">Syntax Errors</h1>
    <p className="mt-3">A syntax error occurs when the code does not conform to the grammatical structure defined by JavaScript.</p>
@@ -67,9 +74,11 @@ catch(err) {
 
   <h1 className="text-2xl mt-10">Example</h1>
   <p className="leading-relaxed mt-5">Here, we made a mistake by not adding the end quote for the string.</p>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-    {`let fName = "John);`}
-  </pre>
+ <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let fName = "John);
+  </code>
+</pre>
    <p className="mt-5">The code shown above triggers an "Invalid or unexpected token" error, which halts program execution.</p>
  
 

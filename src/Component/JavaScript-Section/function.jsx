@@ -12,22 +12,26 @@ const Function = () => {
 
       <h2 className='text-2xl text-gray-800 font-semibold mt-5 mb-3'>Example</h2>
      <p>A function that calculates the product of two numbers.</p>
-     <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
-      <code>
-        {`function myFunction(p1, p2) {
-  return p1 * p2;
-}`}
-      </code>
-     </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    function myFunction(p1, p2) {"{"}
+    <br />
+    &nbsp;&nbsp;return p1 * p2;
+    <br />
+    {"}"}
+  </code>
+</pre>
 
      <h1 className='text-gray-800 text-2xl font-semibold mt-10 mb-3'>JavaScript Function Syntax</h1>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
-      <code>
-        {`function name( p1, p2, ... ) {
-  // code to be executed
-}`}
-      </code>
-    </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    function name(p1, p2, ...) {"{"}
+    <br />
+    &nbsp;&nbsp;// code to be executed
+    <br />
+    {"}"}
+  </code>
+</pre>
 
     <p className='mt-5'>Functions are created using the function keyword.</p>
      <ul className='list-none bg-gray-300 p-5 rounded-lg mt-5'>
@@ -55,60 +59,77 @@ const Function = () => {
 
      <h2 className='text-gray-800 text-2xl font-semibold mt-10 mb-3'>Example</h2>
      <p>toCelsius() invokes the toCelsius function:</p>
-     <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
-      <code>
-        {`// Convert Fahrenheit to Celsius:
-function toCelsius(fahrenheit) {
-  return (5/9) * (fahrenheit-32);
-}
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    // Convert Fahrenheit to Celsius:
+    <br />
+    function toCelsius(fahrenheit) {"{"}
+    <br />
+    &nbsp;&nbsp;return (5/9) * (fahrenheit - 32);
+    <br />
+    {"}"}
+    <br /><br />
 
-// Call the toCelcius() function
-let value = toCelsius(77);`}
-      </code>
-     </pre>
+    // Call the toCelsius() function
+    <br />
+    let value = toCelsius(77);
+  </code>
+</pre>
 
      <p className='mt-5'>Accessing a function with incorrect parameters can return an incorrect answer:</p>
      
      <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-     <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
-      <code>
-        {`function toCelsius(fahrenheit) {
-  return (5/9) * (fahrenheit-32);
-}
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    function toCelsius(fahrenheit) {"{"}
+    <br />
+    &nbsp;&nbsp;return (5/9) * (fahrenheit - 32);
+    <br />
+    {"}"}
+    <br /><br />
 
-let value = toCelsius();`}
-      </code>
-     </pre>
+    let value = toCelsius();
+  </code>
+</pre>
+
      <p className='mt-5'>If you access a function without parentheses, you get the function object rather than its output.</p>
      
      <h2 className='text-gray-800 text-2xl font-semibold mt-10 mb-3'>Example</h2>
-     <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
-      <code>
-        {`function toCelsius(fahrenheit) {
-  return (5/9) * (fahrenheit-32);
-}
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    function toCelsius(fahrenheit) {"{"}
+    <br />
+    &nbsp;&nbsp;return (5/9) * (fahrenheit - 32);
+    <br />
+    {"}"}
+    <br /><br />
 
-let value = toCelsius;`}
-      </code>
-     </pre>
+    let value = toCelsius;
+  </code>
+</pre>
 
      <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Local Variables</h1>
      <p className='mb-3'>Variables defined inside a JavaScript function are local to that function.</p>
      <p>Local variables are accessible only inside the function where they are defined.</p>
 
      <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-     <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
-      <code>
-        {`// code here can NOT use carName
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    // code here can NOT use carName
+    <br /><br />
 
-function myFunction() {
-  let carName = "Volvo";
-  // code here CAN use carName
-}
+    function myFunction() {"{"}
+    <br />
+    &nbsp;&nbsp;let carName = "Volvo";
+    <br />
+    &nbsp;&nbsp;// code here CAN use carName
+    <br />
+    {"}"}
+    <br /><br />
 
-// code here can NOT use carName`}
-      </code>
-     </pre>
+    // code here can NOT use carName
+  </code>
+</pre>
 
      <p className='mt-3 mb-3'>Because local variables exist only within their functions, the same variable name can be used in multiple functions.</p>
       <p>Local variables are created at the start of a function and removed when the function finishes.</p>
@@ -120,42 +141,41 @@ function myFunction() {
    
    <h2 className='text-gray-800 text-2xl font-semibold mt-5 mb-3'>Example</h2>
    <p>"name" and "age" are parameters:</p>
-    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
-      <code>
-        {`function greet(name, age) {
-  return \`Hello \${name}! You are \${age} years old.\`;
-}`}
-      </code>
-    </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    function greet(name, age) {"{"}
+    <br />
+    &nbsp;&nbsp;return \`Hello \${name}! You are \${age} years old.\`;
+    <br />
+    {"}"}
+  </code>
+</pre>
+
     <p className='mt-5'>"John" and 21 are arguments:</p>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
-      <code>
-        {`greet("John", 21);`}
-      </code>
-    </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    greet("John", 21);
+  </code>
+</pre>
 
     <h1 className='text-2xl text-gray-800 mt-10 mb-3 font-semibold'>Functions Used as Variables</h1>
    <p>Functions can act like variables and be used in formulas, assignments, and calculations.</p>
    <h2 className='text-2xl text-gray-800 font-semibold mt-5 mc-3'>Example</h2>
     <p>Instead of using a variable to store the return value of a function:</p>
-    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
-      <code>
-        {`let x = toCelsius(77);
-let text = "The temperature is " + x + " Celsius";`}
-      </code>
-    </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let x = toCelsius(77);
+    <br />
+    let text = "The temperature is " + x + " Celsius";
+  </code>
+</pre>
 
     <p className='mt-5'>You can use the function directly, as a variable value:</p>
-    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
-      <code>
-        {`let text = "The temperature is " + toCelsius(77) + " Celsius";`}
-      </code>
-    </pre>
-
-    
-
-
-   
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let text = "The temperature is " + toCelsius(77) + " Celsius";
+  </code>
+</pre>
     </div>
   );
 };

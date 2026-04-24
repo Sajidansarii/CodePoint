@@ -26,16 +26,28 @@ const ImageCenteringTutorial = () => {
         </div>
     <h1 className="text-2xl">Example</h1>
     <p>Horizontally centered image using margin: auto:</p>
-    <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-      <code>
-      {`img {
-  display: block;
-  margin: auto;
-  width: 50%;
-  }`}
-  </code>
-    </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">img</span> <span>{'{'}</span><br />
 
+    <span className="text-red-500">display</span>
+    <span>: </span>
+    <span className="text-green-700">block</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">margin</span>
+    <span>: </span>
+    <span className="text-green-700">auto</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">width</span>
+    <span>: </span>
+    <span className="text-green-700">50%</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       {/* Example 2 */}
       <div className="space-y-6">
@@ -55,17 +67,17 @@ const ImageCenteringTutorial = () => {
           By applying <code>text-align: center;</code> to the parent element, the inline 
           image will be horizontally centered.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`.container {
-  text-align: center;
-  }
-  
-  img {
-    display: inline-block;
-    }`}
-    </code>
-        </pre>
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">text-align</span>: <span className="text-green-700">center</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">img</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">inline-block</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
       </div>
 
           {/* Example 3 */}
@@ -89,19 +101,19 @@ const ImageCenteringTutorial = () => {
         </div>         
         <h1 className="text-2xl">Example</h1>
         <p>Horizontally centered image using display: flex:</p>
-        <pre className="text-green-400 bg-gray-900 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-          {`div {
-  display: flex;
-  justify-content: center;
-  }
-  
-  img {
-    width: 320px;
-    height 320px;
-    }`}
-    </code>
-        </pre>
+       <pre className="bg-gray-200 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">div</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">justify-content</span>: <span className="text-green-700">center</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">img</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">320px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">320px</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
         </div>
 
        
@@ -130,22 +142,22 @@ const ImageCenteringTutorial = () => {
         </div>
         <h1 className="text-2xl">Example</h1>
         <p>True centering using display: flex:</p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
-  border: 1px solid black;
-  }
-  
-  img {
-    width: 320px;
-  height: 320px;
-  }`}
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">div</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">justify-content</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">align-items</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">600px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid black</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">img</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">320px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">320px</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
       </div>
 
       <div className="space-y-6">
@@ -165,21 +177,21 @@ const ImageCenteringTutorial = () => {
        </div>
        <h1 className="text-2xl">Example </h1>
        <p>Using Grid for true vertical and horizontal centering</p>
-       <pre className="text-green-400 bg-gray-900 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-        {`div {
-  display: grid;
-  place-items: center;
-  height: 600px;
-  border: 1px solid black;
-  }
-  
-  img {
-  width: 320px;
-  height:320px;
-  }`}
+      <pre className="bg-gray-200 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">div</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">grid</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">place-items</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">600px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid black</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">img</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">320px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">320px</span>;<br />
+    <span>{'}'}</span>
   </code>
-       </pre>
+</pre>
       </div>
         </div>
   );

@@ -37,28 +37,30 @@ export default function PseudoElements() {
 
       {/* Syntax */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Syntax</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-        {`selector::pseudo-element {
-  property: value;
-  }`}
+    <pre className="bg-gray-200 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">selector::pseudo-element</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">property</span>: <span className="text-green-700">value</span>;<br />
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
 
       {/* Example 1 */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Example 1: ::before and ::after</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-        {`h1::before {
-  content: "Head";
-  color: red;
-  }
-  h1::after {
-    content: "Paragraph";
-    color: blue;
-    }`}
-    </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">h1::before</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">content</span>: <span className="text-green-700">"Head"</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">red</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">h1::after</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">content</span>: <span className="text-green-700">"Paragraph"</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">blue</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
+
       <div className="border p-4 rounded-lg mb-6">
         <h1 className="relative before:content-['Head'] before:text-red-500 after:content-['Paragraph'] after:text-blue-500">
           Pseudo Elements
@@ -67,15 +69,16 @@ export default function PseudoElements() {
 
       {/* Example 2 */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Example 2: ::first-letter</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-        {`p::first-letter {
-  font-size: 40px;
-  color: green;
-  font-weight: bold;
-  }`}
+     <pre className="bg-gray-200 p-4 rounded-lg mb-5 mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">p::first-letter</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font-size</span>: <span className="text-green-700">40px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">green</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">font-weight</span>: <span className="text-green-700">bold</span>;<br />
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
+
       <div className="border p-4 rounded-lg mb-6">
         <p className="first-letter:text-green-600 first-letter:text-4xl first-letter:font-bold">
           Pseudo-elements allow you to style specific parts of text.
@@ -84,14 +87,15 @@ export default function PseudoElements() {
 
       {/* Example 3 */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Example 3: ::selection</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-        {`p::selection {
-  background: yellow;
-  color: black;
-  }`}
+     <pre className="bg-gray-200 p-4 rounded-lg mb-5 mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">p::selection</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background</span>: <span className="text-green-700">yellow</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">black</span>;<br />
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
+
       <div className="border p-4 rounded-lg mb-6">
         <p className="selection:bg-yellow-300 selection:text-black">
           Select this text to see the effect.

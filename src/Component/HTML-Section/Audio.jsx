@@ -13,14 +13,34 @@ const HTMLAudio = () => {
         <p className="leading-relaxed mb-3">
           A simple audio player with controls:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-2">
-          <code>{`<audio controls>
-  <source src="audio.mp3" type="audio/mpeg" />
-  <source src="audio.ogg" type="audio/ogg" />
-  Your browser does not support the audio element.
-</audio>`}</code>
-        </pre>
-        <p className="leading-relaxed mb-3">
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">audio controls</span>
+            <span className="text-gray-30">&gt;</span><br></br>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">source</span>
+            <span className="text-red-500"> src=</span>
+            <span className="text-green-600">"audio.mp3"</span>
+            <span className="text-red-500"> type=</span>
+            <span className="text-green-600">"audio/mpeg"</span>
+            <span className="text-gray-30">/&gt;</span><br></br>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">source</span>
+            <span className="text-red-500"> src=</span>
+            <span className="text-green-600">"audio.ogg"</span>
+            <span className="text-red-500"> type=</span>
+            <span className="text-green-600">"audio/ogg"</span>
+            <span className="text-gray-30">/&gt;</span><br></br>
+            Your browser does not support the audio element.<br></br>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">audio</span>
+            <span className="text-gray-30">&gt;</span>
+    
+    </code>
+ </pre>
+
+        <p className="leading-relaxed mt-5">
           The browser selects the first supported format; fallback text appears if none are supported.
         </p>
       </section>
@@ -42,13 +62,31 @@ const HTMLAudio = () => {
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Multiple Source Formats</h2>
         <p className="leading-relaxed mb-3">Provide different audio formats to support various browsers:</p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-2">
-          <code>{`<audio controls>
-  <source src="track.mp3" type="audio/mpeg" />
-  <source src="track.ogg" type="audio/ogg" />
-  <p>Your browser does not support audio playback.</p>
-</audio>`}</code>
-        </pre>
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">audio controls</span>
+            <span className="text-gray-30">&gt;</span><br></br>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">source</span>
+            <span className="text-red-500"> src=</span>
+            <span className="text-green-600">"track.mp3"</span>
+            <span className="text-red-500"> type</span>
+            <span className="text-green-600">"audio/mpeg"</span><br></br>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">source</span>
+            <span className="text-red-500"> src=</span>
+            <span className="text-green-600">"track.ogg"</span>
+            <span className="text-red-500"> type=</span>
+            <span className="text-green-600"> "audio/ogg"</span>
+            <span className="text-gray-30">/&gt;</span><br></br>
+           <p>Your browser does not support audio playback.</p>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">audio</span>
+            <span className="text-gray-30">&gt;</span>
+            
+   </code>
+ </pre>
       </section>
 
       {/* Accessibility */}
@@ -68,10 +106,23 @@ const HTMLAudio = () => {
         <p className="leading-relaxed mb-3">
           Modern browsers often block autoplay with sound. To increase the chance autoplay works, combine with <code>muted</code>. Even then, user interaction is usually required for unmuted playback.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<audio autoplay muted loop>
-  <source src="ambient.mp3" type="audio/mpeg" />
-</audio>`}</code>
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">audio autoplay muted loop</span>
+            <span className="text-gray-30">&gt;</span><br></br>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">source</span>
+            <span className="text-red-500"> src=</span>
+            <span className="text-green-600">"ambient.mp3"</span>
+            <span className="text-red-500"> type=</span>
+            <span className="text-green-600">"audio/mpeg</span>
+            <span className="text-gray-30">/&gt;</span><br></br>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">audio</span>
+            <span className="text-gray-30">&gt;</span>
+            
+        </code>
         </pre>
       </section>
 
@@ -81,12 +132,23 @@ const HTMLAudio = () => {
         <p className="leading-relaxed mb-3">
           You can manipulate audio with JavaScript:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`const audio = document.getElementById('myAudio');
-audio.play(); // start
-audio.volume = 0.5; // set volume
-audio.pause(); // stop`}</code>
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
+            <span className="text-blue-500">const </span>
+            <span className="text-red-500">audio = </span>
+            <span className="text-blue-500">document.getElementById</span>
+            <span className="text-green-600">('myAudio')</span>
+            <span className="text-gray-30">;</span><br></br>
+            <span className="text-blue-500">audio.play()</span>
+            <span className="text-gray-30">;</span><br></br>
+            <span className="text-blue-500">audio.volum = 0.5</span>
+            <span className="text-gray-30">;</span><br></br>
+            <span className="text-blue-500">audio.pause()</span>
+            <span className="text-gray-30">;</span>
+           
+         </code>
         </pre>
+        
         <p className="leading-relaxed mt-5 mb-5">Example markup for script:</p>
         <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>{<audio id="myAudio" src="song.mp3" controls></audio>}</code>

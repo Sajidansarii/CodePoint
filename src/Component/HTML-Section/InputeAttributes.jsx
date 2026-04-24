@@ -24,9 +24,17 @@ const HTMLInputAttributes = () => {
               <code>type</code>
             </h3>
             <p className="leading-relaxed mb-3">Specifies the type of input field.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="text" />'}</code>
-            </pre>
+            <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"text"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           {/* name */}
@@ -35,9 +43,16 @@ const HTMLInputAttributes = () => {
               <code>name</code>
             </h3>
             <p className="leading-relaxed mb-3">Used to identify form data after submission.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="email" name="userEmail" />'}</code>
-            </pre>
+           <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;input</span>
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"email"</span>
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"userEmail"</span>
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           {/* value */}
@@ -46,9 +61,20 @@ const HTMLInputAttributes = () => {
               <code>value</code>
             </h3>
             <p className="leading-relaxed mb-3">Predefines the input’s value.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="text" value="John Doe" />'}</code>
-            </pre>
+          <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"text"</span>
+
+    <span className="text-red-500"> value</span>=
+    <span className="text-green-600">"John Doe"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           {/* placeholder */}
@@ -57,9 +83,20 @@ const HTMLInputAttributes = () => {
               <code>placeholder</code>
             </h3>
             <p className="leading-relaxed mb-3">Displays hint text inside the input.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="text" placeholder="Enter your name" />'}</code>
-            </pre>
+          <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"text"</span>
+
+    <span className="text-red-500"> placeholder</span>=
+    <span className="text-green-600">"Enter your name"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           {/* required */}
@@ -68,9 +105,19 @@ const HTMLInputAttributes = () => {
               <code>required</code>
             </h3>
             <p className="leading-relaxed mb-3">Makes input mandatory before form submission.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="email" required />'}</code>
-            </pre>
+          <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"email"</span>
+
+    <span className="text-red-500"> required</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           {/* disabled */}
@@ -79,9 +126,22 @@ const HTMLInputAttributes = () => {
               <code>disabled</code>
             </h3>
             <p className="leading-relaxed mb-3">Disables the input field (grayed out & uneditable).</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{`<input type="text" disabled value="Can't edit this" />`}</code>
-            </pre>
+          <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"text"</span>
+
+    <span className="text-red-500"> disabled</span>
+
+    <span className="text-red-500"> value</span>=
+    <span className="text-green-600">"Can't edit this"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           {/* readonly */}
@@ -90,9 +150,22 @@ const HTMLInputAttributes = () => {
               <code>readonly</code>
             </h3>
             <p className="leading-relaxed mb-3">Field can’t be changed but is selectable.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="text" readonly value="Read-only text" />'}</code>
-            </pre>
+          <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"text"</span>
+
+    <span className="text-red-500"> readonly</span>
+
+    <span className="text-red-500"> value</span>=
+    <span className="text-green-600">"Read-only text"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           {/* maxlength & minlength */}
@@ -101,9 +174,23 @@ const HTMLInputAttributes = () => {
               <code>maxlength</code> / <code>minlength</code>
             </h3>
             <p className="leading-relaxed mb-3">Defines length limits for text input.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="text" minlength="5" maxlength="10" />'}</code>
-            </pre>
+           <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"text"</span>
+
+    <span className="text-red-500"> minlength</span>=
+    <span className="text-green-600">"5"</span>
+
+    <span className="text-red-500"> maxlength</span>=
+    <span className="text-green-600">"10"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           {/* pattern */}
@@ -112,9 +199,23 @@ const HTMLInputAttributes = () => {
               <code>pattern</code>
             </h3>
             <p className="leading-relaxed mb-3">Validates input with a regular expression.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="text" pattern="[A-Za-z]{3,}" title="At least 3 letters" />'}</code>
-            </pre>
+          <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"text"</span>
+
+    <span className="text-red-500"> pattern</span>=
+    <span className="text-green-600">"[A-Za-z]&#123;3,&#125;"</span>
+
+    <span className="text-red-500"> title</span>=
+    <span className="text-green-600">"At least 3 letters"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           {/* autofocus */}
@@ -123,9 +224,19 @@ const HTMLInputAttributes = () => {
               <code>autofocus</code>
             </h3>
             <p className="leading-relaxed mb-3">Automatically focuses input on page load.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="text" autofocus />'}</code>
-            </pre>
+           <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"text"</span>
+
+    <span className="text-red-500"> autofocus</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           {/* autocomplete */}
@@ -134,9 +245,20 @@ const HTMLInputAttributes = () => {
               <code>autocomplete</code>
             </h3>
             <p className="leading-relaxed mb-3">Toggles browser autocomplete for the field.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="email" autocomplete="on" />'}</code>
-            </pre>
+          <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"email"</span>
+
+    <span className="text-red-500"> autocomplete</span>=
+    <span className="text-green-600">"on"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           {/* step, min, max */}
@@ -145,9 +267,26 @@ const HTMLInputAttributes = () => {
               <code>min</code>, <code>max</code>, <code>step</code>
             </h3>
             <p className="leading-relaxed mb-3">Used with <code>number</code>, <code>date</code>, <code>range</code> to set boundaries.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="number" min="1" max="5" step="0.5" />'}</code>
-            </pre>
+          <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"number"</span>
+
+    <span className="text-red-500"> min</span>=
+    <span className="text-green-600">"1"</span>
+
+    <span className="text-red-500"> max</span>=
+    <span className="text-green-600">"5"</span>
+
+    <span className="text-red-500"> step</span>=
+    <span className="text-green-600">"0.5"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
         </div>

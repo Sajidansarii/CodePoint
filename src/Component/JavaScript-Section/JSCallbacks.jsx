@@ -15,7 +15,7 @@ const JSCallbacks = () => {
       <p className="mb-3">JavaScript functions run in the order they are invoked, not in the order they are defined.</p>
       <p>The output will show “Hello” initially, followed by “Goodbye,” since the functions are invoked in that order.</p>
       <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`function myFirst() {
   myDisplayer("Hello");
@@ -32,7 +32,7 @@ mySecond();`}
       
       <p className="mt-5">This example first displays “Goodbye” and then ends with “Hello” because the functions are called in that order.</p>
       <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`function myFirst() {
   myDisplayer("Hello");
@@ -51,7 +51,7 @@ myFirst();`}
       <p>Sometimes you need better control over when a function runs, such as calculating a value first and then displaying the result.</p>
       <p>You can run a calculator function <span className="text-red-400">(myCalculator)</span>, store the result, and then call another function <span className="text-red-400">(myDisplayer)</span> to show it.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`function myDisplayer(some) {
   document.getElementById("demo").innerHTML = some;
@@ -69,7 +69,7 @@ myDisplayer(result);`}
 
       <p className="mt-10">Alternatively, you can call the calculator function <span className="text-red-400">(myCalculator)</span> and have it invoke the display function <span className="text-red-400">(myDisplayer)</span> itself.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`function myDisplayer(some) {
   document.getElementById("demo").innerHTML = some;
@@ -89,7 +89,7 @@ myCalculator(5, 5);`}
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-5">JavaScript Callbacks</h1>
      <p>With a callback, <span className="text-red-400">myCalculator</span> can be called along with <span className="text-red-400">myCallback</span>, allowing the callback to run after the calculation finishes.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`function myDisplayer(some) {
   document.getElementById("demo").innerHTML = some;
@@ -107,7 +107,7 @@ myCalculator(5, 5, myDisplayer);`}
      <p className="mt-5 mb-3">The <span className="text-red-400">myDisplayer</span> function in the example is called a callback.</p>
      <p>It is provided to <span className="text-red-400">myCalculator()</span> as an argument.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`// Create an Array
 const myNumbers = [4, 1, -20, -7, 5, 9, -6];
@@ -135,8 +135,6 @@ function removeNeg(numbers, callback) {
     <h1 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">When to Use a Callback?</h1>
    <p>The examples above are simplified to teach callback syntax, so they aren’t very exciting.</p>
     <p>Callbacks are especially useful in asynchronous functions, where one function must wait for another, such as when loading a file.</p>
-
-
 
     </div>
   );

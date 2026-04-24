@@ -13,12 +13,26 @@ const HTMLFilePath = () => {
         <ul className="list-[square] list-inside space-y-1 leading-relaxed">
           <li>
             <strong>Absolute path:</strong> Full URL to a file, including domain name.  
-            <code className="block bg-gray-900 p-4 text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mt-1 rounded-lg">{'<img src="https://example.com/images/logo.png" alt="Logo">'}</code>
-          </li>
+          <pre>
+            <code className="block bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mt-1 text-sm">
+  <span className="text-gray-500">&lt;</span>
+  <span className="text-blue-600">img</span>
+  <span className="text-gray-700"> src="https://example.com/images/logo.png" alt="Logo"</span>
+  <span className="text-gray-500">&gt;</span>
+</code>
+          </pre>
+           </li>
           <li>
             <strong>Relative path:</strong> Location relative to the current HTML file.  
-            <code className="block bg-gray-900 text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap p-4 mt-1 rounded-lg">{'<img src="images/logo.png" alt="Logo">'}</code>
-          </li>
+        <pre>
+          <code className="block bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mt-1 text-sm">
+  <span className="text-gray-500">&lt;</span>
+  <span className="text-blue-600">img</span>
+  <span className="text-gray-700"> src="images/logo.png" alt="Logo"</span>
+  <span className="text-gray-500">&gt;</span>
+</code>
+        </pre>
+         </li>
         </ul>
       </section>
 
@@ -30,19 +44,47 @@ const HTMLFilePath = () => {
         <ul className="list-[square] list-inside space-y-3 leading-relaxed">
           <li>
             <strong>Same folder:</strong> File is in the same folder as HTML file.  
-            <code className="block bg-gray-900 text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap p-4 mt-1 rounded-lg">{'<img src="logo.png" alt="Logo">'}</code>
+         <pre>
+          <code className="block bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mt-1 text-sm">
+  <span className="text-gray-500">&lt;</span>
+  <span className="text-blue-600">img</span>
+  <span className="text-gray-700"> src="logo.png" alt="Logo"</span>
+  <span className="text-gray-500">&gt;</span>
+</code>
+         </pre>
           </li>
           <li>
             <strong>Subfolder:</strong> File is in a folder inside the current folder.  
-            <code className="block bg-gray-900 text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap p-4 mt-1 rounded-lg">{'<img src="images/logo.png" alt="Logo">'}</code>
-          </li>
+          <pre>
+            <code className="block bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mt-1 text-sm">
+  <span className="text-gray-500">&lt;</span>
+  <span className="text-blue-600">img</span>
+  <span className="text-gray-700"> src="images/logo.png" alt="Logo"</span>
+  <span className="text-gray-500">&gt;</span>
+</code>
+          </pre>
+           </li>
           <li>
             <strong>Parent folder:</strong> Use <code>../</code> to move up one level.  
-            <code className="block bg-gray-900 text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap p-4 mt-1 rounded-lg">{'<img src="../logo.png" alt="Logo">'}</code>
-          </li>
+          <pre>
+            <code className="block bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mt-1 text-sm">
+  <span className="text-gray-500">&lt;</span>
+  <span className="text-blue-600">img</span>
+  <span className="text-gray-700"> src="../logo.png" alt="Logo"</span>
+  <span className="text-gray-500">&gt;</span>
+</code>
+          </pre>
+             </li>
           <li>
             <strong>Moving up multiple folders:</strong> Add more <code>../</code> as needed.  
-            <code className="block bg-gray-900 text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap p-4 mt-1 rounded-lg">{'<img src="../../logo.png" alt="Logo">'}</code>
+          <pre>
+            <code className="block bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mt-1 text-sm">
+  <span className="text-gray-500">&lt;</span>
+  <span className="text-blue-600">img</span>
+  <span className="text-gray-700"> src="../../logo.png" alt="Logo"</span>
+  <span className="text-gray-500">&gt;</span>
+</code>
+          </pre>
           </li>
         </ul>
       </section>

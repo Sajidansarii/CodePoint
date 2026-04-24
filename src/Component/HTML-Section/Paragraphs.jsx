@@ -14,10 +14,26 @@ const HTMLParagraphs = () => {
       {/* Basic Example */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Basic Usage</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          {`<p>This is the first paragraph.</p>
-<p>This is the second paragraph.</p>`}
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">p</span>
+    <span className="text-gray-500">&gt;</span>
+    This is the first paragraph.
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">p</span>
+    <span className="text-gray-500">&gt;</span>
+    This is the second paragraph.
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">p</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed">
           Each <code>&lt;p&gt;</code> creates a separate block of text with default spacing before and after.
         </p>
@@ -29,13 +45,48 @@ const HTMLParagraphs = () => {
         <p className="leading-relaxed mb-3">
           Browsers automatically add some margin around paragraphs. You can customize spacing with CSS. Avoid nesting block-level elements like another <code>&lt;p&gt;</code> inside a paragraph.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          {`<!-- Wrong -->
-<p>This is <p>nested</p> paragraph.</p>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;!-- Wrong --&gt;</span>
+    <br/>
 
-<!-- Correct -->
-<p>This is a paragraph with <strong>inline</strong> formatting.</p>`}
-        </pre>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">p</span>
+    <span className="text-gray-500">&gt;</span>
+    This is
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">p</span>
+    <span className="text-gray-500">&gt;</span>
+    nested
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">p</span>
+    <span className="text-gray-500">&gt;</span>
+    paragraph.
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/><br/>
+
+    <span className="text-gray-500">&lt;!-- Correct --&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">p</span>
+    <span className="text-gray-500">&gt;</span>
+    This is a paragraph with
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">strong</span>
+    <span className="text-gray-500">&gt;</span>
+    inline
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">strong</span>
+    <span className="text-gray-500">&gt;</span>
+    formatting.
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">p</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Attributes & Tips */}

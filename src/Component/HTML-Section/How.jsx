@@ -46,20 +46,65 @@ const HowHTMLWorks = () => {
       </p>
 
       <h2 className="text-xl sm:text-2xl text-blue-500 font-semibold mt-6 mb-5">Example</h2>
-      <div className="bg-gray-900 text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap p-4 rounded-lg text-sm sm:text-base overflow-auto mb-4">
-        <pre>
-{`<!DOCTYPE html>
-<html>
-  <head>
-    <title>My Page</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <p>This is my website.</p>
-  </body>
-</html>`}
-        </pre>
-      </div>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;!DOCTYPE</span>
+    <span className="text-blue-500"> html</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">head</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">title</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">My Page</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">title</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;/</span>
+    <span className="text-blue-600">head</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">body</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">h1</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Hello, world!</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">h1</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">This is my website.</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;/</span>
+    <span className="text-blue-600">body</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">html</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
 
       <p className="text-gray-700 mb-3">
         The browser doesn’t show the tags like <code>&lt;h1&gt;</code> or{" "}

@@ -16,17 +16,38 @@ const CSSButton = () => {
 
       {/* Syntax */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Syntax</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`button {
-  background-color: value;
-  color: value;
-  border: value;
-  padding: value;
-  cursor: pointer;
-}`}
-        </code>
-      </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-blue-500">button</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">value</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">color</span>
+    <span>: </span>
+    <span className="text-green-700">value</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">border</span>
+    <span>: </span>
+    <span className="text-green-700">value</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">padding</span>
+    <span>: </span>
+    <span className="text-green-700">value</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">cursor</span>
+    <span>: </span>
+    <span className="text-green-700">pointer</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       {/* Basic Example */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
@@ -36,22 +57,52 @@ const CSSButton = () => {
         Click Me
       </button>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`button {
-  background-color: blue;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-blue-500">button</span> <span>{'{'}</span><br />
 
-button:hover {
-  background-color: darkblue;
-}`}
-        </code>
-      </pre>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">blue</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">color</span>
+    <span>: </span>
+    <span className="text-green-700">white</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">padding</span>
+    <span>: </span>
+    <span className="text-green-700">10px 20px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">border</span>
+    <span>: </span>
+    <span className="text-green-700">none</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">border-radius</span>
+    <span>: </span>
+    <span className="text-green-700">5px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">cursor</span>
+    <span>: </span>
+    <span className="text-green-700">pointer</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">button:hover</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">darkblue</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       {/* Types of Buttons */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
@@ -95,15 +146,28 @@ button:hover {
         Disabled
       </button>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5 mb-5">
-        <code>
-{`button:disabled {
-  background-color: gray;
-  cursor: not-allowed;
-  opacity: 0.6;
-}`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5 mb-5">
+  <code>
+    <span className="text-blue-500">button:disabled</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">gray</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">cursor</span>
+    <span>: </span>
+    <span className="text-green-700">not-allowed</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">opacity</span>
+    <span>: </span>
+    <span className="text-green-700">0.6</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       {/* Notes */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Key Notes</h2>

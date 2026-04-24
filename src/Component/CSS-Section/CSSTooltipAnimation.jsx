@@ -16,34 +16,39 @@ const CssTooltipsAnimation = () => {
       {/* Example 1: Fade In Tooltip */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">1. Fade-in Tooltip</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`.tooltip {
-  position: relative;
-  display: inline-block;
-}
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">.tooltip</span> <span>{'{'}</span><br />
 
-.tooltip .tooltip-text {
-  visibility: hidden;
-  opacity: 0;
-  background: black;
-  color: #fff;
-  padding: 6px 10px;
-  border-radius: 5px;
-  position: absolute;
-  bottom: 125%;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: opacity 0.5s ease-in-out; /* smooth animation */
-  }
-  
-  .tooltip:hover .tooltip-text {
-    visibility: visible;
-    opacity: 1;
-    }`}
-    </code>
-        </pre>
+    &nbsp;&nbsp;<span className="text-red-500">position</span>: <span className="text-green-700">relative</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">inline-block</span>;<br />
 
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">.tooltip .tooltip-text</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">visibility</span>: <span className="text-green-700">hidden</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">opacity</span>: <span className="text-green-700">0</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">background</span>: <span className="text-green-700">black</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">#fff</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">6px 10px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border-radius</span>: <span className="text-green-700">5px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">position</span>: <span className="text-green-700">absolute</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">bottom</span>: <span className="text-green-700">125%</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">left</span>: <span className="text-green-700">50%</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">transform</span>: <span className="text-green-700">translateX(-50%)</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">transition</span>: <span className="text-green-700">opacity 0.5s ease-in-out</span>; <span className="text-gray-500">/* smooth animation */</span><br />
+
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">.tooltip:hover .tooltip-text</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">visibility</span>: <span className="text-green-700">visible</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">opacity</span>: <span className="text-green-700">1</span>;<br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
         {/* Live Demo */}
         <div className="flex justify-center">
           <div className="relative group inline-block">
@@ -62,22 +67,26 @@ const CssTooltipsAnimation = () => {
       {/* Example 2: Slide-in Tooltip */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">2. Slide-in Tooltip</h2>
-        <pre className="bg-gray-900 p-4 text-green-400 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`.tooltip .tooltip-text {
-  visibility: hidden;
-  opacity: 0;
-  transform: translate(-50%, 10px); /* start position */
-  transition: all 0.4s ease;
-}
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-400">.tooltip .tooltip-text</span> <span>{'{'}</span><br />
 
-.tooltip:hover .tooltip-text {
-  visibility: visible;
-  opacity: 1;
-  transform: translate(-50%, 0); /* slide into place */
-  }`}
+    &nbsp;&nbsp;<span className="text-red-400">visibility</span>: <span className="text-green-400">hidden</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">opacity</span>: <span className="text-green-400">0</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">transform</span>: <span className="text-green-400">translate(-50%, 10px)</span>; <span className="text-gray-500">/* start position */</span><br />
+    &nbsp;&nbsp;<span className="text-red-400">transition</span>: <span className="text-green-400">all 0.4s ease</span>;<br />
+
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-400">.tooltip:hover .tooltip-text</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-400">visibility</span>: <span className="text-green-400">visible</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">opacity</span>: <span className="text-green-400">1</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">transform</span>: <span className="text-green-400">translate(-50%, 0)</span>; <span className="text-gray-500">/* slide into place */</span><br />
+
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
 
         {/* Live Demo */}
         <div className="flex justify-center">
@@ -98,29 +107,35 @@ const CssTooltipsAnimation = () => {
       {/* Example 3: Bounce Animation Tooltip */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">3. Bounce Tooltip</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`@keyframes bounceIn {
-  0%   { transform: translateY(10px); opacity: 0; }
-  50%  { transform: translateY(-5px); opacity: 1; }
-  100% { transform: translateY(0); }
-}
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-400">@keyframes bounceIn</span> <span>{'{'}</span><br />
 
-.tooltip .tooltip-text {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  bottom: 125%;
-  left: 50%;
-  transform: translateX(-50%);
-}
+    &nbsp;&nbsp;<span className="text-red-400">0%</span> {'{'} <span className="text-red-400">transform</span>: <span className="text-green-400">translateY(10px)</span>; <span className="text-red-400">opacity</span>: <span className="text-green-400">0</span>; {'}'}<br />
+    &nbsp;&nbsp;<span className="text-red-400">50%</span> {'{'} <span className="text-red-400">transform</span>: <span className="text-green-400">translateY(-5px)</span>; <span className="text-red-400">opacity</span>: <span className="text-green-400">1</span>; {'}'}<br />
+    &nbsp;&nbsp;<span className="text-red-400">100%</span> {'{'} <span className="text-red-400">transform</span>: <span className="text-green-400">translateY(0)</span>; {'}'}<br />
 
-.tooltip:hover .tooltip-text {
-  visibility: visible;
-  animation: bounceIn 0.5s ease forwards;
-  }`}
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-400">.tooltip .tooltip-text</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-400">visibility</span>: <span className="text-green-400">hidden</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">opacity</span>: <span className="text-green-400">0</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">position</span>: <span className="text-green-400">absolute</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">bottom</span>: <span className="text-green-400">125%</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">left</span>: <span className="text-green-400">50%</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">transform</span>: <span className="text-green-400">translateX(-50%)</span>;<br />
+
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-400">.tooltip:hover .tooltip-text</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-400">visibility</span>: <span className="text-green-400">visible</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">animation</span>: <span className="text-green-400">bounceIn 0.5s ease forwards</span>;<br />
+
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
 
         {/* Live Demo */}
         <div className="flex justify-center">

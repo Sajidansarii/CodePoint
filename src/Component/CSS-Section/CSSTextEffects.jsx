@@ -32,13 +32,14 @@ const CSSTextEffects = () => {
         <p className="text-gray-700">
           The <code>text-shadow</code> property adds shadow to text.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`h1 {
-  text-shadow: 2px 2px 5px gray;
-  }`}
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">h1</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">text-shadow</span>: <span className="text-green-700">2px 2px 5px gray</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
         <div className="border p-4 bg-gray-100 text-center">
           <h1 style={{ textShadow: "2px 2px 5px gray" }} className="text-2xl font-bold">
             Shadow Effect
@@ -52,14 +53,15 @@ const CSSTextEffects = () => {
         <p className="text-gray-700">
           The <code>-webkit-text-stroke</code> property creates an outline effect on text.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`h1 {
-  -webkit-text-stroke: 2px black;
-  color: white;
-  }`}
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">h1</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">-webkit-text-stroke</span>: <span className="text-green-700">2px black</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
         <div className="border p-4 bg-gray-100 text-center">
           <h1
             style={{
@@ -79,13 +81,14 @@ const CSSTextEffects = () => {
         <p className="text-gray-700">
           A glowing effect can be made using <code>text-shadow</code> with bright colors.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`h1 {
-  text-shadow: 0 0 10px cyan, 0 0 20px blue;
-  }`}
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">h1</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">text-shadow</span>: <span className="text-green-700">0 0 10px cyan, 0 0 20px blue</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
         <div className="border p-4 bg-gray-100 text-center">
           <h1
             style={{
@@ -107,15 +110,16 @@ const CSSTextEffects = () => {
           You can apply gradients to text using <code>background-clip: text</code> and{" "}
           <code>color: transparent</code>.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`h1 {
-  background: linear-gradient(to right, red, yellow);
-  -webkit-background-clip: text;
-  color: transparent;
-  }`}
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">h1</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background</span>: <span className="text-green-700">linear-gradient(to right, red, yellow)</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">-webkit-background-clip</span>: <span className="text-green-700">text</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">transparent</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
         <div className="border p-4 bg-gray-100 text-center">
           <h1
             style={{
@@ -137,14 +141,15 @@ const CSSTextEffects = () => {
         <p className="text-gray-700">
           Using <code>letter-spacing</code> and <code>text-transform</code> we can create unique typography effects.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`p {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  }`}
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">p</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">letter-spacing</span>: <span className="text-green-700">5px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-transform</span>: <span className="text-green-700">uppercase</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
         <div className="border p-4 bg-gray-100 text-center">
           <p style={{ letterSpacing: "5px", textTransform: "uppercase" }} className="text-lg">
             Spaced Uppercase Text
@@ -165,31 +170,29 @@ const CSSTextEffects = () => {
       <p className="border border-gray-400 w-52 py-2 text-center">This is the text</p>
      <p>The following CSS implements this:</p>
      <h1 className="text-2xl">Example</h1>
-     <pre className="text-green-400 bg-gray-900 rounded-lg p-4 mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-      <code>
-      {`p.test1 {
-  width: 200px;
-  border: 1px solid #000000;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: clip;
-  }
-  
-  p.test2 {
-    width: 200px;
-    border: 1px solid #000000;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    }
-    
-    p:hover {
-      overflow: visible;
-      }
-      `}
-      </code>
-     </pre>
+     <pre className="bg-gray-200 rounded-lg p-4 mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">p.test1</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">200px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid #000000</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">white-space</span>: <span className="text-green-700">nowrap</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">overflow</span>: <span className="text-green-700">hidden</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-overflow</span>: <span className="text-green-700">clip</span>;<br />
+    <span>{'}'}</span><br /><br />
 
+    <span className="text-blue-600">p.test2</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">200px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid #000000</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">white-space</span>: <span className="text-green-700">nowrap</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">overflow</span>: <span className="text-green-700">hidden</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-overflow</span>: <span className="text-green-700">ellipsis</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">p:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">overflow</span>: <span className="text-green-700">visible</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
      <h1 className="text-2xl">CSS word-wrap Property</h1>
      <p>With the <span className="text-red-400 bg-gray-50 px-1">word-wrap</span> property, long words can be broken and wrapped to the next line to prevent overflow.</p>
      <p>When a word is too long to fit in its container, it overflows beyond the boundaries.</p>
@@ -198,13 +201,13 @@ const CSSTextEffects = () => {
      <p className="border border-gray-400 h-54 w-40 break-words">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus reiciendis quo harum Pseudopseudohypoparathyroidism vitae, et ut maiores quisquam quasi possimus commodi.</p>
    <h1 className="text-2xl">Example</h1>
    <p>Allow long words to break and continue on a new line.</p>
-   <pre className="text-green-400 bg-gray-900 mt-5 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-    <code>
-  {`p {
-  word-wrap: break-word;
-  }`}
+ <pre className="bg-gray-200 mt-5 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">p</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">word-wrap</span>: <span className="text-green-700">break-word</span>;<br />
+    <span>{'}'}</span>
   </code>
-   </pre>
+</pre>
 
    <h1 className="text-2xl">CSS word-break Property</h1>
   <p>Use word-break to control how words split when they reach the end of a line.</p>
@@ -220,18 +223,17 @@ const CSSTextEffects = () => {
       <p>This example uses break-all to control word breaks:</p>
       <p className="border border-gray-400 h-54 w-40 p-2 break-all">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus reiciendis quo harum vitae, et ut maiores quisquam quasi possimus commodi.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="text-green-400 bg-gray-900 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg p-4">
-        <code>
-        {`p.test1 {
-  word-break: normal;
-  }
-  
-  p.test2 {
-    word-break: break-all;
-    }
-    `}
-    </code>
-      </pre>
+    <pre className="bg-gray-200 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg p-4">
+  <code>
+    <span className="text-blue-600">p.test1</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">word-break</span>: <span className="text-green-700">normal</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">p.test2</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">word-break</span>: <span className="text-green-700">break-all</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">CSS writing-mode Property</h1>
       <p>The <span className="text-red-400 bg-gray-50 px-1">writing-mod</span>e property in CSS determines if text flows horizontally or vertically.</p>
@@ -243,22 +245,23 @@ const CSSTextEffects = () => {
       </ul>
       <p>The example below demonstrates various writing modes.</p>
       <h1 className="text-2xl">Example</h1>
-  <pre className="text-green-400 bg-gray-900 rounde-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-    <code>
-    {`p.test1 {
-  writing-mode: horizontal-tb;
-  }
+ <pre className="bg-gray-200 p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">p.test1</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">writing-mode</span>: <span className="text-green-700">horizontal-tb</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-span {
-  writing-mode: vertical-rl;
-}
+    <span className="text-blue-600">span</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">writing-mode</span>: <span className="text-green-700">vertical-rl</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-p.test2 {
-  writing-mode: vertical-rl;
-  }`}
+    <span className="text-blue-600">p.test2</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">writing-mode</span>: <span className="text-green-700">vertical-rl</span>;<br />
+    <span>{'}'}</span>
   </code>
-  </pre>
-  <h1 className="text-2xl">CSS Text Effect Properties</h1>
+</pre>
+
+ <h1 className="text-2xl">CSS Text Effect Properties</h1>
   <p>The table below outlines the CSS text effect properties.</p>
   <table className="min-w-full border border-gray-300 text-gray-700 rounded-md text-sm text-left">
     <thead>

@@ -27,11 +27,18 @@ const CssCombinators = () => {
           This combinator enables the selection of elements that are structurally subordinate to a given element, regardless of nesting depth.
         </p>
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-{`div p {
-  background-color: blue;
-}`}
-        </pre>
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">div p</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">blue</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
       </div>
 
       {/* Example 2: Child Selector */}
@@ -42,11 +49,18 @@ const CssCombinators = () => {
           <p>The following example demonstrates how to select all {'<p>'} elements that are immediate child nodes of {'<div>'} elements.</p>
 
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-{`div > p {
-  background-color: red;
-}`}
-        </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">div &gt; p</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">red</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
       </div>
 
       {/* Example 3: Adjacent Sibling Selector */}
@@ -60,11 +74,18 @@ const CssCombinators = () => {
         <p>In the DOM, sibling elements are defined as elements that share a common parent node.</p>
         <p>In this example, a {'<p>'} element is selected only if it directly succeeds a {'<div>'} within the same parent container.</p>
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-{`h2 + p {
-  background-color: green;
-}`}
-        </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">h2 + p</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">green</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
       </div>
 
       {/* Example 4: General Sibling Selector */}
@@ -74,11 +95,18 @@ const CssCombinators = () => {
         </p>
         <p>In this example, the selector applies styles to each {'<p>'} element that appears after a {'<div>'} as a sibling within the same parent element.</p>
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-{`h2 ~ p {
-  background-color: purple;
-}`}
-        </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">h2 ~ p</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">purple</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       </div>
     </div>

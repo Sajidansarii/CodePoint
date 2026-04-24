@@ -15,7 +15,7 @@ const JSSwitch = () => {
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-2">Syntax:</h2>
       
-      <pre className="text-green-400 bg-gray-900 mt-5 rounded-lg">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
      <code>
       {`
       switch(expression) {
@@ -33,7 +33,7 @@ const JSSwitch = () => {
         </pre>
 
       <h2 className="text-2xl font-semibold text-gray-800 mt-10 mb-5">Example:</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto rounded-lg mb-4">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`let day = "Tuesday";
 
@@ -60,7 +60,7 @@ switch(day) {
      <p className="text-gray-700">The <span className="text-red-400">default</span> keyword provides the code to execute if all cases fail to match.</p>
      <p className="text-gray-700">Using <span className="text-red-400">default</span> is optional; however, it can act as a fallback that runs if none of the cases apply.</p>
      
-     <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       <code>
         {`
         let day = "Tuesday";
@@ -90,7 +90,7 @@ switch(day) {
     <p className="text-gray-700">For a <span className="font-semibold">strict</span> comparison to return true, both operands must be the same type.</p>
 
     <h1 className="text-2xl mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 rounded-lg p-4 mt-3">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       <code>
         {`
         let x = "0";

@@ -15,109 +15,219 @@ const JSAJAXASPApp = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Display XML Data in an HTML Table</h1>
       <p>This example iterates over each <span className="text-red-400">{'<CD>'}</span> element and shows the <span className="text-red-400">{'<ARTIST>'}</span> and <span className="text-red-400">{'<TITLE>'}</span> values in an HTML table.</p>
        <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-          {`<table id="demo"></table>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">&lt;table</span>{" "}
+    <span className="text-red-500">id</span>=
+    <span className="text-green-700">"demo"</span>
+    <span className="text-red-500">&gt;&lt;/table&gt;</span>
 
-<script>
-function loadXMLDoc() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    const xmlDoc = xhttp.responseXML;
-    const cd = xmlDoc.getElementsByTagName("CD");
-    myFunction(cd);
-  }
-  xhttp.open("GET", "cd_catalog.xml");
-  xhttp.send();
-}
+    <br /><br />
 
-function myFunction(cd) {
-  let table="<tr><th>Artist</th><th>Title</th></tr>";
-  for (let i = 0; i < cd.length; i++) {
-    table += "<tr><td>" +
-    cd[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
-    "</td><td>" +
-    cd[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
-    "</td></tr>";
-  }
-  document.getElementById("demo").innerHTML = table;
-}
-</script>
+    <span className="text-blue-600">&lt;script&gt;</span>
+    <br />
 
-</body>
-</html>`}
-        </code>
-      </pre>
+    <span className="text-red-500">function</span>{" "}
+    loadXMLDoc() {"{"}
+    <br />
+    &nbsp;&nbsp;<span className="text-red-500">const</span> xhttp = new XMLHttpRequest();
+    <br />
+    &nbsp;&nbsp;xhttp.onload = function() {"{"}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">const</span> xmlDoc = xhttp.responseXML;
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">const</span> cd = xmlDoc.getElementsByTagName("CD");
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;myFunction(cd);
+    <br />
+    &nbsp;&nbsp;{"}"}
+    <br />
+    &nbsp;&nbsp;xhttp.open("GET", "cd_catalog.xml");
+    <br />
+    &nbsp;&nbsp;xhttp.send();
+    <br />
+    {"}"}
 
+    <br /><br />
+
+    <span className="text-red-500">function</span> myFunction(cd) {"{"}
+    <br />
+    &nbsp;&nbsp;let table = "&lt;tr&gt;&lt;th&gt;Artist&lt;/th&gt;&lt;th&gt;Title&lt;/th&gt;&lt;/tr&gt;";
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">for</span> (let i = 0; i &lt; cd.length; i++) {"{"}
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;table += "&lt;tr&gt;&lt;td&gt;" +
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;cd[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;"&lt;/td&gt;&lt;td&gt;" +
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;cd[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;"&lt;/td&gt;&lt;/tr&gt;";
+    <br />
+
+    &nbsp;&nbsp;{"}"}
+    <br />
+
+    &nbsp;&nbsp;document.getElementById("demo").innerHTML = table;
+    <br />
+    {"}"}
+    <br />
+
+    <span className="text-blue-600">&lt;/script&gt;</span>
+
+    <br /><br />
+
+    <span className="text-blue-600">&lt;/body&gt;</span>
+    <br />
+    <span className="text-blue-600">&lt;/html&gt;</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Display the First CD in an HTML div Element</h1>
       <p>This example calls a function to display the first <span className="text-red-400">{'<CD>'}</span> element inside the HTML element with id="showCD".</p>
       <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-          {`const xhttp = new XMLHttpRequest();
-xhttp.onload = function() {
-  const xmlDoc = xhttp.responseXML;
-  const cd = xmlDoc.getElementsByTagName("CD");
-  myFunction(cd, 0);
-}
-xhttp.open("GET", "cd_catalog.xml");
-xhttp.send();
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">const</span> xhttp = new XMLHttpRequest();
+    <br />
 
-function myFunction(cd, i) {
-  document.getElementById("showCD").innerHTML =
-  "Artist: " +
-  cd[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
-  "<br>Title: " +
-  cd[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
-  "<br>Year: " +
-  cd[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
-}`}
-        </code>
-      </pre>
+    xhttp.onload = function() {"{"}
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">const</span> xmlDoc = xhttp.responseXML;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">const</span> cd = xmlDoc.getElementsByTagName("CD");
+    <br />
+
+    &nbsp;&nbsp;myFunction(cd, 0);
+    <br />
+
+    {"}"}
+    <br /><br />
+
+    xhttp.open("GET", "cd_catalog.xml");
+    <br />
+    xhttp.send();
+    <br /><br />
+
+    <span className="text-red-500">function</span> myFunction(cd, i) {"{"}
+    <br />
+
+    &nbsp;&nbsp;document.getElementById("showCD").innerHTML =
+    <br />
+
+    &nbsp;&nbsp;"Artist: " +
+    <br />
+
+    &nbsp;&nbsp;cd[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+    <br />
+
+    &nbsp;&nbsp;"&lt;br&gt;Title: " +
+    <br />
+
+    &nbsp;&nbsp;cd[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    <br />
+
+    &nbsp;&nbsp;"&lt;br&gt;Year: " +
+    <br />
+
+    &nbsp;&nbsp;cd[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
+    <br />
+
+    {"}"}
+  </code>
+</pre>
 
 
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb3">Navigate Between the CDs</h1>
       <p className="mt-3">Create <span className="text-red-400">next()</span> and <span className="text-red-400">previous()</span> functions to navigate between the CDs in the example.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-          {`function next() {
-  // display the next CD, unless you are on the last CD
-  if (i < len-1) {
-    i++;
-    displayCD(i);
-  }
-}
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">function</span> next() {"{"}
+    <br />
 
-function previous() {
-  // display the previous CD, unless you are on the first CD
-  if (i > 0) {
-    i--;
-    displayCD(i);
-  }
-}`}
-        </code>
-      </pre>
+    &nbsp;&nbsp;<span className="text-gray-500">// display the next CD, unless you are on the last CD</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">if</span> (i &lt; len - 1) {"{"}
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;i++;
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;displayCD(i);
+    <br />
+
+    &nbsp;&nbsp;{"}"}
+    <br />
+
+    {"}"}
+
+    <br /><br />
+
+    <span className="text-red-500">function</span> previous() {"{"}
+    <br />
+
+    &nbsp;&nbsp;<span className="text-gray-500">// display the previous CD, unless you are on the first CD</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">if</span> (i &gt; 0) {"{"}
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;i--;
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;displayCD(i);
+    <br />
+
+    &nbsp;&nbsp;{"}"}
+    <br />
+
+    {"}"}
+  </code>
+</pre>
 
 
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Show Album Information When Clicking On a CD</h1>
       <p>The last example demonstrates how to display album information when a user clicks on a CD.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-          {`function displayCD(i) {
-  document.getElementById("showCD").innerHTML =
-  "Artist: " +
-  cd[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
-  "<br>Title: " +
-  cd[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
-  "<br>Year: " +
-  cd[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
-}`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">function</span> displayCD(i) {"{"}
+    <br />
 
+    &nbsp;&nbsp;document.getElementById("showCD").innerHTML =
+    <br />
+
+    &nbsp;&nbsp;"Artist: " +
+    <br />
+
+    &nbsp;&nbsp;cd[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+    <br />
+
+    &nbsp;&nbsp;"&lt;br&gt;Title: " +
+    <br />
+
+    &nbsp;&nbsp;cd[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    <br />
+
+    &nbsp;&nbsp;"&lt;br&gt;Year: " +
+    <br />
+
+    &nbsp;&nbsp;cd[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
+    <br />
+
+    {"}"}
+  </code>
+</pre>
 
     </div>
   );

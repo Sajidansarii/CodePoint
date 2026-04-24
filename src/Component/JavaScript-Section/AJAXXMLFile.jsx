@@ -49,30 +49,80 @@ const JSAJAXXMLFile = () => {
       <p className="mb-3">The <span className="text-red-400">loadDoc()</span> function creates an XMLHttpRequest object, assigns a function to run when the server response is ready, and sends the request to the server.</p>
       <p>When the response arrives, the code builds an HTML table, retrieves nodes from the XML file, and updates the "demo" element with the populated table.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-          {`function loadDoc() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {myFunction(this);}
-  xhttp.open("GET", "cd_catalog.xml");
-  xhttp.send();
-}
-function myFunction(xml) {
-  const xmlDoc = xml.responseXML;
-  const x = xmlDoc.getElementsByTagName("CD");
-  let table="<tr><th>Artist</th><th>Title</th></tr>";
-  for (let i = 0; i <x.length; i++) {
-    table += "<tr><td>" +
-    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
-    "</td><td>" +
-    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
-    "</td></tr>";
-  }
-  document.getElementById("demo").innerHTML = table;
-}`}
-        </code>
-      </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">function</span> loadDoc() {"{"}
+    <br />
 
+    &nbsp;&nbsp;<span className="text-red-500">const</span> xhttp = new XMLHttpRequest();
+    <br />
+
+    &nbsp;&nbsp;xhttp.onload = function() {"{"}
+    myFunction(this);
+    {"}"}
+    <br />
+
+    &nbsp;&nbsp;xhttp.open(
+    <span className="text-green-700">"GET"</span>,
+    <span className="text-green-700">"cd_catalog.xml"</span>
+    );
+    <br />
+
+    &nbsp;&nbsp;xhttp.send();
+    <br />
+    {"}"}
+
+    <br /><br />
+
+    <span className="text-red-500">function</span> myFunction(xml) {"{"}
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">const</span> xmlDoc = xml.responseXML;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">const</span> x = xmlDoc.getElementsByTagName(
+    <span className="text-green-700">"CD"</span>
+    );
+    <br />
+
+    &nbsp;&nbsp;let table =
+    <span className="text-green-700">"&lt;tr&gt;&lt;th&gt;Artist&lt;/th&gt;&lt;th&gt;Title&lt;/th&gt;&lt;/tr&gt;"</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">for</span> (let i = 0; i &lt; x.length; i++) {"{"}
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;table +=
+    <span className="text-green-700">"&lt;tr&gt;&lt;td&gt;"</span> +
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;x[i].getElementsByTagName(
+    <span className="text-green-700">"ARTIST"</span>
+    )[0].childNodes[0].nodeValue +
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-green-700">"&lt;/td&gt;&lt;td&gt;"</span> +
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;x[i].getElementsByTagName(
+    <span className="text-green-700">"TITLE"</span>
+    )[0].childNodes[0].nodeValue +
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-green-700">"&lt;/td&gt;&lt;/tr&gt;"</span>;
+    <br />
+
+    &nbsp;&nbsp;{"}"}
+    <br />
+
+    &nbsp;&nbsp;document.getElementById(
+    <span className="text-green-700">"demo"</span>
+    ).innerHTML = table;
+    <br />
+
+    {"}"}
+  </code>
+</pre>
 
     </div>
   );

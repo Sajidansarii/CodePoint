@@ -12,13 +12,18 @@ const CSSDisplay = () => {
       </p>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Syntax</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`selector {
-  display: value;
-}`}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-blue-500">selector</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">display</span>
+    <span>: </span>
+    <span className="text-green-700">value</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Common Values</h2>
       <ul className="list-disc list-inside text-gray-700 mb-4">
@@ -49,17 +54,18 @@ const CSSDisplay = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 1: Block vs Inline
       </h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`p {
-  display: inline;
-}
+      <pre className="bg-gray-200 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">p</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">inline</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-span {
-  display: block;
-}`}
-        </code>
-      </pre>
+    <span className="text-blue-500">span</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">block</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
+
       <div className="mb-6">
         <p className="bg-blue-200 inline px-2">This is a paragraph (inline)</p>
         <span className="bg-green-200 block px-2">
@@ -71,17 +77,39 @@ span {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 2: Inline-block
       </h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`.box {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  background: lightblue;
-  margin: 5px;
-}`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-blue-500">.box</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">display</span>
+    <span>: </span>
+    <span className="text-green-700">inline-block</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">width</span>
+    <span>: </span>
+    <span className="text-green-700">100px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">height</span>
+    <span>: </span>
+    <span className="text-green-700">100px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">background</span>
+    <span>: </span>
+    <span className="text-green-700">lightblue</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">margin</span>
+    <span>: </span>
+    <span className="text-green-700">5px</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+
       <div className="mb-6">
         <div className="inline-block w-24 h-24 bg-blue-300 m-2"></div>
         <div className="inline-block w-24 h-24 bg-green-300 m-2"></div>
@@ -92,13 +120,19 @@ span {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 3: None (Hide Element)
       </h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`.hidden {
-  display: none;
-}`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-blue-500">.hidden</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">display</span>
+    <span>: </span>
+    <span className="text-green-700">none</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+
       <div className="mb-6">
         <p className="bg-red-200 p-2">This is visible</p>
         <p className="hidden bg-gray-300 p-2">This is hidden</p>
@@ -108,20 +142,20 @@ span {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 4: Flex & Grid
       </h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`.flex-container {
-  display: flex;
-  gap: 10px;
-}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-blue-500">.flex-container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">gap</span>: <span className="text-green-700">10px</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}`}
-        </code>
-      </pre>
+    <span className="text-blue-500">.grid-container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">grid</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">grid-template-columns</span>: <span className="text-green-700">repeat(3, 1fr)</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">gap</span>: <span className="text-green-700">10px</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <div className="mb-6">
         <h3 className="font-semibold text-gray-700">Flex Example:</h3>

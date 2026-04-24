@@ -1,40 +1,9 @@
-import React, { useCallback } from "react";
-
-const WhatIsHTML = () => {
-  const codeString = `<!DOCTYPE html>
-<html>
-  <head>
-    <title>My First HTML Page</title>
-  </head>
-  <body>
-    <h1>Welcome to CodePoint!</h1>
-    <p>This page is created using HTML.</p>
-  </body>
-</html>`;
-
-  const copyCode = useCallback(() => {
-    navigator.clipboard.writeText(codeString).catch(() => {
-      // fallback if clipboard API fails
-      const textarea = document.createElement("textarea");
-      textarea.value = codeString;
-      textarea.setAttribute("readonly", "true");
-      textarea.style.position = "absolute";
-      textarea.style.left = "-9999px";
-      document.body.appendChild(textarea);
-      textarea.select();
-      try {
-        document.execCommand("copy");
-      } catch {}
-      document.body.removeChild(textarea);
-    });
-  }, [codeString]);
-
+function WhatIsHTML(){
   return (
     <div className="p-4 sm:p-6 md:p-8 max-w-4xl">
-      <header>
+      
         <h1 className="text-2xl font-semibold text-blue-500 mb-3">What is HTML?</h1>
         <p className="text-gray-800 mb-4"><span className="text-red-400 bg-gray-50">HTML</span> stands for <span className="text-red-400 bg-gray-50">HyperText Markup Language</span>. It is the standard markup language used to create and structure content on the World Wide Web. </p>
-      </header>
 
       <section aria-label="Why it is called HyperText Markup Language">
         <h2 className="text-xl text-blue-500 mt-6 mb-2">Why is it called "HyperText Markup Language"?</h2>
@@ -66,23 +35,71 @@ const WhatIsHTML = () => {
       <section aria-label="Example HTML code">
         <h2 className="text-xl  text-blue-500 mt-6 mb-5">Example</h2>
         <div className="relative mb-4">
-          <details className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-            <summary className="cursor-pointer text-white font-semibold mb-2">
-              View HTML code
-            </summary>
-            <div className="mt-2">
-              <pre className="text-green-400 rounded-lg p-4 bg-gray-900 overflow-x-auto max-w-full whitespace-pre-wrap">
-                <code className="block whitespace-pre-wrap break-words">{codeString}</code>
-              </pre>
-              <button
-                onClick={copyCode}
-                aria-label="Copy HTML example code"
-                className="mt-2 inline-flex items-center gap-1 px-3 py-1 text-xs font-medium rounded-md border border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900 transition"
-              >
-                Copy code
-              </button>
-            </div>
-          </details>
+              <pre className="rounded-lg p-4 bg-gray-100 overflow-x-auto max-w-full whitespace-pre-wrap text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-gray-500">!DOCTYPE </span>
+    <span className="text-blue-500">html</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">html</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">head</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">title</span>
+    <span className="text-gray-500">&gt;</span>
+    <span>My First HTML Page</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">title</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;/</span>
+    <span className="text-blue-500">head</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">body</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">h1</span>
+    <span className="text-gray-500">&gt;</span>
+    <span>Welcome to CodePoint!</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">h1</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <span>This page is created using HTML.</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;/</span>
+    <span className="text-blue-500">body</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">html</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         </div>
       </section>
 
@@ -97,6 +114,6 @@ const WhatIsHTML = () => {
       </section>
     </div>
   );
-};
+}
 
 export default WhatIsHTML;

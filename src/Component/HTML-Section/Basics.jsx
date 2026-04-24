@@ -35,17 +35,53 @@ const HTMLBasics = () => {
 
       {/* Code Example */}
       <h2 className="text-2xl font-semibold text-blue-500 mt-5 mb-5">Example</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-{`<!DOCTYPE html>
-<html>
-  <head>
-    <title>My First Page</title>
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-    <p>This is my first HTML page.</p>
-  </body>
-</html>`}
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+       <code>
+        <span className="text-gray-30">&lt;</span>
+        <span className="text-gray-500">!DOCTYPE</span>
+        <span className="text-blue-500"> html</span>
+        <span className="text-gray-30">&gt;</span><br></br>
+        <span className="text-gray-30">&lt;</span>
+        <span className="text-blue-500">html</span>
+        <span className="text-gray-30">&gt;</span><br></br>
+        <span className="text-gray-30">&lt;</span>
+        <span className="text-blue-500">head</span>
+        <span className="text-gray-30">&gt;</span><br></br>
+        <span className="text-gray-30">&lt;</span>
+        <span className="text-blue-500">title</span>
+        <span className="text-gray-30">&gt;</span>
+        <span className="My First Page">My First Page</span>
+        <span className="text-gray-30">&lt;/</span>
+        <span className="text-blue-500">title</span>
+        <span className="text-gray-30">&gt;</span><br></br>
+        <span className="text-gray-30">&lt;/</span>
+        <span className="text-blue-500">head</span>
+        <span className="text-gray-30">&gt;</span><br></br>
+        <span className="text-gray-30">&lt;</span>
+        <span className="text-blue-500">body</span>
+        <span className="text-gray-30">&gt;</span><br></br>
+        <span className="text-gray-30">&lt;</span>
+        <span className="text-blue-500">h1</span>
+        <span className="text-gray-30">&gt;</span>
+        <span className="">Hello, World</span>
+        <span className="text-gray-30">&lt;/</span>
+        <span className="text-blue-500">h1</span>
+        <span className="text-gray-30">&gt;</span><br></br>
+        <span className="text-gray-30">&lt;</span>
+        <span className="text-blue-500">p</span>
+        <span className="text-gray-30">&gt;</span>
+        <span className="">This Is My first HTML Page.</span>
+        <span className="text-gray-30">&lt;/</span>
+        <span className="text-blue-500">p</span>
+        <span className="text-gray-30">&gt;</span><br></br>
+        <span className="text-gray-30">&lt;/</span>
+        <span className="text-blue-500">body</span>
+        <span className="text-gray-30">&gt;</span><br></br>
+        <span className="text-gray-30">&lt;/</span>
+        <span className="text-blue-500">html</span>
+        <span className="text-gray-30">&gt;</span>
+       
+       </code>
       </pre>
 
       {/* Explanation */}

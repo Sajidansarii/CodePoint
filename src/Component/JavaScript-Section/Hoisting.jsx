@@ -11,25 +11,33 @@ const JSHoisting = () => {
       <h1 className="text-2xl mt-10">JavaScript Declarations are Hoisted</h1>
       <p>You can use a variable before its actual declaration line.</p>
       <h1 className="text-2xl mt-5">Example1</h1>
-      <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-10">
-        {`x = 5; // Assign 5 to x
+    <pre className="bg-gray-200 p-4 rounded-lg mt-10 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    x = 5; // Assign 5 to x
+    <br /><br />
 
-elem = document.getElementById("demo"); // Find an element
-elem.innerHTML = x;                     // Display x in the element
+    elem = document.getElementById("demo"); // Find an element
+    <br />
+    elem.innerHTML = x; // Display x in the element
+    <br /><br />
 
-var x; // Declare x`}
-      </pre>
+    var x; // Declare x
+  </code>
+</pre>
 
       <h1 className="text-2xl mt-5">Example 2</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-10">
-        {`var x; // Declare x
-x = 5; // Assign 5 to x
+     <pre className="bg-gray-200 p-4 rounded-lg mt-10 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    var x; // Declare x
+    <br />
+    x = 5; // Assign 5 to x
+    <br /><br />
 
-elem = document.getElementById("demo"); // Find an element
-elem.innerHTML = x;                     // Display x in the element`}
-      </pre>
-
-
+    elem = document.getElementById("demo"); // Find an element
+    <br />
+    elem.innerHTML = x; // Display x in the element
+  </code>
+</pre>
 
       <p className="mt-5 mb-10">In JavaScript, hoisting means that variable and function declarations are moved to the top of their scope before the code runs.</p>
 
@@ -39,55 +47,74 @@ elem.innerHTML = x;                     // Display x in the element`}
       <p className="leading-relaxed mt-3">From the start of the block to the point where it's declared, the variable is in a temporal dead zone and cannot be accessed.</p>
      <h1 className="text-2xl mt-10">Example</h1>
      <p className="mt-3">This will throw a ReferenceError.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-      {`cityName = "Mumbai";
-let cityName;`}
-     </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    cityName = "Mumbai";
+    <br />
+    let cityName;
+  </code>
+</pre>
 
      <p className="leading-relaxed mt-5">Trying to use a <span className="text-red-400 bg-gray-50 px-1">const</span> variable before it's declared causes a syntax error, preventing the code from running.</p>
     <h1 className="text-2xl mt-10">Example</h1>
     <p>This causes the program to halt before running.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-      {`cityName = "Volvo";
-const cityName;`}
-    </pre>
-
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    cityName = "Volvo";
+    <br />
+    const cityName;
+  </code>
+</pre>
 
     <h1 className="text-2xl mt-10">JavaScript Initializations are Not Hoisted</h1>
     <p className="leading-relaxed mt-3">Variable declarations are moved to the top during hoisting, but their initializations are not.</p>
     <h1 className="text-2xl mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
-      {`var x = 5; // Initialize x
-var y = 7; // Initialize y
+  <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    var x = 5; // Initialize x
+    <br />
+    var y = 7; // Initialize y
+    <br /><br />
 
-elem = document.getElementById("demo"); // Find an element
-elem.innerHTML = x + " " + y;           // Display x and y`}
-    </pre>
+    elem = document.getElementById("demo"); // Find an element
+    <br />
+    elem.innerHTML = x + " " + y; // Display x and y
+  </code>
+</pre>
 
     <h1 className="text-2xl mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5 mb-10">
-      {`var x = 5; // Initialize x
+  <pre className="bg-gray-200 p-4 rounded-lg mt-5 mb-10 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    var x = 5; // Initialize x
+    <br /><br />
 
-elem = document.getElementById("demo"); // Find an element
-elem.innerHTML = x + " " + y;           // Display x and y
+    elem = document.getElementById("demo"); // Find an element
+    <br />
+    elem.innerHTML = x + " " + y; // Display x and y
+    <br /><br />
 
-var y = 7; // Initialize y`}
-    </pre>
+    var y = 7; // Initialize y
+  </code>
+</pre>
 
     <p className="leading-relaxed mt-3">That's because only the declaration <span className="bg-gray-50">(var y)</span> is hoisted — the assignment <span className="bg-gray-50">(= 7)</span> stays where it is.</p>
     <p className="leading-relaxed mt-3">Hoisting causes <span className="bg-gray-50"> y </span> to be declared ahead of time, but without its initialization, so it holds undefined initially.</p>
     <h1 className="text-2xl mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
-      {`var x = 5; // Initialize x
-var y;     // Declare y
+  <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    var x = 5; // Initialize x
+    <br />
+    var y; // Declare y
+    <br /><br />
 
-elem = document.getElementById("demo"); // Find an element
-elem.innerHTML = x + " " + y;           // Display x and y
+    elem = document.getElementById("demo"); // Find an element
+    <br />
+    elem.innerHTML = x + " " + y; // Display x and y
+    <br /><br />
 
-y = 7;    // Assign 7 to y`}
-    </pre>
-
-
+    y = 7; // Assign 7 to y
+  </code>
+</pre>
 
     </div>
   );

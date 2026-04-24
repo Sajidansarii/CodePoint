@@ -15,9 +15,20 @@ const HTMLImagesDetailed = () => {
         <p className="leading-relaxed mb-3">
           The simplest image tag includes <code>src</code> and <code>alt</code>:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          {'<img src="logo.png" alt="CodePoint Logo" />'}
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">img</span>
+
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"logo.png"</span>
+
+    <span className="text-red-500"> alt</span>=
+    <span className="text-green-600">"CodePoint Logo"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed">
           <code>src</code> points to the image file, and <code>alt</code> describes it for screen readers or if it fails to load.
         </p>
@@ -29,14 +40,34 @@ const HTMLImagesDetailed = () => {
         <p className="leading-relaxed mb-3">
           Use <code>srcset</code> and <code>sizes</code> to let the browser pick the best version depending on screen size and resolution.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          {`<img 
-  src="small.jpg" 
-  srcset="small.jpg 480w, medium.jpg 800w, large.jpg 1200w" 
-  sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px" 
-  alt="Scenic view" 
-  loading="lazy" />`}
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">img</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;src</span>=
+    <span className="text-green-600">"small.jpg"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;srcset</span>=
+    <span className="text-green-600">"small.jpg 480w, medium.jpg 800w, large.jpg 1200w"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;sizes</span>=
+    <span className="text-green-600">"(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;alt</span>=
+    <span className="text-green-600">"Scenic view"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;loading</span>=
+    <span className="text-green-600">"lazy"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
         <p className="text-gray-700">
           This improves performance by loading an appropriately sized image for the device.
         </p>
@@ -48,9 +79,23 @@ const HTMLImagesDetailed = () => {
         <p className="text-gray-700 mb-3">
           Deferring offscreen images speeds up initial load. Use:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          {'<img src="photo.jpg" alt="Example" loading="lazy" />'}
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">img</span>
+
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"photo.jpg"</span>
+
+    <span className="text-red-500"> alt</span>=
+    <span className="text-green-600">"Example"</span>
+
+    <span className="text-red-500"> loading</span>=
+    <span className="text-green-600">"lazy"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
         <p className="text-gray-700">
           The browser only loads it when it's near the viewport.
         </p>
@@ -62,12 +107,42 @@ const HTMLImagesDetailed = () => {
         <p className="leading-relaxed mb-3">
           Use <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> for semantic captions.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          {`<figure>
-  <img src="sunset.jpg" alt="Sunset" loading="lazy" />
-  <figcaption>Sunset over mountains.</figcaption>
-</figure>`}
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">figure</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">img</span>
+
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"sunset.jpg"</span>
+
+    <span className="text-red-500"> alt</span>=
+    <span className="text-green-600">"Sunset"</span>
+
+    <span className="text-red-500"> loading</span>=
+    <span className="text-green-600">"lazy"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">figcaption</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Sunset over mountains.</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">figcaption</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">figure</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Accessibility */}
@@ -114,14 +189,34 @@ const HTMLImagesDetailed = () => {
         <p className="leading-relaxed mb-3">
           Logo with lazy loading and accessibility:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>{`<img 
-  src="/assets/codepoint-logo.png" 
-  alt="CodePoint Logo" 
-  width="200" 
-  height="60" 
-  loading="lazy" />`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">img</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;src</span>=
+    <span className="text-green-600">"/assets/codepoint-logo.png"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;alt</span>=
+    <span className="text-green-600">"CodePoint Logo"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;width</span>=
+    <span className="text-blue-600">"200"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;height</span>=
+    <span className="text-blue-600">"60"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;loading</span>=
+    <span className="text-green-600">"lazy"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Quick Recap */}

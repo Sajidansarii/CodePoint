@@ -107,7 +107,7 @@ const JSErrorObjects = () => {
      <p className="mb-3">The <span className="text-red-400">try</span> statement lets you specify a block of code to check for errors during execution.</p>
     <p className="mb-3">The <span className="text-red-400">catch</span> statement defines code that runs if an error occurs in the try block.</p>
     <p>In JavaScript, <span className="text-red-400">try</span> and <span className="text-red-400">catch</span> statements are always used together.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`try {
   Block of code to try
@@ -140,7 +140,7 @@ const JSErrorObjects = () => {
 
      <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
      <p>A variable that does not exist cannot be used.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`let x = 5;
 
@@ -153,7 +153,7 @@ try {
      </pre>
 
      <p className="mt-5">Cannot access a variable before initialization:</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`try {
   let x = y;
@@ -189,7 +189,7 @@ try {
 
    <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
    <p>Anna() is not a function:</p>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`try {
   Anna(5);
@@ -201,7 +201,7 @@ try {
    </pre>
 
    <p className="mt-5">You cannot convert a number to upper case:</p>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`let num = 1;
 try {
@@ -238,7 +238,7 @@ try {
 
    <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
    <p>You cannot set the number of array elements to -1:</p>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`try {
 new Array(-1);
@@ -249,7 +249,7 @@ new Array(-1);
    </pre>
 
    <p className="mt-5">You cannot set the number of significant digits of a number to 500:</p>
-  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`let num = 1;
 
@@ -285,7 +285,7 @@ try {
   </div>
 
   <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`try {
   decodeURI("%%%");   // You cannot URI decode percent signs
@@ -320,7 +320,7 @@ try {
 
    <h2 className="text-gray-800 text-2xl font-semibold mt-5 mb-3">Example</h2>
    <p>This example shows an error caused by not properly closing the string.</p>
-   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`// This line cannot be parsed by JavaScript
 let fName = "John);
@@ -335,7 +335,7 @@ let fName = "John);
    <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Syntax Errors are Not Catchable</h1>
    <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
    <p>The code shown below is expected to produce an error, but it doesn’t.</p>
-   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`try {
   let x = Math.round(4.6;)
@@ -347,14 +347,14 @@ let fName = "John);
    </pre>
 
    <h2 className="text-2xl text-gray-800 mt-5 font-semibold">Syntax Issue</h2>
-   <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`Math.round(4.6;)`}
     </code>
    </pre>
    <p className="mt-5">The line above is not valid JavaScript syntax because there is an extra semicolon inside the parentheses. The correct syntax is:</p>
   
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`Math.round(4.6);`}
     </code>

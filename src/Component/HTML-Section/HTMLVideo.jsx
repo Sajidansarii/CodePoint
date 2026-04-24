@@ -11,11 +11,29 @@ const HtmlVideo = () => {
       </p>
 
       <h2 className="text-2xl font-semibold mt-5 mb-3">Basic Syntax</h2>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-        {`<video src="movie.mp4" controls>
-  Your browser does not support the video tag.
-</video>`}
-      </pre>
+    <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">video</span>
+
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"movie.mp4"</span>
+
+    <span className="text-red-500"> controls</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-700">
+      &nbsp;&nbsp;Your browser does not support the video tag.
+    </span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">video</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
 
       <h2 className="text-2xl font-semibold mt-5 mb-3">Common Attributes</h2>
       <ul className="list-[square] list-inside mb-3">
@@ -33,14 +51,71 @@ const HtmlVideo = () => {
         You can provide multiple video formats to ensure compatibility across
         browsers.
       </p>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-        {`<video width="640" height="360" controls poster="thumbnail.jpg">
-  <source src="movie.mp4" type="video/mp4">
-  <source src="movie.webm" type="video/webm">
-  <source src="movie.ogg" type="video/ogg">
-  Your browser does not support the video tag.
-</video>`}
-      </pre>
+    <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">video</span>
+
+    <span className="text-red-500"> width</span>=
+    <span className="text-green-600">"640"</span>
+
+    <span className="text-red-500"> height</span>=
+    <span className="text-green-600">"360"</span>
+
+    <span className="text-red-500"> controls</span>
+
+    <span className="text-red-500"> poster</span>=
+    <span className="text-green-600">"thumbnail.jpg"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">source</span>
+
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"movie.mp4"</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"video/mp4"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">source</span>
+
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"movie.webm"</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"video/webm"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">source</span>
+
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"movie.ogg"</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"video/ogg"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-700">
+      &nbsp;&nbsp;Your browser does not support the video tag.
+    </span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">video</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
 
       <h2 className="text-2xl font-semibold mt-5 mb-3">Browser Support</h2>
       <p className="mb-3">

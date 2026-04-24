@@ -15,7 +15,7 @@ const JSFetchAPI = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">A Fetch API Example</h1>
     <p>The example below retrieves a file and shows its contents.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`fetch(file)
 .then(x => x.text())
@@ -25,7 +25,7 @@ const JSFetchAPI = () => {
 
       <p className="mt-5">As Fetch relies on asynchronous functions, the example above might be simpler to follow when shown this way:</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`async function getText(file) {
   let x = await fetch(file);
@@ -37,7 +37,7 @@ const JSFetchAPI = () => {
 
       <p className="mt-5">Even better, replace x and y with more descriptive names.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`async function getText(file) {
   let myObject = await fetch(file);
@@ -46,13 +46,6 @@ const JSFetchAPI = () => {
 }`}
         </code>
       </pre>
-      
-      
-      
-      
-      
-      
-      
       </div>
   );
 };

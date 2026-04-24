@@ -26,45 +26,55 @@ const CssRWD = () => {
 
       {/* Code Example */}
       <h2 className="text-2xl font-semibold">Example Code:</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`<!DOCTYPE html>
-<html>
-<head>
-<title>Responsive Web Design</title>
-  <style>
-  .container {
-    display: flex;
-      gap: 10px;
-      }
-    .box {
-      flex: 1;
-      padding: 20px;
-      color: white;
-      }
-      .box1 { background: red; }
-    .box2 { background: green; }
-    .box3 { background: blue; }
-    
-    /* Media Query for small screens */
-    @media (max-width: 600px) {
-      .container {
-        flex-direction: column;
-        }
-        }
-        </style>
-</head>
-<body>
-  <h1>Responsive Web Design Example</h1>
-  <div class="container">
-  <div class="box box1">Box 1</div>
-  <div class="box box2">Box 2</div>
-  <div class="box box3">Box 3</div>
-  </div>
-</body>
-</html>`}
-</code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-600">&lt;html&gt;</span><br />
+    <span className="text-blue-600">&lt;head&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;title&gt;</span>Responsive Web Design<span className="text-blue-600">&lt;/title&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;style&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">gap</span>: <span className="text-green-700">10px</span>;<br />
+    &nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">.box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">flex</span>: <span className="text-green-700">1</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">20px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">.box1</span> <span>{'{'}</span> <span className="text-red-500">background</span>: <span className="text-green-700">red</span>; <span>{'}'}</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">.box2</span> <span>{'{'}</span> <span className="text-red-500">background</span>: <span className="text-green-700">green</span>; <span>{'}'}</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">.box3</span> <span>{'{'}</span> <span className="text-red-500">background</span>: <span className="text-green-700">blue</span>; <span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;<span className="text-gray-500">/* Media Query for small screens */</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">@media (max-width: 600px)</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">flex-direction</span>: <span className="text-green-700">column</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+    &nbsp;&nbsp;<span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/style&gt;</span><br />
+    <span className="text-blue-600">&lt;/head&gt;</span><br />
+
+    <span className="text-blue-600">&lt;body&gt;</span><br /><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;h1&gt;</span>Responsive Web Design Example<span className="text-blue-600">&lt;/h1&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div class="container"&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;div class="box box1"&gt;</span>Box 1<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;div class="box box2"&gt;</span>Box 2<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;div class="box box3"&gt;</span>Box 3<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/div&gt;</span><br /><br />
+
+    <span className="text-blue-600">&lt;/body&gt;</span><br />
+    <span className="text-blue-600">&lt;/html&gt;</span>
+  </code>
+</pre>
 
       {/* Explanation */}
       <h2 className="text-2xl font-semibold">Explanation:</h2>

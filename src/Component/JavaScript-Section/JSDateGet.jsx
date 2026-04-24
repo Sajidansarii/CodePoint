@@ -39,7 +39,7 @@ const JSDateGet = () => {
       <p className="mb-3">Date objects in JavaScript are initialized with <span className="text-red-400">new Date()</span>.</p>
       <p><span className="text-red-400">new Date()</span> creates a date object representing the current date and time.</p>
       <h1 className="text-2xl text-gray-800 font-semibold mt-5">The Current Time</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`const date = new Date();`}
         </code>
@@ -48,7 +48,7 @@ const JSDateGet = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The getFullYear() Method</h1>
       <p>The getFullYear() method retrieves the year from a date as a four-digit number.</p>
       <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-      <pre className="text-green-400 bg-gray-900 rounded-lg p-4 mt-5">
+      <pre className="bg-gray-200 rounded-lg p-4 mt-5">
         <code>
           {`const d = new Date("2021-03-25");
 d.getFullYear();
@@ -56,24 +56,25 @@ d.getFullYear();
         </code>
       </pre>
 
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-          {`const d = new Date();
-d.getFullYear();`}
-        </code>
-      </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    const d = new Date();
+    <br />
+    d.getFullYear();
+  </code>
+</pre>
 
       <h1 className="text-2xl font-semibold mt-10 mb-3">The getMonth() Method</h1>
       <p>The getMonth() method retrieves the month of a date as a number between 0 and 11.</p>
       <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`const d = new Date("2021-03-25");
 d.getMonth();`}
         </code>
       </pre>
 
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`const d = new Date();
 d.getMonth();`}
@@ -83,14 +84,14 @@ d.getMonth();`}
       <h1 className="text-2xl font-semibold mt-10 mb-3">The getDate() Method</h1>
       <p>The <span className="text-red-400">getDate()</span> method retrieves the day of the month as a number between 1 and 31.</p>
       <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`const d = new Date("2021-03-25");
 d.getDate();`}
         </code>
       </pre>
 
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`const d = new Date();
 d.getDate();`}
@@ -100,14 +101,14 @@ d.getDate();`}
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The getHours() Method</h1>
      <p>The <span className="text-red-400">getHours()</span> method retrieves the hour of a date as a number between 0 and 23.</p>
      <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`const d = new Date("2021-03-25");
 d.getHours();`}
       </code>
      </pre>
 
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`const d = new Date();
 d.getHours();`}
@@ -117,14 +118,14 @@ d.getHours();`}
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The getMinutes() Method</h1>
      <p>The <span className="text-red-400">getMinutes()</span> method retrieves the minutes of a date as a number between 0 and 59.</p>
     <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`const d = new Date("2021-03-25");
 d.getMinutes();`}
       </code>
     </pre>
 
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`const d = new Date();
 d.getMinutes();`}
@@ -134,14 +135,14 @@ d.getMinutes();`}
     <h1 className="text-2xl font-semibold text-gray-800 mt-10 mb-3">The getSeconds() Method</h1>
     <p>The <span className="text-red-400">getSeconds()</span> method retrieves the seconds of a date as a number between 0 and 59.</p>
     <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`const d = new Date("2021-03-25");
 d.getSeconds();`}
       </code>
     </pre>
 
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`const d = new Date();
 d.getSeconds();`}
@@ -151,14 +152,14 @@ d.getSeconds();`}
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The getMilliseconds() Method</h1>
     <p>The <span className="text-red-400">getMilliseconds()</span> method retrieves the milliseconds of a date as a number between 0 and 999.</p>
     <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`const d = new Date("2021-03-25");
 d.getMilliseconds();`}
       </code>
     </pre>
 
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`const d = new Date();
 d.getMilliseconds();`}
@@ -168,14 +169,14 @@ d.getMilliseconds();`}
     <h1 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">The getDay() Method</h1>
     <p><span className="text-red-400">The getDay()</span> method retrieves the day of the week as a number between 0 and 6.</p>
     <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`const d = new Date("2021-03-25");
 d.getDay();`}
       </code>
     </pre>
 
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`const d = new Date();
 d.getDay();`}
@@ -185,21 +186,21 @@ d.getDay();`}
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The getTime() Method</h1>
     <p><span className="text-red-400">The getTime()</span> method returns the milliseconds elapsed since January 1, 1970.</p>
     <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`const d = new Date("1970-01-01");
 d.getTime();`}
       </code>
     </pre>
 
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`const d = new Date("2021-03-25");
 d.getTime();`}
       </code>
     </pre>
 
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`const d = new Date();
 d.getTime();`}
@@ -209,7 +210,7 @@ d.getTime();`}
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The Date.now() Method</h1>
     <p><span className="text-red-400">Date.now()</span> returns the milliseconds elapsed since January 1, 1970.</p>
     <h1 className="text-2xl text-gray-800 font-semibold mt-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-10 mb-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-10 mb-5">
       <code>
         {`let ms = Date.now();`}
       </code>
@@ -217,7 +218,7 @@ d.getTime();`}
 
     <p>Calculate the number of years since 1970/01/01:</p>
 
-    <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
+    <pre className="bg-gray-200 overflow-x-auto p-4 rounded-lg mt-5">
       <code>
         {`const minute = 1000 * 60;
 const hour = minute * 60;

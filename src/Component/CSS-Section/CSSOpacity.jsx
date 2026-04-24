@@ -27,13 +27,13 @@ const CssOpacity = () => {
         </div>
       </div>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`div {
-  opacity: 0.5; /* 50% visible */
-  }`}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">div</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">opacity</span>: <span className="text-green-700">0.5</span>; <span className="text-gray-500">/* 50% visible */</span><br />
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
 
       {/* Hover Example */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Hover with Opacity</h2>
@@ -42,18 +42,18 @@ const CssOpacity = () => {
         Hover Me
       </div>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`.box {
-  opacity: 1;
-  transition: opacity 0.3s;
-  }
-  
-  .box:hover {
-    opacity: 0.5;
-    }`}
-    </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">.box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">opacity</span>: <span className="text-green-700">1</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">transition</span>: <span className="text-green-700">opacity 0.3s</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">.box:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">opacity</span>: <span className="text-green-700">0.5</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       {/* Note Section */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Important Notes</h2>

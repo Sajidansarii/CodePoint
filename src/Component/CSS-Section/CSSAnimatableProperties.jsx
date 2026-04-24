@@ -246,12 +246,27 @@ export default function CssAnimationProperties() {
       <p>Animatable properties can transition smoothly from one value to another, such as size, numbers, percentages, and colors.</p>
       <h1 className="text-2xl mt-10">Example</h1>
       <p>Animate a smooth change in background-color, going from red to blue.</p>
-      <pre className="bg-gray-900 p-4 text-green-400 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-4">
-        {`@keyframes mymove {
-   from {background-color: red;}
-}  to {background-color: blue;}
-}`}
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-4">
+  <code>
+    <span className="text-blue-500">@keyframes mymove</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">from</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">red</span>
+    <span>;</span>
+    <span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">to</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">blue</span>
+    <span>;</span>
+    <span>{'}'}</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
        
        <h1 className="text-2xl mt-10">Animatable Properties</h1>
        <p className="mt-3 mb-6">You can animate these properties using CSS:</p>

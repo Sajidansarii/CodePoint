@@ -25,47 +25,55 @@ const CssSpecificity = () => {
       
         <li><strong>Inline Styles:</strong> Styles defined directly on an element using the style attribute have the highest priority in the cascade, overriding, both ID and class selectors.</li>
       
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-          {`<h1 style="color: blue;"> Example </h1>`}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">&lt;h1</span> <span className="text-red-500">style</span>=<span className="text-green-700">"color: blue;"</span><span className="text-blue-600">&gt;</span>
+    Example
+    <span className="text-blue-600">&lt;/h1&gt;</span>
+  </code>
+</pre>
 
      
       <li className="mt-5m"><strong>ID selectors:</strong> have higher specificity than class, type, and other basic selectors, giving them greater priority when multiple rules apply to the same element.</li>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-          {`<style>
-   #mainDiv {
-        color: blue;
-    }
-</style>`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">&lt;style&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">#mainDiv</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">blue</span>;<br />
+    &nbsp;&nbsp;<span>{'}'}</span><br />
+
+    <span className="text-blue-600">&lt;/style&gt;</span>
+  </code>
+</pre>
 
       <li><strong>Class selectors, attribute selectors, and pseudo-classes:</strong> Come next in the specificity hierarchy after ID selectors.<br/> Class selectors begin with a ., attribute selectors use square brackets [], and pseudo-classes are prefixed with a : <br/> (such as :hover or :first-child).</li>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-          {`<style>
-   .subDivs {
-        color: blue;
-    }
-</style>`}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">&lt;style&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">.subDivs</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">blue</span>;<br />
+    &nbsp;&nbsp;<span>{'}'}</span><br />
+
+    <span className="text-blue-600">&lt;/style&gt;</span>
+  </code>
+</pre>
 
     <li><strong>Elements and Pseudo-elements:</strong> Element selectors and pseudo-elements have the lowest specificity. Element selectors target HTML tags directly (e.g., div, p), while pseudo-elements are prefixed with :: (such as ::before or ::after).</li>
 
-    <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-      <code>
-        {`<style>
-    div {
-        color: blue;
-    }
-</style>`}
-      </code>
-    </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">&lt;style&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">div</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">blue</span>;<br />
+    &nbsp;&nbsp;<span>{'}'}</span><br />
+
+    <span className="text-blue-600">&lt;/style&gt;</span>
+  </code>
+</pre>
 
     <h1>How to Calculate Specificity?</h1>
     <p>To calculate specificity, it's helpful to remember these values:</p>

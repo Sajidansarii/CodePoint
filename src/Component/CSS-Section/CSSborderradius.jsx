@@ -20,28 +20,30 @@ const CSSBorderRadius = () => {
         <h2 className="text-2xl mb-3">Example: Border-Radius</h2>
         <p className="mb-4">In the examples given below, different border-radius values have been used.</p>
 
-        <pre className="bg-gray-900 text-green-400 p-3 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
+       <pre className="bg-gray-200 p-3 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">/* Simple rounded corners */</span><br />
 
-{`/* Simple rounded corners */
-div {
-  border: 2px solid black;
-  border-radius: 15px;
-  }
-  
-  /* Circle shape */
-  div {
-    border: 2px solid black;
-    border-radius: 50%;
-    }
-    
-    /* Elliptical radius */
-    div {
-      border: 2px solid black;
-      border-radius: 50px 15px;
-      }`}
-      </code>
-        </pre>
+    <span className="text-blue-500">div</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">2px solid black</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border-radius</span>: <span className="text-green-700">15px</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">/* Circle shape */</span><br />
+
+    <span className="text-blue-500">div</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">2px solid black</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border-radius</span>: <span className="text-green-700">50%</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">/* Elliptical radius */</span><br />
+
+    <span className="text-blue-500">div</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">2px solid black</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border-radius</span>: <span className="text-green-700">50px 15px</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
         {/* Live Demo */}
         <div className="grid grid-cols-3 gap-6 text-center mt-6">
@@ -93,48 +95,118 @@ div {
 
       <h1 className="text-2xl">Example</h1>
       <p>Create an element with a background color and smooth, rounded corners.</p>
-      <pre className="text-green-400 bg-black rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap"> 
-        <code>
-        {`#rcorners1 {
-  border-radius: 25px;
-  background: #73AD21;
-  padding: 20px;
-  width: 200px;
-  height: 150px;
-  }`}
+    <pre className="bg-gray-200 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">#rcorners1</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">border-radius</span>
+    <span>: </span>
+    <span className="text-green-700">25px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">background</span>
+    <span>: </span>
+    <span className="text-green-700">#73AD21</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">padding</span>
+    <span>: </span>
+    <span className="text-green-700">20px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">width</span>
+    <span>: </span>
+    <span className="text-green-700">200px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">height</span>
+    <span>: </span>
+    <span className="text-green-700">150px</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
 
       <h1 className="text-2xl">Example</h1>
       <p>Create an element with smooth, curved corners and a visible border.</p>
-      <pre className="text-green-400 bg-black rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-        {`#rcorners2 {
-  border-radius: 25px;
-  border: 2px solid #73AD21;
-  padding: 20px;
-  width: 200px;
-  height: 150px;
-  }
-  `}
+    <pre className="bg-gray-200 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">#rcorners2</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">border-radius</span>
+    <span>: </span>
+    <span className="text-green-700">25px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">border</span>
+    <span>: </span>
+    <span className="text-green-700">2px solid #73AD21</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">padding</span>
+    <span>: </span>
+    <span className="text-green-700">20px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">width</span>
+    <span>: </span>
+    <span className="text-green-700">200px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">height</span>
+    <span>: </span>
+    <span className="text-green-700">150px</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
 
       <h1 className="text-2xl">Example</h1>
       <p>Create an element with a background image and apply corner rounding.</p>
-      <pre className="text-green-400 bg-black rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-        {`#rcorners3 {
-  border-radius: 25px;
-  background: url(paper.gif);
-  background-position: left top;
-  background-repeat: repeat;
-  padding: 20px;
-  width: 200px;
-  height: 150px;
-  }`}
+     <pre className="bg-gray-200 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">#rcorners3</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">border-radius</span>
+    <span>: </span>
+    <span className="text-green-700">25px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">background</span>
+    <span>: </span>
+    <span className="text-green-700">url(paper.gif)</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">background-position</span>
+    <span>: </span>
+    <span className="text-green-700">left top</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">background-repeat</span>
+    <span>: </span>
+    <span className="text-green-700">repeat</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">padding</span>
+    <span>: </span>
+    <span className="text-green-700">20px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">width</span>
+    <span>: </span>
+    <span className="text-green-700">200px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">height</span>
+    <span>: </span>
+    <span className="text-green-700">150px</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
 
 
       {/* Explanation */}

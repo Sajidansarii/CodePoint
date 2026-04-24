@@ -32,17 +32,30 @@ const YouTubeTopic = () => {
         <p className="leading-relaxed mb-3">
           Embed a video using an iframe:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<iframe 
-  width="560" 
-  height="315" 
-  src="https://www.youtube.com/embed/UB1O30fR-EE" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
-</iframe>`}</code>
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;iframe</span>
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">width</span>=<span className="text-green-600">"560"</span>
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">height</span>=<span className="text-green-600">"315"</span>
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">src</span>=<span className="text-green-600">"https://www.youtube.com/embed/UB1O30fR-EE"</span>
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">title</span>=<span className="text-green-600">"YouTube video player"</span>
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">frameborder</span>=<span className="text-green-600">"0"</span>
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">allow</span>=<span className="text-green-600">"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"</span>
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">allowfullscreen</span>
+    <br/>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/iframe&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed mb-3">
           Replace <code>UB1O30fR-EE</code> with your desired video ID.
         </p>
@@ -54,13 +67,24 @@ const YouTubeTopic = () => {
         <p className="leading-relaxed mb-3">
           To reduce tracking unless the user interacts, use the “nocookie” domain:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<iframe 
-  src="https://www.youtube-nocookie.com/embed/UB1O30fR-EE" 
-  title="freeCodeCamp HTML Lecture" 
-  allowfullscreen>
-</iframe>`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;iframe</span>
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">src</span>=
+    <span className="text-green-600">"https://www.youtube-nocookie.com/embed/UB1O30fR-EE"</span>
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">title</span>=
+    <span className="text-green-600">"freeCodeCamp HTML Lecture"</span>
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">allowfullscreen</span>
+    <br/>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/iframe&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed mb-3">
           This still loads the YouTube player but delays cookie setting until interaction.
         </p>
@@ -72,19 +96,33 @@ const YouTubeTopic = () => {
         <p className="leading-relaxed mb-3">
           Wrap the iframe to maintain aspect ratio and make it fluid:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`.video-wrapper {
-  position: relative;
-  padding-top: 56.25%; /* 16:9 ratio */
-}
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}`}</code>
-        </pre>
+<pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-blue-600">.video-wrapper</span> {'{'}
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">position</span>: relative;
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">padding-top</span>: 56.25%; 
+    <span className="text-gray-500">/* 16:9 ratio */</span>
+    <br/>
+    {'}'}
+    <br/><br/>
+
+    <span className="text-blue-600">.video-wrapper iframe</span> {'{'}
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">position</span>: absolute;
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">top</span>: 0;
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">left</span>: 0;
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: 100%;
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: 100%;
+    <br/>
+    {'}'}
+  </code>
+</pre>
         <p className="leading-relaxed mb-3">
           This ensures the video scales on any screen without distortion.
         </p>
@@ -96,31 +134,96 @@ const YouTubeTopic = () => {
         <p className="leading-relaxed mb-3">
           To improve page performance, delay loading the full iframe until user interaction. Show a thumbnail placeholder first:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<!-- HTML -->
-<div class="video-placeholder" style="position:relative; cursor:pointer;">
-  <img src="https://img.youtube.com/vi/UB1O30fR-EE/hqdefault.jpg" alt="Video thumbnail" style="width:100%; display:block;" />
-  <div style="position:absolute; inset:0; display:flex; justify-content:center; align-items:center;">
-    ▶
-  </div>
-</div>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;!-- HTML --&gt;</span>
+    <br/>
 
-<!-- JS: on click replace with iframe -->
-<script>
-  document.querySelector('.video-placeholder').addEventListener('click', function() {
-    const iframe = document.createElement('iframe');
-    iframe.src = 'https://www.youtube-nocookie.com/embed/UB1O30fR-EE?autoplay=1';
-    iframe.title = 'YouTube video player';
-    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-    iframe.allowFullscreen = true;
-    iframe.style.width = '100%';
-    iframe.style.height = '100%';
-    this.innerHTML = '';
-    this.appendChild(iframe);
-  });
-</script>`}</code>
-        </pre>
-        <p className="leading-relaxed mb-3">
+    <span className="text-gray-500">&lt;div</span>
+    <span className="text-red-500"> class</span>=
+    <span className="text-green-600">"video-placeholder"</span>
+    <span className="text-red-500"> style</span>=
+    <span className="text-green-600">"position:relative; cursor:pointer;"</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;img</span>
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"https://img.youtube.com/vi/UB1O30fR-EE/hqdefault.jpg"</span>
+    <span className="text-red-500"> alt</span>=
+    <span className="text-green-600">"Video thumbnail"</span>
+    <span className="text-red-500"> style</span>=
+    <span className="text-green-600">"width:100%; display:block;"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;div</span>
+    <span className="text-red-500"> style</span>=
+    <span className="text-green-600">"position:absolute; inset:0; display:flex; justify-content:center; align-items:center;"</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;▶
+    <br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;/div&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/div&gt;</span>
+
+    <br/><br/>
+
+    <span className="text-gray-500">&lt;!-- JS --&gt;</span>
+    <br/>
+
+    document.<span className="text-blue-600">querySelector</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">'.video-placeholder'</span>
+    <span className="text-gray-500">)</span>
+    .<span className="text-blue-600">addEventListener</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">'click'</span>, 
+    <span className="text-yellow-600">function</span>() {'{'}
+    <br/>
+
+    &nbsp;&nbsp;<span className="text-blue-600">const</span> iframe = 
+    document.<span className="text-blue-600">createElement</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">'iframe'</span>
+    <span className="text-gray-500">);</span>
+    <br/>
+
+    &nbsp;&nbsp;iframe.src = 
+    <span className="text-green-600">'https://www.youtube-nocookie.com/embed/UB1O30fR-EE?autoplay=1'</span>;
+    <br/>
+
+    &nbsp;&nbsp;iframe.title = 
+    <span className="text-green-600">'YouTube video player'</span>;
+    <br/>
+
+    &nbsp;&nbsp;iframe.allow = 
+    <span className="text-green-600">'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'</span>;
+    <br/>
+
+    &nbsp;&nbsp;iframe.allowFullscreen = <span className="text-blue-600">true</span>;
+    <br/>
+
+    &nbsp;&nbsp;iframe.style.width = <span className="text-green-600">'100%'</span>;
+    <br/>
+
+    &nbsp;&nbsp;iframe.style.height = <span className="text-green-600">'100%'</span>;
+    <br/>
+
+    &nbsp;&nbsp;<span className="text-purple-600">this</span>.innerHTML = <span className="text-green-600">''</span>;
+    <br/>
+
+    &nbsp;&nbsp;<span className="text-purple-600">this</span>.
+    <span className="text-blue-600">appendChild</span>(iframe);
+    <br/>
+
+    {'});'}
+  </code>
+</pre>  <p className="leading-relaxed mb-3">
           This avoids loading the heavy iframe until the user is ready to watch.
         </p>
       </section>
@@ -131,13 +234,26 @@ const YouTubeTopic = () => {
         <p className="leading-relaxed mb-3">
           Embed an entire playlist by using its ID:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-3 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>{`<iframe 
-  src="https://www.youtube.com/embed?listType=playlist&list=PLWKjhJtqVAbnupwRFO6G0Gnjz8n-3XCTZ" 
-  title="YouTube playlist" 
-  allowfullscreen>
-</iframe>`}</code>
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;iframe</span>
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">src</span>=
+    <span className="text-green-600">
+      "https://www.youtube.com/embed?listType=playlist&amp;list=PLWKjhJtqVAbnupwRFO6G0Gnjz8n-3XCTZ"
+    </span>
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">title</span>=
+    <span className="text-green-600">"YouTube playlist"</span>
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">allowfullscreen</span>
+    <br/>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/iframe&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed mb-3">
           Replace the <code>list=</code> value with the actual playlist ID.
         </p>
@@ -152,24 +268,62 @@ const YouTubeTopic = () => {
         <p className="leading-relaxed mb-4">
           Example initialization:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-          <code>{`<div id="player"></div>
-<script src="https://www.youtube.com/iframe_api"></script>
-<script>
-  let player;
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-      height: '360',
-      width: '640',
-      videoId: 'UB1O30fR-EE',
-      events: {
-        onReady: () => console.log('Ready'),
-        onStateChange: (e) => console.log('State', e.data)
-      }
-    });
-  }
-</script>`}</code>
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-5 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;div</span>
+    <span className="text-red-500"> id</span>=
+    <span className="text-green-600">"player"</span>
+    <span className="text-gray-500">&gt;&lt;/div&gt;</span>
+    <br/><br/>
+
+    <span className="text-gray-500">&lt;script</span>
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"https://www.youtube.com/iframe_api"</span>
+    <span className="text-gray-500">&gt;&lt;/script&gt;</span>
+    <br/><br/>
+
+    <span className="text-blue-600">let</span> player;
+    <br/>
+
+    <span className="text-blue-600">function</span> 
+    <span className="text-purple-600">onYouTubeIframeAPIReady</span>()
+    {' {'}
+    <br/>
+
+    &nbsp;&nbsp;player = <span className="text-blue-600">new</span> YT.Player
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">'player'</span>, {'{'}
+    <br/>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;height: <span className="text-green-600">'360'</span>,
+    <br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;width: <span className="text-green-600">'640'</span>,
+    <br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;videoId: <span className="text-green-600">'UB1O30fR-EE'</span>,
+    <br/>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;events: {'{'}
+    <br/>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onReady: 
+    <span className="text-yellow-600">()</span> =&gt; 
+    <span className="text-blue-600">console</span>.log(<span className="text-green-600">'Ready'</span>),
+    <br/>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onStateChange: 
+    <span className="text-yellow-600">(e)</span> =&gt; 
+    <span className="text-blue-600">console</span>.log(<span className="text-green-600">'State'</span>, e.data)
+    <br/>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;{'}'}
+    <br/>
+
+    &nbsp;&nbsp;{'}'});
+    <br/>
+
+    {'}'}
+  </code>
+</pre>
       </section>
 
       {/* Accessibility & SEO */}

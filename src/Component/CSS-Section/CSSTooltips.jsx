@@ -21,14 +21,17 @@ const CssTooltips = () => {
         <p>
          Hover over the button, the tooltip will appear.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">\
-          <code>
-{`<div class="tooltip">
-  Hover me
-  <span class="tooltip-text">Hello! I'm a tooltip</span>
-</div>`}
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-400">&lt;div</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip"</span><span className="text-blue-400">&gt;</span><br />
+
+    &nbsp;&nbsp;Hover me<br />
+
+    &nbsp;&nbsp;<span className="text-blue-400">&lt;span</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip-text"</span><span className="text-blue-400">&gt;</span>Hello! I'm a tooltip<span className="text-blue-400">&lt;/span&gt;</span><br />
+
+    <span className="text-blue-400">&lt;/div&gt;</span>
   </code>
-        </pre>
+</pre>
 
         {/* Live Demo */}
         <div className="flex justify-center">
@@ -48,14 +51,18 @@ const CssTooltips = () => {
       {/* Example 2 */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">2. Tooltip on Right</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`<div class="tooltip">
-  Hover me
-  <span class="tooltip-text">Tooltip on Top</span>
-  </div>`}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-400">&lt;div</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip"</span><span className="text-blue-400">&gt;</span><br />
+
+    &nbsp;&nbsp;Hover me<br />
+
+    &nbsp;&nbsp;<span className="text-blue-400">&lt;span</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip-text"</span><span className="text-blue-400">&gt;</span>Tooltip on Top<span className="text-blue-400">&lt;/span&gt;</span><br />
+
+    <span className="text-blue-400">&lt;/div&gt;</span>
   </code>
-        </pre>
+</pre>
+
         <div className="flex justify-center">
           <div className="relative group inline-block">
             <button className="bg-green-600 text-white px-4 py-2 rounded">
@@ -73,14 +80,18 @@ const CssTooltips = () => {
       {/* Example 3 */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">3. Tooltip on Bottom</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`<div class="tooltip">
-  Hover me
-  <span class="tooltip-text">Tooltip on Right</span>
-  </div>`}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-400">&lt;div</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip"</span><span className="text-blue-400">&gt;</span><br />
+
+    &nbsp;&nbsp;Hover me<br />
+
+    &nbsp;&nbsp;<span className="text-blue-400">&lt;span</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip-text"</span><span className="text-blue-400">&gt;</span>Tooltip on Right<span className="text-blue-400">&lt;/span&gt;</span><br />
+
+    <span className="text-blue-400">&lt;/div&gt;</span>
   </code>
-        </pre>
+</pre>
+
         <div className="flex justify-center">
           <div className="relative group inline-block">
             <button className="bg-red-600 text-white px-4 py-2 rounded">
@@ -97,14 +108,18 @@ const CssTooltips = () => {
 
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">4.Tooltip on Left</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`<div class="tooltip">
-  Hover me
-  <span class="tooltip-text">Tooltip on Top</span>
-  </div>`}
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-400">&lt;div</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip"</span><span className="text-blue-400">&gt;</span><br />
+
+    &nbsp;&nbsp;Hover me<br />
+
+    &nbsp;&nbsp;<span className="text-blue-400">&lt;span</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip-text"</span><span className="text-blue-400">&gt;</span>Tooltip on Top<span className="text-blue-400">&lt;/span&gt;</span><br />
+
+    <span className="text-blue-400">&lt;/div&gt;</span>
   </code>
-        </pre>
+</pre>
+
         <div className="flex justify-center">
           <div className="relative group inline-block">
             <button className="bg-green-600 text-white px-4 py-2 rounded">
@@ -122,39 +137,45 @@ const CssTooltips = () => {
       
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">Basic Syntax</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`.tooltip {
-  position: relative;
-  display: inline-block;
-}
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-400">.tooltip</span> <span>{'{'}</span><br />
 
-.tooltip .tooltip-text {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 4px;
-  
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;   /* tooltip text upar show hoga */
-  left: 50%;
-  transform: translateX(-50%);
+    &nbsp;&nbsp;<span className="text-red-400">position</span>: <span className="text-green-400">relative</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">display</span>: <span className="text-green-400">inline-block</span>;<br />
 
-  opacity: 0;
-  transition: opacity 0.3s;
-  }
-  
-  .tooltip:hover .tooltip-text {
-    visibility: visible;
-    opacity: 1;
-    }`}
-    </code>
-        </pre>
-        <p className="text-gray-600">
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-400">.tooltip .tooltip-text</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-400">visibility</span>: <span className="text-green-400">hidden</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">width</span>: <span className="text-green-400">120px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">background-color</span>: <span className="text-green-400">black</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">color</span>: <span className="text-green-400">#fff</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">text-align</span>: <span className="text-green-400">center</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">padding</span>: <span className="text-green-400">5px 0</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">border-radius</span>: <span className="text-green-400">4px</span>;<br /><br />
+
+    &nbsp;&nbsp;<span className="text-red-400">position</span>: <span className="text-green-400">absolute</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">z-index</span>: <span className="text-green-400">1</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">bottom</span>: <span className="text-green-400">125%</span>; <span className="text-gray-400">/* tooltip text upar show hoga */</span><br />
+    &nbsp;&nbsp;<span className="text-red-400">left</span>: <span className="text-green-400">50%</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">transform</span>: <span className="text-green-400">translateX(-50%)</span>;<br /><br />
+
+    &nbsp;&nbsp;<span className="text-red-400">opacity</span>: <span className="text-green-400">0</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">transition</span>: <span className="text-green-400">opacity 0.3s</span>;<br />
+
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-400">.tooltip:hover .tooltip-text</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-400">visibility</span>: <span className="text-green-400">visible</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">opacity</span>: <span className="text-green-400">1</span>;<br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+ <p className="text-gray-600">
          Here, .tooltip is the container, and .tooltip-text is the content that will appear on hover.
         </p>
       </div>
@@ -170,289 +191,316 @@ const CssTooltips = () => {
 
       <h1 className="text-2xl">Tooltip Arrows</h1>
       <p>To display an arrow on a specific side of the tooltip, add an empty ::after pseudo-element using content: "". Then, apply CSS border styles to form a triangular arrow and position it as needed.</p>
-      <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-        {`/* Arrow styles */
-.tooltip-text::after {
-  content: "";
-    position: absolute;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
-}`}
+   <pre className="bg-gray-200 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-gray-400">/* Arrow styles */</span><br />
+
+    <span className="text-blue-400">.tooltip-text::after</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-400">content</span>: <span className="text-green-400">""</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">position</span>: <span className="text-green-400">absolute</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">border-width</span>: <span className="text-green-400">5px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">border-style</span>: <span className="text-green-400">solid</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">border-color</span>: <span className="text-green-400">black transparent transparent transparent</span>;<br />
+
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
+
       <p>To create a triangle shape in CSS, set the border color on just one side of an empty element. This forms a triangular top border — a common method for making arrows. Visit our free CSS arrows tutorial to see this in action.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-          {`<!DOCTYPE html>
-<html lang="en">
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-400">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-400">&lt;html</span> <span className="text-red-400">lang</span>=<span className="text-green-400">"en"</span><span className="text-blue-400">&gt;</span><br /><br />
 
-<head>
-    <style>
-        .container{
-            display: flex;
-            justify-content: space-around;
-            margin: 10%;
-        }
-        .tooltip-container {
-            position: relative;
-        }
-        
-        .button{
-            font-family: san-serif;
-            font-weight: bold;
-            padding: 2px;
-            border-radius: 5px;
-            background-color: white;
-        }
+    <span className="text-blue-400">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-400">&lt;style&gt;</span><br />
 
-        .tooltip-container .tooltip-text {
-            visibility: hidden;
-            width: 120px;
-            background-color: black;
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px 0;
-            position: absolute;
-            z-index: 1;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">display</span>: <span className="text-green-400">flex</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">justify-content</span>: <span className="text-green-400">space-around</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">margin</span>: <span className="text-green-400">10%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        .tooltip-container:hover .tooltip-text {
-            visibility: visible;
-            opacity: 1;
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.tooltip-container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">position</span>: <span className="text-green-400">relative</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        /* Tooltip on top */
-        .tooltip-top .tooltip-text {
-            bottom: 125%;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.button</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">font-family</span>: <span className="text-green-400">sans-serif</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">font-weight</span>: <span className="text-green-400">bold</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">padding</span>: <span className="text-green-400">2px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">border-radius</span>: <span className="text-green-400">5px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">background-color</span>: <span className="text-green-400">white</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        /* Tooltip on right */
-        .tooltip-right .tooltip-text {
-            top: 50%;
-            left: 125%;
-            transform: translateY(-50%);
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.tooltip-container .tooltip-text</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">visibility</span>: <span className="text-green-400">hidden</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">width</span>: <span className="text-green-400">120px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">background-color</span>: <span className="text-green-400">black</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">color</span>: <span className="text-green-400">#fff</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">text-align</span>: <span className="text-green-400">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">border-radius</span>: <span className="text-green-400">6px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">padding</span>: <span className="text-green-400">5px 0</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">position</span>: <span className="text-green-400">absolute</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">z-index</span>: <span className="text-green-400">1</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">opacity</span>: <span className="text-green-400">0</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">transition</span>: <span className="text-green-400">opacity 0.3s</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        /* Arrow styles */
-        .tooltip-text::after {
-            content: "";
-            position: absolute;
-            border-width: 5px;
-            border-style: solid;
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.tooltip-container:hover .tooltip-text</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">visibility</span>: <span className="text-green-400">visible</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">opacity</span>: <span className="text-green-400">1</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        /* Arrow pointing up for top tooltip */
-        .tooltip-top .tooltip-text::after {
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            border-color: black transparent transparent transparent;
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-400">/* Tooltip on top */</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.tooltip-top .tooltip-text</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">bottom</span>: <span className="text-green-400">125%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">left</span>: <span className="text-green-400">50%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">transform</span>: <span className="text-green-400">translateX(-50%)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        /* Arrow pointing left for right tooltip */
-        .tooltip-right .tooltip-text::after {
-            top: 50%;
-            left: -10px;
-            transform: translateY(-50%);
-            border-color: transparent black transparent transparent;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="tooltip-container tooltip-top">
-            <button class="button">Top </button>
-            <span class="tooltip-text">Tooltip on top</span>
-        </div>
-        
-        <div class="tooltip-container tooltip-right">
-            <button class="button">Right </button>
-            <span class="tooltip-text">Tooltip on right</span>
-        </div>
-    </div>
-</body>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-400">/* Tooltip on right */</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.tooltip-right .tooltip-text</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">top</span>: <span className="text-green-400">50%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">left</span>: <span className="text-green-400">125%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">transform</span>: <span className="text-green-400">translateY(-50%)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-</html>   `}
-        </code>
-      </pre>
-      <h1 className="text-2xl">Positioning Tooltips</h1>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-400">/* Arrow styles */</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.tooltip-text::after</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">content</span>: <span className="text-green-400">""</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">position</span>: <span className="text-green-400">absolute</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">border-width</span>: <span className="text-green-400">5px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">border-style</span>: <span className="text-green-400">solid</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-400">/* Arrow pointing up for top tooltip */</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.tooltip-top .tooltip-text::after</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">top</span>: <span className="text-green-400">100%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">left</span>: <span className="text-green-400">50%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">transform</span>: <span className="text-green-400">translateX(-50%)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">border-color</span>: <span className="text-green-400">black transparent transparent transparent</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-400">/* Arrow pointing left for right tooltip */</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.tooltip-right .tooltip-text::after</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">top</span>: <span className="text-green-400">50%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">left</span>: <span className="text-green-400">-10px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">transform</span>: <span className="text-green-400">translateY(-50%)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">border-color</span>: <span className="text-green-400">transparent black transparent transparent</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-400">&lt;/style&gt;</span><br />
+    <span className="text-blue-400">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-400">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-400">&lt;div</span> <span className="text-red-400">class</span>=<span className="text-green-400">"container"</span><span className="text-blue-400">&gt;</span><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;div</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip-container tooltip-top"</span><span className="text-blue-400">&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;button</span> <span className="text-red-400">class</span>=<span className="text-green-400">"button"</span><span className="text-blue-400">&gt;</span>Top<span className="text-blue-400">&lt;/button&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;span</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip-text"</span><span className="text-blue-400">&gt;</span>Tooltip on top<span className="text-blue-400">&lt;/span&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;/div&gt;</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;div</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip-container tooltip-right"</span><span className="text-blue-400">&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;button</span> <span className="text-red-400">class</span>=<span className="text-green-400">"button"</span><span className="text-blue-400">&gt;</span>Right<span className="text-blue-400">&lt;/button&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;span</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip-text"</span><span className="text-blue-400">&gt;</span>Tooltip on right<span className="text-blue-400">&lt;/span&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;/div&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-400">&lt;/div&gt;</span><br />
+    <span className="text-blue-400">&lt;/body&gt;</span><br />
+
+    <span className="text-blue-400">&lt;/html&gt;</span>
+  </code>
+</pre>
+ <h1 className="text-2xl">Positioning Tooltips</h1>
       <p>By applying CSS positioning rules, you can place a tooltip on any side of the container — top, bottom, left, or right — depending on your design needs.</p>
       <p>To position a tooltip correctly, apply position: relative; to its container. This enables absolutely positioned child elements to be aligned relative to the container using inset properties like top, bottom, left, and right.</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-          {`.element {
-   position: relative;
-}
-.tooltip{
-    position: absolute;
-    top: 50px; 
-    left: 50px;
-}`}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-400">.element</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-400">position</span>: <span className="text-green-400">relative</span>;<br />
+
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-400">.tooltip</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-400">position</span>: <span className="text-green-400">absolute</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">top</span>: <span className="text-green-400">50px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">left</span>: <span className="text-green-400">50px</span>;<br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+
       <p>By setting top: 50px and left: 50px, the tooltip appears 50 pixels below the top and 50 pixels from the left edge of the container.</p>
       <p>Next, we’ll see a practical example of tooltips positioned in different directions: top, bottom, left, and right.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-          {`<!DOCTYPE html>
-<html lang="en">
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-400">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-400">&lt;html</span> <span className="text-red-400">lang</span>=<span className="text-green-400">"en"</span><span className="text-blue-400">&gt;</span><br /><br />
 
-<head>
-    <style>
-        .container{
-            display: flex;
-            justify-content: space-around;
-            margin-top: 10%;
-        }
-        .tooltip-container {
-            position: relative;
-        }
-        
-        .button{
-            font-family: san-serif;
-            font-weight: bold;
-            padding: 2px;
-            border-radius: 5px;
-            background-color: white;
-        }
+    <span className="text-blue-400">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-400">&lt;style&gt;</span><br />
 
-        .tooltip-container .tooltip-text {
-            visibility: hidden;
-            width: 120px;
-            background-color: black;
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px 0;
-            position: absolute;
-            z-index: 1;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">display</span>: <span className="text-green-400">flex</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">justify-content</span>: <span className="text-green-400">space-around</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">margin-top</span>: <span className="text-green-400">10%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        .tooltip-container:hover .tooltip-text {
-            visibility: visible;
-            opacity: 1;
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.tooltip-container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">position</span>: <span className="text-green-400">relative</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        /* Tooltip on top */
-        .tooltip-top .tooltip-text {
-            bottom: 125%;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.button</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">font-family</span>: <span className="text-green-400">sans-serif</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">font-weight</span>: <span className="text-green-400">bold</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">padding</span>: <span className="text-green-400">2px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">border-radius</span>: <span className="text-green-400">5px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">background-color</span>: <span className="text-green-400">white</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        /* Tooltip on bottom */
-        .tooltip-bottom .tooltip-text {
-            top: 125%;
-            left: 50%;
-            transform: translateX(-50%); /* To center on top side */
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.tooltip-container .tooltip-text</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">visibility</span>: <span className="text-green-400">hidden</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">width</span>: <span className="text-green-400">120px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">background-color</span>: <span className="text-green-400">black</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">color</span>: <span className="text-green-400">#fff</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">text-align</span>: <span className="text-green-400">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">border-radius</span>: <span className="text-green-400">6px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">padding</span>: <span className="text-green-400">5px 0</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">position</span>: <span className="text-green-400">absolute</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">z-index</span>: <span className="text-green-400">1</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">opacity</span>: <span className="text-green-400">0</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">transition</span>: <span className="text-green-400">opacity 0.3s</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        /* Tooltip on left */
-        .tooltip-left .tooltip-text {
-            top: 50%;
-            right: 125%;
-            transform: translateY(-50%);
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.tooltip-container:hover .tooltip-text</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">visibility</span>: <span className="text-green-400">visible</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">opacity</span>: <span className="text-green-400">1</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        /* Tooltip on right */
-        .tooltip-right .tooltip-text {
-            top: 50%;
-            left: 125%;
-            transform: translateY(-50%);
-        }
-    </style>
-</head>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-400">/* Tooltip on top */</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.tooltip-top .tooltip-text</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">bottom</span>: <span className="text-green-400">125%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">left</span>: <span className="text-green-400">50%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">transform</span>: <span className="text-green-400">translateX(-50%)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-<body>
-    <div class="container">
-        <div class="tooltip-container tooltip-top">
-            <button class="button">Top </button>
-            <span class="tooltip-text">Tooltip on top</span>
-        </div>
-        
-        <div class="tooltip-container tooltip-right">
-            <button class="button">Right </button>
-            <span class="tooltip-text">Tooltip on right</span>
-        </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-400">/* Tooltip on bottom */</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.tooltip-bottom .tooltip-text</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">top</span>: <span className="text-green-400">125%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">left</span>: <span className="text-green-400">50%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">transform</span>: <span className="text-green-400">translateX(-50%)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        <div class="tooltip-container tooltip-left">
-            <button class="button">Left </button>
-            <span class="tooltip-text">Tooltip on left</span>
-        </div>
-        
-        <div class="tooltip-container tooltip-bottom">
-            <button class="button">Bottom</button>
-            <span class="tooltip-text">Tooltip on bottom</span>
-        </div>
-    </div>
-</body>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-400">/* Tooltip on left */</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.tooltip-left .tooltip-text</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">top</span>: <span className="text-green-400">50%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">right</span>: <span className="text-green-400">125%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">transform</span>: <span className="text-green-400">translateY(-50%)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-</html>   `}
-        </code>
-      </pre>
-      <h1 className="text-2xl">Fade In Tooltips</h1>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-400">/* Tooltip on right */</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.tooltip-right .tooltip-text</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">top</span>: <span className="text-green-400">50%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">left</span>: <span className="text-green-400">125%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">transform</span>: <span className="text-green-400">translateY(-50%)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-400">&lt;/style&gt;</span><br />
+    <span className="text-blue-400">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-400">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-400">&lt;div</span> <span className="text-red-400">class</span>=<span className="text-green-400">"container"</span><span className="text-blue-400">&gt;</span><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;div</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip-container tooltip-top"</span><span className="text-blue-400">&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;button</span> <span className="text-red-400">class</span>=<span className="text-green-400">"button"</span><span className="text-blue-400">&gt;</span>Top<span className="text-blue-400">&lt;/button&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;span</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip-text"</span><span className="text-blue-400">&gt;</span>Tooltip on top<span className="text-blue-400">&lt;/span&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;/div&gt;</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;div</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip-container tooltip-right"</span><span className="text-blue-400">&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;button</span> <span className="text-red-400">class</span>=<span className="text-green-400">"button"</span><span className="text-blue-400">&gt;</span>Right<span className="text-blue-400">&lt;/button&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;span</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip-text"</span><span className="text-blue-400">&gt;</span>Tooltip on right<span className="text-blue-400">&lt;/span&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;/div&gt;</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;div</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip-container tooltip-left"</span><span className="text-blue-400">&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;button</span> <span className="text-red-400">class</span>=<span className="text-green-400">"button"</span><span className="text-blue-400">&gt;</span>Left<span className="text-blue-400">&lt;/button&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;span</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip-text"</span><span className="text-blue-400">&gt;</span>Tooltip on left<span className="text-blue-400">&lt;/span&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;/div&gt;</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;div</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip-container tooltip-bottom"</span><span className="text-blue-400">&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;button</span> <span className="text-red-400">class</span>=<span className="text-green-400">"button"</span><span className="text-blue-400">&gt;</span>Bottom<span className="text-blue-400">&lt;/button&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;span</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip-text"</span><span className="text-blue-400">&gt;</span>Tooltip on bottom<span className="text-blue-400">&lt;/span&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;/div&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-400">&lt;/div&gt;</span><br />
+    <span className="text-blue-400">&lt;/body&gt;</span><br />
+
+    <span className="text-blue-400">&lt;/html&gt;</span>
+  </code>
+</pre>
+ <h1 className="text-2xl">Fade In Tooltips</h1>
       <p>The CSS fade-in tooltip uses a gradual opacity transition to smoothly reveal the tooltip, enhancing the user experience with a subtle animation.</p>
       <p>Begin by setting the tooltip’s opacity to 0. In the hover state, update the opacity to 1. Then, apply a CSS transition to animate the change and create a fade-in effect.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-          {`<!DOCTYPE html>
-<html>
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-400">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-400">&lt;html&gt;</span><br /><br />
 
-<head>
-    <style>
-        .tooltip {
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-            margin: 10%;
-        }
-        .tooltip .tooltiptext {
-            visibility: hidden;
-            width: 120px;
-            background-color: #555;
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px;
-            position: absolute;
-            z-index: 1;
-            bottom: 125%;
-            left: 50%;
-            margin-left: -60px;
-            opacity: 0;
-            transition: opacity 2s;
-        }
-        .tooltip:hover .tooltiptext {
-            visibility: visible;
-            opacity: 1;
-        }
-    </style>
-</head>
+    <span className="text-blue-400">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-400">&lt;style&gt;</span><br />
 
-<body style="text-align:center;">
-    <div class="tooltip">
-        Hover over this text
-        <span class="tooltiptext">
-            This is a fade-in tooltip
-        </span>
-    </div>
-</body>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.tooltip</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">position</span>: <span className="text-green-400">relative</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">display</span>: <span className="text-green-400">inline-block</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">cursor</span>: <span className="text-green-400">pointer</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">margin</span>: <span className="text-green-400">10%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-</html>`}
-        </code>
-      </pre>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.tooltip .tooltiptext</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">visibility</span>: <span className="text-green-400">hidden</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">width</span>: <span className="text-green-400">120px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">background-color</span>: <span className="text-green-400">#555</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">color</span>: <span className="text-green-400">#fff</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">text-align</span>: <span className="text-green-400">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">border-radius</span>: <span className="text-green-400">6px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">padding</span>: <span className="text-green-400">5px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">position</span>: <span className="text-green-400">absolute</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">z-index</span>: <span className="text-green-400">1</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">bottom</span>: <span className="text-green-400">125%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">left</span>: <span className="text-green-400">50%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">margin-left</span>: <span className="text-green-400">-60px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">opacity</span>: <span className="text-green-400">0</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">transition</span>: <span className="text-green-400">opacity 2s</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">.tooltip:hover .tooltiptext</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">visibility</span>: <span className="text-green-400">visible</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-400">opacity</span>: <span className="text-green-400">1</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-400">&lt;/style&gt;</span><br />
+    <span className="text-blue-400">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-400">&lt;body</span> <span className="text-red-400">style</span>=<span className="text-green-400">"text-align:center;"</span><span className="text-blue-400">&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-400">&lt;div</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltip"</span><span className="text-blue-400">&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;Hover over this text<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;span</span> <span className="text-red-400">class</span>=<span className="text-green-400">"tooltiptext"</span><span className="text-blue-400">&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a fade-in tooltip<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">&lt;/span&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-400">&lt;/div&gt;</span><br />
+
+    <span className="text-blue-400">&lt;/body&gt;</span><br />
+
+    <span className="text-blue-400">&lt;/html&gt;</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">Advantages of Tooltips</h1>
       <ul className="list-[square] list-inside">

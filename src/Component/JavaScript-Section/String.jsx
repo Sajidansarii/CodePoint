@@ -17,7 +17,7 @@ const JSString = () => {
       </p>
       <p>A JavaScript string is a sequence of zero or more characters enclosed in quotes.</p>
        <h1 className="text-2xl mt-5">Example</h1>
-       <pre className="text-green-400 bg-gray-900 rounded-lg mt-5">
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`
  let text = "John Doe";
@@ -26,7 +26,7 @@ const JSString = () => {
        </pre>
        <h2 className="text-xl mt-10">You can use single or double quotes:</h2>
        <h3 className="text-2xl mt-5">Example</h3>
-      <pre className="bg-gray-900 text-green-400 overflow-x-auto p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`
 let singleQuote = 'Hello';
@@ -39,7 +39,7 @@ console.log(doubleQuote);  // Output: World
       </pre>
 
       <h2 className="text-2xl font-semibold text-gray-800 mt-10 mb-5">String Concatenation</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto rounded-lg mb-4">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`
 let firstName = "Alice";
@@ -57,7 +57,7 @@ console.log(fullName); // Output: Alice Johnson
       <p className="mt-3">Template literals are strings wrapped in backticks, like this: `This is a template string`.</p>
       <p className="mt-3">Templates allow single and double quotes inside a string:</p>
       <h1 className="text-2xl mt-6">Example</h1>
-    <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto rounded-lg mt-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`let age = 25;
 let message = \My name is \${firstName} and I am \${age} years old.\;
@@ -66,7 +66,7 @@ console.log(message); // Output: My name is Alice and I am 25 years old.`}
       </pre>
 
       <h2 className="text-2xl font-semibold text-gray-800 mt-10 mb-5">String Methods</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto rounded-lg mb-4 ">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`let text = "Hello World";
 
@@ -79,7 +79,7 @@ console.log(text.includes("World"));    // Output: true`}
 
       <h1 className="text-2xl mt-5 mb-5">Escape Characters</h1>
       <p>As strings need to be written inside quotation marks, JavaScript will read this string incorrectly.</p>
-      <pre className="text-green-400 bg-gray-900 overflow-x-auto rounded-lg mt-5 mb-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`
  let text = "We are the so-called "Vikings" from the north.";

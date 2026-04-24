@@ -24,14 +24,14 @@ const JSQuerySelector = () => {
       </p>
 
       <p className="mt-10 mb-3">Access the first <span className="text-red-400">{'<p>'}</span> element.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`document.querySelector("p");`}
         </code>
       </pre>
 
       <p className="mt-10 mb-3">Get the first element assigned the class "example".</p>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`document.querySelector(".example");`}
         </code>
@@ -53,7 +53,7 @@ const JSQuerySelector = () => {
     
 
     <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Syntax</h2>
-    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`document.querySelector(CSS selectors)`}
       </code>
@@ -100,14 +100,14 @@ const JSQuerySelector = () => {
 
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h1>
     <p>Retrieve the first <span className="text-red-400">{'<p>'}</span> tag with the class example.</p>
-   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`document.querySelector("p.example");`}
     </code>
    </pre>
 
    <p className="mt-10 mb-5">Modify the text of the element with the id "demo".</p>
-   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`document.querySelector("#demo").innerHTML = "Hello World!";`}
     </code>
@@ -115,7 +115,7 @@ const JSQuerySelector = () => {
 
 
     <p className="mt-10 mb-5">Select the first <span className="text-red-400">{'<p>'}</span> element that is inside a <span className="text-red-400">{'<div>'}</span> element.</p>
-   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`document.querySelector("div > p");`}
     </code>
@@ -124,7 +124,7 @@ const JSQuerySelector = () => {
  
 
   <p className="mt-10 mb-5">Select the first <span className="text-red-400">{'<a>'}</span> element that contains a target attribute.</p>
-   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`document.querySelector("a[target]");`}
     </code>
@@ -133,7 +133,7 @@ const JSQuerySelector = () => {
 
 
   <p className="mt-10 mb-5">Select the first <span className="text-red-400">{'<h3>'}</span> element or the first <span className="text-red-400">{'<h4>'}</span> element.</p>
-   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`<h3>A h3 element</h3>
 <h4>A h4 element</h4>
@@ -144,7 +144,7 @@ document.querySelector("h3, h4").style.backgroundColor = "red";`}
 
 
   <p className="mt-10 mb-5">Select the first <span className="text-red-400">{'<h3>'}</span> element or the first <span className="text-red-400">{'<h4>'}</span> element.</p>
-   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`<h4>A h4 element</h4>
 <h3>A h3 element</h3>

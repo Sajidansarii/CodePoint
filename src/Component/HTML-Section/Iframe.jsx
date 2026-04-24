@@ -14,9 +14,24 @@ const HTMLIFrame = () => {
       {/* Basic Syntax */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-2">Basic Syntax</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{'<iframe src="https://example.com" title="Example site"></iframe>'}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">iframe</span>
+
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"https://example.com"</span>
+
+    <span className="text-red-500"> title</span>=
+    <span className="text-green-600">"Example site"</span>
+
+    <span className="text-gray-500">&gt;</span>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">iframe</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed mb-3">
           <code>src</code> defines the URL to embed. Always include a <code>title</code> for accessibility.
         </p>
@@ -53,17 +68,50 @@ const HTMLIFrame = () => {
         <p className="leading-relaxed mb-3">
           To make an iframe responsive, wrap it in a container that maintains aspect ratio.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>{`<div style="position:relative; padding-top:56.25%;">
-  <iframe 
-    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-    title="YouTube video" 
-    style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" 
-    loading="lazy"
-    allowfullscreen
-  ></iframe>
-</div>`}</code>
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-5 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">div</span>
+
+    <span className="text-red-500"> style</span>=
+    <span className="text-green-600">"position:relative; padding-top:56.25%;"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">iframe</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;&nbsp;&nbsp;src</span>=
+    <span className="text-green-600">"https://www.youtube.com/embed/dQw4w9WgXcQ"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;&nbsp;&nbsp;title</span>=
+    <span className="text-green-600">"YouTube video"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;&nbsp;&nbsp;style</span>=
+    <span className="text-green-600">"position:absolute; top:0; left:0; width:100%; height:100%; border:0;"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;&nbsp;&nbsp;loading</span>=
+    <span className="text-green-600">"lazy"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;&nbsp;&nbsp;allowfullscreen</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&gt;&lt;/</span>
+    <span className="text-blue-600">iframe</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">div</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed mt-3">
           The <code>padding-top:56.25%</code> keeps a 16:9 aspect ratio.
         </p>
@@ -75,23 +123,54 @@ const HTMLIFrame = () => {
         <p className="leading-relaxed mb-3">
           The <code>sandbox</code> attribute restricts what the embedded content can do. Without values, it applies many restrictions.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>{`<iframe 
-  src="https://example.com" 
-  title="Sandboxed content" 
-  sandbox
-></iframe>`}</code>
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-5 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">iframe</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;src</span>=
+    <span className="text-green-600">"https://example.com"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;title</span>=
+    <span className="text-green-600">"Sandboxed content"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;sandbox</span>
+    <br/>
+
+    <span className="text-gray-500">&gt;&lt;/</span>
+    <span className="text-blue-600">iframe</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed mb-2">
           You can allow specific features:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>{`<iframe 
-  src="https://example.com" 
-  title="Limited" 
-  sandbox="allow-scripts allow-same-origin"
-></iframe>`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-5 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">iframe</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;src</span>=
+    <span className="text-green-600">"https://example.com"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;title</span>=
+    <span className="text-green-600">"Limited"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;sandbox</span>=
+    <span className="text-green-600">"allow-scripts allow-same-origin"</span>
+    <br/>
+
+    <span className="text-gray-500">&gt;&lt;/</span>
+    <span className="text-blue-600">iframe</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         <p className="text-gray-700">
           Common sandbox tokens include <code>allow-scripts</code>, <code>allow-forms</code>, <code>allow-same-origin</code>.
         </p>
@@ -104,11 +183,30 @@ const HTMLIFrame = () => {
           <li>Always include a descriptive <code>title</code> attribute.</li>
           <li>Provide fallback content inside the iframe tag for very old browsers:</li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>{`<iframe src="https://example.com" title="Example">
-  Your browser does not support iframes.
-</iframe>`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-5 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">iframe</span>
+
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"https://example.com"</span>
+
+    <span className="text-red-500"> title</span>=
+    <span className="text-green-600">"Example"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-700">
+      &nbsp;&nbsp;Your browser does not support iframes.
+    </span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">iframe</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Common Mistakes */}
@@ -126,18 +224,36 @@ const HTMLIFrame = () => {
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-2">YouTube Embed Example</h2>
         
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-             <code>
-            {`<iframe
-            src="https://www.youtube.com/embed/https://www.youtube.com
-            /watch?v=kUMe1FH4CHE&
-            list=PLWKjhJtqVAbnSe1qUNMG7AbPmjIG54u88" 
-            title="YouTube video"
-            loading="lazy"
-            allowFullScreen
-            ></iframe>`}
-            </code>
-            </pre>
+          <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-5 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">iframe</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;src</span>=
+    <span className="text-green-600">"https://www.youtube.com/embed/https://www.youtube.com</span>
+    <br/>
+    <span className="text-green-600">&nbsp;&nbsp;/watch?v=kUMe1FH4CHE&</span>
+    <br/>
+    <span className="text-green-600">&nbsp;&nbsp;list=PLWKjhJtqVAbnSe1qUNMG7AbPmjIG54u88"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;title</span>=
+    <span className="text-green-600">"YouTube video"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;loading</span>=
+    <span className="text-green-600">"lazy"</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;allowFullScreen</span>
+    <br/>
+
+    <span className="text-gray-500">&gt;&lt;/</span>
+    <span className="text-blue-600">iframe</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         
         <p className="leading-relaxed mb-3">
           A responsive YouTube video:

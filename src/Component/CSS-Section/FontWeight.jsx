@@ -9,23 +9,25 @@ export default function CssFontWeight() {
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>{`p.normal {
-  font-weight: normal;
-}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">p.normal</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font-weight</span>: <span className="text-green-700">normal</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-p.bold {
-  font-weight: bold;
-}
+    <span className="text-blue-600">p.bold</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font-weight</span>: <span className="text-green-700">bold</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-p.light {
-  font-weight: 300;
-}
+    <span className="text-blue-600">p.light</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font-weight</span>: <span className="text-green-700">300</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-p.heavy {
-  font-weight: 900;
-}`}</code>
-      </pre>
+    <span className="text-blue-600">p.heavy</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font-weight</span>: <span className="text-green-700">900</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Demo</h2>
       <div className="space-y-2 p-4 border rounded-lg">

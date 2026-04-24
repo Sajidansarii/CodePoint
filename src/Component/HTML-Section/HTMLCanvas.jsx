@@ -73,18 +73,53 @@ const HtmlCanvas = () => {
       </p>
 
       <h2 className="text-xl font-semibold mt-4 mb-3">Basic Syntax</h2>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-{`<canvas id="myCanvas" width="640" height="360">
-  Your browser does not support the HTML canvas tag.
-</canvas>`}
-      </pre>
+<pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">canvas</span>
+
+    <span className="text-red-500"> id</span>=
+    <span className="text-green-600">"myCanvas"</span>
+
+    <span className="text-red-500"> width</span>=
+    <span className="text-green-600">"640"</span>
+
+    <span className="text-red-500"> height</span>=
+    <span className="text-green-600">"360"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-700">
+      &nbsp;&nbsp;Your browser does not support the HTML canvas tag.
+    </span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">canvas</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
 
       <h2 className="text-xl font-semibold mt-4 mb-3">Get 2D Context</h2>
       <p className="mb-2">Use the rendering context to draw — most common is 2D:</p>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-{`const canvas = document.getElementById('myCanvas');
-const ctx = canvas.getContext('2d');`}
-      </pre>
+    <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-blue-600">const</span> canvas = 
+    <span className="text-blue-600">document</span>.
+    <span className="text-blue-600">getElementById</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">'myCanvas'</span>
+    <span className="text-gray-500">);</span>
+    <br/><br/>
+
+    <span className="text-blue-600">const</span> ctx = 
+    canvas.<span className="text-blue-600">getContext</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">'2d'</span>
+    <span className="text-gray-500">);</span>
+  </code>
+</pre>
 
       <h2 className="text-2xl font-semibold mt-4 mb-2">Common Drawing Methods</h2>
       <ul className="list-[square] list-inside mb-4 space-y-1">
@@ -96,11 +131,40 @@ const ctx = canvas.getContext('2d');`}
       </ul>
 
       <h2 className="text-2xl font-semibold mt-5 mb-3">Example: Draw Image</h2>
-      <pre className="bg-gray-900  p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-{`const img = new Image();
-img.onload = () => ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-img.src = 'photo.jpg';`}
-      </pre>
+    <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-purple-600">const</span>
+    <span className="text-orange-600"> img</span>
+    <span className="text-gray-500"> = </span>
+    <span className="text-blue-600">new</span>
+    <span className="text-yellow-600"> Image</span>
+    <span className="text-gray-500">();</span>
+    <br/>
+
+    <span className="text-orange-600">img</span>.
+    <span className="text-blue-600">onload</span>
+    <span className="text-gray-500"> = </span>
+    <span className="text-gray-500">()</span>
+    <span className="text-gray-500"> =&gt; </span>
+    <span className="text-blue-600">ctx</span>.
+    <span className="text-blue-600">drawImage</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-orange-600">img</span>,
+    <span className="text-gray-500"> 0, 0, </span>
+    <span className="text-blue-600">canvas</span>.
+    <span className="text-blue-600">width</span>,
+    <span className="text-blue-600">canvas</span>.
+    <span className="text-blue-600">height</span>
+    <span className="text-gray-500">);</span>
+    <br/>
+
+    <span className="text-orange-600">img</span>.
+    <span className="text-blue-600">src</span>
+    <span className="text-gray-500"> = </span>
+    <span className="text-green-600">'photo.jpg'</span>
+    <span className="text-gray-500">;</span>
+  </code>
+</pre>
 
       <h2 className="text-xl font-semibold mt-4 mb-3">Hi-DPI (Retina) Support</h2>
       <p className="mb-4">

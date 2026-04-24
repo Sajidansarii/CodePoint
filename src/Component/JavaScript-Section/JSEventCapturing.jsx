@@ -60,7 +60,7 @@ const JSEventCapturing = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Event Capturing</h1>
       <p>This example has a container div with a button inside. Two capturing-phase listeners are added (true in addEventListener). Clicking the button logs “Container clicked” and “Button clicked,” showing the capturing phase from root to target.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`
    const output = document.getElementById('output');
@@ -77,7 +77,7 @@ const JSEventCapturing = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Preventing Default Behaviour</h1>
       <p>A link with id link has a capturing listener. Clicking it logs Link clicked and prevents navigation using <span className="text-red-400">event.preventDefault()</span>.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`
   document.getElementById('link').addEventListener('click', function(event) {
@@ -91,7 +91,7 @@ const JSEventCapturing = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Capturing and Stopping Propagation</h1>
       <p>The parent div’s capturing listener uses event.stopPropagation(). Clicking the button logs “Parent clicked” but prevents child capturing listeners from running.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`
    const output = document.getElementById('output');

@@ -19,14 +19,13 @@ const RadialGradientDemo = () => {
       </div>
 
      <h2 className="text-2xl">Example</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-          {`.radial-gradient-box {
-  background: radial-gradient(circle,yellow, orange); 
-  }
-`}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">.radial-gradient-box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background</span>: <span className="text-green-700">radial-gradient(circle, yellow, orange)</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">Radial Gradient - Differently Spaced Color Stops</h1>
       <p>The following illustration showcases a radial gradient with color stops set at different positions.</p>
@@ -35,15 +34,14 @@ const RadialGradientDemo = () => {
         Multi-color Radial Gradient
       </div>
       <h2 className="text-2xl">Example:</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-          {`.radial-gradient-box{
-          hover:scale-(1.25);
-          background-color:radial-gradient(circle,blue,Teal green,red ,);
-          }
-`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">.radial-gradient-box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">hover</span>: <span className="text-green-700">scale(1.25)</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">background</span>: <span className="text-green-700">radial-gradient(circle, blue, teal, green, red)</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">Radial Gradient - Set Shape</h1>
       <p>The shape parameter determines the form of the gradient. It accepts one of the following values:</p>
@@ -55,14 +53,14 @@ const RadialGradientDemo = () => {
       <div className="h-96 max-w-full rounded-lg bg-[radial-gradient(circle,#10b981,#FFFF00,#FF0000_)] flex items-center justify-center text-white font-bold transform transition duration-500 hover:brightness-125">
         Circle
       </div>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-          {`.radial-gradient-box{
-          hover:scale-(1.25);
-          background-color:radial-gradient(circle,green,yellow,red);
-          }`}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">.radial-gradient-box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">hover</span>: <span className="text-green-700">scale(1.25)</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">radial-gradient(circle, green, yellow, red)</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">Radial Gradient - The size Parameter</h1>
       <p>The size parameter specifies the overall scale of the gradient. The valid values include:</p>
@@ -74,18 +72,17 @@ const RadialGradientDemo = () => {
       </ul>
       <h1 className="text-2xl">Example</h1>
       <p>A radial gradient with different size keywords:</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-          {`.radial-gradient-box{
-  background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black);
-}
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">.radial-gradient-box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background-image</span>: <span className="text-green-700">radial-gradient(closest-side at 60% 55%, red, yellow, black)</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-.radial-gradient-box{
-  background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
-}`}
-        </code>
-      </pre>
-     
+    <span className="text-blue-600">.radial-gradient-box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background-image</span>: <span className="text-green-700">radial-gradient(farthest-side at 60% 55%, red, yellow, black)</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
      <h1 className="text-2xl">CSS repeating-radial-gradient() Function</h1>
      <p>CSS provides the repeating-radial-gradient() function to generate radial gradients that repeat indefinitely.</p>
@@ -93,14 +90,14 @@ const RadialGradientDemo = () => {
      <div className="h-80 w-full rounded-lg bg-[repeating-radial-gradient(red,yellow_10%,green_15%)] flex items-center justify-center text-white font-bold transform transition duration-500 hover:brightness-125">
         Circle
       </div>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-          {`.radial-gradient-box{
-          background-color: repeating-radial-gradient(red,yellow 10%,green 15%);
-          hover:scale-(1.25);
-          }`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">.radial-gradient-box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">repeating-radial-gradient(red, yellow 10%, green 15%)</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">hover</span>: <span className="text-green-700">scale(1.25)</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <p>
         ✅ Tips:

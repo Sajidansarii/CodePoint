@@ -28,13 +28,14 @@ const ObjectFitTutorial = () => {
             style={{ objectFit: "fill" }}
           />
         </div>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg  mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`img {
-  object-fit: fill;
-  }`}
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">img</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">object-fit</span>: <span className="text-green-700">fill</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+        
         <p className="text-gray-600 mt-2">
           Image is stretched to fill the box. Aspect ratio may be distorted.
         </p>
@@ -52,13 +53,14 @@ const ObjectFitTutorial = () => {
             style={{ objectFit: "contain" }}
           />
         </div>
-        <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded mt-5">
-          <code>
-{`img {
-  object-fit: contain;
-  }`}
+       <pre className="bg-gray-200 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded mt-5">
+  <code>
+    <span className="text-blue-600">img</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">object-fit</span>: <span className="text-green-700">contain</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
         <p className="text-gray-600 mt-2">
           Entire image is visible and aspect ratio is preserved. Empty space may appear.
         </p>
@@ -76,13 +78,15 @@ const ObjectFitTutorial = () => {
             style={{ objectFit: "cover" }}
           />
         </div>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`img {
-  object-fit: cover;
-  }`}
+
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">img</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">object-fit</span>: <span className="text-green-700">cover</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
         <p className="text-gray-600 mt-2">
           Image covers the box fully. Aspect ratio is preserved but image may be cropped.
         </p>
@@ -100,13 +104,15 @@ const ObjectFitTutorial = () => {
             style={{ objectFit: "none" }}
           />
         </div>
-        <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg  mt-5">
-          <code>
-{`img {
-  object-fit: none;
-  }`}
+
+       <pre className="bg-gray-200 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg mt-5">
+  <code>
+    <span className="text-blue-600">img</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">object-fit</span>: <span className="text-green-700">none</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
         <p className="text-gray-600 mt-2">
           Image is shown in its original size. It may overflow outside the box.
         </p>
@@ -124,13 +130,15 @@ const ObjectFitTutorial = () => {
             style={{ objectFit: "scale-down" }}
           />
         </div>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`img {
-  object-fit: scale-down;
-  }`}
+
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">img</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">object-fit</span>: <span className="text-green-700">scale-down</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
         <p className="text-gray-600 mt-2">
           The image will either be displayed at its original size or scaled down 
           to fit, whichever is smaller.

@@ -405,15 +405,19 @@ const CssBrowserSupport = () => {
 
 
       {/* Example */}
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-6">
-<code>{`/* Browser Prefix Example */
-.my-box {
-  -webkit-border-radius: 10px; /* Safari, iOS */
-  -moz-border-radius: 10px;    /* Firefox */
-  border-radius: 10px;         /* Standard */
-}`}</code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-6">
+  <code>
+    <span className="text-blue-500">/* Browser Prefix Example */</span><br />
 
+    <span className="text-blue-500">.my-box</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">-webkit-border-radius</span>: <span className="text-green-700">10px</span>; <span className="text-gray-500">/* Safari, iOS */</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">-moz-border-radius</span>: <span className="text-green-700">10px</span>; <span className="text-gray-500">/* Firefox */</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">border-radius</span>: <span className="text-green-700">10px</span>; <span className="text-gray-500">/* Standard */</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
       {/* Support Table */}
       <h3 className="text-2xl font-semibold mb-3">Common Browser Prefixes</h3>
       <table className="w-full border border-gray-300 text-left text-sm mb-6">

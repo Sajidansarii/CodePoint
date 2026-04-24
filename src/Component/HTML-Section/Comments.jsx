@@ -10,7 +10,7 @@ const HTMLComments = () => {
       {/* Syntax */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Syntax</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
             {'<!-- This is a comment -->'}
         </pre>
         <p className="leading-relaxed mt-3">
@@ -21,14 +21,38 @@ const HTMLComments = () => {
       {/* Example */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Example</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
-           {`<!-- Navigation starts here -->
-<nav>
-  <ul>
-    <li>Home</li>
-    <li>About</li>
-  </ul>
-</nav>`}
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+           <code>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-gray-30">!-- Navigation starts here --</span>
+            <span className="text-green-30">&gt;</span><br/>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">nav</span>
+            <span className="text-gray-30">&gt;</span><br/>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">ul</span>
+            <span className="text-gray30">&gt;</span><br/>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">li</span>
+            <span className="text-gray-30">&gt;</span>
+            <span className="text-gray-30">Home</span>
+            <span className="text-gray-30">&gt;/</span>
+            <span className="text-blue-500">li</span>
+            <span className="text-gray-30">&gt;</span><br/>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">li</span>
+            <span className="text-gray-30">&gt;</span>
+            <span className="text-gray-30">About</span>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">li</span>
+            <span className="text-gray-30">&gt;</span><br/>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">ul</span>
+            <span className="text-gray-30">&gt;</span><br/>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">nav</span>
+            <span className="text-gray-30">&gt;</span><br/>
+           </code>
         </pre>
       </section>
 

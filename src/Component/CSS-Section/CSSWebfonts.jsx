@@ -24,12 +24,13 @@ const WebFontsTutorial = () => {
         </p>
         <h1 className="text-2xl mt-5">Example</h1>
         <p>In this example, we’ll use the 'Sofia' font from Google Fonts.</p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`<!-- Add this inside your <head> -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">`}
-</code>
-        </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-gray-500">&lt;!-- Add this inside your &lt;head&gt; --&gt;</span><br />
+
+    <span className="text-blue-600">&lt;link</span> <span className="text-red-500">href</span>=<span className="text-green-700">"https://fonts.googleapis.com/css2?family=Roboto&display=swap"</span> <span className="text-red-500">rel</span>=<span className="text-green-700">"stylesheet"</span><span className="text-blue-600">&gt;</span>
+  </code>
+</pre>
       </div>
 
       {/* Example 2 */}
@@ -39,17 +40,21 @@ const WebFontsTutorial = () => {
           After importing, you can apply the font to any element using{" "}
           <code>font-family</code>.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`body {
-  font-family: 'Roboto', sans-serif;
-  }
-  
-  h1 {
-    font-family: 'Times New Roman', serif;
-    }`}
-    </code>
-        </pre>
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">body</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">font-family</span>: <span className="text-green-700">'Roboto', sans-serif</span>;<br />
+
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">h1</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">font-family</span>: <span className="text-green-700">'Times New Roman', serif</span>;<br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
         <div className="border p-4 bg-gray-100 text-center space-y-2">
           <p style={{ fontFamily: "Roboto, sans-serif" }} className="text-lg">
@@ -69,13 +74,15 @@ const WebFontsTutorial = () => {
           Example: <code>'Roboto', sans-serif</code> — if Roboto fails, 
           browser will use any available sans-serif font.
         </p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`p {
-  font-family: 'Roboto', sans-serif;
-  }`}
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">p</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">font-family</span>: <span className="text-green-700">'Roboto', sans-serif</span>;<br />
+
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
       </div>
     </div>
   );

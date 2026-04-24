@@ -73,11 +73,12 @@ export default function JavaScriptVersions() {
         </section>
 
         {/* Code Example */}
-        <section className="bg-gray-900 text-gray-100 rounded-2xl p-6 shadow-lg">
-          <h2 className="text-xl font-semibold text-yellow-400 mb-4">
+        <div>
+
+          <h2 className="text-xl font-semibold mb-4">
             Example: ES5 vs ES6
           </h2>
-          <pre className="bg-gray-800 p-4 rounded-lg overflow-x-auto">
+          <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
             <code>{`// ES5 Style
 var name = "codepoint";
 var greet = function(name) {
@@ -93,10 +94,11 @@ console.log(greetUser(user));
 // ES7+ Feature (Async/Await)
 async function fetchData() {
   return "Data fetched successfully!";
-}
+  }
 fetchData().then(console.log);`}</code>
           </pre>
-        </section>
+          
+  </div>
 
         <p className="mt-14">The following table outlines comprehensive information regarding each ECMAScript version.</p>
          <div className="w-full overflow-x-auto">

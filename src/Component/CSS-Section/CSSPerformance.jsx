@@ -10,33 +10,40 @@ const PerformanceExample = () => {
       <h1 className="text-2xl mt-10">Use Simple Selectors</h1>
       <p>Simple selectors are faster for browsers to process. Avoid overly complex ones to reduce CSS parsing time.</p>
       <h1 className="text-2xl mt-5 mb-2">Example</h1>
-      <pre className="bg-gray-900 text-green-400 rounded-lg p-4 mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`.button:hover {
-  background-color: blue;
-}`}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">.button:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">blue</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
+
       <h1 className="text-2xl mt-10">Avoid Universal Selector for Styling</h1>
       <p>Avoid the universal selector (*) when not strictly necessary. The universal selector (*) affects every element and can slow down page rendering.</p>
       <h1 className="text-2xl mt-5">Example</h1>
-      <pre className="bg-gray-900 text-green-400 rounded-lg p-4 mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`* {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-}`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">*</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">margin</span>: <span className="text-green-700">0</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">0</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">font-size</span>: <span className="text-green-700">16px</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
+
       <h1 className="text-2xl mt-10">Avoid Inline Styles</h1>
       <p>Inline styles add unnecessary weight to your HTML and reduce maintainability—avoid them when you can.</p>
-      <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-          {`<div style="color: red; font-size: 18px;">Hello</div>
-<p style="color: blue; font-size: 16px;">Test</p>`}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">&lt;div</span> <span className="text-red-500">style</span>=<span className="text-green-700">"color: red; font-size: 18px;"</span><span className="text-blue-600">&gt;</span>
+    Hello
+    <span className="text-blue-600">&lt;/div&gt;</span><br />
+
+    <span className="text-blue-600">&lt;p</span> <span className="text-red-500">style</span>=<span className="text-green-700">"color: blue; font-size: 16px;"</span><span className="text-blue-600">&gt;</span>
+    Test
+    <span className="text-blue-600">&lt;/p&gt;</span>
+  </code>
+</pre>
       
       <h1 className="text-2xl mt-5 mb-3">Avoid @import</h1>
       <p>Avoid using <span className="bg-gray-200 px-1 rounded-md">@import</span> to load external CSS files, as it can delay stylesheet loading and negatively affect performance.</p>
@@ -50,18 +57,18 @@ const PerformanceExample = () => {
 
       <h1 className="text-2xl mt-10 mb-2">Use Shorthand Properties</h1>
       <p>Leveraging shorthand properties reduces stylesheet size and improves parsing performance during rendering.</p>
-      <pre className="bg-gray-900 text-green-400 rounded-lg p-4 mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`/* Long version */
-margin-top: 10px;
-margin-right: 20px;
-margin-bottom: 10px;
-margin-left: 20px;
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-gray-500">/* Long version */</span><br />
+    <span className="text-red-500">margin-top</span>: <span className="text-green-700">10px</span>;<br />
+    <span className="text-red-500">margin-right</span>: <span className="text-green-700">20px</span>;<br />
+    <span className="text-red-500">margin-bottom</span>: <span className="text-green-700">10px</span>;<br />
+    <span className="text-red-500">margin-left</span>: <span className="text-green-700">20px</span>;<br /><br />
 
-/* Shorthand version */
-margin: 10px 20px;`}
-        </code>
-      </pre>
+    <span className="text-gray-500">/* Shorthand version */</span><br />
+    <span className="text-red-500">margin</span>: <span className="text-green-700">10px 20px</span>;
+  </code>
+</pre>
 
       <h1 className="text-2xl mt-10">Cut Down Unnecessary Animations</h1>
       <p>Animations consume processing resources. Minimize or remove non-essential animations to maintain smooth performance.</p>

@@ -43,46 +43,90 @@ const CSSSelectors = () => {
 
       <h2 className="text-xl font-semibold  mb-2">Examples</h2>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`/* Universal Selector */
-* {
-  margin: 0;
-  padding: 0;
-}
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-gray-500">/* Universal Selector */</span>
+    <br />
+    <span className="text-red-500">*</span> {"{"}
+    <br />
+    &nbsp;&nbsp;<span className="text-red-500">margin</span>:{" "}
+    <span className="text-green-700">0</span>;
+    <br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>:{" "}
+    <span className="text-green-700">0</span>;
+    <br />
+    {"}"}
 
-/* Type Selector */
-p {
-  color: blue;
-}
+    <br /><br />
 
-/* Class Selector */
-.intro {
-  font-size: 18px;
-  color: green;
-}
+    <span className="text-gray-500">/* Type Selector */</span>
+    <br />
+    <span className="text-red-500">p</span> {"{"}
+    <br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>:{" "}
+    <span className="text-green-700">blue</span>;
+    <br />
+    {"}"}
 
-/* ID Selector */
-#header {
-  background-color: lightgray;
-}
+    <br /><br />
 
-/* Group Selector */
-h1, h2, p {
-  text-align: center;
-}
+    <span className="text-gray-500">/* Class Selector */</span>
+    <br />
+    <span className="text-red-500">.intro</span> {"{"}
+    <br />
+    &nbsp;&nbsp;<span className="text-red-500">font-size</span>:{" "}
+    <span className="text-green-700">18px</span>;
+    <br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>:{" "}
+    <span className="text-green-700">green</span>;
+    <br />
+    {"}"}
 
-/* Descendant Selector */
-div p {
-  color: red;
-}
+    <br /><br />
 
-/* Attribute Selector */
-input[type="text"] {
-  border: 1px solid black;
-}`}
-        </code>
-      </pre>
+    <span className="text-gray-500">/* ID Selector */</span>
+    <br />
+    <span className="text-red-500">#header</span> {"{"}
+    <br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>:{" "}
+    <span className="text-green-700">lightgray</span>;
+    <br />
+    {"}"}
+
+    <br /><br />
+
+    <span className="text-gray-500">/* Group Selector */</span>
+    <br />
+    <span className="text-red-500">h1, h2, p</span> {"{"}
+    <br />
+    &nbsp;&nbsp;<span className="text-red-500">text-align</span>:{" "}
+    <span className="text-green-700">center</span>;
+    <br />
+    {"}"}
+
+    <br /><br />
+
+    <span className="text-gray-500">/* Descendant Selector */</span>
+    <br />
+    <span className="text-red-500">div p</span> {"{"}
+    <br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>:{" "}
+    <span className="text-green-700">red</span>;
+    <br />
+    {"}"}
+
+    <br /><br />
+
+    <span className="text-gray-500">/* Attribute Selector */</span>
+    <br />
+    <span className="text-red-500">input[type="text"]</span> {"{"}
+    <br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>:{" "}
+    <span className="text-green-700">1px solid black</span>;
+    <br />
+    {"}"}
+  </code>
+</pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Explanation</h2>
       <ul className="list-disc list-inside text-gray-700">

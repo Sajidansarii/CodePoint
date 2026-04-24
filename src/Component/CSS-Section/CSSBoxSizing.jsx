@@ -42,28 +42,30 @@ const CssBoxSizing = () => {
         <h2 className="text-2xl font-semibold">Box-Sizing Example</h2>
 
         {/* CSS Code */}
-        <pre className="bg-gray-900 text-green-300 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`/* CSS Box-Sizing Example */
-.box {
-  width: 300px;
-  padding: 20px;
-  border: 5px solid #4CAF50;
-  margin: 10px 0;
-  }
-  
-  /* Default - Content Box */
-  .content-box {
-    box-sizing: content-box; /* default */
-    }
-    
-    /* Border Box */
-    .border-box {
-      box-sizing: border-box;
-      }
-      `}
-      </code>
-        </pre>
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">/* CSS Box-Sizing Example */</span><br />
+
+    <span className="text-blue-500">.box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">300px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">20px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">5px solid #4CAF50</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">margin</span>: <span className="text-green-700">10px 0</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">/* Default - Content Box */</span><br />
+
+    <span className="text-blue-500">.content-box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">box-sizing</span>: <span className="text-green-700">content-box</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">/* Border Box */</span><br />
+
+    <span className="text-blue-500">.border-box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">box-sizing</span>: <span className="text-green-700">border-box</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
         {/* Live Demo */}
         <div className="flex flex-col md:flex-row gap-6 justify-center items-start">
@@ -84,13 +86,18 @@ const CssBoxSizing = () => {
       <p>Globally applying this ensures consistent box sizing and avoids unexpected layout behavior.</p>
 
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 text-green-300 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-        {`* {
-  box-sizing: border-box;
-}`}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">*</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">box-sizing</span>
+    <span>: </span>
+    <span className="text-green-700">border-box</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
 
       <h1 className="text-2xl">Without the CSS box-sizing Property</h1>
       <p>By default, CSS doesn’t include padding or borders in the width and height — here’s how it works:</p>
@@ -100,23 +107,22 @@ const CssBoxSizing = () => {
      <p>The diagram below displays two {'<div>'} elements, each assigned the same width and height properties.</p>
      <p>The two {'<div>'} elements appear different in size because div2 has padding, which increases its overall dimensions.</p>
      <h1 className="text-2xl">Example</h1>
-     <pre className="bg-gray-900 text-green-300 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-      <code>
-      {`.div1 {
-  width: 300px;
-  height: 100px;
-  border: 1px solid blue;
-  }
-  
-  .div2 {
-    width: 300px;
-    height: 100px;
-    padding: 50px;
-    border: 1px solid red;
-    }`}
-    </code>
-     </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">.div1</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">300px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">100px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid blue</span>;<br />
+    <span>{'}'}</span><br /><br />
 
+    <span className="text-blue-500">.div2</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">300px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">100px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">50px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid red</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
      <div className="w-300px h-100px border border-blue-500">This is div1</div>
      <div className="w-300px h-100px border p-[50px] border-red-500">This is div2</div>
      <p>The <span className="text-red-400 bg-gray-100">box-sizing</span> property solves this problem.</p>

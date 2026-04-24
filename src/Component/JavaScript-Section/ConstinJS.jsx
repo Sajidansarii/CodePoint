@@ -23,26 +23,32 @@ const JSConst = () => {
       <h1 className="text-2xl mt-10">Cannot be Reassigned</h1>
       <p className="leading-relaxed mt-5">Variables declared using <span className="text-red-400 bg-gray-50 px-1">const</span> are immutable — they can’t be reassigned.</p>
        <h1 className="text-2xl mt-5">Example</h1>
-       <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mt-5">
-        <code>
-        {`const PI = 3.141592653589793;
-      PI = 3.14;      // This will give an error
-      PI = PI + 10;   // This will also give an error`}
-      </code>
-       </pre>
-
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    const PI = 3.141592653589793;
+    <br />
+    PI = 3.14; &nbsp;&nbsp;// This will give an error
+    <br />
+    PI = PI + 10; &nbsp;&nbsp;// This will also give an error
+  </code>
+</pre>
        <h1 className="text-2xl mt-10">Must be Assigned</h1>
        <p className="leading-relaxed mt-5">You must give a value to a <span className="text-red-400 bg-gray-50 px-1">const</span> variable at the time you declare it.</p>
        <h1 className="text-2xl mt-5">Correct</h1>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        {`const PI = 3.14159265359;`}
-       </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    const PI = 3.14159265359;
+  </code>
+</pre>
 
        <h1 className="text-2xl mt-10">Incorrect</h1>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        {`const PI;
-PI = 3.14159265359;`}
-       </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    const PI;
+    <br />
+    PI = 3.14159265359;
+  </code>
+</pre>
 
        <h1 className="text-2xl mt-10">When to use JavaScript const?</h1>
        <p className="mt-3">If you don’t plan to change a variable’s value, declare it using <span className="text-red-400 bg-gray-50 px-1">const</span>.</p>
@@ -73,47 +79,66 @@ PI = 3.14159265359;`}
         <h1 className="text-2xl mt-10 mb-3">Constant Arrays</h1>
         <p>The <span className="text-red-400 bg-gray-50 px-1">contents</span> of an array declared with const can still be change.</p>
         <h1 className="text-2xl">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
-          {`// You can create a constant array:
-const cars = ["Saab", "Volvo", "BMW"];
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    // You can create a constant array:
+    <br />
+    const cars = ["Saab", "Volvo", "BMW"];
+    <br /><br />
 
-// You can change an element:
-cars[0] = "Toyota";
+    // You can change an element:
+    <br />
+    cars[0] = "Toyota";
+    <br /><br />
 
-// You can add an element:
-cars.push("Audi");`}
-        </pre>
+    // You can add an element:
+    <br />
+    cars.push("Audi");
+  </code>
+</pre>
 
         <p className="mt-10">While the contents can change, the array itself cannot be reassigned.</p>
         <h1 className="text-2xl mt-5">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
-          {`const cars = ["Saab", "Volvo", "BMW"];
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    const cars = ["Saab", "Volvo", "BMW"];
+    <br /><br />
 
-cars = ["Toyota", "Volvo", "Audi"];    // ERROR`}
-        </pre>
+    cars = ["Toyota", "Volvo", "Audi"]; &nbsp;&nbsp;// ERROR
+  </code>
+</pre>
 
         <h1 className="text-2xl mt-10 mb-5">Constant Objects</h1>
         <p>Even if an object is declared with const, you can update its properties.</p>
         <h1 className="text-2xl mt-5">Example</h1>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
-        {`// You can create a const object:
-const car = {type:"Fiat", model:"500", color:"white"};
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    // You can create a const object:
+    <br />
+    const car = {"{"}type:"Fiat", model:"500", color:"white"{"}"};
+    <br /><br />
 
-// You can change a property:
-car.color = "red";
+    // You can change a property:
+    <br />
+    car.color = "red";
+    <br /><br />
 
-// You can add a property:
-car.owner = "Johnson";`}
-       </pre>
+    // You can add a property:
+    <br />
+    car.owner = "Johnson";
+  </code>
+</pre>
 
        <p className="mt-10">But you can NOT reassign the object:</p>
        <h1 className="text-2xl mt-5">Example</h1>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        {`const car = {type:"Fiat", model:"500", color:"white"};
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    const car = {"{"}type:"Fiat", model:"500", color:"white"{"}"};
+    <br /><br />
 
-car = {type:"Volvo", model:"EX60", color:"red"}    // ERROR`}
-       </pre>
-
+    car = {"{"}type:"Volvo", model:"EX60", color:"red"{"}"} &nbsp;&nbsp;// ERROR
+  </code>
+</pre>
        <h1 className="text-2xl mt-10">Difference Between var, let and const</h1>
        <div className="w-full overflow-x-auto">
        <table className="w-full border border-gray-300 text-sm text-left text-gray-700 mt-5">
@@ -158,91 +183,142 @@ car = {type:"Volvo", model:"EX60", color:"red"}    // ERROR`}
        <p className="leading-relaxed mt-3">Both <span className="text-red-400 bg-gray-50 px-1">const</span> and <span className="text-red-400 bg-gray-50 px-1">let</span> are block-scoped, meaning they are only accessible within the block they are defined in.</p>
        <p className="leading-relaxed mt-3">The <span className="bg-gray-50 px-1">x</span> declared within the block is scoped locally and does not refer to the x declared outside of it.</p>
        <h1 className="text-2xl mt-5">Example</h1>
-          <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-            {`const x = 10;
-// Here x is 10
+          <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    const x = 10;
+    <br />
+    // Here x is 10
+    <br /><br />
 
-{
-const x = 2;
-// Here x is 2
-}
+    {"{"}
+    <br />
+    &nbsp;&nbsp;const x = 2;
+    <br />
+    &nbsp;&nbsp;// Here x is 2
+    <br />
+    {"}"}
+    <br /><br />
 
-// Here x is 10`}
-          </pre>
+    // Here x is 10
+  </code>
+</pre>
 
           <h1 className="text-2xl mt-10">Redeclaring</h1>
           <p className="leading-relaxed mt-3">JavaScript allows redeclaration of <span className="text-red-400 bg-gray-50 px-1">var</span> variables at any point in the program.</p>
           <h1 className="text-2xl mt-5">Example</h1>
-          <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-            {`var x = 2;     // Allowed
-var x = 3;     // Allowed
-x = 4;         // Allowed`}
-          </pre>
+         <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    var x = 2; &nbsp;&nbsp;// Allowed
+    <br />
+    var x = 3; &nbsp;&nbsp;// Allowed
+    <br />
+    x = 4; &nbsp;&nbsp;&nbsp;&nbsp;// Allowed
+  </code>
+</pre>
 
           <p className="mt-10">You cannot redeclare a var or let variable as const within the same scope.</p>
           <h1 className="text-2xl mt-5">Example</h1>
-          <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-            {`var x = 2;     // Allowed
-const x = 2;   // Not allowed
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    var x = 2; &nbsp;&nbsp;// Allowed
+    <br />
+    const x = 2; &nbsp;&nbsp;// Not allowed
+    <br /><br />
 
-{
-let x = 2;     // Allowed
-const x = 2;   // Not allowed
-}
+    {"{"}
+    <br />
+    &nbsp;&nbsp;let x = 2; &nbsp;&nbsp;// Allowed
+    <br />
+    &nbsp;&nbsp;const x = 2; &nbsp;&nbsp;// Not allowed
+    <br />
+    {"}"}
+    <br /><br />
 
-{
-const x = 2;   // Allowed
-const x = 2;   // Not allowed
-}`}
-          </pre>
+    {"{"}
+    <br />
+    &nbsp;&nbsp;const x = 2; &nbsp;&nbsp;// Allowed
+    <br />
+    &nbsp;&nbsp;const x = 2; &nbsp;&nbsp;// Not allowed
+    <br />
+    {"}"}
+  </code>
+</pre>
 
           <p className="mt-10">A <span className="text-red-400 bg-gray-50 px-1">const</span> variable’s value cannot be updated after its initial assignment in the same scope.</p>
          <h1 className="text-2xl mt-5">Example</h1>
-         <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-          {`const x = 2;     // Allowed
-x = 2;           // Not allowed
-var x = 2;       // Not allowed
-let x = 2;       // Not allowed
-const x = 2;     // Not allowed
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    const x = 2; &nbsp;&nbsp;// Allowed
+    <br />
+    x = 2; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Not allowed
+    <br />
+    var x = 2; &nbsp;&nbsp;&nbsp;// Not allowed
+    <br />
+    let x = 2; &nbsp;&nbsp;&nbsp;// Not allowed
+    <br />
+    const x = 2; &nbsp;&nbsp;// Not allowed
+    <br /><br />
 
-{
-  const x = 2;   // Allowed
-  x = 2;         // Not allowed
-  var x = 2;     // Not allowed
-  let x = 2;     // Not allowed
-  const x = 2;   // Not allowed
-}`}
-         </pre>
+    {"{"}
+    <br />
+    &nbsp;&nbsp;const x = 2; &nbsp;&nbsp;// Allowed
+    <br />
+    &nbsp;&nbsp;x = 2; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Not allowed
+    <br />
+    &nbsp;&nbsp;var x = 2; &nbsp;&nbsp;&nbsp;// Not allowed
+    <br />
+    &nbsp;&nbsp;let x = 2; &nbsp;&nbsp;&nbsp;// Not allowed
+    <br />
+    &nbsp;&nbsp;const x = 2; &nbsp;&nbsp;// Not allowed
+    <br />
+    {"}"}
+  </code>
+</pre>
 
          <p className="mt-10">You can redeclare a <span className="text-red-400 bg-gray-50 px-1">const</span> variable in a different block or scope without any issues.</p>
          <h1 className="text-2xl mt-5">Example</h1>
-         <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-          {`const x = 2;       // Allowed
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    const x = 2; &nbsp;&nbsp;&nbsp;&nbsp;// Allowed
+    <br /><br />
 
-{
-  const x = 3;   // Allowed
-}
+    {"{"}
+    <br />
+    &nbsp;&nbsp;const x = 3; &nbsp;&nbsp;// Allowed
+    <br />
+    {"}"}
+    <br /><br />
 
-{
-  const x = 4;   // Allowed
-}`}
-         </pre>
+    {"{"}
+    <br />
+    &nbsp;&nbsp;const x = 4; &nbsp;&nbsp;// Allowed
+    <br />
+    {"}"}
+  </code>
+</pre>
 
          <h1 className="text-2xl mt-10">Hoisting</h1>
          <p className="mt-3 leading-relaxed"><span className="text-red-400 bg-gray-50 px-1">var</span> variables are hoisted to the top of their scope and can be assigned values whenever needed.</p>
          <p className="leading-relaxed mt-3">You can use the variable earlier in the code than its declaration point.</p>
          <h1 className="text-2xl mt-5">Example</h1>
-         <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-          {`carName = "Volvo";
-var carName;`}
-         </pre>
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    carName = "Volvo";
+    <br />
+    var carName;
+  </code>
+</pre>
+
          <p className="leading-relaxed mt-10">Variables defined with <span className="text-red-400 bg-gray-50 px-1">const</span> are also hoisted to the top, but not initialized.</p>
         <p className="leading-relaxed mt-3">Meaning: Using a <span className="text-red-400 bg-gray-50 px-1">const</span> variable before it is declared will result in a <span className="text-red-400 bg-gray-50 px-1">ReferenceError</span>:</p>
         <h1 className="text-2xl mt-5">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-          {`alert (carName);
-const carName = "Volvo";`}
-        </pre>
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    alert (carName);
+    <br />
+    const carName = "Volvo";
+  </code>
+</pre>
 
       <div className="mt-10">
         <span className="font-semibold text-2xl">Key points about const:</span>

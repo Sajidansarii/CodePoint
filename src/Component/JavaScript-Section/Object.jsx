@@ -25,7 +25,7 @@ const ObjectDemo = () => {
        <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>JavaScript Objects</h1>
       <p>This code stores multiple values—Fiat, 500, and white—inside an object called car.</p>
      <h2 className='text-2xl text-gray-800 mt-5 font-semibold'>Example</h2>
-      <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`const car = {type:"Fiat", model:"500", color:"white"};`}
         </code>
@@ -33,7 +33,7 @@ const ObjectDemo = () => {
 
       <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>How to Create a JavaScript Object</h1>
       <p>An <span className='text-red-400'>object literal</span> is a short and simple method for creating an object, written as key–value pairs inside { }.</p>
-      <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5 mb-5'>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`{firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}`}
         </code>
@@ -41,7 +41,7 @@ const ObjectDemo = () => {
 
       <p>Object properties are defined as key–value pairs.</p>
       <h2 className='text-gray-800 text-2xl font-semibold mt-5'>Example</h2>
-      <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`// Create an Object
 const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};`}
@@ -49,7 +49,7 @@ const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};`}
       </pre>
 
       <p className='mt-5'>You can create an empty object first and add its properties later.</p>
-      <pre className='text-green-400 p-4 rounded-lg bg-gray-900 mt-5'>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`// Create an Object
 const person = {};
@@ -66,7 +66,7 @@ person.eyeColor = "blue";
       <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Using the new Keyword</h1>
       <p>A new JavaScript object can be created with the <span className='text-red-400'>new Object()</span> constructor.</p>
       <h2 className='text-gray-800 text-2xl font-semibold mt-5'>Example</h2>
-      <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`// Create an Object
 const person = new Object({
@@ -82,7 +82,7 @@ const person = new Object({
       <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Object Properties</h1>
       <p><span className='text-red-400'>Object</span> properties can be accessed in two different ways.</p>
       <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-      <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`objectName.propertyName
 objectName["propertyName"]
@@ -91,7 +91,7 @@ objectName["propertyName"]
       </pre>
 
       <h2 className='text-2xl text-gray-800 mt-5 font-semibold'>Example</h2>
-     <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       <code>
         {`person.lastName;
 person["lastName"];`}
@@ -101,7 +101,7 @@ person["lastName"];`}
      <h1 className='text-gray-800 text-2xl font-semibold mt-10 mb-3'>JavaScript Object Methods</h1>
     <p>Actions performed by an object are called methods, which are function definitions kept as property values.</p>
       <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-      <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`const person = {
   firstName: "John",
@@ -121,7 +121,7 @@ person["lastName"];`}
       <h1 className='text-2xl text-gray-800 mt-10 mb-3 font-semibold'>How to Display JavaScript Objects?</h1>
       <p>When you display a JavaScript object, it shows <span className='text-red-400'>[object Object]</span>.</p>
       <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-      <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`// Create an Object
 const person = {
@@ -137,7 +137,7 @@ let text = person;`}
       <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Displaying Object Properties</h1>
       <p>You can define object properties using string values.</p>
       <h2 className='text-2xl text-gray-800 mt-5 font-semibold'>Example</h2>
-      <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`// Create an Object
 const person = {
@@ -155,7 +155,7 @@ let text = person.name + "," + person.age + "," + person.city;`}
       <p className='mb-3'>To create many objects with the same structure, an object constructor function is used.</p>
       <p>It’s good practice to start constructor function names with an uppercase letter.</p>
      <h2 className='text-gray-800 text-2xl font-semibold mt-5'>Example</h2>
-     <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       <code>
         {`function Person(first, last, age, eye) {
   this.firstName = first;
@@ -168,7 +168,7 @@ let text = person.name + "," + person.age + "," + person.city;`}
 
      <p className='mt-10'>Using <span className='text-red-400'>new Person()</span>, we can generate many new Person instances.</p>
     <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       <code>
         {`const myFather = new Person("John", "Doe", 50, "blue");
 const myMother = new Person("Sally", "Rally", 48, "green");

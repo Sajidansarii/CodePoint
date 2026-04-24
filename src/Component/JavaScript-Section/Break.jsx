@@ -16,41 +16,76 @@ const JSBreak = () => {
       <p className="leading-relaxed mt-3">No more steps in the loop are done.</p>
       <h1 className="text-2xl mt-5">Example</h1>
       <p>When i becomes 3, exit the loop.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
-        {`for (let i = 0; i < 10; i++) {
-  if (i === 3) { break; }
-  text += "The number is " + i + "<br>";
-}`}
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    for (let i = 0; i &lt; 10; i++) {"{"}
+    <br />
+    &nbsp;&nbsp;if (i === 3) {"{"} break; {"}"}
+    <br />
+    &nbsp;&nbsp;text += "The number is " + i + "&lt;br&gt;";
+    <br />
+    {"}"}
+  </code>
+</pre>
 
       <h1 className="text-2xl mt-10">Break in a Switch</h1>
       <p className="leading-relaxed mt-3">In a switch, the break stops the program from running other cases after one matches. Without it, the code keeps running into the next cases.</p>
       <h1 className="text-2xl mt-5">Example</h1>
       <p className="leading-relaxed mt-3">Get the weekday name from the weekday number.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        {`switch (new Date().getDay()) {
-  case 0:
-    day = "Sunday";
-    break;
-  case 1:
-    day = "Monday";
-    break;
-  case 2:
-     day = "Tuesday";
-    break;
-  case 3:
-    day = "Wednesday";
-    break;
-  case 4:
-    day = "Thursday";
-    break;
-  case 5:
-    day = "Friday";
-    break;
-  case 6:
-    day = "Saturday";
-}`}
-      </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    switch (new Date().getDay()) {"{"}
+    <br />
+    &nbsp;&nbsp;case 0:
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;day = "Sunday";
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;break;
+    <br /><br />
+
+    &nbsp;&nbsp;case 1:
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;day = "Monday";
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;break;
+    <br /><br />
+
+    &nbsp;&nbsp;case 2:
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;day = "Tuesday";
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;break;
+    <br /><br />
+
+    &nbsp;&nbsp;case 3:
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;day = "Wednesday";
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;break;
+    <br /><br />
+
+    &nbsp;&nbsp;case 4:
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;day = "Thursday";
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;break;
+    <br /><br />
+
+    &nbsp;&nbsp;case 5:
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;day = "Friday";
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;break;
+    <br /><br />
+
+    &nbsp;&nbsp;case 6:
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;day = "Saturday";
+    <br />
+    {"}"}
+  </code>
+</pre>
+
       <p className="leading-relaxed mt-5">The <span className="text-red-400 bg-gray-50 px-1">break</span> keyword stops the switch from running into the next cases.</p>
       <p className="leading-relaxed mt-3">Without a <span className="text-red-400 bg-gray-50 px-1">break</span>, the code goes on to the following cases, even when they aren’t the right ones.</p>
       
@@ -58,48 +93,75 @@ const JSBreak = () => {
       <p className="leading-relaxed mt-3">A label gives a name to a line or group of lines so the program can jump to them, especially in loops.</p>
       <h1 className="text-xl mt-5 mb-5">Syntax</h1>
       <p>A label is an identifier followed by a colon (:).</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        {`labelname: statement;`}
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    labelname: statement;
+  </code>
+</pre>
+
       <p className="mt-5">A label precedes a statement or a block of code.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        {`labelname: {
-  statements
-}`}
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    labelname: {"{"}
+    <br />
+    &nbsp;&nbsp;statements
+    <br />
+    {"}"}
+  </code>
+</pre>
 
       <h1 className="text-2xl mt-10">Labeled Break</h1>
       <h1 className="text-xl mt-5">Syntax</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        {`break labelname;`}
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    break labelname;
+  </code>
+</pre>
+
       <p className="leading-relaxed mt-5">The <span className="text-red-400 bg-gray-50 px-1">break</span> statement makes the program leave the loop and go to the label.</p>
       <p className="leading-relaxed mt-5">The <span className="text-red-400 bg-gray-50 px-1">break</span> statement is useful for leaving any loop in nested loops.</p>
       <h1 className="text-2xl mt-5 mb-3">Example</h1>
       <p>Break to loop1:</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
-        {`let text = "";
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let text = "";
+    <br /><br />
 
-loop1: for (let j = 1; j < 5; j++) {
-  loop2: for (let i = 1; i < 5; i++) {
-    if (i === 3) { break loop1; }
-    text += i;
-   }
-}`}
-      </pre>
+    loop1: for (let j = 1; j &lt; 5; j++) {"{"}
+    <br />
+    &nbsp;&nbsp;loop2: for (let i = 1; i &lt; 5; i++) {"{"}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;if (i === 3) {"{"} break loop1; {"}"}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;text += i;
+    <br />
+    &nbsp;&nbsp;{"}"}
+    <br />
+    {"}"}
+  </code>
+</pre>
 
       <h1 className="text-2xl mt-10 mb-5">Example</h1>
       <p>Break to loop2:</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
-        {`let text = "";
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let text = "";
+    <br /><br />
 
-loop1: for (let j = 1; j < 5; j++) {
-  loop2: for (let i = 1; i < 5; i++) {
-    if (i === 3) { break loop2; }
-    text += i;
-   }
-}`}
-      </pre>
+    loop1: for (let j = 1; j &lt; 5; j++) {"{"}
+    <br />
+    &nbsp;&nbsp;loop2: for (let i = 1; i &lt; 5; i++) {"{"}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;if (i === 3) {"{"} break loop2; {"}"}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;text += i;
+    <br />
+    &nbsp;&nbsp;{"}"}
+    <br />
+    {"}"}
+  </code>
+</pre>
+
       <p className="leading-relaxed mt-10">The only JavaScript statements that can jump out of a block are <span className="text-red-400 bg-gray-50 px-1">break</span> and <span className="text-red-400 bg-gray-50 px-1">continue</span>.</p>
       <p className="leading-relaxed mt-3">Code between {"{"} and {"}"} is called a code block.</p>
       <p className="leading-relaxed mt-3"><span className="text-red-400 bg-gray-50 px-1">Break</span> without a label can only exit loops or switch statements.</p>
@@ -107,16 +169,25 @@ loop1: for (let j = 1; j < 5; j++) {
 
       <h1 className="text-2xl mt-10 mb-5">Example</h1>
       <p>Break the block after the second car is handled.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto mt-5">
-        {`const cars = ["BMW", "Volvo", "Saab", "Ford"];
-list: {
-  text += cars[0] + "<br>";
-  text += cars[1] + "<br>";
-  break list;
-  text += cars[2] + "<br>";
-  text += cars[3] + "<br>";
-}`}
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    const cars = ["BMW", "Volvo", "Saab", "Ford"];
+    <br />
+    list: {"{"}
+    <br />
+    &nbsp;&nbsp;text += cars[0] + "&lt;br&gt;";
+    <br />
+    &nbsp;&nbsp;text += cars[1] + "&lt;br&gt;";
+    <br />
+    &nbsp;&nbsp;break list;
+    <br />
+    &nbsp;&nbsp;text += cars[2] + "&lt;br&gt;";
+    <br />
+    &nbsp;&nbsp;text += cars[3] + "&lt;br&gt;";
+    <br />
+    {"}"}
+  </code>
+</pre>
 
       <p className="mt-10">
         <span className="font-semibold text-xl">Key points about break:</span>

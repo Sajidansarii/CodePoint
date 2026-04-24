@@ -17,13 +17,39 @@
         <p className="leading-relaxed mb-3">
           A simple video with controls:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<video width="640" controls>
-  <source src="movie.mp4" type="video/mp4" />
-  <source src="movie.webm" type="video/webm" />
-  Your browser does not support the video tag.
-</video>`}</code>
-        </pre>
+        <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;video</span>
+    <span className="text-red-500"> width</span>=
+    <span className="text-green-600">"640"</span>
+    <span className="text-red-500"> controls</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;source</span>
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"movie.mp4"</span>
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"video/mp4"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;source</span>
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"movie.webm"</span>
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"video/webm"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-700">
+      &nbsp;&nbsp;Your browser does not support the video tag.
+    </span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/video&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed">
           The browser picks the first supported format. The fallback text shows if video isn’t supported.
         </p>
@@ -49,14 +75,42 @@
         <p className="leading-relaxed mb-3">
           Use <code>&lt;track&gt;</code> to add captions or subtitles. They improve accessibility and comprehension.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<video controls>
-  <source src="movie.mp4" type="video/mp4" />
-  <track kind="captions" src="captions_en.vtt" srclang="en" label="English" default />
-  Your browser does not support the video tag.
-</video>`}</code>
-        </pre>
-        <p className="leading-relaxed mb-3">
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;video</span>
+    <span className="text-red-500"> controls</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;source</span>
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"movie.mp4"</span>
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"video/mp4"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;track</span>
+    <span className="text-red-500"> kind</span>=
+    <span className="text-green-600">"captions"</span>
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"captions_en.vtt"</span>
+    <span className="text-red-500"> srclang</span>=
+    <span className="text-green-600">"en"</span>
+    <span className="text-red-500"> label</span>=
+    <span className="text-green-600">"English"</span>
+    <span className="text-red-500"> default</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-700">
+      &nbsp;&nbsp;Your browser does not support the video tag.
+    </span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/video&gt;</span>
+  </code>
+</pre> <p className="leading-relaxed mb-3">
           Provide <code>kind="captions"</code> for speech-to-text or <code>kind="subtitles"</code> for translations. Always include a meaningful <code>title</code> or surrounding context for users relying on assistive tech.
         </p>
       </section>
@@ -67,19 +121,33 @@
         <p className="leading-relaxed mb-3">
           Wrap the video in a container that preserves aspect ratio so it scales on all devices.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`.video-wrapper {
-  position: relative;
-  padding-top: 56.25%; /* 16:9 */
-}
-.video-wrapper video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-blue-600">.video-wrapper</span> {'{'}
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">position</span>: relative;
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">padding-top</span>: 56.25%; 
+    <span className="text-gray-500">/* 16:9 */</span>
+    <br/>
+    {'}'}
+    <br/><br/>
+
+    <span className="text-blue-600">.video-wrapper video</span> {'{'}
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">position</span>: absolute;
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">top</span>: 0;
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">left</span>: 0;
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: 100%;
+    <br/>
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: 100%;
+    <br/>
+    {'}'}
+  </code>
+</pre>
         <p className="leading-relaxed mb-3">
           This avoids fixed pixel dimensions and lets the video adapt to width.
         </p>
@@ -91,22 +159,61 @@
         <p className="leading-relaxed mb-3">
           Video with poster, captions, autoplay (muted), loop, and fallback text:
         </p>
-        <pre className="bg-gray-109 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<div class="video-wrapper" style="position:relative; padding-top:56.25%;">
-  <video 
-    muted 
-    autoplay 
-    loop 
-    controls 
-    poster="thumb.jpg" 
-    style="position:absolute; top:0; left:0; width:100%; height:100%;"
-  >
-    <source src="clip.mp4" type="video/mp4" />
-    <track kind="captions" src="captions.vtt" srclang="en" label="English" default />
-    Sorry, your browser doesn't support embedded videos.
-  </video>
-</div>`}</code>
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;div</span>
+    <span className="text-red-500"> class</span>=
+    <span className="text-green-600">"video-wrapper"</span>
+    <span className="text-red-500"> style</span>=
+    <span className="text-green-600">"position:relative; padding-top:56.25%;"</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;video</span>
+    <span className="text-red-500"> muted autoplay loop controls</span>
+    <br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <span className="text-red-500">poster</span>=
+    <span className="text-green-600">"thumb.jpg"</span>
+    <br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <span className="text-red-500">style</span>=
+    <span className="text-green-600">"position:absolute; top:0; left:0; width:100%; height:100%;"</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;source</span>
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"clip.mp4"</span>
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"video/mp4"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;track</span>
+    <span className="text-red-500"> kind</span>=
+    <span className="text-green-600">"captions"</span>
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"captions.vtt"</span>
+    <span className="text-red-500"> srclang</span>=
+    <span className="text-green-600">"en"</span>
+    <span className="text-red-500"> label</span>=
+    <span className="text-green-600">"English"</span>
+    <span className="text-red-500"> default</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-700">
+      &nbsp;&nbsp;&nbsp;&nbsp;Sorry, your browser doesn't support embedded videos.
+    </span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;/video&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/div&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Performance Tips */}

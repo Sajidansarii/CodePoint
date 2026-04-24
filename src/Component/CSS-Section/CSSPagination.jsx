@@ -25,39 +25,39 @@ const CssPagination = () => {
         </p>
 
         {/* CSS Code Block */}
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`/* CSS Pagination Example */
-.pagination {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  }
-  
-  .pagination li {
-    margin: 0 5px;
-    }
-    
-    .pagination a {
-      color: black;
-      float: left;
-      padding: 8px 16px;
-      text-decoration: none;
-      border: 1px solid #ddd;
-      }
-      
-      .pagination a.active {
-        background-color: #4CAF50;
-        color: white;
-  border: 1px solid #4CAF50;
-  }
-  
-  .pagination a:hover:not(.active) {
-    background-color: #ddd;
-    }
-    `}
-    </code>
-        </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-gray-500">/* CSS Pagination Example */</span><br />
+
+    <span className="text-blue-600">.pagination</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">list-style</span>: <span className="text-green-700">none</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">0</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">.pagination li</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">margin</span>: <span className="text-green-700">0 5px</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">.pagination a</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">black</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">float</span>: <span className="text-green-700">left</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">8px 16px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-decoration</span>: <span className="text-green-700">none</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid #ddd</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">.pagination a.active</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#4CAF50</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid #4CAF50</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">.pagination a:hover:not(.active)</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#ddd</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
         {/* Live Demo */}
         <ul className="flex list-none justify-center">

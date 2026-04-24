@@ -46,18 +46,21 @@ const CssAuralMedia = () => {
       <p>The following illustrates a basic aural style sheet:</p>
 
         <h2 className="text-xl font-semibold mb-2">Syntax</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
-          <code>
-{`@media aural {
-  h1 {
-    voice-family: male;
-    stress: 20;
-    richness: 90;
-    cue-before: url("ding.wav");
-  }
-}`}
-</code>
-        </pre>
+      <pre className="bg-gray-200 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
+  <code>
+    <span className="text-blue-500">@media aural</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">h1</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">voice-family</span>: <span className="text-green-700">male</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">stress</span>: <span className="text-green-700">20</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">richness</span>: <span className="text-green-700">90</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">cue-before</span>: <span className="text-green-700">url("ding.wav")</span>;<br />
+
+    &nbsp;&nbsp;<span>{'}'}</span><br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <p>The provided example triggers the speech synthesizer to play an initial sound, followed by reading the headers in a pronounced male voice.</p>
       <p>The aural media type is now deprecated.</p>
@@ -65,23 +68,26 @@ const CssAuralMedia = () => {
         <h2 className="text-xl font-semibold">Example: Aural Media Query</h2>
         <p className="text-gray-700">Below is an example where the aural media type defines a different style for screen readers:</p>
         
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`@media speech {
-  h1 {
-    voice-family: female;
-    volume: loud;
-    pitch: x-high;
-    richness: 80;
-  }
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">@media speech</span> <span>{'{'}</span><br />
 
-  p {
-    pause-before: 200ms;
-    pause-after: 200ms;
-  }
-}`}
-</code>
-        </pre>
+    &nbsp;&nbsp;<span className="text-blue-500">h1</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">voice-family</span>: <span className="text-green-700">female</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">volume</span>: <span className="text-green-700">loud</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">pitch</span>: <span className="text-green-700">x-high</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">richness</span>: <span className="text-green-700">80</span>;<br />
+    &nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">p</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">pause-before</span>: <span className="text-green-700">200ms</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">pause-after</span>: <span className="text-green-700">200ms</span>;<br />
+    &nbsp;&nbsp;<span>{'}'}</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+
         <p>The system initiates audio output with a tone signal, followed by vocalizing the header text using a high-fidelity male voice profile.</p>
         <p>The aural media type is obsolete and has been superseded by more effective accessibility tools like ARIA and semantic markup.</p>
         

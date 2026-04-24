@@ -16,47 +16,76 @@ const IfElseInJS = () => {
         runs. Otherwise, the <code>else</code> block runs. This is one of the
         most common decision-making statements in JavaScript. 
       </p>
-      <pre className="text-green-400 p-4 overflow-x-auto bg-gray-900 rounded-lg">{`
-      if (condition) {
-  //  block of code to be executed if the condition is true
-    } else {
-  //  block of code to be executed if the condition is false
-    }`}
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    if (condition) {"{"}
+    <br />
+    &nbsp;&nbsp;// block of code to be executed if the condition is true
+    <br />
+    {"}"} else {"{"}
+    <br />
+    &nbsp;&nbsp;// block of code to be executed if the condition is false
+    <br />
+    {"}"}
+  </code>
+</pre>
+
       <h1 className="text-2xl mt-10">Example</h1>
       <p className="mt-3">If the time is earlier than 6 PM, display “Good day”; otherwise, show “Good evening.”</p>
-      <pre className="text-green-400 p-4 mt-5 bg-gray-900 rounded-lg">
-        {`if (hour < 6) {
-  greeting = "Good day";
-} else {
-  greeting = "Good evening";
-}`}
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    if (hour &lt; 6) {"{"}
+    <br />
+    &nbsp;&nbsp;greeting = "Good day";
+    <br />
+    {"}"} else {"{"}
+    <br />
+    &nbsp;&nbsp;greeting = "Good evening";
+    <br />
+    {"}"}
+  </code>
+</pre>
 
       <h1 className="text-2xl mt-10 mb-2">The else if Statement</h1>
       <p>Apply else if to add a new condition that runs only if the initial if fails.</p>
       <h1 className="mt-3 text-2xl">Syntax</h1>
-      <pre className="text-green-400 mt-5 bg-gray-900 overflow-x-auto p-4 rounded-lg">
-        {`if (condition1) {
-  //  block of code to be executed if condition1 is true
-} else if (condition2) {
-  //  block of code to be executed if the condition1 is false and condition2 is true
-} else {
-  //  block of code to be executed if the condition1 is false and condition2 is false
-}`}
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    if (condition1) {"{"}
+    <br />
+    &nbsp;&nbsp;// block of code to be executed if condition1 is true
+    <br />
+    {"}"} else if (condition2) {"{"}
+    <br />
+    &nbsp;&nbsp;// block of code to be executed if the condition1 is false and condition2 is true
+    <br />
+    {"}"} else {"{"}
+    <br />
+    &nbsp;&nbsp;// block of code to be executed if the condition1 is false and condition2 is false
+    <br />
+    {"}"}
+  </code>
+</pre>
 
       <h1 className="text-2xl mt-10">Example</h1>
       <p className="mt-3">If the time is earlier than 11:00, show “Good morning.” If it’s not, but still before 09:00, show “Good day.” Otherwise, show “Good evening.”</p>
-      <pre className="text-green-400 mt-3 bg-gray-900 p-4 rounded-lg">
-        {`if (time < 11) {
-  greeting = "Good morning";
-} else if (time < 9) {
-  greeting = "Good day";
-} else {
-  greeting = "Good evening";
-}`}
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    if (time &lt; 11) {"{"}
+    <br />
+    &nbsp;&nbsp;greeting = "Good morning";
+    <br />
+    {"}"} else if (time &lt; 9) {"{"}
+    <br />
+    &nbsp;&nbsp;greeting = "Good day";
+    <br />
+    {"}"} else {"{"}
+    <br />
+    &nbsp;&nbsp;greeting = "Good evening";
+    <br />
+    {"}"}
+  </code>
+</pre>
 
     </div>
   );

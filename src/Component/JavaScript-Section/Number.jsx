@@ -10,7 +10,7 @@ const JSNumber = () => {
       </p>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-5">Creating Numbers</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto rounded-lg mb-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`
 let integer = 42;
@@ -22,7 +22,7 @@ console.log(float);   // Output: 3.14`}
       </pre>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-5">Number Operations</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto rounded-lg mb-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`
 let a = 10;
@@ -38,7 +38,7 @@ console.log(a % b); // Output: 1 (remainder)
       </pre>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-5">Number Methods</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto rounded-lg mb-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`
 let num = 3.14159;
@@ -52,7 +52,7 @@ console.log(Number.parseFloat("3.5"));    // Output: 3.5
       </pre>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-5">Special Number Values</h2>
-      <pre className="bg-gray-900 text-green-400 overflow-x-auto p-4 rounded-lg mb-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`
 console.log(Infinity);    // Positive infinity

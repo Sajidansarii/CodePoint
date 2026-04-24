@@ -37,36 +37,84 @@ const WhatIsCSS = () => {
       </ul>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Example:</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`<!DOCTYPE html>
-<html>
-<head>
-  <title>What is CSS</title>
-  <style>
-    body {
-      background-color: #f2f2f2;
-      font-family: Arial, sans-serif;
-    }
-    h1 {
-      color: #2563eb;
-      text-align: center;
-    }
-    p {
-      color: #444;
-      font-size: 16px;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <h1>Hello, CSS!</h1>
-  <p>This page is styled with CSS.</p>
-</body>
-</html>`}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;!DOCTYPE html&gt;</span>
+    <br />
 
+    <span className="text-blue-600">&lt;html&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;head&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;title&gt;</span>
+    What is CSS
+    <span className="text-blue-600">&lt;/title&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;style&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">body</span> {"{"}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>:{" "}
+    <span className="text-green-700">#f2f2f2</span>;
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">font-family</span>:{" "}
+    <span className="text-green-700">Arial, sans-serif</span>;
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;{"}"}
+
+    <br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">h1</span> {"{"}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">color</span>:{" "}
+    <span className="text-green-700">#2563eb</span>;
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">text-align</span>:{" "}
+    <span className="text-green-700">center</span>;
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;{"}"}
+
+    <br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">p</span> {"{"}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">color</span>:{" "}
+    <span className="text-green-700">#444</span>;
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">font-size</span>:{" "}
+    <span className="text-green-700">16px</span>;
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">text-align</span>:{" "}
+    <span className="text-green-700">center</span>;
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;{"}"}
+
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;/style&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/head&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;body&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello, CSS!&lt;/h1&gt;
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This page is styled with CSS.&lt;/p&gt;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/body&gt;</span>
+    <br />
+
+    <span className="text-blue-600">&lt;/html&gt;</span>
+  </code>
+</pre>
       <p className="text-gray-700">
         ✅ <strong>Tip:</strong> CSS can be applied in three ways:{" "}
         <span className="italic">Inline</span>,{" "}

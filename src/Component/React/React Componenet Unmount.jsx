@@ -16,13 +16,20 @@ const ReactComponenetUnmount = () => {
        </ul>
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Syntax</h2>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`componentWillUnmount() {
-    // Cleanup code goes here
-}`}
-        </code>
-       </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
+
+    <span className="text-purple-700">componentWillUnmount</span>() {"{"}
+    {"\n"}
+
+    {"  "}
+    <span className="text-gray-500">// Cleanup code goes here</span>
+    {"\n"}
+
+    {"}"}
+
+  </code>
+</pre>
 
        <p className="mt-5">React automatically invokes the <span className="text-red-400 bg-gray-50">componentWillUnmount()</span> method before a component is unmounted, and this method does not receive any arguments.</p>
        
@@ -32,69 +39,199 @@ const ReactComponenetUnmount = () => {
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">1. Mouse Tracking with Cleanup using componentWillUnmount()</h2>
        <p>Here, we’ll use componentDidMount() to start tracking the mouse and componentWillUnmount() to clean up when the component is removed.</p>
-       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`import React from 'react';
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
 
-class App extends React.Component {
-   constructor() {
-      super();
-      this.state = {
-         showUser: true,
-      };
-   }
+    <span className="text-purple-700">import</span>{" "}
+    <span className="text-green-700">React</span>{" "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">'react'</span>;
+    {"\n\n"}
 
-   render() {
-      return (
-         <div>
-            <h1>Mouse Tracking</h1>
-            <button onClick={() => this.setState({ showUser: false })}>
-               Hide User
-            </button>
-            {this.state.showUser ? <User /> : null}
-         </div>
-      );
-   }
-}
+    <span className="text-purple-700">class</span>{" "}
+    <span className="text-blue-700">App</span>{" "}
+    <span className="text-purple-700">extends</span>{" "}
+    <span className="text-green-700">React.Component</span> {"{"}
+    {"\n\n"}
 
-class User extends React.Component {
-   constructor() {
-      super();
-      this.state = {
-         mousePosition: { x: 0, y: 0 },
-      };
-   }
+    {"  "}
+    <span className="text-blue-700">constructor</span>() {"{"}
+    {"\n"}
+    {"    "}
+    <span className="text-purple-700">super</span>();
+    {"\n"}
+    {"    "}
+    <span className="text-blue-700">this.state</span> = {"{"}
+    {"\n"}
+    {"      "}
+    showUser: <span className="text-yellow-700">true</span>
+    {"\n"}
+    {"    "}
+    {"}"};
+    {"\n"}
+    {"  "}
+    {"}"}
+    {"\n\n"}
 
-   componentDidMount() {
-      window.addEventListener('mousemove', this.trackMouse);
-   }
+    {"  "}
+    <span className="text-blue-700">render</span>() {"{"}
+    {"\n"}
+    {"    "}
+    <span className="text-purple-700">return</span> (
+    {"\n"}
 
-   componentWillUnmount() {
-      window.removeEventListener('mousemove', this.trackMouse);
-      alert('User component removed and mouse tracking stopped!');
-   }
+    {"      "}
+    &lt;<span className="text-red-600">div</span>&gt;
+    {"\n"}
 
-   trackMouse = (event) => {
-      this.setState({
-         mousePosition: { x: event.clientX, y: event.clientY },
-      });
-   };
+    {"        "}
+    &lt;<span className="text-red-600">h1</span>&gt;Mouse Tracking&lt;/<span className="text-red-600">h1</span>&gt;
+    {"\n"}
 
-   render() {
-      return (
-         <div>
-            <h3>User: Rahul</h3>
-            <h4>Mouse Position</h4>
-            <p>X: {this.state.mousePosition.x}, Y: {this.state.mousePosition.y}</p>
-         </div>
-      );
-   }
-}
+    {"        "}
+    &lt;<span className="text-red-600">button</span>{" "}
+    <span className="text-blue-700">onClick</span>=
+    <span className="text-gray-900">{"{"}</span>
+    () =&gt; this.setState({"{"} showUser: false {"}"})
+    <span className="text-gray-900">{"}"}</span>&gt;
+    Hide User
+    &lt;/<span className="text-red-600">button</span>&gt;
+    {"\n"}
 
-export default App;`}
-        </code>
-       </pre>
+    {"        "}
+    {"{"}
+    this.state.showUser ? &lt;<span className="text-green-700">User</span> /&gt; : null
+    {"}"}
+    {"\n"}
 
+    {"      "}
+    &lt;/<span className="text-red-600">div</span>&gt;
+    {"\n"}
+
+    {"    "}
+    );
+    {"\n"}
+    {"  "}
+    {"}"}
+    {"\n"}
+    {"}"}
+    {"\n\n"}
+
+    <span className="text-purple-700">class</span>{" "}
+    <span className="text-blue-700">User</span>{" "}
+    <span className="text-purple-700">extends</span>{" "}
+    <span className="text-green-700">React.Component</span> {"{"}
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-blue-700">constructor</span>() {"{"}
+    {"\n"}
+    {"    "}
+    <span className="text-purple-700">super</span>();
+    {"\n"}
+    {"    "}
+    <span className="text-blue-700">this.state</span> = {"{"}
+    {"\n"}
+    {"      "}
+    mousePosition: {"{"} x: 0, y: 0 {"}"}
+    {"\n"}
+    {"    "}
+    {"}"};
+    {"\n"}
+    {"  "}
+    {"}"}
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-blue-700">componentDidMount</span>() {"{"}
+    {"\n"}
+    {"    "}
+    window.<span className="text-blue-700">addEventListener</span>(
+    <span className="text-yellow-700">'mousemove'</span>,
+    this.trackMouse
+    );
+    {"\n"}
+    {"  "}
+    {"}"}
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-blue-700">componentWillUnmount</span>() {"{"}
+    {"\n"}
+    {"    "}
+    window.<span className="text-blue-700">removeEventListener</span>(
+    <span className="text-yellow-700">'mousemove'</span>,
+    this.trackMouse
+    );
+    {"\n"}
+    {"    "}
+    alert(
+    <span className="text-yellow-700">'User component removed and mouse tracking stopped!'</span>
+    );
+    {"\n"}
+    {"  "}
+    {"}"}
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-blue-700">trackMouse</span> = (event) =&gt; {"{"}
+    {"\n"}
+    {"    "}
+    this.setState({"{"}
+    mousePosition: {"{"}
+    x: event.clientX,
+    y: event.clientY
+    {"}"}
+    {"}"});
+    {"\n"}
+    {"  "}
+    {"}"};
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-blue-700">render</span>() {"{"}
+    {"\n"}
+    {"    "}
+    <span className="text-purple-700">return</span> (
+    {"\n"}
+
+    {"      "}
+    &lt;<span className="text-red-600">div</span>&gt;
+    {"\n"}
+
+    {"        "}
+    &lt;<span className="text-red-600">h3</span>&gt;User: Rahul&lt;/<span className="text-red-600">h3</span>&gt;
+    {"\n"}
+
+    {"        "}
+    &lt;<span className="text-red-600">h4</span>&gt;Mouse Position&lt;/<span className="text-red-600">h4</span>&gt;
+    {"\n"}
+
+    {"        "}
+    &lt;<span className="text-red-600">p</span>&gt;
+    X: {"{"}this.state.mousePosition.x{"}"}, Y: {"{"}this.state.mousePosition.y{"}"}
+    &lt;/<span className="text-red-600">p</span>&gt;
+    {"\n"}
+
+    {"      "}
+    &lt;/<span className="text-red-600">div</span>&gt;
+    {"\n"}
+
+    {"    "}
+    );
+    {"\n"}
+    {"  "}
+    {"}"}
+    {"\n"}
+    {"}"}
+    {"\n\n"}
+
+    <span className="text-purple-700">export</span>{" "}
+    <span className="text-purple-700">default</span>{" "}
+    <span className="text-blue-700">App</span>;
+
+  </code>
+</pre>
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">In this example</h2>
        <ul className="list-[square] space-y-1 mt-5">
         <li>The App component controls the visibility of the User component using the showUser state.</li>
@@ -106,42 +243,119 @@ export default App;`}
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">2. Component Cleanup with componentWillUnmount()</h2>
        <p>To properly clean up the component, we make use of the componentWillUnmount() lifecycle method.</p>
-       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`import React, { Component } from "react";
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
 
-class MyComponent extends Component {
-    componentWillUnmount() {
-        console.log("Component is about to be removed from the DOM.");
-    }
+    <span className="text-purple-700">import</span>{" "}
+    React, {"{"} <span className="text-green-700">Component</span> {"}"}{" "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">"react"</span>;
+    {"\n\n"}
 
-    render() {
-        return <h1>Hello, I am a Component!</h1>;
-    }
-}
+    <span className="text-purple-700">class</span>{" "}
+    <span className="text-blue-700">MyComponent</span>{" "}
+    <span className="text-purple-700">extends</span>{" "}
+    <span className="text-green-700">Component</span> {"{"}
+    {"\n\n"}
 
-class App extends Component {
-    state = { show: true };
+    {"  "}
+    <span className="text-blue-700">componentWillUnmount</span>() {"{"}
+    {"\n"}
+    {"    "}
+    console.<span className="text-blue-700">log</span>(
+    <span className="text-yellow-700">
+      "Component is about to be removed from the DOM."
+    </span>);
+    {"\n"}
+    {"  "}
+    {"}"}
+    {"\n\n"}
 
-    toggleComponent = () => {
-        this.setState({ show: !this.state.show });
-    };
+    {"  "}
+    <span className="text-blue-700">render</span>() {"{"}
+    {"\n"}
+    {"    "}
+    <span className="text-purple-700">return</span>{" "}
+    &lt;<span className="text-red-600">h1</span>&gt;
+    Hello, I am a Component!
+    &lt;/<span className="text-red-600">h1</span>&gt;;
+    {"\n"}
+    {"  "}
+    {"}"}
+    {"\n"}
+    {"}"}
+    {"\n\n"}
 
-    render() {
-        return (
-            <div>
-                <button onClick={this.toggleComponent}>
-                    {this.state.show ? "Unmount Component" : "Mount Component"}
-                </button>
-                {this.state.show && <MyComponent />}
-            </div>
-        );
-    }
-}
+    <span className="text-purple-700">class</span>{" "}
+    <span className="text-blue-700">App</span>{" "}
+    <span className="text-purple-700">extends</span>{" "}
+    <span className="text-green-700">Component</span> {"{"}
+    {"\n\n"}
 
-export default App;`}
-        </code>
-       </pre>
+    {"  "}
+    state = {"{"} show: true {"}"};
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-blue-700">toggleComponent</span> = () =&gt; {"{"}
+    {"\n"}
+    {"    "}
+    this.setState({"{"} show: !this.state.show {"}"});
+    {"\n"}
+    {"  "}
+    {"}"};
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-blue-700">render</span>() {"{"}
+    {"\n"}
+    {"    "}
+    <span className="text-purple-700">return</span> (
+    {"\n"}
+
+    {"      "}
+    &lt;<span className="text-red-600">div</span>&gt;
+    {"\n"}
+
+    {"        "}
+    &lt;<span className="text-red-600">button</span>{" "}
+    <span className="text-blue-700">onClick</span>=
+    <span className="text-gray-900">{"{"}</span>
+    this.toggleComponent
+    <span className="text-gray-900">{"}"}</span>&gt;
+    {"\n"}
+
+    {"          "}
+    {"{"}this.state.show ? "Unmount Component" : "Mount Component"{"}"}
+    {"\n"}
+
+    {"        "}
+    &lt;/<span className="text-red-600">button</span>&gt;
+    {"\n"}
+
+    {"        "}
+    {"{"}this.state.show && &lt;<span className="text-green-700">MyComponent</span> /&gt;{"}"}
+    {"\n"}
+
+    {"      "}
+    &lt;/<span className="text-red-600">div</span>&gt;
+    {"\n"}
+
+    {"    "}
+    );
+    {"\n"}
+    {"  "}
+    {"}"}
+    {"\n"}
+    {"}"}
+    {"\n\n"}
+
+    <span className="text-purple-700">export</span>{" "}
+    <span className="text-purple-700">default</span>{" "}
+    <span className="text-blue-700">App</span>;
+
+  </code>
+</pre>
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-5">In this example</h2>
        <ul className="list-[square] space-y-1 mt-5">
@@ -150,63 +364,105 @@ export default App;`}
         <li>MyComponent is removed, and the console logs a message.</li>
        </ul>
 
-       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`Component is about to be removed from the DOM.`}
-        </code>
-       </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
+
+    <span className="text-yellow-700">
+      "Component is about to be removed from the DOM."
+    </span>
+
+  </code>
+</pre>
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">When to Use componentWillUnmount()?</h2>
        <h2 className="text-2xl text-gray-800 font-semibold mb-3">Remove Event Listeners</h2>
        <p>If you attached an event listener via window.addEventListener or document.addEventListener, this is where you should clean it up.</p>
-       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`componentWillUnmount() {  
-    window.removeEventListener('resize', this.handleResize);
-}`}
-        </code>
-       </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
+
+    <span className="text-blue-700">componentWillUnmount</span>() {"{"}
+    {"\n"}
+
+    {"  "}
+    window.<span className="text-blue-700">removeEventListener</span>(
+    <span className="text-yellow-700">'resize'</span>,
+    this.<span className="text-blue-700">handleResize</span>);
+    {"\n"}
+
+    {"}"}
+
+  </code>
+</pre>
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Clear Timers or Intervals</h2>
        <p>Whenever you use setInterval or setTimeout, clear them here to stop extra executions.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`componentWillUnmount() {  
-    clearInterval(this.timer);
-}`}
-        </code>
-       </pre>
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
+
+    <span className="text-blue-700">componentWillUnmount</span>() {"{"}
+    {"\n"}
+
+    {"  "}
+    <span className="text-blue-700">clearInterval</span>(
+    this.<span className="text-blue-700">timer</span>);
+    {"\n"}
+
+    {"}"}
+
+  </code>
+</pre>
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Canceling network requests</h2>
        <p>When your component makes API calls, make sure to cancel any ongoing requests if the component unmounts before completion. This prevents updates to an unmounted component.</p>
-        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`componentWillUnmount() {  
-    this.controller.abort();  // Cancel fetch request
-}`}
-            </code>
-        </pre>
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
+
+    <span className="text-blue-700">componentWillUnmount</span>() {"{"}
+    {"\n"}
+
+    {"  "}
+    this.<span className="text-blue-700">controller</span>.<span className="text-blue-700">abort</span>();
+    {" "}
+    <span className="text-gray-500">// Cancel fetch request</span>
+    {"\n"}
+
+    {"}"}
+
+  </code>
+</pre>
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Stopping Animations</h2>
         <p>Stop any ongoing animations or transitions in componentWillUnmount() to avoid running them on an unmounted component.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`componentWillUnmount() {  
-    this.animation.stop();
-}`}
-        </code>
-       </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
 
+    <span className="text-blue-700">componentWillUnmount</span>() {"{"}
+    {"\n"}
+
+    {"  "}
+    this.<span className="text-blue-700">animation</span>.<span className="text-blue-700">stop</span>();
+    {"\n"}
+
+    {"}"}
+
+  </code>
+</pre>
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Unsubscribe from External Services</h2>
        <p>This applies to libraries such as Redux, Firebase, or WebSocket connections.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`componentWillUnmount() {  
-    this.unsubscribe();
-}`}
-        </code>
-       </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
 
+    <span className="text-blue-700">componentWillUnmount</span>() {"{"}
+    {"\n"}
+
+    {"  "}
+    this.<span className="text-blue-700">unsubscribe</span>();
+    {"\n"}
+
+    {"}"}
+
+  </code>
+</pre>
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">When Not to Use componentWillUnmount()?</h2>
        <ul className="list-[square] space-y-1 mt-5">
         <li><span className="font-semibold">Stateless Components</span>: No resource management? No componentWillUnmount() needed.</li>

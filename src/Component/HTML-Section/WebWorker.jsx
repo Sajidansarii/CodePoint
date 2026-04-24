@@ -65,15 +65,31 @@ const HTMLWebWorker = () => {
       {/* JavaScript Code */}
       <div className="mb-6">
         <h3 className="text-lg font-semibold text-blue-500 mb-3">worker.js (Background Script)</h3>
-        <pre className="bg-gray-900 p-4 text-sm rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-{`let i = 0;
-function timedCount() {
-  i += 1;
-  postMessage(i);
-  setTimeout(timedCount, 1000);
-}
-timedCount();`}
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-blue-600">let</span> i = <span className="text-green-600">0</span>;
+    <br/>
+
+    <span className="text-blue-600">function</span> 
+    <span className="text-purple-600">timedCount</span>()
+    {' {'}
+    <br/>
+
+    &nbsp;&nbsp;i += <span className="text-green-600">1</span>;
+    <br/>
+
+    &nbsp;&nbsp;<span className="text-purple-600">postMessage</span>(i);
+    <br/>
+
+    &nbsp;&nbsp;<span className="text-purple-600">setTimeout</span>(timedCount, <span className="text-green-600">1000</span>);
+    <br/>
+
+    {'}'}
+    <br/>
+
+    <span className="text-purple-600">timedCount</span>();
+  </code>
+</pre>
       </div>
 
       {/* Notes */}

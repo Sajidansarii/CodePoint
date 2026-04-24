@@ -16,11 +16,13 @@ const ReactRouterTypes = () => {
            </ul>
 
            <p className="mt-5">Prior to exploring the various router types, ensure that React Router DOM is installed in your React application.</p>
-         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`npm install react-router-dom`}
-            </code>
-         </pre>
+       <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-green-600">npm</span>{" "}
+    <span className="text-blue-600">install</span>{" "}
+    <span className="text-purple-600">react-router-dom</span>
+  </code>
+</pre>
 
          <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Types of Routers in React</h2>
          <p>React includes multiple types of routers to handle different navigation scenarios. The main routers you should know are:</p>
@@ -49,80 +51,190 @@ const ReactRouterTypes = () => {
         <li><span className="font-semibold">Handling Multiple Views or Pages:</span> If your app includes multiple views or pages BrowserRouter helps manage these views by linking each one to a specific URL.</li>
        </ul>
 
-       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
+     <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">React</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"react"</span>;
+    {"\n"}
+    
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">{`{ BrowserRouter, Routes, Route, Link }`}</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"react-router-dom"</span>;
+    {"\n"}
+    
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">Home</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"./components/Home"</span>;
+    {"\n"}
+    
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">About</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"./components/About"</span>;
+    {"\n"}
+    
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">Contact</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"./components/Contact"</span>;
+    {"\n\n"}
 
-const App = () => {
-    return (
-        <BrowserRouter>
-            <div style={{ fontFamily: "Arial, sans-serif" }}>
-                {/* Navigation Bar */}
-                <nav
-                    style={{
-                        backgroundColor: "#333",
-                        padding: "10px",
-                        display: "flex",
-                        justifyContent: "center",
-                    }}
-                >
-                    <ul
-                        style={{
-                            listStyle: "none",
-                            display: "flex",
-                            gap: "20px",
-                            padding: "0",
-                            margin: "0",
-                        }}
-                    >
-                        <li>
-                            <Link to="/" style={linkStyle}>
-                                Home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/about" style={linkStyle}>
-                                About Us
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/contact" style={linkStyle}>
-                                Contact Us
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-blue-600">App</span>{" "}
+    <span className="text-gray-800">= () =&gt; {"{"}</span>{"\n"}
+    
+    {"  "}
+    <span className="text-purple-600">return</span>{" ("}{"\n"}
+    
+    {"    "}
+    <span className="text-pink-600">&lt;BrowserRouter&gt;</span>{"\n"}
+    
+    {"      "}
+    <span className="text-pink-600">&lt;div</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{`{{ fontFamily: "Arial, sans-serif" }}`}</span>
+    <span className="text-pink-600">&gt;</span>{"\n\n"}
 
-                {/* Page Content */}
-                <div
-                    style={{ display: "flex", justifyContent: "center", padding: "20px" }}
-                >
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/contact" element={<Contact />} />
-                    </Routes>
-                </div>
-            </div>
-        </BrowserRouter>
-    );
-};
+    {"        "}
+    <span className="text-gray-500">{/* Navigation Bar */}</span>{"\n"}
 
-// Style for navigation links
-const linkStyle = {
-    textDecoration: "none",
-    color: "white",
-    fontSize: "18px",
-    fontWeight: "bold",
-};
+    {"        "}
+    <span className="text-pink-600">&lt;nav</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{`{{ backgroundColor: "#333", padding: "10px", display: "flex", justifyContent: "center" }}`}</span>
+    <span className="text-pink-600">&gt;</span>{"\n"}
 
-export default App;`}
-        </code>
-       </pre>
+    {"          "}
+    <span className="text-pink-600">&lt;ul</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{`{{ listStyle: "none", display: "flex", gap: "20px", padding: 0, margin: 0 }}`}</span>
+    <span className="text-pink-600">&gt;</span>{"\n\n"}
+
+    {"            "}
+    <span className="text-pink-600">&lt;li&gt;</span>{"\n"}
+    {"              "}
+    <span className="text-pink-600">&lt;Link</span>{" "}
+    <span className="text-purple-600">to</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/"</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{"{linkStyle}"}</span>
+    <span className="text-pink-600">&gt;</span>
+    Home
+    <span className="text-pink-600">&lt;/Link&gt;</span>{"\n"}
+    {"            "}
+    <span className="text-pink-600">&lt;/li&gt;</span>{"\n\n"}
+
+    {"            "}
+    <span className="text-pink-600">&lt;li&gt;</span>{"\n"}
+    {"              "}
+    <span className="text-pink-600">&lt;Link</span>{" "}
+    <span className="text-purple-600">to</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/about"</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{"{linkStyle}"}</span>
+    <span className="text-pink-600">&gt;</span>
+    About Us
+    <span className="text-pink-600">&lt;/Link&gt;</span>{"\n"}
+    {"            "}
+    <span className="text-pink-600">&lt;/li&gt;</span>{"\n\n"}
+
+    {"            "}
+    <span className="text-pink-600">&lt;li&gt;</span>{"\n"}
+    {"              "}
+    <span className="text-pink-600">&lt;Link</span>{" "}
+    <span className="text-purple-600">to</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/contact"</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{"{linkStyle}"}</span>
+    <span className="text-pink-600">&gt;</span>
+    Contact Us
+    <span className="text-pink-600">&lt;/Link&gt;</span>{"\n"}
+    {"            "}
+    <span className="text-pink-600">&lt;/li&gt;</span>{"\n\n"}
+
+    {"          "}
+    <span className="text-pink-600">&lt;/ul&gt;</span>{"\n"}
+    {"        "}
+    <span className="text-pink-600">&lt;/nav&gt;</span>{"\n\n"}
+
+    {"        "}
+    <span className="text-gray-500">{/* Page Content */}</span>{"\n"}
+    {"        "}
+    <span className="text-pink-600">&lt;div</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{`{{ display: "flex", justifyContent: "center", padding: "20px" }}`}</span>
+    <span className="text-pink-600">&gt;</span>{"\n"}
+    
+    {"          "}
+    <span className="text-pink-600">&lt;Routes&gt;</span>{"\n"}
+    {"            "}
+    <span className="text-pink-600">&lt;Route</span>{" "}
+    <span className="text-purple-600">path</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/"</span>{" "}
+    <span className="text-purple-600">element</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-pink-600">{`<Home />`}</span>
+    <span className="text-pink-600"> /&gt;</span>{"\n"}
+    
+    {"            "}
+    <span className="text-pink-600">&lt;Route</span>{" "}
+    <span className="text-purple-600">path</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/about"</span>{" "}
+    <span className="text-purple-600">element</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-pink-600">{`<About />`}</span>
+    <span className="text-pink-600"> /&gt;</span>{"\n"}
+    
+    {"            "}
+    <span className="text-pink-600">&lt;Route</span>{" "}
+    <span className="text-purple-600">path</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/contact"</span>{" "}
+    <span className="text-purple-600">element</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-pink-600">{`<Contact />`}</span>
+    <span className="text-pink-600"> /&gt;</span>{"\n"}
+    
+    {"          "}
+    <span className="text-pink-600">&lt;/Routes&gt;</span>{"\n"}
+    {"        "}
+    <span className="text-pink-600">&lt;/div&gt;</span>{"\n\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;/div&gt;</span>{"\n"}
+    {"    "}
+    <span className="text-pink-600">&lt;/BrowserRouter&gt;</span>{"\n"}
+    {"  "}){"\n"}
+    <span className="text-gray-800">{"}"}</span>;
+    {"\n\n"}
+
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-blue-600">linkStyle</span>{" "}
+    <span className="text-gray-800">=</span>{" "}
+    <span className="text-gray-900">{`{ textDecoration: "none", color: "white", fontSize: "18px", fontWeight: "bold" }`}</span>;
+    {"\n\n"}
+
+    <span className="text-purple-600">export</span>{" "}
+    <span className="text-purple-600">default</span>{" "}
+    <span className="text-blue-600">App</span>;
+  </code>
+</pre>
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">In this code</h2>
        <ul className="list-[square] space-y-1 mt-5">
@@ -148,80 +260,190 @@ export default App;`}
        <li><span className="font-semibold">When URL Doesn’t Matter</span>: Manages routes internally when you don’t need URL updates.</li>
        </ul>
 
-       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`import React from "react";
-import { MemoryRouter, Routes, Route, Link } from "react-router-dom";
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
+     <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">React</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"react"</span>;
+    {"\n"}
 
-const App = () => {
-    return (
-        <MemoryRouter>
-            <div style={{ fontFamily: "Arial, sans-serif" }}>
-                {/* Navigation Bar */}
-                <nav
-                    style={{
-                        backgroundColor: "#333",
-                        padding: "10px",
-                        display: "flex",
-                        justifyContent: "center",
-                    }}
-                >
-                    <ul
-                        style={{
-                            listStyle: "none",
-                            display: "flex",
-                            gap: "20px",
-                            padding: "0",
-                            margin: "0",
-                        }}
-                    >
-                        <li>
-                            <Link to="/" style={linkStyle}>
-                                Home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/about" style={linkStyle}>
-                                About Us
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/contact" style={linkStyle}>
-                                Contact Us
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">{`{ MemoryRouter, Routes, Route, Link }`}</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"react-router-dom"</span>;
+    {"\n"}
 
-                {/* Page Content */}
-                <div
-                    style={{ display: "flex", justifyContent: "center", padding: "20px" }}
-                >
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/contact" element={<Contact />} />
-                    </Routes>
-                </div>
-            </div>
-        </MemoryRouter>
-    );
-};
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">Home</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"./components/Home"</span>;
+    {"\n"}
 
-// Style for navigation links
-const linkStyle = {
-    textDecoration: "none",
-    color: "white",
-    fontSize: "18px",
-    fontWeight: "bold",
-};
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">About</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"./components/About"</span>;
+    {"\n"}
 
-export default App;`}
-        </code>
-       </pre>
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">Contact</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"./components/Contact"</span>;
+    {"\n\n"}
+
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-blue-600">App</span>{" "}
+    <span className="text-gray-800">= () =&gt; {"{"}</span>{"\n"}
+    
+    {"  "}
+    <span className="text-purple-600">return</span>{" ("}{"\n"}
+    
+    {"    "}
+    <span className="text-pink-600">&lt;MemoryRouter&gt;</span>{"\n"}
+    
+    {"      "}
+    <span className="text-pink-600">&lt;div</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{`{{ fontFamily: "Arial, sans-serif" }}`}</span>
+    <span className="text-pink-600">&gt;</span>{"\n\n"}
+
+    {"        "}
+    <span className="text-gray-500">{/* Navigation Bar */}</span>{"\n"}
+
+    {"        "}
+    <span className="text-pink-600">&lt;nav</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{`{{ backgroundColor: "#333", padding: "10px", display: "flex", justifyContent: "center" }}`}</span>
+    <span className="text-pink-600">&gt;</span>{"\n"}
+
+    {"          "}
+    <span className="text-pink-600">&lt;ul</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{`{{ listStyle: "none", display: "flex", gap: "20px", padding: 0, margin: 0 }}`}</span>
+    <span className="text-pink-600">&gt;</span>{"\n\n"}
+
+    {"            "}
+    <span className="text-pink-600">&lt;li&gt;</span>{"\n"}
+    {"              "}
+    <span className="text-pink-600">&lt;Link</span>{" "}
+    <span className="text-purple-600">to</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/"</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{"{linkStyle}"}</span>
+    <span className="text-pink-600">&gt;</span>
+    Home
+    <span className="text-pink-600">&lt;/Link&gt;</span>{"\n"}
+    {"            "}
+    <span className="text-pink-600">&lt;/li&gt;</span>{"\n\n"}
+
+    {"            "}
+    <span className="text-pink-600">&lt;li&gt;</span>{"\n"}
+    {"              "}
+    <span className="text-pink-600">&lt;Link</span>{" "}
+    <span className="text-purple-600">to</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/about"</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{"{linkStyle}"}</span>
+    <span className="text-pink-600">&gt;</span>
+    About Us
+    <span className="text-pink-600">&lt;/Link&gt;</span>{"\n"}
+    {"            "}
+    <span className="text-pink-600">&lt;/li&gt;</span>{"\n\n"}
+
+    {"            "}
+    <span className="text-pink-600">&lt;li&gt;</span>{"\n"}
+    {"              "}
+    <span className="text-pink-600">&lt;Link</span>{" "}
+    <span className="text-purple-600">to</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/contact"</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{"{linkStyle}"}</span>
+    <span className="text-pink-600">&gt;</span>
+    Contact Us
+    <span className="text-pink-600">&lt;/Link&gt;</span>{"\n"}
+    {"            "}
+    <span className="text-pink-600">&lt;/li&gt;</span>{"\n\n"}
+
+    {"          "}
+    <span className="text-pink-600">&lt;/ul&gt;</span>{"\n"}
+    {"        "}
+    <span className="text-pink-600">&lt;/nav&gt;</span>{"\n\n"}
+
+    {"        "}
+    <span className="text-gray-500">{/* Page Content */}</span>{"\n"}
+    {"        "}
+    <span className="text-pink-600">&lt;div</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{`{{ display: "flex", justifyContent: "center", padding: "20px" }}`}</span>
+    <span className="text-pink-600">&gt;</span>{"\n"}
+    
+    {"          "}
+    <span className="text-pink-600">&lt;Routes&gt;</span>{"\n"}
+    {"            "}
+    <span className="text-pink-600">&lt;Route</span>{" "}
+    <span className="text-purple-600">path</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/"</span>{" "}
+    <span className="text-purple-600">element</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-pink-600">{`<Home />`}</span>
+    <span className="text-pink-600"> /&gt;</span>{"\n"}
+    
+    {"            "}
+    <span className="text-pink-600">&lt;Route</span>{" "}
+    <span className="text-purple-600">path</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/about"</span>{" "}
+    <span className="text-purple-600">element</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-pink-600">{`<About />`}</span>
+    <span className="text-pink-600"> /&gt;</span>{"\n"}
+    
+    {"            "}
+    <span className="text-pink-600">&lt;Route</span>{" "}
+    <span className="text-purple-600">path</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/contact"</span>{" "}
+    <span className="text-purple-600">element</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-pink-600">{`<Contact />`}</span>
+    <span className="text-pink-600"> /&gt;</span>{"\n"}
+    
+    {"          "}
+    <span className="text-pink-600">&lt;/Routes&gt;</span>{"\n"}
+    {"        "}
+    <span className="text-pink-600">&lt;/div&gt;</span>{"\n\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;/div&gt;</span>{"\n"}
+    {"    "}
+    <span className="text-pink-600">&lt;/MemoryRouter&gt;</span>{"\n"}
+    {"  "}){"\n"}
+    <span className="text-gray-800">{"}"}</span>;
+    {"\n\n"}
+
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-blue-600">linkStyle</span>{" "}
+    <span className="text-gray-800">=</span>{" "}
+    <span className="text-gray-900">{`{ textDecoration: "none", color: "white", fontSize: "18px", fontWeight: "bold" }`}</span>;
+    {"\n\n"}
+
+    <span className="text-purple-600">export</span>{" "}
+    <span className="text-purple-600">default</span>{" "}
+    <span className="text-blue-600">App</span>;
+  </code>
+</pre>
 
      <h2 className="text-2xl text-gray-800 font-semibold mt-5">In this code</h2>
      <ul className="list-[square] space-y-1 mt-5">
@@ -248,81 +470,190 @@ export default App;`}
         <li><span className="font-semibold">Lightweight Projects</span>: For smaller applications or prototypes not requiring SEO-friendly or clean URLs, HashRouter provides a straightforward routing solution.</li>
     </ul>
 
-    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`import React from "react";
-import { HashRouter, Routes, Route, Link } from "react-router-dom";
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
+   <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">React</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"react"</span>;
+    {"\n"}
 
-const App = () => {
-    return (
-        <HashRouter>
-            <div style={{ fontFamily: "Arial, sans-serif" }}>
-                {/* Navigation Bar */}
-                <nav
-                    style={{
-                        backgroundColor: "#333",
-                        padding: "10px",
-                        display: "flex",
-                        justifyContent: "center",
-                    }}
-                >
-                    <ul
-                        style={{
-                            listStyle: "none",
-                            display: "flex",
-                            gap: "20px",
-                            padding: "0",
-                            margin: "0",
-                        }}
-                    >
-                        <li>
-                            <Link to="/" style={linkStyle}>
-                                Home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/about" style={linkStyle}>
-                                About Us
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/contact" style={linkStyle}>
-                                Contact Us
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">{`{ HashRouter, Routes, Route, Link }`}</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"react-router-dom"</span>;
+    {"\n"}
 
-                {/* Page Content */}
-                <div
-                    style={{ display: "flex", justifyContent: "center", padding: "20px" }}
-                >
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/contact" element={<Contact />} />
-                    </Routes>
-                </div>
-            </div>
-        </HashRouter>
-    );
-};
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">Home</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"./components/Home"</span>;
+    {"\n"}
 
-// Style for navigation links
-const linkStyle = {
-    textDecoration: "none",
-    color: "white",
-    fontSize: "18px",
-    fontWeight: "bold",
-};
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">About</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"./components/About"</span>;
+    {"\n"}
 
-export default App;`}
-        </code>
-    </pre>
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">Contact</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"./components/Contact"</span>;
+    {"\n\n"}
 
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-blue-600">App</span>{" "}
+    <span className="text-gray-800">= () =&gt; {"{"}</span>{"\n"}
+    
+    {"  "}
+    <span className="text-purple-600">return</span>{" ("}{"\n"}
+    
+    {"    "}
+    <span className="text-pink-600">&lt;HashRouter&gt;</span>{"\n"}
+    
+    {"      "}
+    <span className="text-pink-600">&lt;div</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{`{{ fontFamily: "Arial, sans-serif" }}`}</span>
+    <span className="text-pink-600">&gt;</span>{"\n\n"}
+
+    {"        "}
+    <span className="text-gray-500">{/* Navigation Bar */}</span>{"\n"}
+
+    {"        "}
+    <span className="text-pink-600">&lt;nav</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{`{{ backgroundColor: "#333", padding: "10px", display: "flex", justifyContent: "center" }}`}</span>
+    <span className="text-pink-600">&gt;</span>{"\n"}
+
+    {"          "}
+    <span className="text-pink-600">&lt;ul</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{`{{ listStyle: "none", display: "flex", gap: "20px", padding: 0, margin: 0 }}`}</span>
+    <span className="text-pink-600">&gt;</span>{"\n\n"}
+
+    {"            "}
+    <span className="text-pink-600">&lt;li&gt;</span>{"\n"}
+    {"              "}
+    <span className="text-pink-600">&lt;Link</span>{" "}
+    <span className="text-purple-600">to</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/"</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{"{linkStyle}"}</span>
+    <span className="text-pink-600">&gt;</span>
+    Home
+    <span className="text-pink-600">&lt;/Link&gt;</span>{"\n"}
+    {"            "}
+    <span className="text-pink-600">&lt;/li&gt;</span>{"\n\n"}
+
+    {"            "}
+    <span className="text-pink-600">&lt;li&gt;</span>{"\n"}
+    {"              "}
+    <span className="text-pink-600">&lt;Link</span>{" "}
+    <span className="text-purple-600">to</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/about"</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{"{linkStyle}"}</span>
+    <span className="text-pink-600">&gt;</span>
+    About Us
+    <span className="text-pink-600">&lt;/Link&gt;</span>{"\n"}
+    {"            "}
+    <span className="text-pink-600">&lt;/li&gt;</span>{"\n\n"}
+
+    {"            "}
+    <span className="text-pink-600">&lt;li&gt;</span>{"\n"}
+    {"              "}
+    <span className="text-pink-600">&lt;Link</span>{" "}
+    <span className="text-purple-600">to</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/contact"</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{"{linkStyle}"}</span>
+    <span className="text-pink-600">&gt;</span>
+    Contact Us
+    <span className="text-pink-600">&lt;/Link&gt;</span>{"\n"}
+    {"            "}
+    <span className="text-pink-600">&lt;/li&gt;</span>{"\n\n"}
+
+    {"          "}
+    <span className="text-pink-600">&lt;/ul&gt;</span>{"\n"}
+    {"        "}
+    <span className="text-pink-600">&lt;/nav&gt;</span>{"\n\n"}
+
+    {"        "}
+    <span className="text-gray-500">{/* Page Content */}</span>{"\n"}
+    {"        "}
+    <span className="text-pink-600">&lt;div</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{`{{ display: "flex", justifyContent: "center", padding: "20px" }}`}</span>
+    <span className="text-pink-600">&gt;</span>{"\n"}
+    
+    {"          "}
+    <span className="text-pink-600">&lt;Routes&gt;</span>{"\n"}
+    {"            "}
+    <span className="text-pink-600">&lt;Route</span>{" "}
+    <span className="text-purple-600">path</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/"</span>{" "}
+    <span className="text-purple-600">element</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-pink-600">{`<Home />`}</span>
+    <span className="text-pink-600"> /&gt;</span>{"\n"}
+    
+    {"            "}
+    <span className="text-pink-600">&lt;Route</span>{" "}
+    <span className="text-purple-600">path</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/about"</span>{" "}
+    <span className="text-purple-600">element</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-pink-600">{`<About />`}</span>
+    <span className="text-pink-600"> /&gt;</span>{"\n"}
+    
+    {"            "}
+    <span className="text-pink-600">&lt;Route</span>{" "}
+    <span className="text-purple-600">path</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/contact"</span>{" "}
+    <span className="text-purple-600">element</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-pink-600">{`<Contact />`}</span>
+    <span className="text-pink-600"> /&gt;</span>{"\n"}
+    
+    {"          "}
+    <span className="text-pink-600">&lt;/Routes&gt;</span>{"\n"}
+    {"        "}
+    <span className="text-pink-600">&lt;/div&gt;</span>{"\n\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;/div&gt;</span>{"\n"}
+    {"    "}
+    <span className="text-pink-600">&lt;/HashRouter&gt;</span>{"\n"}
+    {"  "}){"\n"}
+    <span className="text-gray-800">{"}"}</span>;
+    {"\n\n"}
+
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-blue-600">linkStyle</span>{" "}
+    <span className="text-gray-800">=</span>{" "}
+    <span className="text-gray-900">{`{ textDecoration: "none", color: "white", fontSize: "18px", fontWeight: "bold" }`}</span>;
+    {"\n\n"}
+
+    <span className="text-purple-600">export</span>{" "}
+    <span className="text-purple-600">default</span>{" "}
+    <span className="text-blue-600">App</span>;
+  </code>
+</pre>
     <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">In this code</h2>
     <ul className="list-[square] space-y-1 mt-5">
         <li><span className="font-semibold">Home.js</span>: Renders a basic home page containing a heading and welcome message.</li>

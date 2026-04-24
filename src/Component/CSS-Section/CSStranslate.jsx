@@ -30,11 +30,12 @@ const TranslateDemo = () => {
 
       <h1 className="text-2xl">Syntax</h1>
       <p>Here’s the syntax you use for the CSS translate property:</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`translate: x-axis y-axis z-axis | none;`}
-        </code>
-      </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">translate</span>: 
+    <span className="text-green-700">x-axis y-axis z-axis | none</span>;
+  </code>
+</pre>
 
 
       <h1 className="text-2xl">Valid options</h1>
@@ -63,241 +64,279 @@ const TranslateDemo = () => {
       <p>To prevent any movement on any axis, set the translate property to none.</p>
       <h1 className="text-2xl">Example</h1>
       <p>In the example below, translate is set to none, disabling any translation effect on the div box.</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`<html>
-<head>
-    <style>
-        .box {
-            height: 100px;
-            width: 100px;
-            display: inline-block;
-            padding: 10px;
-            border: 1px solid black;
-            transition: all 0.3s ease;
-        }
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;html&gt;</span><br />
 
-        .box:hover {
-            background-color: #04af2f;
-            translate: none;
-        }
-    </style>
-</head>
+    <span className="text-blue-600">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;style&gt;</span><br />
 
-<body>
-    <div class="box"></div>
-</body>
-</html>`}
-        </code>
-      </pre>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">100px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">100px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">inline-block</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">10px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid black</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">transition</span>: <span className="text-green-700">all 0.3s ease</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.box:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#04af2f</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">translate</span>: <span className="text-green-700">none</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+
+    <span className="text-blue-600">&lt;/style&gt;</span><br />
+    <span className="text-blue-600">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-600">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"box"</span><span className="text-blue-600">&gt;&lt;/div&gt;</span><br />
+    <span className="text-blue-600">&lt;/body&gt;</span><br />
+
+    <span className="text-blue-600">&lt;/html&gt;</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">CSS translate on X-Axis</h1>
       <p>A single value in the translate property moves an element horizontally, using either a length or percentage.</p>
       <h1 className="text-2xl">Example</h1>
       <p>This example applies a positive length value to the first box and a negative <span className="bg-gray-50 text-red-400 px-2 rounded-md">percentage</span> to the second using the <span className="bg-gray-50 text-red-400 px-2 rounded-md">translate</span> property. As a result, the first box shifts right, while the second moves left along the X-axis.</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        .container {
-            height: 100px;
-            width: 200px;
-            padding: 10px;
-            border: 1px solid black;
-            margin: auto;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: #f0f0ff;            
-        }
-        .box {
-            height: 80px;
-            width: 80px;
-            border: 1px solid black;
-            display: inline-block;
-            transition: all 0.3s ease;
-            background-color: white;
-        }
-        .box1:hover {
-            background-color: #04af2f;
-            translate: 10px;
-        }
-        .box2:hover {
-            background-color: #031926;
-            translate: -10%;
-        }
-    </style>
-</head>
-<body>
-    <h2>CSS translate Property</h2>
-    <p>Translation on x-axis.</p>
-    <div class="container">
-        <div class="box box1"></div>
-        <div class="box box2"></div>
-    </div>    
-</body>
-</html>`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-600">&lt;html</span> <span className="text-red-500">lang</span>=<span className="text-green-700">"en"</span><span className="text-blue-600">&gt;</span><br /><br />
 
+    <span className="text-blue-600">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;style&gt;</span><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">100px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">200px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">10px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid black</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">margin</span>: <span className="text-green-700">auto</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">justify-content</span>: <span className="text-green-700">space-around</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">align-items</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#f0f0ff</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">80px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">80px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid black</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">inline-block</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">transition</span>: <span className="text-green-700">all 0.3s ease</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.box1:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#04af2f</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">translate</span>: <span className="text-green-700">10px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.box2:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#031926</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">translate</span>: <span className="text-green-700">-10%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/style&gt;</span><br />
+    <span className="text-blue-600">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-600">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;h2&gt;</span>CSS translate Property<span className="text-blue-600">&lt;/h2&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;p&gt;</span>Translation on x-axis.<span className="text-blue-600">&lt;/p&gt;</span><br /><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"container"</span><span className="text-blue-600">&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"box box1"</span><span className="text-blue-600">&gt;&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"box box2"</span><span className="text-blue-600">&gt;&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/div&gt;</span><br />
+
+    <span className="text-blue-600">&lt;/body&gt;</span><br />
+    <span className="text-blue-600">&lt;/html&gt;</span>
+  </code>
+</pre>
       <h1 className="text-2xl">CSS translate on Y-Axis</h1>
       <p>To move an element along the y-axis, use the <span className="bg-gray-50 px-2 rounded-md text-red-400">translate</span> property with two values, setting the first (x-axis) value to <span className="bg-gray-50">0.</span></p>
       <h1 className="text-2xl">Example</h1>
       <p>In this example, the <span className="text-red-400 bg-gray-50 px-2 rounded-md">translate</span> property is used with a positive length on the first box and a negative percentage on the second. As a result, the first box moves downward, while the second moves upward along the y-axis.</p>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        .container {
-            height: 150px;
-            width: 200px;
-            padding: 10px;
-            border: 1px solid black;
-            margin: auto;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: #f0f0ff;            
-        }
-        .box {
-            height: 80px;
-            width: 80px;
-            border: 1px solid black;
-            display: inline-block;
-            transition: all 0.3s ease;
-            background-color: white;
-        }
-        .box1:hover {
-            background-color: #04af2f;
-            translate: 0px 15px;
-        }
-        .box2:hover {
-            background-color: #031926;
-            translate: 0% -15%;
-        }
-    </style>
-</head>
-<body>
-    <h2>CSS translate Property</h2>
-    <p>Translation on y-axis.</p>
-    <div class="container">
-        <div class="box box1"></div>
-        <div class="box box2"></div>
-    </div>    
-</body>
-</html>`}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-600">&lt;html</span> <span className="text-red-500">lang</span>=<span className="text-green-700">"en"</span><span className="text-blue-600">&gt;</span><br /><br />
+
+    <span className="text-blue-600">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;style&gt;</span><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">150px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">200px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">10px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid black</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">margin</span>: <span className="text-green-700">auto</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">justify-content</span>: <span className="text-green-700">space-around</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">align-items</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#f0f0ff</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">80px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">80px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid black</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">inline-block</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">transition</span>: <span className="text-green-700">all 0.3s ease</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.box1:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#04af2f</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">translate</span>: <span className="text-green-700">0px 15px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.box2:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#031926</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">translate</span>: <span className="text-green-700">0% -15%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/style&gt;</span><br />
+    <span className="text-blue-600">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-600">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;h2&gt;</span>CSS translate Property<span className="text-blue-600">&lt;/h2&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;p&gt;</span>Translation on y-axis.<span className="text-blue-600">&lt;/p&gt;</span><br /><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"container"</span><span className="text-blue-600">&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"box box1"</span><span className="text-blue-600">&gt;&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"box box2"</span><span className="text-blue-600">&gt;&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/div&gt;</span><br />
+
+    <span className="text-blue-600">&lt;/body&gt;</span><br />
+    <span className="text-blue-600">&lt;/html&gt;</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">CSS <span className="text-red-400 bg-gray-50 px-2 rounded-md">translate</span> on Z-Axis</h1>
       <p>To move an element along the z-axis, use the translate property with three values, setting the x and y values to <span className="bg-gray-50">0.</span></p>
       <h1 className="text-2xl">Example</h1>
       <p>In this example, we applied a positive length value to the first box and a negative one to the second using the <span className="txet-red-400 bg-gray-50 px-2 rounded-md">translate</span> property. This causes the first box to move closer to the viewer, while the second moves farther away.</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        .container {
-            perspective: 100px;
-            height: 150px;
-            width: 200px;
-            padding: 10px;
-            border: 1px solid black;
-            margin: auto;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: #f0f0ff;            
-        }
-        .box {
-            height: 80px;
-            width: 80px;
-            border: 1px solid black;
-            display: inline-block;
-            transition: all 0.3s ease;
-            background-color: white;
-        }
-        .box1:hover {
-            background-color: #04af2f;
-            translate: 0 0 15px;
-        }
-        .box2:hover {
-            background-color: #031926;
-            translate: 0 0 -10px;
-        }
-    </style>
-</head>
-<body>
-    <h2>CSS translate Property</h2>
-    <p>Translation on z-axis.</p>
-    <div class="container">
-        <div class="box box1"></div>
-        <div class="box box2"></div>
-    </div>    
-</body>
-</html>`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-600">&lt;html</span> <span className="text-red-500">lang</span>=<span className="text-green-700">"en"</span><span className="text-blue-600">&gt;</span><br /><br />
+
+    <span className="text-blue-600">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;style&gt;</span><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">perspective</span>: <span className="text-green-700">100px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">150px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">200px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">10px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid black</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">margin</span>: <span className="text-green-700">auto</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">justify-content</span>: <span className="text-green-700">space-around</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">align-items</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#f0f0ff</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">80px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">80px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid black</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">inline-block</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">transition</span>: <span className="text-green-700">all 0.3s ease</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.box1:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#04af2f</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">translate</span>: <span className="text-green-700">0 0 15px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.box2:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#031926</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">translate</span>: <span className="text-green-700">0 0 -10px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/style&gt;</span><br />
+    <span className="text-blue-600">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-600">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;h2&gt;</span>CSS translate Property<span className="text-blue-600">&lt;/h2&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;p&gt;</span>Translation on z-axis.<span className="text-blue-600">&lt;/p&gt;</span><br /><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"container"</span><span className="text-blue-600">&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"box box1"</span><span className="text-blue-600">&gt;&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"box box2"</span><span className="text-blue-600">&gt;&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/div&gt;</span><br />
+
+    <span className="text-blue-600">&lt;/body&gt;</span><br />
+    <span className="text-blue-600">&lt;/html&gt;</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">CSS translate on X and Y Axes</h1>
       <p>To move an element along both the x and y axes, use two values with the translate property.</p>
       <h1 className="text-2xl">Example</h1>
       <p>This example shows how translate uses two values to move the box horizontally and vertically.</p>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        .container {
-            height: 150px;
-            width: 250px;
-            padding: 10px;
-            border: 1px solid black;
-            margin: auto;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: #f0f0ff;            
-        }
-        .box {
-            height: 80px;
-            width: 80px;
-            border: 1px solid black;
-            display: inline-block;
-            transition: all 0.3s ease;
-            background-color: white;
-        }
-        .box1:hover {
-            background-color: #04af2f;
-            translate: 15px 10px;
-        }
-        .box2:hover {
-            background-color: #031926;
-            translate: -15% -15%;
-        }
-    </style>
-</head>
-<body>
-    <h2>CSS translate Property</h2>
-    <p>Translation on both x and y-axis.</p>
-    <div class="container">
-        <div class="box box1"></div>
-        <div class="box box2"></div>
-    </div>    
-</body>
-</html>`}
-        </code>
-      </pre>
-      <h1 className="text-2xl">CSS translate on Y and Z Axes</h1>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-600">&lt;html</span> <span className="text-red-500">lang</span>=<span className="text-green-700">"en"</span><span className="text-blue-600">&gt;</span><br /><br />
+
+    <span className="text-blue-600">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;style&gt;</span><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">150px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">250px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">10px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid black</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">margin</span>: <span className="text-green-700">auto</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">justify-content</span>: <span className="text-green-700">space-around</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">align-items</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#f0f0ff</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">80px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">80px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid black</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">inline-block</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">transition</span>: <span className="text-green-700">all 0.3s ease</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.box1:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#04af2f</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">translate</span>: <span className="text-green-700">15px 10px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.box2:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#031926</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">translate</span>: <span className="text-green-700">-15% -15%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/style&gt;</span><br />
+    <span className="text-blue-600">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-600">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;h2&gt;</span>CSS translate Property<span className="text-blue-600">&lt;/h2&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;p&gt;</span>Translation on both x and y-axis.<span className="text-blue-600">&lt;/p&gt;</span><br /><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"container"</span><span className="text-blue-600">&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"box box1"</span><span className="text-blue-600">&gt;&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"box box2"</span><span className="text-blue-600">&gt;&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/div&gt;</span><br />
+
+    <span className="text-blue-600">&lt;/body&gt;</span><br />
+    <span className="text-blue-600">&lt;/html&gt;</span>
+  </code>
+</pre>  <h1 className="text-2xl">CSS translate on Y and Z Axes</h1>
       <p>You can <span className="bg-gray-50 px-2 rounded-md text-red-400">translate</span> an element vertically and in depth by providing two values to translate, keeping the x value at 0.</p>
       
       <p>

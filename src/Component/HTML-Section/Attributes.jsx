@@ -22,10 +22,27 @@ const HTMLAttributes = () => {
           <li><code>aria-*</code> — Accessibility attributes (e.g., <code>aria-label</code>, <code>aria-describedby</code>).</li>
           <li><code>role</code> — Defines the semantic role for assistive tech.</li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>{`<div id="hero" class="bg-blue-100" title="Main banner" data-section="top">
-  Welcome!
-</div>`}</code>
+        <pre className="bg-gray-200 p-4 rounded-lg  overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">div </span>
+            <span className="text-red-500">id</span>
+            <span className="text-red-500">=</span>
+            <span className="text-green-600">"hero"  </span>
+            <span className="text-red-500">class=</span>
+            <span className="text-green-600">"bg-blue"  </span>
+            <span className="text-red-500">title=</span>
+            <span className="text-green-600">"Main" </span>
+            <span className="text-red-500">data-section=</span>
+            <span className="text-green-600">"top"</span>
+            <span className="text-gray-30">&gt;</span>
+            <span className="text-black-50"> Welcome! </span>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">div</span>
+            <span className="text-gray-30">&gt;</span>
+
+           
+</code>
         </pre>
       </section>
 
@@ -49,23 +66,70 @@ const HTMLAttributes = () => {
           <li><code>checked</code> — Preselects checkbox/radio.</li>
           <li><code>multiple</code> — Allows selecting multiple values (e.g., in <code>&lt;select&gt;</code> or file inputs).</li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>{`<form>
-  <label for="email">Email:</label>
-  <input 
-    type="email" 
-    id="email" 
-    name="userEmail" 
-    placeholder="you@example.com" 
-    required 
-    autocomplete="email" 
-  />
-
-  <label for="bio">Bio:</label>
-  <textarea id="bio" name="bio" maxlength="200"></textarea>
-
-  <button type="submit">Submit</button>
-</form>`}</code>
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">form</span>
+            <span className="text-gray-30">&gt;                                                                                                                     </span>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">label </span>
+            <span className="text-red-500">for=</span>
+            <span className="text-green-600">"email"</span>
+            <span className="text-gray-30">&gt;</span>
+            <span className="text-black-50">Email:</span>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">label</span>
+            <span className="text-gray-30">&gt;                                                                                                                     </span>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">input </span>
+            <span className="text-red-500">type=</span>
+            <span className="text-green-600">"email" </span>
+            <span className="text-red-500">id=</span>
+            <span className="text-green-600">"email" </span>
+            <span className="text-red-500">name=</span>
+            <span className="text-green-600">"userEmail" </span>
+            <span className="text-red-500">placeholder=</span>
+            <span className="text-green-600">"you@example.com"            </span>
+            <span className="text-red-500">required </span>
+            <span className="text-red-500">autocomplete=</span>
+            <span className="text-green-600">"email"</span>
+            <span className="text-gray-30">/&gt;                                                                                                                  </span>
+            
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">label </span>
+            <span className="text-red-500">for=</span>
+            <span className="text-green-600">"bio"</span>
+            <span className="text-gray-30">&gt;</span>
+            <span className="text-black-50">Bio:</span>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">label</span>
+            <span className="text-gray-30">&gt;                                                                                              </span>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">textarea </span>
+            <span className="text-red-500">id=</span>
+            <span className="text-green-600">"bio" </span>
+            <span className="text-blue-500">name=</span>
+            <span className="text-green-600">"bio" </span>
+            <span className="text-red-500">maxlength=</span>
+            <span className="text-green-600">"200"</span>
+            <span className="text-gray-30">&gt;</span>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">textarea</span>
+            <span className="text-gray-30">&gt;                                                                               </span>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">button </span>
+            <span className="text-red-500">type=</span>
+            <span className="text-green-600">"submit"</span>
+            <span className="text-gray-30">&gt;</span>
+            <span className="text-black-50">Submit</span>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-red-500">button</span>
+            <span className="text-gray-30">&gt;                                                                                               </span>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">form</span>
+            <span className="text-gray-30">&gt;</span>
+           
+</code>
         </pre>
       </section>
 
@@ -79,9 +143,28 @@ const HTMLAttributes = () => {
           <li><code>required</code>, <code>disabled</code>, <code>checked</code> — Boolean (just include them).</li>
           <li><code>type="text"</code>, <code>placeholder="Name"</code> — Key-value pairs.</li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>{`<input type="checkbox" checked />
-<input type="text" placeholder="Your name" required />`}</code>
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">input </span>
+            <span className="text-red-500">type=</span>
+            <span className="text-green-600">"checkbox" </span>
+            <span className="text-blue-500">checked</span>
+            <span className="text-gray-30">/&gt;                                                                      </span>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">input</span>
+            <span className="text-red-500">type=</span>
+            <span className="text-green-600">"text" </span>
+            <span className="text-red-500">placeholder=</span>
+            <span className="text-green-500">"Your name" </span>
+            <span className="text-blue-500">required</span>
+            <span className="text-gray-30">/&gt;</span>
+          
+          
+            {/* {`<input type="checkbox" checked />
+<input type="text" placeholder="Your name" required />`} */}
+
+</code>
         </pre>
       </section>
 
@@ -91,13 +174,22 @@ const HTMLAttributes = () => {
         <p className="leading-relaxed mb-3">
           Combine custom data attributes with ARIA for semantics and scripting:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>{`<button 
-  data-tracking="signup-btn" 
-  aria-label="Sign up now"
->
-  Sign Up
-</button>`}</code>
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">button</span>
+            <span className="text-red-500"> data-tracking=</span>
+            <span className="text-green-600">"signup-btn" </span>
+            <span className="text-red-500">arial-label=</span>
+            <span className="text-green-600">"Sign up now"</span>
+            <span className="text-gray-30">&gt;</span>
+            <span className="text-black-50">Sign Up</span>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">button</span>
+            <span className="text-gray-30">&gt;</span>
+
+
+</code>
         </pre>
       </section>
 

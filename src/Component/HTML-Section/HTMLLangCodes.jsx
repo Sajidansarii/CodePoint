@@ -13,16 +13,60 @@ const HtmlLangCodes = () => {
       </p>
 
       <h2 className="text-2xl font-semibold mt-5 mb-3 text-blue-500">Syntax</h2>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-4">
-        {`<html lang="en"> 
-<head>
-  <title>Language Example</title>
-</head>
-<body>
-  <p>Hello World!</p>
-</body>
-</html>`}
-      </pre>
+    <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-4 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">html</span>
+
+    <span className="text-red-500"> lang</span>=
+    <span className="text-green-600">"en"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">head</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">title</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Language Example</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">title</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">head</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">body</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Hello World!</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">body</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">html</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
 
       <h2 className="text-2xl font-semibold mt-5 mb-3">Common Language Codes</h2>
       <table className="w-full border border-gray-300 mb-3">
@@ -74,11 +118,47 @@ const HtmlLangCodes = () => {
       </div>
 
       <h2 className="text-2xl font-semibold mt-5 mb-3">Example with Paragraphs</h2>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
-        {`<p lang="en">Hello!</p>
-<p lang="fr">Bonjour!</p>
-<p lang="es">¡Hola!</p>`}
-      </pre>
+     <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">p</span>
+
+    <span className="text-red-500"> lang</span>=
+    <span className="text-green-600">"en"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Hello!</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">p</span>
+
+    <span className="text-red-500"> lang</span>=
+    <span className="text-green-600">"fr"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Bonjour!</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">p</span>
+
+    <span className="text-red-500"> lang</span>=
+    <span className="text-green-600">"es"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">¡Hola!</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
     </div>
   );
 };

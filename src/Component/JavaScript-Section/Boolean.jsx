@@ -11,61 +11,69 @@ const JSBoolean = () => {
       </p>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-2">Creating Boolean Values</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto mb-5 mt-5">
-        <code>
-          {`
-let isLoggedIn = true;
-let hasPermission = false;
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let isLoggedIn = true;
+    <br />
+    let hasPermission = false;
+    <br /><br />
 
-console.log(isLoggedIn);   // Output: true
-console.log(hasPermission); // Output: false
-`}
-        </code>
-      </pre>
+    console.log(isLoggedIn); &nbsp;&nbsp;// Output: true
+    <br />
+    console.log(hasPermission); &nbsp;&nbsp;// Output: false
+  </code>
+</pre>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-2">Using Boolean in Conditions</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 mt-5">
-        <code>
-          {`
-let isLoggedIn = true;
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let isLoggedIn = true;
+    <br /><br />
 
-if (isLoggedIn) {
-  console.log("Welcome back!");
-} else {
-  console.log("Please log in");
-}
+    if (isLoggedIn) {"{"}
+    <br />
+    &nbsp;&nbsp;console.log("Welcome back!");
+    <br />
+    {"}"} else {"{"}
+    <br />
+    &nbsp;&nbsp;console.log("Please log in");
+    <br />
+    {"}"}
+    <br /><br />
 
-// Output: Welcome back!
-`}
-        </code>
-      </pre>
+    // Output: Welcome back!
+  </code>
+</pre>
+
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-5">Boolean Conversion</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto rounded-lg mb-5 mt-5">
-        <code>
-          {`
-console.log(Boolean(1)); // Output: true
-console.log(Boolean(0)); // Output: false
-console.log(Boolean("Hello")); // Output: true
-console.log(Boolean("")); // Output: false
-
-`}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    console.log(Boolean(1)); // Output: true
+    <br />
+    console.log(Boolean(0)); // Output: false
+    <br />
+    console.log(Boolean("Hello")); // Output: true
+    <br />
+    console.log(Boolean("")); // Output: false
+  </code>
+</pre>
 
       <h2 className="text-2xl font-semibold text-gray-800 mt-10 mb-2">Logical Operations</h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 mt-5">
-        <code>
-          {`
-let a = true;
-let b = false;
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let a = true;
+    <br />
+    let b = false;
+    <br /><br />
 
-console.log(a && b); // Output: false (AND)
-console.log(a || b); // Output: true  (OR)
-console.log(!a);     // Output: false (NOT)
-`}
-        </code>
-      </div>
+    console.log(a &amp;&amp; b); // Output: false (AND)
+    <br />
+    console.log(a || b); // Output: true  (OR)
+    <br />
+    console.log(!a);     // Output: false (NOT)
+  </code>
+</pre>
 
       <p className="text-gray-700">
         Booleans are fundamental for *decision-making* in JavaScript. They can be explicitly set or derived from expressions, and are essential for *control flow* and *logical operations*.

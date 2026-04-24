@@ -19,10 +19,16 @@ const HtmlUrlEncode = () => {
       </ul>
 
       <h2 className="text-2xl font-semibold mt-5 mb-3 text-blue-500">Syntax</h2>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-        {'encodeURIComponent("Hello World!") // "Hello%20World%21"'}
-      </pre>
+    <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-yellow-600">encodeURIComponent</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">"Hello World!"</span>
+    <span className="text-gray-500">)</span>
 
+    <span className="text-gray-400"> // "Hello%20World%21"</span>
+  </code>
+</pre>
       <h2 className="text-2xl font-semibold mt-5 mb-3">Common Encoded Characters</h2>
       <table className="w-full border border-gray-300 mb-4">
         <thead className="bg-gray-200">
@@ -73,11 +79,33 @@ const HtmlUrlEncode = () => {
       </div>
 
       <h2 className="text-2xl font-semibold mt-5 mb-3">Example</h2>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-        {`const text = "I love HTML & CSS!";
-const encoded = encodeURIComponent(text);
-console.log(encoded); // "I%20love%20HTML%20%26%20CSS%21"`}
-      </pre>
+     <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-purple-600">const</span>
+    <span className="text-orange-600"> text</span>
+    <span className="text-gray-500"> = </span>
+    <span className="text-green-600">"I love HTML & CSS!"</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-purple-600">const</span>
+    <span className="text-orange-600"> encoded</span>
+    <span className="text-gray-500"> = </span>
+    <span className="text-yellow-600">encodeURIComponent</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-orange-600">text</span>
+    <span className="text-gray-500">);</span>
+    <br/>
+
+    <span className="text-purple-600">console</span>.
+    <span className="text-blue-600">log</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-orange-600">encoded</span>
+    <span className="text-gray-500">);</span>
+
+    <span className="text-gray-400"> // "I%20love%20HTML%20%26%20CSS%21"</span>
+  </code>
+</pre>
     </div>
   );
 };

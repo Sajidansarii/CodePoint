@@ -15,32 +15,86 @@ const JSAJAXASP = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">AJAX ASP</h1>
       <p>The <span className="text-red-400">showHint()</span> function runs whenever the user presses a key in the input field, triggered by the onkeyup event.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-          {`<p>Start typing a name in the input field below:</p>
-<p>Suggestions: <span id="txtHint"></span></p>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">&lt;p&gt;</span>Start typing a name in the input field below:
+    <span className="text-red-500">&lt;/p&gt;</span>
+    <br />
 
-<form>
-First name: <input type="text" onkeyup="showHint(this.value)">
-</form>
+    <span className="text-red-500">&lt;p&gt;</span>
+    Suggestions: <span className="text-red-500">&lt;span</span>{" "}
+    <span className="text-red-500">id</span>=
+    <span className="text-green-700">"txtHint"</span>
+    <span className="text-red-500">&gt;&lt;/span&gt;</span>
+    <span className="text-red-500">&lt;/p&gt;</span>
 
-<script>
-function showHint(str) {
-  if (str.length == 0) {
-    document.getElementById("txtHint").innerHTML = "";
-    return;
-  } else {
-    const xmlhttp = new XMLHttpRequest();
-    xmlhttp.onload = function() {
-      document.getElementById("txtHint").innerHTML = this.responseText;
-    }
-  xmlhttp.open("GET", "gethint.asp?q=" + str);
-  xmlhttp.send();
-  }
-}
-</script>`}
-        </code>
-      </pre>
+    <br /><br />
+
+    <span className="text-red-500">&lt;form&gt;</span>
+    <br />
+
+    First name:{" "}
+    <span className="text-red-500">&lt;input</span>{" "}
+    <span className="text-red-500">type</span>=
+    <span className="text-green-700">"text"</span>{" "}
+    <span className="text-red-500">onkeyup</span>=
+    <span className="text-green-700">"showHint(this.value)"</span>
+    <span className="text-red-500"> /&gt;</span>
+    <br />
+
+    <span className="text-red-500">&lt;/form&gt;</span>
+
+    <br /><br />
+
+    <span className="text-blue-600">&lt;script&gt;</span>
+    <br />
+
+    <span className="text-red-500">function</span> showHint(str) {"{"}
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">if</span> (str.length == 0) {"{"}
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;document.getElementById(
+    <span className="text-green-700">"txtHint"</span>
+    ).innerHTML = <span className="text-green-700">""</span>;
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">return</span>;
+    <br />
+
+    &nbsp;&nbsp;{"}"} <span className="text-red-500">else</span> {"{"}
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">const</span> xmlhttp = new XMLHttpRequest();
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;xmlhttp.onload = function() {"{"}
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById(
+    <span className="text-green-700">"txtHint"</span>
+    ).innerHTML = this.responseText;
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;{"}"}
+    <br />
+
+    &nbsp;&nbsp;xmlhttp.open("GET", "gethint.asp?q=" + str);
+    <br />
+
+    &nbsp;&nbsp;xmlhttp.send();
+    <br />
+
+    &nbsp;&nbsp;{"}"}
+    <br />
+
+    {"}"}
+    <br />
+
+    <span className="text-blue-600">&lt;/script&gt;</span>
+  </code>
+</pre>
 
       <p className="mt-5 mb-3">Verify if the input field is blank <span className="text-red-400">(str.length == 0)</span>. If it is, erase the content of <span className="text-red-400">txtHint</span> and exit the function.</p>
       <p>When the input field has content, execute the following:</p>
@@ -54,71 +108,143 @@ function showHint(str) {
 
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The ASP File - "gethint.asp"</h1>
       <p>The ASP file queries an array of names and outputs the matching name(s) to the browser.</p>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-          {`<%
-response.expires=-1
-dim a(30)
-'Fill up array with names
-a(1)="Anna"
-a(2)="Brittany"
-a(3)="Cinderella"
-a(4)="Diana"
-a(5)="Eva"
-a(6)="Fiona"
-a(7)="Gunda"
-a(8)="Hege"
-a(9)="Inga"
-a(10)="Johanna"
-a(11)="Kitty"
-a(12)="Linda"
-a(13)="Nina"
-a(14)="Ophelia"
-a(15)="Petunia"
-a(16)="Amanda"
-a(17)="Raquel"
-a(18)="Cindy"
-a(19)="Doris"
-a(20)="Eve"
-a(21)="Evita"
-a(22)="Sunniva"
-a(23)="Tove"
-a(24)="Unni"
-a(25)="Violet"
-a(26)="Liza"
-a(27)="Elizabeth"
-a(28)="Ellen"
-a(29)="Wenche"
-a(30)="Vicky"
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-green-700">&lt;%</span>
+    <br />
 
-'get the q parameter from URL
-q=ucase(request.querystring("q"))
+    response.expires = -1
+    <br />
+    dim a(30)
+    <br /><br />
 
-'lookup all hints from array if length of q>0
-if len(q)>0 then
-  hint=""
-  for i=1 to 30
-    if q=ucase(mid(a(i),1,len(q))) then
-      if hint="" then
-        hint=a(i)
-      else
-        hint=hint & " , " & a(i)
-      end if
+    <span className="text-gray-500">'Fill up array with names</span>
+    <br />
+
+    a(1) = <span className="text-green-700">"Anna"</span>
+    <br />
+    a(2) = <span className="text-green-700">"Brittany"</span>
+    <br />
+    a(3) = <span className="text-green-700">"Cinderella"</span>
+    <br />
+    a(4) = <span className="text-green-700">"Diana"</span>
+    <br />
+    a(5) = <span className="text-green-700">"Eva"</span>
+    <br />
+    a(6) = <span className="text-green-700">"Fiona"</span>
+    <br />
+    a(7) = <span className="text-green-700">"Gunda"</span>
+    <br />
+    a(8) = <span className="text-green-700">"Hege"</span>
+    <br />
+    a(9) = <span className="text-green-700">"Inga"</span>
+    <br />
+    a(10) = <span className="text-green-700">"Johanna"</span>
+    <br />
+    a(11) = <span className="text-green-700">"Kitty"</span>
+    <br />
+    a(12) = <span className="text-green-700">"Linda"</span>
+    <br />
+    a(13) = <span className="text-green-700">"Nina"</span>
+    <br />
+    a(14) = <span className="text-green-700">"Ophelia"</span>
+    <br />
+    a(15) = <span className="text-green-700">"Petunia"</span>
+    <br />
+    a(16) = <span className="text-green-700">"Amanda"</span>
+    <br />
+    a(17) = <span className="text-green-700">"Raquel"</span>
+    <br />
+    a(18) = <span className="text-green-700">"Cindy"</span>
+    <br />
+    a(19) = <span className="text-green-700">"Doris"</span>
+    <br />
+    a(20) = <span className="text-green-700">"Eve"</span>
+    <br />
+    a(21) = <span className="text-green-700">"Evita"</span>
+    <br />
+    a(22) = <span className="text-green-700">"Sunniva"</span>
+    <br />
+    a(23) = <span className="text-green-700">"Tove"</span>
+    <br />
+    a(24) = <span className="text-green-700">"Unni"</span>
+    <br />
+    a(25) = <span className="text-green-700">"Violet"</span>
+    <br />
+    a(26) = <span className="text-green-700">"Liza"</span>
+    <br />
+    a(27) = <span className="text-green-700">"Elizabeth"</span>
+    <br />
+    a(28) = <span className="text-green-700">"Ellen"</span>
+    <br />
+    a(29) = <span className="text-green-700">"Wenche"</span>
+    <br />
+    a(30) = <span className="text-green-700">"Vicky"</span>
+
+    <br /><br />
+
+    <span className="text-gray-500">'get the q parameter from URL</span>
+    <br />
+
+    q = ucase(request.querystring(<span className="text-green-700">"q"</span>))
+    <br /><br />
+
+    <span className="text-gray-500">'lookup all hints from array if length of q&gt;0</span>
+    <br />
+
+    if len(q) &gt; 0 then
+    <br />
+    &nbsp;&nbsp;hint = <span className="text-green-700">""</span>
+    <br />
+
+    &nbsp;&nbsp;for i = 1 to 30
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;if q = ucase(mid(a(i), 1, len(q))) then
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if hint = <span className="text-green-700">""</span> then
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hint = a(i)
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hint = hint & <span className="text-green-700">" , "</span> & a(i)
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end if
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;end if
+    <br />
+
+    &nbsp;&nbsp;next
+    <br />
     end if
-  next
-end if
 
-'Output "no suggestion" if no hint were found
-'or output the correct values
-if hint="" then
-  response.write("no suggestion")
-else
-  response.write(hint)
-end if
-%>`}
-        </code>
-      </pre>
+    <br /><br />
 
+    <span className="text-gray-500">'Output "no suggestion" if no hint were found</span>
+    <br />
+
+    if hint = <span className="text-green-700">""</span> then
+    <br />
+    &nbsp;&nbsp;response.write(<span className="text-green-700">"no suggestion"</span>)
+    <br />
+    else
+    <br />
+    &nbsp;&nbsp;response.write(hint)
+    <br />
+    end if
+
+    <br />
+
+    <span className="text-green-700">%&gt;</span>
+  </code>
+</pre>
 
 
 

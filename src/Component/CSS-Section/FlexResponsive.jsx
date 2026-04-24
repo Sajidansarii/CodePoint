@@ -31,26 +31,28 @@ const CSSFlexResponsive = () => {
       <p>You can use a media query to switch the flex-direction from row to column at 800px, creating a two-column layout on larger screens and a single column on smaller ones.</p>
 
               <h2 className="text-2xl">Example</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`/* Flex Container */
-.container {
-  display: flex;
-  flex-wrap: wrap;     
-  gap: 10px;           
-  }
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-gray-500">/* Flex Container */</span><br />
 
-/* Flex Items */
-.item {
-  flex: 1 1 200px;     
-  background: lightseagreen;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  font-weight: bold;
-}`}
+    <span className="text-blue-600">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">flex-wrap</span>: <span className="text-green-700">wrap</span>; <span className="text-gray-500">/*     */</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">gap</span>: <span className="text-green-700">10px</span>; <span className="text-gray-500">/*           */</span><br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-gray-500">/* Flex Items */</span><br />
+
+    <span className="text-blue-600">.item</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">flex</span>: <span className="text-green-700">1 1 200px</span>; <span className="text-gray-500">/*     */</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background</span>: <span className="text-green-700">lightseagreen</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">20px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-align</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">font-weight</span>: <span className="text-green-700">bold</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
 
         <p>Another approach is to adjust the flex property values (using percentages) on flex items to create different layouts for various screen sizes. Just make sure to set flex-wrap: wrap; on the container for this to work properly.</p>
 

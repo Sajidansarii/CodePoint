@@ -16,17 +16,21 @@ const DefaultParameterDemo = () => {
        <p className='mb-3'>In JavaScript, a function parameter without a value is automatically set to undefined. While this is allowed, it can sometimes produce unexpected results.</p>
        <p>Before ES6, we had to manually check inside the function whether a parameter was undefined and then assign it a proper value.</p>
        <p className='mt-5'>Let’s take a look at an example to see how this works.</p>
-       <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
-        <code>
-          {`function sum(p, q) {
-    return p + q;
-}
-sum(10, 20); // 30
-sum(10); // NaN
-sum(); // NaN`}
-        </code>
-       </pre>
-
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    function sum(p, q) {"{"}
+    <br />
+    &nbsp;&nbsp;return p + q;
+    <br />
+    {"}"}
+    <br />
+    sum(10, 20); // 30
+    <br />
+    sum(10); // NaN
+    <br />
+    sum(); // NaN
+  </code>
+</pre>
        <ul className='list-inside list-[square] bg-gray-300 rounded mt-10 p-5'>
         <li>sum(10, 20) returns 30, which is the total of the two arguments, both of which are provided.</li>
         <li>sum() gives NaN since both parameters are missing and initialized as undefined.</li>
@@ -38,18 +42,6 @@ sum(); // NaN`}
        <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Default Parameters Syntax</h1>
         <p>JavaScript functions can have default parameters, and the syntax looks like this.</p>
         <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
-          <code>
-            {`function functName(param1 = defaultValue1, param2 = DefaultValue2, ..) {
-    // Use parameters here
-}`}
-          </code>
-        </pre>
-
-        <p className='mt-5'>In this example, param1 is initialized with defaultValue1, and param2 with defaultValue2 if no arguments are passed.</p>
-     
-     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Example (Default parameters)</h1>
-    <p>In the code below, p and q default to 30 and 40 respectively, so when any argument is missing, the output shows the sum of these default values.</p>
-    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
       <code>
         {`let output = document.getElementById("output");
       function sum(p = 30, q = 40) {
@@ -62,6 +54,28 @@ sum(); // NaN`}
       </code>
     </pre>
 
+        <p className='mt-5'>In this example, param1 is initialized with defaultValue1, and param2 with defaultValue2 if no arguments are passed.</p>
+     
+     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Example (Default parameters)</h1>
+    <p>In the code below, p and q default to 30 and 40 respectively, so when any argument is missing, the output shows the sum of these default values.</p>
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let output = document.getElementById("output");
+    <br />
+    function sum(p = 30, q = 40) {"{"}
+    <br />
+    &nbsp;&nbsp;return p + q;
+    <br />
+    {"}"}
+    <br />
+    output.innerHTML += "sum(10, 20)  -&gt;  " + sum(10, 20) + "&lt;br&gt;"; // 10 + 20 = 30
+    <br />
+    output.innerHTML += "sum(10)  -&gt;  " + sum(10) + "&lt;br&gt;"; // 10 + 40 = 50
+    <br />
+    output.innerHTML += "sum()  -&gt;  " + sum() + "&lt;br&gt;"; // 30 + 40 = 70
+  </code>
+</pre>
+
     <h1 className='text-2xl text-gray-800 font-semibold mt-5'>Output</h1>
     <ul className='bg-gray-300 p-5 rounded-lg list-inside list-none mt-5'>
     <li>sum(10, 20) {`->`} 30</li>
@@ -72,20 +86,29 @@ sum(); // NaN`}
     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Passing an expression as a default parameter value</h1>
     <p>You can assign an expression as a default value in a JavaScript function, and it can utilize values from preceding parameters.</p>
     <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
-      <code>
-        {`let output = document.getElementById("output");
-      function sum(p = 2, q = p * 2, r = p * q * 2) {
-         return p + q + r;
-      }
-      output.innerHTML += "sum(5, 10, 15)  ->  " + sum(5, 10, 15) + "<br>"; 
-      // 5 + 10 + 15 = 30
-      output.innerHTML += "sum(5, 10)  ->  " + sum(5, 10) + "<br>"; 
-      // 5 + 10 + (5 * 10 * 2) = 115
-      output.innerHTML += "sum()  ->  " + sum() + "<br>"; 
-      // 2 + 4 + 16 = 22`}
-      </code>
-    </pre>
+ <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let output = document.getElementById("output");
+    <br />
+    function sum(p = 2, q = p * 2, r = p * q * 2) {"{"}
+    <br />
+    &nbsp;&nbsp;return p + q + r;
+    <br />
+    {"}"}
+    <br />
+    output.innerHTML += "sum(5, 10, 15)  -&gt;  " + sum(5, 10, 15) + "&lt;br&gt;";
+    <br />
+    // 5 + 10 + 15 = 30
+    <br />
+    output.innerHTML += "sum(5, 10)  -&gt;  " + sum(5, 10) + "&lt;br&gt;";
+    <br />
+    // 5 + 10 + (5 * 10 * 2) = 115
+    <br />
+    output.innerHTML += "sum()  -&gt;  " + sum() + "&lt;br&gt;";
+    <br />
+    // 2 + 4 + 16 = 22
+  </code>
+</pre>
 
      <h1 className='text-2xl text-gray-800 font-semibold mt-5'>Output</h1>
     <ul className='bg-gray-300 p-5 rounded-lg list-inside list-none mt-5'>
@@ -97,19 +120,26 @@ sum(); // NaN`}
     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Passing Undefined Argument</h1>
     <p>When a function receives undefined as an argument, it applies the default values to maintain error-free execution. </p>
     <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
-      <code>
-        {`let output = document.getElementById("output");
-      function sum(p = 24, q = 26) {
-         return p + q;
-      }
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let output = document.getElementById("output");
+    <br />
+    function sum(p = 24, q = 26) {"{"}
+    <br />
+    &nbsp;&nbsp;return p + q;
+    <br />
+    {"}"}
+    <br /><br />
 
-      output.innerHTML += "sum(5, undefined)  ->  " +sum(5, undefined)+"<br>"; 
-      // 5 + 26 = 31 
-      output.innerHTML += "sum(undefined)  ->  " + sum(undefined) + "<br>"; 
-      // 24 + 26 = 50`}
-      </code>
-    </pre>
+    output.innerHTML += "sum(5, undefined)  -&gt;  " + sum(5, undefined) + "&lt;br&gt;";
+    <br />
+    // 5 + 26 = 31
+    <br />
+    output.innerHTML += "sum(undefined)  -&gt;  " + sum(undefined) + "&lt;br&gt;";
+    <br />
+    // 24 + 26 = 50
+  </code>
+</pre>
 
      <h1 className='text-2xl text-gray-800 font-semibold mt-5'>Output</h1>
     <ul className='bg-gray-300 p-5 rounded-lg list-inside list-none mt-5'>
@@ -121,20 +151,28 @@ sum(); // NaN`}
     <h1 className='text-2xl text-gray-800 mt-10 mb-3 font-semibold'>Function expression as a default parameter</h1>
    <p>A function expression can serve as a default parameter in JavaScript. Here, the <span className='text-red-400'>getNum()</span> function returns 5 and is set as q’s default. If the second argument isn’t provided, q uses the return value of <span className='text-red-400'>getNum()</span>.</p>
    <h2 className='text-gray-800 text-2xl font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
-      <code>
-        {`let output = document.getElementById("output");
-      function getNum() {
-         return 5;
-      }
-      function mul(p = 5, q = getNum()) {
-         return p * q;
-      }
+  <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let output = document.getElementById("output");
+    <br />
+    function getNum() {"{"}
+    <br />
+    &nbsp;&nbsp;return 5;
+    <br />
+    {"}"}
+    <br />
+    function mul(p = 5, q = getNum()) {"{"}
+    <br />
+    &nbsp;&nbsp;return p * q;
+    <br />
+    {"}"}
+    <br /><br />
 
-      output.innerHTML += "mul(10)  -> " + mul(10) + "<br/>";
-      output.innerHTML += "mul() -> " + mul() + "<br/>";`}
-      </code>
-    </pre>
+    output.innerHTML += "mul(10)  -&gt; " + mul(10) + "&lt;br/&gt;";
+    <br />
+    output.innerHTML += "mul() -&gt; " + mul() + "&lt;br/&gt;";
+  </code>
+</pre>
 
     <h1 className='text-2xl text-gray-800 font-semibold mt-5'>Output</h1>
     <ul className='bg-gray-300 p-5 rounded-lg list-inside list-none mt-5'>
@@ -145,26 +183,32 @@ sum(); // NaN`}
     <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>Function Optional Parameters</h1>
     <p>Default parameters in functions are also known as optional parameters because the function works without errors even if no argument is provided for them. Required parameters should come first, followed by optional ones at the end.</p>
     <h2 className='text-gray-800 text-2xl font-semibold mt-5'>Example</h2>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
-      <code>
-        {`function sum(p, q=10){
-   return p+q;
-}`}
-      </code>
-    </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    function sum(p, q = 10) {"{"}
+    <br />
+    &nbsp;&nbsp;return p + q;
+    <br />
+    {"}"}
+  </code>
+</pre>
 
     <p className='mt-5'>In the JavaScript snippet above, the optional parameter q is placed at the end of the parameter list.</p>
     <h2 className='text-gray-800 text-2xl font-semibold mt-5 mb-3'>Example</h2>
     <p>In the code below, the first parameter must be provided, and the second parameter is optional.</p>
-    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
-      <code>
-        {` let output = document.getElementById("output");
-      function func(p, q=10) {
-         return p + q;
-      }
-      output.innerHTML += "func(10, 20) -> " + func(10, 20);`}
-      </code>
-    </pre>
+  <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    let output = document.getElementById("output");
+    <br />
+    function func(p, q = 10) {"{"}
+    <br />
+    &nbsp;&nbsp;return p + q;
+    <br />
+    {"}"}
+    <br />
+    output.innerHTML += "func(10, 20) -&gt; " + func(10, 20);
+  </code>
+</pre>
 
     <h1 className='text-2xl text-gray-800 font-semibold mt-5'>Output</h1>
     <ul className='bg-gray-300 p-5 rounded-lg list-inside list-none mt-5'>
@@ -172,15 +216,19 @@ sum(); // NaN`}
     </ul>
 
     <p className='mt-5'>Placing the optional parameter at the start can cause errors when the function is called with undefined.</p>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
-      <code>
-        {`function sum(p=10, q){
-   return p+q;
-}
-sum(,10) // Error
-sum(10) // NaN`}
-      </code>
-    </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    function sum(p = 10, q) {"{"}
+    <br />
+    &nbsp;&nbsp;return p + q;
+    <br />
+    {"}"}
+    <br />
+    sum(,10) // Error
+    <br />
+    sum(10) // NaN
+  </code>
+</pre>
 
     <p className='mt-5'>So, if you pass only a single argument, it replaces the default value of the first parameter, and the second parameter remains undefined.</p>
     

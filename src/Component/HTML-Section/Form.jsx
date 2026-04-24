@@ -13,13 +13,44 @@ const HTMLForms = () => {
         <p className="leading-relaxed mb-3">
           A form wraps input fields and a submit control. It uses the <code>&lt;form&gt;</code> tag with optional <code>action</code> and <code>method</code> attributes.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-          <code>{`<form action="/submit" method="POST">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" />
-  <button type="submit">Send</button>
-</form>`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-5 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">form</span>
+    <span className="text-red-500"> action</span>=<span className="text-green-600">"/submit"</span>
+    <span className="text-red-500"> method</span>=<span className="text-green-600">"POST"</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-red-500"> for</span>=<span className="text-green-600">"name"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Name:</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"text"</span>
+    <span className="text-red-500"> id</span>=<span className="text-green-600">"name"</span>
+    <span className="text-red-500"> name</span>=<span className="text-green-600">"name"</span>
+    <span className="text-gray-500"> /&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">button</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"submit"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Send</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">button</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">form</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Common Form Controls */}
@@ -56,15 +87,57 @@ const HTMLForms = () => {
         <p className="leading-relaxed mb-3">
           Use <code>&lt;label&gt;</code> to associate text with inputs, and <code>&lt;fieldset&gt;</code> / <code>&lt;legend&gt;</code> to group related controls.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-          <code>{`<fieldset>
-  <legend>Account Info</legend>
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" />
-  <label for="pw">Password:</label>
-  <input type="password" id="pw" name="password" />
-</fieldset>`}</code>
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-5 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">fieldset</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">legend</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Account Info</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">legend</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-red-500"> for</span>=<span className="text-green-600">"email"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Email:</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"email"</span>
+    <span className="text-red-500"> id</span>=<span className="text-green-600">"email"</span>
+    <span className="text-red-500"> name</span>=<span className="text-green-600">"email"</span>
+    <span className="text-gray-500"> /&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-red-500"> for</span>=<span className="text-green-600">"pw"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Password:</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"password"</span>
+    <span className="text-red-500"> id</span>=<span className="text-green-600">"pw"</span>
+    <span className="text-red-500"> name</span>=<span className="text-green-600">"password"</span>
+    <span className="text-gray-500"> /&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">fieldset</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Form Attributes */}
@@ -101,12 +174,33 @@ const HTMLForms = () => {
         <p className="leading-relaxed mb-3">
           Browsers provide built-in validation for types like <code>email</code> and attributes like <code>required</code>. You can also add custom validation with JavaScript.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-          <code>{`<form>
-  <input type="email" name="userEmail" required />
-  <button type="submit">Submit</button>
-</form>`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-5 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">form</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"email"</span>
+    <span className="text-red-500"> name</span>=<span className="text-green-600">"userEmail"</span>
+    <span className="text-red-500"> required</span>
+    <span className="text-gray-500"> /&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">button</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"submit"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Submit</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">button</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">form</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed mb-3">
           Use the Constraint Validation API or libraries for more advanced feedback.
         </p>
@@ -126,20 +220,82 @@ const HTMLForms = () => {
       {/* Example Contact Form */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Example: Contact Form</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-          <code>{`<form action="/send" method="POST">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required />
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-5 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">form</span>
+    <span className="text-red-500"> action</span>=<span className="text-green-600">"/send"</span>
+    <span className="text-red-500"> method</span>=<span className="text-green-600">"POST"</span>
+    <span className="text-gray-500">&gt;</span><br/>
 
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required />
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-red-500"> for</span>=<span className="text-green-600">"name"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Name:</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span><br/>
 
-  <label for="message">Message:</label>
-  <textarea id="message" name="message" rows="4" required></textarea>
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"text"</span>
+    <span className="text-red-500"> id</span>=<span className="text-green-600">"name"</span>
+    <span className="text-red-500"> name</span>=<span className="text-green-600">"name"</span>
+    <span className="text-red-500"> required</span>
+    <span className="text-gray-500"> /&gt;</span><br/><br/>
 
-  <button type="submit">Send Message</button>
-</form>`}</code>
-        </pre>
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-red-500"> for</span>=<span className="text-green-600">"email"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Email:</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"email"</span>
+    <span className="text-red-500"> id</span>=<span className="text-green-600">"email"</span>
+    <span className="text-red-500"> name</span>=<span className="text-green-600">"email"</span>
+    <span className="text-red-500"> required</span>
+    <span className="text-gray-500"> /&gt;</span><br/><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-red-500"> for</span>=<span className="text-green-600">"message"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Message:</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">textarea</span>
+    <span className="text-red-500"> id</span>=<span className="text-green-600">"message"</span>
+    <span className="text-red-500"> name</span>=<span className="text-green-600">"message"</span>
+    <span className="text-red-500"> rows</span>=<span className="text-green-600">"4"</span>
+    <span className="text-red-500"> required</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">textarea</span>
+    <span className="text-gray-500">&gt;</span><br/><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">button</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"submit"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Send Message</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">button</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">form</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Security Tips */}

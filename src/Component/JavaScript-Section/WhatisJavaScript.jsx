@@ -27,7 +27,7 @@ return (
   {/* Syntax Example */}
   <div className="bg-white border rounded-xl p-4 shadow mb-20 space-y-2">
     <h2 className="font-semibold">Syntax Example</h2>
-    <pre className="bg-gray-900 text-green-400 p-3 rounded-lg h-36 overflow-x-auto text-sm">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
 
     {`<script> document.write("Hello, JavaScript!"); </script>}
      </pre> <button onClick={() => setShowOutput1(!showOutput1)} className="mt-2 px-3 py-1 bg-blue-600 text-white rounded-lg text-sm" > {showOutput1 ? "Hide Output" : "Show Output"} </button> {showOutput1 && ( <div    className="mt-2 p-3 bg-gray-100 rounded-lg text-gray-800">  The text <strong>Hello,    JavaScript!</strong> will be printed on the page. </div> )`}
@@ -38,7 +38,7 @@ return (
 {/* Example: Change Content */}
   <div className="bg-white border rounded-xl p-4 shadow space-y-2 mb-20">
     <h2 className="font-semibold">Example: Change Content</h2>
-    <pre className="bg-gray-900 text-green-400 p-3 rounded-lg overflow-x-auto text-sm">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
 
 {`<!DOCTYPE html>
 

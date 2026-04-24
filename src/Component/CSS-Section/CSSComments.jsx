@@ -17,32 +17,41 @@ const CSSComments = () => {
         <code className="bg-gray-200 px-1 rounded">/*</code> and ends with{" "}
         <code className="bg-gray-200 px-1 rounded">*/</code>.
       </p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`/* This is a CSS comment */
-p {
-  color: blue;  /* This is an inline comment */
-}`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-gray-500">/* This is a CSS comment */</span><br />
+
+    <span className="text-blue-500">p</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">color</span>
+    <span>: </span>
+    <span className="text-green-700">blue</span>
+    <span>;</span>
+    <span className="text-gray-500"> /* This is an inline comment */</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Example</h2>
       <p className="text-gray-700 mb-2">CSS file (<code>styles.css</code>):</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`/* Style for heading */
-h1 {
-  color: red;
-  text-align: center;
-}
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-gray-500">/* Style for heading */</span><br />
 
-/* Style for paragraph */
-p {
-  font-size: 18px;
-  color: green;
-}`}
-        </code>
-      </pre>
+    <span className="text-blue-500">h1</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">red</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-align</span>: <span className="text-green-700">center</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-gray-500">/* Style for paragraph */</span><br />
+
+    <span className="text-blue-500">p</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font-size</span>: <span className="text-green-700">18px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">green</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Output</h2>
       <div className="border p-4 bg-white rounded-lg mb-6">

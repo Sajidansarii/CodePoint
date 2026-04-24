@@ -54,20 +54,29 @@ export default function CssLists() {
 
       <div className="bg-gray-200 p-4 rounded-lg mt-12">
         <h2 className="text-2xl">Example:</h2>
-        <pre className="mt-10 p-4 rounded-lg bg-gray-900 text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-            {`             .ul{list-style-type:disc;}
-             .red{background-color:red;}
-             .blue{background-color:blue;}
-             .orange{background-color:orange}
-             
-             
-             .ol{list-style-type:decimal;}
-             .red{background-color:red;}
-             .blue{background-color:blue;}
-             .orange{background-color:orange}`}
-          </code>
-        </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">.ul</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">list-style-type</span>: <span className="text-green-700">disc</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">.red</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">red</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">.blue</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">blue</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">.orange</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">orange</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">.ol</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">list-style-type</span>: <span className="text-green-700">decimal</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
       </div>
 
 

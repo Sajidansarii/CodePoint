@@ -23,16 +23,17 @@ const CssRWDViewport = () => {
       <p>HTML5 provided a way for web designers to control the viewport using the <span className="text-red-400 bg-gray-50 px-1">{'<meta>'}</span> tag.</p>
       <p>You should add the following <span className="text-red-400 bg-gray-50 px-1">{'<meta>'}</span> viewport tag inside the <span className="text-red-400 bg-gray-50 px-1">{'<head>'}</span> section of every web page.</p>
       
-  <pre className="border p-2 border-1 border-gray-300 overflow-x-auto max-w-full whitespace-pre-wrap">
+ <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
   <code>
     <span className="text-gray-500">&lt;</span>
-    <span className="text-orange-500">meta</span> {' '}
-    <span className="text-blue-700">name</span>=<span className="text-green-600">"viewport"</span> {' '}
-    <span className="text-blue-700">content</span>=<span className="text-green-600">"width=device-width, initial-scale=1.0"</span>{' '}
+    <span className="text-red-500">meta</span>{" "}
+    <span className="text-red-500">name</span>=
+    <span className="text-green-700">"viewport"</span>{" "}
+    <span className="text-red-500">content</span>=
+    <span className="text-green-700">"width=device-width, initial-scale=1.0"</span>{" "}
     <span className="text-gray-500">/&gt;</span>
   </code>
 </pre>
-
    <p>It defines how the browser should scale and display the page on different devices.</p>
       <p>The <span className="text-red-400 bg-gray-50 px-1">width=device-width</span> setting makes the page match the screen width of the device, which changes from one device to another.</p>
      <p>The <span className="text-red-400 bg-gray-50 px-1">initial-scale=1.0</span> defines how much the page should be zoomed in or out when it first loads.</p>

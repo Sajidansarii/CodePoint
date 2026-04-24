@@ -38,19 +38,19 @@ const CssColorNames = () => {
       {/* Example Code Block */}
       <div className="mt-8 bg-gray-100 p-4 rounded-lg">
         <h3 className="text-lg font-semibold mb-2">Example:</h3>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`div {
-  background-color: red;
-  }
-  
-  p {
-    color: blue;
-    }`}
-    </code>
-        </pre>
-      </div>
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">div</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">red</span>;<br />
+    <span>{'}'}</span><br /><br />
 
+    <span className="text-blue-500">p</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">blue</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
+
+</div>
       {/* Explanation */}
       <p className="mt-4 text-gray-700">
          In the above example, the background of the div will be red, and the text of the p element will appear blue. This is done using CSS's predefined color names.

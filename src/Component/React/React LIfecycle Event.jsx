@@ -37,64 +37,170 @@ const ReactLifeCycle = () => {
          <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">constructor</h1>
         <p>This method initializes the state and binds functions, and it is called before the component mounts.</p>
         <h2 className="text-2xl text-gray-800 font-semibold mt-2">Example</h2>
-        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`constructor(props) {
-    super(props); // Always call super(props) before using this.props
-    this.state = {
-        count: 0, // Initial state
-    };
-    console.log("Constructor called");
-}`}
-            </code>
-        </pre>
+     <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-purple-600">constructor</span>
+    <span className="text-gray-800">(props) {"{"}</span>{"\n"}
+
+    {"  "}
+    <span className="text-purple-600">super</span>
+    <span className="text-gray-800">(props);</span>{" "}
+    <span className="text-gray-500">// Always call super(props) before using this.props</span>{"\n\n"}
+
+    {"  "}
+    <span className="text-blue-600">this</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">state</span>{" "}
+    <span className="text-gray-800">= {"{"}</span>{"\n"}
+
+    {"    "}
+    <span className="text-red-500">count</span>
+    <span className="text-gray-800">:</span>{" "}
+    <span className="text-green-600">0</span>
+    <span className="text-gray-800">,</span>{" "}
+    <span className="text-gray-500">// Initial state</span>{"\n"}
+
+
+    <span className="text-gray-800">{"}"}</span>
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-yellow-600">console</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">log</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">"Constructor called"</span>
+    <span className="text-gray-800">);</span>
+    {"\n"}
+
+    <span className="text-gray-800">{"}"}</span>
+  </code>
+</pre>
 
          <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">getDerivedStateFromProps</h1>
         <p>This method updates state using props and is executed before every render cycle.</p>
         <h2 className="text-2xl text-gray-800 font-semibold mt-2">Example</h2>
-       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`static getDerivedStateFromProps(props, state) {
-    if (props.value !== state.value) {
-        return { value: props.value }; // Update state based on new props
-    }
-    return null; // No changes to state
-}`}
-        </code>
-       </pre>
+     <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-purple-600">static</span>{" "}
+    <span className="text-yellow-600">getDerivedStateFromProps</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-blue-600">props</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">state</span>
+    <span className="text-gray-800">) {"{"}</span>{"\n\n"}
 
+    {"  "}
+    <span className="text-purple-600">if</span>{" "}
+    <span className="text-gray-800">(</span>
+    <span className="text-blue-600">props</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">value</span>{" "}
+    <span className="text-gray-800">!==</span>{" "}
+    <span className="text-blue-600">state</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">value</span>
+    <span className="text-gray-800">) {"{"}</span>{"\n"}
+
+    {"    "}
+    <span className="text-purple-600">return</span>{" "}
+    <span className="text-gray-800">{"{"}</span>{" "}
+    <span className="text-red-500">value</span>
+    <span className="text-gray-800">:</span>{" "}
+    <span className="text-blue-600">props</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">value</span>
+    {"}"};{" "}
+    <span className="text-gray-500">// Update state based on new props</span>{"\n"}
+
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>{"\n\n"}
+
+    {"  "}
+    <span className="text-purple-600">return</span>{" "}
+    <span className="text-purple-600">null</span>;
+    {" "}
+    <span className="text-gray-500">// No changes to state</span>{"\n"}
+
+    <span className="text-gray-800">{"}"}</span>
+  </code>
+</pre>
        
         <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">render()</h1>
        <p>This method renders JSX and applies updates to the DOM.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-2">Example</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`render() {
-    return (
-        <div>
-            <h1>Hello, React Lifecycle!</h1>
-        </div>
-    );
-}`}
-        </code>
-      </pre>
-      
+    <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-yellow-600">render</span>
+    <span className="text-gray-800">() {"{"}</span>{"\n\n"}
+
+    {"  "}
+    <span className="text-purple-600">return</span>{" ("}{"\n"}
+
+    {"    "}
+    <span className="text-pink-600">&lt;div&gt;</span>{"\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;h1&gt;</span>
+    Hello, React Lifecycle!
+    <span className="text-pink-600">&lt;/h1&gt;</span>{"\n"}
+
+    {"    "}
+    <span className="text-pink-600">&lt;/div&gt;</span>{"\n"}
+
+    {"  "}){"\n"}
+
+    <span className="text-gray-800">{"}"}</span>
+  </code>
+</pre>
 
         <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">componentDidMount()</h1>
       <p>This function runs once, right after the initial render, when the component is added to the DOM.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-2">Example</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`componentDidMount() {
-    console.log("Component has been mounted");
+     <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-yellow-600">componentDidMount</span>
+    <span className="text-gray-800">() {"{"}</span>{"\n\n"}
 
-    // Example: Fetch data from an API
-    fetch("https://api.example.com/data")
-        .then(response => response.json())
-        .then(data => this.setState({ data }));
-}`}
-        </code>
-      </pre>
+    {"  "}
+    <span className="text-yellow-600">console</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">log</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">"Component has been mounted"</span>
+    <span className="text-gray-800">);</span>
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-gray-500">// Example: Fetch data from an API</span>
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-blue-600">fetch</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">"https://api.example.com/data"</span>
+    <span className="text-gray-800">)</span>
+    {"\n"}
+    {"    "}
+    <span className="text-gray-800">.</span>
+    <span className="text-yellow-600">then</span>
+    <span className="text-gray-800">(response =&gt; response.</span>
+    <span className="text-yellow-600">json</span>
+    <span className="text-gray-800">())</span>
+    {"\n"}
+    {"    "}
+    <span className="text-gray-800">.</span>
+    <span className="text-yellow-600">then</span>
+    <span className="text-gray-800">(data =&gt; </span>
+    <span className="text-blue-600">this</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-yellow-600">setState</span>
+    <span className="text-gray-800">({"{ data }"}));</span>
+    {"\n\n"}
+
+    <span className="text-gray-800">{"}"}</span>
+  </code>
+</pre>
 
       <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">2.Updating</h2>
       <p>The update phase occurs whenever a component's state changes or it receives new props from its parent. During this phase, React re-renders the component and updates the DOM.</p>
@@ -109,56 +215,126 @@ const ReactLifeCycle = () => {
        <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">getDerivedStateFromProps</h1>
       <p>During mounting and updating, <span className="text-red-400 bg-gray-50">getDerivedStateFromProps(props, state)</span> is invoked before <span className="text-red-400 bg-gray-50">render()</span>, allowing the component to update state based on incoming props.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-2">Example</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`static getDerivedStateFromProps(props, state) {
-    if (props.name !== state.name) {
-        return { name: props.name }; // Update state with new props
-    }
-    return null; // No state change
-}`}
-        </code>
-      </pre>
+     <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-purple-600">static</span>{" "}
+    <span className="text-yellow-600">getDerivedStateFromProps</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-blue-600">props</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">state</span>
+    <span className="text-gray-800">) {"{"}</span>{"\n\n"}
+
+    {"  "}
+    <span className="text-purple-600">if</span>{" "}
+    <span className="text-gray-800">(</span>
+    <span className="text-blue-600">props</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">name</span>{" "}
+    <span className="text-gray-800">!==</span>{" "}
+    <span className="text-blue-600">state</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">name</span>
+    <span className="text-gray-800">) {"{"}</span>{"\n"}
+
+    {"    "}
+    <span className="text-purple-600">return</span>{" "}
+    <span className="text-gray-800">{"{"}</span>{" "}
+    <span className="text-red-500">name</span>
+    <span className="text-gray-800">:</span>{" "}
+    <span className="text-blue-600">props</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">name</span>
+    {"}"};{" "}
+    <span className="text-gray-500">// Update state with new props</span>{"\n"}
+
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>{"\n\n"}
+
+    {"  "}
+    <span className="text-purple-600">return</span>{" "}
+    <span className="text-purple-600">null</span>;
+    {" "}
+    <span className="text-gray-500">// No state change</span>{"\n"}
+
+    <span className="text-gray-800">{"}"}</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">setState() Function</h1>
       <p>This function isn’t part of the standard lifecycle and can be executed at any moment to update the state of a component.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-2">Example</h2>
-     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`this.setState((prevState, props) => ({
-      counter: prevState.count + props.diff
-}));`}
-        </code>
-     </pre>
+    <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-blue-600">this</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-yellow-600">setState</span>
+    <span className="text-gray-800">((</span>
+    <span className="text-blue-600">prevState</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">props</span>
+    <span className="text-gray-800">) =&gt; ({"{"}</span>{"\n"}
+
+    {"  "}
+    <span className="text-red-500">counter</span>
+    <span className="text-gray-800">:</span>{" "}
+    <span className="text-blue-600">prevState</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">count</span>{" "}
+    <span className="text-gray-800">+</span>{" "}
+    <span className="text-blue-600">props</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">diff</span>
+    {"\n"}
+    <span className="text-gray-800">{"}"});</span>
+  </code>
+</pre>
      
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">shouldComponentUpdate()</h1>
      <p>This lifecycle method, <span className="text-red-400 bg-gray-50">shouldComponentUpdate()</span>, checks the current and upcoming props and state to determine whether the component needs to update.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-2">Example</h2>
-    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`shouldComponentUpdate(nextProps, nextState)`}
-        </code>
-    </pre>
+  <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-yellow-600">shouldComponentUpdate</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-blue-600">nextProps</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">nextState</span>
+    <span className="text-gray-800">)</span>
+  </code>
+</pre>
     <p className="mt-5">Returning false prevents the invocation of render(), componentWillUpdate(), and componentDidUpdate().</p>
    
 
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">getSnapshotBeforeUpdate() Method</h1>
     <p>This method runs just before the DOM is rendered and allows you to save the component’s state before the update.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-2">Example</h2>
-    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`getSnapshotBeforeUpdate(prevProps, prevState)`}
-        </code>
-    </pre>
+   <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-yellow-600">getSnapshotBeforeUpdate</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-blue-600">prevProps</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">prevState</span>
+    <span className="text-gray-800">)</span>
+  </code>
+</pre>
 
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">componentDidUpdate()</h1>
     <p>Invoked after the component updates, this function runs once following render() after state or prop modifications.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-2">Example</h2>
-     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`componentDidUpdate(prevProps, prevState, snapshot)`}
-        </code>
-     </pre>
+   <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-yellow-600">componentDidUpdate</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-blue-600">prevProps</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">prevState</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">snapshot</span>
+    <span className="text-gray-800">)</span>
+  </code>
+</pre>
 
      
       <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">3.Unmounting</h2>
@@ -166,55 +342,169 @@ const ReactLifeCycle = () => {
       <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-1">componentWillUnmount()</h2>
       <p>This function is called once before the component is unmounted from the DOM, signaling the end of its lifecycle.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`// Filename - src/index.js:
-import React from "react";
-import ReactDOM from 'react-dom';
-class Test extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { hello: "World!" };
-    }
-    componentDidMount() {
-        console.log("componentDidMount()");
-    }
-    changeState() {
-        this.setState({ hello: "Geek!" });
-    }
-    render() {
-        return (
-            <div>
-                <h1>
-                    GeeksForGeeks.org, Hello
-                    {this.state.hello}
-                </h1>
-                <h2>
-                    <a
-                        onClick={this.changeState.bind(
-                            this
-                        )}
-                    >
-                        Press Here!
-                    </a>
-                </h2>
-            </div>
-        );
-    }
-    shouldComponentUpdate(nextProps, nextState) {
-        console.log("shouldComponentUpdate()");
-        return true;
-    }
-    componentDidUpdate() {
-        console.log("componentDidUpdate()");
-    }
-}
-const root = ReactDOM.createRoot(
-    document.getElementById("root")
-);
-root.render(<Test />);`}
-        </code>
-     </pre>
+    <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-gray-500">// Filename - src/index.js:</span>{"\n"}
+
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">React</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"react"</span>;
+    {"\n"}
+
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">ReactDOM</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"react-dom"</span>;
+    {"\n\n"}
+
+    <span className="text-purple-600">class</span>{" "}
+    <span className="text-blue-600">Test</span>{" "}
+    <span className="text-purple-600">extends</span>{" "}
+    <span className="text-blue-600">React.Component</span>{" "}
+    <span className="text-gray-800">{"{"}</span>{"\n\n"}
+
+    {"  "}
+    <span className="text-purple-600">constructor</span>
+    <span className="text-gray-800">(props) {"{"}</span>{"\n"}
+    {"    "}
+    <span className="text-purple-600">super</span>
+    <span className="text-gray-800">(props);</span>{"\n"}
+    {"    "}
+    <span className="text-blue-600">this</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">state</span>{" "}
+    <span className="text-gray-800">= {"{ hello: "}</span>
+    <span className="text-orange-500">"World!"</span>
+    <span className="text-gray-800">{" }"};</span>{"\n"}
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-yellow-600">componentDidMount</span>
+    <span className="text-gray-800">() {"{"}</span>{"\n"}
+    {"    "}
+    <span className="text-yellow-600">console</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">log</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">"componentDidMount()"</span>
+    <span className="text-gray-800">);</span>{"\n"}
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-blue-600">changeState</span>
+    <span className="text-gray-800">() {"{"}</span>{"\n"}
+    {"    "}
+    <span className="text-blue-600">this</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-yellow-600">setState</span>
+    <span className="text-gray-800">({"{ hello: "}</span>
+    <span className="text-orange-500">"Geek!"</span>
+    <span className="text-gray-800">{" }"});</span>{"\n"}
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-yellow-600">render</span>
+    <span className="text-gray-800">() {"{"}</span>{"\n"}
+    {"    "}
+    <span className="text-purple-600">return</span>{" ("}{"\n"}
+    {"      "}
+    <span className="text-pink-600">&lt;div&gt;</span>{"\n"}
+
+    {"        "}
+    <span className="text-pink-600">&lt;h1&gt;</span>
+    GeeksForGeeks.org, Hello {"{"}
+    <span className="text-blue-600">this</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">state</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">hello</span>
+    {"}"}
+    <span className="text-pink-600">&lt;/h1&gt;</span>{"\n"}
+
+    {"        "}
+    <span className="text-pink-600">&lt;h2&gt;</span>{"\n"}
+    {"          "}
+    <span className="text-pink-600">&lt;a</span>{" "}
+    <span className="text-purple-600">onClick</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-900">{`{this.changeState.bind(this)}`}</span>
+    <span className="text-pink-600">&gt;</span>
+    Press Here!
+    <span className="text-pink-600">&lt;/a&gt;</span>{"\n"}
+    {"        "}
+    <span className="text-pink-600">&lt;/h2&gt;</span>{"\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;/div&gt;</span>{"\n"}
+    {"    "}){";"}{"\n"}
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-yellow-600">shouldComponentUpdate</span>
+    <span className="text-gray-800">(nextProps, nextState) {"{"}</span>{"\n"}
+    {"    "}
+    <span className="text-yellow-600">console</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">log</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">"shouldComponentUpdate()"</span>
+    <span className="text-gray-800">);</span>{"\n"}
+    {"    "}
+    <span className="text-purple-600">return</span>{" "}
+    <span className="text-green-600">true</span>;
+    {"\n"}
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-yellow-600">componentDidUpdate</span>
+    <span className="text-gray-800">() {"{"}</span>{"\n"}
+    {"    "}
+    <span className="text-yellow-600">console</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">log</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">"componentDidUpdate()"</span>
+    <span className="text-gray-800">);</span>{"\n"}
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>
+    {"\n"}
+
+    <span className="text-gray-800">{"}"}</span>
+    {"\n\n"}
+
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-blue-600">root</span>{" "}
+    <span className="text-gray-800">=</span>{" "}
+    <span className="text-blue-600">ReactDOM</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-yellow-600">createRoot</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-blue-600">document</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-yellow-600">getElementById</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">"root"</span>
+    <span className="text-gray-800">));</span>{"\n"}
+
+    <span className="text-blue-600">root</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-yellow-600">render</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-pink-600">&lt;Test /&gt;</span>
+    <span className="text-gray-800">);</span>
+  </code>
+</pre>
 
      <h2 className="mt-10 text-2xl mb-5">In this example</h2>
      <p>The Test class is a React component where the state hello starts as “World!”.When the component appears on the page, <span className="text-red-400 bg-gray-50">componentDidMount()</span> runs and prints a message in the console.The changeState() function changes hello to “Geek!”.Inside <span className="text-red-400 bg-gray-50">render()</span>, the value of hello is shown in an <span className="text-red-400 bg-gray-50">{'<h1>'}</span> tag and a link is provided to change the state.The component re-renders because shouldComponentUpdate() allows it,</p>

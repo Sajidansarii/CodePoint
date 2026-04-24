@@ -20,7 +20,7 @@ const JSWindowBOM = () => {
    <p className="mb-3">The window object automatically includes all globally defined JavaScript variables, functions, and objects.</p>
    <p className="mb-3">Global variables are properties of the window object, and global functions are its methods.</p>
    <p>Even the document object from the HTML DOM is a property of the window object.</p> 
-  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`window.document.getElementById("header");`}
     </code>
@@ -28,7 +28,7 @@ const JSWindowBOM = () => {
 
   <p className="mt-5">is the same as:</p>
   
-  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`document.getElementById("header");`}
     </code>
@@ -42,7 +42,7 @@ const JSWindowBOM = () => {
     <li><span className="text-red-400">window.innerHeight</span> - the inner height of the browser window (in pixels)</li>
   </ul>
   <h2 className="text-2xl text-gra8 font-semibold mt-5">Example</h2>
-  <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`let w = window.innerWidth;
 let h = window.innerHeight;`}
@@ -57,24 +57,6 @@ let h = window.innerHeight;`}
     <li><span className="text-red-400">window.moveTo()</span> - move the current window</li>
     <li><span className="text-red-400">window.resizeTo()</span> - resize the current window</li>
   </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     </div>

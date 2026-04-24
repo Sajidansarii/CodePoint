@@ -23,18 +23,19 @@ const MathFunctions = () => {
     <div className="p-6 max-w-4xl space-y-6 mt-10 font-sans">
       <h1 className="text-3xl font-medium text-blue-500">CSS Math Functions</h1>
       <p>CSS math functions let you do calculations within your stylesheets, making it easier to adjust values like lengths, angles, colors, and other units directly in CSS.</p>
-      <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`div{
-    width: calc(100% - 40px); 
-    /* 100% width minus 40px for padding */
-    
-    width: max(200px, 50%);
-    /* Set width to the maximum value between 
-    200px and 50% of the viewport width */
-}`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">div</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">calc(100% - 40px)</span>; 
+    <span className="text-gray-500">/* 100% width minus 40px for padding */</span><br /><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">max(200px, 50%)</span>;
+    <span className="text-gray-500">/* Set width to the maximum value between 200px and 50% of the viewport width */</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">Types of Mathematical Functions in CSS</h1>
       <p>CSS offers several math functions that you can use to perform calculations. These include:</p>
@@ -50,119 +51,118 @@ const MathFunctions = () => {
       <p>The calc() function is a fundamental CSS arithmetic tool that lets you perform calculations—such as addition, subtraction, multiplication, and division—directly on numerical values to dynamically adjust property values.</p>
       <h1 className="text-2xl">Example</h1>
       <p>Here’s an example showing how to use the calc() function in CSS:</p>
-      <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {` .box {
-                /* 100% width minus 40px for padding */
-            width: calc(100% - 40px); 
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">.box</span> <span>{'{'}</span><br />
 
-                /* 100% of viewport height minus 20px for padding */
-            height: calc(100% - 20px); 
+    &nbsp;&nbsp;<span className="text-gray-500">/* 100% width minus 40px for padding */</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">calc(100% - 40px)</span>;<br /><br />
 
-            background-color: lightblue;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-    </style>
-</head>
+    &nbsp;&nbsp;<span className="text-gray-500">/* 100% of viewport height minus 20px for padding */</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">calc(100% - 20px)</span>;<br /><br />
 
-<body>
-    <div class="container">
-        <div class="box">
-            This box uses the CSS calc() function to dynamically 
-            calculate its width and height.
-        </div>
-    </div>
-</body>
-`}
-        </code>
-      </pre>
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">lightblue</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">20px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">box-sizing</span>: <span className="text-green-700">border-box</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-gray-500">&lt;/style&gt;</span><br />
+    <span className="text-gray-500">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-gray-500">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div class="container"&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;div class="box"&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This box uses the CSS calc() function to dynamically calculate its width and height.<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/div&gt;</span><br />
+    <span className="text-gray-500">&lt;/body&gt;</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">The max Function</h1>
       <p>The <span className="text-red-400 bg-gray-50">max()</span> function in CSS lets you select the largest value from a list of inputs. It’s useful for comparing values and applying styles based on the highest number.</p>
       <h1 className="text-2xl">Example</h1>
       <p>Here’s an example that shows how to use the max() function in CSS:</p>
-      <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`<!DOCTYPE html>
-<html lang="en">
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-gray-500">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-600">&lt;html lang="en"&gt;</span><br /><br />
 
-<head>
-    <style>
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            border: 1px solid #000;
-            padding: 20px;
-        }
+    <span className="text-blue-600">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;style&gt;</span><br /><br />
 
-        .box {
-                /* Set the width to the maximum value between 
-                   200px and 50% of the viewport width */
-            width: max(200px, 50%);
-            background-color: lightblue;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-    </style>
-</head>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">80%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">margin</span>: <span className="text-green-700">0 auto</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid #000</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">20px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-<body>
-    <div class="container">
-        <div class="box">
-            This box uses the CSS max() function to set its width 
-            to the maximum value between 200px and 50% of the 
-            viewport width.
-        </div>
-    </div>
-</body>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-500">/* Set the width to the maximum value between 200px and 50% of the viewport width */</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">max(200px, 50%)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">lightblue</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">20px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">box-sizing</span>: <span className="text-green-700">border-box</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-</html>`}
-        </code>
-      </pre>
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/style&gt;</span><br />
+    <span className="text-blue-600">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-600">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div class="container"&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;div class="box"&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This box uses the CSS max() function to set its width to the maximum value between 200px and 50% of the viewport width.<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/div&gt;</span><br />
+    <span className="text-blue-600">&lt;/body&gt;</span><br /><br />
+
+    <span className="text-blue-600">&lt;/html&gt;</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">The min Function</h1>
       <p>The <span className="text-red-400 bg-gray-50">min()</span> function in CSS selects the smallest value from a list of values. It helps you compare values and apply styles based on the minimum number.</p>
       <h1 className="text-2xl">Example</h1>
       <p>Here’s an example demonstrating how to use the min() function in CSS:</p>
-      <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`<!DOCTYPE html>
-<html lang="en">
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-gray-500">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-600">&lt;html lang="en"&gt;</span><br /><br />
 
-<head>
-    <style>
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            border: 1px solid #000;
-            padding: 20px;
-        }
+    <span className="text-blue-600">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;style&gt;</span><br /><br />
 
-        .box {
-                /* Set the width to the minimum value between 
-                   200px and 50% of the viewport width */
-            width: min(200px, 50%);
-            background-color: lightblue;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-    </style>
-</head>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">80%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">margin</span>: <span className="text-green-700">0 auto</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid #000</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">20px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-<body>
-    <div class="container">
-        <div class="box">
-            This box uses the CSS min() function to set its width 
-            to the minimum value between 200px and 50% of the 
-            viewport width.
-        </div>
-    </div>
-</body>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">.box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-500">/* Set the width to the minimum value between 200px and 50% of the viewport width */</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">min(200px, 50%)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">lightblue</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">20px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">box-sizing</span>: <span className="text-green-700">border-box</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-</html>`}
-        </code>
-      </pre>
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/style&gt;</span><br />
+    <span className="text-blue-600">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-600">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div class="container"&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;div class="box"&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This box uses the CSS min() function to set its width to the minimum value between 200px and 50% of the viewport width.<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/div&gt;</span><br />
+    <span className="text-blue-600">&lt;/body&gt;</span><br /><br />
+
+    <span className="text-blue-600">&lt;/html&gt;</span>
+  </code>
+</pre>
+
       <h1 className="text-2xl">Comparison Functions</h1>
       <p>CSS comparison functions simplify evaluating values, enabling conditional styling directly within your stylesheets based on those comparisons.</p>
       <p>The following table lists the CSS comparison functions:</p>

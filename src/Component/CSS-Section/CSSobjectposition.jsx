@@ -23,15 +23,16 @@ const ObjectPositionTutorial = () => {
             style={{ objectFit: "cover", objectPosition: "center" }}
           />
         </div>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-
-{`img {
-  object-fit: cover;
-  object-position: center;
-  }`}
+       
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">img</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">object-fit</span>: <span className="text-green-700">cover</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">object-position</span>: <span className="text-green-700">center</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
         <p className="text-gray-600 mt-2">
           The image is cropped but stays centered in the box.
         </p>
@@ -48,14 +49,15 @@ const ObjectPositionTutorial = () => {
             style={{ objectFit: "cover", objectPosition: "top left" }}
           />
         </div>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`img {
-  object-fit: cover;
-  object-position: top left;
-  }`}
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">img</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">object-fit</span>: <span className="text-green-700">cover</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">object-position</span>: <span className="text-green-700">top left</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
         <p className="text-gray-600 mt-2">
           The image is cropped but aligned from the top-left corner.
         </p>
@@ -72,14 +74,15 @@ const ObjectPositionTutorial = () => {
             style={{ objectFit: "cover", objectPosition: "bottom right" }}
           />
         </div>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`img {
-  object-fit: cover;
-  object-position: bottom right;
-  }`}
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">img</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">object-fit</span>: <span className="text-green-700">cover</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">object-position</span>: <span className="text-green-700">bottom right</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
         <p className="text-gray-600 mt-2">
           The image is cropped but aligned to the bottom-right corner of the box.
         </p>
@@ -96,15 +99,15 @@ const ObjectPositionTutorial = () => {
             style={{ objectFit: "cover", objectPosition: "20% 80%" }}
           />
         </div>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`img {
-  object-fit: cover;
-  object-position: 20% 80%;
-  }`}
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">img</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">object-fit</span>: <span className="text-green-700">cover</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">object-position</span>: <span className="text-green-700">20% 80%</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
-        <p className="text-gray-600 mt-2">
+</pre>
+   <p className="text-gray-600 mt-2">
           The first value (20%) moves the image horizontally, and the second value (80%) 
           moves it vertically. This allows precise control of alignment.
         </p>

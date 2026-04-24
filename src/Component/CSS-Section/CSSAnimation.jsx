@@ -47,26 +47,43 @@ export default function AnimationShowcase(){
 
             <h1 className="text-2xl">Understanding the @keyframes Rule</h1>
             <p>The @keyframes rule is used to define keyframes for animation specifying how the animated element looks at various stages of animation. Consider the following code that defines a keyframe rule</p>
-            <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
-              <pre>
-                {`.box{
-    animation: colorChange 5s infinite;
-}
+           <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">.box</span> <span>{'{'}</span><br />
 
-@keyframes colorChange {
-    0% {
-        background-color: red;
-    }
-    50% {
-        background-color: green;
-    }
-    100% {
-        background-color: blue;
-    }
-}`}
-              </pre>
-            </div>
+    <span className="text-red-500">animation</span>
+    <span>: </span>
+    <span className="text-green-700">colorChange 5s infinite</span>
+    <span>;</span><br />
 
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">@keyframes colorChange</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">0%</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">red</span>
+    <span>;</span><br />
+    &nbsp;&nbsp;<span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">50%</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">green</span>
+    <span>;</span><br />
+    &nbsp;&nbsp;<span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">100%</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">blue</span>
+    <span>;</span><br />
+    &nbsp;&nbsp;<span>{'}'}</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
             <p>This code defines an infinite animation named colorChange for elements with the class .box, running over a duration of 5 seconds.</p>
             <p>The @keyframes rule defines the animation sequence for an animation named colorChange. It’s used to specify how the styles of an element should change over time.</p>
 
@@ -83,86 +100,89 @@ export default function AnimationShowcase(){
             <h1 className="text-2xl">Example</h1>
             <p>In this example ball will start to move left after 2 seconds.</p>
 
-            <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
-              <pre>
-                {`<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        .ball {
-            width: 50px;
-            height: 50px;
-            background-color: #3498db;
-            border-radius: 50%;
-            position: absolute;
-            left: 0; 
+           <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-500">&lt;html</span> <span className="text-red-500">lang</span>=<span className="text-green-700">"en"</span><span className="text-blue-500">&gt;</span><br />
+    <span className="text-blue-500">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;style&gt;</span><br />
 
-            animation-name: moveRight;
-            /* Set duration */
-            animation-duration: 2s;
-            /* Set delay for animation */
-            animation-delay: 2s; 
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">.ball</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">50px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">50px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#3498db</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">border-radius</span>: <span className="text-green-700">50%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">position</span>: <span className="text-green-700">absolute</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">left</span>: <span className="text-green-700">0</span>;<br /><br />
 
-        @keyframes moveRight {
-            to {
-                left: calc(100% - 50px);
-            }
-        }
-    </style>
-</head>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">animation-name</span>: <span className="text-green-700">moveRight</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">animation-duration</span>: <span className="text-green-700">2s</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">animation-delay</span>: <span className="text-green-700">2s</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-<body>
-    <div class="container">
-        <div class="ball"></div>
-    </div>
-</body>
-</html>`}
-              </pre>
-            </div>
-            <h1 className="text-2xl">Set Animation Iteration Count</h1>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">@keyframes moveRight</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">to</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">left</span>: <span className="text-green-700">calc(100% - 50px)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;/style&gt;</span><br />
+    <span className="text-blue-500">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"container"</span><span className="text-blue-500">&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"ball"</span><span className="text-blue-500">&gt;&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;/div&gt;</span><br />
+    <span className="text-blue-500">&lt;/body&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;/html&gt;</span>
+  </code>
+</pre>
+
+ <h1 className="text-2xl">Set Animation Iteration Count</h1>
             <p>The animation-iteration-count property specifies the number of times an animation cycle should be completed.</p>
             <p>Negative values are invalid for this property per the CSS spec. Acceptable values include positive integers or the infinite keyword to repeat the animation indefinitely.</p>
             <h1 className="text-2xl">Example</h1>
             <p>The animation for the ball in this example uses an animation-iteration-count of infinite, causing it to repeat without end.</p>
 
-            <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
-              <pre>
-                {`<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        .ball {
-            width: 50px;
-            height: 50px;
-            background-color: #3498db;
-            border-radius: 50%;
-            position: absolute; 
-            left: 0; 
+            <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-500">&lt;html</span> <span className="text-red-500">lang</span>=<span className="text-green-700">"en"</span><span className="text-blue-500">&gt;</span><br />
+    <span className="text-blue-500">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;style&gt;</span><br />
 
-            animation-name: moveRight;
-            /* Set duration */
-            animation-duration: 2s;
-            /* Set number of time animation repeats */
-            animation-iteration-count: infinite;
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">.ball</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">50px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">50px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#3498db</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">border-radius</span>: <span className="text-green-700">50%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">position</span>: <span className="text-green-700">absolute</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">left</span>: <span className="text-green-700">0</span>;<br /><br />
 
-        @keyframes moveRight {
-            to {
-                left: calc(100% - 50px);
-            }
-        }
-    </style>
-</head>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">animation-name</span>: <span className="text-green-700">moveRight</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">animation-duration</span>: <span className="text-green-700">2s</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">animation-iteration-count</span>: <span className="text-green-700">infinite</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-<body>
-    <div class="container">
-        <div class="ball"></div>
-    </div>
-</body>
-</html>`}
-              </pre>
-            </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">@keyframes moveRight</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">to</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">left</span>: <span className="text-green-700">calc(100% - 50px)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;/style&gt;</span><br />
+    <span className="text-blue-500">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"container"</span><span className="text-blue-500">&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"ball"</span><span className="text-blue-500">&gt;&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;/div&gt;</span><br />
+    <span className="text-blue-500">&lt;/body&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;/html&gt;</span>
+  </code>
+</pre>
 
             <h1 className="text-2xl">Animation Direction Property</h1>
             <p>The animation-direction property specifies whether the animation should play forwards, backwards, alternate, or alternate-reverse.</p>
@@ -175,56 +195,53 @@ export default function AnimationShowcase(){
             </ul>
             <h1 className="text-2xl">Example</h1>
             <p>In this example, the animation-direction property is assigned via an inline style attribute.</p>
-            <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
-              <pre>
-                {`<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        .ball {
-            width: 50px;
-            height: 50px;
-            background-color: #3498db;
-            border-radius: 50%;
-            position: relative;
-            left:0;
-            
-            animation-name: moveRight ;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-        }
-        @keyframes moveRight {
-            to {
-                left: calc(100% - 50px);
-            }
-        }
-    </style>
-</head>
+            <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-500">&lt;html</span> <span className="text-red-500">lang</span>=<span className="text-green-700">"en"</span><span className="text-blue-500">&gt;</span><br />
+    <span className="text-blue-500">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;style&gt;</span><br />
 
-<body>
-    <h2>animation-direction: normal</h2>
-    <div class="ball" 
-         style="animation-direction: normal; ">
-    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">.ball</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">50px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">50px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#3498db</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">border-radius</span>: <span className="text-green-700">50%</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">position</span>: <span className="text-green-700">relative</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">left</span>: <span className="text-green-700">0</span>;<br /><br />
 
-    <h2>animation-direction: reverse</h2>
-    <div class="ball" 
-         style="animation-direction: reverse;">
-    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">animation-name</span>: <span className="text-green-700">moveRight</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">animation-duration</span>: <span className="text-green-700">2s</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">animation-iteration-count</span>: <span className="text-green-700">infinite</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-    <h2>animation-direction: alternate</h2>
-    <div class="ball" 
-         style="animation-direction: alternate;">
-    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">@keyframes moveRight</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">to</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">left</span>: <span className="text-green-700">calc(100% - 50px)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
 
-    <h2>animation-direction: alternate-reverse</h2>
-    <div class="ball" 
-         style="animation-direction: alternate-reverse;">
-    </div>
-</body>
-</html>`}
-              </pre>
-            </div>
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;/style&gt;</span><br />
+    <span className="text-blue-500">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;body&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;h2&gt;</span>animation-direction: normal<span className="text-blue-500">&lt;/h2&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"ball"</span> <span className="text-red-500">style</span>=<span className="text-green-700">"animation-direction: normal;"</span><span className="text-blue-500">&gt;&lt;/div&gt;</span><br /><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;h2&gt;</span>animation-direction: reverse<span className="text-blue-500">&lt;/h2&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"ball"</span> <span className="text-red-500">style</span>=<span className="text-green-700">"animation-direction: reverse;"</span><span className="text-blue-500">&gt;&lt;/div&gt;</span><br /><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;h2&gt;</span>animation-direction: alternate<span className="text-blue-500">&lt;/h2&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"ball"</span> <span className="text-red-500">style</span>=<span className="text-green-700">"animation-direction: alternate;"</span><span className="text-blue-500">&gt;&lt;/div&gt;</span><br /><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;h2&gt;</span>animation-direction: alternate-reverse<span className="text-blue-500">&lt;/h2&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"ball"</span> <span className="text-red-500">style</span>=<span className="text-green-700">"animation-direction: alternate-reverse;"</span><span className="text-blue-500">&gt;&lt;/div&gt;</span><br />
+
+    <span className="text-blue-500">&lt;/body&gt;</span><br /><br />
+    <span className="text-blue-500">&lt;/html&gt;</span>
+  </code>
+</pre>
 
             <h1 className="text-2xl">Animation Timing Function</h1>
             <p>The CSS animation-timing-function property specifies the pacing of an animation’s progress, and it supports the following values.</p>
@@ -238,26 +255,22 @@ export default function AnimationShowcase(){
             </ul>
 
             <h1 className="text-2xl">Example</h1>
-            <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
-              <pre>
-                {`<h2>ease-out</h2>
-    <div class="ball" 
-         style="animation-timing-function: ease-out;">
-    </div>
-    
-    <h2>ease-in-out</h2>
-    <div class="ball" 
-         style="animation-timing-function: ease-in-out;">
-    </div>
-    
-    <h2>cubic-bezier(0.25, 0.1, 0.25, 1)</h2>
-    <div class="ball" 
-         style="animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);">
-    </div>
-</body>
-</html>   `}
-              </pre>
-            </div>
+          <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">&lt;h2&gt;</span>ease-out<span className="text-blue-500">&lt;/h2&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"ball"</span> <span className="text-red-500">style</span>=<span className="text-green-700">"animation-timing-function: ease-out;"</span><span className="text-blue-500">&gt;&lt;/div&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;h2&gt;</span>ease-in-out<span className="text-blue-500">&lt;/h2&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"ball"</span> <span className="text-red-500">style</span>=<span className="text-green-700">"animation-timing-function: ease-in-out;"</span><span className="text-blue-500">&gt;&lt;/div&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;h2&gt;</span>cubic-bezier(0.25, 0.1, 0.25, 1)<span className="text-blue-500">&lt;/h2&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"ball"</span> <span className="text-red-500">style</span>=<span className="text-green-700">"animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);"</span><span className="text-blue-500">&gt;&lt;/div&gt;</span><br />
+
+    <span className="text-blue-500">&lt;/body&gt;</span><br />
+    <span className="text-blue-500">&lt;/html&gt;</span>
+  </code>
+</pre>
+
             <h1 className="text-2xl">Set Animation Fill Modes</h1>
             <p>animation-fill-mode determines the styles applied to the target element during the animation’s inactive phases: before it starts, after it ends, or both.</p>
             <p>The animation-fill-mode property can have the following values:</p>
@@ -269,62 +282,63 @@ export default function AnimationShowcase(){
             </ul>
             <p>Check out the output of the following code to better understand.</p>
             <h1 className="text-2xl">Example</h1>
-            <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
-              <pre>
-                {`<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        .box {
-            padding: 10px;
-            background-color: green;
-            color: white;
-            font-size: 16px;
-            margin: 20px;
-            animation-duration: 2s;
-            animation-name: changeColor;
-        }
+          <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-500">&lt;html</span> <span className="text-red-500">lang</span>=<span className="text-green-700">"en"</span><span className="text-blue-500">&gt;</span><br />
+    <span className="text-blue-500">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;style&gt;</span><br />
 
-        /* Animation Definition */
-        @keyframes changeColor {
-            0% {
-                background-color: blue;
-            }
-            100% {
-                background-color: red ;
-            }
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">.box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">10px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">green</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">font-size</span>: <span className="text-green-700">16px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">margin</span>: <span className="text-green-700">20px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">animation-duration</span>: <span className="text-green-700">2s</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">animation-name</span>: <span className="text-green-700">changeColor</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        /* Animation Fill Modes */
-        .none {
-            animation-fill-mode: none;
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">@keyframes changeColor</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">0%</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">blue</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">100%</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">red</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        .forwards {
-            animation-fill-mode: forwards;
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">.none</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">animation-fill-mode</span>: <span className="text-green-700">none</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        .backwards {
-            animation-fill-mode: backwards;
-            animation-delay: 2s;
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">.forwards</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">animation-fill-mode</span>: <span className="text-green-700">forwards</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        .both {
-            animation-fill-mode: both;
-            animation-delay: 2s;
-        }
-    </style>
-</head>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">.backwards</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">animation-fill-mode</span>: <span className="text-green-700">backwards</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">animation-delay</span>: <span className="text-green-700">2s</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-<body>
-    <div class="box none">None</div>
-    <div class="box forwards">Forwards</div>
-    <div class="box backwards">Backwards</div>
-    <div class="box both">Both</div>
-</body>
-</html>`}
-              </pre>
-            </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">.both</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">animation-fill-mode</span>: <span className="text-green-700">both</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">animation-delay</span>: <span className="text-green-700">2s</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;/style&gt;</span><br />
+    <span className="text-blue-500">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"box none"</span><span className="text-blue-500">&gt;</span>None<span className="text-blue-500">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"box forwards"</span><span className="text-blue-500">&gt;</span>Forwards<span className="text-blue-500">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"box backwards"</span><span className="text-blue-500">&gt;</span>Backwards<span className="text-blue-500">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"box both"</span><span className="text-blue-500">&gt;</span>Both<span className="text-blue-500">&lt;/div&gt;</span><br />
+    <span className="text-blue-500">&lt;/body&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;/html&gt;</span>
+  </code>
+</pre>
 
             <h1 className="text-2xl">Animation Shorthand Property</h1>
             <p>The animation property in CSS combines these properties into one shorthand.</p>
@@ -340,39 +354,39 @@ export default function AnimationShowcase(){
             </ul>
 
             <h1 className="text-2xl">Example</h1>
-            <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
-              <pre>
-                {`<html lang="en">
-<head>
-    <style>
-    .box {
-        padding: 20px;
-        background-color: #3498db;
-        color: white;
-        font-size: 16px;
-        /* Name, duration, timing function, delay, repeat, direction, fill mode */
-        animation: changeColor 2s ease-in-out 1s infinite alternate both;
-    }
+          <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">&lt;html</span> <span className="text-red-500">lang</span>=<span className="text-green-700">"en"</span><span className="text-blue-500">&gt;</span><br />
+    <span className="text-blue-500">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;style&gt;</span><br />
 
-    /* Animation Definition */
-    @keyframes changeColor {
-        0% {
-            background-color: #3498db;
-        }
-        100% {
-            background-color: #e74c3c;
-        }
-    }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">.box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">20px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#3498db</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">font-size</span>: <span className="text-green-700">16px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">animation</span>: <span className="text-green-700">changeColor 2s ease-in-out 1s infinite alternate both</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-    </style>
-</head>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">@keyframes changeColor</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">0%</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#3498db</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">100%</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#e74c3c</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
 
-<body>
-    <div class="box">Animate Me!</div>
-</body>
-</html>`}
-              </pre>
-            </div>
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;/style&gt;</span><br />
+    <span className="text-blue-500">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"box"</span><span className="text-blue-500">&gt;</span>Animate Me!<span className="text-blue-500">&lt;/div&gt;</span><br />
+    <span className="text-blue-500">&lt;/body&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;/html&gt;</span>
+  </code>
+</pre>
 
             <h1 className="text-2xl">List of CSS Animation Properties</h1>
             <p>The animation property includes the following sub-properties:</p>

@@ -19,16 +19,18 @@ const CSSFlexItems = () => {
       </div>
       <p>The layout above consists of a grey flex container with four blue items inside.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="text-green-400 bg-gray-900 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-        {`<div class="flex-container">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-  </div>`}
+    <pre className="bg-gray-200 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"flex-container"</span><span className="text-blue-600">&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>1<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>2<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>3<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>4<span className="text-blue-600">&lt;/div&gt;</span><br />
+
+    <span className="text-blue-600">&lt;/div&gt;</span>
   </code>
-      </pre>
+</pre>
 
       <h1 className="text-2xl">CSS order Property</h1>
       <p>The order value decides how flex items are positioned relative to one another.</p>
@@ -44,16 +46,18 @@ const CSSFlexItems = () => {
 
     <h1 className="text-2xl">Example</h1>
     <p>With the order property, you can change the layout order of items without altering the markup.</p>
-    <pre className="text-green-400 bg-gray-900 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-      <code>
-   {`<div class="flex-container">
-  <div style="order: 3">1</div>
-  <div style="order: 2">2</div>
-  <div style="order: 4">3</div>
-  <div style="order: 1">4</div>
-  </div>`}
+  <pre className="bg-gray-200 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"flex-container"</span><span className="text-blue-600">&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">style</span>=<span className="text-green-700">"order: 3"</span><span className="text-blue-600">&gt;</span>1<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">style</span>=<span className="text-green-700">"order: 2"</span><span className="text-blue-600">&gt;</span>2<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">style</span>=<span className="text-green-700">"order: 4"</span><span className="text-blue-600">&gt;</span>3<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">style</span>=<span className="text-green-700">"order: 1"</span><span className="text-blue-600">&gt;</span>4<span className="text-blue-600">&lt;/div&gt;</span><br />
+
+    <span className="text-blue-600">&lt;/div&gt;</span>
   </code>
-    </pre>
+</pre>
 
     <h1 className="text-2xl">CSS flex-grow Property</h1>
      <p>When there's extra space, flex-grow decides how much of it each item should receive.</p>
@@ -65,16 +69,17 @@ const CSSFlexItems = () => {
      <p>This property accepts a numeric value, with a default of 0.</p>
      <h1 className="text-2xl">Example</h1>
      <p>The third flex item should grow eight times faster compared to its siblings.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-      <code>
-      {`<div class="flex-container">
-  <div style="flex-grow: 1">1</div>
-  <div style="flex-grow: 1">2</div>
-  <div style="flex-grow: 8">3</div>
-  </div>`}
-  </code>
-     </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"flex-container"</span><span className="text-blue-600">&gt;</span><br />
 
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">style</span>=<span className="text-green-700">"flex-grow: 1"</span><span className="text-blue-600">&gt;</span>1<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">style</span>=<span className="text-green-700">"flex-grow: 1"</span><span className="text-blue-600">&gt;</span>2<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">style</span>=<span className="text-green-700">"flex-grow: 8"</span><span className="text-blue-600">&gt;</span>3<span className="text-blue-600">&lt;/div&gt;</span><br />
+
+    <span className="text-blue-600">&lt;/div&gt;</span>
+  </code>
+</pre>
      <h1 className="text-2xl">CSS flex-shrink Property</h1>
      <p>This property determines how much a flex item will reduce its size in relation to other flex items.</p>
      <div className="border-2 border-black flex flex-wrap items-center mt-6">
@@ -92,22 +97,24 @@ const CSSFlexItems = () => {
      <p>The default value is 1, and the value must be a number.</p>
      <h1 className="text-2xl">Example</h1>
      <p>The third flex item should shrink less than the other items.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-      <code>
-      {`<div class="flex-container">
-  <div>1</div>
-  <div>2</div>
-  <div style="flex-shrink: 0">3</div>
-  <div>4</div>
-  <div>5</div>
-  <div>6</div>
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>
-  <div>10</div>
-  </div>`}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"flex-container"</span><span className="text-blue-600">&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>1<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>2<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">style</span>=<span className="text-green-700">"flex-shrink: 0"</span><span className="text-blue-600">&gt;</span>3<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>4<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>5<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>6<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>7<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>8<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>9<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>10<span className="text-blue-600">&lt;/div&gt;</span><br />
+
+    <span className="text-blue-600">&lt;/div&gt;</span>
   </code>
-     </pre>
+</pre>
 
      <h1 className="text-2xl">CSS flex-basis Property</h1>
      <p>The flex-basis value specifies the base size of a flex item.</p>
@@ -120,33 +127,35 @@ const CSSFlexItems = () => {
 
      <h1 className="text-2xl">Example</h1>
      <p>Set the flex-basis of the third item to 200 pixels.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-      <code>
-      {`<div class="flex-container">
-  <div>1</div>
-  <div>2</div>
-  <div style="flex-basis: 200px">3</div>
-  <div>4</div>
-  </div>
-  
-  `}
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"flex-container"</span><span className="text-blue-600">&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>1<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>2<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">style</span>=<span className="text-green-700">"flex-basis: 200px"</span><span className="text-blue-600">&gt;</span>3<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>4<span className="text-blue-600">&lt;/div&gt;</span><br />
+
+    <span className="text-blue-600">&lt;/div&gt;</span>
   </code>
-     </pre>
+</pre>
 
      <h1 className="text-2xl">CSS flex Property</h1>
      <p>The flex property is a shorthand for flex-grow, flex-shrink, and flex-basis.</p>
      <h1 className="text-2xl">Example</h1>
      <p>Make the third flex item fixed at 200px by setting flex-grow and flex-shrink to 0.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-      <code>
-      {`<div class="flex-container">
-  <div>1</div>
-  <div>2</div>
-  <div style="flex: 0 0 200px">3</div>
-  <div>4</div>
-  </div>`}
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"flex-container"</span><span className="text-blue-600">&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>1<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>2<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">style</span>=<span className="text-green-700">"flex: 0 0 200px"</span><span className="text-blue-600">&gt;</span>3<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>4<span className="text-blue-600">&lt;/div&gt;</span><br />
+
+    <span className="text-blue-600">&lt;/div&gt;</span>
   </code>
-     </pre>
+</pre>
 
      <h1 className="text-2xl">CSS align-self Property</h1>
      <p>The align-self property sets how a specific flex item is aligned within the flex container.</p>
@@ -161,59 +170,67 @@ const CSSFlexItems = () => {
      <p>These examples use a container with a height of 200 pixels to clearly show how the align-self property works.</p>
      <h1 className="text-2xl">Example</h1>
      <p>Align the third flex item in the middle of the container:</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-      <code>
-      {`<div class="flex-container">
-  <div>1</div>
-  <div>2</div>
-  <div style="align-self: center">3</div>
-  <div>4</div>
-  </div>`}
+   <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"flex-container"</span><span className="text-blue-600">&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>1<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>2<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">style</span>=<span className="text-green-700">"align-self: center"</span><span className="text-blue-600">&gt;</span>3<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>4<span className="text-blue-600">&lt;/div&gt;</span><br />
+
+    <span className="text-blue-600">&lt;/div&gt;</span>
   </code>
-     </pre>
+</pre>
 
      <h1 className="text-2xl">Example</h1>
      <p>Align the second item to the container’s top and the third item to its bottom.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-      <code>
-      {`<div class="flex-container">
-  <div>1</div>
-  <div style="align-self: flex-start">2</div>
-  <div style="align-self: flex-end">3</div>
-  <div>4</div>
-  </div>`}
+   <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"flex-container"</span><span className="text-blue-600">&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>1<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">style</span>=<span className="text-green-700">"align-self: flex-start"</span><span className="text-blue-600">&gt;</span>2<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div</span> <span className="text-red-500">style</span>=<span className="text-green-700">"align-self: flex-end"</span><span className="text-blue-600">&gt;</span>3<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>4<span className="text-blue-600">&lt;/div&gt;</span><br />
+
+    <span className="text-blue-600">&lt;/div&gt;</span>
   </code>
-    </pre>
+</pre>
 
 
       {/* Example Code */}
       <div>
         <h2 className="text-xl font-semibold text-gray-800">Example: Flex Items</h2>
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`/* Flex Container */
-.container {
-  display: flex;
-  border: 2px solid black;
-  height: 150px;
-}
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-gray-500">/* Flex Container */</span><br />
 
-/* Flex Items */
-.item1 {
-  flex: 1;
-  background: lightcoral;
-  }
-  .item2 {
-    flex: 2;
-    background: lightseagreen;
-}
-.item3 {
-  flex: 1;   
-  background: lightskyblue;
-  }`}
+    <span className="text-blue-600">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">2px solid black</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">150px</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-gray-500">/* Flex Items */</span><br />
+
+    <span className="text-blue-600">.item1</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">flex</span>: <span className="text-green-700">1</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">background</span>: <span className="text-green-700">lightcoral</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">.item2</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">flex</span>: <span className="text-green-700">2</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">background</span>: <span className="text-green-700">lightseagreen</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">.item3</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">flex</span>: <span className="text-green-700">1</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">background</span>: <span className="text-green-700">lightskyblue</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
 
         {/* Live Demo */}
         <div className="border-2 border-black h-40 flex mt-6">

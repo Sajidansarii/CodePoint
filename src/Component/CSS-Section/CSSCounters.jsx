@@ -47,36 +47,37 @@ const CssCounter = () => {
 
       <h1 className="text-3xl mt-10">Syntax</h1>
       <p className="mt-3">The syntax of the property is given with:</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-          {`
-counter-increment: [ identifier integer ]1 or more pairs | none | initial | inherit
-`}
-        </code>
-      </pre>
-
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-red-500">counter-increment</span>
+    <span>: </span>
+    <span className="text-green-700">[ identifier integer ]1 or more pairs | none | initial | inherit</span>
+  </code>
+</pre>
       <p className="leading-relaxed mt-10">The example below shows the counter-increment property in action.</p>
       <h1 className="mt-5 text-2xl mb-5">Example</h1>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`  
-              body {
-                     counter-reset:section;
-                     }
-                h1 { 
-                     counter-reset:category;
-                     }
-                h1:before {
-                           counter-increment:section;
-                           content:"Section" counter(section)"."
-                           }
-                h1:before {
-                           counter-increment: category;
-                           content: counter(section) "." counter(category)"";
-                           }  
-                           `}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">body</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">counter-reset</span>: <span className="text-green-700">section</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">h1</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">counter-reset</span>: <span className="text-green-700">category</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">h1:before</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">counter-increment</span>: <span className="text-green-700">section</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">content</span>: <span className="text-green-700">"Section" counter(section) "."</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">h1:before</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">counter-increment</span>: <span className="text-green-700">category</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">content</span>: <span className="text-green-700">counter(section) "." counter(category)</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
+
       <h1 className="text-2xl mt-10">Property Values</h1>
       <p className="mt-3">The following table describes the values of this property.</p>
 

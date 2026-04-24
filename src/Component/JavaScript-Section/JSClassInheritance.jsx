@@ -12,7 +12,7 @@ const JSClassInheritance = () => {
 
       <h1 className="text-2xl font-semibold text-gray-800 mb-3">Example</h1>
       <h2>Create a class named "Model" which will inherit the methods from the "Car" class:</h2>
-      <pre className="bg-gray-900 text-green-400 overflow-x-auto p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200overflow-x-auto p-4 rounded-lg mt-5">
         <code>
 {`class Parent {
   constructor(name) {
@@ -41,7 +41,7 @@ child1.greet(); // Output: Hello, my name is Alice`}
       <p className="mt-3">Use the <span className="text-red-400">get</span> and <span className="text-red-400">set</span> keywords to add getters and setters to a class.</p>
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h1>
       <p>Add a getter and setter for the carname property.</p>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5 mb-5">
+      <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5 mb-5">
         <code>
           {`class Car {
   constructor(brand) {
@@ -66,7 +66,7 @@ document.getElementById("demo").innerHTML = myCar.cna`}
        
        <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h1>
        <p>The underscore character may be employed to differentiate getter/setter methods from the underlying property.</p>
-       <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
+       <pre className=" bg-gray-200 overflow-x-auto p-4 rounded-lg mt-5">
         <code>
           {`class Car {
   constructor(brand) {
@@ -89,7 +89,7 @@ document.getElementById("demo").innerHTML = myCar.carname;`}
        <p className="mt-5">To call a setter, use the same syntax as assigning a property value—just don’t include parentheses.</p>
        <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h1>
        <p>Use a setter to change the carname to "Volvo":</p>
-       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`class Car {
   constructor(brand) {
@@ -113,7 +113,7 @@ document.getElementById("demo").innerHTML = myCar.carname;`}
        <p>In contrast to functions and various other JavaScript declarations, class declarations are not subject to hoisting.</p>
        <p>You must declare the class first, then use it.</p>
        <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h1>
-       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`//You cannot use the class yet.
 //myCar = new Car("Ford") will raise an error.

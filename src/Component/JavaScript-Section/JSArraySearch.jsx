@@ -36,7 +36,7 @@ const ArraySearchDemo = () => {
       <p>The <span className='text-red-400'>indexOf()</span> method looks through an array to find a specific element and returns its index.</p>
       <h2 className='text-2xl text-gray-800 font-semibold mt-5 mb-3'>Example</h2>
       <p>Search an array for the item "Apple":</p>
-      <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
+      <pre className='overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5'>
         <code>
           {`const fruits = ["Apple", "Orange", "Apple", "Mango"];
 let position = fruits.indexOf("Apple") + 1;`}
@@ -44,7 +44,7 @@ let position = fruits.indexOf("Apple") + 1;`}
       </pre>
 
       <h1 className='text-2xl text-gray-800 font-semibold mt-5'>Syntax</h1>
-       <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5 mb-3'>
+       <pre className='bg-gray-200 p-4 rounded-lg mt-5 mb-3'>
         <code>
           {`array.indexOf(item, start)`}
         </code>
@@ -57,7 +57,7 @@ let position = fruits.indexOf("Apple") + 1;`}
     <p><span className='text-red-400'>Array.lastIndexOf()</span> works like <span className='text-red-400'>Array.indexOf()</span>, but it returns the index of the element’s last occurrence.</p>
     <h2 className='text-2xl text-gray-800 font-semibold mt-5 mb-3'>Example</h2>
     <p>Search an array for the item "Apple":</p>
-    <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5'>
       <code>
         {`const fruits = ["Apple", "Orange", "Apple", "Mango"];
 let position = fruits.lastIndexOf("Apple") + 1;`}
@@ -65,7 +65,7 @@ let position = fruits.lastIndexOf("Apple") + 1;`}
     </pre>
 
     <h1 className='text-2xl text-gray-900 font-semibold mt-5'>Syntax</h1>
-    <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+    <pre className='bg-gray-200 p-4 rounded-lg mt-5'>
       <code>
         {`array.lastIndexOf(item, start)`}
       </code>
@@ -75,7 +75,7 @@ let position = fruits.lastIndexOf("Apple") + 1;`}
     <h1 className='text-2xl text-gray-900 font-semibold mt-10 mb-3'>JavaScript Array includes()</h1>
    <p>Arrays gained the <span className='text-red-400'>includes()</span> method in ECMAScript 2016, letting us check whether an element exists in an array—including NaN, which indexOf cannot detect.</p>
    <h2 className='text-2xl text-gray-800 font-semibold mt-5 mb-3'>Example</h2>
-   <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
+   <pre className='overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5'>
     <code>
       {`const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.includes("Mango"); // is true`}
@@ -83,7 +83,7 @@ fruits.includes("Mango"); // is true`}
    </pre>
 
    <h1 className='text-2xl text-gray-800 font-semibold mt-5'>Syntax</h1>
-   <pre className='text-green-400 bg-gray-900 p-4 rounded-lg mt-5'>
+   <pre className='bg-gray-200 p-4 rounded-lg mt-5'>
     <code>
       {`array.includes(search-item)`}
     </code>
@@ -93,7 +93,7 @@ fruits.includes("Mango"); // is true`}
    <p>The <span className='text-red-400'>find()</span> method returns the first element in an array that satisfies a provided test function.</p>
    <p className='mt-3'>In this example, we find the first array item that is larger than 18.</p>
    <h2 className='text-gray-800 text-2xl font-semibold mt-5'>Example</h2>
-   <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5 mb-5'>
+   <pre className='overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5 mb-5'>
     <code>
       {`const numbers = [4, 9, 16, 25, 29];
 let first = numbers.find(myFunction);
@@ -109,7 +109,7 @@ function myFunction(value, index, array) {
    <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>JavaScript Array findIndex()</h1>
    <p>The <span className='text-red-400'>findIndex()</span> method gives the index of the first element in an array that meets a test function’s condition.</p>
    <h2 className='text-gray-800 text-2xl font-semibold mt-5'>Example</h2>
-   <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
+   <pre className='overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5'>
     <code>
       {`const numbers = [4, 9, 16, 25, 29];
 let first = numbers.findIndex(myFunction);
@@ -123,7 +123,7 @@ function myFunction(value, index, array) {
    <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>JavaScript Array findLast() Method</h1>
    <p>ES2023 added <span className='text-red-400'>findLast()</span>, allowing you to start from the array’s end and retrieve the first element that satisfies a test.</p>
    <h2 className='text-gray-800 text-2xl font-semibold mt-5'>Example</h2>
-   <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
+   <pre className='overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5'>
     <code>
       {`const temp = [27, 28, 30, 40, 42, 35, 30];
 let high = temp.findLast(x => x > 40);`}
@@ -133,7 +133,7 @@ let high = temp.findLast(x => x > 40);`}
    <h1 className='text-2xl text-gray-800 font-semibold mt-10 mb-3'>JavaScript Array findLastIndex() Method</h1>
    <p>The <span className='text-red-400'>findLastIndex()</span> method returns the index of the last array element that passes a given test.</p>
    <h2 className='text-2xl text-gray-800 font-semibold mt-5'>Examplr</h2>
-   <pre className='text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5'>
+   <pre className='overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5'>
     <code>
       {`const temp = [27, 28, 30, 40, 42, 35, 30];
 let pos = temp.findLastIndex(x => x > 40);`}

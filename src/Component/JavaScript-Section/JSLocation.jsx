@@ -26,7 +26,7 @@ const JSLocationBOM = () => {
      <p>The <span className="text-red-400">window.location.href</span> property gives the URL of the current page.</p>
      <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
      <p>Show the current page’s URL.</p>
-     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`document.getElementById("demo").innerHTML =
 "Page location is " + window.location.href;`}
@@ -43,7 +43,7 @@ const JSLocationBOM = () => {
     <p className="mb-3">The <span className="text-red-400">window.location.hostname</span> property gives the host name of the current page.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
     <p>Show the host name.</p>
-    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`document.getElementById("demo").innerHTML =
 "Page hostname is " + window.location.hostname;`}
@@ -60,14 +60,14 @@ const JSLocationBOM = () => {
     <p>The <span className="text-red-400">window.location.pathname</span> property gives the pathname of the current page.</p>
    <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
    <p>Show the pathname of the current URL.</p>
-   <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+   <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`document.getElementById("demo").innerHTML =
 "Page path is " + window.location.pathname;`}
     </code>
    </pre>
    <p className="mt-3">Output Will be:</p>
-    <pre className="text-black overflow-x-auto bg-gray-200 p-4 mt-5">
+    <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`Page path is /Js/js_window_location.asp`}
       </code>
@@ -77,14 +77,15 @@ const JSLocationBOM = () => {
    <p>The <span className="text-red-400">window.location.protocol</span> property gives the web protocol of the page.</p>
     <h2 className="text-gray-800 text-2xl font-semibold mt-5 mb-3">Example</h2>
    <p>Show the web protocol.</p>
-  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`document.getElementById("demo").innerHTML =
 "Page protocol is " + window.location.protocol;`}
     </code>
   </pre>
+
    <p className="mt-3">Output Will be:</p>
-    <pre className="text-black overflow-x-auto bg-gray-200 p-4 mt-5">
+    <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`Page protocol is https:`}
       </code>
@@ -94,14 +95,14 @@ const JSLocationBOM = () => {
     <p>The <span className="text-red-400">window.location.port</span> property returns the port number of the current page’s host.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
     <p>Show the host name.</p>
-    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`document.getElementById("demo").innerHTML =
 "Port number is " + window.location.port;`}
       </code>
     </pre>
      <p className="mt-3">Output Will be:</p>
-    <pre className="text-black bg-gray-200 p-4 mt-5">
+    <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`Port number is`}
       </code>
@@ -111,7 +112,7 @@ const JSLocationBOM = () => {
    <p>The <span className="text-red-400">window.location.assign()</span> method redirects the browser to a new document.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Example</h2>
     <p>Redirect to a new page.</p>
-    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`<html>
 <head>
@@ -129,15 +130,6 @@ function newDoc() {
 </html>`}
       </code>
     </pre>
-
-
-
-
-
-
-
-
-
 
 
     </div>

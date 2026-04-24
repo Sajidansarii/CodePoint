@@ -23,7 +23,7 @@ const JSLet = () => {
 
       <h1 className="text-2xl mt-10 mb-3">Example</h1>
         <p> Variables declared inside a block <span className="bg-gray-50 px-1">{ }</span>are limited to block scope and cannot be accessed externally.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5">
           {`{
   let x = 2;
 }
@@ -35,7 +35,7 @@ const JSLet = () => {
         <p className="leading-relaxed">Declarations with var are function-scoped or globally scoped, but never block-scoped.</p>
         <h1 className="text-2xl mt-10">Example</h1>
         <p className="leading-relaxed mb-5"><span className="bg-gray-50 px-1">var</span> declarations inside blocks do not have block scope and are accessible outside the block, following function or global scope rules.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           {`{
   var x = 2;
 }
@@ -46,13 +46,13 @@ const JSLet = () => {
         <p className="leading-relaxed mt-3"><span className="bg-gray-50 px-1">let</span> variables are block-scoped and cannot be redeclared in the same scope.</p>
         <p className="leading-relaxed"> Using <span className="bg-gray-50 px-1">let</span> ensures that variables cannot be unintentionally redeclared in the same block scope.</p>
        <p className="mt-2 mb-5">Here’s something you can’t do with <span className="text-red-400 bg-gray-50 px-1">let</span>:</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`let x = "John Doe";
 let x = 0;`}
        </pre>
        <p className="mt-10">With var, you’re allowed to declare the same variable more than once.</p>
        <p><span className="bg-gray-50 px-1">var</span> allows the following behavior:</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`var x = "John Doe";
 
 var x = 0;`}
@@ -62,7 +62,7 @@ var x = 0;`}
        <p className="leading-relaxed mt-3 mb-1">Redeclaring variables with <span className="bg-gray-50 px-1">var</span> can result in unexpected behavior or bugs.</p>
        <p className="leading-relaxed"><span className="bg-gray-50 px-1">var</span> declarations are function-scoped; thus, redeclaring a variable inside a block affects the variable in the enclosing scope.</p>
        <h1 className="text-2xl mt-5 mb-5">Example</h1>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`var x = 10;
 // Here x is 10
 
@@ -77,7 +77,7 @@ var x = 2;
        <p className="mt-10 leading-relaxed">The <span className="text-red-400 bg-gray-50 px-1">let</span> keyword restricts redeclaration within the same block scope, effectively solving this problem.</p>
        <p className="leading-relaxed mt-2">Redeclaring a variable inside a block with let or const creates a new variable scoped to that block, leaving the outer variable unchanged.</p>
        <h1 className="text-2xl mt-10 mb-5">Example</h1>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`let x = 10;
 // Here x is 10
 
@@ -132,7 +132,7 @@ let x = 2;
         <h1 className="text-2xl mt-10">Redeclaring</h1>
         <p className="leading-relaxed mt-1">It’s true that JavaScript lets you redeclare a variable using <span className="text-red-400 bg-gray-50 px-1">var</span> anywhere in the program.</p>
         <h1 className="text-2xl mt-5">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           {`var x = 2;
 // Now x is 2
 
@@ -142,7 +142,7 @@ var x = 3;
 
         <p className="mt-10">Just like some other strict rules in JavaScript, <span className="text-red-400 bg-gray-50 px-1">let</span> does not allow variable redeclaration in the same block.</p>
         <h1 className="text-2xl mt-10">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           {`var x = 2;   // Allowed
 let x = 3;   // Not allowed
 
@@ -159,7 +159,7 @@ var x = 3;   // Not allowed
 
         <p className="mt-10">With <span className="text-red-400 bg-gray-50 px-1">let</span>, redeclaring a variable in another block is allowed too.</p>
         <h1 className="text-2xl mt-10">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           {`let x = 2;   // Allowed
 
 {
@@ -175,13 +175,13 @@ let x = 4;    // Allowed
         <p className="leading-relaxed mt-3">Variables declared with <span className="text-red-400 bg-gray-50 px-1">var</span> are hoisted to the top of their scope and can be initialized whenever needed.</p>
        <p className="leading-relaxed mt-3">A variable can be accessed even before its declaration appears in the code.</p>
        <h1 className="text-2xl mt-5">Example</h1>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`carName = "Volvo";
 var carName;`}
        </pre>
        <p  className="leading-relaxed mt-10">Variables defined with <span className="text-red-400 bg-gray-50 px-1">let</span> are also hoisted to the top of the block, but not initialized.</p>
         <p  className="leading-relaxed mt-3">Using a <span className="text-red-400 bg-gray-50 px-1">let</span> variable before it is declared will result in a <span className="text-red-400 bg-gray-50 px-1">ReferenceError</span>:</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           {`carName = "Saab";
 let carName = "Volvo";`}
         </pre>

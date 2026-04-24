@@ -8,55 +8,122 @@ const UseMemoHooks = () => {
             <p>The useMemo Hook optimizes performance by memoizing a computation’s result, ensuring it is recalculated only when specified dependencies change.</p>
            
            <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-           <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);`}
-            </code>
-           </pre>
-
+           <pre className="bg-gray-100 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code className="text-sm">
+    <span className="text-blue-600">const</span>{" "}
+    <span className="text-black">memoizedValue</span>{" "}
+    <span className="text-gray-500">=</span>{" "}
+    <span className="text-purple-600">useMemo</span>
+    <span className="text-black">(() =&gt; </span>
+    <span className="text-yellow-600">computeExpensiveValue</span>
+    <span className="text-black">(a, b), [a, b]);</span>
+  </code>
+</pre>
            <p className="mt-5">The first argument is a callback returning the memoized value. The second argument is a dependency array that dictates when the memoization should be invalidated and recomputed.</p>
 
 
          <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Optimizing Expensive Calculations</h2>
          <p>Consider a case where a performance-heavy calculation must be memoized to prevent re-execution on each render.</p>
-         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`import React, { useState, useMemo } from "react";
+<pre className="bg-gray-100 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code>
+    <span className="text-purple-600">import</span>{" "}
+    React,{" "}
+    <span className="text-blue-500">{`{ useState, useMemo }`}</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-green-600">"react"</span>;
 
-function App() {
-    const [number, setNumber] = useState(0);
-    const squaredNum = useMemo(() => squareNum(number), [number]);
-    const [counter, setCounter] = useState(0);
-    const onChangeHandler = (e) => {
-        setNumber(e.target.value);
-    };
-    const counterHander = () => {
-        setCounter(counter + 1);
-    };
-    return (
-        <div className="App">
-            <h1>Welcome to Geeksforgeeks</h1>
-            <input
-                type="number"
-                placeholder="Enter a number"
-                value={number}
-                onChange={onChangeHandler}
-            ></input>
+    <br /><br />
 
-            <div>OUTPUT: {squaredNum}</div>
-            <button onClick={counterHander}>Counter ++</button>
-            <div>Counter : {counter}</div>
-        </div>
-    );
-}
-function squareNum(number) {
-    console.log("Squaring will be done!");
-    return Math.pow(number, 2);
-}
-export default App;`}
-            </code>
-         </pre>
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-yellow-600">App</span>() {"{"}
+    <br />
 
+    &nbsp;&nbsp;<span className="text-purple-600">const</span>{" "}
+    [number, setNumber] ={" "}
+    <span className="text-blue-500">useState</span>(0);
+    <br />
+
+    &nbsp;&nbsp;<span className="text-purple-600">const</span>{" "}
+    squaredNum ={" "}
+    <span className="text-blue-500">useMemo</span>(() =&gt; squareNum(number), [number]);
+    <br />
+
+    &nbsp;&nbsp;<span className="text-purple-600">const</span>{" "}
+    [counter, setCounter] ={" "}
+    <span className="text-blue-500">useState</span>(0);
+    <br /><br />
+
+    &nbsp;&nbsp;<span className="text-purple-600">const</span>{" "}
+    onChangeHandler = (e) =&gt; {"{"}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;setNumber(e.target.value);
+    <br />
+    &nbsp;&nbsp;{"}"};
+    <br /><br />
+
+    &nbsp;&nbsp;<span className="text-purple-600">const</span>{" "}
+    counterHandler = () =&gt; {"{"}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;setCounter(counter + 1);
+    <br />
+    &nbsp;&nbsp;{"}"};
+    <br /><br />
+
+    &nbsp;&nbsp;<span className="text-purple-600">return</span> (
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div className="App"&gt;
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Welcome to Geeksforgeeks&lt;/h1&gt;
+    <br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="number"
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;placeholder="Enter a number"
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value={"{"}number{"}"}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onChange={"{"}onChangeHandler{"}"}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&gt;
+    <br /><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;OUTPUT: {"{"}squaredNum{"}"}&lt;/div&gt;
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button onClick={"{"}counterHandler{"}"}&gt;
+    Counter ++
+    &lt;/button&gt;
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;Counter : {"{"}counter{"}"}&lt;/div&gt;
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+    <br />
+    &nbsp;&nbsp;);
+    <br />
+    {"}"}
+
+    <br /><br />
+
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-yellow-600">squareNum</span>(number) {"{"}
+    <br />
+    &nbsp;&nbsp;console.log("Squaring will be done!");
+    <br />
+    &nbsp;&nbsp;<span className="text-purple-600">return</span>{" "}
+    Math.pow(number, 2);
+    <br />
+    {"}"}
+
+    <br /><br />
+
+    <span className="text-purple-600">export default</span> App;
+  </code>
+</pre>
          <ul className="list-[square] space-y-1 mt-5">
             <li><span className="text-red-400">useState</span> tracks number from the input <span className="lg:ml-0 ml-5">and</span> counter from button interactions.</li>
             <li>useMemo memoizes squareNum (number) for performance, recalculating <span className="lg:ml-0 ml-5">only</span> on number change.</li>
@@ -68,28 +135,69 @@ export default App;`}
 
          <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Preventing Unnecessary Re-renders</h2>
         <p>Sometimes, giving a child component an object or array as a prop makes it re-render too often. Using useMemo can help keep the value the same and avoid extra renders.</p>
-       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`import React, { useState, useMemo } from "react";
+    <pre className="bg-gray-100 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code>
+    <span className="text-purple-600">import</span>{" "}
+    React,{" "}
+    <span className="text-blue-500">{`{ useState, useMemo }`}</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-green-600">"react"</span>;
 
-function Child({ userInfo }) {
-    console.log("Child component rendered");
-    return <p>User: {userInfo.name}</p>;
-}
-function Parent() {
-    const [count, setCount] = useState(0);
-    const userInfo = useMemo(() => ({ name: "GeeksforGeeks" }), []);
-    return (
-        <div>
-            <p>Count: {count}</p>
-            <Child userInfo={userInfo} />
-            <button onClick={() => setCount(count + 1)}>Increment Count</button>
-        </div>
-    );
-}
-export default Parent;`}
-        </code>
-       </pre>
+    <br /><br />
+
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-yellow-600">Child</span>({`{ userInfo }`}) {"{"}
+    <br />
+    &nbsp;&nbsp;console.log("Child component rendered");
+    <br />
+    &nbsp;&nbsp;<span className="text-purple-600">return</span>{" "}
+    &lt;p&gt;User: {"{userInfo.name}"}&lt;/p&gt;;
+    <br />
+    {"}"}
+
+    <br /><br />
+
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-yellow-600">Parent</span>() {"{"}
+    <br />
+
+    &nbsp;&nbsp;<span className="text-purple-600">const</span>{" "}
+    [count, setCount] = <span className="text-blue-500">useState</span>(0);
+    <br />
+
+    &nbsp;&nbsp;<span className="text-purple-600">const</span>{" "}
+    userInfo = <span className="text-blue-500">useMemo</span>(() =&gt; (
+    {"{ name: \"GeeksforGeeks\" }"}
+    ), []);
+    <br /><br />
+
+    &nbsp;&nbsp;<span className="text-purple-600">return</span> (
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Count: {"{count}"}&lt;/p&gt;
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Child userInfo={"userInfo"} /&gt;
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button onClick={"() =&gt; setCount(count + 1)"}&gt;
+    Increment Count
+    &lt;/button&gt;
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+    <br />
+    &nbsp;&nbsp;);
+    <br />
+    {"}"}
+
+    <br /><br />
+
+    <span className="text-purple-600">export default</span> Parent;
+  </code>
+</pre>
 
        <ul className="list-[square] space-y-1 mt-5">
         <li>The app imports React, useState, and useMemo for state handling and memoization.</li>

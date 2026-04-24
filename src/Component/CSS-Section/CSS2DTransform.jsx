@@ -51,217 +51,216 @@ const Css2DTransforms = () => {
 
       <h1 className="text-2xl">Example</h1>
       <p>In the following example, a box transitions along the X and Y axes when hovered over.</p>
-        <pre className="bg-gray-900 text-green-400 p-4 h-80 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-{`<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        body {
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
+      <pre className="bg-gray-200 p-4 h-80 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-500">&lt;html</span> <span className="text-red-500">lang</span>=<span className="text-green-700">"en"</span><span className="text-blue-500">&gt;</span><br />
+    <span className="text-blue-500">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;style&gt;</span><br />
 
-        /* The Box Element */
-        .box {
-            width: 200px;
-            height: 200px;
-            background-color: #4CAF50;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.5em;
-            border-radius: 10px;
-            /* Initial 2D Translation */
-            transform: translate(50px, 50px);
-            transition: transform 0.6s ease;
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">body</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">300px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">justify-content</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">align-items</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#f0f0f0</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">font-family</span>: <span className="text-green-700">Arial, sans-serif</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        /* Hover State with Different 2D Translation */
-        .box:hover {
-            transform: translate(-50px, -50px);
-            background-color: #2ecc71;
-            cursor: pointer;
-        }
-    </style>
-</head>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">.box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">200px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">200px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#4CAF50</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">justify-content</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">align-items</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">font-size</span>: <span className="text-green-700">1.5em</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">border-radius</span>: <span className="text-green-700">10px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">transform</span>: <span className="text-green-700">translate(50px, 50px)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">transition</span>: <span className="text-green-700">transform 0.6s ease</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-<body>
-    <div class="box">
-        2D Box
-    </div>
-</body>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">.box:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">transform</span>: <span className="text-green-700">translate(-50px, -50px)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#2ecc71</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">cursor</span>: <span className="text-green-700">pointer</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
 
-</html>   `}
-        </pre>
-      
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;/style&gt;</span><br />
+    <span className="text-blue-500">&lt;/head&gt;</span><br /><br />
 
+    <span className="text-blue-500">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"box"</span><span className="text-blue-500">&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;2D Box<br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;/div&gt;</span><br />
+    <span className="text-blue-500">&lt;/body&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;/html&gt;</span>
+  </code>
+</pre>
         <h2 className="text-xl font-semibold">CSS 2D rotate</h2>
         <p className="text-gray-700">The rotate() function in CSS applies a rotational transformation to an element around a defined point in two-dimensional space.
         </p>
         <h1 className="text-2xl">Example</h1>
         <p>The example below demonstrates a box that rotates on hover, producing a visually engaging effect.</p>
 
-        <pre className="bg-gray-900 text-green-400 p-4 h-80 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-{`<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        body {
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
+      <pre className="bg-gray-200 p-4 h-80 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-500">&lt;html</span> <span className="text-red-500">lang</span>=<span className="text-green-700">"en"</span><span className="text-blue-500">&gt;</span><br />
+    <span className="text-blue-500">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;style&gt;</span><br />
 
-        /* The Box Element */
-        .box {
-            width: 200px;
-            height: 200px;
-            background-color: #4CAF50;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.5em;
-            border-radius: 10px;
-            /* Initial 2D Rotation */
-            transform: rotate(15deg);
-            transition: transform 0.6s ease;
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">body</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">300px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">justify-content</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">align-items</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#f0f0f0</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">font-family</span>: <span className="text-green-700">Arial, sans-serif</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        /* Hover State with Different 2D Rotation */
-        .box:hover {
-            transform: rotate(-15deg);
-            background-color: #2ecc71;
-            cursor: pointer;
-        }
-    </style>
-</head>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">.box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">200px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">200px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#4CAF50</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">justify-content</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">align-items</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">font-size</span>: <span className="text-green-700">1.5em</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">border-radius</span>: <span className="text-green-700">10px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">transform</span>: <span className="text-green-700">rotate(15deg)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">transition</span>: <span className="text-green-700">transform 0.6s ease</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-<body>
-    <div class="box">
-        2D Box
-    </div>
-</body>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">.box:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">transform</span>: <span className="text-green-700">rotate(-15deg)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#2ecc71</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">cursor</span>: <span className="text-green-700">pointer</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
 
-</html>   `}
-        </pre>
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;/style&gt;</span><br />
+    <span className="text-blue-500">&lt;/head&gt;</span><br /><br />
 
+    <span className="text-blue-500">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"box"</span><span className="text-blue-500">&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;2D Box<br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;/div&gt;</span><br />
+    <span className="text-blue-500">&lt;/body&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;/html&gt;</span>
+  </code>
+</pre>
 
         <h2 className="text-xl font-semibold">CSS 2D Scale</h2>
         <p className="text-gray-700">Using scale() in CSS, you can enlarge or reduce an element’s width and height along the horizontal and vertical axes.
         </p>
         <h1 className="text-2xl">Example</h1>
         <p>When hovered over, the box in this example enlarges and shrinks, giving the appearance of a zoom in/out effect.</p>
-        <pre className="bg-gray-900 text-green-400 p-4 h-80 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-{`<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        body {
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
+       <pre className="bg-gray-200 p-4 h-80 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-500">&lt;html</span> <span className="text-red-500">lang</span>=<span className="text-green-700">"en"</span><span className="text-blue-500">&gt;</span><br />
+    <span className="text-blue-500">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;style&gt;</span><br />
 
-        /* The Box Element */
-        .box {
-            width: 150px;
-            height: 150px;
-            background-color: #4CAF50;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.5em;
-            border-radius: 10px;
-            /* Initial 2D Scaling */
-            transform: scale(1);
-            transition: transform 0.6s ease;
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">body</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">300px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">justify-content</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">align-items</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#f0f0f0</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">font-family</span>: <span className="text-green-700">Arial, sans-serif</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        /* Hover State with Different 2D Scaling */
-        .box:hover {
-            transform: scale(1.5);
-            background-color: #2ecc71;
-            cursor: pointer;
-        }
-    </style>
-</head>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">.box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">150px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">150px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#4CAF50</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">justify-content</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">align-items</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">font-size</span>: <span className="text-green-700">1.5em</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">border-radius</span>: <span className="text-green-700">10px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">transform</span>: <span className="text-green-700">scale(1)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">transition</span>: <span className="text-green-700">transform 0.6s ease</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-<body>
-    <div class="box">
-        2D Box
-    </div>
-</body>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">.box:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">transform</span>: <span className="text-green-700">scale(1.5)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#2ecc71</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">cursor</span>: <span className="text-green-700">pointer</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
 
-</html>  `}
-        </pre>
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;/style&gt;</span><br />
+    <span className="text-blue-500">&lt;/head&gt;</span><br /><br />
 
+    <span className="text-blue-500">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"box"</span><span className="text-blue-500">&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;2D Box<br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;/div&gt;</span><br />
+    <span className="text-blue-500">&lt;/body&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;/html&gt;</span>
+  </code>
+</pre>
         <h2 className="text-xl font-semibold">CSS 2D Skew</h2>
         <p className="text-gray-700">The skew() function in CSS distorts an element by slanting it along the horizontal (X) and vertical (Y) axes.
         </p>
         <h1 className="text-2xl">Example</h1>
         <p>The example below demonstrates a skew transformation applied on hover, resulting in a slanted appearance.</p>
 
-        <pre className="bg-gray-900 text-green-400 p-4 h-80 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-{`<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        body {
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
+       <pre className="bg-gray-200 p-4 h-80 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-500">&lt;html</span> <span className="text-red-500">lang</span>=<span className="text-green-700">"en"</span><span className="text-blue-500">&gt;</span><br />
+    <span className="text-blue-500">&lt;head&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;style&gt;</span><br />
 
-        /* The Box Element */
-        .box {
-            width: 200px;
-            height: 200px;
-            background-color: #4CAF50;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.5em;
-            border-radius: 10px;
-            /* Initial 2D Skew */
-            transform: skewX(10deg) skewY(10deg);
-            transition: transform 0.6s ease;
-        }
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">body</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">300px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">justify-content</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">align-items</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#f0f0f0</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">font-family</span>: <span className="text-green-700">Arial, sans-serif</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-        /* Hover State with Different 2D Skew */
-        .box:hover {
-            transform: skewX(-10deg) skewY(-10deg);
-            background-color: #2ecc71;
-            cursor: pointer;
-        }
-    </style>
-</head>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">.box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">200px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">200px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#4CAF50</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">justify-content</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">align-items</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">font-size</span>: <span className="text-green-700">1.5em</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">border-radius</span>: <span className="text-green-700">10px</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">transform</span>: <span className="text-green-700">skewX(10deg) skewY(10deg)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">transition</span>: <span className="text-green-700">transform 0.6s ease</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br /><br />
 
-<body>
-    <div class="box">
-        2D Box
-    </div>
-</body>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">.box:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">transform</span>: <span className="text-green-700">skewX(-10deg) skewY(-10deg)</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#2ecc71</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">cursor</span>: <span className="text-green-700">pointer</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span>{'}'}</span><br />
 
-</html>   `}
-        </pre>
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;/style&gt;</span><br />
+    <span className="text-blue-500">&lt;/head&gt;</span><br /><br />
 
+    <span className="text-blue-500">&lt;body&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"box"</span><span className="text-blue-500">&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;2D Box<br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;/div&gt;</span><br />
+    <span className="text-blue-500">&lt;/body&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;/html&gt;</span>
+  </code>
+</pre>
         <h1 className="text-2xl">CSS Transform Properties</h1>
         <p>The following table provides an overview of the 2D transform properties used in CSS.</p>
 

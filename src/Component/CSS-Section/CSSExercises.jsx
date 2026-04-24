@@ -22,23 +22,29 @@ const CssExercises = () => {
         </p>
 
         {/* Solution Code */}
-          <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-            <code>
-{`<style>
-  .box {
-    background-color: blue;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
-    }
-    </style>
-    
-    <div class="box">
-    Hello! Ye ek CSS Exercise ka solution hai.
-    </div>`}
-    </code>
-          </pre>
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">&lt;style&gt;</span><br /><br />
+
+    <span className="text-blue-500">.box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">blue</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">20px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-align</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border-radius</span>: <span className="text-green-700">8px</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">&lt;/style&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;div</span>
+    <span className="text-red-500"> class</span>=<span className="text-green-700">"box"</span>
+    <span className="text-blue-500">&gt;</span><br />
+
+    &nbsp;&nbsp;Hello! Ye ek CSS Exercise ka solution hai.<br />
+
+    <span className="text-blue-500">&lt;/div&gt;</span>
+  </code>
+</pre>
 
         {/* Explanation */}
         <h3 className="text-lg font-medium mb-2">Explanation:</h3>
@@ -61,25 +67,31 @@ const CssExercises = () => {
         </p>
 
         {/* Solution Code */}
-          <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-            <code>
-{`<style>
-  .btn {
-    background-color: blue;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    }
-    
-    .btn:hover {
-      background-color: green;
-      }
-      </style>
-      
-      <button class="btn">Click Me</button>`}
-      </code>
-          </pre>
+         <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">&lt;style&gt;</span><br /><br />
+
+    <span className="text-blue-500">.btn</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">blue</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">10px 20px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">none</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">cursor</span>: <span className="text-green-700">pointer</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">.btn:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">green</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">&lt;/style&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;button</span>
+    <span className="text-red-500"> class</span>=<span className="text-green-700">"btn"</span>
+    <span className="text-blue-500">&gt;</span>
+    Click Me
+    <span className="text-blue-500">&lt;/button&gt;</span>
+  </code>
+</pre>
         
 
         {/* Explanation */}

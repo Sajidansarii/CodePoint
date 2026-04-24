@@ -35,23 +35,62 @@ const HTMLWebAPIs = () => {
       <div className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Example: Geolocation API</h2>
         <p className="leading-relaxed mb-3">Get the user’s current location:</p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`navigator.geolocation.getCurrentPosition((position) => {
-  console.log("Latitude:", position.coords.latitude);
-  console.log("Longitude:", position.coords.longitude);
-});`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-purple-600">navigator</span>.
+    <span className="text-blue-600">geolocation</span>.
+    <span className="text-blue-600">getCurrentPosition</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-yellow-600">(position) =&gt;</span>
+    <span className="text-gray-500"> {'{'} </span>
+    <br/>
+
+    &nbsp;&nbsp;<span className="text-blue-600">console</span>.
+    <span className="text-blue-600">log</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">"Latitude:"</span>, 
+    position.coords.latitude
+    <span className="text-gray-500">);</span>
+    <br/>
+
+    &nbsp;&nbsp;<span className="text-blue-600">console</span>.
+    <span className="text-blue-600">log</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">"Longitude:"</span>, 
+    position.coords.longitude
+    <span className="text-gray-500">);</span>
+    <br/>
+
+    <span className="text-gray-500">{'}'}</span>
+    <span className="text-gray-500">);</span>
+  </code>
+</pre>
       </div>
 
       {/* Example - Fetch API */}
       <div className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Example: Fetch API</h2>
         <p className="leading-relaxed mb-3">Get JSON data from a server:</p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`fetch("https://jsonplaceholder.typicode.com/posts/1")
-  .then(response => response.json())
-  .then(data => console.log(data));`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-purple-600">fetch</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">"https://jsonplaceholder.typicode.com/posts/1"</span>
+    <span className="text-gray-500">)</span>
+    <br/>
+
+    &nbsp;&nbsp;.<span className="text-blue-600">then</span>
+    <span className="text-gray-500">(</span>
+    response =&gt; response.<span className="text-blue-600">json</span>()
+    <span className="text-gray-500">)</span>
+    <br/>
+
+    &nbsp;&nbsp;.<span className="text-blue-600">then</span>
+    <span className="text-gray-500">(</span>
+    data =&gt; <span className="text-blue-600">console</span>.<span className="text-blue-600">log</span>(data)
+    <span className="text-gray-500">);</span>
+  </code>
+</pre>
       </div>
 
       {/* Best Practices */}

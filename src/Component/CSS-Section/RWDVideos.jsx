@@ -24,55 +24,66 @@ const CssRWDVideos = () => {
       <h1 className="text-2xl">Using The width Property</h1>
       <p>Setting the <span className="text-red-400 bg-gray-50 px-1">width</span> property to 100% makes the video player responsive, allowing it to scale up or down.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 p-4 rounded-lg">
-        <span className="text-red-700">video</span>{" "}
-        <span className="text-gray-400">{"{"}</span><br/>{"   "}
-        <span className="text-red-400">width</span>
-        <span className="text-gray-400">:</span>{" "}
-        <span className="text-blue-400">100%</span>
-        <span className="text-gray-400">;</span><br/>{"   "}
-        <span className="text-red-400">height</span>
-        <span className="text-gray-400">:</span>{" "}
-        <span className="text-blue-400">auto</span>
-        <span className="text-gray-400">;</span><br/>
-        <span className="text-gray-400">{"}"}</span>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">video</span>{" "}
+    <span className="text-red-500">{'{'}</span>
+    <br />
 
+    &nbsp;&nbsp;<span className="text-red-500">width</span>:{" "}
+    <span className="text-green-700">100%</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">height</span>:{" "}
+    <span className="text-green-700">auto</span>;
+    <br />
+
+    <span className="text-red-500">{'}'}</span>
+  </code>
+</pre>
       <p>The previous example allows the video player to enlarge past its original dimensions. Using <span className="text-red-400 bg-gray-50 px-1">max-width</span> can often provide a better solution.</p>
 
       <h1 className="text-2xl">Using The max-width Property</h1>
       <p>With <span className="text-red-400 bg-gray-50 px-1">max-width</span> at 100%, the video player will scale down if necessary, but won’t scale up beyond its original dimensions.</p>
       <h1 className="text-2xl">Example</h1>
-       <pre className="bg-gray-900 p-4 rounded-lg">
-        <span className="text-red-700">video</span>{" "}
-        <span className="text-gray-400">{"{"}</span><br/>{"   "}
-        <span className="text-red-400">max-width</span>
-        <span className="text-gray-400">:</span>{" "}
-        <span className="text-blue-400">100%</span>
-        <span className="text-gray-400">;</span><br/>{"   "}
-        <span className="text-red-400">height</span>
-        <span className="text-gray-400">:</span>{" "}
-        <span className="text-blue-400">auto</span>
-        <span className="text-gray-400">;</span><br/>
-        <span className="text-gray-400">{"}"}</span>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">video</span>{" "}
+    <span className="text-red-500">{'{'}</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">max-width</span>:{" "}
+    <span className="text-green-700">100%</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">height</span>:{" "}
+    <span className="text-green-700">auto</span>;
+    <br />
+
+    <span className="text-red-500">{'}'}</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">Add a Video to the Example Web Page</h1>
       <p>The video on our example page will be scaled to always cover the full available space.</p>
       <h1 className="text-2xl">Exampple</h1>
-      <pre className="bg-gray-900 p-4 rounded-lg">
-        <span className="text-red-700">video</span>{" "}
-        <span className="text-gray-400">{"{"}</span><br/>{"   "}
-        <span className="text-red-400">width</span>
-        <span className="text-gray-400">:</span>{" "}
-        <span className="text-blue-400">100%</span>
-        <span className="text-gray-400">;</span><br/>{"   "}
-        <span className="text-red-400">height</span>
-        <span className="text-gray-400">:</span>{" "}
-        <span className="text-blue-400">auto</span>
-        <span className="text-gray-400">;</span><br/>
-        <span className="text-gray-400">{"}"}</span>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">video</span>{" "}
+    <span className="text-red-500">{'{'}</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">width</span>:{" "}
+    <span className="text-green-700">100%</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">height</span>:{" "}
+    <span className="text-green-700">auto</span>;
+    <br />
+
+    <span className="text-red-500">{'}'}</span>
+  </code>
+</pre>
 
 
       {/* Explanation */}

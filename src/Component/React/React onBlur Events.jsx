@@ -11,11 +11,15 @@ const ReactonBlur = () => {
             <p>The onBlur event in React is a synthetic event that fires when an element loses focus. It is commonly applied to form elements, including inputs, text areas, and buttons, to handle cases where users shift their focus by clicking outside the element or navigating through the page using the keyboard.</p>
             
 			<h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-			<pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-				<code>
-					{`<Element onBlur={handleBlur} />`}
-				</code>
-			</pre>
+		<pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-pink-600">&lt;Element</span>{" "}
+    <span className="text-purple-600">onBlur</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{handleBlur}`}</span>{" "}
+    <span className="text-pink-600">/&gt;</span>
+  </code>
+</pre>
 
 			<ul className="list-[square] space-y-1 mt-5">
 				<li><span className="font-semibold">{'<Element>'}</span>: The React component or HTML element (such as an input or textarea) whose focus change you want to monitor.</li>
@@ -32,36 +36,103 @@ const ReactonBlur = () => {
 
 			<h1 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Handling the onBlur Event</h1>
             <p>In React, the onBlur event fires when an element loses focus. Developers commonly use this event to execute tasks after user interaction with an input field, including form validation, interface updates, and data persistence.</p>
-            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-				<code>
-					{`import React, { useState } from 'react';
+          <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-purple-600">import</span>{" "}
+    React, {"{"} <span className="text-blue-600">useState</span> {"}"}{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"react"</span>;
+    {"\n\n"}
 
-function App() {
-    const [value, setValue] = useState('');
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-blue-600">App</span>
+    <span className="text-gray-800">() {"{"}</span>{"\n\n"}
 
-    const handleBlur = () => {
-        console.log('Input blurred');
-    };
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-gray-800">[</span>
+    <span className="text-blue-600">value</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">setValue</span>
+    <span className="text-gray-800">] = </span>
+    <span className="text-yellow-600">useState</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">""</span>
+    <span className="text-gray-800">);</span>
+    {"\n\n"}
 
-    return (
-        <form action="">
-            <label htmlFor="">Name:</label>
-            <input
-                type="text"
-                value={value}
-                placeholder='Write Your Name'
-                onChange={
-                    (e) => 
-                    setValue(e.target.value)}
-                onBlur={handleBlur}
-            />
-        </form>
-    );
-}
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-yellow-600">handleBlur</span>{" "}
+    <span className="text-gray-800">= () =&gt; {"{"}</span>{"\n"}
+    {"    "}
+    <span className="text-yellow-600">console</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">log</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">"Input blurred"</span>
+    <span className="text-gray-800">);</span>{"\n"}
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>;
+    {"\n\n"}
 
-export default App;`}
-				</code>
-			</pre>
+    {"  "}
+    <span className="text-purple-600">return</span>{" ("}{"\n"}
+
+    {"    "}
+    <span className="text-pink-600">&lt;form action=""&gt;</span>{"\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;label</span>{" "}
+    <span className="text-purple-600">htmlFor</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">""</span>
+    <span className="text-pink-600">&gt;</span>
+    Name:
+    <span className="text-pink-600">&lt;/label&gt;</span>{"\n\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;input</span>{"\n"}
+
+    {"        "}
+    <span className="text-purple-600">type</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"text"</span>{"\n"}
+
+    {"        "}
+    <span className="text-purple-600">value</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{value}`}</span>{"\n"}
+
+    {"        "}
+    <span className="text-purple-600">placeholder</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">'Write Your Name'</span>{"\n"}
+
+    {"        "}
+    <span className="text-purple-600">onChange</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{(e) => setValue(e.target.value)}`}</span>{"\n"}
+
+    {"        "}
+    <span className="text-purple-600">onBlur</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{handleBlur}`}</span>{"\n"}
+
+    {"      "}
+    <span className="text-pink-600">/&gt;</span>{"\n"}
+
+    {"    "}
+    <span className="text-pink-600">&lt;/form&gt;</span>{"\n"}
+
+    {"  "}){";"}{"\n"}
+    <span className="text-gray-800">{"}"}</span>
+    {"\n\n"}
+
+    <span className="text-purple-600">export default</span>{" "}
+    <span className="text-blue-600">App</span>;
+  </code>
+</pre>
 
 			<ul className="list-[square] space-y-1 mt-5">
 				<li>A React component that uses the useState hook to manage a controlled input field.</li>
@@ -72,169 +143,560 @@ export default App;`}
 
 			<h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Preventing Default Behavior</h2>
              <p>There are cases where preventing default behaviors triggered by the onBlur event is necessary, such as avoiding unexpected focus or UI updates. In React, the onSubmit event is commonly used in forms to block the browser’s default submission behavior. Using <span className="text-red-400">event.preventDefault()</span> ensures the page does not reload, allowing form submission to be handled programmatically.</p>
-            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-				<code>
-					{`import React, { useState } from "react";
+           <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-purple-600">import</span>{" "}
+    React, {"{"} <span className="text-blue-600">useState</span> {"}"}{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"react"</span>;
+    {"\n\n"}
 
-function PreventDefault() {
-    const [value, setValue] = useState("");
-    const [message, setMessage] = useState("");
-    
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        if (!value.trim()) {
-            setMessage("Please enter something in the input field!");
-        } else {
-            setMessage(\`Form submitted successfully with value: \${value}\`);
-        }
-    };
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-blue-600">PreventDefault</span>
+    <span className="text-gray-800">() {"{"}</span>{"\n\n"}
 
-    const handleChange = (event) => {
-        setValue(event.target.value);
-        setMessage(""); 
-    };
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-gray-800">[</span>
+    <span className="text-blue-600">value</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">setValue</span>
+    <span className="text-gray-800">] = </span>
+    <span className="text-yellow-600">useState</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">""</span>
+    <span className="text-gray-800">);</span>
+    {"\n"}
 
-    return (
-        <div>
-            <h2>Form with Prevented Default Submission</h2>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Enter Text:
-                    <input
-                        type="text"
-                        value={value}
-                        onChange={handleChange}
-                        placeholder="Type something"
-                    />
-                </label>
-                <button type="submit">Submit</button>
-            </form>
+    {"  "}
+    <span className="text-gray-800">[</span>
+    <span className="text-blue-600">message</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">setMessage</span>
+    <span className="text-gray-800">] = </span>
+    <span className="text-yellow-600">useState</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">""</span>
+    <span className="text-gray-800">);</span>
+    {"\n\n"}
 
-            {/* Display the message based on form submission */}
-            {message && <p>{message}</p>}
-        </div>
-    );
-}
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-yellow-600">handleSubmit</span>{" "}
+    <span className="text-gray-800">= (event) =&gt; {"{"}</span>{"\n"}
+    {"    "}
+    <span className="text-blue-600">event</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-yellow-600">preventDefault</span>
+    <span className="text-gray-800">();</span>{"\n\n"}
 
-export default PreventDefault;`}
-				</code>
-			</pre>
+    {"    "}
+    <span className="text-purple-600">if</span>{" "}
+    <span className="text-gray-800">(!</span>
+    <span className="text-blue-600">value</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-yellow-600">trim</span>
+    <span className="text-gray-800">()) {"{"}</span>{"\n"}
+    {"      "}
+    <span className="text-yellow-600">setMessage</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">"Please enter something in the input field!"</span>
+    <span className="text-gray-800">);</span>{"\n"}
+    {"    "}
+    <span className="text-gray-800">{"}"} </span>
+    <span className="text-purple-600">else</span>{" {"}{"\n"}
+    {"      "}
+    <span className="text-yellow-600">setMessage</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">`Form submitted successfully with value: `</span>
+    <span className="text-gray-800"> + value);</span>{"\n"}
+    {"    "}
+    <span className="text-gray-800">{"}"}</span>{"\n"}
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>;
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-yellow-600">handleChange</span>{" "}
+    <span className="text-gray-800">= (event) =&gt; {"{"}</span>{"\n"}
+    {"    "}
+    <span className="text-yellow-600">setValue</span>
+    <span className="text-gray-800">(event.target.value);</span>{"\n"}
+    {"    "}
+    <span className="text-yellow-600">setMessage</span>
+    <span className="text-gray-800">("");</span>{"\n"}
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>;
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-purple-600">return</span>{" ("}{"\n"}
+
+    {"    "}
+    <span className="text-pink-600">&lt;div&gt;</span>{"\n"}
+    {"      "}
+    <span className="text-pink-600">&lt;h2&gt;</span>
+    Form with Prevented Default Submission
+    <span className="text-pink-600">&lt;/h2&gt;</span>{"\n\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;form</span>{" "}
+    <span className="text-purple-600">onSubmit</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{handleSubmit}`}</span>
+    <span className="text-pink-600">&gt;</span>{"\n"}
+
+    {"        "}
+    <span className="text-pink-600">&lt;label&gt;</span>{"\n"}
+
+    {"          "}Enter Text:
+    {"\n"}
+
+    {"          "}
+    <span className="text-pink-600">&lt;input</span>{"\n"}
+
+    {"            "}
+    <span className="text-purple-600">type</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"text"</span>{"\n"}
+
+    {"            "}
+    <span className="text-purple-600">value</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{value}`}</span>{"\n"}
+
+    {"            "}
+    <span className="text-purple-600">onChange</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{handleChange}`}</span>{"\n"}
+
+    {"            "}
+    <span className="text-purple-600">placeholder</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"Type something"</span>{"\n"}
+
+    {"          "}
+    <span className="text-pink-600">/&gt;</span>{"\n"}
+
+    {"        "}
+    <span className="text-pink-600">&lt;/label&gt;</span>{"\n"}
+
+    {"        "}
+    <span className="text-pink-600">&lt;button</span>{" "}
+    <span className="text-purple-600">type</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"submit"</span>
+    <span className="text-pink-600">&gt;</span>
+    Submit
+    <span className="text-pink-600">&lt;/button&gt;</span>{"\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;/form&gt;</span>{"\n\n"}
+
+    {"      "}
+    <span className="text-gray-500">{`{/* Display the message based on form submission */}`}</span>
+    {"\n"}
+
+    {"      "}
+    <span className="text-gray-800">{`{message && <p>{message}</p>}`}</span>
+    {"\n"}
+
+    {"    "}
+    <span className="text-pink-600">&lt;/div&gt;</span>{"\n"}
+
+    {"  "}){";"}{"\n"}
+    <span className="text-gray-800">{"}"}</span>
+    {"\n\n"}
+
+    <span className="text-purple-600">export default</span>{" "}
+    <span className="text-blue-600">PreventDefault</span>;
+  </code>
+</pre>
         
 		<p className="mt-5">This React component stops the form from reloading the page on submission by using event.preventDefault(). It checks the input field when the form is submitted, showing an error message if it’s empty or a success message with the entered value. The input is controlled with state, and the message is cleared as soon as the user starts typing.</p>
 			
 			<h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Accessing the Event Object</h2>
             <p>In React, the onBlur event handler receives an event object that contains details about the focus change. This object lets you access information like which element lost focus, the previous element, and other related data.</p>
-            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-				<code>
-					{`import React, { useState } from "react";
+         <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-purple-600">import</span>{" "}
+    React, {"{"} <span className="text-blue-600">useState</span> {"}"}{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"react"</span>;
+    {"\n\n"}
 
-function AccessEvent() {
-    const [value, setValue] = useState("");
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-blue-600">AccessEvent</span>
+    <span className="text-gray-800">() {"{"}</span>{"\n\n"}
 
-    const handleChange = (event) => {
-        console.log("Event Object:", event); 
-        console.log("Input Value:", event.target.value); 
-        setValue(event.target.value); 
-    };
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-gray-800">[</span>
+    <span className="text-blue-600">value</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">setValue</span>
+    <span className="text-gray-800">] = </span>
+    <span className="text-yellow-600">useState</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">""</span>
+    <span className="text-gray-800">);</span>
+    {"\n\n"}
 
-    return (
-        <div>
-            <h2>Access Event Object Example</h2>
-            <input
-                type="text"
-                value={value}
-                onChange={handleChange} 
-                placeholder="Type something"
-            />
-            <p>Input Value: {value}</p>
-        </div>
-    );
-}
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-yellow-600">handleChange</span>{" "}
+    <span className="text-gray-800">= (event) =&gt; {"{"}</span>{"\n"}
 
-export default AccessEvent;`}
-				</code>
-			</pre>
+    {"    "}
+    <span className="text-yellow-600">console</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">log</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">"Event Object:"</span>
+    <span className="text-gray-800">, event);</span>{"\n"}
+
+    {"    "}
+    <span className="text-yellow-600">console</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-blue-600">log</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">"Input Value:"</span>
+    <span className="text-gray-800">, event.target.value);</span>{"\n"}
+
+    {"    "}
+    <span className="text-yellow-600">setValue</span>
+    <span className="text-gray-800">(event.target.value);</span>{"\n"}
+
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>;
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-purple-600">return</span>{" ("}{"\n"}
+
+    {"    "}
+    <span className="text-pink-600">&lt;div&gt;</span>{"\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;h2&gt;</span>
+    Access Event Object Example
+    <span className="text-pink-600">&lt;/h2&gt;</span>{"\n\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;input</span>{"\n"}
+
+    {"        "}
+    <span className="text-purple-600">type</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"text"</span>{"\n"}
+
+    {"        "}
+    <span className="text-purple-600">value</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{value}`}</span>{"\n"}
+
+    {"        "}
+    <span className="text-purple-600">onChange</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{handleChange}`}</span>{"\n"}
+
+    {"        "}
+    <span className="text-purple-600">placeholder</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"Type something"</span>{"\n"}
+
+    {"      "}
+    <span className="text-pink-600">/&gt;</span>{"\n\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;p&gt;</span>
+    Input Value: {"{"}
+    <span className="text-blue-600">value</span>
+    {"}"}
+    <span className="text-pink-600">&lt;/p&gt;</span>{"\n"}
+
+    {"    "}
+    <span className="text-pink-600">&lt;/div&gt;</span>{"\n"}
+
+    {"  "}){";"}{"\n"}
+    <span className="text-gray-800">{"}"}</span>
+    {"\n\n"}
+
+    <span className="text-purple-600">export default</span>{" "}
+    <span className="text-blue-600">AccessEvent</span>;
+  </code>
+</pre>
 
 			<p className="mt-5">The component captures and logs the event object and input value each time the user types. The handleChange function updates the component state using event.target.value and records the event details. The current value of the input is rendered below the input field.</p>
            
 		   <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Using onBlur for Focus Validation</h2>
            <p>One typical application of the onBlur event is focus-based validation. This enables developers to verify user input, such as validating an email address, once the user moves focus away from the input field.</p>
-           <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-			<code>
-				{`import React, { useState } from "react";
+         <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-purple-600">import</span>{" "}
+    React, {"{"} <span className="text-blue-600">useState</span> {"}"}{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"react"</span>;
+    {"\n\n"}
 
-function FocusValidation() {
-    const [email, setEmail] = useState("");
-    const [error, setError] = useState("");
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-blue-600">FocusValidation</span>
+    <span className="text-gray-800">() {"{"}</span>{"\n\n"}
 
-    const handleBlur = () => {
-        const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-        if (!regex.test(email)) {
-            setError("Please enter a valid email.");
-        } else {
-            setError("");
-        }
-    };
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-gray-800">[</span>
+    <span className="text-blue-600">email</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">setEmail</span>
+    <span className="text-gray-800">] = </span>
+    <span className="text-yellow-600">useState</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">""</span>
+    <span className="text-gray-800">);</span>
+    {"\n"}
 
-    const handleChange = (event) => {
-        setEmail(event.target.value);
-    };
+    {"  "}
+    <span className="text-gray-800">[</span>
+    <span className="text-blue-600">error</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">setError</span>
+    <span className="text-gray-800">] = </span>
+    <span className="text-yellow-600">useState</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">""</span>
+    <span className="text-gray-800">);</span>
+    {"\n\n"}
 
-    return (
-        <div>
-            <input
-                type="email"
-                value={email}
-                onChange={handleChange}
-                onBlur={handleBlur}
-            />
-            {error && <p style={{ color: "red" }}>{error}</p>}
-        </div>
-    );
-}
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-yellow-600">handleBlur</span>{" "}
+    <span className="text-gray-800">= () =&gt; {"{"}</span>{"\n"}
 
-export default FocusValidation;`}
-			</code>
-		   </pre>
+    {"    "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-blue-600">regex</span>{" "}
+    <span className="text-gray-800">= </span>
+    <span className="text-orange-500">/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$/</span>;
+    {"\n\n"}
+
+    {"    "}
+    <span className="text-purple-600">if</span>{" "}
+    <span className="text-gray-800">(!</span>
+    <span className="text-blue-600">regex</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-yellow-600">test</span>
+    <span className="text-gray-800">(email)) {"{"}</span>{"\n"}
+
+    {"      "}
+    <span className="text-yellow-600">setError</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">"Please enter a valid email."</span>
+    <span className="text-gray-800">);</span>{"\n"}
+
+    {"    "}
+    <span className="text-gray-800">{"}"} </span>
+    <span className="text-purple-600">else</span>{" {"}{"\n"}
+
+    {"      "}
+    <span className="text-yellow-600">setError</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">""</span>
+    <span className="text-gray-800">);</span>{"\n"}
+
+    {"    "}
+    <span className="text-gray-800">{"}"}</span>{"\n"}
+
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>;
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-yellow-600">handleChange</span>{" "}
+    <span className="text-gray-800">= (event) =&gt; {"{"}</span>{"\n"}
+    {"    "}
+    <span className="text-yellow-600">setEmail</span>
+    <span className="text-gray-800">(event.target.value);</span>{"\n"}
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>;
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-purple-600">return</span>{" ("}{"\n"}
+
+    {"    "}
+    <span className="text-pink-600">&lt;div&gt;</span>{"\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;input</span>{"\n"}
+
+    {"        "}
+    <span className="text-purple-600">type</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"email"</span>{"\n"}
+
+    {"        "}
+    <span className="text-purple-600">value</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{email}`}</span>{"\n"}
+
+    {"        "}
+    <span className="text-purple-600">onChange</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{handleChange}`}</span>{"\n"}
+
+    {"        "}
+    <span className="text-purple-600">onBlur</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{handleBlur}`}</span>{"\n"}
+
+    {"      "}
+    <span className="text-pink-600">/&gt;</span>{"\n\n"}
+
+    {"      "}
+    <span className="text-gray-800">{`{error && <p style={{ color: "red" }}>{error}</p>}`}</span>
+    {"\n"}
+
+    {"    "}
+    <span className="text-pink-600">&lt;/div&gt;</span>{"\n"}
+
+    {"  "}){";"}{"\n"}
+    <span className="text-gray-800">{"}"}</span>
+    {"\n\n"}
+
+    <span className="text-purple-600">export default</span>{" "}
+    <span className="text-blue-600">FocusValidation</span>;
+  </code>
+</pre>
+
 
 		   <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Using onBlur for Toggling Edit Modes</h2>
             <p>The onBlur event can be used to switch a UI component between edit and view modes. When a user finishes editing a field, it automatically returns to display mode.</p>
-            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-				<code>
-					{`import React, { useState } from "react";
+           <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-purple-600">import</span>{" "}
+    React, {"{"} <span className="text-blue-600">useState</span> {"}"}{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"react"</span>;
+    {"\n\n"}
 
-function ToggleEdit() {
-    const [isEditing, setIsEditing] = useState(false);
-    const [value, setValue] = useState("Click to Edit");
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-blue-600">ToggleEdit</span>
+    <span className="text-gray-800">() {"{"}</span>{"\n\n"}
 
-    const handleBlur = () => {
-        setIsEditing(false); 
-    };
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-gray-800">[</span>
+    <span className="text-blue-600">isEditing</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">setIsEditing</span>
+    <span className="text-gray-800">] = </span>
+    <span className="text-yellow-600">useState</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-blue-600">false</span>
+    <span className="text-gray-800">);</span>
+    {"\n"}
 
-    const handleChange = (event) => {
-        setValue(event.target.value);
-    };
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-gray-800">[</span>
+    <span className="text-blue-600">value</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">setValue</span>
+    <span className="text-gray-800">] = </span>
+    <span className="text-yellow-600">useState</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">"Click to Edit"</span>
+    <span className="text-gray-800">);</span>
+    {"\n\n"}
 
-    return (
-        <div>
-            {isEditing ? (
-                <input
-                    type="text"
-                    value={value}
-                    onChange={handleChange}
-                    onBlur={handleBlur} 
-                />
-            ) : (
-                <p onClick={() => setIsEditing(true)}>{value}</p> 
-            )}
-        </div>
-    );
-}
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-yellow-600">handleBlur</span>{" "}
+    <span className="text-gray-800">= () =&gt; {"{"}</span>{"\n"}
+    {"    "}
+    <span className="text-yellow-600">setIsEditing</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-blue-600">false</span>
+    <span className="text-gray-800">);</span>{"\n"}
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>;
+    {"\n\n"}
 
-export default ToggleEdit;`}
-				</code>
-			</pre>
-         
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-yellow-600">handleChange</span>{" "}
+    <span className="text-gray-800">= (event) =&gt; {"{"}</span>{"\n"}
+    {"    "}
+    <span className="text-yellow-600">setValue</span>
+    <span className="text-gray-800">(event.target.value);</span>{"\n"}
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>;
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-purple-600">return</span>{" ("}{"\n"}
+
+    {"    "}
+    <span className="text-pink-600">&lt;div&gt;</span>{"\n"}
+
+    {"      "}
+    <span className="text-gray-800">{`{isEditing ? (`}</span>{"\n"}
+
+    {"        "}
+    <span className="text-pink-600">&lt;input</span>{"\n"}
+
+    {"          "}
+    <span className="text-purple-600">type</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"text"</span>{"\n"}
+
+    {"          "}
+    <span className="text-purple-600">value</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{value}`}</span>{"\n"}
+
+    {"          "}
+    <span className="text-purple-600">onChange</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{handleChange}`}</span>{"\n"}
+
+    {"          "}
+    <span className="text-purple-600">onBlur</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{handleBlur}`}</span>{"\n"}
+
+    {"        "}
+    <span className="text-pink-600">/&gt;</span>{"\n"}
+
+    {"      "}
+    <span className="text-gray-800">{`) : (`}</span>{"\n"}
+
+    {"        "}
+    <span className="text-pink-600">&lt;p</span>{" "}
+    <span className="text-purple-600">onClick</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`() => setIsEditing(true)`}</span>
+    <span className="text-pink-600">&gt;</span>
+    {"{value}"}
+    <span className="text-pink-600">&lt;/p&gt;</span>{"\n"}
+
+    {"      "}
+    <span className="text-gray-800">{"})"}</span>{"\n"}
+
+    {"    "}
+    <span className="text-pink-600">&lt;/div&gt;</span>{"\n"}
+
+    {"  "}){";"}{"\n"}
+    <span className="text-gray-800">{"}"}</span>
+    {"\n\n"}
+
+    <span className="text-purple-600">export default</span>{" "}
+    <span className="text-blue-600">ToggleEdit</span>;
+  </code>
+</pre>
 		 <ul className="list-[square] space-y-1 mt-5 mb-3">
 			<li><span className="font-semibold">Edit Mode</span>: If the user clicks the text, it becomes an input box so they can change the text. The onBlur event automatically exits edit mode when they click away.</li>
 			<li><span className="font-semibold">Display Mode</span>: The text shows as a paragraph. Clicking it lets the user edit it.</li>

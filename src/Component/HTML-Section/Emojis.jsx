@@ -15,9 +15,17 @@ const HTMLEmoji = () => {
         <p className="leading-relaxed mb-3">
           You can simply paste emojis into your HTML text. Browsers and devices render the platform’s emoji style.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-          <code>{<p>Welcome to CodePoint! 🎉</p>}</code>
-        </pre>
+        <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-5 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Welcome to CodePoint! </span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed mb-3">
           Emojis are Unicode characters. They work in any place where text is allowed.
         </p>
@@ -29,9 +37,20 @@ const HTMLEmoji = () => {
         <p className="leading-relaxed mb-3">
           Instead of pasting the emoji, you can use its Unicode reference with an HTML numeric entity.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-          <code>{'<p>Happy coding! &#x1F600; <!-- grinning face --> </p>'}</code>
-        </pre>
+  <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-5 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Happy coding! &#x1F600; </span>
+    <span className="text-gray-500">&lt;!--</span>
+    <span className="text-gray-700"> grinning face </span>
+    <span className="text-gray-500">--&gt;</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed mb-3">
           Decimal form also works: <code>&amp;#128512;</code> is the same as <code>&amp;#x1F600;</code>.
         </p>
@@ -43,11 +62,27 @@ const HTMLEmoji = () => {
         <p className="leading-relaxed mb-3">
           Screen readers may not interpret emojis consistently. Use <code>aria-label</code> or visually hidden text to clarify meaning when the emoji conveys important information.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-          <code>{`<p>
-  Success! <span role="img" aria-label="check mark">✅</span>
-</p>`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-5 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-700">Success! </span>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">span</span>
+    <span className="text-gray-700"> role="img" aria-label="check mark"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">✅</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">span</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed mb-3">
           If the emoji is purely decorative, you can omit the label or use <code>aria-hidden="true"</code>.
         </p>
@@ -59,11 +94,24 @@ const HTMLEmoji = () => {
         <p className="leading-relaxed mb-3">
           Some emojis have text vs emoji presentation variants. You can force emoji style using a variation selector:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-          <code>{`❤\uFE0F  <!-- heart with emoji presentation -->
-# vs
-❤\uFE0E  <!-- heart with text presentation -->`}</code>
-        </pre>
+
+        <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-5 text-sm">
+  <code>
+    <span className="text-red-700">❤</span>
+    <span className="text-gray-700">\uFE0F </span>
+    <span className="text-gray-500">&lt;!--</span>
+    <span className="text-gray-700"> heart with emoji presentation </span>
+    <span className="text-gray-500">--&gt;</span><br/>
+
+    <span className="text-gray-700"># vs</span><br/>
+
+    <span className="text-green-700">❤</span>
+    <span className="text-gray-700">\uFE0E</span>
+    <span className="text-gray-500">&lt;!--</span>
+    <span className="text-gray-700"> heart with text presentation </span>
+    <span className="text-gray-500">--&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed mb-3">
           Most modern platforms show emoji style by default, but variation selectors give control when needed.
         </p>
@@ -78,12 +126,36 @@ const HTMLEmoji = () => {
         <p className="leading-relaxed mb-3">
           Example fallback pattern:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-          <code>{`<p>
-  <span aria-hidden="true">🔥</span>
-  <span className="sr-only">Fire</span>
-</p>`}</code>
-        </pre>
+    
+        <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-5 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">span</span>
+    <span className="text-gray-700"> aria-hidden="true"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">🔥</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">span</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">span</span>
+    <span className="text-gray-700"> className="sr-only"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Fire</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">span</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Common Emoji Examples */}

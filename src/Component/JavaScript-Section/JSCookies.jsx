@@ -43,7 +43,7 @@ const JSCookies = () => {
       </ul>
       <p className="mt-5">Cookies are stored as name-value pairs, for example:</p>
      
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className=" bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`username = John Doe`}
       </code>
@@ -53,21 +53,21 @@ const JSCookies = () => {
      
      <h1 className="lg:text-2xl text-xl text-gray-800 font-semibold mt-10 mb-3">Create a Cookie with JavaScript</h1>
      <p>JavaScript can manage cookies—creating, reading, and deleting them—using the <span className="text-red-400">document.cookie</span> property. A cookie can be created like this:</p>
-     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`document.cookie = "username=John Doe";`}
       </code>
      </pre>
 
      <p className="mt-5">You can set an expiry date in UTC; otherwise, the cookie is removed when the browser closes.</p>
-     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC";`}
       </code>
      </pre>
 
      <p className="mt-5">The path parameter lets you define which path the cookie belongs to, otherwise it defaults to the current page.</p>
-    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";`}
       </code>
@@ -75,7 +75,7 @@ const JSCookies = () => {
 
     <h1 className="lg:text-2xl text-xl text-gray-800 font-semibold mt-10 mb-3">Read a Cookie with JavaScript</h1>
     <p>Using JavaScript, you can read cookies like this:</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`let x = document.cookie;`}
       </code>
@@ -83,7 +83,7 @@ const JSCookies = () => {
 
     <h1 className="lg:text-2xl text-xl mt-5 mb-3">Change a Cookie with JavaScript</h1>
   <p>Cookies can be updated in JavaScript just like they are created.</p>
-  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`document.cookie = "username=John Smith; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";`}
     </code>
@@ -93,7 +93,7 @@ const JSCookies = () => {
 
   <h1 className="lg:text-2xl text-xl text-gray-800 font-semibold mt-10 mb-3">Delete a Cookie with JavaScript</h1>
   <p>Deleting a cookie is easy. You don’t need to provide a value; just set its expires parameter to a past date.</p>
-  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";`}
     </code>
@@ -143,7 +143,7 @@ const JSCookies = () => {
   <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">A Function to Set a Cookie</h1>
   <p>First, we define a function that saves the visitor’s name in a cookie.</p>
   <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5 mb-5">
+  <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5 mb-5">
     <code>
       {`function setCookie(cname, cvalue, exdays) {
   const d = new Date();
@@ -160,7 +160,7 @@ const JSCookies = () => {
 <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">A Function to Get a Cookie</h1>
  <p>After that, we write a function to get the value of a particular cookie.</p>
  <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
- <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5 mb-5">
+ <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5 mb-5">
   <code>
     {`function getCookie(cname) {
   let name = cname + "=";
@@ -188,7 +188,7 @@ const JSCookies = () => {
  <p className="mb-3">Finally, we define a function to check whether a cookie exists. If it does, a greeting is displayed.</p>
  <p>If the cookie doesn’t exist, a prompt box appears asking for the user’s name, and the setCookie function saves it for 365 days.</p>
  <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
- <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+ <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
   <code>
     {`function checkCookie() {
   let username = getCookie("username");
@@ -206,7 +206,7 @@ const JSCookies = () => {
 
  <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">All Together Now</h1>
  <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
- <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+ <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
   <code>
     {`function setCookie(cname, cvalue, exdays) {
   const d = new Date();

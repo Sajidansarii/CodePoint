@@ -60,34 +60,43 @@ const CssImageSprites = () => {
 
       {/* Pure CSS version (copy/paste) */}
       <h2 className="text-xl font-semibold mt-4 mb-2">CSS Setup (Sprite + Positions)</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-{`.icon {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background-repeat: no-repeat;
-  background-image: url('sprite.png');  your sprite
-  }
-  
-  Each class shifts the window over the sprite 
-  
-  .icon-star  { background-position:   0    0; }
-  .icon-user  { background-position: -32px  0; }
-  .icon-check { background-position: -64px  0; }`}
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-500">.icon</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">inline-block</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">32px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">32px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">background-repeat</span>: <span className="text-green-700">no-repeat</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">background-image</span>: <span className="text-green-700">url('sprite.png')</span>; <span className="text-gray-500">/* your sprite */</span><br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-gray-500">/* Each class shifts the window over the sprite */</span><br /><br />
+
+    <span className="text-blue-500">.icon-star</span> <span>{'{'}</span> <span className="text-red-500">background-position</span>: <span className="text-green-700">0 0</span>; <span>{'}'}</span><br />
+    <span className="text-blue-500">.icon-user</span> <span>{'{'}</span> <span className="text-red-500">background-position</span>: <span className="text-green-700">-32px 0</span>; <span>{'}'}</span><br />
+    <span className="text-blue-500">.icon-check</span> <span>{'{'}</span> <span className="text-red-500">background-position</span>: <span className="text-green-700">-64px 0</span>; <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
+
 
       {/* HTML usage snippet */}
       <h2 className="text-xl font-semibold mt-4 mb-2">HTML Usage</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-{`<button class="btn">
-  <span class="icon icon-star" aria-hidden="true"></span>
-  Favorite
-  </button>`}
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-500">&lt;button</span>
+    <span className="text-red-500"> class</span>=<span className="text-green-700">"btn"</span>
+    <span className="text-blue-500">&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;span</span>
+    <span className="text-red-500"> class</span>=<span className="text-green-700">"icon icon-star"</span>
+    <span className="text-red-500"> aria-hidden</span>=<span className="text-green-700">"true"</span>
+    <span className="text-blue-500">&gt;&lt;/span&gt;</span><br />
+
+    &nbsp;&nbsp;Favorite<br />
+
+    <span className="text-blue-500">&lt;/button&gt;</span>
   </code>
-      </pre>
+</pre>
 
       {/* Retina tip */}
       <h2 className="text-xl font-semibold mt-4 mb-2">Retina/HiDPI Tip (2× Sprites)</h2>
@@ -95,19 +104,29 @@ const CssImageSprites = () => {
         If you export a sprite at <strong>2× size</strong> (e.g., each icon 64×64),
         set <code>background-size</code> to the <em>logical</em> size so icons remain crisp:
       </p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-{`.icon {
-  width: 32px; height: 32px;
-  background-image: url('sprite@2x.png');  double-size sprite 
-  background-size: 96px 32px; total logical size (3 * 32)
-  }
-  
-  .icon-star  { background-position:    0     0; }
-  .icon-user  { background-position:  -32px   0; }
-  .icon-check { background-position:  -64px   0; }`}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-500">.icon</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">32px</span>;
+    <span className="text-red-500">height</span>: <span className="text-green-700">32px</span>;<br />
+
+    &nbsp;&nbsp;<span className="text-red-500">background-image</span>: <span className="text-green-700">url('sprite@2x.png')</span>;
+    <span className="text-gray-500">/* double-size sprite */</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">background-size</span>: <span className="text-green-700">96px 32px</span>;
+    <span className="text-gray-500">/* total logical size (3 * 32) */</span><br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">.icon-star</span> <span>{'{'}</span>
+    <span className="text-red-500">background-position</span>: <span className="text-green-700">0 0</span>; <span>{'}'}</span><br />
+
+    <span className="text-blue-500">.icon-user</span> <span>{'{'}</span>
+    <span className="text-red-500">background-position</span>: <span className="text-green-700">-32px 0</span>; <span>{'}'}</span><br />
+
+    <span className="text-blue-500">.icon-check</span> <span>{'{'}</span>
+    <span className="text-red-500">background-position</span>: <span className="text-green-700">-64px 0</span>; <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
 
       {/* Best practices */}
       <h2 className="text-xl font-semibold mt-4 mb-2">Best Practices</h2>

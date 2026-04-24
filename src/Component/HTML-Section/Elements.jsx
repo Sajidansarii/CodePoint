@@ -98,13 +98,41 @@ const HTMLElements = () => {
         <p className="text-gray-700 leading-relaxed mb-3">
           You can put elements inside other elements. This is called <strong>nesting</strong>. Always make sure your tags are properly closed and nested to avoid rendering problems.
         </p>
+<pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-5 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">div</span>
+    <span className="text-gray-500">&gt;</span><br/>
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg  overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-            {`<div>
-  <h2>Title</h2>
-  <p>This is a <strong>nested</strong> paragraph.</p>
-</div>`}
-        </pre>
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">h2</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Title</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">h2</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">This is a </span>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">strong</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">nested</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">strong</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700"> paragraph.</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">div</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
 
         <p className="mb-3">
           <strong>Good:</strong> Block inside block, inline inside block.  

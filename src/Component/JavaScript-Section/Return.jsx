@@ -10,7 +10,7 @@ const JSReturn = () => {
       </p>
       <h2 className="text-2xl font-semibold text-gray-700 mb-5">Syntax</h2>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-4">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`
 return value;
@@ -20,7 +20,7 @@ return value;
 
       <h2 className="text-2xl font-semibold text-gray-800 mt-10">Example</h2>
       <h3 className="text-xl text-gray-800 mt-4">Return the value of PI</h3>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`
  function myFunction() {
@@ -34,7 +34,7 @@ return value;
 
       <h2 className="text-2xl font-semibold text-gray-800 mt-10">Example</h2>
       <h3 className="text-xl text-gray-800 mt-4">Exiting a Function Early</h3>
-      <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`
  function checkNumber(num) {

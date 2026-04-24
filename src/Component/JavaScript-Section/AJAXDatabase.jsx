@@ -16,22 +16,53 @@ const JSAJAXDatabase = () => {
       <p className="mt-5">The onchange event triggers the showCustomer() function when a user selects a customer from the dropdown.</p>
      
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">showCustomer</h1>
-     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-      <code>
-        {`function showCustomer(str) {
-  if (str == "") {
-    document.getElementById("txtHint").innerHTML = "";
-    return;
-  }
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("txtHint").innerHTML = this.responseText;
-  }
-  xhttp.open("GET", "getcustomer.php?q="+str);
-  xhttp.send();
-}`}
-      </code>
-     </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">function</span> showCustomer(str) {"{"}
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">if</span> (str == <span className="text-green-700">""</span>) {"{"}
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;document.getElementById(
+    <span className="text-green-700">"txtHint"</span>
+    ).innerHTML = <span className="text-green-700">""</span>;
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">return</span>;
+    <br />
+
+    &nbsp;&nbsp;{"}"}
+
+    <br /><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">const</span> xhttp = new XMLHttpRequest();
+    <br />
+
+    &nbsp;&nbsp;xhttp.onload = function() {"{"}
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;document.getElementById(
+    <span className="text-green-700">"txtHint"</span>
+    ).innerHTML = this.responseText;
+    <br />
+
+    &nbsp;&nbsp;{"}"}
+
+    <br /><br />
+
+    &nbsp;&nbsp;xhttp.open(
+    <span className="text-green-700">"GET"</span>,
+    <span className="text-green-700">"getcustomer.php?q="</span> + str
+    );
+    <br />
+
+    &nbsp;&nbsp;xhttp.send();
+    <br />
+
+    {"}"}
+  </code>
+</pre>
 
      <p className="mt-10">Here’s what the <span className="text-red-400">showCustomer()</span> function does:</p>
      <ul className="list-[square] list-inside mt-5 space-y-1">
@@ -44,67 +75,89 @@ const JSAJAXDatabase = () => {
 
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The AJAX Server Page</h1>
     <p>The JavaScript above calls a server page named <span className="text-red-400">getcustomer.php</span>, which executes a database query and returns the result in an HTML table.</p>
-    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-      <code>
-        {`<?php
-$mysqli = new mysqli("servername", "username", "password", "dbname");
-if($mysqli->connect_error) {
-  exit('Could not connect');
-}
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;?php</span>
+    <br />
 
-$sql = "SELECT customerid, companyname, contactname, address, city, postalcode, country
-FROM customers WHERE customerid = ?";
+    $mysqli = new mysqli(
+    <span className="text-green-700">"servername"</span>,
+    <span className="text-green-700">"username"</span>,
+    <span className="text-green-700">"password"</span>,
+    <span className="text-green-700">"dbname"</span>
+    );
+    <br />
 
-$stmt = $mysqli->prepare($sql);
-$stmt->bind_param("s", $_GET['q']);
-$stmt->execute();
-$stmt->store_result();
-$stmt->bind_result($cid, $cname, $name, $adr, $city, $pcode, $country);
-$stmt->fetch();
-$stmt->close();
+    <span className="text-red-500">if</span> ($mysqli-&gt;connect_error) {"{"}
+    <br />
 
-echo "<table>";
-echo "<tr>";
-echo "<th>CustomerID</th>";
-echo "<td>" . $cid . "</td>";
-echo "<th>CompanyName</th>";
-echo "<td>" . $cname . "</td>";
-echo "<th>ContactName</th>";
-echo "<td>" . $name . "</td>";
-echo "<th>Address</th>";
-echo "<td>" . $adr . "</td>";
-echo "<th>City</th>";
-echo "<td>" . $city . "</td>";
-echo "<th>PostalCode</th>";
-echo "<td>" . $pcode . "</td>";
-echo "<th>Country</th>";
-echo "<td>" . $country . "</td>";
-echo "</tr>";
-echo "</table>";
-?>
-`}
-      </code>
-    </pre>
+    &nbsp;&nbsp;exit(<span className="text-green-700">'Could not connect'</span>);
+    <br />
 
+    {"}"}
 
+    <br /><br />
 
+    $sql = <span className="text-green-700">"SELECT customerid, companyname, contactname, address, city, postalcode, country FROM customers WHERE customerid = ?"</span>;
+    <br /><br />
 
+    $stmt = $mysqli-&gt;prepare($sql);
+    <br />
+    $stmt-&gt;bind_param(<span className="text-green-700">"s"</span>, $_GET[<span className="text-green-700">'q'</span>]);
+    <br />
+    $stmt-&gt;execute();
+    <br />
+    $stmt-&gt;store_result();
+    <br />
+    $stmt-&gt;bind_result($cid, $cname, $name, $adr, $city, $pcode, $country);
+    <br />
+    $stmt-&gt;fetch();
+    <br />
+    $stmt-&gt;close();
 
+    <br /><br />
 
+    echo <span className="text-green-700">"&lt;table&gt;"</span>;
+    <br />
+    echo <span className="text-green-700">"&lt;tr&gt;"</span>;
+    <br />
 
+    echo <span className="text-green-700">"&lt;th&gt;CustomerID&lt;/th&gt;"</span>;
+    echo <span className="text-green-700">"&lt;td&gt;"</span> . $cid . <span className="text-green-700">"&lt;/td&gt;"</span>;
+    <br />
 
+    echo <span className="text-green-700">"&lt;th&gt;CompanyName&lt;/th&gt;"</span>;
+    echo <span className="text-green-700">"&lt;td&gt;"</span> . $cname . <span className="text-green-700">"&lt;/td&gt;"</span>;
+    <br />
 
+    echo <span className="text-green-700">"&lt;th&gt;ContactName&lt;/th&gt;"</span>;
+    echo <span className="text-green-700">"&lt;td&gt;"</span> . $name . <span className="text-green-700">"&lt;/td&gt;"</span>;
+    <br />
 
+    echo <span className="text-green-700">"&lt;th&gt;Address&lt;/th&gt;"</span>;
+    echo <span className="text-green-700">"&lt;td&gt;"</span> . $adr . <span className="text-green-700">"&lt;/td&gt;"</span>;
+    <br />
 
+    echo <span className="text-green-700">"&lt;th&gt;City&lt;/th&gt;"</span>;
+    echo <span className="text-green-700">"&lt;td&gt;"</span> . $city . <span className="text-green-700">"&lt;/td&gt;"</span>;
+    <br />
 
+    echo <span className="text-green-700">"&lt;th&gt;PostalCode&lt;/th&gt;"</span>;
+    echo <span className="text-green-700">"&lt;td&gt;"</span> . $pcode . <span className="text-green-700">"&lt;/td&gt;"</span>;
+    <br />
 
+    echo <span className="text-green-700">"&lt;th&gt;Country&lt;/th&gt;"</span>;
+    echo <span className="text-green-700">"&lt;td&gt;"</span> . $country . <span className="text-green-700">"&lt;/td&gt;"</span>;
+    <br />
 
+    echo <span className="text-green-700">"&lt;/tr&gt;"</span>;
+    echo <span className="text-green-700">"&lt;/table&gt;"</span>;
 
+    <br />
 
-
-
-
-
+    <span className="text-blue-600">?&gt;</span>
+  </code>
+</pre>
 
     </div>
   );

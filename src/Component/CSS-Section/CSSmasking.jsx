@@ -24,11 +24,22 @@ const CssMasking = () => {
        In CSS, the mask shorthand property defines how an image mask is applied to an element, encapsulating detailed behavior through associated longhand properties.
       </p>
       <h1 className="text-2xl">Syntax</h1>
-      <pre className="bg-gray-900 text-green-400 p-4 max-w-full rounded-lg overflow-auto">
-        <code>
-          {`mask: <mask-image> <mask-mode> <mask-composite> <mask-clip> <mask-origin> <mask-position> <mask-repeat> <mask-size> | initial | inherit;`}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-red-500">mask</span>:
+    <span className="text-blue-600">
+      <span className="text-gray-500">&lt;</span>mask-image<span className="text-gray-500">&gt;</span>{" "}
+      <span className="text-gray-500">&lt;</span>mask-mode<span className="text-gray-500">&gt;</span>{" "}
+      <span className="text-gray-500">&lt;</span>mask-composite<span className="text-gray-500">&gt;</span>{" "}
+      <span className="text-gray-500">&lt;</span>mask-clip<span className="text-gray-500">&gt;</span>{" "}
+      <span className="text-gray-500">&lt;</span>mask-origin<span className="text-gray-500">&gt;</span>{" "}
+      <span className="text-gray-500">&lt;</span>mask-position<span className="text-gray-500">&gt;</span>{" "}
+      <span className="text-gray-500">&lt;</span>mask-repeat<span className="text-gray-500">&gt;</span>{" "}
+      <span className="text-gray-500">&lt;</span>mask-size<span className="text-gray-500">&gt;</span>
+    </span>
+    <span className="text-green-700"> | initial | inherit</span>;
+  </code>
+</pre>
 
       {/* Example 1: Basic Masking with PNG */}
       <div className="bg-white p-6 space-y-4">
@@ -39,17 +50,24 @@ const CssMasking = () => {
           We can use the mask-image property to treat the transparent parts of a PNG image as a mask.
         </p>
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`div {
-  mask-image: url('mask-shape.png');
-  -webkit-mask-image: url('mask-shape.png'); /* Safari ke liye */
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: cover;
-  }`}
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">div</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">mask-image</span>: <span className="text-green-700">url('mask-shape.png')</span>;<br />
+
+    &nbsp;&nbsp;<span className="text-red-500">-webkit-mask-image</span>: <span className="text-green-700">url('mask-shape.png')</span>;
+    <span className="text-gray-500"> /* Safari ke liye */</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">mask-repeat</span>: <span className="text-green-700">no-repeat</span>;<br />
+
+    &nbsp;&nbsp;<span className="text-red-500">mask-position</span>: <span className="text-green-700">center</span>;<br />
+
+    &nbsp;&nbsp;<span className="text-red-500">mask-size</span>: <span className="text-green-700">cover</span>;<br />
+
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
 
           <p>
             Here, if you use a PNG image as a mask (like a star shape), the content will only be visible inside that shape.</p>
@@ -60,14 +78,17 @@ const CssMasking = () => {
         <h2 className="font-semibold text-xl">2. Gradient Mask</h2>
         <p>By using a gradient as a mask, we can create smooth fade effects.</p>
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`div {
-  mask-image: linear-gradient(to right, black, transparent);
-  -webkit-mask-image: linear-gradient(to right, black, transparent);
-  }`}
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">div</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">mask-image</span>: <span className="text-green-700">linear-gradient(to right, black, transparent)</span>;<br />
+
+    &nbsp;&nbsp;<span className="text-red-500">-webkit-mask-image</span>: <span className="text-green-700">linear-gradient(to right, black, transparent)</span>;<br />
+
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
 
           <p>
              In this example, the element will appear solid on the left side and become transparent on the right side.
@@ -81,16 +102,21 @@ const CssMasking = () => {
           We can use an SVG shape as a mask.
         </p>
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`div {
-  mask-image: url('shape.svg');
-  -webkit-mask-image: url('shape.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  }`}
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">div</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">mask-image</span>: <span className="text-green-700">url('shape.svg')</span>;<br />
+
+    &nbsp;&nbsp;<span className="text-red-500">-webkit-mask-image</span>: <span className="text-green-700">url('shape.svg')</span>;<br />
+
+    &nbsp;&nbsp;<span className="text-red-500">mask-repeat</span>: <span className="text-green-700">no-repeat</span>;<br />
+
+    &nbsp;&nbsp;<span className="text-red-500">mask-position</span>: <span className="text-green-700">center</span>;<br />
+
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
 
           <p>
             If you provide a circle or polygon SVG, the content will be visible only inside that shape.

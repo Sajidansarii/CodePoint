@@ -16,8 +16,8 @@ const HTMLTextFormatting = () => {
           <p className="leading-relaxed mb-1">
             <code>&lt;strong&gt;</code> indicates important text (semantic), while <code>&lt;b&gt;</code> makes text bold without extra meaning.
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-            {<p>This is <strong>important</strong> and this is <b>bold</b>.</p>}\
+          <pre className="bg-gray-200 p-4 rounded-lg  overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
+            {<p>This is <strong>important</strong> and this is <b>bold</b>.</p>}
           </pre>
         </div>
 
@@ -26,7 +26,7 @@ const HTMLTextFormatting = () => {
           <p className="leading-relaxed mb-3">
             <code>&lt;em&gt;</code> adds emphasis (semantic), and <code>&lt;i&gt;</code> italicizes text without semantic emphasis.
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+          <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
             <code>{<p>This is <em>emphasized</em> and this is <i>italic</i>.</p>}</code>
           </pre>
         </div>
@@ -36,7 +36,7 @@ const HTMLTextFormatting = () => {
           <p className="leading-relaxed mb-3">
             Renders text smaller, often used for fine print or disclaimers.
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+          <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
             {<p>Terms and conditions <small>apply</small>.</p>}
           </pre>
         </div>
@@ -46,7 +46,7 @@ const HTMLTextFormatting = () => {
           <p className="leading-relaxed mb-3">
             Highlights text as if marked with a highlighter.
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+          <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
             {<p>Please read the <mark>important</mark> note.</p>}
           </pre>
         </div>
@@ -56,9 +56,25 @@ const HTMLTextFormatting = () => {
           <p className="leading-relaxed mb-3">
             Displays inline code or code-like text in a monospace font.
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-            <code>{<p>Use <code>console.log()</code> to print to console.</p>}</code>
-          </pre>
+        <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-5 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Use </span>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">code</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">console.log()</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">code</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700"> to print to console.</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         </div>
 
         <div className="mb-4">
@@ -66,9 +82,33 @@ const HTMLTextFormatting = () => {
           <p className="leading-relaxed mb-3">
             <code>&lt;sub&gt;</code> is subscript and <code>&lt;sup&gt;</code> is superscript (used in formulas, footnotes).
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-            {<p>H<sub>2</sub>O is water, E = mc<sup>2</sup>.</p>}
-          </pre>
+         <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-5 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">H</span>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">sub</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">2</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">sub</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">O is water, E = mc</span>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">sup</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">2</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">sup</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">.</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         </div>
       </section>
 

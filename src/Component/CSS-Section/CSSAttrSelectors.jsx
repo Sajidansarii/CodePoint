@@ -8,30 +8,36 @@ const CssAttrSelectors = () => {
       </p>
       <p>As below you can see how to select an HTML element based on attribute in CSS.</p>
 
-        <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg mt-5">
-          <pre>
-            <code>
-              {`       a[href]{
-               background-color:Blue;
-                }`}
-            </code>
-          </pre>
-        </div>
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">a[href]</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">Blue</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
         <p className="mt-10">Attribute selector is type of selector in CSS. To know all the selector in CSS</p>
         <p className="text-2xl mt-5 mb-3">CSS [attribute="value"] Selector</p>
         <p>The [attribute="value"] selector is used to select elements with a specific attribute with an exact value.</p>
         <p>The following example selects all {'<a>'} elements with a target="_blank" attribute:</p>
 
-        <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg mt-3">
-          <pre>
-            <code>
-              {`          a[target="_blank"]{
-                              background-color:red;
-                              }`}
-            </code>
-          </pre>
-        </div>
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">a[target="_blank"]</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">red</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
      <p className="text-2xl mt-10">example:</p>
       <div className="space-y-3">
@@ -48,43 +54,34 @@ const CssAttrSelectors = () => {
       </div>
 
       CSS
-      <div className="bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
-        <pre>
-          <code>
-            {`
-        /* Style input[type="text"] */
-        input[type="text"] {
-          border: 2px solid green;
-        }
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">input[type="text"]</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">2px solid green</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-        /* Style input[type="password"] */
-        input[type="password"] {
-          border: 2px solid red;
-        }
+    <span className="text-blue-500">input[type="password"]</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">2px solid red</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-        /* Links starting with https */
-        a[href^="https"] {
-          color: green;
-        }
+    <span className="text-blue-500">a[href^="https"]</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">green</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-        /* Links starting with http */
-        a[href^="http:"] {
-          color: red;
-        }
+    <span className="text-blue-500">a[href^="http:"]</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">red</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-        /* Images ending with .png */
-        img[src$=".png"] {
-          border: 2px solid purple;
-        }
+    <span className="text-blue-500">img[src$=".png"]</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">2px solid purple</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-        /* Images ending with .jpg */
-        img[src$=".jpg"] {
-          border: 2px solid orange;
-        }
-      `}
-          </code>
-        </pre>
-      </div>
+    <span className="text-blue-500">img[src$=".jpg"]</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">2px solid orange</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
+
       <p className="text-2xl mt-10">All CSS Attribute Selectors</p>
       <div className=" border">
         <p className="text-xl bg-gray-100">[attribute]</p>

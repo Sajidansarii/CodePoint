@@ -29,96 +29,223 @@ const ReactRouter = () => {
         
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">1. BrowserRouter and HashRouter</h2>
         <p>BrowserRouter synchronizes the UI with the URL through the HTML5 History API, while HashRouter uses window.location.hash for routing.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`<BrowserRouter>
-    (/* Your routes go here */}
-</BrowserRouter>`}
-        </code>
-       </pre>
+      <pre className="bg-gray-100 p-4 rounded-lg mt-5 overflow-x-auto text-gray-800">
+  <code>
+    <span className="text-pink-600">&lt;BrowserRouter&gt;</span>{"\n"}
+    {"    "}
+    <span className="text-gray-500">{/* Your routes go here */}</span>{"\n"}
+    <span className="text-pink-600">&lt;/BrowserRouter&gt;</span>
+  </code>
+</pre>
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">2. Routes and Route</h2>
        <p>Routes act as a container for all route definitions, while Route specifies an individual path and the component that should be rendered.</p>
-       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`<Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/about" element={<About />} />
-</Routes>`}
-        </code>
-       </pre>
+     <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-pink-600">&lt;Routes&gt;</span>{"\n"}
+    {"  "}
+    <span className="text-pink-600">&lt;Route</span>{" "}
+    <span className="text-purple-600">path</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/"</span>{" "}
+    <span className="text-purple-600">element</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-pink-600">{`<Home />`}</span>
+    <span className="text-pink-600"> /&gt;</span>{"\n"}
+    
+    {"  "}
+    <span className="text-pink-600">&lt;Route</span>{" "}
+    <span className="text-purple-600">path</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/about"</span>{" "}
+    <span className="text-purple-600">element</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-pink-600">{`<About />`}</span>
+    <span className="text-pink-600"> /&gt;</span>{"\n"}
+    
+    <span className="text-pink-600">&lt;/Routes&gt;</span>
+  </code>
+</pre>
 
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">3. Link and NavLink</h2>
        <p>Link enables navigation within the app, whereas NavLink extends it by applying styles when the route is active.</p>
-       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`<nav>
-    <NavLink to="/" activeClassName="active">Home</NavLink>
-    <Link to="/about">About</Link>
-</nav>`}
-        </code>
-       </pre>
+     <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-pink-600">&lt;nav&gt;</span>{"\n"}
+    {"  "}
+    <span className="text-pink-600">&lt;NavLink</span>{" "}
+    <span className="text-purple-600">to</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/"</span>{" "}
+    <span className="text-purple-600">activeClassName</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"active"</span>
+    <span className="text-pink-600">&gt;</span>
+    <span className="text-gray-800">Home</span>
+    <span className="text-pink-600">&lt;/NavLink&gt;</span>{"\n"}
+
+    {"  "}
+    <span className="text-pink-600">&lt;Link</span>{" "}
+    <span className="text-purple-600">to</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"/about"</span>
+    <span className="text-pink-600">&gt;</span>
+    <span className="text-gray-800">About</span>
+    <span className="text-pink-600">&lt;/Link&gt;</span>{"\n"}
+
+    <span className="text-pink-600">&lt;/nav&gt;</span>
+  </code>
+</pre>
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Create Routes using React Router</h2>
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">1: Initialize React Project</h2>
        <p>To create a new React app, run the command below.</p>
-       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`npm create vite@latest react-router-example
-cd react-router-example`}
-        </code>
-       </pre>
+     <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-green-600">npm</span>{" "}
+    <span className="text-blue-600">create vite@latest</span>{" "}
+    <span className="text-gray-900">react-router-example</span>{"\n"}
+    <span className="text-green-600">cd</span>{" "}
+    <span className="text-gray-900">react-router-example</span>
+  </code>
+</pre>
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">2: Install React Router</h2>
        <p>Install React Router by executing the following command in your application’s terminal.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`npm install react-router-dom@6`}
-        </code>
-       </pre>
+    <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-green-600">npm</span>{" "}
+    <span className="text-blue-600">install</span>{" "}
+    <span className="text-purple-600">react-router-dom@6</span>
+  </code>
+</pre>
 
        <p className="mt-5">Depenedencies list after installing react router</p>
-       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`"dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.24.1",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-}`}
-        </code>
-       </pre>
+   <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-pink-600">"dependencies"</span>
+    <span className="text-gray-800">: {"{"}</span>{"\n"}
+    
+    {"  "}
+    <span className="text-orange-600">"@testing-library/jest-dom"</span>
+    <span className="text-gray-800">: </span>
+    <span className="text-green-600">"^5.17.0"</span>
+    <span className="text-gray-800">,</span>{"\n"}
+
+    {"  "}
+    <span className="text-orange-600">"@testing-library/react"</span>
+    <span className="text-gray-800">: </span>
+    <span className="text-green-600">"^13.4.0"</span>
+    <span className="text-gray-800">,</span>{"\n"}
+
+    {"  "}
+    <span className="text-orange-600">"@testing-library/user-event"</span>
+    <span className="text-gray-800">: </span>
+    <span className="text-green-600">"^13.5.0"</span>
+    <span className="text-gray-800">,</span>{"\n"}
+
+    {"  "}
+    <span className="text-orange-600">"react"</span>
+    <span className="text-gray-800">: </span>
+    <span className="text-green-600">"^18.3.1"</span>
+    <span className="text-gray-800">,</span>{"\n"}
+
+    {"  "}
+    <span className="text-orange-600">"react-dom"</span>
+    <span className="text-gray-800">: </span>
+    <span className="text-green-600">"^18.3.1"</span>
+    <span className="text-gray-800">,</span>{"\n"}
+
+    {"  "}
+    <span className="text-orange-600">"react-router-dom"</span>
+    <span className="text-gray-800">: </span>
+    <span className="text-green-600">"^6.24.1"</span>
+    <span className="text-gray-800">,</span>{"\n"}
+
+    {"  "}
+    <span className="text-orange-600">"react-scripts"</span>
+    <span className="text-gray-800">: </span>
+    <span className="text-green-600">"5.0.1"</span>
+    <span className="text-gray-800">,</span>{"\n"}
+
+    {"  "}
+    <span className="text-orange-600">"web-vitals"</span>
+    <span className="text-gray-800">: </span>
+    <span className="text-green-600">"^2.1.4"</span>{"\n"}
+
+    <span className="text-gray-800">{"}"}</span>
+  </code>
+</pre>
 
        <p className="mt-10">This demonstrates the implementation of fundamental routing in a React application.</p>
-       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`// src/index.js
+      <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-gray-500">// src/index.js</span>{"\n\n"}
 
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">React</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"react"</span>;
+    {"\n"}
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>
-);`}
-        </code>
-       </pre>
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">ReactDOM</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"react-dom/client"</span>;
+    {"\n"}
+
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-orange-500">"./index.css"</span>;
+    {"\n"}
+
+    <span className="text-purple-600">import</span>{" "}
+    <span className="text-gray-900">App</span>{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"./App"</span>;
+    {"\n\n"}
+
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-blue-600">root</span>{" "}
+    <span className="text-gray-800">=</span>{" "}
+    <span className="text-gray-900">ReactDOM</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-yellow-600">createRoot</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-gray-900">document</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-yellow-600">getElementById</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">"root"</span>
+    <span className="text-gray-800">));</span>
+    {"\n"}
+
+    <span className="text-blue-600">root</span>
+    <span className="text-gray-800">.</span>
+    <span className="text-yellow-600">render</span>
+    <span className="text-gray-800">(</span>
+    {"\n"}
+    {"  "}
+    <span className="text-pink-600">&lt;React.StrictMode&gt;</span>
+    {"\n"}
+    {"    "}
+    <span className="text-pink-600">&lt;App /&gt;</span>
+    {"\n"}
+    {"  "}
+    <span className="text-pink-600">&lt;/React.StrictMode&gt;</span>
+    {"\n"}
+    <span className="text-gray-800">);</span>
+  </code>
+</pre>
 
        <h2 className="text-xl text-gray-800 font-semibold mt-5"> 3: Run the application using the following command.</h2>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-            {`npm run dev`}
-        </code>
-       </pre>
+     <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-green-600">npm</span>{" "}
+    <span className="text-blue-600">run</span>{" "}
+    <span className="text-purple-600">dev</span>
+  </code>
+</pre>
 
        <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Uses of React Router</h2>
        <ul className="list-[square] space-y-1 mt-5">

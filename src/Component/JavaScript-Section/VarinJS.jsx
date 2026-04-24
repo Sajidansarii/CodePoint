@@ -18,7 +18,7 @@ const JSVar = () => {
 
       <h1 className="text-2xl mt-10 mb-2">Syntax</h1>
       <p className="mb-5">The <span className="text-red-400 bg-gray-50 px-1">var</span> keyword is used to declare a variable. Follow the syntax shown below.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`var identifier;
 var identifier = value;`}
       </pre>
@@ -49,7 +49,7 @@ var identifier = value;`}
         <li><span className="text-red-400 bg-gray-50 px-1">str1</span> holds a string,</li>
         <li>and <span className="text-red-400 bg-gray-50 px-1">bool</span> holds a boolean.</li>
       </ul> 
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-10">
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           {`<html>
 <body>
    <div id = "output1"> </div>
@@ -74,7 +74,7 @@ true`}
         </pre>
         
         <p className="mt-10 mb-5">Use let to assign 5 to x and 6 to y, and display x + y:</p>
-        <pre className="text-green-400 bg-gray-900 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           {`let x = 5;
 let y = 6;
 document.getElementById("demo").innerHTML = x + y;`}
@@ -82,7 +82,7 @@ document.getElementById("demo").innerHTML = x + y;`}
 
          <p className="mt-10">Declare many variables in one statement.</p>
          <p>Start the statement with var and separate the variables by comma:</p>
-         <pre className="text-green-400 bg-gray-900 rounded-lg p-4 mt-5">
+         <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           {`var lastName = "Doe",
 age = 30,
 job = "carpenter";`}
@@ -91,14 +91,14 @@ job = "carpenter";`}
         
         <p className="mt-10">Declare many variables in one statement.</p>
         <p>Start the statement with let and separate the variables by comma:</p>
-         <pre className="text-green-400 bg-gray-900 rounded-lg p-4 mt-5">
+         <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           {`let lastName = "Doe",
 age = 30,
 job = "carpenter";`}
         </pre>
 
         <p className="mt-10">Using var in a loop:</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           {` let text = "";
 for (var i = 0; i < 5; i++) {
   text += i + "<br>";
@@ -106,34 +106,12 @@ for (var i = 0; i < 5; i++) {
         </pre>
 
         <p className="mt-10">Using let in a loop:</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           {`let text = "";
 for (let i = 0; i < 5; i++) {
   text += i + "<br>";
 }`}
         </pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
       <p className="text-gray-700 mt-10">

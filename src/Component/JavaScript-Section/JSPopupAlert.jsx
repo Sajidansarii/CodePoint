@@ -42,7 +42,7 @@ const JSAlertBOM = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Alert Box</h1>
       <p>An alert box is used to ensure the user sees important information, requiring them to click "OK" to continue.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`window.alert("sometext");`}
         </code>
@@ -50,7 +50,7 @@ const JSAlertBOM = () => {
 
       <p className="mt-5">The <span className="text-red-400">window.alert()</span> method can be accessed without using the window prefix.</p>
       <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`alert("You pressed alert button!");`}
         </code>
@@ -71,7 +71,7 @@ const JSAlertBOM = () => {
       <p className="mb-3">A <span className="text-red-400">confirm</span> box is used when you want the user to approve or reject something, requiring them to click "OK" or "Cancel" to continue.</p>
       <p>Clicking "OK" returns true, while clicking "Cancel" returns false.</p>
        <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`window.confirm("sometext");`}
         </code>
@@ -79,7 +79,7 @@ const JSAlertBOM = () => {
 
       <p className="mt-10">The <span className="text-red-400">window.confirm()</span> method can be called without using the window prefix.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`if (confirm("Press a button!")) {
   txt = "You pressed OK!";
@@ -106,14 +106,14 @@ const JSAlertBOM = () => {
       <p className="mb-3">A <span className="text-red-400">prompt</span> box is used when you want the user to provide input before proceeding, requiring them to click "OK" or "Cancel" after entering a value.</p>
       <p>Clicking "OK" returns the entered value, while clicking "Cancel" returns null.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`window.prompt("sometext","defaultText");`}
         </code>
       </pre>
    <p className="mt-5">You can use <span className="text-red-400">prompt()</span> directly instead of writing window.prompt().</p>
    <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`let person = prompt("Please enter your name", "Harry Potter");
 let text;
@@ -144,7 +144,7 @@ if (person == null || person == "") {
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Line Breaks</h1>
     <p>To create line breaks in a popup box, use \n.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`alert("Hello\\nHow are you?");`}
       </code>

@@ -22,13 +22,17 @@ const CssTransition = () => {
 
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">Syntax</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`selector {
-  transition: property duration timing-function delay;
-  }`}
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-400">selector</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-400">transition</span>: 
+    <span className="text-green-600"> property duration timing-function delay</span>;<br />
+
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
         <ul className="list-disc pl-6">
           <li>
             <strong>property</strong> → Which CSS property will be animated (for example: background-color, width).
@@ -62,21 +66,25 @@ const CssTransition = () => {
         <h2 className="text-xl font-semibold">
           1. Background Color Transition
         </h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`div {
-  width: 150px;
-  height: 150px;
-  background-color: blue;
-  transition: background-color 1s ease;
-  }
-  
-  div:hover {
-    background-color: red;
-    }`}
-    </code>
-        </pre>
-        <p>
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-400">div</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-400">width</span>: <span className="text-green-400">150px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">height</span>: <span className="text-green-400">150px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">background-color</span>: <span className="text-green-400">blue</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">transition</span>: <span className="text-green-400">background-color 1s ease</span>;<br />
+
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-400">div:hover</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-400">background-color</span>: <span className="text-green-400">red</span>;<br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+  <p>
           When the user hovers, the <code>background color</code> will smoothly change from blue to red.
         </p>
         <div className="flex justify-center">
@@ -87,20 +95,25 @@ const CssTransition = () => {
       {/* Example 2: Width Transition */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">2. Width Transition</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`div {
-  width: 100px;
-  height: 50px;
-  background-color: purple;
-  transition: width 0.5s ease-in-out;
-}
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-400">div</span> <span>{'{'}</span><br />
 
-div:hover {
-  width: 200px;
-  }`}
+    &nbsp;&nbsp;<span className="text-red-400">width</span>: <span className="text-green-400">100px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">height</span>: <span className="text-green-400">50px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">background-color</span>: <span className="text-green-400">purple</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">transition</span>: <span className="text-green-400">width 0.5s ease-in-out</span>;<br />
+
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-400">div:hover</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-400">width</span>: <span className="text-green-400">200px</span>;<br />
+
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
         <p className="text-gray-600">On hover, the width will smoothly increase from <code>100px</code>to <code>200px</code>.
         </p>
         <div className="flex justify-center">
@@ -111,21 +124,26 @@ div:hover {
       {/* Example 3: Multiple Properties */}
       <div className="bg-white p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">3. Multiple Properties</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`div {
-  width: 100px;
-  height: 100px;
-  background-color: green;
-  transition: width 1s, background-color 2s;
-  }
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-400">div</span> <span>{'{'}</span><br />
 
-  div:hover {
-    width: 200px;
-    background-color: orange;
-    }`}
-    </code>
-        </pre>
+    &nbsp;&nbsp;<span className="text-red-400">width</span>: <span className="text-green-400">100px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">height</span>: <span className="text-green-400">100px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">background-color</span>: <span className="text-green-400">green</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">transition</span>: <span className="text-green-400">width 1s, background-color 2s</span>;<br />
+
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-400">div:hover</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-400">width</span>: <span className="text-green-400">200px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-400">background-color</span>: <span className="text-green-400">orange</span>;<br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+
         <p className="text-gray-600">Here, the <code>width</code> will increase in 1 second, and the <code>background</code> color will change in 2 seconds.
         </p>
         <div className="flex justify-center">
@@ -147,15 +165,15 @@ div:hover {
         <p>The example below illustrates several commonly used speed curves for transitions.</p>
         <h1 className="text-2xl">Example</h1>
         <p>Available speed curve variations for transition effects:</p>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-            {`#div1 {transition-timing-function: linear;}
-#div2 {transition-timing-function: ease;}
-#div3 {transition-timing-function: ease-in;}
-#div4 {transition-timing-function: ease-out;}
-#div5 {transition-timing-function: ease-in-out;}`}
-          </code>
-        </pre>
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">#div1</span> <span>{'{'}</span> <span className="text-red-500">transition-timing-function</span>: <span className="text-green-700">linear</span>;<span>{'}'}</span><br />
+    <span className="text-blue-600">#div2</span> <span>{'{'}</span> <span className="text-red-500">transition-timing-function</span>: <span className="text-green-700">ease</span>;<span>{'}'}</span><br />
+    <span className="text-blue-600">#div3</span> <span>{'{'}</span> <span className="text-red-500">transition-timing-function</span>: <span className="text-green-700">ease-in</span>;<span>{'}'}</span><br />
+    <span className="text-blue-600">#div4</span> <span>{'{'}</span> <span className="text-red-500">transition-timing-function</span>: <span className="text-green-700">ease-out</span>;<span>{'}'}</span><br />
+    <span className="text-blue-600">#div5</span> <span>{'{'}</span> <span className="text-red-500">transition-timing-function</span>: <span className="text-green-700">ease-in-out</span>;<span>{'}'}</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">CSS Transition Delay</h1>
       <p>In CSS, <code>transition-delay</code> allows developers to delay the onset of a transition after the triggering event occurs.</p>
@@ -163,24 +181,29 @@ div:hover {
       <p>The transition in the following example is configured to begin after a 1-second delay.</p>
       <h1 className="text-2xl">Example</h1>
       <p>Add a 1 second delay before starting:</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`div {
-  transition-delay: 1s;
-}`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">div</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">transition-delay</span>: <span className="text-green-700">1s</span>;<br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">Transition + Transform</h1>
       <p>The following code sample integrates CSS transition and transform properties for a {'<div> '}element.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`div {
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
-}`}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">div</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">transition</span>: 
+    <span className="text-green-700">width 2s, height 2s, background-color 2s, transform 2s</span>;<br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">CSS Transition Properties</h1>
       <p>The subsequent table enumerates all the properties related to CSS transitions.</p>

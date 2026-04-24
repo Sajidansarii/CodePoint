@@ -8,11 +8,16 @@ export default function CssOutline() {
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>{`button {
-  outline: 3px dashed blue;
-}`}</code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">button</span> {'{'}
+    <br />
+    &nbsp;&nbsp;<span className="text-red-500">outline</span>:{" "}
+    <span className="text-green-700">3px dashed blue</span>;
+    <br />
+    {'}'}
+  </code>
+</pre>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Demo</h2>
       <div className="flex gap-6">

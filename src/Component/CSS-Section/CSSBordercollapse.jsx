@@ -14,13 +14,19 @@ const CSSBorderCollapse = () => {
       </p>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Syntax</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`table {
-  border-collapse: separate | collapse;
-}`}
-        </code>
-      </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-blue-500">table</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">border-collapse</span>
+    <span>: </span>
+    <span className="text-green-700">separate | collapse</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+
 
       <p className="text-gray-700 mb-4">
         - <code>separate</code> (default): Borders of table cells are separated
@@ -33,15 +39,29 @@ const CSSBorderCollapse = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 1: border-collapse: separate (default)
       </h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`table {
-  border: 2px solid black;
-  border-collapse: separate;
-  border-spacing: 10px;
-}`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-blue-500">table</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">border</span>
+    <span>: </span>
+    <span className="text-green-700">2px solid black</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">border-collapse</span>
+    <span>: </span>
+    <span className="text-green-700">separate</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">border-spacing</span>
+    <span>: </span>
+    <span className="text-green-700">10px</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+
       <table className="border-2 border-black border-separate border-spacing-4 mb-6">
         <thead>
           <tr>
@@ -65,14 +85,24 @@ const CSSBorderCollapse = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 2: border-collapse: collapse
       </h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`table {
-  border: 2px solid black;
-  border-collapse: collapse;
-}`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-blue-500">table</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">border</span>
+    <span>: </span>
+    <span className="text-green-700">2px solid black</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">border-collapse</span>
+    <span>: </span>
+    <span className="text-green-700">collapse</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+
       <table className="border-2 border-black border-collapse mb-6">
         <thead>
           <tr>

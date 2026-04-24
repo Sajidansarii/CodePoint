@@ -25,12 +25,25 @@ const HttpsMessages = () => {
         <li>Headers → Additional info about the request.</li>
         <li>Body → Data sent to the server (in POST, PUT, etc.).</li>
       </ul>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-        {`GET /secure-page.html HTTP/1.1
-Host: www.example.com
-User-Agent: Mozilla/5.0
-Accept: text/html`}
-      </pre>
+    <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-purple-600">GET</span>
+    <span className="text-blue-600"> /secure-page.html</span>
+    <span className="text-gray-500"> HTTP/1.1</span>
+    <br/>
+
+    <span className="text-red-500">Host</span>:
+    <span className="text-green-600"> www.example.com</span>
+    <br/>
+
+    <span className="text-red-500">User-Agent</span>:
+    <span className="text-green-600"> Mozilla/5.0</span>
+    <br/>
+
+    <span className="text-red-500">Accept</span>:
+    <span className="text-green-600"> text/html</span>
+  </code>
+</pre>
       <p className="italic mb-3">In HTTPS, this message is encrypted during transfer.</p>
 
       {/* Response Message */}
@@ -43,15 +56,57 @@ Accept: text/html`}
         <li>Headers → Info about the server and content.</li>
         <li>Body → The encrypted content returned.</li>
       </ul>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-        {`HTTP/1.1 200 OK
-Content-Type: text/html
-Content-Length: 150
-<html>
-<head><title>Secure Example</title></head>
-<body>Welcome to the secure page!</body>
-</html>`}
-      </pre>
+    <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">HTTP/1.1</span>
+    <span className="text-purple-600"> 200 OK</span>
+    <br/>
+
+    <span className="text-red-500">Content-Type</span>:
+    <span className="text-green-600"> text/html</span>
+    <br/>
+
+    <span className="text-red-500">Content-Length</span>:
+    <span className="text-green-600"> 150</span>
+    <br/>
+
+    {/* HTML starts */}
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">html</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">head</span>
+    <span className="text-gray-500">&gt;</span>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">title</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Secure Example</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">title</span>
+    <span className="text-gray-500">&gt;</span>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">head</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">body</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Welcome to the secure page!</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">body</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">html</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
       <p className="italic mb-4">Even this response is encrypted in HTTPS.</p>
 
       {/* Why Secure */}

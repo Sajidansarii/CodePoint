@@ -12,17 +12,18 @@ const CSSExamples = () => {
       {/* Example 1 */}
       <div className="mb-8">
         <h2 className="text-2xl mb-2">1. CSS Colors</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-          <code>
-{`p {
-  color: red;
-  }
-  
-  h1 {
-    color: blue;
-    }`}
-    </code>
-        </pre>
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-blue-500">p</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">red</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">h1</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">blue</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
+
         <p className="mb-2">Output:</p>
         <div className="border p-4 rounded">
           <h1 className="text-blue-400">This is Blue Heading</h1>
@@ -37,14 +38,15 @@ const CSSExamples = () => {
       {/* Example 2 */}
       <div className="mb-8">
         <h2 className="text-2xl mb-2">2. CSS Borders</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`div {
-  border: 2px solid green;
-  padding: 10px;
-  }`}
+        <pre className="bg-gray-200 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">div</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">2px solid green</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">10px</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
         <p className="mb-2">Output:</p>
         <div className="border-2 border-green-600 p-10 rounded">
           This box has a green border with padding.
@@ -58,14 +60,15 @@ const CSSExamples = () => {
       {/* Example 3 */}
       <div className="mb-8">
         <h2 className="text-2xl mb-2">3. CSS Background</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`div {
-  background-color: lightblue;
-  padding: 20px;
-  }`}
+        <pre className="bg-gray-200 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">div</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">lightblue</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">20px</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
         <p className="mb-2">Output:</p>
         <div className="p-20 rounded bg-[#90D5FF]">
           This div has a lightblue background.
@@ -78,14 +81,15 @@ const CSSExamples = () => {
       {/* Example 4 */}
       <div className="mb-8">
         <h2 className="text-2xl mb-2">4. CSS Text</h2>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`h2 {
-  text-align: center;
-  text-decoration: underline;
-  }`}
+       <pre className="bg-gray-200 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">h2</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">text-align</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-decoration</span>: <span className="text-green-700">underline</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
         <p className="mb-2">Output:</p>
         <h2 className="text-center underline">This is Underlined Center Text</h2>
         <p className="mt-2">

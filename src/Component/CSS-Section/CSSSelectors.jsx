@@ -146,7 +146,7 @@ const CssSelectors = () => {
               {item.selector}
             </h3>
             <p className="text-gray-700 mt-1">{item.description}</p>
-            <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+            <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
               <code>
               {item.example}
               </code>
@@ -158,25 +158,48 @@ const CssSelectors = () => {
       {/* Example Usage */}
       <div className="mt-8 bg-gray-100 p-4 rounded-lg">
         <h3 className="text-lg font-semibold mb-2">Example Usage:</h3>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`<div id="main">
-  <h1 class="highlight">Hello CSS</h1>
-  <p>This is a paragraph.</p>
-  <a href="#">Hover over me</a>
-  </div>`}
-  </code>
-        </pre>
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;div</span> <span className="text-red-500">id</span>=<span className="text-green-700">"main"</span><span className="text-blue-600">&gt;</span><br />
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">\
-          <code>
-{`* { margin: 0; padding: 0; }
-p { color: blue; }
-.highlight { background-color: yellow; }
-#main { border: 2px solid red; }
-a:hover { color: green; }`}
-</code>
-        </pre>
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;h1</span> <span className="text-red-500">class</span>=<span className="text-green-700">"highlight"</span><span className="text-blue-600">&gt;</span>
+    Hello CSS
+    <span className="text-blue-600">&lt;/h1&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;p&gt;</span>This is a paragraph.<span className="text-blue-600">&lt;/p&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;a</span> <span className="text-red-500">href</span>=<span className="text-green-700">"#"</span><span className="text-blue-600">&gt;</span>
+    Hover over me
+    <span className="text-blue-600">&lt;/a&gt;</span><br />
+
+    <span className="text-blue-600">&lt;/div&gt;</span>
+  </code>
+</pre>
+
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">*</span> <span>{'{'}</span>
+    <span className="text-red-500"> margin</span>: <span className="text-green-700">0</span>; 
+    <span className="text-red-500"> padding</span>: <span className="text-green-700">0</span>;
+    <span>{'}'}</span><br />
+
+    <span className="text-blue-600">p</span> <span>{'{'}</span>
+    <span className="text-red-500"> color</span>: <span className="text-green-700">blue</span>;
+    <span>{'}'}</span><br />
+
+    <span className="text-blue-600">.highlight</span> <span>{'{'}</span>
+    <span className="text-red-500"> background-color</span>: <span className="text-green-700">yellow</span>;
+    <span>{'}'}</span><br />
+
+    <span className="text-blue-600">#main</span> <span>{'{'}</span>
+    <span className="text-red-500"> border</span>: <span className="text-green-700">2px solid red</span>;
+    <span>{'}'}</span><br />
+
+    <span className="text-blue-600">a:hover</span> <span>{'{'}</span>
+    <span className="text-red-500"> color</span>: <span className="text-green-700">green</span>;
+    <span>{'}'}</span>
+  </code>
+</pre>
       </div>
 
       {/* Explanation */}

@@ -17,7 +17,7 @@ const CssLoaderDemo = () => {
       <ul className="list-[square] list-inside">
         <li>Initialize the HTML structure with a container {'<div>'}, embedding within it a child {'<div>'} to represent the loader <span className="ml-6">component.</span></li>
         <li>Specify <strong>width</strong> and <strong>height</strong> values for the loader container. Utilize flexbox properties to align the loader centrally.</li>
-        <li>To create a circular loader, specify dimensions for the element, apply a styled  <strong>border-top</strong>, and round the shape using a <span className="ml-6"><strong>border-radius</strong> of 50%.</span></li>
+        <li>To create a circular loader, specify dimensions for the element, apply a styled  <strong>border-top</strong>, and round the shape <span className="ml-6">using a<strong>border-radius</strong> of 50%.</span></li>
         <li>Utilize <strong>CSS animations</strong> to apply dynamic effects to the loader, such as rotation, scaling, or other transform-based <span className="ml-6">movements.</span></li>
         <li>Define the <strong>@keyframes</strong> block to precisely control the loader’s transformation over the animation duration.</li>
       </ul>
@@ -26,25 +26,27 @@ const CssLoaderDemo = () => {
       <h1 className="text-2xl">Example</h1>
       <p>Here’s an example of a CSS loader, similar to the loading animations you’ve probably encountered on many sites.</p>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <h3 className="font-semibold mt-0">CSS Code:</h3>
-          <code>
-{`/* Spinning Loader CSS */
-.loader-spin {
-  width: 64px;
-  height: 64px;
-  border: 6px solid #3b82f6;  /* Blue border */
-  border-top-color: transparent; /* Transparent top for gap effect */
-  border-radius: 50%;           /* Makes it circular */
-  animation: spin 1s linear infinite; /* Infinite rotation */
-}
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <h3 className="font-semibold mt-0">CSS Code:</h3>
 
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}`}
-</code>
-        </pre>
+  <code>
+    <span className="text-gray-500">/* Spinning Loader CSS */</span><br />
+
+    <span className="text-blue-600">.loader-spin</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">64px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">64px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">6px solid #3b82f6</span>; <span className="text-gray-500">/* Blue border */</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">border-top-color</span>: <span className="text-green-700">transparent</span>; <span className="text-gray-500">/* Transparent top for gap effect */</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">border-radius</span>: <span className="text-green-700">50%</span>; <span className="text-gray-500">/* Makes it circular */</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">animation</span>: <span className="text-green-700">spin 1s linear infinite</span>; <span className="text-gray-500">/* Infinite rotation */</span><br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">@keyframes spin</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">from</span> <span>{'{'}</span> <span className="text-red-500">transform</span>: <span className="text-green-700">rotate(0deg)</span>; <span>{'}'}</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">to</span> <span>{'{'}</span> <span className="text-red-500">transform</span>: <span className="text-green-700">rotate(360deg)</span>; <span>{'}'}</span><br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       {/* Example 1: Spinning Loader */}
       <div className="flex flex-col items-center justify-center space-y-4">
@@ -61,32 +63,34 @@ const CssLoaderDemo = () => {
         </p>
       </div>
 
-       <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <h3 className="font-semibold mt-2">CSS Code:</h3>
-        <code>
-{`/* Bouncing Dots CSS */
-.loader-dots {
-  display: flex;
-  gap: 8px;
-}
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <h3 className="font-semibold mt-2">CSS Code:</h3>
 
-.loader-dots div {
-  width: 16px;
-  height: 16px;
-  background-color: #3b82f6; /* Blue dots */
-  border-radius: 50%;
-  animation: bounce 0.6s infinite alternate;
-}
+  <code>
+    <span className="text-gray-500">/* Bouncing Dots CSS */</span><br />
 
-.loader-dots div:nth-child(2) { animation-delay: 0.2s; }
-.loader-dots div:nth-child(3) { animation-delay: 0.4s; }
+    <span className="text-blue-600">.loader-dots</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">gap</span>: <span className="text-green-700">8px</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-@keyframes bounce {
-  from { transform: translateY(0); }
-  to { transform: translateY(-16px); }
-}`}
-</code>
-        </pre>
+    <span className="text-blue-600">.loader-dots div</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">16px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">16px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#3b82f6</span>; <span className="text-gray-500">/* Blue dots */</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">border-radius</span>: <span className="text-green-700">50%</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">animation</span>: <span className="text-green-700">bounce 0.6s infinite alternate</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">.loader-dots div:nth-child(2)</span> <span>{'{'}</span> <span className="text-red-500">animation-delay</span>: <span className="text-green-700">0.2s</span>; <span>{'}'}</span><br />
+    <span className="text-blue-600">.loader-dots div:nth-child(3)</span> <span>{'{'}</span> <span className="text-red-500">animation-delay</span>: <span className="text-green-700">0.4s</span>; <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">@keyframes bounce</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">from</span> <span>{'{'}</span> <span className="text-red-500">transform</span>: <span className="text-green-700">translateY(0)</span>; <span>{'}'}</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">to</span> <span>{'{'}</span> <span className="text-red-500">transform</span>: <span className="text-green-700">translateY(-16px)</span>; <span>{'}'}</span><br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       {/* Example 2: Bouncing Dots Loader */}
       <div className="flex flex-col items-center justify-center space-y-4">

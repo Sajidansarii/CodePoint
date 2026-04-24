@@ -11,33 +11,38 @@ const JSBigInt = () => {
       </p>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-5">Creating BigInt</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 overflow-x-auto rounded-lg mb-5">
-        <code>
-          {`
-const bigNumber1 = 123456789012345678901234567890n;
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    const bigNumber1 = 123456789012345678901234567890n;
+    <br /><br />
 
-// Using BigInt() function
-const bigNumber2 = BigInt("123456789012345678901234567890");
+    // Using BigInt() function
+    <br />
+    const bigNumber2 = BigInt("123456789012345678901234567890");
+    <br /><br />
 
-console.log(bigNumber1); // Output: 123456789012345678901234567890n
-console.log(bigNumber2); // Output: 123456789012345678901234567890n
-`}
-        </code>
-      </pre>
+    console.log(bigNumber1); // Output: 123456789012345678901234567890n
+    <br />
+    console.log(bigNumber2); // Output: 123456789012345678901234567890n
+  </code>
+</pre>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-5">BigInt Operations</h2>
-      <pre className="bg-gray-900 text-green-400 overflow-x-auto p-4 rounded-lg mb-5">
-        <code>
-          {`
-const a = 9007199254740991n;
-const b = 12345678901234567890n;
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    const a = 9007199254740991n;
+    <br />
+    const b = 12345678901234567890n;
+    <br /><br />
 
-console.log(a + b); // Output: 12345687910533822881n
-console.log(b - a); // Output: 12345679896035208599n
-console.log(a * 2n); // Output: 18014398509481982n
-`}
-        </code>
-      </pre>
+    console.log(a + b); // Output: 12345687910533822881n
+    <br />
+    console.log(b - a); // Output: 12345679896035208599n
+    <br />
+    console.log(a * 2n); // Output: 18014398509481982n
+  </code>
+</pre>
+
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-5">Important Notes</h2>
       <ul className="list-disc list-inside text-gray-700 mb-4">
@@ -47,18 +52,21 @@ console.log(a * 2n); // Output: 18014398509481982n
       </ul>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-5">Conditional Check with BigInt</h2>
-      <pre className="bg-gray-900 text-green-400 overflow-x-auto p-4 rounded-lg mb-4">
-        <code>
-          {`
-const population = 9007199254740993n;
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    const population = 9007199254740993n;
+    <br /><br />
 
-if (population > 9007199254740991n) {
-  console.log("Population exceeds safe integer limit!");
-}
-// Output: Population exceeds safe integer limit!
-`}
-        </code>
-      </pre>
+    if (population &gt; 9007199254740991n) {"{"}
+    <br />
+    &nbsp;&nbsp;console.log("Population exceeds safe integer limit!");
+    <br />
+    {"}"}
+    <br /><br />
+
+    // Output: Population exceeds safe integer limit!
+  </code>
+</pre>
     </div>
   );
 };

@@ -25,7 +25,7 @@ export default function JavaScriptSyntax() {
         </section>
         <h1 className="text-2xl">Syntax Rules</h1>
         <p>In programming, syntax defines the rules and structure required to write valid code.</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           {`// How to Declare variables:
 let x = 5;
 let y = 6;
@@ -47,7 +47,7 @@ let z = x + y;
         <p>The following are the essential syntax rules for using <strong>literals</strong> (fixed values) in JavaScript:</p>
         <p>JavaScript allows <strong>numbers</strong> to be written as either integers or floating-point values.</p>
         <h1 className="text-2xl">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           {`10.50
 
 1001`}
@@ -59,7 +59,7 @@ let z = x + y;
         <p>JavaScript <strong>keywords</strong> are used to define specific <strong>actions</strong> or behaviors in a program.</p>
         <p>The <span className="text-red-400 bg-gray-50 px-1">let</span> and <span className="text-red-400 bg-gray-50 px-1">const</span> keywords are used to declare variables in JavaScript.</p>
         <h1 className="text-2xl">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           {`let x = 5;
 
 const fname = "John";`}
@@ -69,7 +69,7 @@ const fname = "John";`}
         <p>A variable is like a container that holds a piece of data, such as a number or a string.</p>
         <p>Variables are assigned unique identifiers to distinguish them within the program's scope.</p>
         <h1 className="text-2xl">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           {`// Define x as a variable
 let x;
 
@@ -90,7 +90,7 @@ x = 6;`}
         <h1 className="text-2xl">JavaScript Operators</h1>
        <p>The assignment operator (=) in JavaScript is used to assign values to variables.</p>
        <h1 className="text-2xl">Example</h1>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`let x = 5;
 let y = 6;
 let sum = x + y;
@@ -98,23 +98,23 @@ let sum = x + y;
        </pre>
        <p> <strong>Arithmetic operators</strong> such as addition (+), subtraction (-), multiplication (*), and division (/) are used in JavaScript to compute values.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">{`5 * 10`}</pre>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">{`5 * 10`}</pre>
 
       <h1 className="text-2xl">JavaScript Expressions</h1>
       <p>An expression is a syntactic construct composed of values, variables, and operators that evaluates to a single value.</p>
       <h1 className="text-2xl">Example</h1>
       <p>(5 + 6) * 10 evaluates to 110:</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`(5 + 6) * 10`}
       </pre>
 
       <p>Expressions can also contain variable:</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`x * 10`}
       </pre>
 
       <p>"John" + " " + "Doe", evaluates to "John Doe":</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`"John" + " " + "Doe"`}
       </pre>
 
@@ -123,7 +123,7 @@ let sum = x + y;
       <p>Identifiers in JavaScript are <strong>case sensitive</strong>, meaning that myVar and myvar are treated as different names.</p>
       <p>Variables named <span className="text-red-400 bg-gray-50 px-1">lastName</span> and <span className="text-red-400 bg-gray-50 px-1">lastname</span> are treated as different identifiers in JavaScript.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         { `let lastName = "Doe";
 let lastname = "Peterson";`}
       </pre>

@@ -43,24 +43,25 @@ const CSSFlexboxIntro = () => {
          By using Flexbox, we can align elements both horizontally and vertically.
         </p>
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`/*We make the container a flex container. */
-.container {
-  display: flex;
-  justify-content: center; /* It will center the items horizontally*/
-  align-items: center;    /* It will center the items vertically*/
-  height: 200px;
-  border: 2px solid black;
-}
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-gray-500">/*We make the container a flex container. */</span><br />
 
-.item {
-  background: lightblue;
-  padding: 20px;
-  margin: 10px;
-  }`}
+    <span className="text-blue-600">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">justify-content</span>: <span className="text-green-700">center</span>; <span className="text-gray-500">/* It will center the items horizontally*/</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">align-items</span>: <span className="text-green-700">center</span>; <span className="text-gray-500">/* It will center the items vertically*/</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">200px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">2px solid black</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">.item</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background</span>: <span className="text-green-700">lightblue</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">20px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">margin</span>: <span className="text-green-700">10px</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
 
         {/* Live Demo */}
         <div className="border-2 border-black h-40 flex justify-center items-center mt-6">

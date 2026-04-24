@@ -23,28 +23,29 @@ export default function CssLinks() {
             <div className="w-5 h-5 text-green-600" />
             Example CSS for Links
           </h2>
-          <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-            <code>
-{`a:link {
-  color: blue;
-  text-decoration: none;
-  }
 
-a:visited {
-  color: purple;
-  }
-  
-  a:hover {
-    color: red;
-    text-decoration: underline;
-    }
-    
-    a:active {
-      color: orange;
-      }`}
-      </code>
-          </pre>
-        </div>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+      <code>
+    <span className="text-blue-600">a:link</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">blue</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-decoration</span>: <span className="text-green-700">none</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">a:visited</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">purple</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">a:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">red</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-decoration</span>: <span className="text-green-700">underline</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">a:active</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">orange</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
+ </div>
       </div>
 
       {/* Demo Section */}
@@ -79,15 +80,15 @@ a:visited {
           <p className="text-xl mt-3">styled a Hyper Link with Css.</p>
       <div className="bg-gray-200 p-4 rounded-lg mt-5">
         <h2 className="text-2xl mb-5">Example</h2>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-            {`          a{  
-            background:blue;
-            font-size:10rem;
-            color:red;
-            }`}
-          </code>
-        </pre>
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">a</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background</span>: <span className="text-green-700">blue</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">font-size</span>: <span className="text-green-700">10rem</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">red</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
       </div>
     </div>
   );

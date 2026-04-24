@@ -13,44 +13,97 @@ const InternalCSS = () => {
       </p>
 
       <h2 className="text-2xl font-semibold mb-2">Syntax</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`<head>
-  <style>
-    selector {
-      property: value;
-    }
-  </style>
-</head>`}
-        </code>
-      </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;head&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;style&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">selector</span> {'{'}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">property</span>:{" "}
+    <span className="text-green-700">value</span>;
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;{'}'}
+    <br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/style&gt;</span>
+    <br />
+
+    <span className="text-blue-600">&lt;/head&gt;</span>
+  </code>
+</pre>
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-2">Example</h2>
       <p className="mb-2">Here is an example of internal CSS:</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`<!DOCTYPE html>
-<html>
-<head>
-  <title>Internal CSS Example</title>
-  <style>
-    h1 {
-      color: blue;
-      text-align: center;
-    }
-    p {
-      font-size: 18px;
-      color: green;
-    }
-  </style>
-</head>
-<body>
-  <h1>This is a Heading</h1>
-  <p>This is a paragraph styled with Internal CSS.</p>
-</body>
-</html>`}
-        </code>
-      </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;!DOCTYPE html&gt;</span>
+    <br />
+
+    <span className="text-blue-600">&lt;html&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;head&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;title&gt;</span>
+    Internal CSS Example
+    <span className="text-blue-600">&lt;/title&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;style&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">h1</span> {'{'}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">color</span>:{" "}
+    <span className="text-green-700">blue</span>;
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">text-align</span>:{" "}
+    <span className="text-green-700">center</span>;
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'}'}
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">p</span> {'{'}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">font-size</span>:{" "}
+    <span className="text-green-700">18px</span>;
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">color</span>:{" "}
+    <span className="text-green-700">green</span>;
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'}'}
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;/style&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/head&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;body&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;h1&gt;</span>
+    This is a Heading
+    <span className="text-blue-600">&lt;/h1&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-600">&lt;p&gt;</span>
+    This is a paragraph styled with Internal CSS.
+    <span className="text-blue-600">&lt;/p&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;/body&gt;</span>
+    <br />
+
+    <span className="text-blue-600">&lt;/html&gt;</span>
+  </code>
+</pre>
 
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Output</h2>
       <div className="border p-4 bg-white rounded-lg mb-6">

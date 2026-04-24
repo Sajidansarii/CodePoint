@@ -18,10 +18,27 @@ const HTMLFormElements = () => {
             <p className="leading-relaxed mb-3">
               Single-line text input.
             </p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{`<label for="name">Name:</label>
-<input type="text" id="name" name="name" placeholder="Your name" required />`}</code>
-            </pre>
+           <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-red-500"> for</span>=<span className="text-green-600">"name"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Name:</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"text"</span>
+    <span className="text-red-500"> id</span>=<span className="text-green-600">"name"</span>
+    <span className="text-red-500"> name</span>=<span className="text-green-600">"name"</span>
+    <span className="text-red-500"> placeholder</span>=<span className="text-green-600">"Your name"</span>
+    <span className="text-red-500"> required</span>
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           <div>
@@ -29,10 +46,26 @@ const HTMLFormElements = () => {
             <p className="leading-relaxed mb-3">
               Email address; browser validates format.
             </p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
-              <code>{`<label for="email">Email:</label>
-<input type="email" id="email" name="email" required />`}</code>
-            </pre>
+           <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-red-500"> for</span>=<span className="text-green-600">"email"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Email:</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"email"</span>
+    <span className="text-red-500"> id</span>=<span className="text-green-600">"email"</span>
+    <span className="text-red-500"> name</span>=<span className="text-green-600">"email"</span>
+    <span className="text-red-500"> required</span>
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           <div>
@@ -47,12 +80,50 @@ const HTMLFormElements = () => {
             <p className="leading-relaxed mb-3">
               Toggle (checkbox) and exclusive choices (radio).
             </p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
-              <code>{`<label><input type="checkbox" name="subscribe" /> Subscribe</label>
+           <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"checkbox"</span>
+    <span className="text-red-500"> name</span>=<span className="text-green-600">"subscribe"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <span className="text-gray-700"> Subscribe</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span><br/><br/>
 
-<label><input type="radio" name="gender" value="male" /> Male</label>
-<label><input type="radio" name="gender" value="female" /> Female</label>`}</code>
-            </pre>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"radio"</span>
+    <span className="text-red-500"> name</span>=<span className="text-green-600">"gender"</span>
+    <span className="text-red-500"> value</span>=<span className="text-green-600">"male"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <span className="text-gray-700"> Male</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"radio"</span>
+    <span className="text-red-500"> name</span>=<span className="text-green-600">"gender"</span>
+    <span className="text-red-500"> value</span>=<span className="text-green-600">"female"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <span className="text-gray-700"> Female</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
           </div>
 
           <div>
@@ -60,10 +131,29 @@ const HTMLFormElements = () => {
             <p className="leading-relaxed mb-3">
               Multi-line text input.
             </p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{`<label for="message">Message:</label>
-<textarea id="message" name="message" rows="4" placeholder="Type here..."></textarea>`}</code>
-            </pre>
+          <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-red-500"> for</span>=<span className="text-green-600">"message"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Message:</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">textarea</span>
+    <span className="text-red-500"> id</span>=<span className="text-green-600">"message"</span>
+    <span className="text-red-500"> name</span>=<span className="text-green-600">"message"</span>
+    <span className="text-red-500"> rows</span>=<span className="text-green-600">"4"</span>
+    <span className="text-red-500"> placeholder</span>=<span className="text-green-600">"Type here..."</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">textarea</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
           </div>
 
           <div>
@@ -71,14 +161,55 @@ const HTMLFormElements = () => {
             <p className="leading-relaxed mb-3">
               Dropdown selection.
             </p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{`<label for="country">Country:</label>
-<select id="country" name="country">
-  <option value="">Choose...</option>
-  <option value="in">India</option>
-  <option value="us">United States</option>
-</select>`}</code>
-            </pre>
+           <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-red-500"> for</span>=<span className="text-green-600">"country"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Country:</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">select</span>
+    <span className="text-red-500"> id</span>=<span className="text-green-600">"country"</span>
+    <span className="text-red-500"> name</span>=<span className="text-green-600">"country"</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">option</span>
+    <span className="text-red-500"> value</span>=<span className="text-green-600">""</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Choose...</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">option</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">option</span>
+    <span className="text-red-500"> value</span>=<span className="text-green-600">"in"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">India</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">option</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">option</span>
+    <span className="text-red-500"> value</span>=<span className="text-green-600">"us"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">United States</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">option</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">select</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
           </div>
 
           <div>
@@ -86,10 +217,27 @@ const HTMLFormElements = () => {
             <p className="leading-relaxed mb-3">
               Submit or reset form data.
             </p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
-              <code>{`<button type="submit">Send</button>
-<button type="reset">Clear</button>`}</code>
-            </pre>
+           <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">button</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"submit"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Send</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">button</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">button</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"reset"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Clear</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">button</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
           </div>
         </div>
       </section>
@@ -148,21 +296,81 @@ const HTMLFormElements = () => {
             <code>&lt;output&gt;</code> — Displays the result of a calculation.
           </li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<fieldset>
-  <legend>Payment</legend>
-  <label for="card">Card number:</label>
-  <input type="text" id="card" name="card" />
-</fieldset>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">fieldset</span>
+    <span className="text-gray-500">&gt;</span><br/>
 
-<label for="browser">Choose browser:</label>
-<input list="browsers" id="browser" name="browser" />
-<datalist id="browsers">
-  <option value="Chrome" />
-  <option value="Firefox" />
-  <option value="Safari" />
-</datalist>`}</code>
-        </pre>
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">legend</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Payment</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">legend</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-red-500"> for</span>=<span className="text-green-600">"card"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Card number:</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"text"</span>
+    <span className="text-red-500"> id</span>=<span className="text-green-600">"card"</span>
+    <span className="text-red-500"> name</span>=<span className="text-green-600">"card"</span>
+    <span className="text-gray-500"> /&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">fieldset</span>
+    <span className="text-gray-500">&gt;</span><br/><br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-red-500"> for</span>=<span className="text-green-600">"browser"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Choose browser:</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+    <span className="text-red-500"> list</span>=<span className="text-green-600">"browsers"</span>
+    <span className="text-red-500"> id</span>=<span className="text-green-600">"browser"</span>
+    <span className="text-red-500"> name</span>=<span className="text-green-600">"browser"</span>
+    <span className="text-gray-500"> /&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">datalist</span>
+    <span className="text-red-500"> id</span>=<span className="text-green-600">"browsers"</span>
+    <span className="text-gray-500">&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">option</span>
+    <span className="text-red-500"> value</span>=<span className="text-green-600">"Chrome"</span>
+    <span className="text-gray-500"> /&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">option</span>
+    <span className="text-red-500"> value</span>=<span className="text-green-600">"Firefox"</span>
+    <span className="text-gray-500"> /&gt;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">option</span>
+    <span className="text-red-500"> value</span>=<span className="text-green-600">"Safari"</span>
+    <span className="text-gray-500"> /&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">datalist</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Validation & Attributes */}
@@ -180,10 +388,26 @@ const HTMLFormElements = () => {
           <li><code>readonly</code> / <code>disabled</code> — Non-editable or inactive.</li>
           <li><code>autocomplete</code> — Suggest previously entered values.</li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<input type="text" name="username" required pattern="[A-Za-z0-9]{4,}" placeholder="4+ alphanumeric" />
-<input type="number" name="age" min="1" max="120" />`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"text"</span>
+    <span className="text-red-500"> name</span>=<span className="text-green-600">"username"</span>
+    <span className="text-red-500"> required</span>
+    <span className="text-red-500"> pattern</span>=<span className="text-green-600">"[A-Za-z0-9]{4}"</span>
+    <span className="text-red-500"> placeholder</span>=<span className="text-green-600">"4+ alphanumeric"</span>
+    <span className="text-gray-500"> /&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"number"</span>
+    <span className="text-red-500"> name</span>=<span className="text-green-600">"age"</span>
+    <span className="text-red-500"> min</span>=<span className="text-green-600">"1"</span>
+    <span className="text-red-500"> max</span>=<span className="text-green-600">"120"</span>
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Accessibility */}
@@ -200,31 +424,194 @@ const HTMLFormElements = () => {
       {/* Example Combined Form */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">6. Combined Example</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<form action="/submit" method="POST">
-  <fieldset>
-    <legend>Profile</legend>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">form</span>
 
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required />
+    <span className="text-red-500"> action</span>=
+    <span className="text-green-600">"/submit"</span>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required />
+    <span className="text-red-500"> method</span>=
+    <span className="text-green-600">"POST"</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
 
-    <label for="color">Favorite Color:</label>
-    <input type="color" id="color" name="color" />
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">fieldset</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/><br/>
 
-    <label for="browser">Browser:</label>
-    <input list="browsers" id="browser" name="browser" />
-    <datalist id="browsers">
-      <option value="Chrome" />
-      <option value="Firefox" />
-    </datalist>
+    {/* Legend */}
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">legend</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Profile</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">legend</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/><br/>
 
-    <button type="submit">Save</button>
-  </fieldset>
-</form>`}</code>
-        </pre>
+    {/* Name */}
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-red-500"> for</span>=
+    <span className="text-green-600">"name"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Name:</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"text"</span>
+
+    <span className="text-red-500"> id</span>=
+    <span className="text-green-600">"name"</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"name"</span>
+
+    <span className="text-red-500"> required</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <br/><br/>
+
+    {/* Email */}
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-red-500"> for</span>=
+    <span className="text-green-600">"email"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Email:</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"email"</span>
+
+    <span className="text-red-500"> id</span>=
+    <span className="text-green-600">"email"</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"email"</span>
+
+    <span className="text-red-500"> required</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <br/><br/>
+
+    {/* Color */}
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-red-500"> for</span>=
+    <span className="text-green-600">"color"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Favorite Color:</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"color"</span>
+
+    <span className="text-red-500"> id</span>=
+    <span className="text-green-600">"color"</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"color"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <br/><br/>
+
+    {/* Browser */}
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-red-500"> for</span>=
+    <span className="text-green-600">"browser"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Browser:</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">label</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> list</span>=
+    <span className="text-green-600">"browsers"</span>
+
+    <span className="text-red-500"> id</span>=
+    <span className="text-green-600">"browser"</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"browser"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">datalist</span>
+
+    <span className="text-red-500"> id</span>=
+    <span className="text-green-600">"browsers"</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">option</span>
+
+    <span className="text-red-500"> value</span>=
+    <span className="text-green-600">"Chrome"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">option</span>
+
+    <span className="text-red-500"> value</span>=
+    <span className="text-green-600">"Firefox"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;/</span>
+    <span className="text-blue-600">datalist</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/><br/>
+
+    {/* Button */}
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">button</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"submit"</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Save</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">button</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;/</span>
+    <span className="text-blue-600">fieldset</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">form</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Common Mistakes */}

@@ -31,16 +31,37 @@ const HTMLWebStorage = () => {
       {/* Code Example */}
       <div className="mb-6">
         <h2 className="text-xl font-semibold text-blue-500 mb-3">JavaScript Example</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`// Save data
-localStorage.setItem("name", "John");
+        <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">// Save data</span>
+    <br/>
+    <span className="text-purple-600">localStorage</span>.
+    <span className="text-blue-600">setItem</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">"name"</span>, 
+    <span className="text-green-600">"John"</span>
+    <span className="text-gray-500">);</span>
+    <br/><br/>
 
-// Retrieve data
-let user = localStorage.getItem("name");
+    <span className="text-gray-500">// Retrieve data</span>
+    <br/>
+    <span className="text-blue-600">let</span> user = 
+    <span className="text-purple-600">localStorage</span>.
+    <span className="text-blue-600">getItem</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">"name"</span>
+    <span className="text-gray-500">);</span>
+    <br/><br/>
 
-// Remove data
-localStorage.removeItem("name");`}</code>
-        </pre>
+    <span className="text-gray-500">// Remove data</span>
+    <br/>
+    <span className="text-purple-600">localStorage</span>.
+    <span className="text-blue-600">removeItem</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">"name"</span>
+    <span className="text-gray-500">);</span>
+  </code>
+</pre>
       </div>
 
       {/* Interactive Demo */}

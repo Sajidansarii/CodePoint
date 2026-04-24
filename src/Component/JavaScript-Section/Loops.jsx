@@ -13,7 +13,7 @@ const JSLoops = () => {
       <p className="text-gray-700 mb-6">Arrays often present this kind of situation.</p>
 
       <h1 className="text-2xl mb-5">Instead of writing:</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`
  text += cars[0] + "<br>";
@@ -27,7 +27,7 @@ const JSLoops = () => {
       </pre>
 
       <h1 className="text-2xl mt-5 mb-5">You make it:</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`
 for (let i = 0; i < cars.length; i++) {
@@ -39,7 +39,7 @@ for (let i = 0; i < cars.length; i++) {
 
       <h2 className="text-2xl font-semibold text-gray-800 mb-2 mt-10">For Loop</h2>
       <p className="text-gray-700">The <span className="text-red-400">for</span> statement sets up a loop using three optional expressions.</p>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 mt-4">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`
  for (expr1; expr2; expr) {
@@ -53,7 +53,7 @@ for (let i = 0; i < cars.length; i++) {
       <p className="mt-1">The third expression <span className="font-semibold">exp3</span> is executed every time the loop completes an iteration.</p>
 
       <h1 className="text-2xl mt-5 mb-3">Example</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`
 for (let i = 0; i < 5; i++) {
@@ -68,7 +68,7 @@ for (let i = 0; i < 5; i++) {
       <h2 className="text-2xl font-semibold text-gray-800 mt-10 mb-3">While Loop</h2>
       <p>A <span className="text-red-400">while</span> loop executes a block of code repeatedly as long as the given condition remains true.</p>
       <h1 className="text-2xl mt-5">Syntax</h1>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded mt-5 ">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`
 while (condition) {
@@ -79,7 +79,7 @@ while (condition) {
       </pre>
       <h1 className="text-2xl mt-6">Example</h1>
       <p>In this example, the loop’s code will execute repeatedly while the variable i is less than 10.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`
  while (i < 10) {
@@ -94,7 +94,7 @@ while (condition) {
       <p className="mt-3"><span className="text-red-400">do…while</span> is a version of the while loop that executes its code block before checking the condition.</p>
      <p className="mt-3">The <span className="text-red-400">do…while loop</span> executes the code block once before checking the condition, then continues repeating the loop as long as the condition remains true.</p>
      <h1 className="text-2xl mt-5">Syntax</h1>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-4 mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`
  do {
@@ -106,7 +106,7 @@ while (condition);
       </pre>
       
       <h1 className="text-2xl mt-5">Example</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         <code>
           {`
  do {

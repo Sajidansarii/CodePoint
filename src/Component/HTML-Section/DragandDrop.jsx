@@ -65,21 +65,87 @@ const HTMLDragAndDrop = () => {
       {/* Code Snippet */}
       <div className="mb-6">
         <h3 className="text-xl font-semibold text-blue-500 mb-3">JavaScript Example</h3>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>{`element.addEventListener("dragstart", (event) => {
-  event.dataTransfer.setData("text", event.target.id);
-});
+ <pre className="bg-gray-200 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap text-sm">
+  <code>
+    <span className="text-gray-700">element</span>.
+    <span className="text-blue-600">addEventListener</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">"dragstart"</span>,
+    <span className="text-gray-500">(</span>
+    <span className="text-orange-600">event</span>
+    <span className="text-gray-500">)</span>
+    <span className="text-gray-500"> =&gt; &#123;</span><br/>
 
-target.addEventListener("dragover", (event) => {
-  event.preventDefault();
-});
+    &nbsp;&nbsp;<span className="text-orange-600">event</span>.
+    <span className="text-blue-600">dataTransfer</span>.
+    <span className="text-blue-600">setData</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">"text"</span>,
+    <span className="text-orange-600">event</span>.
+    <span className="text-blue-600">target</span>.
+    <span className="text-blue-600">id</span>
+    <span className="text-gray-500">);</span><br/>
 
-target.addEventListener("drop", (event) => {
-  const id = event.dataTransfer.getData("text");
-  const draggedElement = document.getElementById(id);
-  event.target.appendChild(draggedElement);
-});`}</code>
-        </pre>
+    <span className="text-gray-500">&#125;);</span><br/><br/>
+
+    <span className="text-gray-700">target</span>.
+    <span className="text-blue-600">addEventListener</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">"dragover"</span>,
+    <span className="text-gray-500">(</span>
+    <span className="text-orange-600">event</span>
+    <span className="text-gray-500">)</span>
+    <span className="text-gray-500"> =&gt; &#123;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-orange-600">event</span>.
+    <span className="text-blue-600">preventDefault</span>
+    <span className="text-gray-500">();</span><br/>
+
+    <span className="text-gray-500">&#125;);</span><br/><br/>
+
+    <span className="text-gray-700">target</span>.
+    <span className="text-blue-600">addEventListener</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">"drop"</span>,
+    <span className="text-gray-500">(</span>
+    <span className="text-orange-600">event</span>
+    <span className="text-gray-500">)</span>
+    <span className="text-gray-500"> =&gt; &#123;</span><br/>
+
+    &nbsp;&nbsp;<span className="text-orange-600">event</span>.
+    <span className="text-blue-600">dataTransfer</span>.
+    <span className="text-blue-600">getData</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">"text"</span>
+    <span className="text-gray-500">);</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-700">const</span>
+    <span className="text-blue-600"> id </span>=
+    <span className="text-orange-600">event</span>.
+    <span className="text-blue-600">dataTransfer</span>.
+    <span className="text-blue-600">getData</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">"text"</span>
+    <span className="text-gray-500">);</span><br/>
+
+    &nbsp;&nbsp;<span className="text-gray-700">const</span>
+    <span className="text-blue-600"> draggedElement </span>=
+    <span className="text-gray-700">document</span>.
+    <span className="text-blue-600">getElementById</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-blue-600">id</span>
+    <span className="text-gray-500">);</span><br/>
+
+    &nbsp;&nbsp;<span className="text-orange-600">event</span>.
+    <span className="text-blue-600">target</span>.
+    <span className="text-blue-600">appendChild</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-blue-600">draggedElement</span>
+    <span className="text-gray-500">);</span><br/>
+
+    <span className="text-gray-500">&#125;);</span>
+  </code>
+</pre>
       </div>
 
       {/* Note */}

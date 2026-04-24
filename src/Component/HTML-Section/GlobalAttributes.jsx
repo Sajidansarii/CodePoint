@@ -11,13 +11,36 @@ const HtmlGlobalAttributes = () => {
       </p>
 
       <h2 className="text-xl font-semibold mb-3 text-blue-500">Examples of Global Attributes</h2>
-      <div className="mb-6 bg-gray-900 text-green-400 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-lg">
-        <pre>
-{`<div id="main" class="container" style="color: red;" title="Main container">
-  This is a div with global attributes.
-</div>`}
-        </pre>
-      </div>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">div</span>
+
+    <span className="text-red-500"> id</span>=
+    <span className="text-green-600">"main"</span>
+
+    <span className="text-red-500"> class</span>=
+    <span className="text-green-600">"container"</span>
+
+    <span className="text-red-500"> style</span>=
+    <span className="text-green-600">"color: red;"</span>
+
+    <span className="text-red-500"> title</span>=
+    <span className="text-green-600">"Main container"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-700">
+      &nbsp;&nbsp;This is a div with global attributes.
+    </span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">div</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
 
       <h2 className="text-xl font-semibold mb-3">Common Global Attributes</h2>
       <ul className="list-disc ml-6 space-y-1 mb-6">
@@ -37,13 +60,36 @@ const HtmlGlobalAttributes = () => {
       </ul>
 
       <h2 className="text-xl font-semibold mb-2 text-blue-500">Practical Example</h2>
-      <div className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-        <pre>
-{`<p id="intro" class="highlight" style="font-weight: bold;" title="Intro paragraph">
-  Welcome to CodePoint!
-</p>`}
-        </pre>
-      </div>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">p</span>
+
+    <span className="text-red-500"> id</span>=
+    <span className="text-green-600">"intro"</span>
+
+    <span className="text-red-500"> class</span>=
+    <span className="text-green-600">"highlight"</span>
+
+    <span className="text-red-500"> style</span>=
+    <span className="text-green-600">"font-weight: bold;"</span>
+
+    <span className="text-red-500"> title</span>=
+    <span className="text-green-600">"Intro paragraph"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-700">
+      &nbsp;&nbsp;Welcome to CodePoint!
+    </span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
 
       <p className="mb-2">
         You can use multiple global attributes together for styling, identification, accessibility, or scripting.

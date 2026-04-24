@@ -12,7 +12,7 @@ const JSSpread = () => {
 
       <h1 className="text-xl mt-10">Example</h1>
       <p className="leading-relaxed mt-3">Arrays can be joined together using the spread (...) operator.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`const arr1 = [1, 2, 3];
 const arr2 = [4, 5, 6];
 const arr3 = [...arr1, ...arr2];`}
@@ -23,7 +23,7 @@ const arr3 = [...arr1, ...arr2];`}
 
       <h1 className="text-2xl mt-5">Example</h1>
       <p className="leading-relaxed mt-3">The spread operator (...) can be used to pass array elements as individual arguments to a function.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`const numbers = [23,55,21,87,56];
 let minValue = Math.min(...numbers);
 let maxValue = Math.max(...numbers);`}
@@ -31,7 +31,7 @@ let maxValue = Math.max(...numbers);`}
 
       <h1 className="text-2xl mt-10">Example</h1>
       <p className="leading-relaxed mt-3">You can use the spread syntax (...) to create a shallow copy of an array.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`const arr1 = [1, 2, 3];
 const arr2 = [...arr1];`}
       </pre>

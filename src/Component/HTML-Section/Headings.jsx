@@ -12,11 +12,35 @@ const HTMLHeadings = () => {
       {/* Basic Example */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Basic Usage</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          {`<h1>Main Title</h1>
-<h2>Section Title</h2>
-<h3>Subsection</h3>`}
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">h1</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Main Title</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">h1</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">h2</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Section Title</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">h2</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">h3</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Subsection</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">h3</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed">
           These tags help both users and search engines understand the hierarchy of your content.
         </p>
@@ -49,20 +73,92 @@ const HTMLHeadings = () => {
       {/* Nested Example */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-3">Nested Example</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          {`<article>
-  <h1>Blog Title</h1>
-  <section>
-    <h2>Introduction</h2>
-    <p>...</p>
-  </section>
-  <section>
-    <h2>Main Topic</h2>
-    <h3>Subtopic A</h3>
-    <h3>Subtopic B</h3>
-  </section>
-</article>`}
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">article</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">h1</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Blog Title</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">h1</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">section</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">h2</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Introduction</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">h2</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">...</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;/</span>
+    <span className="text-blue-600">section</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">section</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">h2</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Main Topic</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">h2</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">h3</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Subtopic A</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">h3</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">h3</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Subtopic B</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">h3</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;/</span>
+    <span className="text-blue-600">section</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">article</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Common Mistakes */}

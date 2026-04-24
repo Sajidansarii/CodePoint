@@ -68,27 +68,45 @@ export default function FeaturesJavaScript() {
           <h2 className="text-xl font-semibold text-yellow-400 mb-4">
             Example: JavaScript in Action
           </h2>
-          <pre className="bg-gray-800 text-green-400 p-4 rounded-lg overflow-x-auto">
-            <code>{`// Lightweight & Fast
-console.log("Hello from JavaScript!");
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    // Lightweight &amp; Fast
+    <br />
+    console.log("Hello from JavaScript!");
+    <br /><br />
 
-// Event-Driven: Run when button is clicked
-function greetUser(name) {
-  return "Welcome, " + name + "!";
-}
+    // Event-Driven: Run when button is clicked
+    <br />
+    function greetUser(name) {"{"}
+    <br />
+    &nbsp;&nbsp;return "Welcome, " + name + "!";
+    <br />
+    {"}"}
+    <br /><br />
 
-// Object-Oriented Feature
-const user = {
-  name: "Larsen",
-  age: 22,
-  introduce: function() {
-    return "Hi, I'm " + this.name + " and I'm " + this.age + " years old.";
-  }
-};
+    // Object-Oriented Feature
+    <br />
+    const user = {"{"}
+    <br />
+    &nbsp;&nbsp;name: "Larsen",
+    <br />
+    &nbsp;&nbsp;age: 22,
+    <br />
+    &nbsp;&nbsp;introduce: function() {"{"}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;return "Hi, I'm " + this.name + " and I'm " + this.age + " years old.";
+    <br />
+    &nbsp;&nbsp;{"}"}
+    <br />
+    {"}"};
+    <br /><br />
 
-console.log(greetUser("Albert"));      // Function example
-console.log(user.introduce());      // Object-Oriented example`}</code>
-          </pre>
+    console.log(greetUser("Albert")); // Function example
+    <br />
+    console.log(user.introduce()); // Object-Oriented example
+  </code>
+</pre>
+
         </section>
 
         <h1 className="text-2xl mt-10">Easy Setup</h1>

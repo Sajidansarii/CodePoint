@@ -36,16 +36,38 @@ const CSSBorderImage = () => {
          In the example given below, a PNG image has been used for the border.
         </p>
 
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-{`div {
-  border: 15px solid transparent;
-  border-image-source: url('https://cloudinary-marketing-res.
-  cloudinary.com/image/upload/w_1300/q_auto/f_auto/hiking_dog_mountain');
-  border-image-slice: 30;
-  border-image-repeat: round;
-  border-image-width: 15px;
-}`}
-        </pre>
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">div</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">border</span>
+    <span>: </span>
+    <span className="text-green-700">15px solid transparent</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">border-image-source</span>
+    <span>: </span>
+    <span className="text-green-700">url('https://cloudinary-marketing-res.cloudinary.com/image/upload/w_1300/q_auto/f_auto/hiking_dog_mountain')</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">border-image-slice</span>
+    <span>: </span>
+    <span className="text-green-700">30</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">border-image-repeat</span>
+    <span>: </span>
+    <span className="text-green-700">round</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">border-image-width</span>
+    <span>: </span>
+    <span className="text-green-700">15px</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
         {/* Live Demo */}
         <div className="border p-4 bg-gray-100 text-center flex justify-center mt-4">

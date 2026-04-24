@@ -11,12 +11,16 @@ const HtmlAttributes = () => {
         <code className="bg-gray-100 px-2 py-1 rounded ml-1">&nbsp;name="value"</code>
       </p>
 
-      <div className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-        <code>
-          {"<a href='https://codepoint.dev'>Visit CodePoint</a>"}
-        </code>
-      </div>
-
+     <div className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;a</span>
+    <span className="text-red-500"> href</span>=
+    <span className="text-green-600">"https://codepoint.dev"</span>
+    <span className="text-gray-500">&gt;</span>
+    Visit CodePoint
+    <span className="text-gray-500">&lt;/a&gt;</span>
+  </code>
+</div>
       <h2 className="text-xl font-semibold mb-2 text-blue-500">Commonly Used HTML Attributes</h2>
       <ul className="list-[square] list-inside mb-5 space-y-1">
         <li><strong className="text-blue-500">href</strong> – Specifies the URL for a link</li>
@@ -34,11 +38,20 @@ const HtmlAttributes = () => {
       </ul>
 
       <h2 className="text-xl font-semibold mb-3">Example with Multiple Attributes</h2>
-      <div className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-        <code>
-          {"<input type='text' placeholder='Enter your name' required />"}
-        </code>
-      </div>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;input</span>
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"text"</span>
+
+    <span className="text-red-500"> placeholder</span>=
+    <span className="text-green-600">"Enter your name"</span>
+
+    <span className="text-red-500"> required</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
 
       <h2 className="text-xl font-semibold mb-3">⚠ Rules for Attributes</h2>
       <ul className="list-[square] list-inside space-y-1">

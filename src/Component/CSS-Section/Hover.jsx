@@ -8,17 +8,19 @@ export default function CssHover() {
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>{`a {
-  text-decoration: none;
-  color: black;
-}
-a:hover {
-  color: white;
-  background-color: navy;
-}`}</code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">a</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">text-decoration</span>: <span className="text-green-700">none</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">black</span>;<br />
+    <span>{'}'}</span><br /><br />
 
+    <span className="text-blue-600">a:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">navy</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
       <h2 className="text-2xl font-semibold mt-6 mb-2">Demo</h2>
       <div className="space-x-4 mt-4">
         <a

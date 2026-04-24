@@ -68,21 +68,34 @@ export default function JavaVsJavaScript() {
         {/* Code Example */}
           <h2 className="text-xl font-semibold mb-4">Example: Java vs JavaScript </h2>
         <section className="bg-gray-900 text-gray-100 rounded-2xl p-6 shadow-lg">
-          <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
-            <code>{`// Java Code Example
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello from Java!");
-    }
-}
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    // Java Code Example
+    <br />
+    public class HelloWorld {"{"}
+    <br />
+    &nbsp;&nbsp;public static void main(String[] args) {"{"}
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello from Java!");
+    <br />
+    &nbsp;&nbsp;{"}"}
+    <br />
+    {"}"}
+    <br /><br />
 
-// JavaScript Code Example
-let name = "World";
-function greet(user) {
-    return \Hello from JavaScript, \${user}!\;
-}
-console.log(greet(name));`}</code>
-          </pre>
+    // JavaScript Code Example
+    <br />
+    let name = "World";
+    <br />
+    function greet(user) {"{"}
+    <br />
+    &nbsp;&nbsp;return \`Hello from JavaScript, \${user}!\`;
+    <br />
+    {"}"}
+    <br />
+    console.log(greet(name));
+  </code>
+</pre>
         </section>
 
         {/* Explanation Section */}

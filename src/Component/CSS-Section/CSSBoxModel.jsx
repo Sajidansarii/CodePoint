@@ -28,32 +28,70 @@ const CssBoxModel = () => {
       <p className="mt-5">Using the box model, we can place borders around elements and define gaps between them.</p>
       <h1 className="text-2xl mt-4 mb-2">Example</h1>
       <p>Overview of the box model structure</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-        {`div {
-  width: 300px;
-  border: 15px solid green;
-  padding: 50px;
-  margin: 20px;
-  }`}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">div</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">width</span>
+    <span>: </span>
+    <span className="text-green-700">300px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">border</span>
+    <span>: </span>
+    <span className="text-green-700">15px solid green</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">padding</span>
+    <span>: </span>
+    <span className="text-green-700">50px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">margin</span>
+    <span>: </span>
+    <span className="text-green-700">20px</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
 
       <h1 className="text-2xl mt-10 mb-3">Width and Height of an Element</h1>
       <p>Without understanding the box model, you may face issues when trying to set width and height accurately in different browsers.</p>
        <h1 className="text-2xl mt-2 mb-2">Example</h1>
        <p>This {'<div>'} will measure 350px in width and 80px in height overall.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-        {`div {
-  width: 320px;
-  height: 50px;
-  padding: 10px;
-  border: 5px solid gray;
-  margin: 0;
-  }`}
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">div</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">width</span>
+    <span>: </span>
+    <span className="text-green-700">320px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">height</span>
+    <span>: </span>
+    <span className="text-green-700">50px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">padding</span>
+    <span>: </span>
+    <span className="text-green-700">10px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">border</span>
+    <span>: </span>
+    <span className="text-green-700">5px solid gray</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">margin</span>
+    <span>: </span>
+    <span className="text-green-700">0</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
   </code>
-       </pre>
+</pre>
 
 
      <div className="max-w-5xl mx-auto my-10 bg-blue-500 p-6 sm:p-10 text-center">

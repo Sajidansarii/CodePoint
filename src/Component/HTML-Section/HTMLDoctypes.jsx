@@ -24,28 +24,85 @@ const HtmlDoctype = () => {
         The DOCTYPE for HTML5 is very simple and does not require a reference
         to a Document Type Definition (DTD).
       </p>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-        {`<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>HTML5 DOCTYPE Example</title>
-</head>
-<body>
-  <h1>Hello, World!</h1>
-</body>
-</html>`}
-      </pre>
+    <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;!DOCTYPE html&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">html</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">head</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">meta</span>
+
+    <span className="text-red-500"> charset</span>=
+    <span className="text-green-600">"UTF-8"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">title</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">HTML5 DOCTYPE Example</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">title</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;/</span>
+    <span className="text-blue-600">head</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">body</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">h1</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Hello, World!</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">h1</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;/</span>
+    <span className="text-blue-600">body</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">html</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
 
       <h2 className="text-xl font-semibold mt-6 mb-3">Older HTML Versions</h2>
       <p className="mb-3">
         Older versions of HTML used more complex DOCTYPE declarations because
         they referenced a DTD file. Example for HTML 4.01:
       </p>
-      <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-        {`<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">`}
-      </pre>
+    <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">
+      &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    </span>
+    <br/>
+    <span className="text-gray-500">
+      "http://www.w3.org/TR/html4/strict.dtd"&gt;
+    </span>
+  </code>
+</pre>
 
       <h2 className="text-xl font-semibold mt-5 mb-3">Key Points</h2>
       <ul className="list-[square] list-inside mb-3">

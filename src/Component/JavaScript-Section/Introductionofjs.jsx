@@ -38,13 +38,18 @@ export default function IntroJavaScript() {
         <p className="leading-relaxed">JavaScript provides multiple HTML methods, including getElementById().</p>
         <p className="leading-relaxed">In this example, an element with the ID demo is found, and its innerHTML is set to "Hello JavaScript".</p>
         <h1 className="text-2xl mt-5 mb-5">Example</h1>
-        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mb-5">
-          {`document.getElementById("demo").innerHTML = "Hello JavaScript";`}
-        </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    document.getElementById("demo").innerHTML = "Hello JavaScript";
+  </code>
+</pre>
+
         <h1 className="text-2xl mb-5 mt-10">Example</h1>
-        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mb-5">
-          {`document.getElementById('demo').innerHTML = 'Hello JavaScript';`}
-        </pre>
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    document.getElementById('demo').innerHTML = 'Hello JavaScript';
+  </code>
+</pre>
 
         <h1 className="text-2xl">JavaScript Can Change HTML Attribute Values</h1>
         <p>This example shows JavaScript updating the src (source) attribute of an <span className="text-red-400 bg-gray-50 px-1">{'<img>'}</span> tag.</p>
@@ -52,37 +57,47 @@ export default function IntroJavaScript() {
          <h1 className="text-2xl mt-14">JavaScript Can Change HTML Styles (CSS)</h1>       
          <p className="leading-relaxed">Updating the style of an HTML tag is essentially tweaking one of its attributes—so make the change.</p>
          <h1 className="text-2xl mt-10">Example</h1>
-         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-          {`document.getElementById("demo").style.fontSize = "35px";`}
-         </pre>
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    document.getElementById("demo").style.fontSize = "35px";
+  </code>
+</pre>
 
          <h1 className="text-2xl mt-10">JavaScript Can Hide HTML Elements</h1>
          <p>Changing the display property is an effective way to hide HTML elements.</p>
          <h1 className="text-2xl mt-10">Example</h1>
-         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mb-5 mt-5">
-          {`document.getElementById("demo").style.display = "none";`}
-         </pre>
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    document.getElementById("demo").style.display = "none";
+  </code>
+</pre>
 
          <h1 className="text-2xl mt-10">JavaScript Can Show HTML Elements</h1>
          <p>Changing the display property is also how you make hidden HTML elements visible.</p>
          <h1 className="text-2xl mt-10">Example</h1>
-         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5 mb-10">
-          {`document.getElementById("demo").style.display = "block";`}
-         </pre>
-
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    document.getElementById("demo").style.display = "block";
+  </code>
+</pre>
 
         {/* Code Example */}
         <section className="bg-gray-900 text-gray-100 rounded-2xl p-6 shadow-lg">
           <h2 className="text-xl font-semibold text-yellow-400 mb-4">
             Example: Hello World in JavaScript
           </h2>
-          <pre className="bg-gray-800 p-4 rounded-lg overflow-x-auto">
-            <code>{`// This will show a message in the browser console
-console.log("Hello, World!");
-
-// This will show an alert popup on the webpage
-alert("Welcome to JavaScript!");`}</code>
-          </pre>
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    // This will show a message in the browser console
+    <br />
+    console.log("Hello, World!");
+    <br />
+    <br />
+    // This will show an alert popup on the webpage
+    <br />
+    alert("Welcome to JavaScript!");
+  </code>
+</pre>
         </section>
 
         {/* Explanation Section */}

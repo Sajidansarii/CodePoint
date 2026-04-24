@@ -8,16 +8,43 @@ export default function CssFont() {
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>{`p {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: bold;
-  font-variant: small-caps;
-  line-height: 1.8;
-}`}</code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">p</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">font-family</span>
+    <span>: </span>
+    <span className="text-green-700">"Times New Roman", Times, serif</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">font-size</span>
+    <span>: </span>
+    <span className="text-green-700">20px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">font-style</span>
+    <span>: </span>
+    <span className="text-green-700">italic</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">font-weight</span>
+    <span>: </span>
+    <span className="text-green-700">bold</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">font-variant</span>
+    <span>: </span>
+    <span className="text-green-700">small-caps</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">line-height</span>
+    <span>: </span>
+    <span className="text-green-700">1.8</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Demo</h2>
       <div className="space-y-4">

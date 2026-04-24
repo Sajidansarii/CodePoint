@@ -13,18 +13,28 @@ const HTMLClassAttribute = () => {
       {/* Basic Syntax */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-5">Syntax</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>{<p class="highlight">This is highlighted text.</p>}</code>
         </pre>
         <p className="leading-relaxed mb-3">
        Here, the paragraph element is assigned a class named <code>highlight</code>. 
           You can style it in CSS like this:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`.highlight {
-  background-color: yellow;
-  font-weight: bold;
-}`}</code>
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+          <code>
+            <span className="text-gray-30">.</span>
+            <span className="text-blue-500">highlight</span>
+            <span className="text-gray-30">&#123;</span><br></br>
+            <span className="text-red-500">background-color</span>
+            <span className="text-gray-30">:</span>
+            <span className="text-green-600"> yellow</span>
+            <span className="text-gray-30">;</span><br></br>
+            <span className="text-red-500">font-weight</span>
+            <span className="text-gray-30">:</span>
+            <span className="text-green-600"> bold</span>
+            <span className="text-gray-30">;</span><br></br>
+            <span className="text-gray-30">&#125;</span>
+         </code>
         </pre>
       </section>
 
@@ -35,13 +45,21 @@ const HTMLClassAttribute = () => {
           You can assign multiple classes to an element by separating them with spaces. 
           Each class can have its own CSS rules.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
           <code>{<p class="highlight large-text">This text is highlighted and large.</p>}</code>
         </pre>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>{`.large-text {
-  font-size: 20px;
-}`}</code>
+
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-10">
+          <code>
+            <span className="text-gray-30">.</span>
+            <span className="text-blue-500">large-text</span>
+            <span className="text-gray-30">&#123;</span><br></br>
+            <span className="text-red-500">font-size</span>
+            <span className="text-gray-30">:</span>
+            <span className="text-green-600"> 20px</span>
+            <span className="text-gray-30">;</span><br></br>
+            <span className="text-gray-30">&#125;</span> 
+         </code>
         </pre>
       </section>
 
@@ -51,9 +69,22 @@ const HTMLClassAttribute = () => {
         <p className="leading-relaxed mb-2">
           JavaScript can select and manipulate elements by their class name:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>{`document.querySelectorAll('.highlight')
-  .forEach(el => el.style.color = 'red');`}</code>
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+          <code>
+            <span className="text-blue-500">document</span>
+            <span className="text-gray-30">.</span>
+            <span className="text-red-500">querySelectorAll</span>
+            <span className="text-gray-30">&#40;</span>
+            <span className="text-green-600">'.highlight'</span>
+            <span className="text-gray-30">&#41;</span>
+            <span className="text-gray-30">.</span>
+            <span className="text-blue-500">forEach</span>
+            <span className="text-gray-30">&#40;</span>
+            <span className="text-red-500">el =&gt; el.style.color = </span>
+            <span className="text-green-600">'red'</span>
+            <span className="text-gray-30">&#41;</span>
+            <span className="text-gray-30">;</span>   
+         </code>
         </pre>
       </section>
 

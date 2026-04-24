@@ -9,19 +9,21 @@ export default function CssFontStretch() {
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>{`p.normal {
-  font-stretch: normal;
-}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">p.normal</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font-stretch</span>: <span className="text-green-700">normal</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-p.expanded {
-  font-stretch: expanded;
-}
+    <span className="text-blue-600">p.expanded</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font-stretch</span>: <span className="text-green-700">expanded</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-p.condensed {
-  font-stretch: condensed;
-}`}</code>
-      </pre>
+    <span className="text-blue-600">p.condensed</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font-stretch</span>: <span className="text-green-700">condensed</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Demo</h2>
       <div className="space-y-2 p-4 border rounded-lg">

@@ -18,12 +18,19 @@ const NavlinkRouter = () => {
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">What is a Link Component?</h2>
         <p>Within React applications, the Link component enables page navigation without triggering a full-page reload. Serving as a replacement for the standard {'<a>'} element, it enhances performance and provides a straightforward navigation mechanism.</p>
         <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`<Link to="/path">Text</Link>`}
-            </code>
-        </pre>
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
 
+    &lt;<span className="text-green-700">Link</span>{" "}
+    <span className="text-blue-700">to</span>=
+    <span className="text-yellow-700">"/path"</span>&gt;
+
+    <span className="text-gray-900">Text</span>
+
+    &lt;/<span className="text-green-700">Link</span>&gt;
+
+  </code>
+</pre>
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Features of Link</h2>
          <ul className="list-[square] space-y-1 mt-5">
             <li><span className="font-semibold">No Page Reload</span>: Link lets you move between pages without refreshing the whole page.</li>
@@ -31,39 +38,129 @@ const NavlinkRouter = () => {
             <li><span className="font-semibold">Dynamic Navigation</span>: Supports passing dynamic values for routes.</li>
          </ul>
 
-         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
+         <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
 
-function Home() {
-    return <h1>Home Page</h1>;
-}
+    <span className="text-purple-700">import</span>{" "}
+    <span className="text-green-700">React</span>{" "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">"react"</span>;
+    {"\n"}
 
-function About() {
-    return <h1>About Page</h1>;
-}
+    <span className="text-purple-700">import</span>{" "}
+    {"{ "}
+    <span className="text-green-700">Link</span>,{" "}
+    <span className="text-green-700">Route</span>,{" "}
+    <span className="text-green-700">Routes</span>{" "}
+    {"} "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">"react-router-dom"</span>;
+    {"\n\n"}
 
-function App() {
-    return (
-        <div>
-            <nav>
-                {/* Link works but does NOT add an active class */}
-                <Link to="/">Home</Link> | <Link to="/about">About</Link>
-            </nav>
+    <span className="text-purple-700">function</span>{" "}
+    <span className="text-blue-700">Home</span>() {"{"}
+    {"\n"}
+    {"  "}
+    <span className="text-purple-700">return</span>{" "}
+    &lt;<span className="text-red-600">h1</span>&gt;Home Page&lt;/<span className="text-red-600">h1</span>&gt;;
+    {"\n"}
+    {"}"}
+    {"\n\n"}
 
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-            </Routes>
-        </div>
+    <span className="text-purple-700">function</span>{" "}
+    <span className="text-blue-700">About</span>() {"{"}
+    {"\n"}
+    {"  "}
+    <span className="text-purple-700">return</span>{" "}
+    &lt;<span className="text-red-600">h1</span>&gt;About Page&lt;/<span className="text-red-600">h1</span>&gt;;
+    {"\n"}
+    {"}"}
+    {"\n\n"}
+
+    <span className="text-purple-700">function</span>{" "}
+    <span className="text-blue-700">App</span>() {"{"}
+    {"\n"}
+    {"  "}
+    <span className="text-purple-700">return</span> (
+    {"\n"}
+
+    {"    "}
+    &lt;<span className="text-red-600">div</span>&gt;
+    {"\n"}
+
+    {"      "}
+    &lt;<span className="text-red-600">nav</span>&gt;
+    {"\n"}
+
+    {"        "}
+    <span className="text-gray-500">
+      {"{/* Link works but does NOT add an active class */}"}
+    </span>
+    {"\n"}
+
+    {"        "}
+    &lt;<span className="text-green-700">Link</span>{" "}
+    <span className="text-blue-700">to</span>=
+    <span className="text-yellow-700">"/"</span>&gt;
+    Home
+    &lt;/<span className="text-green-700">Link</span>&gt;
+    {" "}|
+    {" "}
+    &lt;<span className="text-green-700">Link</span>{" "}
+    <span className="text-blue-700">to</span>=
+    <span className="text-yellow-700">"/about"</span>&gt;
+    About
+    &lt;/<span className="text-green-700">Link</span>&gt;
+    {"\n"}
+
+    {"      "}
+    &lt;/<span className="text-red-600">nav</span>&gt;
+    {"\n\n"}
+
+    {"      "}
+    &lt;<span className="text-green-700">Routes</span>&gt;
+    {"\n"}
+
+    {"        "}
+    &lt;<span className="text-green-700">Route</span>{" "}
+    <span className="text-blue-700">path</span>=
+    <span className="text-yellow-700">"/"</span>{" "}
+    <span className="text-blue-700">element</span>=
+    <span className="text-gray-900">{"{"}</span>
+    &lt;<span className="text-green-700">Home</span> /&gt;
+    <span className="text-gray-900">{"}"}</span> /&gt;
+    {"\n"}
+
+    {"        "}
+    &lt;<span className="text-green-700">Route</span>{" "}
+    <span className="text-blue-700">path</span>=
+    <span className="text-yellow-700">"/about"</span>{" "}
+    <span className="text-blue-700">element</span>=
+    <span className="text-gray-900">{"{"}</span>
+    &lt;<span className="text-green-700">About</span> /&gt;
+    <span className="text-gray-900">{"}"}</span> /&gt;
+    {"\n"}
+
+    {"      "}
+    &lt;/<span className="text-green-700">Routes</span>&gt;
+    {"\n"}
+
+    {"    "}
+    &lt;/<span className="text-red-600">div</span>&gt;
+    {"\n"}
+
+    {"  "}
     );
-}
+    {"\n"}
+    {"}"}
+    {"\n\n"}
 
-export default App;`}
-            </code>
-         </pre>
+    <span className="text-purple-700">export</span>{" "}
+    <span className="text-purple-700">default</span>{" "}
+    <span className="text-blue-700">App</span>;
 
+  </code>
+</pre>
          <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">In this example</h2>
         <ul className="list-[square] space-y-1 mt-5">
             <li>Routes wraps Route elements that define the application's routing paths.</li>
@@ -80,11 +177,21 @@ export default App;`}
         </ul>
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`<NavLink to="/path" activeClassName="active">Text</NavLink>`}
-            </code>
-        </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
+
+    &lt;<span className="text-green-700">NavLink</span>{" "}
+    <span className="text-blue-700">to</span>=
+    <span className="text-yellow-700">"/path"</span>{" "}
+    <span className="text-blue-700">activeClassName</span>=
+    <span className="text-yellow-700">"active"</span>&gt;
+
+    <span className="text-gray-900">Text</span>
+
+    &lt;/<span className="text-green-700">NavLink</span>&gt;
+
+  </code>
+</pre>
 
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Features of NavLink</h2>
@@ -94,65 +201,228 @@ export default App;`}
             <li><span className="font-semibold">Exact Matching Option</span>: By default, NavLink allows partial route matches; setting exact ensures precise path <span className="ml-5">matching</span>.</li>
         </ul>
 
-        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-             <code>
-                {`import React from "react";
-import { NavLink, Route, Routes } from "react-router-dom";
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
 
-function Home() {
-    return <h1>Home Page</h1>;
-}
+    <span className="text-purple-700">import</span>{" "}
+    <span className="text-green-700">React</span>{" "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">"react"</span>;
+    {"\n"}
 
-function About() {
-    return <h1>About Page</h1>;
-}
+    <span className="text-purple-700">import</span>{" "}
+    {"{ "}
+    <span className="text-green-700">NavLink</span>,{" "}
+    <span className="text-green-700">Route</span>,{" "}
+    <span className="text-green-700">Routes</span>{" "}
+    {"} "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">"react-router-dom"</span>;
+    {"\n\n"}
 
-function Navbar() {
-    return (
-        <nav>
-            {/* Using inline styles for active link */}
-            <NavLink
-                to="/"
-                style={({ isActive }) => ({
-                    color: isActive ? "red" : "black",
-                    fontWeight: isActive ? "bold" : "normal",
-                    textDecoration: "none",
-                    marginRight: "15px",
-                })}
-            >
-                Home
-            </NavLink>
+    <span className="text-purple-700">function</span>{" "}
+    <span className="text-blue-700">Home</span>() {"{"}
+    {"\n"}
+    {"  "}
+    <span className="text-purple-700">return</span>{" "}
+    &lt;<span className="text-red-600">h1</span>&gt;Home Page&lt;/<span className="text-red-600">h1</span>&gt;;
+    {"\n"}
+    {"}"}
+    {"\n\n"}
 
-            <NavLink
-                to="/about"
-                style={({ isActive }) => ({
-                    color: isActive ? "red" : "black",
-                    fontWeight: isActive ? "bold" : "normal",
-                    textDecoration: "none",
-                })}
-            >
-                About
-            </NavLink>
-        </nav>
+    <span className="text-purple-700">function</span>{" "}
+    <span className="text-blue-700">About</span>() {"{"}
+    {"\n"}
+    {"  "}
+    <span className="text-purple-700">return</span>{" "}
+    &lt;<span className="text-red-600">h1</span>&gt;About Page&lt;/<span className="text-red-600">h1</span>&gt;;
+    {"\n"}
+    {"}"}
+    {"\n\n"}
+
+    <span className="text-purple-700">function</span>{" "}
+    <span className="text-blue-700">Navbar</span>() {"{"}
+    {"\n"}
+    {"  "}
+    <span className="text-purple-700">return</span> (
+    {"\n"}
+
+    {"    "}
+    &lt;<span className="text-red-600">nav</span>&gt;
+    {"\n"}
+
+    {"      "}
+    <span className="text-gray-500">
+      {"{/* Using inline styles for active link */}"}
+    </span>
+    {"\n"}
+
+    {"      "}
+    &lt;<span className="text-green-700">NavLink</span>{"\n"}
+    {"        "}
+    <span className="text-blue-700">to</span>=<span className="text-yellow-700">"/"</span>{"\n"}
+    {"        "}
+    <span className="text-blue-700">style</span>=
+    <span className="text-gray-900">{"{"}</span>
+    (<span className="text-gray-900">{"{"}</span>{" "}
+    <span className="text-blue-700">isActive</span>{" "}
+    <span className="text-gray-900">{"}"}</span>) =&gt; (
+    <span className="text-gray-900">{"{"}</span>
+    {"\n"}
+
+    {"          "}
+    <span className="text-blue-700">color</span>:{" "}
+    <span className="text-blue-700">isActive</span> ?{" "}
+    <span className="text-yellow-700">"red"</span> :{" "}
+    <span className="text-yellow-700">"black"</span>,
+    {"\n"}
+
+    {"          "}
+    <span className="text-blue-700">fontWeight</span>:{" "}
+    <span className="text-blue-700">isActive</span> ?{" "}
+    <span className="text-yellow-700">"bold"</span> :{" "}
+    <span className="text-yellow-700">"normal"</span>,
+    {"\n"}
+
+    {"          "}
+    <span className="text-blue-700">textDecoration</span>:{" "}
+    <span className="text-yellow-700">"none"</span>,
+    {"\n"}
+
+    {"          "}
+    <span className="text-blue-700">marginRight</span>:{" "}
+    <span className="text-yellow-700">"15px"</span>,
+    {"\n"}
+
+    {"        "}
+    <span className="text-gray-900">{"}"}</span>)
+    <span className="text-gray-900">{"}"}</span>
+    &gt;
+    {"\n"}
+
+    {"        "}
+    Home
+    {"\n"}
+
+    {"      "}
+    &lt;/<span className="text-green-700">NavLink</span>&gt;
+    {"\n\n"}
+
+    {"      "}
+    &lt;<span className="text-green-700">NavLink</span>{"\n"}
+    {"        "}
+    <span className="text-blue-700">to</span>=<span className="text-yellow-700">"/about"</span>{"\n"}
+    {"        "}
+    <span className="text-blue-700">style</span>=
+    <span className="text-gray-900">{"{"}</span>
+    (<span className="text-gray-900">{"{"}</span>{" "}
+    <span className="text-blue-700">isActive</span>{" "}
+    <span className="text-gray-900">{"}"}</span>) =&gt; (
+    <span className="text-gray-900">{"{"}</span>
+    {"\n"}
+
+    {"          "}
+    <span className="text-blue-700">color</span>:{" "}
+    <span className="text-blue-700">isActive</span> ?{" "}
+    <span className="text-yellow-700">"red"</span> :{" "}
+    <span className="text-yellow-700">"black"</span>,
+    {"\n"}
+
+    {"          "}
+    <span className="text-blue-700">fontWeight</span>:{" "}
+    <span className="text-blue-700">isActive</span> ?{" "}
+    <span className="text-yellow-700">"bold"</span> :{" "}
+    <span className="text-yellow-700">"normal"</span>,
+    {"\n"}
+
+    {"          "}
+    <span className="text-blue-700">textDecoration</span>:{" "}
+    <span className="text-yellow-700">"none"</span>,
+    {"\n"}
+
+    {"        "}
+    <span className="text-gray-900">{"}"}</span>)
+    <span className="text-gray-900">{"}"}</span>
+    &gt;
+    {"\n"}
+
+    {"        "}
+    About
+    {"\n"}
+
+    {"      "}
+    &lt;/<span className="text-green-700">NavLink</span>&gt;
+    {"\n"}
+
+    {"    "}
+    &lt;/<span className="text-red-600">nav</span>&gt;
+    {"\n"}
+
+    {"  "}
     );
-}
+    {"\n"}
+    {"}"}
+    {"\n\n"}
 
-function App() {
-    return (
-        <div>
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-            </Routes>
-        </div>
+    <span className="text-purple-700">function</span>{" "}
+    <span className="text-blue-700">App</span>() {"{"}
+    {"\n"}
+    {"  "}
+    <span className="text-purple-700">return</span> (
+    {"\n"}
+
+    {"    "}
+    &lt;<span className="text-red-600">div</span>&gt;
+    {"\n"}
+
+    {"      "}
+    &lt;<span className="text-green-700">Navbar</span> /&gt;
+    {"\n"}
+
+    {"      "}
+    &lt;<span className="text-green-700">Routes</span>&gt;
+    {"\n"}
+
+    {"        "}
+    &lt;<span className="text-green-700">Route</span>{" "}
+    <span className="text-blue-700">path</span>=
+    <span className="text-yellow-700">"/"</span>{" "}
+    <span className="text-blue-700">element</span>=
+    <span className="text-gray-900">{"{"}</span>
+    &lt;<span className="text-green-700">Home</span> /&gt;
+    <span className="text-gray-900">{"}"}</span> /&gt;
+    {"\n"}
+
+    {"        "}
+    &lt;<span className="text-green-700">Route</span>{" "}
+    <span className="text-blue-700">path</span>=
+    <span className="text-yellow-700">"/about"</span>{" "}
+    <span className="text-blue-700">element</span>=
+    <span className="text-gray-900">{"{"}</span>
+    &lt;<span className="text-green-700">About</span> /&gt;
+    <span className="text-gray-900">{"}"}</span> /&gt;
+    {"\n"}
+
+    {"      "}
+    &lt;/<span className="text-green-700">Routes</span>&gt;
+    {"\n"}
+
+    {"    "}
+    &lt;/<span className="text-red-600">div</span>&gt;
+    {"\n"}
+
+    {"  "}
     );
-}
+    {"\n"}
+    {"}"}
+    {"\n\n"}
 
-export default App;`}
-             </code>
-        </pre>
+    <span className="text-purple-700">export</span>{" "}
+    <span className="text-purple-700">default</span>{" "}
+    <span className="text-blue-700">App</span>;
 
+  </code>
+</pre>
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">In this example</h2>
         <ul className="list-[square] space-y-1 mt-5">
             <li>NavLink is used instead of Link to apply dynamic styling to the active route.</li>
@@ -163,29 +433,78 @@ export default App;`}
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Handling External Links</h2>
         <p>Both Link and NavLink handle client-side routing within the React app and are not suitable for external URLs. Use the standard {'<a>'} element for linking externally.</p>
-        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`<a href="https://example.com/" target="_blank" rel="noopener noreferrer">
-    External Link
-</a>`}
-            </code>
-        </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
 
+    &lt;<span className="text-red-600">a</span>{" "}
+    <span className="text-blue-700">href</span>=
+    <span className="text-yellow-700">"https://example.com/"</span>{" "}
+    <span className="text-blue-700">target</span>=
+    <span className="text-yellow-700">"_blank"</span>{" "}
+    <span className="text-blue-700">rel</span>=
+    <span className="text-yellow-700">"noopener noreferrer"</span>&gt;
+    {"\n"}
+
+    {"  "}
+    <span className="text-gray-900">External Link</span>
+    {"\n"}
+
+    &lt;/<span className="text-red-600">a</span>&gt;
+
+  </code>
+</pre>
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Combining useNavigate with Link</h2>
         <p>React Router offers the useNavigate hook for programmatic route changes. When navigation must occur based on user interactions—such as post-form submission—useNavigate should be used in place of the Link component.</p>
-        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`import { useNavigate } from "react-router-dom";
-function Home() {
-    const navigate = useNavigate();
-    return (
-        <button onClick={() => navigate("/dashboard")}>
-            Go to Dashboard
-        </button>
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
+
+    <span className="text-purple-700">import</span>{" "}
+    {"{ "}
+    <span className="text-green-700">useNavigate</span>{" "}
+    {"} "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">"react-router-dom"</span>;
+    {"\n"}
+
+    <span className="text-purple-700">function</span>{" "}
+    <span className="text-blue-700">Home</span>() {"{"}
+    {"\n"}
+
+    {"  "}
+    <span className="text-purple-700">const</span>{" "}
+    <span className="text-blue-700">navigate</span> =
+    <span className="text-green-700">useNavigate</span>();
+    {"\n"}
+
+    {"  "}
+    <span className="text-purple-700">return</span> (
+    {"\n"}
+
+    {"    "}
+    &lt;<span className="text-red-600">button</span>{" "}
+    <span className="text-blue-700">onClick</span>=
+    <span className="text-gray-900">{"{"}</span>
+    () =&gt; <span className="text-blue-700">navigate</span>(
+    <span className="text-yellow-700">"/dashboard"</span>)
+    <span className="text-gray-900">{"}"}</span>&gt;
+    {"\n"}
+
+    {"      "}
+    Go to Dashboard
+    {"\n"}
+
+    {"    "}
+    &lt;/<span className="text-red-600">button</span>&gt;
+    {"\n"}
+
+    {"  "}
     );
-}`}
-            </code>
-        </pre>
+    {"\n"}
+
+    {"}"}
+
+  </code>
+</pre>
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Link vs NavLink in React Router Dom</h2>
         <p>Link and NavLink components in React Router provide client-side navigation without page reloads. NavLink applies an "active" class to indicate the current route, whereas Link does not. Employ NavLink for navigation menus and Link for standard routing.</p>

@@ -31,14 +31,14 @@ const JSVariables = () => {
       </div>
 
       <h1 className="text-2xl mt-10 mb-2">Example using let</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`let x = 5;
 let y = 6;
 let z = x + y;`}
       </pre>
 
       <h1 className="text-2xl mt-10 mb-2">Example using const</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`const x = 5;
 const y = 6;
 const z = x + y;`}
@@ -67,7 +67,7 @@ const z = x + y;`}
       <p className="mt-2">The underscore (_) is recognized as a valid character for identifiers in JavaScript, similar to letters.</p>
       <p className="mt-2">An identifier containing an underscore (_) is syntactically valid in JavaScript variable naming.</p>
       <h1 className="text-2xl mt-5 mb-5">Example</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`let _lastName = "Johnson";
 let _x = 2;
 let _100 = 5;`}
@@ -79,7 +79,7 @@ let _100 = 5;`}
       <p className="mt-2">In JavaScript, the $ symbol is treated as a valid character in identifiers, just like letters and underscores.</p>
       <p className="mt-2">The $ character is permitted in JavaScript identifiers, making such variable names valid.</p>
       <h1 className="text-2xl mt-5 mb-5">Example</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`let $ = "Hello World";
 let $$$ = 2;
 let $myMoney = 5;`}
@@ -91,29 +91,29 @@ let $myMoney = 5;`}
       <p className="mt-2">Variables in JavaScript are declared using the <span className="text-red-400 bg-gray-50 px-1">let</span> and <span className="text-red-400 bg-gray-50 px-1">const</span> keywords to define mutable and immutable bindings, respectively.</p>
 
       <h1 className="text-2xl mt-10 mb-5">Declaring a Variable Using let</h1>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`let carName;`}
       </pre>
       <p className="mt-5">Once declared, a variable doesn’t have a value—it’s undefined.</p>
       <p className="mt-5">The assignment operator (=) is used to set a value to a variable:</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-10 mb-5">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`carName = "Volvo";`}
       </pre>
       <p>Most of the time, you’ll set a value for a variable as soon as you declare it:</p>
      <h1 className="text-2xl mt-10 mb-5">Example</h1>
      <p className="mb-5">Define a variable carName and assign "Volvo" as its initial value.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       {`let carName = "Volvo";`}
      </pre>
 
      <h1 className="text-2xl mt-10">Declaring a Variable Using const</h1>
      <p className="mt-5 mb-5">Use the <span className="text-red-400 bg-gray-50 px-1">const</span> keyword to define variables with immutable values.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       {`const carName = "Volvo";`}
      </pre>
 
      <h1 className="text-2xl mt-10 mb-5">A Mixed Example</h1>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       {`const price1 = 5;
 const price2 = 6;
 let total = price1 + price2;`}
@@ -126,7 +126,7 @@ let total = price1 + price2;`}
      <h1 className="text-2xl mt-10">Declaring a Variable Automatically</h1>
      <p className="mt-2">If a variable isn’t declared, it gets declared automatically the first time you use it.</p>
      <h1 className="text-2xl mt-5 mb-5">Example (Not Recommended)</h1>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       {`x = 5;
 y = 6;
 z = x + y;`}
@@ -137,7 +137,7 @@ z = x + y;`}
      <p className="mt-2">The <span className="text-red-400 bg-gray-50 px-1">let</span> and <span className="text-red-400 bg-gray-50 px-1">const</span> keywords were introduced in JavaScript in 2015.</p>
      
      <h1 className="text-2xl mt-5 mb-5">Using var (Not Recommended)</h1>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       {`var x = 5;
 var y = 6;
 var z = x + y;`}
@@ -158,7 +158,7 @@ var z = x + y;`}
      <p className="mt-2"><strong>Numbers</strong> stand on their own in JavaScript <strong>no quotes</strong> required to define them.</p>
      <p className="mt-2">Quoting a number converts it into a string data type in JavaScript, affecting how it behaves in operations.</p>
      <h1 className="text-2xl mt-5 mb-5">Example</h1>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       {`const pi = 3.14;
 let person = "John Doe";
 let answer = 'Yes I am!';`}
@@ -168,7 +168,7 @@ let answer = 'Yes I am!';`}
      <p>JavaScript allows multiple variable declarations in a single statement using commas.</p>
      <p className="mt-2">Use <span className="text-red-400 bg-gray-50 px-1">let</span> or <span className="text-red-400 bg-gray-50 px-1">const</span> to begin the declaration, and separate each variable with a comma within the same statement.</p>
      <h1 className="text-2xl mt-5 mb-5">Example</h1>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       <code>
       {`let person = "John Doe", carName = "Volvo", price = 200;`}
       </code>
@@ -177,7 +177,7 @@ let answer = 'Yes I am!';`}
      <p className="mt-5">A declaration can span multiple lines:</p>
      
      <h1 className="text-2xl mt-10 mb-5">Example</h1>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       {`let person = "John Doe",
 carName = "Volvo",
 price = 200;`}
@@ -186,7 +186,7 @@ price = 200;`}
      <h1 className="text-2xl mt-10">The Assignment Operator</h1>
      <p className="mt-2">In JavaScript, <span className="bg-gray-50 px-1">=</span> assigns a value to a variable. It should not be confused with <span className="bg-gray-50 px-1">==</span> or <span className="bg-gray-50 px-1">===</span>, which are used for comparisons.</p>
         <p className="mb-5">JavaScript plays by different rules than algebra. The next example would puzzle a math teacher:</p>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg ">
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           {`x = x + 5`}
         </pre>
 
@@ -196,21 +196,21 @@ price = 200;`}
         <h1 className="text-2xl mt-10">JavaScript Arithmetic</h1>
         <p className="mt-2 mb-5">JavaScript supports arithmetic operations on variables, employing operators such as the assignment operator (=) and the addition operator (+):</p>
         <h1 className="text-2xl mb-5">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           {`let x = 5 + 2 + 3;`}
         </pre>
         <p className="mt-5">Adding strings concatenates them, combining their contents rather than performing numeric addition.</p>
         <h1 className="text-2xl mt-10 mb-5">Example</h1>
-        <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
           {`let x = "John" + " " + "Doe";`}
         </pre>
         <p className="mt-5">If a numeric value is stringified by quotes, subsequent numeric additions will be treated as string concatenations.</p>
         <h1 className="text-2xl mt-5 mb-5">Example</h1>
-          <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mb-10">
+          <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
             {`let x = "5" + 2 + 3;`}
           </pre>
 
-          <pre className="text-green-400 bg-gray-900 p-4 rounded-lg">
+          <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
             {`let x = 2 + 3 + "5";`}
           </pre>
       <p className="mt-5">

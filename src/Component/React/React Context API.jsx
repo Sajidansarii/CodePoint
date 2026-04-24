@@ -31,18 +31,26 @@ const ReactContext = () => {
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Implement Context API in React</h2>
          <p>Run the following command to set up a React project:</p>
-         <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`npx create-react-app context-api-demo`}
-            </code>
-         </pre>
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
+
+    <span className="text-red-600">npx</span>{" "}
+    <span className="text-blue-700">create-react-app</span>{" "}
+    <span className="text-yellow-700">context-api-demo</span>
+
+  </code>
+</pre>
 
          <p className="mt-5 mb-3">Once the project folder is created, navigate into it using this command:</p>
-         <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`cd context-api-demo`}
-            </code>
-         </pre>
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
+
+    <span className="text-red-600">cd</span>{" "}
+    <span className="text-yellow-700">context-api-demo</span>
+
+  </code>
+</pre>
+
           <p className="mt-5">Create a <span className="text-red-400">Context.js</span> file to initialize your context, and a WelcomePage.js file where the context will be consumed. </p>
           
           <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-3">Approach</h2>
@@ -56,32 +64,74 @@ const ReactContext = () => {
             <li><span className="text-red-400">App.js</span>: The components are imported in this file and then rendered on the webpage</li>
            </ul>
 
-           <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`// App.js
-import React from 'react';
-import WelcomePage from './WelcomePage';
-import UserProvider from './Context';
+         <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
 
-const App = () => {
-  return (
-    <UserProvider>
-      <WelcomePage />
-    </UserProvider>
-  );
-};
+    <span className="text-gray-500">// App.js</span>
+    {"\n"}
 
-export default App;`}
-            </code>
-           </pre>
+    <span className="text-purple-700">import</span>{" "}
+    <span className="text-green-700">React</span>{" "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">'react'</span>;
+    {"\n"}
+
+    <span className="text-purple-700">import</span>{" "}
+    <span className="text-green-700">WelcomePage</span>{" "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">'./WelcomePage'</span>;
+    {"\n"}
+
+    <span className="text-purple-700">import</span>{" "}
+    <span className="text-green-700">UserProvider</span>{" "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">'./Context'</span>;
+    {"\n\n"}
+
+    <span className="text-purple-700">const</span>{" "}
+    <span className="text-green-700">App</span> = () =&gt; {"{"}
+    {"\n"}
+
+    {"  "}
+    <span className="text-purple-700">return</span> (
+    {"\n"}
+
+    {"    "}
+    &lt;<span className="text-green-700">UserProvider</span>&gt;
+    {"\n"}
+
+    {"      "}
+    &lt;<span className="text-green-700">WelcomePage</span> /&gt;
+    {"\n"}
+
+    {"    "}
+    &lt;/<span className="text-green-700">UserProvider</span>&gt;
+    {"\n"}
+
+    {"  "}
+    );
+    {"\n"}
+
+    {"}"}
+    {"\n\n"}
+
+    <span className="text-purple-700">export</span>{" "}
+    <span className="text-purple-700">default</span>{" "}
+    <span className="text-green-700">App</span>;
+
+  </code>
+</pre>
 
 
            <p className="mt-5">Use the command below in your project’s root directory to run the application.</p>
-           <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`npm start`}
-            </code>
-           </pre>
+        <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
+
+    <span className="text-red-600">npm</span>{" "}
+    <span className="text-blue-700">start</span>
+
+  </code>
+</pre>
 
         </div>
 

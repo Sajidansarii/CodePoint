@@ -24,7 +24,7 @@ const JSScope = () => {
       <p className="leading-relaxed mt-2">When declared outside a block, <span className="text-red-400 bg-gray-50 px-1">var</span>, <span className="text-red-400 bg-gray-50 px-1">let</span>, and <span className="text-red-400 bg-gray-50 px-1">const</span> behave similarly.</p>
       <p className="leading-relaxed mt-2">Each of these declarations (var, let, and const) results in a globally scoped variable when used at the top level.</p>
       
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-10">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`var x = 1;    // Global scope
 
 let y = 2;    // Global scope
@@ -34,7 +34,7 @@ const z = 3;  // Global scope`}
 
       <h1 className="text-2xl mt-10">Example</h1>
       <p>Any variable defined outside a function is considered global in scope.</p>
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-10">
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
         {`let carName = "Volvo";
 // code here can use carName
 
@@ -51,7 +51,7 @@ function myFunction() {
     <p className="leading-relaxed mt-2">Function-scoped variables are limited in visibility to the function in which they are declared.</p>
     <p className="leading-relaxed mt-2">Within the scope of a function, <span className="text-red-400 bg-gray-50 px-1">var</span>, <span className="text-red-400 bg-gray-50 px-1">let</span>, and <span className="text-red-400 bg-gray-50 px-1">const</span> all create function-scoped variables with minor differences.</p>
     <p className="leading-relaxed mt-2"><span className="text-red-400 bg-gray-50 px-1">var</span>, <span className="text-red-400 bg-gray-50 px-1">let</span>, and <span className="text-red-400 bg-gray-50 px-1">const</span> are only accessible within the function they’re defined in.</p>
-    <pre className="text-green-400 bg-gray-900 overflow-auto p-4 rounded-lg mt-10">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       {`function myFunction1() {
   var carName = "Volvo";  // Function Scope
 }
@@ -67,7 +67,7 @@ function myFunction3() {
 
     <h1 className="text-2xl mt-5">Example</h1>
     <p className="leading-relaxed mt-3">Variables declared inside a function in JavaScript are scoped locally to that function.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       {`// code here can NOT use carName
 
 function myFunction() {
@@ -97,7 +97,7 @@ function myFunction() {
     
     <p className="leading-relaxed mt-3">This mechanism reduces the risk of variable collisions and enhances maintainability by organizing code more effectively.</p>
     <h1 className="text-2xl mt-5 mb-5">Example</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg nt-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       {`{
   let x = 2;
 }
@@ -108,7 +108,7 @@ function myFunction() {
     <p className="leading-relaxed mt-3">Variables declared with <span className="text-red-400 bg-gray-50 px-1">var</span> within a block are not confined to block scope and remain accessible externally.</p>
 
     <h1 className="text-2xl mt-5">Example (Not Recommended)</h1>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       {`{
   var x = 2;
 }
@@ -118,7 +118,7 @@ function myFunction() {
     <h1 className="text-2xl mt-10 mb-5">Automatically Global</h1>
     <p className="leading-relaxed mt-3">Variables assigned without prior declaration are implicitly created in the global scope.</p>
     <p className="leading-relaxed mt-3">The example declares <span className="text-red-400 bg-gray-50 px-1">cityName</span> as a global variable, despite the assignment happening within a function.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
       {`myFunction();
 
 // code here can use carName
@@ -140,7 +140,7 @@ function myFunction() {
     <p className="leading-relaxed mt-3">Global variables defined with the <span className="text-red-400 bg-gray-50 px-1">var</span> keyword belong to the window object:</p>
 
 <h1 className="text-2xl mt-5">Example (Not Recommended)</h1>
-<pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
+<pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
   {`var cityName = "Mumbai";
 // code here can use window.cityName`}
 </pre>
@@ -148,7 +148,7 @@ function myFunction() {
 <p className="leading-relaxed mt-5">Global variables declared with <span className="text-red-400 bg-gray-50 px-1">let</span> are not properties of the global window object.</p>
 
 <h1 className="text-2xl mt-5">Example</h1>
-<pre className="text-green-400 bg-gray-900 p-4 overflow-x-auto rounded-lg mt-5">
+<pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
   {`let carName = "Volvo";
 // code here can NOT use window.carName`}
 </pre>

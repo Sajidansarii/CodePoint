@@ -45,43 +45,97 @@ const HTMLPlugins = () => {
         <p className="leading-relaxed mb-3">
           Many plugins are available via CDN and can be added with a <code>&lt;script&gt;</code> or <code>&lt;link&gt;</code> tag.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<!-- Example: include a carousel plugin -->
-<link rel="stylesheet" href="https://cdn.example.com/carousel.css" />
-<script src="https://cdn.example.com/carousel.min.js" defer></script>`}</code>
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;!-- Example: include a carousel plugin --&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;link</span>
+    <span className="text-red-500"> rel</span>=
+    <span className="text-green-600">"stylesheet"</span>
+    <span className="text-red-500"> href</span>=
+    <span className="text-green-600">"https://cdn.example.com/carousel.css"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;script</span>
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"https://cdn.example.com/carousel.min.js"</span>
+
+    <span className="text-red-500"> defer</span>
+    <span className="text-gray-500">&gt;&lt;/script&gt;</span>
+  </code>
+</pre>
 
         <h3 className="text-xl font-semibold text-blue-400 mb-3">Package Manager (npm/yarn)</h3>
         <p className="leading-relaxed mb-3">
           For modern projects, install plugins via npm and import them in your JavaScript.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`// install
-npm install some-plugin
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">// install</span>
+    <br/>
+    <span className="text-blue-600">npm install some-plugin</span>
+    <br/><br/>
 
-// usage in JS
-import SomePlugin from 'some-plugin';
-SomePlugin.init();`}</code>
-        </pre>
+    <span className="text-gray-500">// usage in JS</span>
+    <br/>
+
+    <span className="text-purple-600">import</span>
+    <span className="text-gray-800"> SomePlugin </span>
+    <span className="text-purple-600">from</span>
+    <span className="text-green-600"> 'some-plugin'</span>;
+    <br/>
+
+    <span className="text-blue-600">SomePlugin.init();</span>
+  </code>
+</pre>
 
         <h3 className="text-xl font-semibold text-blue-400 mb-3">Inline / Initialization</h3>
         <p className="leading-relaxed mb-3">
           After including, most plugins require initialization:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<!-- HTML -->
-<div class="slider">...</div>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;!-- HTML --&gt;</span>
+    <br/>
 
-<!-- JavaScript (after plugin loaded) -->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const slider = new Carousel('.slider', {
-      autoplay: true,
-    });
-    slider.init();
-  });
-</script>`}</code>
-        </pre>
+    <span className="text-gray-500">&lt;div</span>
+    <span className="text-red-500"> class</span>=
+    <span className="text-green-600">"slider"</span>
+    <span className="text-gray-500">&gt;...&lt;/div&gt;</span>
+
+    <br/><br/>
+
+    <span className="text-gray-500">&lt;!-- JavaScript (after plugin loaded) --&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;script&gt;</span>
+    <br/>
+
+    <span className="text-purple-600">&nbsp;&nbsp;document.addEventListener</span>
+    <span className="text-gray-700">('DOMContentLoaded', () =&gt; </span>
+    <br/>
+
+    <span className="text-blue-600">&nbsp;&nbsp;&nbsp;&nbsp;const slider = new Carousel('.slider', </span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;autoplay</span>:
+    <span className="text-green-600"> true</span>,
+    <br/>
+
+    <span className="text-blue-600">&nbsp;&nbsp;&nbsp;&nbsp;);</span>
+    <br/>
+
+    <span className="text-blue-600">&nbsp;&nbsp;&nbsp;&nbsp;slider.init();</span>
+    <br/>
+
+    <span className="text-gray-700">&nbsp;&nbsp;);</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/script&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Example Plugins */}
@@ -116,16 +170,40 @@ SomePlugin.init();`}</code>
         <p className="leading-relaxed mb-3">
           Some plugins depend on others (e.g., old jQuery plugins need jQuery loaded first). Always include dependencies in the correct order and initialize after the DOM and required scripts are ready.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<!-- jQuery plugin example -->
-<script src="https://code.jquery.com/jquery.min.js"></script>
-<script src="https://cdn.example.com/jquery.plugin.js"></script>
-<script>
-  $(function() {
-    $('.tooltip').plugin();
-  });
-</script>`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;!-- jQuery plugin example --&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;script</span>
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"https://code.jquery.com/jquery.min.js"</span>
+    <span className="text-gray-500">&gt;&lt;/script&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;script</span>
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"https://cdn.example.com/jquery.plugin.js"</span>
+    <span className="text-gray-500">&gt;&lt;/script&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;script&gt;</span>
+    <br/>
+
+    <span className="text-blue-600">&nbsp;&nbsp;$</span>
+    <span className="text-gray-700">(function() </span>
+    <br/>
+
+    <span className="text-purple-600">&nbsp;&nbsp;&nbsp;&nbsp;$('.tooltip')</span>
+    <span className="text-blue-600">.plugin();</span>
+    <br/>
+
+    <span className="text-gray-700">&nbsp;&nbsp;);</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/script&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Performance & Security */}
@@ -160,22 +238,53 @@ SomePlugin.init();`}</code>
         <p className="leading-relaxed mb-3">
           If a plugin fails to load, ensure the core functionality still works or provide a simple fallback. Avoid using plugins for critical features without fallback logic.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<!-- Example: tooltips fallback -->
-<div class="tooltip" data-text="Info">
-  Hover me
-</div>
-<script>
-  if (window.SomeTooltipPlugin) {
-    SomeTooltipPlugin.init('.tooltip');
-  } else {
-    // simple title fallback
-    document.querySelectorAll('.tooltip').forEach(el => {
-      el.setAttribute('title', el.dataset.text);
-    });
-  }
-</script>`}</code>
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;!-- Example: tooltips fallback --&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;div</span>
+    <span className="text-red-500"> class</span>=
+    <span className="text-green-600">"tooltip"</span>
+    <span className="text-red-500"> data-text</span>=
+    <span className="text-green-600">"Info"</span>
+    <span className="text-gray-500">&gt;</span>
+    Hover me
+    <span className="text-gray-500">&lt;/div&gt;</span>
+
+    <br/><br/>
+
+    <span className="text-gray-500">&lt;script&gt;</span>
+    <br/>
+
+    <span className="text-purple-600">&nbsp;&nbsp;if</span>
+    <span className="text-gray-700"> (window.SomeTooltipPlugin) {`{`}</span>
+    <br/>
+
+    <span className="text-blue-600">&nbsp;&nbsp;&nbsp;&nbsp;SomeTooltipPlugin.init('.tooltip');</span>
+    <br/>
+
+    <span className="text-gray-700">&nbsp;&nbsp;{`}`} else {`{`}</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;// simple title fallback</span>
+    <br/>
+
+    <span className="text-blue-600">&nbsp;&nbsp;&nbsp;&nbsp;document.querySelectorAll('.tooltip').forEach(el =&gt; {`{`}</span>
+    <br/>
+
+    <span className="text-blue-600">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;el.setAttribute('title', el.dataset.text);</span>
+    <br/>
+
+    <span className="text-blue-600">&nbsp;&nbsp;&nbsp;&nbsp;{`}`});</span>
+    <br/>
+
+    <span className="text-gray-700">&nbsp;&nbsp;{`}`}</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/script&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Best Practices */}

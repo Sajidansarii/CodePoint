@@ -25,7 +25,7 @@ const JSInnerText = () => {
       </p>
 
        <p className="mt-10 mb-3">Access the visible text inside an element.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`let text = element.innerText;`}
         </code>
@@ -36,14 +36,14 @@ const JSInnerText = () => {
 
       <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-5">Syntax</h2>
      <p>Get the text content of an element or node.</p>
-     <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5">
       <code>
         {`element.innerText`}
       </code>
      </pre>
 
      <p className="mt-5">Update the text content of an element or node.</p>
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`element.innerText = text`}
         </code>
@@ -90,7 +90,7 @@ const JSInnerText = () => {
       
 
       <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`<p id="myP">   This element has extra spacing     and contains <span>a span element</span>.</p>`}
         </code>
@@ -98,7 +98,7 @@ const JSInnerText = () => {
 
 
       <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Example</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
        <code>
         {`let text = document.getElementById("myP").innerText;
 

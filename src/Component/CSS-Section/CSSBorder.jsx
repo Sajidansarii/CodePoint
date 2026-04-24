@@ -41,20 +41,38 @@ const CSSBorder = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 1: Border Styles
       </h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`p {
-  border-style: solid;
-}
-p {
-  border-style: dotted;
-}
-p {
-  border-style: dashed;
-}`}
-        </code>
-      </pre>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-blue-500">p</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">border-style</span>
+    <span>: </span>
+    <span className="text-green-700">solid</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">p</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">border-style</span>
+    <span>: </span>
+    <span className="text-green-700">dotted</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">p</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">border-style</span>
+    <span>: </span>
+    <span className="text-green-700">dashed</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+
+     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
         <div className="border border-solid border-gray-600 p-4 text-center">
           Solid Border
         </div>
@@ -70,16 +88,29 @@ p {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 2: Border Width & Color
       </h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`div {
-  border: 5px solid red;
-}
-div {
-  border: 10px solid blue;
-}`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-blue-500">div</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">border</span>
+    <span>: </span>
+    <span className="text-green-700">5px solid red</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">div</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">border</span>
+    <span>: </span>
+    <span className="text-green-700">10px solid blue</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
         <div className="border-4 border-red-500 p-4 text-center">
           4px Red Border
@@ -93,18 +124,39 @@ div {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 3: Rounded Borders
       </h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`div {
-  border: 2px solid green;
-  border-radius: 10px;
-}
-div {
-  border: 2px solid purple;
-  border-radius: 50%;
-}`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mb-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">div</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">border</span>
+    <span>: </span>
+    <span className="text-green-700">2px solid green</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">border-radius</span>
+    <span>: </span>
+    <span className="text-green-700">10px</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">div</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">border</span>
+    <span>: </span>
+    <span className="text-green-700">2px solid purple</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">border-radius</span>
+    <span>: </span>
+    <span className="text-green-700">50%</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
         <div className="border-2 border-green-600 rounded-lg p-4 text-center">
           Rounded Corners

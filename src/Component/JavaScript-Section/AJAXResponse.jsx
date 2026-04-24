@@ -43,32 +43,54 @@ const JSAJAXResponse = () => {
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The responseText Property</h1>
      <p>The <span className="text-red-400">responseText</span> property provides the server’s response as a JavaScript string, which you can then use as needed.</p>
      <h2 className="text-gray-800 text-2xl font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-      <code>
-        {`document.getElementById("demo").innerHTML = xhttp.responseText;`}
-      </code>
-    </pre>
+  <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    document.getElementById(
+    <span className="text-green-700">"demo"</span>
+    ).innerHTML = xhttp.responseText;
+  </code>
+</pre>
 
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The responseXML Property</h1>
     <p>The XMLHttpRequest object includes a built-in XML parser, and its <span className="text-red-400">responseXML</span> property returns the server response as an XML DOM object that you can parse.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5 mb-5">Example</h2>
     <p>Request the <span className="text-red-400">cd_catalog.xml</span> file and parse the returned response.</p>
-    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-      <code>
-        {`const xmlDoc = xhttp.responseXML;
-const x = xmlDoc.getElementsByTagName("ARTIST");
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    const xmlDoc = xhttp.responseXML;
+    <br />
 
-let txt = "";
-for (let i = 0; i < x.length; i++) {
-  txt += x[i].childNodes[0].nodeValue + "<br>";
-}
-document.getElementById("demo").innerHTML = txt;
+    const x = xmlDoc.getElementsByTagName(
+    <span className="text-green-700">"ARTIST"</span>
+    );
+    <br /><br />
 
-xhttp.open("GET", "cd_catalog.xml");
-xhttp.send();
-`}
-      </code>
-    </pre>
+    let txt = "";
+    <br />
+
+    <span className="text-red-500">for</span> (let i = 0; i &lt; x.length; i++) {"{"}
+    <br />
+
+    &nbsp;&nbsp;txt += x[i].childNodes[0].nodeValue + <span className="text-green-700">"&lt;br&gt;"</span>;
+    <br />
+
+    {"}"}
+    <br /><br />
+
+    document.getElementById(
+    <span className="text-green-700">"demo"</span>
+    ).innerHTML = txt;
+    <br /><br />
+
+    xhttp.open(
+    <span className="text-green-700">"GET"</span>,
+    <span className="text-green-700">"cd_catalog.xml"</span>
+    );
+    <br />
+
+    xhttp.send();
+  </code>
+</pre>
 
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Server Response Methods</h1>
     <table className="min-w-full border border-gray-300 text-gray-700 text-sm text-left mt-5">
@@ -91,33 +113,68 @@ xhttp.send();
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The getAllResponseHeaders() Method</h1>
     <p>The <span className="text-red-400">getAllResponseHeaders()</span> method retrieves all header information from the server’s response.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-      <code>
-        {`const xhttp = new XMLHttpRequest();
-xhttp.onload = function() {
-    document.getElementById("demo").innerHTML =
-    this.getAllResponseHeaders();
-}
-xhttp.open("GET", "ajax_info.txt");
-xhttp.send();`}
-      </code>
-    </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    const xhttp = new XMLHttpRequest();
+    <br />
+
+    xhttp.onload = function() {"{"}
+    <br />
+
+    &nbsp;&nbsp;document.getElementById(
+    <span className="text-green-700">"demo"</span>
+    ).innerHTML =
+    <br />
+
+    &nbsp;&nbsp;this.getAllResponseHeaders();
+    <br />
+
+    {"}"}
+    <br /><br />
+
+    xhttp.open(
+    <span className="text-green-700">"GET"</span>,
+    <span className="text-green-700">"ajax_info.txt"</span>
+    );
+    <br />
+
+    xhttp.send();
+  </code>
+</pre>
 
     <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">The getResponseHeader() Method</h1>
     <p>The <span className="text-red-400">getResponseHeader()</span> method retrieves a specific header from the server’s response.</p>
     <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-    <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-      <code>
-        {`const xhttp = new XMLHttpRequest();
-xhttp.onload = function() {
-    document.getElementById("demo").innerHTML =
-    this.getResponseHeader("Last-Modified");
-}
-xhttp.open("GET", "ajax_info.txt");
-xhttp.send();
-`}
-      </code>
-    </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    const xhttp = new XMLHttpRequest();
+    <br />
+
+    xhttp.onload = function() {"{"}
+    <br />
+
+    &nbsp;&nbsp;document.getElementById(
+    <span className="text-green-700">"demo"</span>
+    ).innerHTML =
+    <br />
+
+    &nbsp;&nbsp;this.getResponseHeader(
+    <span className="text-green-700">"Last-Modified"</span>
+    );
+    <br />
+
+    {"}"}
+    <br /><br />
+
+    xhttp.open(
+    <span className="text-green-700">"GET"</span>,
+    <span className="text-green-700">"ajax_info.txt"</span>
+    );
+    <br />
+
+    xhttp.send();
+  </code>
+</pre>
 
 
 

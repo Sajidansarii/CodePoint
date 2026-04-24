@@ -17,11 +17,30 @@ const CssAlign = () => {
         <p className="text-center">This text is Center aligned</p>
         <p className="text-right">This text is Right aligned</p>
       </div>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-{`p { text-align: left; }
-p { text-align: center; }
-p { text-align: right; }`}
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">p</span> <span>{'{'}</span>
+    <span className="text-red-500"> text-align</span>
+    <span>: </span>
+    <span className="text-green-700">left</span>
+    <span>;</span>
+    <span> {'}'}</span><br />
+
+    <span className="text-blue-500">p</span> <span>{'{'}</span>
+    <span className="text-red-500"> text-align</span>
+    <span>: </span>
+    <span className="text-green-700">center</span>
+    <span>;</span>
+    <span> {'}'}</span><br />
+
+    <span className="text-blue-500">p</span> <span>{'{'}</span>
+    <span className="text-red-500"> text-align</span>
+    <span>: </span>
+    <span className="text-green-700">right</span>
+    <span>;</span>
+    <span> {'}'}</span>
+  </code>
+</pre>
 
       {/* Vertical Alignment */}
       <h2 className="text-xl font-semibold mt-6 mb-2">2. Vertical Alignment (inline elements)</h2>
@@ -31,11 +50,30 @@ p { text-align: right; }`}
         <span className="align-middle bg-green-200 px-2">Middle</span>
         <span className="align-bottom bg-blue-200 px-2">Bottom</span>
       </div>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-{`span { vertical-align: top; }
-span { vertical-align: middle; }
-span { vertical-align: bottom; }`}
-      </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">span</span> <span>{'{'}</span>
+    <span className="text-red-500"> vertical-align</span>
+    <span>: </span>
+    <span className="text-green-700">top</span>
+    <span>;</span>
+    <span> {'}'}</span><br />
+
+    <span className="text-blue-500">span</span> <span>{'{'}</span>
+    <span className="text-red-500"> vertical-align</span>
+    <span>: </span>
+    <span className="text-green-700">middle</span>
+    <span>;</span>
+    <span> {'}'}</span><br />
+
+    <span className="text-blue-500">span</span> <span>{'{'}</span>
+    <span className="text-red-500"> vertical-align</span>
+    <span>: </span>
+    <span className="text-green-700">bottom</span>
+    <span>;</span>
+    <span> {'}'}</span>
+  </code>
+</pre>
 
       {/* Flexbox Alignment */}
       <h2 className="text-xl font-semibold mt-6 mb-2">3. Flexbox Alignment</h2>
@@ -46,13 +84,28 @@ span { vertical-align: bottom; }`}
       <div className="border p-4 flex justify-center items-center h-32 bg-gray-100 mb-4">
         <div className="bg-purple-500 text-white px-4 py-2 rounded">Centered Box</div>
       </div>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-{`.container {
-  display: flex;
-  justify-content: center; /* horizontal */
-  align-items: center;     /* vertical */
-}`}
-      </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">.container</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">display</span>
+    <span>: </span>
+    <span className="text-green-700">flex</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">justify-content</span>
+    <span>: </span>
+    <span className="text-green-700">center</span>
+    <span>;</span> <span>/* horizontal */</span><br />
+
+    <span className="text-red-500">align-items</span>
+    <span>: </span>
+    <span className="text-green-700">center</span>
+    <span>;</span> <span>/* vertical */</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h2 className="text-xl font-semibold mt-6 mb-2">Summary</h2>
       <ul className="list-disc list-inside space-y-2">

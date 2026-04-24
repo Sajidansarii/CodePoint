@@ -16,13 +16,21 @@ const ReactcomponentUpdate = () => {
          </ul>
 
          <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`componentDidUpdate(prevProps, prevState, snapshot) {   /
-    / Your code here
- }`}
-            </code>
-        </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
+
+    <span className="text-blue-700">componentDidUpdate</span>(
+    prevProps, prevState, snapshot) {"{"}
+    {"\n"}
+
+    {"  "}
+    <span className="text-gray-500">// Your code here</span>
+    {"\n"}
+
+    {"}"}
+
+  </code>
+</pre>
 
         <ul className="list-[square] space-y-1 mt-5">
             <li><span className="font-semibold">prevProps</span>: The previous props passed to the component before it updated.</li>
@@ -37,7 +45,7 @@ const ReactcomponentUpdate = () => {
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Tracking Scroll Position</h2>
         <p>As the user scrolls, the component keeps track of their position and updates its state. If they scroll past a specific threshold, the component can respond by performing additional actions or showing messages.</p>
-        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+        <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
             <code>
                 {`import React, { Component } from "react";
 
@@ -91,53 +99,108 @@ export default ScrollTracker;`}
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">When To Use componentDidUpdate()</h2>
          <p>After Props or State Change Use componentDidUpdate() to perform tasks that depend on changes in props or state. This is useful for side effects such as fetching new data or updating content based on updated props.</p>
          <p>When a component’s userId prop changes, you might need to fetch updated data for that user.</p>
-        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`componentDidUpdate(prevProps) {  
-    if (this.props.userId !== prevProps.userId) {
-    this.fetchData(this.props.userId); 
-   }
-}               `}
-            </code>
-        </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
 
+    <span className="text-blue-700">componentDidUpdate</span>(prevProps) {"{"}
+    {"\n"}
+
+    {"  "}
+    <span className="text-purple-700">if</span> (
+    this.props.userId !== prevProps.userId) {"{"}
+    {"\n"}
+
+    {"    "}
+    this.<span className="text-blue-700">fetchData</span>(this.props.userId);
+    {"\n"}
+
+    {"  "}
+    {"}"}
+    {"\n"}
+
+    {"}"}
+
+  </code>
+</pre>
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">To Trigger Side Effects</h2>
         <p>After a state or prop update, <span className="text-red-400 bg-gray-50">componentDidUpdate()</span> can be used to handle side effects such as updating external libraries, working with third-party tools, or executing operations that don’t directly affect the UI.</p>
         <p>You can trigger animations each time the component’s state changes.</p>
-        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`componentDidUpdate(prevState) {  
-    if (this.state.isVisible !== prevState.isVisible) { 
-    this.startAnimation();  
-    }
-}`}
-            </code>
-        </pre>
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
+
+    <span className="text-blue-700">componentDidUpdate</span>(prevState) {"{"}
+    {"\n"}
+
+    {"  "}
+    <span className="text-purple-700">if</span> (
+    this.state.isVisible !== prevState.isVisible) {"{"}
+    {"\n"}
+
+    {"    "}
+    this.<span className="text-blue-700">startAnimation</span>();
+    {"\n"}
+
+    {"  "}
+    {"}"}
+    {"\n"}
+
+    {"}"}
+
+  </code>
+</pre>
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">When You Need to Compare Old and New State or Props</h2>
         <p>Whenever you need to see what’s changed in props or state, <span className="text-red-400 bg-gray-50">componentDidUpdate()</span> provides the previous and current values. This allows you to determine if another state update or side effect should be executed.</p>
         <p>If the filter changes, you’ll usually want to recalculate or get new data—but only when the filter has actually changed.</p>
-        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`componentDidUpdate(prevProps) {  
-    if (this.props.filter !== prevProps.filter) { 
-    this.calculateResults(); 
-    }
-}`}
-            </code>
-        </pre>
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
+
+    <span className="text-blue-700">componentDidUpdate</span>(prevProps) {"{"}
+    {"\n"}
+
+    {"  "}
+    <span className="text-purple-700">if</span> (
+    this.props.filter !== prevProps.filter) {"{"}
+    {"\n"}
+
+    {"    "}
+    this.<span className="text-blue-700">calculateResults</span>();
+    {"\n"}
+
+    {"  "}
+    {"}"}
+    {"\n"}
+
+    {"}"}
+
+  </code>
+</pre>
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">For DOM Manipulation (Post Update)</h2>
         <p>Although direct DOM manipulation is generally discouraged in React, componentDidUpdate() can be used when you need to ensure the component has fully updated before making changes. After the update, you might use it to adjust the scroll position or focus a specific element.</p>
-        <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`componentDidUpdate() {  
-    if (this.state.scrollToBottom) {  
-    window.scrollTo(0, document.body.scrollHeight); 
-    }
-}`}
-            </code>
-        </pre>
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
+
+    <span className="text-blue-700">componentDidUpdate</span>() {"{"}
+    {"\n"}
+
+    {"  "}
+    <span className="text-purple-700">if</span> (
+    this.state.scrollToBottom) {"{"}
+    {"\n"}
+
+    {"    "}
+    window.<span className="text-blue-700">scrollTo</span>(0, document.body.scrollHeight);
+    {"\n"}
+
+    {"  "}
+    {"}"}
+    {"\n"}
+
+    {"}"}
+
+  </code>
+</pre>
 
         <h2 className="text-2xl text-gray-800 font-semibold mt-5">Best Practices for using componentDidMount()</h2>
         <ul className="list-[square] space-y-1 mt-5">

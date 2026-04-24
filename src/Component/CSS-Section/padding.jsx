@@ -8,12 +8,19 @@ export default function CssPadding() {
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>{`div {
-  border: 2px solid blue;
-  padding: 20px;
-}`}</code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">div</span> {'{'}
+    <br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>:{" "}
+    <span className="text-green-700">2px solid blue</span>;
+    <br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>:{" "}
+    <span className="text-green-700">20px</span>;
+    <br />
+    {'}'}
+  </code>
+</pre>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Demo</h2>
       <div className="mt-4">

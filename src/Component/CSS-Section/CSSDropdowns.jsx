@@ -34,27 +34,28 @@ const CssDropdowns = () => {
         </div>
       </div>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-{`/* CSS Example */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-gray-500">/* CSS Example */</span><br />
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-    }`}
-    </code>
-      </pre>
+    <span className="text-blue-500">.dropdown</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">position</span>: <span className="text-green-700">relative</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">inline-block</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">.dropdown-content</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">none</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">position</span>: <span className="text-green-700">absolute</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#fff</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">min-width</span>: <span className="text-green-700">160px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">box-shadow</span>: <span className="text-green-700">0 8px 16px rgba(0,0,0,0.2)</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">.dropdown:hover .dropdown-content</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">block</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       {/* Click Dropdown */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Click Dropdown</h2>
@@ -77,19 +78,36 @@ const CssDropdowns = () => {
         </div>
       </details>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-{`/* Using HTML <details> and <summary> */
-<details>
-<summary>Click Me</summary>
-<div class="dropdown-content">
-<a href="#">Profile</a>
-<a href="#">Settings</a>
-<a href="#">Logout</a>
-</div>
-</details>`}
-</code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-gray-500">/* Using HTML &lt;details&gt; and &lt;summary&gt; */</span><br /><br />
+
+    <span className="text-blue-500">&lt;details&gt;</span><br />
+
+    <span className="text-blue-500">&lt;summary&gt;</span>
+    Click Me
+    <span className="text-blue-500">&lt;/summary&gt;</span><br />
+
+    <span className="text-blue-500">&lt;div</span>
+    <span className="text-red-500"> class</span>=<span className="text-green-700">"dropdown-content"</span>
+    <span className="text-blue-500">&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;a</span>
+    <span className="text-red-500"> href</span>=<span className="text-green-700">"#"</span>
+    <span className="text-blue-500">&gt;</span>Profile<span className="text-blue-500">&lt;/a&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;a</span>
+    <span className="text-red-500"> href</span>=<span className="text-green-700">"#"</span>
+    <span className="text-blue-500">&gt;</span>Settings<span className="text-blue-500">&lt;/a&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;a</span>
+    <span className="text-red-500"> href</span>=<span className="text-green-700">"#"</span>
+    <span className="text-blue-500">&gt;</span>Logout<span className="text-blue-500">&lt;/a&gt;</span><br />
+
+    <span className="text-blue-500">&lt;/div&gt;</span><br />
+    <span className="text-blue-500">&lt;/details&gt;</span>
+  </code>
+</pre>
 
       {/* Navbar Dropdown */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Dropdown in Navigation Bar</h2>
@@ -111,31 +129,30 @@ const CssDropdowns = () => {
         </ul>
       </nav>
 
-      <pre className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto mt-5">
-        <code>
-{`.navbar ul {
-  list-style: none;
-  display: flex;
-  }
-  
-  .navbar li {
-    position: relative;
-    margin-right: 20px;
-    }
-    
-    .navbar li:hover ul {
-      display: block;
-      }
-      
-      .navbar ul ul {
-        display: none;
-        position: absolute;
-        background: #fff;
-        color: #000;
-        }`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto mt-5">
+  <code>
+    <span className="text-blue-500">.navbar ul</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">list-style</span>: <span className="text-green-700">none</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    <span>{'}'}</span><br /><br />
 
+    <span className="text-blue-500">.navbar li</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">position</span>: <span className="text-green-700">relative</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">margin-right</span>: <span className="text-green-700">20px</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">.navbar li:hover ul</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">block</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">.navbar ul ul</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">none</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">position</span>: <span className="text-green-700">absolute</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">background</span>: <span className="text-green-700">#fff</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">#000</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
       {/* Notes */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Key Points</h2>
       <ul className="list-disc list-inside space-y-2">

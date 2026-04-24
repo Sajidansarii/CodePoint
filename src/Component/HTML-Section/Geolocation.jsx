@@ -38,12 +38,47 @@ const HTMLGeolocation = () => {
       {/* Example Code */}
       <div className="mb-6">
         <h2 className="text-xl font-semibold text-blue-500 mb-3">Basic Example</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`navigator.geolocation.getCurrentPosition((position) => {
-  console.log("Latitude:", position.coords.latitude);
-  console.log("Longitude:", position.coords.longitude);
-});`}</code>
-        </pre>
+        <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-purple-600">navigator</span>.
+    <span className="text-blue-600">geolocation</span>.
+    <span className="text-yellow-600">getCurrentPosition</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-orange-600">position</span>
+    <span className="text-gray-500">)</span>
+    <span className="text-gray-500"> =&gt; </span>
+    <span className="text-gray-500">{`{`}</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;</span>
+    <span className="text-purple-600">console</span>.
+    <span className="text-blue-600">log</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">"Latitude:"</span>
+    <span className="text-gray-500">, </span>
+    <span className="text-orange-600">position</span>.
+    <span className="text-blue-600">coords</span>.
+    <span className="text-blue-600">latitude</span>
+    <span className="text-gray-500">);</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;</span>
+    <span className="text-purple-600">console</span>.
+    <span className="text-blue-600">log</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">"Longitude:"</span>
+    <span className="text-gray-500">, </span>
+    <span className="text-orange-600">position</span>.
+    <span className="text-blue-600">coords</span>.
+    <span className="text-blue-600">longitude</span>
+    <span className="text-gray-500">);</span>
+    <br/>
+
+    <span className="text-gray-500">{`}`}</span>
+    <span className="text-gray-500">)</span>;
+  </code>
+</pre>
         <p className="leading-relaxed text-sm italic">
           This code gets the user's current location and logs it to the console.
         </p>

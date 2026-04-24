@@ -15,33 +15,89 @@ const JSAJAXPHP = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">AJAX PHP </h1>
       <p>This example demonstrates real-time communication between a web page and a web server while the user enters characters.</p>
        <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-       <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-          {`<p>Start typing a name in the input field below:</p>
-<p>Suggestions: <span id="txtHint"></span></p>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">&lt;p&gt;</span>
+    Start typing a name in the input field below:
+    <span className="text-red-500">&lt;/p&gt;</span>
 
-<form>
-First name: <input type="text" onkeyup="showHint(this.value)">
-</form>
+    <br />
 
-<script>
-function showHint(str) {
-  if (str.length == 0) {
-    document.getElementById("txtHint").innerHTML = "";
-    return;
-  } else {
-    const xmlhttp = new XMLHttpRequest();
-    xmlhttp.onload = function() {
-      document.getElementById("txtHint").innerHTML = this.responseText;
-    }
-  xmlhttp.open("GET", "gethint.php?q=" + str);
-  xmlhttp.send();
-  }
-}
-</script>`}
-        </code>
-       </pre>
+    <span className="text-red-500">&lt;p&gt;</span>
+    Suggestions: <span className="text-red-500">&lt;span</span>{" "}
+    <span className="text-red-500">id</span>=
+    <span className="text-green-700">"txtHint"</span>
+    <span className="text-red-500">&gt;&lt;/span&gt;</span>
+    <span className="text-red-500">&lt;/p&gt;</span>
 
+    <br /><br />
+
+    <span className="text-red-500">&lt;form&gt;</span>
+    <br />
+
+    First name:{" "}
+    <span className="text-red-500">&lt;input</span>{" "}
+    <span className="text-red-500">type</span>=
+    <span className="text-green-700">"text"</span>{" "}
+    <span className="text-red-500">onkeyup</span>=
+    <span className="text-green-700">"showHint(this.value)"</span>
+    <span className="text-red-500"> /&gt;</span>
+
+    <br />
+
+    <span className="text-red-500">&lt;/form&gt;</span>
+
+    <br /><br />
+
+    <span className="text-blue-600">&lt;script&gt;</span>
+    <br />
+
+    <span className="text-red-500">function</span> showHint(str) {"{"}
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">if</span> (str.length == 0) {"{"}
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;document.getElementById(
+    <span className="text-green-700">"txtHint"</span>
+    ).innerHTML = <span className="text-green-700">""</span>;
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">return</span>;
+    <br />
+
+    &nbsp;&nbsp;{"}"} <span className="text-red-500">else</span> {"{"}
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">const</span> xmlhttp = new XMLHttpRequest();
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;xmlhttp.onload = function() {"{"}
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById(
+    <span className="text-green-700">"txtHint"</span>
+    ).innerHTML = this.responseText;
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;{"}"}
+    <br />
+
+    &nbsp;&nbsp;xmlhttp.open("GET", "gethint.php?q=" + str);
+    <br />
+
+    &nbsp;&nbsp;xmlhttp.send();
+    <br />
+
+    &nbsp;&nbsp;{"}"}
+    <br />
+
+    {"}"}
+    <br />
+
+    <span className="text-blue-600">&lt;/script&gt;</span>
+  </code>
+</pre>
        <p className="mt-5">When the user enters a character in the input field, the <span className="text-red-400">onkeyup</span> event fires and executes the <span className="text-red-400">showHint()</span> function.</p>
        <p className="mt-10">Check whether the input field is empty (str.length == 0). If it is, erase the content of txtHint and exit the function.</p>
        <p className="mt-3">When the input field has content, execute the following:</p>
@@ -52,23 +108,6 @@ function showHint(str) {
         <li>Send the request off to a PHP file (gethint.php) on the server</li>
         <li>Create the function to be executed when the server response is ready</li>
        </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </div>
   );

@@ -33,12 +33,36 @@ const SemanticHTML = () => {
           <p className="leading-relaxed mb-3">
             Represents introductory content or navigation (usually at top of a page or section).
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-            {`<header>
-  <h1>Site Title</h1>
-  <nav>…</nav>
-</header>`}
-          </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">header</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">h1</span>
+    <span className="text-gray-500">&gt;</span>
+    Site Title
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">h1</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">nav</span>
+    <span className="text-gray-500">&gt;</span>
+    …
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">nav</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">header</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         </div>
 
         <div className="mb-4">
@@ -46,14 +70,63 @@ const SemanticHTML = () => {
           <p className="leading-relaxed mb-3">
             Contains navigation links.
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-            {`<nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-  </ul>
-</nav>`}
-          </pre>
+         <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">nav</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">ul</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">a</span>
+    <span className="text-red-500"> href</span>=
+    <span className="text-green-600">"/"</span>
+    <span className="text-gray-500">&gt;</span>
+    Home
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">a</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">a</span>
+    <span className="text-red-500"> href</span>=
+    <span className="text-gray-500">"/"</span>
+    <span className="text-green-600">"about"</span>
+    <span className="text-gray-500">&gt;</span>
+    About
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">a</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;/</span>
+    <span className="text-blue-500">ul</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">nav</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         </div>
 
         <div className="mb-4">
@@ -68,12 +141,36 @@ const SemanticHTML = () => {
           <p className="leading-relaxed mb-3">
             Thematic grouping of content, usually with a heading.
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-            {`<section>
-  <h2>Features</h2>
-  <p>Details about features...</p>
-</section>`}
-          </pre>
+          <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">section</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">h2</span>
+    <span className="text-gray-500">&gt;</span>
+    Features
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">h2</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">p</span>
+    <span className="text-gray-500">&gt;</span>
+    Details about features...
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">section</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         </div>
 
         <div className="mb-4">
@@ -95,11 +192,27 @@ const SemanticHTML = () => {
           <p className="leading-relaxed mb-3">
             Footer for a page or section, often contains copyright, links, and contact info.
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-            {`<footer>
-  <p>&copy; 2025 CodePoint</p>
-</footer>`}
-          </pre>
+         <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">footer</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-500">&amp;copy;</span> 2025 CodePoint
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">footer</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         </div>
       </section>
 
@@ -112,15 +225,49 @@ const SemanticHTML = () => {
         <p className="leading-relaxed">
           Using semantic tags instead gives meaning:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<!-- Non-semantic -->
-<div class="header">...</div>
-<div class="nav">...</div>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;!-- Non-semantic --&gt;</span>
+    <br/>
 
-<!-- Semantic -->
-<header>...</header>
-<nav>...</nav>`}</code>
-        </pre>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">div</span>
+    <span className="text-red-500"> class</span>=
+    <span className="text-green-600">"header"</span>
+    <span className="text-gray-500">&gt;...&lt;/</span>
+    <span className="text-blue-500">div</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">div</span>
+    <span className="text-red-500"> class</span>=
+    <span className="text-green-600">"nav"</span>
+    <span className="text-gray-500">&gt;...&lt;/</span>
+    <span className="text-blue-500">div</span>
+    <span className="text-gray-500">&gt;</span>
+
+    <br/><br/>
+
+    <span className="text-gray-500">&lt;!-- Semantic --&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">header</span>
+    <span className="text-gray-500">&gt;</span>...
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">header</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">nav</span>
+    <span className="text-gray-500">&gt;</span>...
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">nav</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Accessibility */}

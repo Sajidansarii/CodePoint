@@ -14,11 +14,31 @@ const HTMLIdAttribute = () => {
       {/* Basic Syntax */}
       <section className="mb-6">
         <h2 className="text-2xl font-semibold text-blue-500 mb-2">Basic Syntax</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<div id="header">
-  <h1>Welcome to CodePoint</h1>
-</div>`}</code>
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">div</span>
+
+    <span className="text-red-500"> id</span>=
+    <span className="text-green-600">"header"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">h1</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Welcome to CodePoint</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">h1</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">div</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed mt-3">
           Here, the <code>&lt;div&gt;</code> has an <code>id</code> of <code>header</code>. That ID must be unique in the entire HTML document.
         </p>
@@ -30,12 +50,23 @@ const HTMLIdAttribute = () => {
         <p className="leading-relaxed mb-3">
           Use the <code>#</code> symbol to select an element by its ID in CSS:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`#header {
-  background-color: #f0f8ff;
-  padding: 10px;
-}`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-purple-600">#header</span>
+    <span className="text-gray-500"> &#123;</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;background-color</span>:
+    <span className="text-green-600"> #f0f8ff</span>;
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;padding</span>:
+    <span className="text-blue-600"> 10px</span>;
+    <br/>
+
+    <span className="text-gray-500">&#125;</span>
+  </code>
+</pre>
         <p className="leading-relaxed">
           This styles only the element with <code>id="header"</code>.
         </p>
@@ -47,10 +78,26 @@ const HTMLIdAttribute = () => {
         <p className="leading-relaxed mb-3">
           JavaScript can grab the element directly by its ID:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`const header = document.getElementById('header');
-header.style.border = '2px solid blue';`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-purple-600">const</span>
+    <span className="text-orange-600"> header</span>
+    <span className="text-gray-500"> = </span>
+    <span className="text-blue-600">document</span>.
+    <span className="text-blue-600">getElementById</span>
+    <span className="text-gray-500">(</span>
+    <span className="text-green-600">'header'</span>
+    <span className="text-gray-500">);</span>
+    <br/>
+
+    <span className="text-orange-600">header</span>.
+    <span className="text-blue-600">style</span>.
+    <span className="text-blue-600">border</span>
+    <span className="text-gray-500"> = </span>
+    <span className="text-green-600">'2px solid blue'</span>
+    <span className="text-gray-500">;</span>
+  </code>
+</pre>
         <p className="leading-relaxed">
           Or with query selector:
           <code className="ml-1">{document.querySelector('#header')}</code>
@@ -71,14 +118,54 @@ header.style.border = '2px solid blue';`}</code>
             Use <code>id</code> when you need to reference one specific element (e.g., anchor links, JavaScript hooks).
           </li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mt-3">
-          <code>{`<!-- ID (unique) -->
-<div id="main-title">Hello</div>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mt-3 text-sm">
+  <code>
+    <span className="text-gray-400">&lt;!-- ID (unique) --&gt;</span>
+    <br/>
 
-<!-- Class (reusable) -->
-<p class="highlight">Text A</p>
-<p class="highlight">Text B</p>`}</code>
-        </pre>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">div</span>
+
+    <span className="text-red-500"> id</span>=
+    <span className="text-green-600">"main-title"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Hello</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">div</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+    <br/>
+
+    <span className="text-gray-400">&lt;!-- Class (reusable) --&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">p</span>
+
+    <span className="text-red-500"> class</span>=
+    <span className="text-green-600">"highlight"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Text A</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">p</span>
+
+    <span className="text-red-500"> class</span>=
+    <span className="text-green-600">"highlight"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Text B</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">p</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Best Practices */}
@@ -98,14 +185,48 @@ header.style.border = '2px solid blue';`}</code>
         <p className="leading-relaxed mb-3">
           IDs can be used as targets for internal navigation:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<a href="#features">See Features</a>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">a</span>
 
-<section id="features">
-  <h2>Features</h2>
-  ...
-</section>`}</code>
-        </pre>
+    <span className="text-red-500"> href</span>=
+    <span className="text-green-600">"#features"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">See Features</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">a</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">section</span>
+
+    <span className="text-red-500"> id</span>=
+    <span className="text-green-600">"features"</span>
+
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-600">h2</span>
+    <span className="text-gray-500">&gt;</span>
+    <span className="text-gray-700">Features</span>
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">h2</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-700">&nbsp;&nbsp;...</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">section</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Common Mistakes */}

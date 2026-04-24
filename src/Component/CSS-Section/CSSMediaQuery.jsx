@@ -77,50 +77,68 @@ const CssMediaQueries = () => {
       <p>Media queries consist of a media type and one or more media features. Each feature is tested, and if the conditions are met (true), the styles are applied.</p>
 
       {/* Syntax Example */}
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`@media screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-    }
-    }`}
-    </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">@media screen and (max-width: 600px)</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">body</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">lightblue</span>;<br />
+    &nbsp;&nbsp;<span>{'}'}</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+
       <p>By default, the media type is optional and will default to all if left out. However, if your media query includes not or only, then specifying a media type is required.</p>
       <p>Stylesheets can be linked selectively to respond to various media types or viewport widths.</p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`<link rel="stylesheet" media="print" href="print.css">
-<link rel="stylesheet" media="screen" href="screen.css">
-<link rel="stylesheet" media="screen and (min-width: 480px)" href="example1.css">
-<link rel="stylesheet" media="screen and (min-width: 701px) and (max-width: 900px)" href="example2.css">`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">&lt;link</span> <span className="text-red-500">rel</span>=<span className="text-green-700">"stylesheet"</span> <span className="text-red-500">media</span>=<span className="text-green-700">"print"</span> <span className="text-red-500">href</span>=<span className="text-green-700">"print.css"</span><span className="text-blue-600">&gt;</span><br />
+
+    <span className="text-blue-600">&lt;link</span> <span className="text-red-500">rel</span>=<span className="text-green-700">"stylesheet"</span> <span className="text-red-500">media</span>=<span className="text-green-700">"screen"</span> <span className="text-red-500">href</span>=<span className="text-green-700">"screen.css"</span><span className="text-blue-600">&gt;</span><br />
+
+    <span className="text-blue-600">&lt;link</span> <span className="text-red-500">rel</span>=<span className="text-green-700">"stylesheet"</span> <span className="text-red-500">media</span>=<span className="text-green-700">"screen and (min-width: 480px)"</span> <span className="text-red-500">href</span>=<span className="text-green-700">"example1.css"</span><span className="text-blue-600">&gt;</span><br />
+
+    <span className="text-blue-600">&lt;link</span> <span className="text-red-500">rel</span>=<span className="text-green-700">"stylesheet"</span> <span className="text-red-500">media</span>=<span className="text-green-700">"screen and (min-width: 701px) and (max-width: 900px)"</span> <span className="text-red-500">href</span>=<span className="text-green-700">"example2.css"</span><span className="text-blue-600">&gt;</span>
+  </code>
+</pre>
+
       <h1 className="text-2xl">Media Queries Examples</h1>
       <p>Media queries can be written directly inside your existing stylesheet to apply styles conditionally based on screen size or device type.</p>
       <p>In this case, a media query sets the background to lightgreen at widths of 480px or more, and pink for anything narrower.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`@media screen and (min-width: 480px) {
-  body {
-    background-color: lightgreen;
-  }
-}`}
-        </code>
-      </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">@media screen and (min-width: 480px)</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">body</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">lightgreen</span>;<br />
+    &nbsp;&nbsp;<span>{'}'}</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <p>In this example, the menu is positioned to the left side of the page when the viewport is at least 480 pixels wide. For smaller viewports, it shifts above the main content.</p>
 
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`@media screen and (min-width: 480px) {
-  #leftsidebar {width: 200px; float: left;}
-  #main {margin-left: 216px;}
-}`}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">@media screen and (min-width: 480px)</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">#leftsidebar</span> <span>{'{'}</span>
+    <span className="text-red-500">width</span>: <span className="text-green-700">200px</span>; 
+    <span className="text-red-500">float</span>: <span className="text-green-700">left</span>;
+    <span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">#main</span> <span>{'{'}</span>
+    <span className="text-red-500">margin-left</span>: <span className="text-green-700">216px</span>;
+    <span>{'}'}</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+
     </div>
   );
 };

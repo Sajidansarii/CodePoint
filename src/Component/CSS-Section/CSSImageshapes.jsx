@@ -39,17 +39,19 @@ const ImageShapesTutorial = () => {
             The <code>circle(50%)</code> function makes the wrapping area circular.
           </p>
         </div>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`img {
-  float: left;
-  width: 150px;
-  height: 150px;
-  shape-outside: circle(50%);
-  clip-path: circle(50%);
-  }`}
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-500">img</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">float</span>: <span className="text-green-700">left</span>;<br />
+    <span className="text-red-500">width</span>: <span className="text-green-700">150px</span>;<br />
+    <span className="text-red-500">height</span>: <span className="text-green-700">150px</span>;<br />
+    <span className="text-red-500">shape-outside</span>: <span className="text-green-700">circle(50%)</span>;<br />
+    <span className="text-red-500">clip-path</span>: <span className="text-green-700">circle(50%)</span>;<br />
+
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
       </div>
 
       {/* Ellipse Shape */}
@@ -73,17 +75,20 @@ const ImageShapesTutorial = () => {
             <code>ellipse(50% 40%)</code> creates an ellipse with horizontal and vertical radii.
           </p>
         </div>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-{`img {
-  float: left;
-  width: 160px;
-  height: 120px;
-  shape-outside: ellipse(50% 40%);
-  clip-path: ellipse(50% 40%);
-  }`}
+       <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">img</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">float</span>: <span className="text-green-700">left</span>;<br />
+    <span className="text-red-500">width</span>: <span className="text-green-700">160px</span>;<br />
+    <span className="text-red-500">height</span>: <span className="text-green-700">120px</span>;<br />
+    <span className="text-red-500">shape-outside</span>: <span className="text-green-700">ellipse(50% 40%)</span>;<br />
+    <span className="text-red-500">clip-path</span>: <span className="text-green-700">ellipse(50% 40%)</span>;<br />
+
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
       </div>
 
       {/* Polygon Shape */}
@@ -107,17 +112,20 @@ const ImageShapesTutorial = () => {
             <code>polygon()</code> allows you to define multiple points to create complex wrapping areas.
           </p>
         </div>
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`img {
-  float: left;
-  width: 160px;
-  height: 160px;
-  shape-outside: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
-  }`}
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-500">img</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">float</span>: <span className="text-green-700">left</span>;<br />
+    <span className="text-red-500">width</span>: <span className="text-green-700">160px</span>;<br />
+    <span className="text-red-500">height</span>: <span className="text-green-700">160px</span>;<br />
+    <span className="text-red-500">shape-outside</span>: <span className="text-green-700">polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%)</span>;<br />
+    <span className="text-red-500">clip-path</span>: <span className="text-green-700">polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%)</span>;<br />
+
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
+
       </div>
       <h1 className="text-2xl">CSS Properties and Functions</h1>
       <p>Here is a table that lists the CSS properties and functions featured in this chapter:</p>

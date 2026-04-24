@@ -93,26 +93,59 @@ const CssColorValues = () => {
     
     <h1 className="text-2xl mb-2">Example</h1>
     <p>List various HEX color codes:</p>
-    <pre className="bg-gray-900 mt-r5 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-      <code>
-{`#p1 {background-color: #ff0000;}   /* red */
-#p2 {background-color: #00ff00;}   /* green */
-#p3 {background-color: #0000ff;}   /* blue */`}
-</code>
-    </pre>
+   <pre className="bg-gray-200 mt-r5 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">#p1</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">#ff0000</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* red */</span><br />
+
+    <span className="text-blue-500">#p2</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">#00ff00</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* green */</span><br />
+
+    <span className="text-blue-500">#p3</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">#0000ff</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* blue */</span>
+  </code>
+</pre>
 
     <h1 className="text-2xl mt-10 mb-2">Hexadecimal Colors With Transparency</h1>
     <p>A hexadecimal color is written as #RRGGBB. To include transparency, add two extra digits representing the alpha value, ranging from 00 to FF.</p>
     <h1 className="text-2xl mt-5">Example</h1>
     <p>Specify various HEX colors including transparency:</p>
-    <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-      <code>
-      {`#p1a {background-color: #ff000080;}   /* red transparency */
-#p2a {background-color: #00ff0080;}   /* green transparency */
-#p3a {background-color: #0000ff80;}   /* blue transparency */`}
-</code>
-    </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">#p1a</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">#ff000080</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* red transparency */</span><br />
 
+    <span className="text-blue-500">#p2a</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">#00ff0080</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* green transparency */</span><br />
+
+    <span className="text-blue-500">#p3a</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">#0000ff80</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* blue transparency */</span>
+  </code>
+</pre>
     <h1 className="text-2xl mt-10">RGB Colors</h1>
     <p className="mt-1 mb-2">An RGB color is defined using the rgb() function, following this syntax:</p>
     <p><span className="text-red-400 bg-gray-50 px-1">rgb(red, green, blue)</span></p>
@@ -121,13 +154,30 @@ const CssColorValues = () => {
     <p className="mt-3">The following values produce the same color: rgb(0, 0, 255) and rgb(0%, 0%, 100%).</p>
     <h1 className="text-2xl mt-4">Example</h1>
     <p>List various RGB color values:</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-      <code>
-      {`#p1 {background-color: rgb(255, 0, 0);}   /* red */
-#p2 {background-color: rgb(0, 255, 0);}   /* green */
-#p3 {background-color: rgb(0, 0, 255);}   /* blue */`}
-</code>
-    </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">#p1</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">rgb(255, 0, 0)</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* red */</span><br />
+
+    <span className="text-blue-500">#p2</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">rgb(0, 255, 0)</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* green */</span><br />
+
+    <span className="text-blue-500">#p3</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">rgb(0, 0, 255)</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* blue */</span>
+  </code>
+</pre>
 
     <h1 className="text-2xl mt-10">RGBA Colors</h1>
     <p className="mt-3">RGBA color values build on RGB by adding an alpha channel, which controls the object's opacity.</p>
@@ -136,14 +186,30 @@ const CssColorValues = () => {
     <p className="mt-3">The alpha value ranges from 0.0 (completely transparent) to 1.0 (completely opaque).</p>
     <h1 className="text-2xl mt-5">Example</h1>
     <p className="mt-3">List various RGBA color values with different opacity levels:</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-      <code>
-      {`#p1 {background-color: rgba(255, 0, 0, 0.3);}   /* red with opacity */
-#p2 {background-color: rgba(0, 255, 0, 0.3);}   /* green with opacity */
-#p3 {background-color: rgba(0, 0, 255, 0.3);}   /* blue with opacity */
-`}
-</code>
-    </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">#p1</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">rgba(255, 0, 0, 0.3)</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* red with opacity */</span><br />
+
+    <span className="text-blue-500">#p2</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">rgba(0, 255, 0, 0.3)</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* green with opacity */</span><br />
+
+    <span className="text-blue-500">#p3</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">rgba(0, 0, 255, 0.3)</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* blue with opacity */</span>
+  </code>
+</pre>
 
     <h1 className="text-2xl mt-10">HSL Colors</h1>
     <p className="mt-3">HSL stands for Hue, Saturation, and Lightness — it describes colors using a cylindrical coordinate system.</p>
@@ -152,15 +218,37 @@ const CssColorValues = () => {
     <p className="mt-3">Hue represents a position on the color wheel measured in degrees from 0 to 360, where 0 (or 360) corresponds to red, 120 to green, and 240 to blue. Saturation is given as a percentage, with 0% producing a gray tone and 100% showing the full color. Lightness is also expressed as a percentage, where 0% is black and 100% is white.</p>
     <h1 className="text-2xl mt-5">Example</h1>
     <p className="mt-3 mb-5">List various HSL color values:</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-      <code>
-      {`#p1 {background-color: hsl(120, 100%, 50%);}   /* green */
-#p2 {background-color: hsl(120, 100%, 75%);}   /* light green */
-#p3 {background-color: hsl(120, 100%, 25%);}   /* dark green */
-#p4 {background-color: hsl(120, 60%, 70%);}    /* pastel green */`}
-</code>
-    </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">#p1</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">hsl(120, 100%, 50%)</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* green */</span><br />
 
+    <span className="text-blue-500">#p2</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">hsl(120, 100%, 75%)</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* light green */</span><br />
+
+    <span className="text-blue-500">#p3</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">hsl(120, 100%, 25%)</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* dark green */</span><br />
+
+    <span className="text-blue-500">#p4</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">hsl(120, 60%, 70%)</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* pastel green */</span>
+  </code>
+</pre>
     <h1 className="text-2xl mt-10">HSLA Colors</h1>
     <p className="mt-3">HSLA color values expand on HSL by including an alpha channel that controls the object's opacity.</p>
     <p className="mt-3">An HSLA color is defined using the hsla() function, following this syntax:</p>
@@ -168,40 +256,94 @@ const CssColorValues = () => {
     <p className="mt-3">The alpha value ranges from 0.0 (completely transparent) to 1.0 (completely opaque).</p>
     <h1 className="text-2xl mt-5">Example</h1>
     <p className="mt-3 mb-5">List various HSLA color values with different opacity levels:</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-      <code>
-      {`#p1 {background-color: hsla(120, 100%, 50%, 0.3);}   /* green with opacity */
-#p2 {background-color: hsla(120, 100%, 75%, 0.3);}   /* light green with opacity */
-#p3 {background-color: hsla(120, 100%, 25%, 0.3);}   /* dark green with opacity */
-#p4 {background-color: hsla(120, 60%, 70%, 0.3);}    /* pastel green with opacity */`}
-</code>
-    </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">#p1</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">hsla(120, 100%, 50%, 0.3)</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* green with opacity */</span><br />
+
+    <span className="text-blue-500">#p2</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">hsla(120, 100%, 75%, 0.3)</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* light green with opacity */</span><br />
+
+    <span className="text-blue-500">#p3</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">hsla(120, 100%, 25%, 0.3)</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* dark green with opacity */</span><br />
+
+    <span className="text-blue-500">#p4</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">hsla(120, 60%, 70%, 0.3)</span>
+    <span>{'}'}</span>
+    <span className="text-gray-500"> /* pastel green with opacity */</span>
+  </code>
+</pre>
 
     <h1 className="text-2xl mt-10">Predefined/Cross-browser Color Names</h1>
     <p className="mt-3">The HTML and CSS color specification includes 140 predefined color names.</p>
     <p className="mt-3">For example: <span className="text-red-400 bg-gray-50 px-1">blue, red, coral, brown,</span> etc:</p>
     <h1 className="text-2xl mt-5">Example</h1>
     <p className="mt-3 mb-5">List various predefined color names:</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-      <code>
-      {`#p1 {background-color: blue;}
-#p2 {background-color: red;}
-#p3 {background-color: coral;}
-#p4 {background-color: brown;}
-`}
-</code>
-    </pre>
+  <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">#p1</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">blue</span>
+    <span>{'}'}</span><br />
+
+    <span className="text-blue-500">#p2</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">red</span>
+    <span>{'}'}</span><br />
+
+    <span className="text-blue-500">#p3</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">coral</span>
+    <span>{'}'}</span><br />
+
+    <span className="text-blue-500">#p4</span> <span>{'{'}</span>
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">brown</span>
+    <span>{'}'}</span>
+  </code>
+</pre>
 
     <h1 className="text-2xl mt-10">The currentcolor Keyword</h1>
     <p className="mt-3">The <span className="text-red bg-gray-50 px-1">currentcolor</span> keyword refers to the value of the color property of an element.</p>
     <h1 className="text-2xl mt-3">Example</h1>
     <p className="mb-5 mt-3">The border color of the following {'<div>'} element will appear blue since its text color is set to blue.</p>
-    <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-      {`#myDIV {
-  color: blue; /* Blue text color */
-  border: 10px solid currentcolor; /* Blue border color */
-}`}
-    </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">#myDIV</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">color</span>
+    <span>: </span>
+    <span className="text-green-700">blue</span>
+    <span>;</span>
+    <span className="text-gray-500"> /* Blue text color */</span><br />
+
+    <span className="text-red-500">border</span>
+    <span>: </span>
+    <span className="text-green-700">10px solid currentcolor</span>
+    <span>;</span>
+    <span className="text-gray-500"> /* Blue border color */</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
 
 

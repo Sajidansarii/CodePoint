@@ -13,7 +13,7 @@ const JSEventDelegation = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Event Delegation </h1>
       <p>We add one click listener to the {'<ul>'} to manage clicks on all tutorial {'<li>'} items. Clicking an item reveals it as the event target and logs its content. This shows how event delegation makes dynamic lists easier to manage.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 bg-gray-900 overflow-x-auto p-4 rounded-lg mt-5">
+      <pre className="bg-gray-200 overflow-x-auto p-4 rounded-lg mt-5">
         <code>
           {` const output = document.getElementById("output");
 	  const myList = document.getElementById("myList")
@@ -29,7 +29,7 @@ const JSEventDelegation = () => {
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Form Control Changes</h1>
       <p>This example uses event delegation to track input changes. A single input listener on the {'<form>'} catches updates from its fields. By checking the event target, the script confirms it came from an {'<input>'} and logs the field’s name and new value.</p>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">Example</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {` const messageElement = document.getElementById("message");
 	  const myForm = document.getElementById("myForm")

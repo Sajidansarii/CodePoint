@@ -13,11 +13,16 @@ export default function KeyframesDemo() {
       </h1>
       <p>CSS @keyframes defines animations by mapping styles to specific points in the animation timeline. Each keyframe represents a state at a percentage of the total duration, from 0% to 100%, enabling smooth transitions between styles.</p>
       <h1 className="text-2xl">Syntax</h1>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`@keyframes animation-name {keyframes-selector {css-styles;}}`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">@keyframes</span> <span className="text-green-700">animation-name</span> <span>{'{'}</span>
+    <span className="text-green-700">keyframes-selector</span> <span>{'{'}</span>
+    <span className="text-red-500">css-styles</span>;
+    <span>{'}'}</span>
+    <span>{'}'}</span>
+  </code>
+</pre>
+
       <h1 className="text-2xl">Property Values</h1>
 
       <table className="min-w-full border border-gray-300 rounded-md text-sm text-left mt-10">
@@ -42,124 +47,163 @@ export default function KeyframesDemo() {
        <h1 className="text-2xl">Color Changing Animation using @Keyframe</h1>
        <p>The example below features a @keyframes animation named colorchange, which transitions through keyframes at 0%, 25%, 50%, 75%, and 100%. It animates changes in the background-color, color, and top CSS properties.</p>
        <h1 className="text-2xl">Example</h1>
-       <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`<!DOCTYPE html>
-<html>
-<head>
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-500">&lt;html&gt;</span><br /><br />
 
-   <style>
-      .container {
-         height: 400px;
-         width: 100%;
-         background-color: lightgray;
-      }
-      .container >div{
-         position: relative;
-         height: 60px;
-         border: 3px solid gray;
-         animation: colorchange 6s infinite;
-         text-align: center;
-         font-size: 36px;
-         font-weight: bold;
-      }
-      @keyframes colorchange{
-         0%   {top: 0px;  background-color: red; color: white;}
-         25%  {top: 75px;  background-color: white; color: black;}
-         50%  {top: 150px;  background-color: lightblue; color: brown;}
-         75%  {top: 225px;  background-color: #457b9d; color: orange;}
-         100% {top: 300px;  background-color: darkblue; color: yellow;}
-      }
+    <span className="text-blue-500">&lt;head&gt;</span><br />
+    <span className="text-blue-500">&lt;style&gt;</span><br /><br />
 
-   </style>
-</head>
-<body>
-   <h2>
-      CSS @keyframes rule
-   </h2>
-   <h4>
-      Changing color example
-   </h4>
-   <div class="container">
-      <div>
-         TutorialsPoint
-      </div>
-   </div>
-</body>
-</html>`}
-        </code>
-       </pre>
+    <span className="text-blue-500">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">400px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">100%</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">lightgray</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">.container &gt; div</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">position</span>: <span className="text-green-700">relative</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">60px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">3px solid gray</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">animation</span>: <span className="text-green-700">colorchange 6s infinite</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-align</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">font-size</span>: <span className="text-green-700">36px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">font-weight</span>: <span className="text-green-700">bold</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">@keyframes</span> <span className="text-green-700">colorchange</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-green-700">0%</span> <span>{'{'}</span>
+    <span className="text-red-500">top</span>: <span className="text-green-700">0px</span>;
+    <span className="text-red-500">background-color</span>: <span className="text-green-700">red</span>;
+    <span className="text-red-500">color</span>: <span className="text-green-700">white</span>;
+    <span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-green-700">25%</span> <span>{'{'}</span>
+    <span className="text-red-500">top</span>: <span className="text-green-700">75px</span>;
+    <span className="text-red-500">background-color</span>: <span className="text-green-700">white</span>;
+    <span className="text-red-500">color</span>: <span className="text-green-700">black</span>;
+    <span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-green-700">50%</span> <span>{'{'}</span>
+    <span className="text-red-500">top</span>: <span className="text-green-700">150px</span>;
+    <span className="text-red-500">background-color</span>: <span className="text-green-700">lightblue</span>;
+    <span className="text-red-500">color</span>: <span className="text-green-700">brown</span>;
+    <span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-green-700">75%</span> <span>{'{'}</span>
+    <span className="text-red-500">top</span>: <span className="text-green-700">225px</span>;
+    <span className="text-red-500">background-color</span>: <span className="text-green-700">#457b9d</span>;
+    <span className="text-red-500">color</span>: <span className="text-green-700">orange</span>;
+    <span>{'}'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-green-700">100%</span> <span>{'{'}</span>
+    <span className="text-red-500">top</span>: <span className="text-green-700">300px</span>;
+    <span className="text-red-500">background-color</span>: <span className="text-green-700">darkblue</span>;
+    <span className="text-red-500">color</span>: <span className="text-green-700">yellow</span>;
+    <span>{'}'}</span><br />
+
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">&lt;/style&gt;</span><br />
+    <span className="text-blue-500">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;body&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;h2&gt;</span>CSS @keyframes rule<span className="text-blue-500">&lt;/h2&gt;</span><br />
+    <span className="text-blue-500">&lt;h4&gt;</span>Changing color example<span className="text-blue-500">&lt;/h4&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;div</span>
+    <span className="text-red-500"> class</span>=<span className="text-green-700">"container"</span>
+    <span className="text-blue-500">&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div&gt;</span>TutorialsPoint<span className="text-blue-500">&lt;/div&gt;</span><br />
+
+    <span className="text-blue-500">&lt;/div&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;/body&gt;</span><br />
+    <span className="text-blue-500">&lt;/html&gt;</span>
+  </code>
+</pre>
+
        <h1 className="text-2xl">Motion Example using @Keyframes</h1>
        <p>The following example features a @keyframes animation named motion, defined at 0%, 50%, and 100%. It animates horizontal movement by changing the translateX transform property.</p>
        <h1 className="text-2xl">Example</h1>
-       <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`<!DOCTYPE html>
-<html>
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-500">&lt;html&gt;</span><br /><br />
 
-<head>
+    <span className="text-blue-500">&lt;head&gt;</span><br />
+    <span className="text-blue-500">&lt;style&gt;</span><br /><br />
 
-   <style>
-      .container {
-         height: 200px;
-         width: 100%;
-         background-color: lightgray;
-         border-bottom: 10px solid orange;
-      }
+    <span className="text-blue-500">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">200px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">100%</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">lightgray</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border-bottom</span>: <span className="text-green-700">10px solid orange</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-      .container>div {
-         position: relative;
-         height: 80px;
-         width: 80px;
-         border-radius: 50%;
-         border: 3px solid gray;
-         animation: motion 6s infinite;
-         top: 117px;
-         background-color: black;
-      }
+    <span className="text-blue-500">.container &gt; div</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">position</span>: <span className="text-green-700">relative</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">80px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">80px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border-radius</span>: <span className="text-green-700">50%</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">3px solid gray</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">animation</span>: <span className="text-green-700">motion 6s infinite</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">top</span>: <span className="text-green-700">117px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">black</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-      .inner {
-         position: relative;
-         height: 45px;
-         width: 45px;
-         border-radius: 50%;
-         background-color: lightgray;
-         top: 16px;
-         left: 17px;
-      }
+    <span className="text-blue-500">.inner</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">position</span>: <span className="text-green-700">relative</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">45px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">45px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border-radius</span>: <span className="text-green-700">50%</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">lightgray</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">top</span>: <span className="text-green-700">16px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">left</span>: <span className="text-green-700">17px</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-      @keyframes motion {
-         0% {
-               transform: translateX(0px);
-         }
-         50% {
-               transform: translateX(475px);
-         }
-         100% {
-               transform: translateX(0px);
-         }
-      }
-   </style>
-</head>
+    <span className="text-blue-500">@keyframes</span> <span className="text-green-700">motion</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-green-700">0%</span> <span>{'{'}</span>
+    <span className="text-red-500">transform</span>: <span className="text-green-700">translateX(0px)</span>;
+    <span>{'}'}</span><br />
 
-<body>
-   <h2>
-      CSS @keyframes rule
-   </h2>
-   <h4>
-      motion example
-   </h4>
-   <div class="container">
-      <div>
-         <div class="inner">
-         </div>
-      </div>
-   </div>
-</body>
+    &nbsp;&nbsp;<span className="text-green-700">50%</span> <span>{'{'}</span>
+    <span className="text-red-500">transform</span>: <span className="text-green-700">translateX(475px)</span>;
+    <span>{'}'}</span><br />
 
-</html>`}
-        </code>
-       </pre>
-    </div>
+    &nbsp;&nbsp;<span className="text-green-700">100%</span> <span>{'{'}</span>
+    <span className="text-red-500">transform</span>: <span className="text-green-700">translateX(0px)</span>;
+    <span>{'}'}</span><br />
+
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">&lt;/style&gt;</span><br />
+    <span className="text-blue-500">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;body&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;h2&gt;</span>CSS @keyframes rule<span className="text-blue-500">&lt;/h2&gt;</span><br />
+    <span className="text-blue-500">&lt;h4&gt;</span>motion example<span className="text-blue-500">&lt;/h4&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;div</span>
+    <span className="text-red-500"> class</span>=<span className="text-green-700">"container"</span>
+    <span className="text-blue-500">&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;div&gt;</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-500">&lt;div</span>
+    <span className="text-red-500"> class</span>=<span className="text-green-700">"inner"</span>
+    <span className="text-blue-500">&gt;&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">&lt;/div&gt;</span><br />
+
+    <span className="text-blue-500">&lt;/div&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;/body&gt;</span><br />
+    <span className="text-blue-500">&lt;/html&gt;</span>
+  </code>
+</pre>
+</div>
   );
 }

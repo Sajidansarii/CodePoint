@@ -16,13 +16,18 @@ const CSSFloat = () => {
 
       {/* Syntax */}
       <h2 className="text-xl font-semibold mb-2">Syntax</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`selector {
-  float: none | left | right | inline-start | inline-end;
-}`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-blue-500">selector</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">float</span>
+    <span>: </span>
+    <span className="text-green-700">none | left | right | inline-start | inline-end</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       {/* Values */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Float Values</h2>
@@ -50,28 +55,54 @@ const CSSFloat = () => {
         </p>
       </div>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`img {
-  float: left;
-  margin-right: 15px;
-}`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-blue-500">img</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">float</span>
+    <span>: </span>
+    <span className="text-green-700">left</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">margin-right</span>
+    <span>: </span>
+    <span className="text-green-700">15px</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       {/* Example 2 */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Example: Float Boxes</h2>
       
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`.box {
-  float: left;
-  width: 120px;
-  height: 80px;
-  margin-right: 10px;
-}`}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-blue-500">.box</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">float</span>
+    <span>: </span>
+    <span className="text-green-700">left</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">width</span>
+    <span>: </span>
+    <span className="text-green-700">120px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">height</span>
+    <span>: </span>
+    <span className="text-green-700">80px</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">margin-right</span>
+    <span>: </span>
+    <span className="text-green-700">10px</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <div className="clearfix mb-6">
         <div className="float-left w-32 h-20 bg-blue-500 text-white flex items-center justify-center mr-2">
@@ -93,15 +124,28 @@ const CSSFloat = () => {
         flow, which can cause parent elements to collapse. To fix this, use the{" "}
         <code>clear</code> property or a <code>.clearfix</code> hack.
       </p>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-        <code>
-{`.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}`}
-        </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+  <code>
+    <span className="text-blue-500">.clearfix::after</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">content</span>
+    <span>: </span>
+    <span className="text-green-700">""</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">display</span>
+    <span>: </span>
+    <span className="text-green-700">block</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">clear</span>
+    <span>: </span>
+    <span className="text-green-700">both</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       {/* Notes */}
       <h2 className="text-xl font-semibold text-gray-800 mb-2">Key Notes</h2>

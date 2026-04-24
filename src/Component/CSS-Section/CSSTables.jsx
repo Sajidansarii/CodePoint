@@ -20,35 +20,33 @@ export default function CssTables() {
       <p className="mt-10 text-xl">Example</p>
       <p>In this example, we will create a table using CSS property.</p>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-            {`.table-container {
-  overflow-x: auto;
-}
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">.table-container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">overflow-x</span>: <span className="text-green-700">auto</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-.styled-table {
-  width: 100%;
-  border-collapse: collapse;
-}
+    <span className="text-blue-600">.styled-table</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">100%</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border-collapse</span>: <span className="text-green-700">collapse</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-.styled-table th,
-.styled-table td {
-  border: 1px solid #d1d5db;
-  padding: 0.5rem 1rem; 
-  text-align: left;
-}
+    <span className="text-blue-600">.styled-table th, .styled-table td</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1px solid #d1d5db</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">0.5rem 1rem</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-align</span>: <span className="text-green-700">left</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-.table-header {
-  background-color: #4f46e5; 
-  color: white;
-}
+    <span className="text-blue-600">.table-header</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#4f46e5</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-.table-row-alt {
-  background-color: #f9fafb; 
-}
-`}
-        </code>
-      </pre>
+    <span className="text-blue-600">.table-row-alt</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">#f9fafb</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <div className="overflow-x-auto">
         <table className="w-full border-collapse">

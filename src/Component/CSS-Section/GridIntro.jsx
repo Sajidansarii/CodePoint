@@ -54,20 +54,22 @@ const CSSGridIntro = () => {
      <p>A grid layout has a parent container and one or more grid items inside it.</p>
      <p>All immediate children inside a grid container become grid items by default.</p>
      <h1 className="text-2xl">Example</h1>
-     <pre className="text-green-400 bg-gray-900 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-      <code>
-      {`<div class="container">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-  <div>5</div>
-  <div>6</div>
-  <div>7</div>
-  <div>8</div>
-  </div>`}
+    <pre className="bg-gray-200 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;div</span> <span className="text-red-500">class</span>=<span className="text-green-700">"container"</span><span className="text-blue-600">&gt;</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>1<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>2<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>3<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>4<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>5<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>6<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>7<span className="text-blue-600">&lt;/div&gt;</span><br />
+    &nbsp;&nbsp;<span className="text-blue-600">&lt;div&gt;</span>8<span className="text-blue-600">&lt;/div&gt;</span><br />
+
+    <span className="text-blue-600">&lt;/div&gt;</span>
   </code>
-     </pre>
+</pre>
 
       <div className="border-2 border-black p-4 grid grid-cols-3 gap-3 mt-6">
           <div className="bg-blue-500 text-white font-bold p-6 text-center">
@@ -94,13 +96,13 @@ const CSSGridIntro = () => {
       <h1 className="text-2xl">Display Grid Property</h1>
      <p>A {'<div>'} becomes a grid container when display: grid or inline-grid is used.</p>
      <h1 className="text-2xl">Example</h1>
-     <pre className="text-green-400 bg-black rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-      <code>
-      {`.container {
-  display: grid;
-  }`}
+    <pre className="bg-gray-200 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">grid</span>;<br />
+    <span>{'}'}</span>
   </code>
-     </pre>
+</pre>
 
      
       <div className="border-2 border-black p-4 grid grid-cols-3 gap-3 mt-6">
@@ -125,13 +127,13 @@ const CSSGridIntro = () => {
         </div>
 
         <h1 className="text-2xl">Example</h1>
-        <pre className="text-green-400 bg-black rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>
-          {`.container {
-  display: inline-grid;
-  }`}
+      <pre className="bg-gray-200 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">.container</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">inline-grid</span>;<br />
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
 
               <div className="border-2 border-black p-4 inline-grid grid-cols-3 gap-3 mt-6">
           <div className="bg-blue-500 text-white font-bold p-6 text-center">

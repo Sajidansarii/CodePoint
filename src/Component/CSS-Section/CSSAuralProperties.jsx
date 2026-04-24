@@ -98,15 +98,22 @@ x-loud`},
 
       <p className="mt-5">With aural presentation, the content is converted into plain text and passed to a screen reader that reads the characters out loud.</p>
       <p className="mt-5 mb-5">A practical example of applying Aural CSS</p>
-      <pre className="border-2 border-gray-100 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-sm">
-        {`@media aural {
-  h1, h2, h3, h4 {
-    voice-family: male;
-    richness: 80;
-    cue-before: url("beep.au")
-  }
-}`}
-      </pre>
+   <pre className="border-2 border-gray-100 p-4 overflow-x-auto max-w-full whitespace-pre-wrap rounded-sm bg-gray-200">
+  <code>
+    <span className="text-blue-500">@media aural</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-blue-500">h1, h2, h3, h4</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">voice-family</span>: <span className="text-green-700">male</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">richness</span>: <span className="text-green-700">80</span>;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">cue-before</span>: <span className="text-green-700">url("beep.au")</span>;<br />
+
+    &nbsp;&nbsp;<span>{'}'}</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+
       <p className="mt-3">The example causes the speech synthesizer to emit a sound and then vocalize the headers using a full male voice.</p>
 
       <h1 className="text-2xl mt-6">CSS Aural Properties</h1>

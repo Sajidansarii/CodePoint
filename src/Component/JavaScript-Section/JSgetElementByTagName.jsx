@@ -24,14 +24,14 @@ const JSGetElementsByTagName = () => {
       </p>
 
       <p className="mt-10 mb-5">Select all elements that have the li tag</p>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`const collection = document.getElementsByTagName("li");`}
         </code>
       </pre>
 
        <p className="mt-10 mb-5">Retrieve all elements in the document</p>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`const collection = document.getElementsByTagName("*");`}
         </code>
@@ -39,7 +39,7 @@ const JSGetElementsByTagName = () => {
 
 
       <p className="mt-10 mb-5">Update the inner HTML of the first paragraph in the document</p>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+      <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
         <code>
           {`document.getElementsByTagName("p")[0].innerHTML = "Hello World!";`}
         </code>
@@ -50,7 +50,7 @@ const JSGetElementsByTagName = () => {
       <p>The <span className="text-red-400">getElementsByTagName()</span> property can only be read, not written to.</p>
 
    <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-5">Syntax</h2>
-  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-10">
+  <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-10">
     <code>
       {`document.getElementsByTagName(tagname)`}
     </code>
@@ -96,14 +96,14 @@ const JSGetElementsByTagName = () => {
 
   <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-5">Example</h1>
   <p>The total count of <span className="text-red-400">{'<li>'}</span> elements in the document</p>
-  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`let numb = document.getElementsByTagName("li").length;`}
     </code>
   </pre>
 
   <p className="mt-10">Set a new background color for every <span className="text-red-400">{'<p>'}</span> element</p>
-  <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
+  <pre className="overflow-x-auto bg-gray-200 p-4 rounded-lg mt-5">
     <code>
       {`const collection = document.getElementsByTagName("P");
 for (let i = 0; i < collection.length; i++) {

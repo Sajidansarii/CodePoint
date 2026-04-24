@@ -6,13 +6,24 @@ const ReactOnSubmit = () => {
             <h1 className="text-3xl text-blue-500 font-semibold mb-3">React onSubmit Event</h1>
              <p>The <span className="text-red-400">onSubmit</span> event in React triggers when a form is submitted. It provides a way to run custom code, validate the form, prevent the default submission, and perform actions like sending form data to a backend server.</p>
              <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-            <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5">
-                <code>
-                    {`<form onSubmit={handleSubmit} >
-    <input type="text">
-</form>`}
-                </code>
-            </pre>
+          <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-pink-600">&lt;form</span>{" "}
+    <span className="text-purple-600">onSubmit</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-blue-600">{`{handleSubmit}`}</span>{" "}
+    <span className="text-pink-600">&gt;</span>
+    {"\n"}
+    {"  "}
+    <span className="text-pink-600">&lt;input</span>{" "}
+    <span className="text-purple-600">type</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"text"</span>
+    <span className="text-pink-600"> /&gt;</span>
+    {"\n"}
+    <span className="text-pink-600">&lt;/form&gt;</span>
+  </code>
+</pre>
 
              <ul className="list-[square] list-inside space-y-1 mt-5">
                 <li><span className="font-semibold">onSubmit={'handleSubmit'}</span>: The form’s <span className="lg:ml-0 ml-5">onSubmit</span> event invokes the <span className="lg:ml-0 ml-5">handleSubmit</span> callback.</li>
@@ -27,95 +38,316 @@ const ReactOnSubmit = () => {
             </ul>  
 
             <p className="mt-5">Let’s see how this works with an example.</p>
-            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-                 <code>
-                    {`// Filename - App.js
+        <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-gray-500">// Filename - App.js</span>
+    {"\n\n"}
 
-import React, { useState } from "react";
-function App() {
-    const [value, setValue] = useState("");
-    const [result, setResult] = useState("");
-    function handleSubmit(e) {
-        e.preventDefault();
-        setResult(
-            "Form has been submitted with with Input: " +
-                value
-        );
-    }
+    <span className="text-purple-600">import</span>{" "}
+    React, {"{"} <span className="text-blue-600">useState</span> {"}"}{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"react"</span>;
+    {"\n\n"}
 
-    function handleChange(e) {
-        setValue(e.target.value);
-        setResult("");
-    }
-    return (
-        <div
-            style={{ textAlign: "center", margin: "auto" }}
-        >
-            <h1 style={{ color: "Green" }}>
-                GeeksforGeeks
-            </h1>
-            <h3>
-                Exemple for React onSubmit Event Handler
-            </h3>
-            <form onSubmit={handleSubmit}>
-                <label>Add input here: </label>
-                <input
-                    value={value}
-                    onInput={handleChange}
-                    required
-                />
-                <br />
-                <br />
-                <button type="submit">Submit</button>
-            </form>
-            <br />
-            <div>
-                <h4>{result}</h4>
-            </div>
-        </div>
-    );
-}
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-blue-600">App</span>
+    <span className="text-gray-800">() {"{"}</span>
+    {"\n\n"}
 
-export default App;`}
-                </code> 
-            </pre>
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-gray-800">[</span>
+    <span className="text-blue-600">value</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">setValue</span>
+    <span className="text-gray-800">] = </span>
+    <span className="text-yellow-600">useState</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">""</span>
+    <span className="text-gray-800">);</span>
+    {"\n"}
+
+    {"  "}
+    <span className="text-gray-800">[</span>
+    <span className="text-blue-600">result</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">setResult</span>
+    <span className="text-gray-800">] = </span>
+    <span className="text-yellow-600">useState</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">""</span>
+    <span className="text-gray-800">);</span>
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-yellow-600">handleSubmit</span>
+    <span className="text-gray-800">(e) {"{"}</span>{"\n"}
+
+    {"    "}
+    <span className="text-yellow-600">e.preventDefault</span>
+    <span className="text-gray-800">();</span>{"\n"}
+
+    {"    "}
+    <span className="text-yellow-600">setResult</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">
+      "Form has been submitted with Input: "
+    </span>{" "}
+    <span className="text-gray-800">+ value);</span>
+    {"\n"}
+
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-yellow-600">handleChange</span>
+    <span className="text-gray-800">(e) {"{"}</span>{"\n"}
+
+    {"    "}
+    <span className="text-yellow-600">setValue</span>
+    <span className="text-gray-800">(e.target.value);</span>{"\n"}
+    {"    "}
+    <span className="text-yellow-600">setResult</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">""</span>
+    <span className="text-gray-800">);</span>{"\n"}
+
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-purple-600">return</span>{" ("}
+    {"\n"}
+
+    {"    "}
+    <span className="text-pink-600">&lt;div</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">={"{"}</span>
+    <span className="text-red-500">textAlign</span>
+    <span className="text-gray-800">: </span>
+    <span className="text-orange-500">"center"</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-red-500">margin</span>
+    <span className="text-gray-800">: </span>
+    <span className="text-orange-500">"auto"</span>
+    <span className="text-gray-800">{"}"}</span>
+    <span className="text-pink-600">&gt;</span>
+    {"\n\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;h1</span>{" "}
+    <span className="text-purple-600">style</span>
+    <span className="text-gray-800">={"{"}</span>
+    <span className="text-red-500">color</span>
+    <span className="text-gray-800">: </span>
+    <span className="text-orange-500">"green"</span>
+    <span className="text-gray-800">{"}"}</span>
+    <span className="text-pink-600">&gt;</span>
+    GeeksforGeeks
+    <span className="text-pink-600">&lt;/h1&gt;</span>
+    {"\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;h3&gt;</span>
+    Example for React onSubmit Event Handler
+    <span className="text-pink-600">&lt;/h3&gt;</span>
+    {"\n\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;form</span>{" "}
+    <span className="text-purple-600">onSubmit</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{handleSubmit}`}</span>
+    <span className="text-pink-600">&gt;</span>
+    {"\n"}
+
+    {"        "}
+    <span className="text-pink-600">&lt;label&gt;</span>
+    Add input here:
+    <span className="text-pink-600">&lt;/label&gt;</span>
+    {"\n"}
+
+    {"        "}
+    <span className="text-pink-600">&lt;input</span>{" "}
+    <span className="text-purple-600">value</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{value}`}</span>{" "}
+    <span className="text-purple-600">onInput</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{handleChange}`}</span>{" "}
+    <span className="text-purple-600">required</span>
+    <span className="text-pink-600"> /&gt;</span>
+    {"\n\n"}
+
+    {"        "}
+    <span className="text-pink-600">&lt;button</span>{" "}
+    <span className="text-purple-600">type</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"submit"</span>
+    <span className="text-pink-600">&gt;</span>
+    Submit
+    <span className="text-pink-600">&lt;/button&gt;</span>
+    {"\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;/form&gt;</span>
+    {"\n\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;div&gt;</span>
+    {"\n"}
+
+    {"        "}
+    <span className="text-pink-600">&lt;h4&gt;</span>
+    {"{"}
+    <span className="text-blue-600">result</span>
+    {"}"}
+    <span className="text-pink-600">&lt;/h4&gt;</span>
+    {"\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;/div&gt;</span>
+    {"\n\n"}
+
+    {"    "}
+    <span className="text-pink-600">&lt;/div&gt;</span>
+    {"\n"}
+
+    {"  "}){";"}{"\n"}
+    <span className="text-gray-800">{"}"}</span>
+    {"\n\n"}
+
+    <span className="text-purple-600">export default</span>{" "}
+    <span className="text-blue-600">App</span>;
+  </code>
+</pre>
 
             <p className="mt-5">The app uses React state (value and result) to handle the form input and show the result. handleSubmit sets result to the current input when the form is submitted. handleChange updates value and clears result whenever the input changes. The form contains a labeled input and a submit button.</p>
            
            <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">Accessing the Event Object</h2>
            <p>React provides the event object to the onSubmit handler, allowing you to retrieve form data, call <span className="text-red-400">event.preventDefault()</span>, and efficiently handle other event-related operations.</p>
             <p className="mt-5">Let’s see how this works with an example.</p>      
-            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-                <code>
-                    {`import React, { useState } from "react";
+          <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-purple-600">import</span>{" "}
+    React, {"{"} <span className="text-blue-600">useState</span> {"}"}{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"react"</span>;
+    {"\n\n"}
 
-function AccessEvent() {
-    const [value, setValue] = useState("");
-    const handleSubmit = (event) => {
-        console.log("Event object:", event);
-        alert(\`Form submitted with value: \${value}\`);
-    };
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-blue-600">AccessEvent</span>
+    <span className="text-gray-800">() {"{"}</span>
+    {"\n\n"}
 
-    const handleChange = (event) => {
-        setValue(event.target.value);
-    };
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-gray-800">[</span>
+    <span className="text-blue-600">value</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">setValue</span>
+    <span className="text-gray-800">] = </span>
+    <span className="text-yellow-600">useState</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">""</span>
+    <span className="text-gray-800">);</span>
+    {"\n\n"}
 
-    return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Enter Text:
-                    <input type="text" value={value} onChange={handleChange} />
-                </label>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    );
-}
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-yellow-600">handleSubmit</span>{" "}
+    <span className="text-gray-800">= (event) =&gt; {"{"}</span>{"\n"}
+    {"    "}
+    <span className="text-yellow-600">console.log</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">"Event object:"</span>
+    <span className="text-gray-800">, event);</span>{"\n"}
+    {"    "}
+    <span className="text-yellow-600">alert</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">`Form submitted with value: `</span>{" "}
+    <span className="text-gray-800">+ value);</span>{"\n"}
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>;
+    {"\n\n"}
 
-export default AccessEvent;`}
-                </code>
-            </pre>
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-yellow-600">handleChange</span>{" "}
+    <span className="text-gray-800">= (event) =&gt; {"{"}</span>{"\n"}
+    {"    "}
+    <span className="text-yellow-600">setValue</span>
+    <span className="text-gray-800">(event.target.value);</span>{"\n"}
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>;
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-purple-600">return</span>{" ("}
+    {"\n"}
+
+    {"    "}
+    <span className="text-pink-600">&lt;div&gt;</span>
+    {"\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;form</span>{" "}
+    <span className="text-purple-600">onSubmit</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{handleSubmit}`}</span>
+    <span className="text-pink-600">&gt;</span>
+    {"\n"}
+
+    {"        "}
+    <span className="text-pink-600">&lt;label&gt;</span>
+    Enter Text:
+    <span className="text-pink-600">&lt;/label&gt;</span>
+    {"\n"}
+
+    {"        "}
+    <span className="text-pink-600">&lt;input</span>{" "}
+    <span className="text-purple-600">type</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"text"</span>{" "}
+    <span className="text-purple-600">value</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{value}`}</span>{" "}
+    <span className="text-purple-600">onChange</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{handleChange}`}</span>
+    <span className="text-pink-600"> /&gt;</span>
+    {"\n\n"}
+
+    {"        "}
+    <span className="text-pink-600">&lt;button</span>{" "}
+    <span className="text-purple-600">type</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"submit"</span>
+    <span className="text-pink-600">&gt;</span>
+    Submit
+    <span className="text-pink-600">&lt;/button&gt;</span>
+    {"\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;/form&gt;</span>
+    {"\n"}
+
+    {"    "}
+    <span className="text-pink-600">&lt;/div&gt;</span>
+    {"\n"}
+
+    {"  "}){";"}{"\n"}
+    <span className="text-gray-800">{"}"}</span>
+    {"\n\n"}
+
+    <span className="text-purple-600">export default</span>{" "}
+    <span className="text-blue-600">AccessEvent</span>;
+  </code>
+</pre>
            
            <ul className="list-[square] list-inside space-y-1 mt-5">
             <li><span className="font-semibold">State Management</span>: value holds the text <span className="lg:m l-0 ml-5">typed</span> in the input.</li>
@@ -127,47 +359,174 @@ export default AccessEvent;`}
            <p>By default, form submission in React causes the page to reload, which is usually undesirable in single-page applications (SPA). Calling <span className="text-red-400">event.preventDefault()</span> prevents this behavior, allowing the form to be handled programmatically.</p>
             
             <p className="mt-5">Let’s see how this works with an example</p>
-            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-                <code>
-                    {`import React, { useState } from "react";
+           <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg mt-5 overflow-x-auto">
+  <code>
+    <span className="text-purple-600">import</span>{" "}
+    React, {"{"} <span className="text-blue-600">useState</span> {"}"}{" "}
+    <span className="text-purple-600">from</span>{" "}
+    <span className="text-orange-500">"react"</span>;
+    {"\n\n"}
 
-function PreventForm() {
-    const [value, setValue] = useState("");
-    const [result, setResult] = useState("");
+    <span className="text-purple-600">function</span>{" "}
+    <span className="text-blue-600">PreventForm</span>
+    <span className="text-gray-800">() {"{"}</span>
+    {"\n\n"}
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-gray-800">[</span>
+    <span className="text-blue-600">value</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">setValue</span>
+    <span className="text-gray-800">] = </span>
+    <span className="text-yellow-600">useState</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">""</span>
+    <span className="text-gray-800">);</span>
+    {"\n"}
 
-        if (!value.trim()) {
-            alert("Input cannot be empty!");
-        } else {
-            setResult(value);
-            alert("Form submitted successfully!");
-        }
-    };
+    {"  "}
+    <span className="text-gray-800">[</span>
+    <span className="text-blue-600">result</span>
+    <span className="text-gray-800">, </span>
+    <span className="text-blue-600">setResult</span>
+    <span className="text-gray-800">] = </span>
+    <span className="text-yellow-600">useState</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">""</span>
+    <span className="text-gray-800">);</span>
+    {"\n\n"}
 
-    const handleChange = (event) => {
-        setValue(event.target.value);
-        setResult(""); 
-    };
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-yellow-600">handleSubmit</span>{" "}
+    <span className="text-gray-800">= (event) =&gt; {"{"}</span>{"\n"}
+    {"    "}
+    <span className="text-yellow-600">event.preventDefault</span>
+    <span className="text-gray-800">();</span>
+    {"\n\n"}
 
-    return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Enter Text:
-                    <input type="text" value={value} onChange={handleChange} />
-                </label>
-                <button type="submit">Submit</button>
-            </form>
-            <p>Result: {result}</p>
-        </div>
-    );
-}
+    {"    "}
+    <span className="text-purple-600">if</span>{" "}
+    <span className="text-gray-800">(!value.trim()) {"{"}</span>
+    {"\n"}
+    {"      "}
+    <span className="text-yellow-600">alert</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">"Input cannot be empty!"</span>
+    <span className="text-gray-800">);</span>
+    {"\n"}
+    {"    "}
+    <span className="text-gray-800">{"}"} </span>
+    <span className="text-purple-600">else</span>{" {"}
+    {"\n"}
+    {"      "}
+    <span className="text-yellow-600">setResult</span>
+    <span className="text-gray-800">(value);</span>
+    {"\n"}
+    {"      "}
+    <span className="text-yellow-600">alert</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">"Form submitted successfully!"</span>
+    <span className="text-gray-800">);</span>
+    {"\n"}
+    {"    "}
+    <span className="text-gray-800">{"}"}</span>
+    {"\n"}
 
-export default PreventForm;`}
-                </code>
-            </pre>
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>;
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-purple-600">const</span>{" "}
+    <span className="text-yellow-600">handleChange</span>{" "}
+    <span className="text-gray-800">= (event) =&gt; {"{"}</span>
+    {"\n"}
+    {"    "}
+    <span className="text-yellow-600">setValue</span>
+    <span className="text-gray-800">(event.target.value);</span>
+    {"\n"}
+    {"    "}
+    <span className="text-yellow-600">setResult</span>
+    <span className="text-gray-800">(</span>
+    <span className="text-orange-500">""</span>
+    <span className="text-gray-800">);</span>
+    {"\n"}
+    {"  "}
+    <span className="text-gray-800">{"}"}</span>;
+    {"\n\n"}
+
+    {"  "}
+    <span className="text-purple-600">return</span>{" ("}
+    {"\n"}
+
+    {"    "}
+    <span className="text-pink-600">&lt;div&gt;</span>
+    {"\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;form</span>{" "}
+    <span className="text-purple-600">onSubmit</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{handleSubmit}`}</span>
+    <span className="text-pink-600">&gt;</span>
+    {"\n"}
+
+    {"        "}
+    <span className="text-pink-600">&lt;label&gt;</span>
+    Enter Text:
+    <span className="text-pink-600">&lt;/label&gt;</span>
+    {"\n"}
+
+    {"        "}
+    <span className="text-pink-600">&lt;input</span>{" "}
+    <span className="text-purple-600">type</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"text"</span>{" "}
+    <span className="text-purple-600">value</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{value}`}</span>{" "}
+    <span className="text-purple-600">onChange</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-gray-800">{`{handleChange}`}</span>
+    <span className="text-pink-600"> /&gt;</span>
+    {"\n\n"}
+
+    {"        "}
+    <span className="text-pink-600">&lt;button</span>{" "}
+    <span className="text-purple-600">type</span>
+    <span className="text-gray-800">=</span>
+    <span className="text-orange-500">"submit"</span>
+    <span className="text-pink-600">&gt;</span>
+    Submit
+    <span className="text-pink-600">&lt;/button&gt;</span>
+    {"\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;/form&gt;</span>
+    {"\n\n"}
+
+    {"      "}
+    <span className="text-pink-600">&lt;p&gt;</span>
+    Result: {"{"}
+    <span className="text-blue-600">result</span>
+    {"}"}
+    <span className="text-pink-600">&lt;/p&gt;</span>
+    {"\n"}
+
+    {"    "}
+    <span className="text-pink-600">&lt;/div&gt;</span>
+    {"\n"}
+
+    {"  "}){";"}{"\n"}
+    <span className="text-gray-800">{"}"}</span>
+    {"\n\n"}
+
+    <span className="text-purple-600">export default</span>{" "}
+    <span className="text-blue-600">PreventForm</span>;
+  </code>
+</pre>
 
             <ul className="list-[square] space-y-1 mt-5">
                 <li><span className="font-semibold">State Management</span>:value holds the input text, and result stores the output after form submission.</li>

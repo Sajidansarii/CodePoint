@@ -25,12 +25,20 @@ const HTMLSymbols = () => {
             <strong>Numeric:</strong> code point, e.g., <code>&amp;#169;</code> or hexadecimal <code>&amp;#xA9;</code>.
           </li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`&amp;copy;  → ©
-&amp;#169; → ©
-&amp;#x2665; → ♥
-&amp;le; → ≤`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&amp;copy;</span> → ©
+    <br/>
+
+    <span className="text-gray-500">&amp;#169;</span> → ©
+    <br/>
+
+    <span className="text-gray-500">&amp;#x2665;</span> → ♥
+    <br/>
+
+    <span className="text-gray-500">&amp;le;</span> → ≤
+  </code>
+</pre>
       </section>
 
       {/* Common Symbol Categories */}
@@ -42,12 +50,20 @@ const HTMLSymbols = () => {
           <p className="leading-relaxed mb-3">
             Examples: dollar, euro, rupee, pound
           </p>
-          <pre className="bg-gray-900 p-4  rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-            <code>{`&amp;#36; → $
-&amp;euro; → €
-&amp;#8377; → ₹
-&amp;pound; → £`}</code>
-          </pre>
+        <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&amp;#36;</span> → $
+    <br/>
+
+    <span className="text-gray-500">&amp;euro;</span> → €
+    <br/>
+
+    <span className="text-gray-500">&amp;#8377;</span> → ₹
+    <br/>
+
+    <span className="text-gray-500">&amp;pound;</span> → £
+  </code>
+</pre>
         </div>
 
         <div className="mb-4">
@@ -55,12 +71,20 @@ const HTMLSymbols = () => {
           <p className="leading-relaxed mb-3">
             Symbols used in math and logic.
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-            <code>{`&amp;le; → ≤
-&amp;ge; → ≥
-&amp;times; → ×
-&amp;divide; → ÷`}</code>
-          </pre>
+        <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&amp;le;</span> → ≤
+    <br/>
+
+    <span className="text-gray-500">&amp;ge;</span> → ≥
+    <br/>
+
+    <span className="text-gray-500">&amp;times;</span> → ×
+    <br/>
+
+    <span className="text-gray-500">&amp;divide;</span> → ÷
+  </code>
+</pre>
         </div>
 
         <div className="mb-4">
@@ -68,22 +92,38 @@ const HTMLSymbols = () => {
           <p className="leading-relaxed mb-3">
             Directional indicators.
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-            <code>{`&amp;rarr; → →
-&amp;larr; → ←
-&amp;uarr; → ↑
-&amp;darr; → ↓`}</code>
-          </pre>
+         <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&amp;rarr;</span> → →
+    <br/>
+
+    <span className="text-gray-500">&amp;larr;</span> → ←
+    <br/>
+
+    <span className="text-gray-500">&amp;uarr;</span> → ↑
+    <br/>
+
+    <span className="text-gray-500">&amp;darr;</span> → ↓
+  </code>
+</pre>
         </div>
 
         <div className="mb-4">
           <h3 className="text-xl font-semibold text-blue-400 mb-3">4. Miscellaneous</h3>
-          <pre className="bg-gray-900 p-4  rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-            <code>{`&amp;hearts; → ♥
-&amp;star; → ★ (some use &#9733;)
-&amp;bull; → •
-&amp;mdash; → —`}</code>
-          </pre>
+         <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&amp;hearts;</span> → ♥
+    <br/>
+
+    <span className="text-gray-500">&amp;star;</span> → ★ (some use &#9733;)
+    <br/>
+
+    <span className="text-gray-500">&amp;bull;</span> → •
+    <br/>
+
+    <span className="text-gray-500">&amp;mdash;</span> → —
+  </code>
+</pre>
         </div>
       </section>
 
@@ -93,13 +133,23 @@ const HTMLSymbols = () => {
         <p className="leading-relaxed mb-3">
           Some characters have special meaning in HTML and must be escaped to display literally.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`&amp;lt; → <
-&amp;gt; → >
-&amp;amp; → &
-&amp;quot; → " 
-&amp;#39; → '`}</code>
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&amp;lt;</span> → &lt;
+    <br/>
+
+    <span className="text-gray-500">&amp;gt;</span> → &gt;
+    <br/>
+
+    <span className="text-gray-500">&amp;amp;</span> → &amp;
+    <br/>
+
+    <span className="text-gray-500">&amp;quot;</span> → "
+    <br/>
+
+    <span className="text-gray-500">&amp;#39;</span> → '
+  </code>
+</pre>
       </section>
 
       {/* Accessibility */}
@@ -108,9 +158,20 @@ const HTMLSymbols = () => {
         <p className="leading-relaxed mb-3">
           Symbols can be ambiguous; if the meaning isn’t clear, provide a text explanation or use <code>aria-label</code>.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{'<span aria-label="warning">⚠</span> <span>Be careful!</span>'}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;span</span>
+    <span className="text-red-500"> aria-label</span>=
+    <span className="text-green-600">"warning"</span>
+    <span className="text-gray-500">&gt;</span>
+    ⚠
+    <span className="text-gray-500">&lt;/span&gt;</span>
+    {' '}
+    <span className="text-gray-500">&lt;span&gt;</span>
+    Be careful!
+    <span className="text-gray-500">&lt;/span&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Best Practices */}

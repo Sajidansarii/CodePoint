@@ -9,19 +9,21 @@ export default function CssFontFamily() {
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>{`p.serif {
-  font-family: "Times New Roman", serif;
-}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">p.serif</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font-family</span>: <span className="text-green-700">"Times New Roman", serif</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-p.sans {
-  font-family: Arial, Helvetica, sans-serif;
-}
+    <span className="text-blue-600">p.sans</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font-family</span>: <span className="text-green-700">Arial, Helvetica, sans-serif</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-p.mono {
-  font-family: "Courier New", monospace;
-}`}</code>
-      </pre>
+    <span className="text-blue-600">p.mono</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font-family</span>: <span className="text-green-700">"Courier New", monospace</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Demo</h2>
       <div className="space-y-2 p-4 border rounded-lg">

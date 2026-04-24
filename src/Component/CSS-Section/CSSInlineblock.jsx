@@ -34,13 +34,15 @@ const CssInlineBlock = () => {
       </div>
 
       <h2 className="text-xl font-semibold mt-6 mb-2">Syntax</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-{`selector {
-  display: inline-block;
-  }`}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">selector</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">inline-block</span>;<br />
+
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
     </div>
   );
 };

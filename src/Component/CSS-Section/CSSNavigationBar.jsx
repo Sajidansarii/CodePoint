@@ -24,27 +24,26 @@ const CssNavigationBar = () => {
         </ul>
       </div>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-{`ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  }
-  
-  li a {
-    text-decoration: none;
-    padding: 10px 15px;
-    color: white;
-    }
-    
-    li a:hover {
-      color: yellow;
-      }`}
-      </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">ul</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">list-style-type</span>: <span className="text-green-700">none</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">margin</span>: <span className="text-green-700">0</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">0</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    <span>{'}'}</span><br /><br />
 
+    <span className="text-blue-600">li a</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">text-decoration</span>: <span className="text-green-700">none</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">10px 15px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">li a:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">yellow</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
       {/* Vertical Navbar */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Vertical Navigation Bar</h2>
       <p className="mb-4">You can also create a vertical sidebar-style navigation bar:</p>
@@ -58,27 +57,27 @@ const CssNavigationBar = () => {
         </ul>
       </div>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-{`ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  }
-  
-  li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-    }
-    
-    li a:hover {
-      background-color: blue;
-      color: white;
-      }`}
-      </code>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">ul</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">list-style-type</span>: <span className="text-green-700">none</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">0</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">margin</span>: <span className="text-green-700">0</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">li a</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">block</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">10px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">text-decoration</span>: <span className="text-green-700">none</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">black</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-600">li a:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">blue</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       {/* Sticky Navbar */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Sticky Navigation Bar</h2>
@@ -96,16 +95,16 @@ const CssNavigationBar = () => {
         </ul>
       </div>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-{`.navbar {
-  position: sticky;
-  top: 0;
-  background-color: blue;
-  color: white;
-  }`}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">.navbar</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">position</span>: <span className="text-green-700">sticky</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">top</span>: <span className="text-green-700">0</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">blue</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
 
       {/* Notes */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Important Notes</h2>

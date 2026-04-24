@@ -17,13 +17,45 @@ const HTMLLists = () => {
         <p className="text-gray-700 mb-3">
           An unordered list displays items with bullets. Use the <code>&lt;ul&gt;</code> tag with nested <code>&lt;li&gt;</code> items.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          {`<ul>
-  <li>Apple</li>
-  <li>Banana</li>
-  <li>Cherry</li>
-</ul>`}
-        </pre>
+     <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">ul</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    Apple
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    Banana
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    Cherry
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">ul</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         <p className="text-gray-700">
           Output: • Apple, • Banana, • Cherry
         </p>
@@ -35,13 +67,45 @@ const HTMLLists = () => {
         <p className="text-gray-700 mb-3">
           An ordered list shows items in sequence using numbers. Use the <code>&lt;ol&gt;</code> tag.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          {`<ol>
-  <li>First step</li>
-  <li>Second step</li>
-  <li>Third step</li>
-</ol>`}
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">ol</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    First step
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    Second step
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    Third step
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">ol</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         <p className="text-gray-700">
           Output: 1. First step, 2. Second step, 3. Third step
         </p>
@@ -53,14 +117,54 @@ const HTMLLists = () => {
         <p className="text-gray-700 mb-3">
           A definition list pairs terms and descriptions using <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code> (term), and <code>&lt;dd&gt;</code> (description).
         </p>
-        <pre className="bg-gray-900 p-4 text-green-400 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-           {`<dl>
-  <dt>HTML</dt>
-  <dd>HyperText Markup Language</dd>
-  <dt>CSS</dt>
-  <dd>Cascading Style Sheets</dd>
-</dl>`}
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">dl</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">dt</span>
+    <span className="text-gray-500">&gt;</span>
+    HTML
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">dt</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">dd</span>
+    <span className="text-gray-500">&gt;</span>
+    HyperText Markup Language
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">dd</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">dt</span>
+    <span className="text-gray-500">&gt;</span>
+    CSS
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">dt</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">dd</span>
+    <span className="text-gray-500">&gt;</span>
+    Cascading Style Sheets
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">dd</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">dl</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Nested Lists */}
@@ -69,17 +173,66 @@ const HTMLLists = () => {
         <p className="text-gray-700 mb-3">
           Lists can be nested inside other list items to create hierarchy.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-           {`<ul>
-  <li>Fruits
-    <ul>
-      <li>Apple</li>
-      <li>Banana</li>
-    </ul>
-  </li>
-  <li>Vegetables</li>
-</ul>`}
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">ul</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    Fruits
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">ul</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    Apple
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    Banana
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</span>
+    <span className="text-blue-500">ul</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;/</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    Vegetables
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">ul</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Attributes & Tips */}
@@ -99,12 +252,38 @@ const HTMLLists = () => {
         <p className="text-gray-700">
           Example of customizing start value in ordered list:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          {`<ol start="5">
-  <li>Item five</li>
-  <li>Item six</li>
-</ol>`}
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">ol</span>
+    <span className="text-red-500"> start</span>=
+    <span className="text-green-600">"5"</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    Item five
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    Item six
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">li</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">ol</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Accessibility */}

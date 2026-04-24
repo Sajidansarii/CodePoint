@@ -21,120 +21,380 @@ const HTMLInputTypes = () => {
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="text"&gt;</h3>
             <p className="leading-relaxed mb-3">Default single-line text field.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="text" name="username" placeholder="Your name" />'}</code>
-            </pre>
+           <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"text"</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"username"</span>
+
+    <span className="text-red-500"> placeholder</span>=
+    <span className="text-green-600">"Your name"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="email"&gt;</h3>
             <p className="leading-relaxed mb-1">Email address with built-in format validation and suitable mobile keyboard.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="email" name="email" required />'}</code>
-            </pre>
+           <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"email"</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"email"</span>
+
+    <span className="text-red-500"> required</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="password"&gt;</h3>
             <p className="leading-relaxed mb-3">Masked input for sensitive text like passwords.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="password" name="pwd" minlength="8" />'}</code>
-            </pre>
+           <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"password"</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"pwd"</span>
+
+    <span className="text-red-500"> minlength</span>=
+    <span className="text-green-600">"8"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="number"&gt;</h3>
             <p className="leading-relaxed mb-3">Numeric input with optional bounds and step.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="number" name="quantity" min="1" max="10" step="1" />'}</code>
-            </pre>
+           <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"number"</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"quantity"</span>
+
+    <span className="text-red-500"> min</span>=
+    <span className="text-green-600">"1"</span>
+
+    <span className="text-red-500"> max</span>=
+    <span className="text-green-600">"10"</span>
+
+    <span className="text-red-500"> step</span>=
+    <span className="text-green-600">"1"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="tel"&gt;</h3>
             <p className="leading-relaxed mb-3">Telephone number; brings up tel-specific keyboard on mobile.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="tel" name="phone" placeholder="+91 98765 43210" />'}</code>
-            </pre>
+          <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"tel"</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"phone"</span>
+
+    <span className="text-red-500"> placeholder</span>=
+    <span className="text-green-600">"+91 98765 43210"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="url"&gt;</h3>
             <p className="leading-relaxed mb-3">URL input with basic validation.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="url" name="website" placeholder="https://example.com" />'}</code>
-            </pre>
+           <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"url"</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"website"</span>
+
+    <span className="text-red-500"> placeholder</span>=
+    <span className="text-green-600">"https://example.com"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="search"&gt;</h3>
             <p className="leading-relaxed mb-3">Optimized for search queries; may show clear button in some browsers.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="search" name="query" placeholder="Search..." />'}</code>
-            </pre>
+         <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"search"</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"query"</span>
+
+    <span className="text-red-500"> placeholder</span>=
+    <span className="text-green-600">"Search..."</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="color"&gt;</h3>
             <p className="leading-relaxed mb-3">Color picker widget.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="color" name="favcolor" value="#ff0000" />'}</code>
-            </pre>
+          <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"color"</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"favcolor"</span>
+
+    <span className="text-red-500"> value</span>=
+    <span className="text-green-600">"#ff0000"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="range"&gt;</h3>
             <p className="leading-relaxed mb-3">Slider for numeric selection within a range.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="range" name="volume" min="0" max="100" />'}</code>
-            </pre>
+         <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"range"</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"volume"</span>
+
+    <span className="text-red-500"> min</span>=
+    <span className="text-green-600">"0"</span>
+
+    <span className="text-red-500"> max</span>=
+    <span className="text-green-600">"100"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="file"&gt;</h3>
             <p className="leading-relaxed mb-3">File upload; supports <code>multiple</code>.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="file" name="avatar" accept="image/*" />'}</code>
-            </pre>
+          <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"file"</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"avatar"</span>
+
+    <span className="text-red-500"> accept</span>=
+    <span className="text-green-600">"image/*"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="checkbox"&gt; / &lt;input type="radio"&gt;</h3>
             <p className="leading-relaxed mb-3">Toggle (checkbox) and exclusive options (radio).</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{`<label><input type="checkbox" name="agree" /> I agree</label>
-<label><input type="radio" name="plan" value="basic" /> Basic</label>
-<label><input type="radio" name="plan" value="pro" /> Pro</label>`}
-              </code>
-            </pre>
+           <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;label&gt;</span>
+    <span className="text-gray-500">&lt;input</span>
+    <span className="text-blue-600"> type</span>=
+    <span className="text-green-600">"checkbox"</span>
+    <span className="text-blue-600"> name</span>=
+    <span className="text-green-600">"agree"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <span className="text-gray-700"> I agree</span>
+    <span className="text-gray-500">&lt;/label&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;label&gt;</span>
+    <span className="text-gray-500">&lt;input</span>
+    <span className="text-blue-600"> type</span>=
+    <span className="text-green-600">"radio"</span>
+    <span className="text-blue-600"> name</span>=
+    <span className="text-green-600">"plan"</span>
+    <span className="text-blue-600"> value</span>=
+    <span className="text-green-600">"basic"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <span className="text-gray-700"> Basic</span>
+    <span className="text-gray-500">&lt;/label&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;label&gt;</span>
+    <span className="text-gray-500">&lt;input</span>
+    <span className="text-blue-600"> type</span>=
+    <span className="text-green-600">"radio"</span>
+    <span className="text-blue-600"> name</span>=
+    <span className="text-green-600">"plan"</span>
+    <span className="text-blue-600"> value</span>=
+    <span className="text-green-600">"pro"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <span className="text-gray-700"> Pro</span>
+    <span className="text-gray-500">&lt;/label&gt;</span>
+  </code>
+</pre>
           </div>
 
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="hidden"&gt;</h3>
             <p className="leading-relaxed mb-3">Hidden data sent with the form but not shown to user.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{'<input type="hidden" name="token" value="abc123" />'}</code>
-            </pre>
+          <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"hidden"</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"token"</span>
+
+    <span className="text-red-500"> value</span>=
+    <span className="text-green-600">"abc123"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
 
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="submit"&gt;, <code>reset</code>, <code>button</code></h3>
             <p className="leading-relaxed mb-3">Controls for form actions.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{`<input type="submit" value="Send" />
-<input type="reset" value="Clear" />
-<button type="button">Do Something</button>`}</code>
-            </pre>
+           <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"submit"</span>
+
+    <span className="text-red-500"> value</span>=
+    <span className="text-green-600">"Send"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+    <br/><br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"reset"</span>
+
+    <span className="text-red-500"> value</span>=
+    <span className="text-green-600">"Clear"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+    <br/><br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">button</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"button"</span>
+
+    <span className="text-gray-700">Do Something</span>
+
+    <span className="text-gray-500">&lt;/button&gt;</span>
+  </code>
+</pre>
           </div>
 
           <div>
             <h3 className="text-xl font-semibold text-blue-400 mb-1">&lt;input type="date"&gt;, <code>time</code>, <code>datetime-local</code>, <code>month</code>, <code>week</code></h3>
             <p className="leading-relaxed mb-3">Date and time pickers with native UI support in many browsers.</p>
-            <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-              <code>{`<input type="date" name="birthday" />
-<input type="time" name="alarm" />
-<input type="datetime-local" name="appointment" />`}</code>
-            </pre>
+           <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"date"</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"birthday"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"time"</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"alarm"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"datetime-local"</span>
+
+    <span className="text-red-500"> name</span>=
+    <span className="text-green-600">"appointment"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
           </div>
         </div>
       </section>
@@ -154,11 +414,52 @@ const HTMLInputTypes = () => {
           <li><code>multiple</code> — Allow selecting multiple files or emails.</li>
           <li><code>readonly</code> / <code>disabled</code> — Control editability.</li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`<input type="email" required placeholder="you@example.com" />
-<input type="number" min="1" max="5" step="1" />
-<input type="text" pattern="[A-Za-z]{3,}" />`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"email"</span>
+
+    <span className="text-red-500"> required</span>
+
+    <span className="text-red-500"> placeholder</span>=
+    <span className="text-green-600">"you@example.com"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"number"</span>
+
+    <span className="text-red-500"> min</span>=
+    <span className="text-green-600">"1"</span>
+
+    <span className="text-red-500"> max</span>=
+    <span className="text-green-600">"5"</span>
+
+    <span className="text-red-500"> step</span>=
+    <span className="text-green-600">"1"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"text"</span>
+
+    <span className="text-red-500"> pattern</span>=
+    <span className="text-green-600">"[A-Za-z]{3}"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
       </section>
 
       {/* Accessibility */}

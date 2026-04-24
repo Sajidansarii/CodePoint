@@ -18,19 +18,41 @@ const HTMLMedia = () => {
         <p className="leading-relaxed mb-3">
           Use the <code>&lt;img&gt;</code> tag to display images. Always include the <code>alt</code> attribute for accessibility.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-            <code>{'<img src="mountain.jpg" alt="mountain"/>'}</code>
-        
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;img</span>
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"mountain.jpg"</span>
+
+    <span className="text-red-500"> alt</span>=
+    <span className="text-green-600">"mountain"</span>
+
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
+
         <p className="leading-relaxed mb-3">
           You can make images responsive with CSS:
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-{`img {
-  max-width: 100%;
-  height: auto;
-}`}
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-blue-600">img</span>
+    <span className="text-gray-500"> {`{`}</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;max-width</span>:
+    <span className="text-green-600"> 100%</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;height</span>:
+    <span className="text-green-600"> auto</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-gray-500">{`}`}</span>
+  </code>
+</pre>
       </section>
 
       {/* Audio */}
@@ -39,13 +61,35 @@ const HTMLMedia = () => {
         <p className="leading-relaxed mb-3">
           The <code>&lt;audio&gt;</code> tag embeds audio content. Use the <code>controls</code> attribute so users can play, pause, or adjust volume.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-{`<audio controls>
-  <source src="song.mp3" type="audio/mpeg" />
-  <source src="song.ogg" type="audio/ogg" />
-  Your browser does not support the audio element.
-</audio>`}
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;audio</span>
+    <span className="text-red-500"> controls</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;source</span>
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"song.mp3"</span>
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"audio/mpeg"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;source</span>
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"song.ogg"</span>
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"audio/ogg"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-700">&nbsp;&nbsp;Your browser does not support the audio element.</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/audio&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed">
           You can provide multiple formats for better browser support.
         </p>
@@ -57,13 +101,37 @@ const HTMLMedia = () => {
         <p className="leading-relaxed mb-3">
           The <code>&lt;video&gt;</code> tag embeds video content. Use the <code>controls</code> attribute for playback controls.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-{`<video width="400" controls>
-  <source src="movie.mp4" type="video/mp4" />
-  <source src="movie.webm" type="video/webm" />
-  Your browser does not support the video tag.
-</video>`}
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;video</span>
+    <span className="text-red-500"> width</span>=
+    <span className="text-green-600">"400"</span>
+    <span className="text-red-500"> controls</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;source</span>
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"movie.mp4"</span>
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"video/mp4"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;&lt;source</span>
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">"movie.webm"</span>
+    <span className="text-red-500"> type</span>=
+    <span className="text-green-600">"video/webm"</span>
+    <span className="text-gray-500"> /&gt;</span>
+    <br/>
+
+    <span className="text-gray-700">&nbsp;&nbsp;Your browser does not support the video tag.</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/video&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed">
           Attributes like <code>autoplay</code>, <code>loop</code>, and <code>muted</code> can control playback behavior.
         </p>
@@ -75,17 +143,36 @@ const HTMLMedia = () => {
         <p className="leading-relaxed mb-3">
           Use <code>&lt;iframe&gt;</code> to embed other content like YouTube videos or maps.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-{`<iframe 
-  width="560" 
-  height="315" 
-  src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
-</iframe>`}
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;iframe</span>
+    <span className="text-red-500"> width</span>=
+    <span className="text-green-600">"560"</span>
+
+    <span className="text-red-500"> height</span>=
+    <span className="text-green-600">"315"</span>
+
+    <span className="text-red-500"> src</span>=
+    <span className="text-green-600">
+      "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    </span>
+
+    <span className="text-red-500"> title</span>=
+    <span className="text-green-600">"YouTube video player"</span>
+
+    <span className="text-red-500"> frameborder</span>=
+    <span className="text-green-600">"0"</span>
+
+    <span className="text-red-500"> allow</span>=
+    <span className="text-green-600">
+      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    </span>
+
+    <span className="text-red-500"> allowfullscreen</span>
+
+    <span className="text-gray-500">&gt;&lt;/iframe&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed">
           Always respect copyright and use embeds from trusted sources.
         </p>
@@ -97,21 +184,63 @@ const HTMLMedia = () => {
         <p className="leading-relaxed mb-3">
           To make videos and iframes responsive, wrap them in a container with proportional padding.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-{`.video-container {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-}
-.video-container iframe,
-.video-container video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}`}
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-blue-600">.video-container</span>
+    <span className="text-gray-500"> {`{`}</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;position</span>:
+    <span className="text-green-600"> relative</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;padding-bottom</span>:
+    <span className="text-green-600"> 56.25%</span>
+    <span className="text-gray-500">; /* 16:9 aspect ratio */</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;height</span>:
+    <span className="text-green-600"> 0</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-gray-500">{`}`}</span>
+    <br/><br/>
+
+    <span className="text-blue-600">.video-container iframe</span>,
+    <span className="text-blue-600"> .video-container video</span>
+    <span className="text-gray-500"> {`{`}</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;position</span>:
+    <span className="text-green-600"> absolute</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;top</span>:
+    <span className="text-green-600"> 0</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;left</span>:
+    <span className="text-green-600"> 0</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;width</span>:
+    <span className="text-green-600"> 100%</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;height</span>:
+    <span className="text-green-600"> 100%</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-gray-500">{`}`}</span>
+  </code>
+</pre>
       </section>
 
       {/* Best Practices */}

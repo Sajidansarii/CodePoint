@@ -9,23 +9,25 @@ export default function CssFontSize() {
       </p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Example</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>{`p.small {
-  font-size: 12px;
-}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">p.small</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font-size</span>: <span className="text-green-700">12px</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-p.medium {
-  font-size: 1.2em;
-}
+    <span className="text-blue-600">p.medium</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font-size</span>: <span className="text-green-700">1.2em</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-p.large {
-  font-size: 150%;
-}
+    <span className="text-blue-600">p.large</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font-size</span>: <span className="text-green-700">150%</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-p.responsive {
-  font-size: 3vw;
-}`}</code>
-      </pre>
+    <span className="text-blue-600">p.responsive</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font-size</span>: <span className="text-green-700">3vw</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Demo</h2>
       <div className="space-y-2 p-4 border rounded-lg">

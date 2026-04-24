@@ -13,10 +13,29 @@ const HTMLColors = () => {
         <p className="leading-relaxed mb-3">
           HTML supports 140 standard color names.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-          {`<p style="color: red;">Red text</p>
-<p style="background-color: lightblue;">Light blue background</p>`}
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+         <code>
+          <span className="text-gray-30">&lt;</span>
+          <span className="text-blue-500">p</span>
+          <span className="text-red-500"> style=</span>
+          <span className="text-green-600">"color: red;"</span>
+          <span className="text-gray-30">&gt;</span>
+          <span className="text-gray-30">Red Text</span>
+          <span className="text-gray-30">&lt;/</span>
+          <span className="text-blue-500">p</span>
+          <span className="text-gray-30">&gt;</span><br></br>
+          <span className="text-gray-30">&lt;</span>
+          <span className="text-blue-500">p</span>
+          <span className="text-red-500"> style=</span>
+          <span className="text-green-600">"background-color: lightblue;"</span>
+          <span className="text-gray-30">&gt;</span>
+          <span className="">Light blue background</span>
+          <span className="text-gray-30">&lt;/</span>
+          <span className="text-blue-500">p</span>
+          <span className="text-gray-30">&gt;</span>
+         </code>
         </pre>
+
         <div className="flex flex-wrap gap-2">
           <span className="px-3 py-1 rounded text-white" style={{ backgroundColor: "red" }}>
             red
@@ -38,9 +57,27 @@ const HTMLColors = () => {
         <p className="leading-relaxed mb-3">
           A HEX color is a six-digit code representing red, green, and blue values in hexadecimal (0–9, A–F).
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-          <code>{`<p style="color: #ff0000;">Red text</p>
-<p style="background-color: #00ff00;">Green background</p>`}</code>
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+          <code>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">p</span>
+            <span className="text-red-500"> style=</span>
+            <span className="text-green-600">"color: #ff0000;"</span>
+            <span className="text-gray-30">&gt;</span>
+            <span className="">Red text</span>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">p</span>
+            <span className="text-gray-30">&gt;</span><br></br>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">p</span>
+            <span className="text-red-500"> style=</span>
+            <span className="text-green-600">"background-clor: #00ff00;"</span>
+            <span className="text-gray-30">&gt;</span>
+            <span className="text-gray-30">Green background</span>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">p</span>
+            <span className="text-gray-30">&gt;</span>
+           </code>
         </pre>
         <div className="flex flex-wrap gap-2">
           <span className="px-3 py-1 rounded text-white" style={{ backgroundColor: "#ff0000" }}>
@@ -63,9 +100,27 @@ const HTMLColors = () => {
         <p className="leading-relaxed mb-3">
           RGB defines colors using red, green, and blue values (0–255). RGBA adds an alpha value (0–1) for transparency.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-          <code>{`<p style="color: rgb(255, 0, 0);">Red text</p>
-<p style="background-color: rgba(0, 255, 0, 0.5);">Semi-transparent green background</p>`}</code>
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+          <code>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">p</span>
+            <span className="text-red-500"> style=</span>
+            <span className="text-green-600">"color: rgb(255, 0, 0);"</span>
+            <span className="text-gray-30">&gt;</span>
+            <span className="text-gray-30">Red text</span>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">p</span>
+            <span className="text-gray-30">&gt;</span><br/>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">p</span>
+            <span className="text-red-500"> style=</span>
+            <span className="text-green-600">"background-color: rgba(0, 255, 0, 0.5);"</span>
+            <span className="text-gray-30">&gt;</span>
+            <span className="text-gray-30">Semi-transparent green background</span>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">p</span>
+            <span className="text-gray-30">&gt;</span> 
+          </code>
         </pre>
         <div className="flex flex-wrap gap-2">
           <span className="px-3 py-1 rounded text-white" style={{ backgroundColor: "rgb(255,0,0)" }}>
@@ -85,10 +140,30 @@ const HTMLColors = () => {
         <p className="leading-relaxed mb-3">
           HSL stands for Hue (0–360), Saturation (0%–100%), and Lightness (0%–100%). HSLA adds alpha transparency.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
-          <code>{`<p style="color: hsl(0, 100%, 50%);">Red text</p>
-<p style="background-color: hsla(120, 100%, 50%, 0.3);">Semi-transparent green background</p>`}</code>
+
+        <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-5">
+          <code>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">p</span>
+            <span className="text-red-500"> style=</span>
+            <span className="text-green-600">"color: hsl(0,100%, 50%);"</span>
+            <span className="text-green-30">&gt;</span>
+            <span className="text-gray-30">Red text</span>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">p</span>
+            <span className="text-gray-30">&gt;</span><br/>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-blue-500">p</span>
+            <span className="text-red-500"> style=</span>
+            <span className="text-green-600">"background-color: hsl(120, 100%, 50%, 0.3);"</span>
+            <span className="text-gray-30">&lt;</span>
+            <span className="text-gray-30">Semi-transparent green background</span>
+            <span className="text-gray-30">&lt;/</span>
+            <span className="text-blue-500">p</span>
+            <span className="text-gray-30">&gt;</span>
+          </code>
         </pre>
+        
         <div className="flex flex-wrap gap-2">
           <span className="px-3 py-1 rounded text-white" style={{ backgroundColor: "hsl(0,100%,50%)" }}>
             hsl(0,100%,50%)

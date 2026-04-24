@@ -48,33 +48,87 @@ const HTMLLinks = () => {
           <p className="leading-relaxed mb-1">
             External link opening in new tab:
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-            {`<a href="https://example.com" target="_blank" rel="noopener noreferrer">
-  Visit Example
-</a>`}
-          </pre>
+         <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">a</span>
+    <span className="text-red-500"> href</span>=
+    <span className="text-green-600">"https://example.com"</span>
+
+    <span className="text-red-500"> target</span>=
+    <span className="text-green-600">"_blank"</span>
+
+    <span className="text-red-500"> rel</span>=
+    <span className="text-green-600">"noopener noreferrer"</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/>
+
+    <span className="text-gray-700">&nbsp;&nbsp;Visit Example</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">a</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         </div>
 
         <div className="mb-4">
           <p className="text-gray-700 mb-1">
             Internal anchor to a section:
           </p>
-          <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-            {`<!-- Link -->
-<a href="#features">See Features</a>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;!-- Link --&gt;</span>
+    <br/>
 
-<!-- Target -->
-<h2 id="features">Features</h2>`}
-          </pre>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">a</span>
+    <span className="text-red-500"> href</span>=
+    <span className="text-green-600">"#features"</span>
+    <span className="text-gray-500">&gt;</span>
+    See Features
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">a</span>
+    <span className="text-gray-500">&gt;</span>
+    <br/><br/>
+
+    <span className="text-gray-500">&lt;!-- Target --&gt;</span>
+    <br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">h2</span>
+    <span className="text-red-500"> id</span>=
+    <span className="text-green-600">"features"</span>
+    <span className="text-gray-500">&gt;</span>
+    Features
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">h2</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         </div>
 
         <div className="mb-4">
           <p className="leading-relaxed mb-3">
             Download link:
           </p>
-          <pre className="bg-gray-100 p-3 rounded overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-            {<a href="/files/ebook.pdf" download>Download eBook</a>}
-          </pre>
+        <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-500">a</span>
+    <span className="text-red-500"> href</span>=
+    <span className="text-green-600">"/files/ebook.pdf"</span>
+
+    <span className="text-red-500"> download</span>
+
+    <span className="text-gray-500">&gt;</span>
+    Download eBook
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-500">a</span>
+    <span className="text-gray-500">&gt;</span>
+  </code>
+</pre>
         </div>
       </section>
 

@@ -45,13 +45,19 @@ const CSSBackground = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 1: Background Color
       </h2>
-      <div className="bg-gray-900 text-green-400  p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-4">
-        <pre>
-{`body {
-  background-color: lightblue;
-}`}
-        </pre>
-      </div>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">body</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">background-color</span>
+    <span>: </span>
+    <span className="text-green-700">lightblue</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+
       <div className="p-6 mb-6 rounded-lg" style={{ backgroundColor: "lightblue" }}>
         This box has a <strong>lightblue</strong> background color.
       </div>
@@ -60,15 +66,29 @@ const CSSBackground = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 2: Background Image
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-4">
-        <pre>
-{`div {
-  background-image: url("https://picsum.photos/200/300");
-  background-repeat: no-repeat;
-  background-size: cover;
-}`}
-        </pre>
-      </div>
+      <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">div</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">background-image</span>
+    <span>: </span>
+    <span className="text-green-700">url("https://picsum.photos/200/300")</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">background-repeat</span>
+    <span>: </span>
+    <span className="text-green-700">no-repeat</span>
+    <span>;</span><br />
+
+    <span className="text-red-500">background-size</span>
+    <span>: </span>
+    <span className="text-green-700">cover</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+
       <div
         className="h-40 rounded-lg mb-6 flex items-center justify-center  font-bold"
         style={{
@@ -84,13 +104,19 @@ const CSSBackground = () => {
       <h2 className="text-xl font-semibold text-gray-800 mb-2">
         Example 3: Background Shorthand
       </h2>
-      <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mb-4">
-        <pre>
-{`div {
-  background: lightgreen url("bg.jpg") no-repeat right top;
-}`}
-        </pre>
-      </div>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">div</span> <span>{'{'}</span><br />
+
+    <span className="text-red-500">background</span>
+    <span>: </span>
+    <span className="text-green-700">lightgreen url("bg.jpg") no-repeat right top</span>
+    <span>;</span><br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+
       <div
         className="h-32 rounded-lg flex items-center justify-center"
         style={{

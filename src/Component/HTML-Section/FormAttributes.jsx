@@ -18,25 +18,52 @@ const HTMLInputFormAttribute = () => {
       {/* Syntax */}
       <div className="mb-6">
         <h2 className="text-xl font-semibold text-blue-500 mb-3">Syntax</h2>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>{'<input type="text" form="myForm" />'}</code>
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"text"</span>
+    <span className="text-red-500"> form</span>=<span className="text-green-600">"myForm"</span>
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
       </div>
 
       {/* Example */}
       <div className="mb-6">
         <h2 className="text-xl font-semibold text-blue-500 mb-3">Example</h2>
         <p className="leading-relaxed mb-3">Input field outside the form but still part of it:</p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`
-<form id="myForm" action="/submit">
-  <input type="submit" value="Submit Form" />
-</form>
+        <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">form</span>
+    <span className="text-red-500"> id</span>=<span className="text-green-600">"myForm"</span>
+    <span className="text-red-500"> action</span>=<span className="text-green-600">"/submit"</span>
+    <span className="text-gray-500">&gt;</span><br/>
 
-<!-- Outside the form -->
-<input type="text" name="username" form="myForm" placeholder="Enter Username" />
-          `}</code>
-        </pre>
+    &nbsp;&nbsp;<span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"submit"</span>
+    <span className="text-red-500"> value</span>=<span className="text-green-600">"Submit Form"</span>
+    <span className="text-gray-500"> /&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;/</span>
+    <span className="text-blue-600">form</span>
+    <span className="text-gray-500">&gt;</span><br/><br/>
+
+    <span className="text-gray-500">&lt;!--</span>
+    <span className="text-gray-700"> Outside the form </span>
+    <span className="text-gray-500">--&gt;</span><br/>
+
+    <span className="text-gray-500">&lt;</span>
+    <span className="text-blue-600">input</span>
+    <span className="text-red-500"> type</span>=<span className="text-green-600">"text"</span>
+    <span className="text-red-500"> name</span>=<span className="text-green-600">"username"</span>
+    <span className="text-red-500"> form</span>=<span className="text-green-600">"myForm"</span>
+    <span className="text-red-500"> placeholder</span>=<span className="text-green-600">"Enter Username"</span>
+    <span className="text-gray-500"> /&gt;</span>
+  </code>
+</pre>
         <p className="leading-relaxed mb-3">
           Even though the input is outside the form, its value will be submitted.
         </p>

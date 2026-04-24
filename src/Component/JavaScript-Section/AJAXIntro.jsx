@@ -46,39 +46,85 @@ const JSAJAXIntro = () => {
 
       <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">AJAX Example Explained</h1>
       <h2 className="text-2xl text-gray-800 font-semibold mt-5">HTML Page</h2>
-      <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-        <code>
-          {`<!DOCTYPE html>
-<html>
-<body>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-600">&lt;!DOCTYPE html&gt;</span>
+    <br />
 
-<div id="demo">
-  <h2>Let AJAX change this text</h2>
-  <button type="button" onclick="loadDoc()">Change Content</button>
-</div>
+    <span className="text-blue-600">&lt;html&gt;</span>
+    <br />
 
-</body>
-</html>`}
-        </code>
-      </pre>
+    <span className="text-blue-600">&lt;body&gt;</span>
+    <br /><br />
+
+    <span className="text-red-500">&lt;div</span>{" "}
+    <span className="text-red-500">id</span>=
+    <span className="text-green-700">"demo"</span>
+    <span className="text-red-500">&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">&lt;h2&gt;</span>
+    Let AJAX change this text
+    <span className="text-red-500">&lt;/h2&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">&lt;button</span>{" "}
+    <span className="text-red-500">type</span>=
+    <span className="text-green-700">"button"</span>{" "}
+    <span className="text-red-500">onclick</span>=
+    <span className="text-green-700">"loadDoc()"</span>
+    <span className="text-red-500">&gt;</span>
+    Change Content
+    <span className="text-red-500">&lt;/button&gt;</span>
+    <br />
+
+    <span className="text-red-500">&lt;/div&gt;</span>
+
+    <br /><br />
+
+    <span className="text-blue-600">&lt;/body&gt;</span>
+    <br />
+    <span className="text-blue-600">&lt;/html&gt;</span>
+  </code>
+</pre>
 
       <p className="mt-5 mb-3">The page contains a <span className="text-red-400">{'<div>'}</span> section along with a <span className="text-red-400">{'<button>'}</span>. The <span className="text-red-400">{'<div>'}</span> is meant for presenting server-provided information.</p>
      <p>The <span className="text-red-400">{'<button>'}</span> runs a function on click. The function retrieves information from a web server and displays it.</p>
      
 
      <h1 className="text-2xl text-gray-800 mt-10 mb-3 font-semibold">Function loadDoc()</h1>
-     <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-      <code>
-        {`function loadDoc() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("demo").innerHTML = this.responseText;
-    }
-  xhttp.open("GET", "ajax_info.txt", true);
-  xhttp.send();
-}`}
-      </code>
-     </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">function</span> loadDoc() {"{"}
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">const</span> xhttp = new XMLHttpRequest();
+    <br />
+
+    &nbsp;&nbsp;xhttp.onload = function() {"{"}
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;document.getElementById(
+    <span className="text-green-700">"demo"</span>
+    ).innerHTML = this.responseText;
+    <br />
+
+    &nbsp;&nbsp;{"}"}
+    <br /><br />
+
+    &nbsp;&nbsp;xhttp.open(
+    <span className="text-green-700">"GET"</span>,
+    <span className="text-green-700">"ajax_info.txt"</span>,
+    true
+    );
+    <br />
+
+    &nbsp;&nbsp;xhttp.send();
+    <br />
+
+    {"}"}
+  </code>
+</pre>
 
      <h1 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">What is AJAX?</h1>
      <p>The term AJAX means Asynchronous JavaScript and XML. It should not be considered a programming language.</p>

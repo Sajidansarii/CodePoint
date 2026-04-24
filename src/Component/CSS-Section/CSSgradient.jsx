@@ -95,14 +95,6 @@ const CssGradientDemo = () => {
 
 
 
-
-
-
-
-
-
-
-
       <p className="text-gray-700">
         ✅ Tips:
         <ul className="list-disc list-inside mt-2">

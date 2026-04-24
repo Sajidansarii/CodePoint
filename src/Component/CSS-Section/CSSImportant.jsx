@@ -13,13 +13,16 @@ const ImportantExample = () => {
                   This can be useful in certain situations where you need to make sure a style is always applied, but it should be used sparingly, as it can make your CSS harder to maintain and debug.
          </p>
       
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-          {`selector {
-   property: value !important; 
-}`}
-        </code>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-500">selector</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">property</span>: <span className="text-green-700">value !important</span>;<br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
+
       <h1 className="text-2xl">What is CSS !important Rule?</h1>
       <p>The exclamation mark (!) followed directly by the word important (i.e., !important) is used in CSS to give a style declaration the highest priority, overriding any other declarations for the same property, regardless of specificity or source order.</p>
       <p>The !important rule overrides all other declarations of the same property, regardless of CSS specificity. We'll cover specificity in more detail later in this tutorial.</p>
@@ -28,223 +31,254 @@ const ImportantExample = () => {
       <h1 className="text-2xl">Specificity in CSS</h1>
       <p>Specificity in CSS determines which styles take precedence when multiple rules target the same element. In general, inline styles have the highest priority, followed by ID selectors, then class selectors (including attributes and pseudo-classes), and finally element (type) selectors.</p>
 
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-          {`p {
-  color: black;
-}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-500">p</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">black</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-/* Override the above style, Class have higher specificity */
-p.special {
-  color: blue;
-}
+    <span className="text-gray-500">/* Override the above style, Class has higher specificity */</span><br />
+    <span className="text-blue-500">p.special</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">blue</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-/* Using !important to force an override */
-p {
-  color: red !important;
-}`}
-        </code>
-      </pre>
+    <span className="text-gray-500">/* Using !important to force an override */</span><br />
+    <span className="text-blue-500">p</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">red !important</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
+
       <p>The above declaration sets the text color of the paragraph to red. The style applied by the element selector is overridden by the class selector, which is then overridden by the !important rule.</p>
       <p>Keep in mind that while !important can be useful in certain situations, it should be used sparingly. Overusing !important can make your CSS harder to maintain and debug. It's best to rely on proper CSS structure and specificity to manage styles effectively, reserving !important for truly exceptional cases.</p>
 
       <h1 className="text-2xl">CSS !important Rule Example</h1>
       <p>The following example demonstrates the use of '!important' which we saw above.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-          {`<!DOCTYPE html> 
-<html>
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-500">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-500">&lt;html&gt;</span><br /><br />
 
-<head>
-    <style>
-        /* Element Selector Styles */
-        p {
-            color: black;
-            font-weight: bold;
-        }
+    <span className="text-blue-500">&lt;head&gt;</span><br />
+    <span className="text-blue-500">&lt;style&gt;</span><br /><br />
 
-        /* Using !important to force a color override */
-        p {
-            color: red !important;
-        }
-    </style>
-</head>
+    <span className="text-gray-500">/* Element Selector Styles */</span><br />
+    <span className="text-blue-500">p</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">black</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">font-weight</span>: <span className="text-green-700">bold</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-<body>
-    <p> 
-        This paragraph will be red. Because the style of element 
-        selector is overridden by important keyword.
-    </p>
-</body>
+    <span className="text-gray-500">/* Using !important to force a color override */</span><br />
+    <span className="text-blue-500">p</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">red !important</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-</html>`}
-        </code>
-      </pre>
-      <h1>CSS !important and Specificity</h1>
+    <span className="text-blue-500">&lt;/style&gt;</span><br />
+    <span className="text-blue-500">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;body&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;p&gt;</span><br />
+    &nbsp;&nbsp;This paragraph will be red. Because the style of element selector is overridden by important keyword.<br />
+    <span className="text-blue-500">&lt;/p&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;/body&gt;</span><br />
+    <span className="text-blue-500">&lt;/html&gt;</span>
+  </code>
+</pre>
+
+<h1>CSS !important and Specificity</h1>
       <p>According to CSS specificity rules, inline styles have the highest priority, followed by ID selectors, then class selectors, and finally element selectors. This means that styles applied using element selectors can be overridden by class selectors, which can be further overridden by ID selectors and, ultimately, by inline styles.</p>
       <p>The following example uses multiple selectors to apply the color property to a paragraph. However, the style defined using the element selector with the !important keyword is ultimately applied to the paragraph.</p>
 
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`<!DOCTYPE html> 
-<html>
+     <pre className="bg-gray-200 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-500">&lt;html&gt;</span><br /><br />
 
-<head>
-    <style>
-        /*Multiple selectors for paragraph */
-        p {
-            color: black;
-            font-weight: bold;
-        }
+    <span className="text-blue-500">&lt;head&gt;</span><br />
+    <span className="text-blue-500">&lt;style&gt;</span><br /><br />
 
-        .special {
-            color: blue;
-        }
+    <span className="text-gray-500">/* Multiple selectors for paragraph */</span><br />
 
-        #unique {
-            color: darkgreen;
-        }`}
-        </code>
-      </pre>
+    <span className="text-blue-500">p</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">black</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">font-weight</span>: <span className="text-green-700">bold</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">.special</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">blue</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">#unique</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">darkgreen</span>;<br />
+    <span>{'}'}</span><br /><br />
+  </code>
+</pre>
 
 
       <h1 className="text-2xl">Override Inline Styles</h1>
       <p>Inline styles have the highest specificity in CSS and usually take priority over any selector. However, the !important keyword can even override inline styles. Let’s look at an example to understand this better.</p>
       <h1 className="text-2xl">Example</h1>
-        <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-            <code>
-          {`<!DOCTYPE html> 
-<html>
+       <pre className="bg-gray-200 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-500">&lt;html&gt;</span><br /><br />
 
-<head>
-    <style>
-            p {
-                color: black !important; 
-                font-weight: bold;
-            }
-            </style>
-</head>
+    <span className="text-blue-500">&lt;head&gt;</span><br />
+    <span className="text-blue-500">&lt;style&gt;</span><br /><br />
 
-<body>
-<p style="color:red">
-Paragraph is black. Inline style is overridden by 
-important keyword
-</p>
-</body>
+    <span className="text-blue-500">p</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">black !important</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">font-weight</span>: <span className="text-green-700">bold</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-</html>`}
-</code>
-        </pre>
+    <span className="text-blue-500">&lt;/style&gt;</span><br />
+    <span className="text-blue-500">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;body&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;p</span>
+    <span className="text-red-500"> style</span>=<span className="text-green-700">"color:red"</span>
+    <span className="text-blue-500">&gt;</span><br />
+
+    &nbsp;&nbsp;Paragraph is black. Inline style is overridden by important keyword<br />
+
+    <span className="text-blue-500">&lt;/p&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;/body&gt;</span><br />
+    <span className="text-blue-500">&lt;/html&gt;</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">Multiple Important Keyword</h1>
       <p>When multiple !important declarations are applied to the same CSS property using different selectors, the declaration within the selector with the highest specificity takes effect. Let’s look at an example to see how this works.</p>
       <h1 className="text-2xl">Example</h1>
-      <div className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <pre>
-          {`<!DOCTYPE html> 
-<html>
+      <pre className="bg-gray-200 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-500">&lt;html&gt;</span><br /><br />
 
-<head>
-    <style>
-        /*Multiple selectors for paragraph */
-        p {
-            color: black !important;
-            font-weight: bold;
-        }
+    <span className="text-blue-500">&lt;head&gt;</span><br />
+    <span className="text-blue-500">&lt;style&gt;</span><br /><br />
 
-        .special {
-            color: blue !important;
-        }
+    <span className="text-gray-500">/* Multiple selectors for paragraph */</span><br />
 
-        #unique {
-            color: darkgreen !important;
-        }
+    <span className="text-blue-500">p</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">black !important</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">font-weight</span>: <span className="text-green-700">bold</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-        p {
-            color: red !important;
-        }
-    </style>
-</head>
+    <span className="text-blue-500">.special</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">blue !important</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-<body>
-    <p id="unique" class="special">
-        This paragraph will be darkgreen. Since important keyword 
-        is present at every selectors, high priority selector 
-        will be chosen. In this case it is id "#unique"
-    </p>
-</body>
+    <span className="text-blue-500">#unique</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">darkgreen !important</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-</html>`}
-        </pre>
-      </div>
+    <span className="text-blue-500">p</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">red !important</span>;<br />
+    <span>{'}'}</span><br /><br />
 
+    <span className="text-blue-500">&lt;/style&gt;</span><br />
+    <span className="text-blue-500">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;body&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;p</span>
+    <span className="text-red-500"> id</span>=<span className="text-green-700">"unique"</span>
+    <span className="text-red-500"> class</span>=<span className="text-green-700">"special"</span>
+    <span className="text-blue-500">&gt;</span><br /><br />
+
+    &nbsp;&nbsp;This paragraph will be darkgreen. Since important keyword is present at every selector, high priority selector will be chosen. In this case it is id "#unique"<br /><br />
+
+    <span className="text-blue-500">&lt;/p&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;/body&gt;</span><br />
+    <span className="text-blue-500">&lt;/html&gt;</span>
+  </code>
+</pre>
       <h1 className="text-2xl">CSS !important for Custom Properties</h1>
       <p>When you add !important to a custom property, it indicates that the custom property's value should take priority. However, the !important flag itself is not included when the custom property is accessed using the var() function.</p>
       <h1 className="text-2xl">Example</h1>
 
-      <div className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <pre>
-          {`<!DOCTYPE html> 
-<html>
+     <pre className="bg-gray-200 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-500">&lt;html&gt;</span><br /><br />
 
-<head>
-    <style>
-        :root {
-            --primary-color: blue !important;
-            --primary-color: red ;
-        }
+    <span className="text-blue-500">&lt;head&gt;</span><br />
+    <span className="text-blue-500">&lt;style&gt;</span><br /><br />
 
-        .box {
-            background-color: var(--primary-color) ;
-            width: 200px;
-            height: 200px;
-        }
-        p {
-            color: var(--primary-color);
-        }
-    </style>
-</head>
+    <span className="text-blue-500">:root</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">--primary-color</span>: <span className="text-green-700">blue !important</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">--primary-color</span>: <span className="text-green-700">red</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-<body>
-    <div class="box"> </div>
-    <p> Primary Color variable is Blue </p>
-</body>
+    <span className="text-blue-500">.box</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">background-color</span>: <span className="text-green-700">var(--primary-color)</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">200px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">200px</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-</html>`}
-        </pre>
-      </div>
+    <span className="text-blue-500">p</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">var(--primary-color)</span>;<br />
+    <span>{'}'}</span><br /><br />
+
+    <span className="text-blue-500">&lt;/style&gt;</span><br />
+    <span className="text-blue-500">&lt;/head&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;body&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;div</span>
+    <span className="text-red-500"> class</span>=<span className="text-green-700">"box"</span>
+    <span className="text-blue-500">&gt;&lt;/div&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;p&gt;</span>
+    Primary Color variable is Blue
+    <span className="text-blue-500">&lt;/p&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;/body&gt;</span><br />
+    <span className="text-blue-500">&lt;/html&gt;</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">CSS !important on Shorthand Properties</h1>
       <p>When you use !important with a shorthand property in CSS, the importance is applied to all of its individual longhand properties. In effect, each sub-property inherits the !important flag. The following examples produce the same result.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 text-green-400 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
-        <code>
-          {`<!DOCTYPE html> 
-<html>
+     <pre className="bg-gray-200 rounded-lg p-4 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">&lt;!DOCTYPE html&gt;</span><br />
+    <span className="text-blue-500">&lt;html&gt;</span><br /><br />
 
-<head>
-    <style>
-        p {
-            /* Applies to all */
-            font: 15px Arial, sans-serif !important;
-        }
-    </style>
-</head>
+    <span className="text-blue-500">&lt;head&gt;</span><br />
+    <span className="text-blue-500">&lt;style&gt;</span><br /><br />
 
-<body>
-    <p style="font-size: 100px;">
-        The font will set as per in CSS declaration. The font size of 
-        100px will not be applied because important keyword is used 
-        for shorthand property font. 
-    </p>
-</body>
+    <span className="text-blue-500">p</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-gray-500">/* Applies to all */</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">font</span>: <span className="text-green-700">15px Arial, sans-serif !important</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-</html>`}
-        </code>
-      </pre>
+    <span className="text-blue-500">&lt;/style&gt;</span><br />
+    <span className="text-blue-500">&lt;/head&gt;</span><br /><br />
 
+    <span className="text-blue-500">&lt;body&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;p</span>
+    <span className="text-red-500"> style</span>=<span className="text-green-700">"font-size: 100px;"</span>
+    <span className="text-blue-500">&gt;</span><br /><br />
+
+    &nbsp;&nbsp;The font will set as per in CSS declaration. The font size of 100px will not be applied because important keyword is used for shorthand property font.<br /><br />
+
+    <span className="text-blue-500">&lt;/p&gt;</span><br /><br />
+
+    <span className="text-blue-500">&lt;/body&gt;</span><br />
+    <span className="text-blue-500">&lt;/html&gt;</span>
+  </code>
+</pre>
 
     </div>
   );

@@ -22,53 +22,56 @@ const CssRWDImages = () => {
       <h1 className="text-2xl">Using The width Property</h1>
       <p>Using a percentage-based width and <span className="text-red-400 bg-gray-50 px-1">'auto'</span> for height ensures the image resizes responsively with the container.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <span className="text-green-400">img</span>{" "}
-        <span className="text-green-400">{'{'}</span><br/>{"      "}
-        <span className="text-green-400">width</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">100%</span>
-        <span className="text-green-400">;</span><br/>{"      "}
-        <span className="text-green-400">height</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">auto</span>
-        <span className="text-green-400">;</span><br/>
-        <span className="text-green-400">{'}'}</span>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">img</span>{" "}
+    <span className="text-red-500">{'{'}</span>
+    <br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>:{" "}
+    <span className="text-green-700">100%</span>;
+    <br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>:{" "}
+    <span className="text-green-700">auto</span>;
+    <br />
+    <span className="text-red-500">{'}'}</span>
+  </code>
+</pre>
 
       <p>Allowing an image to upscale may affect quality. Using <span className="text-red-400 bg-gray-50 px-1">max-width</span> is a more controlled, responsive solution.</p>
 
       <h1 className="text-2xl">Using The max-width Property</h1>
       <p>Using <span className="text-red-400 bg-gray-50 px-1">max-width:</span> 100% ensures the image can reduce in size responsively without enlarging beyond its original size.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 p-4 rounded-lg  overflow-x-auto max-w-full whitespace-pre-wrap">
-        <span className="text-green-400">img</span>{" "}
-        <span className="text-green-400">{'{'}</span><br/>{"      "}
-        <span className="text-green-400">max-width</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">100%</span>
-        <span className="text-green-400">;</span><br/>{"      "}
-        <span className="text-green-400">height</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">auto</span>
-        <span className="text-green-400">;</span><br/>
-        <span className="text-green-400">{'}'}</span>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">img</span>{" "}
+    <span className="text-red-500">{'{'}</span>
+    <br />
+    &nbsp;&nbsp;<span className="text-red-500">max-width</span>:{" "}
+    <span className="text-green-700">100%</span>;
+    <br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>:{" "}
+    <span className="text-green-700">auto</span>;
+    <br />
+    <span className="text-red-500">{'}'}</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">Add an Image to The Example Web Page</h1>
-      <pre className="bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <span className="text-green-400">img</span>{" "}
-        <span className="text-green-400">{'{'}</span><br/>{"      "}
-        <span className="text-green-400">width</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">100%</span>
-        <span className="text-green-400">;</span><br/>{"      "}
-        <span className="text-green-400">height</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">auto</span>
-        <span className="text-green-400">;</span><br/>
-        <span className="text-green-400">{'}'}</span>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">img</span>{" "}
+    <span className="text-red-500">{'{'}</span>
+    <br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>:{" "}
+    <span className="text-green-700">100%</span>;
+    <br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>:{" "}
+    <span className="text-green-700">auto</span>;
+    <br />
+    <span className="text-red-500">{'}'}</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">Background Images</h1>
       <p>Background images are also capable of adapting to changes in screen size.</p>
@@ -79,183 +82,225 @@ const CssRWDImages = () => {
 
       <h1 className="text-2xl">Example</h1>
       <p>Here's the styling used:</p>
-      <pre className="bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-        <span className="text-green-400">div</span>{" "}
-        <span className="text-green-400">{'{'}</span><br/>{"      "}
-        <span className="text-green-400">width</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">100%</span>
-        <span className="text-green-400">;</span><br/>{"      "}
-        <span className="text-green-400">height</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">400px</span>
-        <span className="text-green-400">;</span><br/>{"      "}
-        <span className="text-green-400">background-image</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">url('image/nature.jpg')</span>
-        <span className="text-green-400">;</span><br/>{"      "}
-        <span className="text-green-400">background-repeat</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">no-repeat</span>
-        <span className="text-green-400">;</span><br/>{"      "}
-        <span className="text-green-400">background-size</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">contain</span>
-        <span className="text-green-400">;</span><br/>{"      "}
-        <span className="text-green-400">border</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">1px solid red</span>
-        <span className="text-green-400">;</span><br/>
-        <span className="text-green-400">{'}'}</span>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">div</span>{" "}
+    <span className="text-red-500">{'{'}</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">width</span>:{" "}
+    <span className="text-green-700">100%</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">height</span>:{" "}
+    <span className="text-green-700">400px</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">background-image</span>:{" "}
+    <span className="text-green-700">url('image/nature.jpg')</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">background-repeat</span>:{" "}
+    <span className="text-green-700">no-repeat</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">background-size</span>:{" "}
+    <span className="text-green-700">contain</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">border</span>:{" "}
+    <span className="text-green-700">1px solid red</span>;
+    <br />
+
+    <span className="text-red-500">{'}'}</span>
+  </code>
+</pre>
 
       <p>Applying background-size: 100% 100% forces the image to stretch across the full width and height of the content box.</p>
       <div className="min-w-full h-96 bg-[url('/public/nature.jpg')] bg-[size:100%_100%] border border-1 border-red-600"></div>
       <p>Here's the CSS you'll use:</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 p-4 rounded-lg  overflow-x-auto max-w-full whitespace-pre-wrap">
-        <span className="text-green-400">div</span>{" "}
-        <span className="text-green-400">{'{'}</span><br/>{"      "}
-        <span className="text-green-400">width</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">100%</span>
-        <span className="text-green-400">;</span><br/>{"      "}
-        <span className="text-green-400">height</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">400px</span>
-        <span className="text-green-400">;</span><br/>{"      "}
-        <span className="text-green-400">background-image</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">url('image/nature.jpg')</span>
-        <span className="text-green-400">;</span><br/>{"      "}
-        <span className="text-green-400">background-repeat</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">no-repeat</span>
-        <span className="text-green-400">;</span><br/>{"      "}
-        <span className="text-green-400">background-size</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">100% 100%</span>
-        <span className="text-green-400">;</span><br/>{"      "}
-        <span className="text-green-400">border</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">1px solid red</span>
-        <span className="text-green-400">;</span><br/>
-        <span className="text-green-400">{'}'}</span>
-      </pre>
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">div</span>{" "}
+    <span className="text-red-500">{'{'}</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">width</span>:{" "}
+    <span className="text-green-700">100%</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">height</span>:{" "}
+    <span className="text-green-700">400px</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">background-image</span>:{" "}
+    <span className="text-green-700">url('image/nature.jpg')</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">background-repeat</span>:{" "}
+    <span className="text-green-700">no-repeat</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">background-size</span>:{" "}
+    <span className="text-green-700">100% 100%</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">border</span>:{" "}
+    <span className="text-green-700">1px solid red</span>;
+    <br />
+
+    <span className="text-red-500">{'}'}</span>
+  </code>
+</pre>
 
       <p>Setting <span className="text-red-400 bg-gray-50 px-1">background-size</span> to <span className="text-red-400 bg-gray-50 px-1">cover</span> makes the image scale to fill the entire content area while preserving its aspect ratio. This may cause parts of the image to be cropped.</p>
       <div className="min-w-full h-96 bg-[url('/public/nature.jpg')] bg-cover border border-1 border-red-600"></div>
       <p>Here's the CSS you'll use:</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 p-4 rounded-lg  overflow-x-auto max-w-full text-green-400">
-        <span className="text-green-400">div</span>{" "}
-        <span className="text-green-400">{'{'}</span><br/>{"      "}
-        <span className="text-green-400">width</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">100%</span>
-        <span className="text-green-400">;</span><br/>{"      "}
-        <span className="text-green-400">height</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">400px</span>
-        <span className="text-green-400">;</span><br/>{"      "}
-        <span className="text-green-400">background-image</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">url('image/nature.jpg')</span>
-        <span className="text-green-400">;</span><br/>{"      "}
-        <span className="text-green-400">background-repeat</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">no-repeat</span>
-        <span className="text-green-400">;</span><br/>{"      "}
-        <span className="text-green-400">background-size</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">cover</span>
-        <span className="text-green-400">;</span><br/>{"      "}
-        <span className="text-green-400">border</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">1px solid red</span>
-        <span className="text-green-400">;</span><br/>
-        <span className="text-green-400">{'}'}</span>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">div</span>{" "}
+    <span className="text-red-500">{'{'}</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">width</span>:{" "}
+    <span className="text-green-700">100%</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">height</span>:{" "}
+    <span className="text-green-700">400px</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">background-image</span>:{" "}
+    <span className="text-green-700">url('image/nature.jpg')</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">background-repeat</span>:{" "}
+    <span className="text-green-700">no-repeat</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">background-size</span>:{" "}
+    <span className="text-green-700">cover</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">border</span>:{" "}
+    <span className="text-green-700">1px solid red</span>;
+    <br />
+
+    <span className="text-red-500">{'}'}</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">Different Images for Different Devices</h1>
       <p>While a large image looks great on desktops, it may not be suitable for smaller screens. Instead of loading and scaling it down, you can use media queries to serve different images based on device size, improving performance.</p>
       <p>Below are two images — a large one for desktops and a smaller one for smaller screens.</p>
       <div className="min-w-52 h-60 bg-[url('/public/nature.jpg')] bg-no-repeat"></div>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 p-4 rounded-lg  overflow-x-auto max-w-full whitespace-pre-wrap">
-        <span className="text-green-400">body</span>{" "}
-        <span className="text-green-400">{"{"}</span><br/>{"   "}
-        <span className="text-green-400">background-image</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">url('image/nature.jpg')</span>
-        <span className="text-green-400">;</span><br/>
-        <span className="text-green-400">{"}"}</span><br/><br/>
-        <span className="text-green-400">@media only screen and (min-width: 400px)</span>{" "}
-        <span className="text-green-400">{"{"}</span><br/>
-        <span className="text-green-400">body</span>{" "}
-        <span className="text-green-400">{"{"}</span><br/>{"   "}
-        <span className="text-green-400">background-image</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">url('image/nature.jpg')</span>
-        <span className="text-green-400">;</span><br/>{"  "}
-        <span className="text-green-400">{"}"}</span><br/>
-        <span className="text-green-400">{"}"}</span>
-      </pre>
+    <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">body</span>{" "}
+    <span className="text-red-500">{'{'}</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">background-image</span>:{" "}
+    <span className="text-green-700">url('image/nature.jpg')</span>;
+    <br />
+
+    <span className="text-red-500">{'}'}</span>
+
+    <br /><br />
+
+    <span className="text-red-500">@media only screen and (min-width: 400px)</span>{" "}
+    <span className="text-red-500">{'{'}</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">body</span>{" "}
+    <span className="text-red-500">{'{'}</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-image</span>:{" "}
+    <span className="text-green-700">url('image/nature.jpg')</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">{'}'}</span>
+    <br />
+
+    <span className="text-red-500">{'}'}</span>
+  </code>
+</pre>
 
       <p>Instead of min-width, you can use <span className="text-red-400 bg-gray-50 px-1">min-device-width</span>, which targets the actual device’s screen width, not the browser window size. This way, the image won’t change if the browser is resized.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 p-4 rounded-lg  overflow-x-auto max-w-full whitespace-pre-wrap">
-        <span className="text-green-400">body</span>{" "}
-        <span className="text-green-400">{"{"}</span><br/>{"   "}
-        <span className="text-green-400">background-image</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">url('image/nature.jpg')</span>
-        <span className="text-green-400">;</span><br/>
-        <span className="text-green-400">{"}"}</span><br/><br/>
-        <span className="text-green-400">@media only screen and (min-device-width: 400px)</span>{" "}
-        <span className="text-green-400">{"{"}</span><br/>
-        <span className="text-green-400">body</span>{" "}
-        <span className="text-green-400">{"{"}</span><br/>{"   "}
-        <span className="text-green-400">background-image</span>
-        <span className="text-green-400">:</span>{" "}
-        <span className="text-green-400">url('image/nature.jpg')</span>
-        <span className="text-green-400">;</span><br/>{"  "}
-        <span className="text-green-400">{"}"}</span><br/>
-        <span className="text-green-400">{"}"}</span>
-      </pre>
+   <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">body</span>{" "}
+    <span className="text-red-500">{'{'}</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">background-image</span>:{" "}
+    <span className="text-green-700">url('image/nature.jpg')</span>;
+    <br />
+
+    <span className="text-red-500">{'}'}</span>
+
+    <br /><br />
+
+    <span className="text-red-500">@media only screen and (min-device-width: 400px)</span>{" "}
+    <span className="text-red-500">{'{'}</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">body</span>{" "}
+    <span className="text-red-500">{'{'}</span>
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">background-image</span>:{" "}
+    <span className="text-green-700">url('image/nature.jpg')</span>;
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">{'}'}</span>
+    <br />
+
+    <span className="text-red-500">{'}'}</span>
+  </code>
+</pre>
 
       <h1 className="text-2xl">The HTML<span className="text-red-400 bg-gray-50 px-1">{'<picture>'}</span> Element</h1>
       <p>Using the HTML <span className="text-red-400 bg-gray-50 px-1">{"<picture>"}</span> tag, developers can define multiple image sources for different scenarios.</p>
       <p>In responsive layouts, the <span className="text-red-400 bg-gray-50 px-1">{"<picture>"}</span> tag allows you to load different images for different screen widths, offering a better fit than simply resizing one image.</p>
       <p>The <span className="text-red-400 bg-gray-50 px-1">{"<picture>"}</span> tag functions similarly to <span className="text-red-400 bg-gray-50 px-1">{"<video>"}</span> and <span className="text-red-400 bg-gray-50 px-1">{"<audio>"}</span> —you list several sources, and the browser uses the first one that meets the criteria.</p>
       <h1 className="text-2xl">Example</h1>
-      <pre className="bg-gray-900 p-4 rounded-lg  overflow-x-auto max-w-full whitespace-pre-wrap">
-         <span className="text-green-400">&lt;</span>
-         <span className="text-green-400">picture</span>
-         <span className="text-green-400">&gt;</span><br/>{"  "}
-         <span className="text-green-400">&lt;</span>
-         <span className="text-green-400">source</span>{" "}
-         <span className="text-green-400">srcset</span>
-         <span className="text-green-400">="url('image/nature.jpg')"</span>{" "}
-        <span className="text-green-400">media</span>
-        <span className="text-green-400">="(max-width: 400px)"</span>
-        <span className="text-green-400">&gt;</span><br/>{"  "}
-        <span className="text-green-400">&lt;</span>
-        <span className="text-green-400">source</span>{" "}
-        <span className="text-green-400">srcset</span>
-        <span className="text-green-400">="url('image/nature.jpg')"</span>
-        <span className="text-green-400">&gt;</span><br/>{"  "}
-        <span className="text-green-400">&lt;</span>
-        <span className="text-green-400">img</span>{" "}
-        <span className="text-green-400">src</span>
-        <span className="text-green-400">="url('image/nature.jpg')"</span>{" "}
-        <span className="text-green-400">alt</span>
-        <span className="text-green-400">="nature"</span>
-        <span className="text-green-400">&gt;</span><br/>
-        <span className="text-green-400">&lt;/</span>
-        <span className="text-green-400">picture</span>
-        <span className="text-green-400">&gt;</span>
-      </pre>
+     <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-red-500">&lt;picture&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">&lt;source</span>{" "}
+    <span className="text-red-500">srcset</span>=
+    <span className="text-green-700">"url('image/nature.jpg')"</span>{" "}
+    <span className="text-red-500">media</span>=
+    <span className="text-green-700">"(max-width: 400px)"</span>
+    <span className="text-red-500"> /&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">&lt;source</span>{" "}
+    <span className="text-red-500">srcset</span>=
+    <span className="text-green-700">"url('image/nature.jpg')"</span>
+    <span className="text-red-500"> /&gt;</span>
+    <br />
+
+    &nbsp;&nbsp;<span className="text-red-500">&lt;img</span>{" "}
+    <span className="text-red-500">src</span>=
+    <span className="text-green-700">"url('image/nature.jpg')"</span>{" "}
+    <span className="text-red-500">alt</span>=
+    <span className="text-green-700">"nature"</span>
+    <span className="text-red-500"> /&gt;</span>
+    <br />
+
+    <span className="text-red-500">&lt;/picture&gt;</span>
+  </code>
+</pre>
+
       <p><span className="text-red-400 bg-gray-50 px-1">srcset</span> is a required attribute that specifies which image file should be used.</p>
       <p>You can optionally use the media attribute to define conditions using media queries, similar to CSS <span className="text-red-400 bg-gray-50 px-1">@media</span>.</p>
       <p>To ensure compatibility, always add an <span className="text-red-400 bg-gray-50 px-1">{"<img>"}</span> element in case the browser doesn’t recognize <span className="text-red-400 bg-gray-50 px-1">{"<picture>"}</span>.</p>

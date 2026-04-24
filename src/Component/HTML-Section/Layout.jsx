@@ -17,14 +17,35 @@ const HTMLLayout = () => {
         <p className="leading-relaxed mb-3">
           Every element is a box composed of content, padding, border, and margin. Understanding the box model is the foundation of layout.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`div {
-  width: 200px; /* content width */
-  padding: 10px; /* inside */
-  border: 2px solid #ccc; /* edge */
-  margin: 20px; /* outside */
-}`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-blue-600">div</span>
+    <span className="text-gray-500"> {`{`}</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;width</span>:
+    <span className="text-green-600"> 200px</span>
+    <span className="text-gray-500">; /* content width */</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;padding</span>:
+    <span className="text-green-600"> 10px</span>
+    <span className="text-gray-500">; /* inside */</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;border</span>:
+    <span className="text-green-600"> 2px solid #ccc</span>
+    <span className="text-gray-500">; /* edge */</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;margin</span>:
+    <span className="text-green-600"> 20px</span>
+    <span className="text-gray-500">; /* outside */</span>
+    <br/>
+
+    <span className="text-gray-500">{`}`}</span>
+  </code>
+</pre>
         <p className="leading-relaxed mb-3">
           Use <code>box-sizing: border-box;</code> to include padding and border in the width.
         </p>
@@ -36,15 +57,37 @@ const HTMLLayout = () => {
         <p className="leading-relaxed mb-3">
           Flexbox is for one-dimensional layouts—arranging items in a row or column with alignment and distribution control.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`.container {
-  display: flex;
-  gap: 10px;
-}
-.item {
-  flex: 1;
-}`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-blue-600">.container</span>
+    <span className="text-gray-500"> {`{`}</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;display</span>:
+    <span className="text-green-600"> flex</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;gap</span>:
+    <span className="text-green-600"> 10px</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-gray-500">{`}`}</span>
+    <br/><br/>
+
+    <span className="text-blue-600">.item</span>
+    <span className="text-gray-500"> {`{`}</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;flex</span>:
+    <span className="text-green-600"> 1</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-gray-500">{`}`}</span>
+  </code>
+</pre>
         <p className="leading-relaxed mb-3">
           Common properties:
         </p>
@@ -64,13 +107,30 @@ const HTMLLayout = () => {
         <p className="leading-relaxed mb-3">
           CSS Grid is for two-dimensional layouts—rows and columns together. It’s powerful for complex page structures.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}`}</code>
-        </pre>
+      <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-blue-600">.grid-container</span>
+    <span className="text-gray-500"> {`{`}</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;display</span>:
+    <span className="text-green-600"> grid</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;grid-template-columns</span>:
+    <span className="text-green-600"> repeat(3, 1fr)</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;gap</span>:
+    <span className="text-green-600"> 16px</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-gray-500">{`}`}</span>
+  </code>
+</pre>
         <p className="leading-relaxed mb-3">
           You can span items, name areas, and define implicit/explicit tracks.
         </p>
@@ -89,13 +149,30 @@ const HTMLLayout = () => {
           <li><code>fixed</code> — fixed relative to viewport (stays on scroll).</li>
           <li><code>sticky</code> — toggles between relative and fixed depending on scroll.</li>
         </ul>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`.box {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-blue-600">.box</span>
+    <span className="text-gray-500"> {`{`}</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;position</span>:
+    <span className="text-green-600"> absolute</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;top</span>:
+    <span className="text-green-600"> 10px</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;right</span>:
+    <span className="text-green-600"> 10px</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-gray-500">{`}`}</span>
+  </code>
+</pre>
       </section>
 
       {/* Responsive Layout */}
@@ -104,13 +181,28 @@ const HTMLLayout = () => {
         <p className="leading-relaxed mb-3">
           Layout must adapt to different screen sizes. Use media queries or utility-first frameworks (like Tailwind) to adjust structure.
         </p>
-        <pre className="bg-gray-900 p-4 rounded-lg text-green-400 overflow-x-auto max-w-full whitespace-pre-wrap mb-3">
-          <code>{`@media (max-width: 768px) {
-  .sidebar {
-    display: none;
-  }
-}`}</code>
-        </pre>
+       <pre className="bg-gray-100 p-3 rounded-md overflow-x-auto max-w-full whitespace-pre-wrap mb-3 text-sm">
+  <code>
+    <span className="text-blue-600">@media</span>
+    <span className="text-gray-700"> (max-width: 768px)</span>
+    <span className="text-gray-500"> {`{`}</span>
+    <br/>
+
+    <span className="text-blue-600">&nbsp;&nbsp;.sidebar</span>
+    <span className="text-gray-500"> {`{`}</span>
+    <br/>
+
+    <span className="text-red-500">&nbsp;&nbsp;&nbsp;&nbsp;display</span>:
+    <span className="text-green-600"> none</span>
+    <span className="text-gray-500">;</span>
+    <br/>
+
+    <span className="text-gray-500">&nbsp;&nbsp;{`}`}</span>
+    <br/>
+
+    <span className="text-gray-500">{`}`}</span>
+  </code>
+</pre>
         <p className="leading-relaxed mb-3">
           Common responsive pattern: sidebar + main content becomes stacked on small screens.
         </p>

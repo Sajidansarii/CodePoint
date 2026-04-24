@@ -8,15 +8,28 @@ const NavigationRouting = () =>{
             <h2 className="text-2xl text-gray-800 font-semibold mt-10 mb-3">What is Navigation in React?</h2>
             <p><span className="text-red-400 bg-gray-50">Navigation</span> is the mechanism that allows users to switch between various views or sections in a React application. Most React apps are built as Single Page Applications (SPAs), where the application loads once and navigation is managed on the client side, eliminating the need for full page reloads and enabling seamless transitions between components.</p>
             <h2 className="text-2xl text-gray-800 font-semibold mt-5">Syntax</h2>
-            <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-                <code>
-                    {`// Installing
-npm i react-router-dom
-// Importing
-import { BrowserRouter } from 'react-router-dom';`}
-                </code>
-            </pre>
-
+         <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
+    
+    <span className="text-gray-600">// Installing</span>{"\n"}
+    
+    <span className="text-red-600">npm</span>{" "}
+    <span className="text-blue-700">i</span>{" "}
+    <span className="text-yellow-700">react-router-dom</span>
+    
+    {"\n\n"}
+    
+    <span className="text-gray-600">// Importing</span>{"\n"}
+    
+    <span className="text-purple-700">import</span>{" "}
+    {"{ "}
+    <span className="text-green-700">BrowserRouter</span>{" "}
+    {"} "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">'react-router-dom'</span>;
+    
+  </code>
+</pre>
             <ul className="list-[square] space-y-1 mt-5">
                 <li><span className="font-semibold">Installing</span>: Run npm i react-router-dom to add React Router to your React project.</li>
                 <li><span className="font-semibold">Importing</span>: Use import { '{BrowserRouter}' } from 'react-router-dom'; to bring in BrowserRouter and enable routing.</li>
@@ -33,31 +46,101 @@ import { BrowserRouter } from 'react-router-dom';`}
             <li>Use the hook inside the button’s onClick event to perform the navigation.</li>
            </ul>
 
-           <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`// App.js
+         <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.css";
-import AboutUs from "./components/AboutUs";
-import ContactUs from "./components/CotactUs";
+    <span className="text-gray-600">// App.js</span>{"\n\n"}
 
-function App() {
-    return (
-        <div className="App">
-            <BrowserRouter>
-                <Routes>
-                    <Route exact path="/" element={<AboutUs />} />
-                    <Route exact path="/contactus" element={<ContactUs />} />
-                </Routes>
-            </BrowserRouter>
-        </div>
+    <span className="text-purple-700">import</span>{" "}
+    {"{ "}
+    <span className="text-green-700">BrowserRouter</span>,{" "}
+    <span className="text-green-700">Routes</span>,{" "}
+    <span className="text-green-700">Route</span>{" "}
+    {"} "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">"react-router-dom"</span>;
+    {"\n"}
+
+    <span className="text-purple-700">import</span>{" "}
+    <span className="text-yellow-700">"./App.css"</span>;
+    {"\n"}
+
+    <span className="text-purple-700">import</span>{" "}
+    <span className="text-green-700">AboutUs</span>{" "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">"./components/AboutUs"</span>;
+    {"\n"}
+
+    <span className="text-purple-700">import</span>{" "}
+    <span className="text-green-700">ContactUs</span>{" "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">"./components/CotactUs"</span>;
+    {"\n\n"}
+
+    <span className="text-purple-700">function</span>{" "}
+    <span className="text-blue-700">App</span>() {"{"}
+    {"\n"}
+    {"  "}
+    <span className="text-purple-700">return</span> (
+    {"\n"}
+    {"    "}
+    &lt;<span className="text-red-600">div</span>{" "}
+    <span className="text-blue-700">className</span>=
+    <span className="text-yellow-700">"App"</span>&gt;
+    {"\n"}
+
+    {"      "}
+    &lt;<span className="text-green-700">BrowserRouter</span>&gt;
+    {"\n"}
+
+    {"        "}
+    &lt;<span className="text-green-700">Routes</span>&gt;
+    {"\n"}
+
+    {"          "}
+    &lt;<span className="text-green-700">Route</span>{" "}
+    <span className="text-blue-700">exact</span>{" "}
+    <span className="text-blue-700">path</span>=
+    <span className="text-yellow-700">"/"</span>{" "}
+    <span className="text-blue-700">element</span>={"{"}
+    &lt;<span className="text-green-700">AboutUs</span> /&gt;
+    {"}"} /&gt;
+    {"\n"}
+
+    {"          "}
+    &lt;<span className="text-green-700">Route</span>{" "}
+    <span className="text-blue-700">exact</span>{" "}
+    <span className="text-blue-700">path</span>=
+    <span className="text-yellow-700">"/contactus"</span>{" "}
+    <span className="text-blue-700">element</span>={"{"}
+    &lt;<span className="text-green-700">ContactUs</span> /&gt;
+    {"}"} /&gt;
+    {"\n"}
+
+    {"        "}
+    &lt;/<span className="text-green-700">Routes</span>&gt;
+    {"\n"}
+
+    {"      "}
+    &lt;/<span className="text-green-700">BrowserRouter</span>&gt;
+    {"\n"}
+
+    {"    "}
+    &lt;/<span className="text-red-600">div</span>&gt;
+    {"\n"}
+
+    {"  "}
     );
-}
+    {"\n"}
+    {"}"}
+    {"\n\n"}
 
-export default App;`}
-            </code>
-           </pre>
+    <span className="text-purple-700">export</span>{" "}
+    <span className="text-purple-700">default</span>{" "}
+    <span className="text-blue-700">App</span>;
+
+  </code>
+</pre>
 
            <h2 className="text-2xl text-gray-800 font-semibold mt-5">In this example</h2>
            <ul className="list-[square]  space-y-1 mt-5">
@@ -74,38 +157,40 @@ export default App;`}
             <li>Create another page that displays data dynamically with the help of useParams.</li>
             <li>Define a dynamic Route that passes an id value as a parameter.</li>
            </ul>
-           <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`// App.js
+           <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
+{String.raw`// App.js
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import CourseDetails from "./components/CourseDetails";
 
 function App() {
-    const courses = ["JavaScript", "React", "HTML", "DSA"];
-    return (
-        <BrowserRouter>
-            <h1>Dynamic Routing with React</h1>
-            <ul>
-                {courses.map((course) => {
-                    return (
-                        <li key={course}>
-                            <Link to={\`courses/\${course}\`}>{course}</Link>
-                        </li>
-                    );
-                })}
-            </ul>
-            <Routes>
-                <Route path="courses/:courseId" element={<CourseDetails />} />
-            </Routes>
-        </BrowserRouter>
-    );
+  const courses = ["JavaScript", "React", "HTML", "DSA"];
+
+  return (
+    <BrowserRouter>
+      <h1>Dynamic Routing with React</h1>
+
+      <ul>
+        {courses.map((course) => {
+          return (
+            <li key={course}>
+              <Link to={\`courses/\${course}\`}>{course}</Link>
+            </li>
+          );
+        })}
+      </ul>
+
+      <Routes>
+        <Route path="courses/:courseId" element={<CourseDetails />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;`}
-            </code>
-           </pre>
-
+  </code>
+</pre>
            <h2 className="text-2xl text-gray-800 font-semibold mt-5">In this code</h2>
            <ul className="list-[square] space-y-1 mt-5">
             <li><span className="font-semibold">App.js</span>: Dynamically generates Link components and passes the course name as a parameter.</li>
@@ -122,38 +207,152 @@ export default App;`}
             <li>Add a route for paths that are not configured, redirecting them to NoPageFound.js.</li>
             <li>Use the '*' path to catch all non-configured routes.</li>
            </ul>
-           <pre className="text-green-400 overflow-x-auto bg-gray-900 p-4 rounded-lg mt-5">
-            <code>
-                {`// App.js
+           <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto text-sm">
+  <code className="font-mono text-gray-900">
 
-import logo from "./logo.svg";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.css";
-import NavBar from "./components/Navbar";
-import Home from "./components/Home";
-import AboutUs from "./components/AboutUs";
-import ContactUs from "./components/CotactUs";
-import NoPageFound from "./components/NoPageFound";
+    <span className="text-gray-500">// App.js</span>{"\n\n"}
 
-function App() {
-    return (
-        <div className="App">
-            <BrowserRouter>
-                <NavBar />
-                <Routes>
-                    <Route exact path="/" element={<Home />} />
-                    <Route exact path="/about" element={<AboutUs />} />
-                    <Route exact path="/contact" element={<ContactUs />} />
-                    <Route path="*" element={<NoPageFound />} />
-                </Routes>
-            </BrowserRouter>
-        </div>
+    <span className="text-purple-700">import</span>{" "}
+    <span className="text-gray-900">logo</span>{" "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">"./logo.svg"</span>;
+    {"\n"}
+
+    <span className="text-purple-700">import</span>{" "}
+    {"{ "}
+    <span className="text-green-700">BrowserRouter</span>,{" "}
+    <span className="text-green-700">Routes</span>,{" "}
+    <span className="text-green-700">Route</span>{" "}
+    {"} "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">"react-router-dom"</span>;
+    {"\n"}
+
+    <span className="text-purple-700">import</span>{" "}
+    <span className="text-yellow-700">"./App.css"</span>;
+    {"\n"}
+
+    <span className="text-purple-700">import</span>{" "}
+    <span className="text-green-700">NavBar</span>{" "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">"./components/Navbar"</span>;
+    {"\n"}
+
+    <span className="text-purple-700">import</span>{" "}
+    <span className="text-green-700">Home</span>{" "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">"./components/Home"</span>;
+    {"\n"}
+
+    <span className="text-purple-700">import</span>{" "}
+    <span className="text-green-700">AboutUs</span>{" "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">"./components/AboutUs"</span>;
+    {"\n"}
+
+    <span className="text-purple-700">import</span>{" "}
+    <span className="text-green-700">ContactUs</span>{" "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">"./components/CotactUs"</span>;
+    {"\n"}
+
+    <span className="text-purple-700">import</span>{" "}
+    <span className="text-green-700">NoPageFound</span>{" "}
+    <span className="text-purple-700">from</span>{" "}
+    <span className="text-yellow-700">"./components/NoPageFound"</span>;
+    {"\n\n"}
+
+    <span className="text-purple-700">function</span>{" "}
+    <span className="text-blue-700">App</span>() {"{"}
+    {"\n"}
+    {"  "}
+    <span className="text-purple-700">return</span> (
+    {"\n"}
+    {"    "}
+    &lt;<span className="text-red-600">div</span>{" "}
+    <span className="text-blue-700">className</span>=
+    <span className="text-yellow-700">"App"</span>&gt;
+    {"\n"}
+
+    {"      "}
+    &lt;<span className="text-green-700">BrowserRouter</span>&gt;
+    {"\n"}
+
+    {"        "}
+    &lt;<span className="text-green-700">NavBar</span> /&gt;
+    {"\n"}
+
+    {"        "}
+    &lt;<span className="text-green-700">Routes</span>&gt;
+    {"\n"}
+
+    {"          "}
+    &lt;<span className="text-green-700">Route</span>{" "}
+    <span className="text-blue-700">exact</span>{" "}
+    <span className="text-blue-700">path</span>=
+    <span className="text-yellow-700">"/"</span>{" "}
+    <span className="text-blue-700">element</span>=
+    <span className="text-gray-900">{"{"}</span>
+    &lt;<span className="text-green-700">Home</span> /&gt;
+    <span className="text-gray-900">{"}"}</span> /&gt;
+    {"\n"}
+
+    {"          "}
+    &lt;<span className="text-green-700">Route</span>{" "}
+    <span className="text-blue-700">exact</span>{" "}
+    <span className="text-blue-700">path</span>=
+    <span className="text-yellow-700">"/about"</span>{" "}
+    <span className="text-blue-700">element</span>=
+    <span className="text-gray-900">{"{"}</span>
+    &lt;<span className="text-green-700">AboutUs</span> /&gt;
+    <span className="text-gray-900">{"}"}</span> /&gt;
+    {"\n"}
+
+    {"          "}
+    &lt;<span className="text-green-700">Route</span>{" "}
+    <span className="text-blue-700">exact</span>{" "}
+    <span className="text-blue-700">path</span>=
+    <span className="text-yellow-700">"/contact"</span>{" "}
+    <span className="text-blue-700">element</span>=
+    <span className="text-gray-900">{"{"}</span>
+    &lt;<span className="text-green-700">ContactUs</span> /&gt;
+    <span className="text-gray-900">{"}"}</span> /&gt;
+    {"\n"}
+
+    {"          "}
+    &lt;<span className="text-green-700">Route</span>{" "}
+    <span className="text-blue-700">path</span>=
+    <span className="text-yellow-700">"*"</span>{" "}
+    <span className="text-blue-700">element</span>=
+    <span className="text-gray-900">{"{"}</span>
+    &lt;<span className="text-green-700">NoPageFound</span> /&gt;
+    <span className="text-gray-900">{"}"}</span> /&gt;
+    {"\n"}
+
+    {"        "}
+    &lt;/<span className="text-green-700">Routes</span>&gt;
+    {"\n"}
+
+    {"      "}
+    &lt;/<span className="text-green-700">BrowserRouter</span>&gt;
+    {"\n"}
+
+    {"    "}
+    &lt;/<span className="text-red-600">div</span>&gt;
+    {"\n"}
+
+    {"  "}
     );
-}
+    {"\n"}
+    {"}"}
+    {"\n\n"}
 
-export default App;`}
-            </code>
-           </pre>
+    <span className="text-purple-700">export</span>{" "}
+    <span className="text-purple-700">default</span>{" "}
+    <span className="text-blue-700">App</span>;
+
+  </code>
+</pre>
 
            <h2 className="text-2xl text-gray-800 font-semibold mt-5">In this code</h2>
            <ul className="list-[square] space-y-1 mt-5">

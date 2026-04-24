@@ -51,26 +51,25 @@ const CssImageGallery = () => {
         />
       </div>
 
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
-         <code>
-{`
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
+      <pre className="bg-gray-200 p-4 rounded-lg mt-5 overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-blue-500">.gallery</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">grid</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">grid-template-columns</span>: <span className="text-green-700">repeat(3, 1fr)</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">gap</span>: <span className="text-green-700">10px</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-.gallery img {
-  width: 100%;
-  border-radius: 10px;
-  transition: transform 0.3s;
-}
+    <span className="text-blue-500">.gallery img</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">100%</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border-radius</span>: <span className="text-green-700">10px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">transition</span>: <span className="text-green-700">transform 0.3s</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-.gallery img:hover {
-  transform: scale(1.05);
-}`}
-</code> 
-      </pre>
+    <span className="text-blue-500">.gallery img:hover</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">transform</span>: <span className="text-green-700">scale(1.05)</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       {/* Responsive Gallery */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Responsive Image Gallery</h2>
@@ -88,22 +87,22 @@ const CssImageGallery = () => {
 </div>
 
 
-       <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-         <code>
-{`
-@media screen and (max-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-gray-500">@media screen and (max-width: 768px)</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">.gallery</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">grid-template-columns</span>: <span className="text-green-700">repeat(2, 1fr)</span>;<br />
+    &nbsp;&nbsp;<span>{'}'}</span><br />
+    <span>{'}'}</span><br /><br />
 
-@media screen and (max-width: 480px) {
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-}`}
-</code> 
-      </pre> 
+    <span className="text-gray-500">@media screen and (max-width: 480px)</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-blue-500">.gallery</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-red-500">grid-template-columns</span>: <span className="text-green-700">1fr</span>;<br />
+    &nbsp;&nbsp;<span>{'}'}</span><br />
+    <span>{'}'}</span>
+  </code>
+</pre>
+
 
       {/*   Hover Effect Gallery */}
        <h2 className="text-xl font-semibold mt-6 mb-2">Gallery with Hover Effects</h2>
@@ -144,36 +143,35 @@ const CssImageGallery = () => {
         </div>
       </div>
 
-      <pre className="text-green-400 bg-gray-900 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-         <code>
-{`
-.gallery-item {
-  position: relative;
-}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-500">.gallery-item</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">position</span>: <span className="text-green-700">relative</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-.gallery-item img {
-  display: block;
-  width: 100%;
-  border-radius: 10px;
-}
+    <span className="text-blue-500">.gallery-item img</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">block</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">100%</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border-radius</span>: <span className="text-green-700">10px</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-.gallery-item .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: 0.3s;
-}
+    <span className="text-blue-500">.gallery-item .overlay</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">position</span>: <span className="text-green-700">absolute</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">inset</span>: <span className="text-green-700">0</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">background</span>: <span className="text-green-700">rgba(0,0,0,0.5)</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">color</span>: <span className="text-green-700">white</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">display</span>: <span className="text-green-700">flex</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">align-items</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">justify-content</span>: <span className="text-green-700">center</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">opacity</span>: <span className="text-green-700">0</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">transition</span>: <span className="text-green-700">0.3s</span>;<br />
+    <span>{'}'}</span><br /><br />
 
-.gallery-item:hover .overlay {
-  opacity: 1;
-}`}
-</code> 
-      </pre>
+    <span className="text-blue-500">.gallery-item:hover .overlay</span> <span>{'{'}</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">opacity</span>: <span className="text-green-700">1</span>;<br />
+    <span>{'}'}</span>
+  </code>
+</pre>
 
       {/* Notes */}
       <h2 className="text-xl font-semibold mt-6 mb-2">Key Points</h2>

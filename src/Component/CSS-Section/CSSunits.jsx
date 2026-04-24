@@ -44,19 +44,21 @@ const CssUnitsDemo = () => {
         </p>
 
         {/* Code Example */}
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
-          <code>        
-{`/* Absolute Units Example */
-.box-absolute {
-  width: 200px;    
-  height: 100px;
-  margin: 10mm;    
-  padding: 1in;    
-  border: 1pt solid #3b82f6; 
-  }`}
-  </code>
-        </pre>
+       <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap">
+  <code>
+    <span className="text-gray-500">/* Absolute Units Example */</span><br />
 
+    <span className="text-blue-600">.box-absolute</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">200px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">100px</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">margin</span>: <span className="text-green-700">10mm</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">padding</span>: <span className="text-green-700">1in</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">border</span>: <span className="text-green-700">1pt solid #3b82f6</span>;<br />
+
+    <span>{'}'}</span>
+  </code>
+</pre>
         <p>
           ✅ Explanation:
           <ul className="list-disc list-inside">
@@ -76,18 +78,21 @@ const CssUnitsDemo = () => {
         </p>
 
         {/* Code Example */}
-        <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-          <code>
-{`/* Relative Units Example */
-.box-relative {
-  width: 50%;      
-  height: 10rem;   
-  margin: 2em;     
-  font-size: 2vw;  
-  line-height: 1.5ch; 
-  }`}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-gray-500">/* Relative Units Example */</span><br />
+
+    <span className="text-blue-600">.box-relative</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">width</span>: <span className="text-green-700">50%</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">height</span>: <span className="text-green-700">10rem</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">margin</span>: <span className="text-green-700">2em</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">font-size</span>: <span className="text-green-700">2vw</span>;<br />
+    &nbsp;&nbsp;<span className="text-red-500">line-height</span>: <span className="text-green-700">1.5ch</span>;<br />
+
+    <span>{'}'}</span>
   </code>
-        </pre>
+</pre>
 
         <p className="mt-1">
           ✅ Explanation:

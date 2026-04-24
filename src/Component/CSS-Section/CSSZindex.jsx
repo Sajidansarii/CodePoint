@@ -42,14 +42,16 @@ const CssZIndex = () => {
       </div>
 
       <h2 className="text-xl font-semibold mt-6 mb-2">Syntax</h2>
-      <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
-        <code>
-        {`selector {
-  position: relative; /* required */
-  z-index: 2; /* stacking order */
-  }`}
+     <pre className="bg-gray-200 p-4 rounded-lg overflow-x-auto max-w-full whitespace-pre-wrap mt-5">
+  <code>
+    <span className="text-blue-600">selector</span> <span>{'{'}</span><br />
+
+    &nbsp;&nbsp;<span className="text-red-500">position</span>: <span className="text-green-700">relative</span>; <span className="text-gray-500">/* required */</span><br />
+    &nbsp;&nbsp;<span className="text-red-500">z-index</span>: <span className="text-green-700">2</span>; <span className="text-gray-500">/* stacking order */</span><br />
+
+    <span>{'}'}</span>
   </code>
-      </pre>
+</pre>
     </div>
   );
 };
